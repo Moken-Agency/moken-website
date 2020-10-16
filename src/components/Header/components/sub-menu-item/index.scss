@@ -1,0 +1,34 @@
+.sub-menu-item-container {
+  outline: transparent;
+  padding: 0;
+  border: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2vw;
+  position: relative;
+  .divider {
+    display: none;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 0
+  }
+
+  span {
+    color: #b1b1b1;
+    padding: 0 2vw;
+  }
+  &:hover {
+    background-color: #e8e8e8;
+
+    transition: .5s;
+    span {
+      color: black;
+    }
+    .divider {
+      display: block;
+    }
+  }
+}
