@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Binary-Vision-Studios/moken-website/static/css/main.61e17455.chunk.css",
+    "main.js": "/Binary-Vision-Studios/moken-website/static/js/main.7345463a.chunk.js",
+    "main.js.map": "/Binary-Vision-Studios/moken-website/static/js/main.7345463a.chunk.js.map",
+    "runtime-main.js": "/Binary-Vision-Studios/moken-website/static/js/runtime-main.3fbf2f83.js",
+    "runtime-main.js.map": "/Binary-Vision-Studios/moken-website/static/js/runtime-main.3fbf2f83.js.map",
+    "static/js/2.c9ecd394.chunk.js": "/Binary-Vision-Studios/moken-website/static/js/2.c9ecd394.chunk.js",
+    "static/js/2.c9ecd394.chunk.js.map": "/Binary-Vision-Studios/moken-website/static/js/2.c9ecd394.chunk.js.map",
+    "index.html": "/Binary-Vision-Studios/moken-website/index.html",
+    "precache-manifest.df635a688102b217485a0ea03341ee5c.js": "/Binary-Vision-Studios/moken-website/precache-manifest.df635a688102b217485a0ea03341ee5c.js",
+    "service-worker.js": "/Binary-Vision-Studios/moken-website/service-worker.js",
+    "static/css/main.61e17455.chunk.css.map": "/Binary-Vision-Studios/moken-website/static/css/main.61e17455.chunk.css.map",
+    "static/js/2.c9ecd394.chunk.js.LICENSE.txt": "/Binary-Vision-Studios/moken-website/static/js/2.c9ecd394.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/Binary-Vision-Studios/moken-website/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3fbf2f83.js",
+    "static/js/2.c9ecd394.chunk.js",
+    "static/css/main.61e17455.chunk.css",
+    "static/js/main.7345463a.chunk.js"
+  ]
+}
