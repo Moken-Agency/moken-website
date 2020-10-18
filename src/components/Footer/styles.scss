@@ -1,0 +1,49 @@
+.footerContainer {
+  .topFooterBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 150px 150px 150px;
+    .menuColumns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .sendEmailUpdatesContainer {
+      padding-top: 30px;
+      .logo {
+        height: 52px;
+      }
+    }
+  }
+  .bottomFooterBar {
+    display: flex;
+    flex-direction: row;
+    .leftFooterBar {
+      padding: 60px 160px;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      .privacyContainer {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    .socialsContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2vw;
+      a {
+        cursor: pointer;
+        img {
+          height: 2vw;
+          margin: 0 1vw;
+        }
+      }
+    }
+  }
+}

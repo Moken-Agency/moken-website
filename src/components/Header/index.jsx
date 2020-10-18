@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import navigationJson from './navigation-json';
+import headerOptions from './header-options';
 import MenuItem from './components/menu-item';
 import './index.scss'
 import Logo from '../../images/logo.png'
@@ -7,8 +7,9 @@ import Burger from "./components/burger";
 
 const {
     leftMenu, rightMenu, mainMenu,
-    mainMenuTextStyles
-} = navigationJson
+    mainMenuTextStyles,
+    topMenuTextStyles,
+} = headerOptions
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,8 @@ const Header = () => {
                     {
                         leftMenu.map(({title, withDivider}, index) => {
                             return (
-                               <MenuItem key={'leftMenu' + index} title={title} withDivider={withDivider}/>
+                               <MenuItem key={'leftMenu' + index} title={title} withDivider={withDivider}
+                                         textStyles={topMenuTextStyles}/>
                             )
                         })
                     }
@@ -29,7 +31,8 @@ const Header = () => {
                     {
                         rightMenu.map(({title, withDivider}, index) => {
                             return (
-                                <MenuItem key={'right menu' + index} title={title} withDivider={withDivider}/>
+                                <MenuItem key={'right menu' + index} title={title} withDivider={withDivider}
+                                          textStyles={topMenuTextStyles}/>
                             )
                         })
                     }
@@ -44,7 +47,8 @@ const Header = () => {
                                 <MenuItem key={'main menu' + index} title={title} textStyles={mainMenuTextStyles}
                                           containerStyles={{marginRight: '1.5vw'}}
                                           subRouts={subRouts}
-                                          dividerColor={dividerColor}/>
+                                          dividerColor={dividerColor}
+                                />
                             )
                         })
                     }
