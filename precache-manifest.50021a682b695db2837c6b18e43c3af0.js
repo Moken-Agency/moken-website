@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b18bce6bf25a10998fe3cce06718e74",
+    "revision": "be79235063d944d84faa6e4da8e938a1",
     "url": "/Binary-Vision-Studios/moken-website/index.html"
   },
   {
-    "revision": "1931ecbde262849c2dfb",
-    "url": "/Binary-Vision-Studios/moken-website/static/css/main.3b606aa0.chunk.css"
+    "revision": "4ed75373f42e9b39d2b5",
+    "url": "/Binary-Vision-Studios/moken-website/static/css/main.be2cbc96.chunk.css"
   },
   {
-    "revision": "a2319074d9eaf91a2312",
-    "url": "/Binary-Vision-Studios/moken-website/static/js/2.a5d2146c.chunk.js"
+    "revision": "1aacc6f7dbe5dd965d84",
+    "url": "/Binary-Vision-Studios/moken-website/static/js/2.f4de7d0a.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/Binary-Vision-Studios/moken-website/static/js/2.a5d2146c.chunk.js.LICENSE.txt"
+    "url": "/Binary-Vision-Studios/moken-website/static/js/2.f4de7d0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1931ecbde262849c2dfb",
-    "url": "/Binary-Vision-Studios/moken-website/static/js/main.de1ee988.chunk.js"
+    "revision": "4ed75373f42e9b39d2b5",
+    "url": "/Binary-Vision-Studios/moken-website/static/js/main.c8231745.chunk.js"
   },
   {
     "revision": "a038632da8ec4cf6dc47",

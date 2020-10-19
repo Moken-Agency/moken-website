@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Binary-Vision-Studios/moken-website/precache-manifest.9a07bb33e679bd0e55d91ed677efc0b8.js"
+  "/Binary-Vision-Studios/moken-website/precache-manifest.50021a682b695db2837c6b18e43c3af0.js"
 );
 
 self.addEventListener('message', (event) => {
