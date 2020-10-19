@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 100px 150px 150px 150px;
+    padding: 6vw 7vw;
     .menuColumns {
       display: flex;
       flex-direction: row;
@@ -11,6 +11,7 @@
     }
     .sendEmailUpdatesContainer {
       padding-top: 30px;
+      width: 20vw;
       .logo {
         height: 52px;
       }
@@ -19,12 +20,14 @@
   .bottomFooterBar {
     display: flex;
     flex-direction: row;
+    position: relative;
     .leftFooterBar {
-      padding: 60px 160px;
+      //padding: 60px 160px;
+      padding: 3vw 8vw;
+      width: 100%;
       background-color: black;
       display: flex;
       flex-direction: row;
-      width: 100%;
       justify-content: space-between;
       .privacyContainer {
         display: flex;
@@ -42,6 +45,59 @@
         img {
           height: 2vw;
           margin: 0 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footerContainer {
+    .topFooterBar {
+      padding: 0 20px;
+      position: relative;
+      .menuColumns {
+        flex-direction: column;
+        width: 100%;
+      }
+      .sendEmailUpdatesContainer {
+        display: none;
+        }
+      }
+
+    .bottomFooterBar {
+      flex-direction: column-reverse;
+      .leftFooterBar {
+        background-color: white;
+        flex-direction: column-reverse;
+        padding: 9vw;
+        width: auto;
+        .privacyContainer {
+          justify-content: space-between;
+          margin-bottom: 4vw;
+          div {
+            margin: 0 !important;
+            span {
+              letter-spacing: 3.3px;
+              font-size: 10px !important;
+            }
+          }
+        }
+        div {
+          span {
+            color: black !important;
+          }
+        }
+      }
+      .socialsContainer {
+        padding: 20px 0;
+        justify-content: center;
+        background-color: black;
+        a {
+          margin: 0 10px;
+          img {
+            height: 27px
+          }
         }
       }
     }

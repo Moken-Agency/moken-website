@@ -1,4 +1,4 @@
-import {instagram, twitter, dribbble, behance, linkedin} from '../../images/socials';
+import {instagram, twitter, dribbble, behance, linkedin, instagramWhite, behanceWhite, dribbbleWhite, linkedinWhite, twitterWhite} from '../../images/socials';
 
 export default {
     menuOption: {
@@ -93,16 +93,23 @@ export default {
         {image: linkedin, link: ''},
         {image: dribbble, link: ''},
     ],
+    socialsMediaWhite: [
+        {image: twitterWhite, link: ''},
+        {image: behanceWhite, link: ''},
+        {image: instagramWhite, link: ''},
+        {image: linkedinWhite, link: ''},
+        {image: dribbbleWhite, link: ''},
+    ],
+
     styles: {
         joinFirstText: {
             display: 'block',
             marginTop: 40,
             marginBottom: 20,
-            fontSize: 30,
             letterSpacing: 0.3
         },
         joinSecondText: {
-            fontSize: 20,
+            marginBottom: 20,
         }
     }
 }

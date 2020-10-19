@@ -1,0 +1,28 @@
+.column-menu-container {
+  padding: 0 4vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .column-menu-container {
+    margin-bottom: 30px;
+    /* width: 100%; */
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    &:last-child {
+      border-bottom: 0;
+    }
+    div {
+      &:nth-child(1) {
+        margin-bottom: 15px !important;
+        span {
+          font-size: 20px !important;
+
+        }
+      }
+      margin-bottom: 10px!important;
+      span {
+        font-size: 15px !important;
+      }
+    }
+  }
+}

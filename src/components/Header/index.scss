@@ -1,5 +1,5 @@
 
-.menuContainer {
+.menu-container {
   display: flex;
   flex-direction: row;
 }
@@ -11,10 +11,16 @@
   padding: 0 10vw;
   border-bottom: 1px solid grey;
 }
-.container {
+.header-container {
   .bar-container {
     .logo {
       height: 2vw;
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    //display: none;
   }
 }

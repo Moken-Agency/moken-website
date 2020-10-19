@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'Latinka ExtraBold';
+  src: url('./fonts/Latinka ExtraBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Latinka ExtraLight';
+  src: url('./fonts/Latinka ExtraLight.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Latinka Light';
+  src: url('./fonts/Latinka Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Latinka Medium';
+  src: url('./fonts/Latinka Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Latinka SemiBold';
+  src: url('./fonts/Latinka SemiBold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Latinka Thin';
+  src: url('./fonts/Latinka Thin.otf') format('opentype');
+}
+
