@@ -4,8 +4,9 @@ import './index.scss'
 import Logo from '../../images/logo.png'
 import Burger from "./components/Burger";
 import headerOptions from './header-options';
+import { useHistory } from "react-router-dom";
+
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import HeaderMobile from "./components/HeaderMobile";
 
 const {
     leftMenu, rightMenu, mainMenu,
@@ -14,8 +15,8 @@ const {
 } = headerOptions;
 
 const Header = ({isOpen, setIsOpen}) => {
-    const {width} = useWindowDimensions()
 
+    let history = useHistory();
 
 
     return (
@@ -23,10 +24,10 @@ const Header = ({isOpen, setIsOpen}) => {
                 <div className={'bar-container'}>
                     <div className={'menu-container'}>
                         {
-                            leftMenu.map(({title, withDivider}, index) => {
+                            leftMenu.map(({title, withDivider, route}, index) => {
                                 return (
                                     <MenuItem key={'leftMenu' + index} title={title} withDivider={withDivider}
-                                              textStyles={topMenuTextStyles}/>
+                                              textStyles={topMenuTextStyles} route={route}/>
                                 )
                             })
                         }
@@ -44,7 +45,7 @@ const Header = ({isOpen, setIsOpen}) => {
                 </div>
                 <div className={'bar-container'}>
                     <img src={Logo} className={'logo'}/>
-                    {isOpen ? <div className={'menu-container'}>
+                    <div className={'menu-container'}>
                         {
                             mainMenu.map(({title, subRouts = [], dividerColor}, index) => {
                                 return (
@@ -56,8 +57,9 @@ const Header = ({isOpen, setIsOpen}) => {
                                 )
                             })
                         }
-                    </div> : null}
-                    <Burger isOpen={isOpen} setIsOpen={setIsOpen}/>
+                    </div>
+                    {/*<Burger setIsOpen={() => history.push('/designer')}/>*/}
+                    <Burger setIsOpen={() => history.push('/menuscreen')}/>
                 </div>
             </div>
     )

@@ -1,0 +1,103 @@
+.menu-screen-container {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  //position: absolute;
+  z-index: 1;
+  min-height: 100vh;
+  .menu-screen-top-columns-container {
+    padding: 76px 135px 90px 135px;
+    display: flex;
+  }
+  .menu-screen-top-column-divider {
+    width: 80vw;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .menu-screen-bottom-columns-container {
+    padding: 76px 0 0 135px;
+    display: flex;
+    .menu-screen-bottom-container {
+      display: flex;
+    }
+    .socials-header-menu-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1vw;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      a {
+        cursor: pointer;
+        img {
+          height: 1.5vw;
+          margin: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .menu-screen-container {
+    .menu-screen-top-columns-container {
+      flex-wrap: wrap;
+      .menu-screen-top-column-container {
+        margin-bottom: 50px;
+      }
+    }
+    .menu-screen-bottom-columns-container {
+      .menu-screen-bottom-container {
+        flex-wrap: wrap;
+        div {
+          margin-bottom: 50px;
+        }
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .menu-screen-container {
+    .menu-screen-top-columns-container {
+      padding: 48px 67px 45px 67px;
+      .menu-screen-top-column-container {
+        margin-right: 0;
+        width: auto;
+      }
+    }
+    .menu-screen-bottom-columns-container {
+      padding: 48px 67px 45px 67px;
+      flex-direction: column;
+      position: relative;
+      .menu-screen-bottom-container {
+        div {
+          .text-container {
+            margin-right: 0!important;
+          }
+        }
+      };
+      .socials-header-menu-container {
+        flex-direction: row;
+        height: 50px;
+        padding: 5vw;
+        width: 90vw;
+        a {
+          img {
+            height: 5vw
+
+          }
+        }
+      }
+    }
+  }
+}
+
+

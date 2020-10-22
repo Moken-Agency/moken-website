@@ -1,15 +1,17 @@
-.footerContainer {
-  .topFooterBar {
+.footer-container {
+  .top-footer-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 6vw 7vw;
-    .menuColumns {
+    background-color: #fbfbfb;
+    .menu-columns {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      padding-bottom: 20px;
     }
-    .sendEmailUpdatesContainer {
+    .send-email-updates-container {
       padding-top: 30px;
       width: 20vw;
       .logo {
@@ -17,11 +19,11 @@
       }
     }
   }
-  .bottomFooterBar {
+  .bottom-footer-bar {
     display: flex;
     flex-direction: row;
     position: relative;
-    .leftFooterBar {
+    .left-footer-bar {
       //padding: 60px 160px;
       padding: 3vw 8vw;
       width: 100%;
@@ -29,12 +31,12 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      .privacyContainer {
+      .privacy-container {
         display: flex;
         flex-direction: row;
       }
     }
-    .socialsContainer {
+    .socials-container {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -52,27 +54,27 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .footerContainer {
-    .topFooterBar {
-      padding: 0 20px;
+  .footer-container {
+    .top-footer-bar {
+      padding: 45px 45px 0 45px;
       position: relative;
-      .menuColumns {
+      .menu-columns {
         flex-direction: column;
         width: 100%;
       }
-      .sendEmailUpdatesContainer {
+      .send-email-updates-container {
         display: none;
         }
       }
 
-    .bottomFooterBar {
+    .bottom-footer-bar {
       flex-direction: column-reverse;
-      .leftFooterBar {
+      .left-footer-bar {
         background-color: white;
         flex-direction: column-reverse;
         padding: 9vw;
         width: auto;
-        .privacyContainer {
+        .privacy-container {
           justify-content: space-between;
           margin-bottom: 4vw;
           div {
@@ -89,7 +91,7 @@
           }
         }
       }
-      .socialsContainer {
+      .socials-container {
         padding: 20px 0;
         justify-content: center;
         background-color: black;

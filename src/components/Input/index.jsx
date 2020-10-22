@@ -4,7 +4,7 @@ import Text from "../Text";
 import textTypes from '../../constans/text-types';
 
 const Input = ({value, onChange = () => {}, placeholder, withGoButton, onSubmit = () => {}, error = '',
-                   type = 'Latinka Medium', size}) => {
+                   type = 'Latinka Medium',}) => {
     console.log({error});
 
     return (

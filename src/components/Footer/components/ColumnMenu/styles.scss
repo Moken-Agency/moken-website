@@ -4,10 +4,9 @@
 
 @media only screen and (max-width: 600px) {
   .column-menu-container {
-    margin-bottom: 30px;
     /* width: 100%; */
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    padding: 35px 0;
+    border-top: 1px solid black;
     &:last-child {
       border-bottom: 0;
     }

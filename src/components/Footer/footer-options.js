@@ -24,7 +24,7 @@ export default {
                     },
                     {
                         title: 'Careers',
-                        route: ''
+                        route: 'careers'
                     },
                     {
                         title: 'Insights',

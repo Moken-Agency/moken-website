@@ -1,0 +1,20 @@
+.title-comp-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 12vw;
+  .title-comp-divider {
+    width: 58px;
+    height: 1px;
+    background-color: black;
+    margin-right: 30px;
+    position: relative;
+    top: -2px;
+  }
+  .text-container {
+    .text {
+      letter-spacing: 4px;
+      line-height: 20px;
+    }
+  }
+}

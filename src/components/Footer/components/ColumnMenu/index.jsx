@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './styles.scss';
 import Text from '../../../../components/Text';
+import { useHistory } from "react-router-dom";
+
 
 const titleStyles = {
     whiteSpace: 'noWrap'
@@ -40,6 +42,9 @@ const ColumnTextComponent = ({title, handleOnClick, index}) => {
 }
 
 const ColumnMenu = ({routes = [], title}) => {
+
+
+
     const handleOnClick = (route) => {
         console.log('Go to ' + route);
     }

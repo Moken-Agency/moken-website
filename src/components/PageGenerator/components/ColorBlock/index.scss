@@ -1,0 +1,12 @@
+.color-block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 130px 150px;
+  margin-bottom: 115px;
+  .text-container {
+    .text {
+      color: white;
+    }
+  }
+}

@@ -6,7 +6,10 @@ import footerOptions from '../../../Footer/footer-options';
 import Burger from "../Burger";
 import Text from '../../../Text';
 import SubMenuItem from "../SubMenuItem";
-import ArrowLeft from '../../../../images/arrow-left.jpg'
+import ArrowLeft from '../../../../images/arrow-left.jpg';
+import { useHistory } from "react-router-dom";
+import useWindowDimensions from "../../../../hooks/useWindowDimensions";
+
 
 const {
     leftMenu, rightMenu, mainMenu,
@@ -18,11 +21,25 @@ const {socialsMediaWhite} = footerOptions;
 
 
 const HeaderMobile = ({isOpen = false, setIsOpen}) => {
+
+    let history = useHistory();
+
     const [subMenu, setSubMenu] = useState(null);
+    const {isMobile} = useWindowDimensions()
+
+
     console.log({subMenu});
 
     const handleGoBack = () => {
         setSubMenu(null)
+    }
+
+    const openMenu = () => {
+        if(isMobile) {
+            setIsOpen(!isOpen)
+        } else {
+            history.push("/menuscrehistoryen")
+        }
     }
     return (
         <section className={'header-mobile-container'} style={{height: isOpen ? '90vh' : '10vh',
@@ -31,9 +48,13 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
                 <div className={'header-mobile-burger-container'}>
                     {isOpen && subMenu ? <div className={'header-mobile-arrow-container'} onClick={handleGoBack}>
                         <img src={ArrowLeft}/>
-                        <Text>Go back</Text>
+                        <Text type={'bold'} containerStyles={{
+                            position: 'relative',
+                            top: 3,
+                            fontSize: 12,
+                            letterSpacing: 3.75}}>{'go back'.toUpperCase()}</Text>
                     </div> : <div/>}
-                    <Burger isOpen={isOpen} setIsOpen={setIsOpen}/>
+                    <Burger isOpen={isOpen} setIsOpen={openMenu}/>
                 </div>
                 {isOpen && <>
                 {!subMenu ?
@@ -52,12 +73,13 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
                     }
                 </div> :
                 <div className={'header-mobile-sub-routs'}>
-                    <Text size={20} textStyles={{color: subMenu.dividerColor, marginBottom: 20}}>{subMenu.title.toUpperCase()}</Text>
+                    <Text size={16} textStyles={{color: subMenu.dividerColor, marginBottom: 30, letterSpacing: 5}}>{subMenu.title.toUpperCase()}</Text>
                     <div>
                     {
                         subMenu.subRouts.map(({title, dividerColor}, index) => {
                             return (
-                                <Text size={15}
+                                <Text size={12}
+                                      textStyles={{letterSpacing: 3.75}}
                                       containerStyles={{marginBottom: 20}}
                                       onClick={() => alert('Go to route!')}>
                                     {title.toUpperCase()}

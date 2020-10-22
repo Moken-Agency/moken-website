@@ -1,0 +1,32 @@
+import React from 'react';
+import Text from '../../../../../Text';
+import './index.scss';
+import arrow from '../../../../../../images/arrow-up-right.png'
+
+const styles = {
+    title: {
+        color: 'white',
+    },
+    description: {
+        color: 'white',
+    },
+    subTitle: {
+        color: 'white',
+        letterSpacing: 4,
+    }
+}
+
+const MenuScreenTopColumn = ({title = '', description = '', subTitle = ''}) => {
+    return (
+        <div className={'menu-screen-top-column-container'}>
+            <Text size={30} type={'semiBold'} textStyles={styles.title} containerStyles={{marginBottom: 30}}>{title}</Text>
+            <Text size={18} type={'light'} textStyles={styles.description} containerStyles={{marginBottom: 30}}>{description}</Text>
+            <div>
+                <Text size={14} type={'semiBold'} textStyles={styles.subTitle}>{subTitle}</Text>
+                <img src={arrow} />
+            </div>
+        </div>
+    )
+}
+
+export default MenuScreenTopColumn

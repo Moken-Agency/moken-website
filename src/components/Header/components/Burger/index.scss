@@ -11,26 +11,12 @@
   .cross-icon {
     width: 2vw;
     height: 2vw;
+    cursor: pointer;
     @media only screen and (max-width: 600px) {
-      width: 10vw;
-      height: 10vw;
+      width: 25px;
+      height: 25px;
       }
     }
-  &:hover {
-    div {
-      transition: .5s;
-      &:nth-child(1) {
-        background-color: orange;
-      }
-      &:nth-child(2) {
-        background-color: red;
-      }
-      &:nth-child(3) {
-        background-color: blue;
-      }
-    }
-
-  }
   div {
     height: 2px;
     margin: 3px 0;
@@ -53,20 +39,20 @@
     height: auto;
     div {
       height: 2px;
-      margin: 8px 0;
+      margin: 3px 0;
 
       &:nth-child(1) {
         //width: 7vw;
-        width: 50px
+        width: 25px
       }
       &:nth-child(2) {
         //width: 4vw;
-        width: 40px
+        width: 22px
 
       }
       &:nth-child(3) {
         //width: 7vw;
-        width: 50px
+        width: 25px
 
       }
 

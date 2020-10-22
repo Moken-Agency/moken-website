@@ -169,12 +169,10 @@ export default {
         },
     ],
     mainMenuTextStyles: {
-        fontSize: 14,
         letterSpacing: 3.6,
     },
     topMenuTextStyles: {
         marginRight: 10,
         letterSpacing: 2.8,
-        fontSize: 11,
     }
 }

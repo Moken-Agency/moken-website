@@ -3,13 +3,13 @@ import './index.scss'
 import SubMenuItem from "../SubMenuItem";
 import Text from "../../../Text";
 import useWindowDimensions from "../../../../hooks/useWindowDimensions";
+import {useHistory} from "react-router-dom";
 
-const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, subRouts = [], dividerColor = 'grey', onClick = () => {}}) => {
-    console.log({onClick});
+const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, subRouts = [], dividerColor = 'grey', onClick = () => {}, route = ''}) => {
     const [hover, setHover] = useState({isHover: false, color: '#000'})
     const {isMobile} = useWindowDimensions()
+    let history = useHistory();
     const onMouseEnter = () => {
-        console.log(isMobile);
         if(!isMobile) {
             setHover({isHover: true, color: dividerColor})
         }
@@ -19,8 +19,17 @@ const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, su
             setHover({isHover: false, color: '#000'})
         }
     }
+
+    const handleOnClick = () => {
+        console.warn('asdasdasdas', subRouts);
+
+        if(!subRouts.length) {
+            console.warn('asdasdasdas');
+            history.push('/' + route)
+        }
+    }
     return (
-        <div className={'menu-main-container'} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={onClick}>
+        <div className={'menu-main-container'} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick={handleOnClick}>
         <div className={'menu-item-container'} style={containerStyles}>
             <Text type={'semiBold'} size={'0.65vw'} textStyles={{...textStyles, color: hover.isHover ? hover.color: '#000'}}>{title.toUpperCase()}</Text>
             {withDivider && <div className={'divider'}/>}

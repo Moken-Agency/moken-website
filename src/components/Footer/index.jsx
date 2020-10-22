@@ -40,9 +40,9 @@ const Footer = ({isOpen, setIsOpen}) => {
     const socialsData = width >= 600 ? socialsMedia : socialsMediaWhite;
 
     return (
-        <div className={'footerContainer'}>
-            <div className={'topFooterBar'}>
-                <div className={'menuColumns'}>
+        <div className={'footer-container'}>
+            <div className={'top-footer-bar'}>
+                <div className={'menu-columns'}>
                     {
                         menuColumns.map(({routes, title}, index) => {
                             return (
@@ -51,7 +51,7 @@ const Footer = ({isOpen, setIsOpen}) => {
                         })
                     }
                 </div>
-                <div className={'sendEmailUpdatesContainer'}>
+                <div className={'send-email-updates-container'}>
                     <img src={Logo} className={'logo'}/>
                     <Text size={'2vw'} type={'thin'} textStyles={joinFirstText}>Join our newsletter</Text>
                     <Text size={'1.3vw'} type={'light'} textStyles={joinSecondText}
@@ -61,15 +61,15 @@ const Footer = ({isOpen, setIsOpen}) => {
                            onChange={(event) => handleChange({name: 'email', text: event.target.value})}/>
                 </div>
             </div>
-            <div className={'bottomFooterBar'}>
-                <div className={'leftFooterBar'}>
+            <div className={'bottom-footer-bar'}>
+                <div className={'left-footer-bar'}>
                     <Text textStyles={textStyle}>Copyright © Moken Startups Inc. 2020</Text>
-                    <div className={'privacyContainer'}>
+                    <div className={'privacy-container'}>
                         <Text textStyles={textStyle} type={'semiBold'} containerStyles={containerStyles}>PRIVACY POLICY</Text>
                         <Text textStyles={textStyle} type={'semiBold'} containerStyles={containerStyles}>TERMS & CONDITIONS</Text>
                     </div>
                 </div>
-                <div className={'socialsContainer'}>
+                <div className={'socials-container'}>
                     {
                         socialsData.map(({image, link}, index) => {
                             return (
