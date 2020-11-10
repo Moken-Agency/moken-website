@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b30ce24ef58d60a5273ceac79bc9cc75",
+    "revision": "f7b49e201aca690c7a3baa465595b78e",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "2cd78efda7a896be4386",
-    "url": "/moken-website/static/css/main.a08286be.chunk.css"
+    "revision": "ddf4002ae4b726d361fc",
+    "url": "/moken-website/static/css/main.22834104.chunk.css"
   },
   {
-    "revision": "fadac66fb8b014bed8bc",
-    "url": "/moken-website/static/js/2.30fb8636.chunk.js"
+    "revision": "e332a0ac9a3caccc8a03",
+    "url": "/moken-website/static/js/2.fe2f697c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.30fb8636.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.fe2f697c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2cd78efda7a896be4386",
-    "url": "/moken-website/static/js/main.507e1c86.chunk.js"
+    "revision": "ddf4002ae4b726d361fc",
+    "url": "/moken-website/static/js/main.804e06f5.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -48,8 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/Latinka Thin.a4ed4f32.otf"
   },
   {
+    "revision": "ca95c035321aa6096d2f60f68f8d6bbf",
+    "url": "/moken-website/static/media/careersMob.ca95c035.png"
+  },
+  {
     "revision": "369cee7c217c815b62aa3916463f82c9",
     "url": "/moken-website/static/media/cross-white.369cee7c.png"
+  },
+  {
+    "revision": "f521b7e1b506b21be117966f238ea979",
+    "url": "/moken-website/static/media/expertise.f521b7e1.png"
+  },
+  {
+    "revision": "bdf01bf9a1cf89c5540bace8f7754bae",
+    "url": "/moken-website/static/media/expertiseMobHeader.bdf01bf9.png"
   },
   {
     "revision": "d2f4ad5c7779027e104621a0c572935e",
@@ -62,6 +74,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/moken-website/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "ae9322f1a0407fd187631a0b6c3d6f33",
+    "url": "/moken-website/static/media/package-first.ae9322f1.svg"
+  },
+  {
+    "revision": "384fd93574cdcd6febaf372b6eecb0b3",
+    "url": "/moken-website/static/media/package-second.384fd935.svg"
   },
   {
     "revision": "415fa24c62ee5da3673d368d62ec3082",
