@@ -1,0 +1,58 @@
+.company-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #cecece;
+  padding: 5vw;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+    div {
+    .company-name {
+      margin-bottom: 1vw;
+      span {
+        letter-spacing: 4px;
+      }
+      @media screen and (max-width: 600px) {
+        margin-bottom: 5.5vw;
+      }
+    }
+    .project-name {
+      @media screen and (max-width: 600px) {
+        margin-bottom: 6vw;
+      }
+    }
+    .company-city {
+      margin-bottom: .5vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 3vw;
+      }
+    }
+    .company-owner {
+      margin-bottom: 3vw;
+    }
+    .company-arrow {
+      //height: 2vw;
+      width: 2vw;
+      position: relative;
+      left: 4vw;
+      @media screen and (max-width: 600px) {
+        height: 10vw;
+        position: initial;
+        width: auto
+      }
+    }
+  }
+  .company-owner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      flex-direction: row;
+      }
+    }
+  .company-description {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}

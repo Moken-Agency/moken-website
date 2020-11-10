@@ -3,17 +3,17 @@ export default {
         {
             title: 'MOKEN AGENCY',
             subtitle: 'Graphic Designer & Illustrator',
-            route: 'designer'
+            route: '/designer'
         },
         {
             title: 'MOKEN STARTUPS',
             subtitle: 'Community Engagement Specialist',
-            route: ''
+            route: '/'
         },
         {
             title: 'MOKEN EVENTS',
             subtitle: 'Event Coordinator',
-            route: ''
+            route: '/'
         },
     ],
     benefits: [

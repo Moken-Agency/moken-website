@@ -1,36 +1,44 @@
-.text-submit {
-  margin-top: 100px;
-  .text {
-    border-bottom: 1px solid;
-    padding-bottom: 8px;
-    cursor: pointer;
-    &:hover {
-      color: grey;
-    }
-  }
-}
-
 .careers-container {
   .careers-first-section {
     display: flex;
     align-items: center;
     padding: 10vw;
     flex-direction: column;
+    @media only screen and (max-width: 600px) {
+      align-items: flex-start;
+      padding: 25vw 10vw;
+    }
     .careers-first-text-container {
       width: 38vw;
-      .careers-first-section-first-title {
+      @media only screen and (max-width: 600px) {
+        width: auto;
+      }
+    .careers-first-section-first-title {
         margin-bottom: 20px;
-        .text {
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 60px;
+      }
+        span {
           letter-spacing: 4px;
         }
       }
       .careers-first-section-second-title {
         margin-bottom: 40px;
+        @media only screen and (max-width: 600px) {
+          span {
+            @media only screen and (max-width: 600px) {
+              line-height: 55px;
+            }
+          }
+        }
       }
       .careers-first-section-third-title {
         margin-bottom: 40px;
         span {
           line-height: 2vw;
+          @media only screen and (max-width: 600px) {
+            line-height: 24px;
+          }
         }
       }
     }
@@ -40,6 +48,9 @@
     height: 800px;
     width: 100vw;
     background-color: red;
+    @media only screen and (max-width: 600px) {
+      height: 180px;
+    }
   }
   .careers-second-section {
     padding: 10vw;
@@ -53,10 +64,16 @@
       justify-content: space-between;
       padding: 0 4vw;
       margin-top: 9vw;
+      @media only screen and (max-width: 600px) {
+       flex-direction: column;
+      }
       .careers-second-subtitle {
         margin: 0;
         padding: 0;
         width: 20vw;
+        @media only screen and (max-width: 600px) {
+          width: 60vw;
+        }
       }
     }
     .opportunities-container {
@@ -90,6 +107,10 @@
         margin-top: 6vw;
         display: flex;
         flex-wrap: wrap;
+        @media only screen and (max-width: 600px) {
+          flex-direction: column;
+          margin-top: 115px;
+        }
       }
     }
   }
@@ -103,24 +124,50 @@
       padding: 9vw 0 9vw 9vw;
       display: flex;
       justify-content: space-between;
-      .careers-black-block-left-container {
+      @media screen and (max-width: 600px) {
+        width: auto;
+        padding: 82px 0 120px 43px;
+      }
+        .careers-black-block-left-container {
         .title-comp-container, .subtitle-comp-container, .description-container  {
           padding-left: 0;
           width: 32vw;
+          @media screen and (max-width: 600px) {
+            width: auto;
+          }
         }
+          .careers-mob-img {
+            display: none;
+            @media screen and (max-width: 600px) {
+              display: block;
+              margin-bottom: 86px;
+              width: 100%;
+            }
+          }
         .title-comp-container {
           margin-bottom: 1vw;
+        }
+        .careers-black-block-title {
+          @media screen and (max-width: 600px) {
+            margin-bottom: 55px;
+          }
         }
         .description-container {
           margin-bottom: 2vw;
         }
         .subtitle-comp-container {
           margin: 5vw 0 2vw 0;
+          @media screen and (max-width: 600px) {
+            margin: 30px 0;
+          }
         }
       }
       .careers-black-block-right-container {
         width: 40vw;
         background-color: red;
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
       }
     }
   }

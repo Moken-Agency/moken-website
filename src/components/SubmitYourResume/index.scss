@@ -1,0 +1,17 @@
+.text-submit {
+  margin-top: 7vw;
+  @media screen and (max-width: 600px) {
+    margin-top: 10vw;
+  }
+  .text {
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+      font-size: 4vw !important;
+    }
+    &:hover {
+      color: grey;
+    }
+  }
+}

@@ -2,11 +2,17 @@
   padding-left: 14vw;
   margin: 4vw 0;
   width: 50vw;
-
+  @media only screen and (max-width: 600px) {
+    width: auto;
+    padding-right: 20vw;
+  }
   .text-container {
     .text {
-      line-height: 63px;
-      letter-spacing: 0.5px;
+      line-height: 5vw;
+      letter-spacing: 0.1vw;
+      @media only screen and (max-width: 600px) {
+        line-height: normal;
+      }
     }
   }
 }

@@ -34,33 +34,31 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
         setSubMenu(null)
     }
 
-    const openMenu = () => {
-        if(isMobile) {
-            setIsOpen(!isOpen)
-        } else {
-            history.push("/menuscrehistoryen")
-        }
+    const closeMenu = () => {
+        history.push("/")
     }
     return (
         <section className={'header-mobile-container'} style={{height: isOpen ? '90vh' : '10vh',
             position: isOpen ? 'absolute' : 'initial'}}>
             <div>
                 <div className={'header-mobile-burger-container'}>
-                    {isOpen && subMenu ? <div className={'header-mobile-arrow-container'} onClick={handleGoBack}>
+                    {subMenu ? <div className={'header-mobile-arrow-container'} onClick={handleGoBack}>
                         <img src={ArrowLeft}/>
                         <Text type={'bold'} containerStyles={{
                             position: 'relative',
                             top: 3,
                             fontSize: 12,
-                            letterSpacing: 3.75}}>{'go back'.toUpperCase()}</Text>
+                            letterSpacing: 3.75
+                        }}>{'go back'.toUpperCase()}</Text>
                     </div> : <div/>}
-                    <Burger isOpen={isOpen} setIsOpen={openMenu}/>
+                    <Burger isOpen={true} setIsOpen={closeMenu}/>
                 </div>
-                {isOpen && <>
+
+                <>
                 {!subMenu ?
                 <div className={'main-menu-header-mobile'}>
                     {
-                        mainMenu.map(({title, subRouts = [], dividerColor}, index) => {
+                        mainMenu.map(({title, subRouts = [], dividerColor, route}, index) => {
                             return (
                                 <MenuItem key={'main menu' + index} title={title} textStyles={mainMenuTextStyles}
                                           containerStyles={{marginRight: '1.5vw'}}
@@ -76,12 +74,12 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
                     <Text size={16} textStyles={{color: subMenu.dividerColor, marginBottom: 30, letterSpacing: 5}}>{subMenu.title.toUpperCase()}</Text>
                     <div>
                     {
-                        subMenu.subRouts.map(({title, dividerColor}, index) => {
+                        subMenu.subRouts.map(({title, dividerColor, route}, index) => {
                             return (
                                 <Text size={12}
                                       textStyles={{letterSpacing: 3.75}}
                                       containerStyles={{marginBottom: 20}}
-                                      onClick={() => alert('Go to route!')}>
+                                      onClick={() => history.push(route)}>
                                     {title.toUpperCase()}
                                 </Text>
                             )
@@ -91,14 +89,16 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
                 </div>
                 }
                 </>
-                }
             </div>
-            {isOpen && !subMenu && <div className={'bottom-menu-header-mobile'}>
+            {!subMenu && <div className={'bottom-menu-header-mobile'}>
                 <div>
                     {
                         [...leftMenu, ...rightMenu].map(({title, route}, index) => {
                             return (
                                 <Text containerStyles={{marginBottom: '3vw'}} size={'4vw'}
+                                      onClick={() => {
+                                          history.push(route)
+                                      }}
                                       textStyles={{textTransform: 'uppercase'}}>
                                     {title}
                                 </Text>
@@ -108,7 +108,7 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
                 </div>
                 <div className={'social-media-container-header-mobile'}>
                     {
-                        socialsMediaWhite.map(({image, link}, index) => {
+                        socialsMediaWhite.map(({image, link, route}, index) => {
                             return (
                                 <a href={link} key={'social media header' + index}>
                                     <img src={image}/>

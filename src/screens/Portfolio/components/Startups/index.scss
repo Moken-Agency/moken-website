@@ -1,0 +1,11 @@
+.startups-container {
+  margin-left: 4vw;
+  @media screen and (max-width: 600px) {
+    margin: 6vw;
+    width: 16vw;
+  }
+  .startups-title-first {
+  }
+  .startups-title-second {
+  }
+}

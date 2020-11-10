@@ -1,0 +1,110 @@
+.expertise-container {
+  .expertise-circle-main {
+    height: 40vw;
+    width: 40vw;
+    background-color: #ffc4af;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //position: absolute;
+    right: -11vw;
+    top: 6vw;
+    z-index: -1;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+      .expertise-circle-second {
+      height: 27vw;
+      width: 27vw;
+      background-color: #263da8;
+      border-radius: 100%;
+    }
+  }
+  .expertise-first-wrapper {
+    padding: 25vw 10vw 20vw 10vw;
+    margin-bottom: 10vw;
+    @media only screen and (max-width: 600px) {
+      background-image: url(../../images/expertiseMobHeader.png);
+      background-repeat: no-repeat;
+      padding: 60vw 10vw 100vw 10vw;
+      background-size: cover;
+    }
+      .expertise-title {
+      span {
+        letter-spacing: .2vw;
+        margin-bottom: 1vw;
+        @media only screen and (max-width: 600px) {
+          margin-bottom: 5vw;
+        }
+      }
+    }
+  }
+  .expertise-second-wrapper {
+    padding: 0 10vw;
+    .expertise-started-subtitle {
+      width: 52vw;
+      @media only screen and (max-width: 600px) {
+        width: auto;
+      }
+    }
+    .expertise-started-title {
+      margin: 0 0 10vw 0;
+      padding: 0;
+    }
+  }
+  .expertise-items-container {
+    padding: 12vw 10vw;
+  }
+  .expertise-bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    .expertise-bottom-block-container {
+      width: 80vw;
+      background-color: black;
+      padding: 10vw 0 10vw 10vw;
+      display: flex;
+      @media only screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+      }
+        .expertise-bottom-info-container {
+        .expertise-bottom-first-info-container {
+          margin-right: 10vw;
+          .expertise-bottom-first-info-title {
+            padding: 0;
+            background-color: black;
+          }
+          .expertise-bottom-first-info-text-first {
+            margin-bottom: 32px;
+          }
+          .expertise-bottom-first-info-text-second {
+            margin-bottom: 32px;
+
+          }
+          .expertise-bottom-first-info-text-third {
+            margin-bottom: 70px;
+
+          }
+        }
+      }
+      .expertise-bottom-btn-container {
+        @media only screen and (max-width: 600px) {
+          padding-right: 10vw;
+          button {
+            width: 100%;
+            &:first-child {
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    img {
+      //width: 50vw
+      width: 100%;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

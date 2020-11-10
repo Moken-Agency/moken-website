@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Header from './components/Header'
 import HeaderMobile from './components/Header/components/HeaderMobile'
-import MenuScreen from './components/Header/components/MenuScreen'
+import MenuScreen from './screens/MenuScreen'
 import Footer from './components/Footer'
 import useWindowDimensions from "./hooks/useWindowDimensions";
 import Other from './screens/Other';
@@ -26,6 +26,16 @@ import PodcastHost from "./screens/PodcastHost";
 import SocialMediaManager from "./screens/SocialMediaManager";
 import YouTubeHost from "./screens/YouTubeHost";
 import Careers from "./screens/Careers";
+import Opportunities from "./screens/Opportunities";
+import Portfolio from "./screens/Portfolio";
+import Events from "./screens/Events";
+import TermsAndConditions from "./screens/TermsAndConditions";
+import PrivacyPolicy from "./screens/PrivacyPolicy";
+import Expertise from "./screens/Expertise";
+import StartUpSmart from "./screens/StartUpSmart";
+import ProductTestingTeam from "./screens/ProductTestingTeam";
+import OurPartners from "./screens/OurPartners";
+import AboutAgency from "./screens/AboutAgency";
 
 const TestHome = () => {
     return (
@@ -37,8 +47,50 @@ const TestHome = () => {
 
 const routsWithHeaderFooter = [
     {
+        path: "/",
+        // path: "/about-agency",
+        component: AboutAgency
+    },
+    {
+        path: "/our-partners",
+        component: OurPartners
+    },
+    {
+        path: "/product-testing-team",
+        component: ProductTestingTeam
+    },
+    {
+        path: "/start-up-smart",
+        component: StartUpSmart
+    },
+    {
+        path: "/expertise",
+        component: Expertise
+    },
+    {
+        path: "/privacy",
+        component: PrivacyPolicy
+    },
+    {
+        path: "/terms",
+        component: TermsAndConditions
+    },
+    {
+        path: "/events",
+        component: Events
+    },
+    {
+        path: "/portfolio",
+        component: Portfolio
+    },
+    {
         path: "/careers",
         component: Careers
+    },
+
+    {
+        path: "/opportunities",
+        component: Opportunities
     },
 
     {
@@ -92,8 +144,12 @@ const routsWithHeaderFooter = [
         component: YouTubeHost
     },
     {
-        path: "/",
+        path: "/backend-developer",
         component: BackendDeveloper
+    },
+    {
+        path: "/",
+        component: Opportunities
     },
 
 
@@ -114,7 +170,7 @@ function App() {
 
   return (
       <Router>
-        <div style={{overflowY: isOpen ? 'hidden' : 'scroll', minHeight: '100vh'}}>
+        <div style={{minHeight: '100vh'}}>
             {/*<MenuScreen isOpen={true} setIsOpen={setIsOpen}/>*/}
 
 
@@ -162,11 +218,7 @@ function App() {
                                           // pass the sub-routes down to keep nesting
                                           return (
                                               <>
-                                              {
-                                                  width >= 600 ?
-                                                  <Header isOpen={isOpen} setIsOpen={setIsOpen}/> :
-                                                  <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen}/>
-                                              }
+                                                  <Header isOpen={isOpen} setIsOpen={setIsOpen}/>
                                                 <route.component {...props} />
                                                   <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
                                               </>

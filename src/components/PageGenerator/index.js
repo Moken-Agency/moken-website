@@ -3,9 +3,9 @@ import Title from "../Title";
 import Description from "../Description";
 import Subtitle from "../Subtitle";
 import './index.scss';
-import ColorBlock from "./components/ColorBlock";
+import ColorBlock from "../ColorBlock";
 import Submit from "./components/Submit";
-import EmailForm from "./components/EmailForm";
+import EmailForm from "../EmailForm";
 
 const PageGenerator = ({data}) => {
     return (
@@ -18,8 +18,9 @@ const PageGenerator = ({data}) => {
                             <Subtitle subtitle={subtitle}/>
                             <Description description={description}/>
                             <Submit submitForm={submit}/>
-                            <ColorBlock colorBlock={colorBlock} colorTitle={colorTitle} colorSubtitle={colorSubtitle}/>
-                            <EmailForm withForm={withForm} />
+                            <ColorBlock backgroundColor={colorBlock} subtitle={colorSubtitle} title={colorTitle}/>
+                            {/*<ColorBlock colorBlock={colorBlock} colorTitle={colorTitle} colorSubtitle={colorSubtitle}/>*/}
+                            <EmailForm withForm={withForm} title={'Stay in the loop & never miss a thing.'}/>
                         </div>
                     )
                 })

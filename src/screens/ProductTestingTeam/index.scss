@@ -1,0 +1,76 @@
+.product-testing-title {
+  padding: 0;
+  margin-bottom: 12vw;
+}
+
+.product-testing-team-container {
+  .product-email-form {
+    padding: 7vw 0;
+  }
+  .product-testing-info-container {
+    padding: 10vw;
+    .product-testing-title-first {
+      margin-bottom: 1vw;
+      span {
+        letter-spacing: 4px;
+      }
+    }
+    .product-testing-title-second {
+      width: 50vw;
+    }
+
+    .joins-container {
+      display: flex;
+      .joins-title {
+        align-items: flex-start;
+        margin-right: 15vw;
+      }
+    }
+    .circle-container {
+      margin: 8vw 0 12vw 0;
+      display: flex;
+      justify-content: flex-end;
+      div {
+        width: 8vw;
+        height: 8vw;
+        border-radius: 100%;
+        background-color: #263da8;
+        margin: 0 2vw;
+      }
+    }
+    .product-testing-title {
+      padding: 0;
+      margin-bottom: 12vw;
+    }
+    .product-testing-sub-container {
+      display: flex;
+
+      justify-content: space-between;
+      .enthusiastic-title {
+        width: 75vw;
+        margin-right: 6vw;
+        align-items: flex-start;
+      }
+      .role-container {
+        .role-title {
+          margin-bottom: 6.8vw;
+        }
+        .product-benefits-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 6.8vw;
+          margin-bottom: 32vw;
+          .product-benefit-container {
+            width: 20vw;
+            margin-bottom: 3vw;
+            .product-benefit-title {
+              margin-bottom: 1.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

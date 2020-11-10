@@ -22,7 +22,8 @@ const containerRouteStyle = {
     marginBottom: '0.5vw'
 }
 
-const ColumnTextComponent = ({title, handleOnClick, index}) => {
+const ColumnTextComponent = ({title, index, route}) => {
+    let history = useHistory();
 
     const [color, setColor] = useState( 'black');
     const onMouseEnter = () => {
@@ -37,24 +38,20 @@ const ColumnTextComponent = ({title, handleOnClick, index}) => {
               size={'.75vw'}
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
-              containerStyles={containerRouteStyle} onClick={handleOnClick}>{title}</Text>
+              onClick={() => history.push(route)}
+              containerStyles={containerRouteStyle}>{title}</Text>
     )
 }
 
 const ColumnMenu = ({routes = [], title}) => {
 
 
-
-    const handleOnClick = (route) => {
-        console.log('Go to ' + route);
-    }
-
     return (
         <div className={'column-menu-container'}>
             <Text type={'thin'} size={'1.9vw'} textStyles={titleStyles} containerStyles={containerTitleStyles}>{title}</Text>
             {
                 routes.map(({title, route}, index) => {
-                    return <ColumnTextComponent key={index + 'ColumnTextComponent'} handleOnClick={handleOnClick}
+                    return <ColumnTextComponent key={index + 'ColumnTextComponent'}
                                                 title={title} route={route}/>
                 })
             }

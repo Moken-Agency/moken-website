@@ -3,7 +3,7 @@ import './styles.scss'
 import footerOptions from './footer-options';
 import ColumnMenu from "./components/ColumnMenu";
 import Text from '../../components/Text';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.svg';
 import Input from '../Input';
 import useValidation from '../../hooks/useValidation';
 import useWindowDimensions from '../../hooks/useWindowDimensions';

@@ -4,17 +4,35 @@
   margin-bottom: 30px;
   padding-left: 12vw;
   .title-comp-divider {
-    width: 58px;
+    width: 3vw;
     height: 1px;
     background-color: black;
-    margin-right: 30px;
+    margin-right: 2vw;
     position: relative;
     top: -2px;
   }
   .text-container {
     .text {
-      letter-spacing: 4px;
-      line-height: 20px;
+      letter-spacing: 0.35vw;
+      line-height: 1.5vw;
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .title-comp-container {
+    .title-comp-divider {
+      width: 12vw;
+      margin-right: 8vw;
+    }
+    .text-container {
+      width: 50vw;
+      .text {
+        font-size: 3vw !important;
+        letter-spacing: 1vw;
+        line-height: 20px;
+      }
+    }
+  }
+}
+

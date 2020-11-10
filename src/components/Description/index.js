@@ -2,14 +2,14 @@ import React from 'react';
 import Text from '../Text';
 import './index.scss';
 
-const Description = ({description = [], color, className = '', size = 12}) => {
+const Description = ({description = [], color, className = '', size = 12, mobSize = size}) => {
     return (
         <>
             {description.length ? <div className={`description-container ${className}`}>
                 {
                     description.map(({title}, index) => {
                         return (
-                            <Text size={size} key={title + index} color={color}>{title}</Text>
+                            <Text size={size} mobSize={mobSize} key={title + index} color={color}>{title}</Text>
                         )
                     })
                 }

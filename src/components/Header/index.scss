@@ -2,6 +2,7 @@
 .menu-container {
   display: flex;
   flex-direction: row;
+  background-color: white;
 }
 .bar-container {
   display: flex;
@@ -10,6 +11,8 @@
   justify-content: space-between;
   padding: 0 10vw;
   border-bottom: 1px solid grey;
+  background-color: white;
+
 }
 .header-container {
   .bar-container {
@@ -22,5 +25,20 @@
 @media only screen and (max-width: 600px) {
   .header-container {
     //display: none;
+    .bar-container {
+      &:nth-child(1) {
+        display: none;
+      }
+      &:nth-child(2) {
+        padding: 4vw;
+        //justify-content: flex-end;
+        img {
+          height: 5vw;
+        }
+        .menu-container {
+          display: none;
+        }
+      }
+    }
   }
 }

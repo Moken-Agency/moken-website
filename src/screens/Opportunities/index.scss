@@ -1,0 +1,124 @@
+.opportunities-container {
+  padding: 5vw 0;
+  @media screen and (max-width: 600px){
+    padding: 20vw 0;
+  }
+  .opportunities-title-container {
+    .main-title {
+      margin-left: 14vw;
+      margin-bottom: 1vw;
+      letter-spacing: 4px;
+      @media screen and (max-width: 600px){
+        span {
+          font-size: 3vw !important;
+        }
+      }
+    }
+    .subtitle {
+      width: 13vw;
+      margin: 0;
+      @media screen and (max-width: 600px){
+        width: auto;
+        margin-top: 8vw;
+        margin-bottom: 16vw;
+        span {
+          font-size: 6vw !important;
+        }
+      }
+    }
+  }
+  .opportunities-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .opportunities-image-block-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5vw 0;
+    .opportunities-image-block {
+      width: 75vw;
+      height: 25vw;
+      background-color: black;
+    }
+  }
+  .opportunities-second-title {
+    @media screen and (max-width: 600px){
+      width: auto;
+      padding-right: 14vw;
+      margin-bottom: 16vw;
+      margin-top: 16vw;
+      span {
+        font-size: 7vw !important;
+        line-height: 8vw !important;
+      }
+    }
+  }
+  .opportunities-form-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 14vw;
+    @media screen and (max-width: 600px){
+      flex-direction: column-reverse;
+    }
+    .opportunities-form-left-container, .opportunities-form-right-container {
+      width: 30vw;
+      @media screen and (max-width: 600px){
+        width: auto;
+      }
+    }
+    .opportunities-form-left-container {
+      .subtitle {
+        margin-top: 0;
+        padding-left: 0;
+        margin-bottom: 2vw;
+        @media screen and (max-width: 600px) {
+          width: 55vw;
+          margin-bottom: 8vw;
+          span {
+            font-size: 7vw !important;
+          }
+        }
+      }
+      .left-second-title {
+        @media screen and (max-width: 600px) {
+          margin-bottom: 15vw;
+          span {
+            font-size: 2.6vw !important;
+          }
+        }
+      }
+      .input-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vw;
+        @media screen and (max-width: 600px) {
+          flex-direction: column
+        }
+      }
+    }
+    .opportunities-form-right-container {
+      @media screen and (max-width: 600px) {
+        margin-bottom: 15vw;
+      }
+      .submit {
+        margin-top: 5vw;
+      }
+      .right-first-title, .right-second-title {
+        @media screen and (max-width: 600px) {
+          margin-bottom: 4vw !important;
+          span {
+            font-size: 3.5vw !important;
+
+          }
+        }
+      }
+      .right-second-title {
+        @media screen and (max-width: 600px) {
+          margin-bottom: 15vw !important;
+        }
+      }
+    }
+  }
+
+}

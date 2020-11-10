@@ -1,0 +1,51 @@
+.portfolio-container {
+  .portfolio-section-info {
+    padding: 5vw 14vw;
+    @media screen and (max-width: 600px) {
+      padding: 20vw 10vw;
+    }
+    .portfolio-title-first {
+        margin-bottom: 1.5vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 4vw;
+      }
+    }
+    .portfolio-title-second {
+      width: 40vw;
+      @media screen and (max-width: 600px) {
+        width: 63vw;
+        margin-bottom: 15vw;
+      }
+    }
+    .portfolio-startups-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 8vw;
+      flex-wrap: wrap;
+    }
+    .companies-container {
+      margin-bottom: 10vw;
+    }
+  }
+  //.block-container {
+  //  padding: 6vw 10vw;
+  //  background-color: #263da8;
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //  @media screen and (max-width: 600px) {
+  //    flex-direction: column;
+  //    padding: 20vw 12vw;
+  //    align-items: flex-start;
+  //    margin-bottom: 40vw;
+  //  }
+  //  .block-container-history {
+  //    @media screen and (max-width: 600px) {
+  //      margin-bottom: 20vw;
+  //    }
+  //  }
+  //  .block-container-connect {
+  //
+  //  }
+  //}
+}

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import MenuItem from './components/MenuItem';
 import './index.scss'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo.svg'
 import Burger from "./components/Burger";
 import headerOptions from './header-options';
 import { useHistory } from "react-router-dom";
@@ -45,21 +45,23 @@ const Header = ({isOpen, setIsOpen}) => {
                 </div>
                 <div className={'bar-container'}>
                     <img src={Logo} className={'logo'}/>
-                    <div className={'menu-container'}>
-                        {
-                            mainMenu.map(({title, subRouts = [], dividerColor}, index) => {
-                                return (
-                                    <MenuItem key={'main menu' + index} title={title} textStyles={mainMenuTextStyles}
-                                              containerStyles={{marginRight: '1.5vw'}}
-                                              subRouts={subRouts}
-                                              dividerColor={dividerColor}
-                                    />
-                                )
-                            })
-                        }
+                    <div style={{display: 'flex'}}>
+                        <div className={'menu-container'}>
+                            {
+                                mainMenu.map(({title, subRouts = [], dividerColor}, index) => {
+                                    return (
+                                        <MenuItem key={'main menu' + index} title={title} textStyles={mainMenuTextStyles}
+                                                  containerStyles={{marginRight: '1.5vw'}}
+                                                  subRouts={subRouts}
+                                                  dividerColor={dividerColor}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+                        {/*<Burger setIsOpen={() => history.push('/designer')}/>*/}
+                        <Burger setIsOpen={() => history.push('/menuscreen')}/>
                     </div>
-                    {/*<Burger setIsOpen={() => history.push('/designer')}/>*/}
-                    <Burger setIsOpen={() => history.push('/menuscreen')}/>
                 </div>
             </div>
     )

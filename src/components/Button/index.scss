@@ -1,0 +1,39 @@
+.button-container {
+ padding: 1.7vw 3vw;
+  outline: none;
+  font-size: 1vw;
+  font-family: "Latinka SemiBold", sans-serif;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  @media screen and (max-width: 600px) {
+    font-size: 3vw;
+    padding: 4vw 6vw;
+  }
+    &:hover {
+    opacity: .5;
+  }
+}
+.black {
+  background-color: black;
+  color: white;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+.bordered {
+  border: 1px solid black;
+}
+
+.bordered-white {
+  border: 1px solid white;
+}
+
+.bordered-bottom {
+  padding: 0 0 0.5vw 0;
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+

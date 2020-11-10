@@ -2,22 +2,22 @@ export default {
     leftMenu: [
         {
             title: 'Investors',
-            route: 'investors',
+            route: '/investors',
             withDivider: true
         },
         {
             title: 'Partners',
-            route: 'partners',
+            route: '/partners',
             withDivider: true
         },
         {
             title: 'Insights',
-            route: 'insights',
+            route: '/insights',
             withDivider: true
         },
         {
             title: 'Careers',
-            route: 'careers',
+            route: '/careers',
         },
     ],
     rightMenu: [
@@ -44,18 +44,27 @@ export default {
             subRouts: [
                 {
                     title: 'ABOUT MOKEN',
+                    route: '/'
+
                 },
                 {
                     title: 'PEOPLE & LEADERSHIP',
+                    route: '/'
+
                 },
                 {
                     title: 'CLIENT RESULTS',
+                    route: '/'
+
                 },
                 {
                     title: 'OUR PARTNERS',
+                    route: '/our-partners'
+
                 },
                 {
                     title: 'PORTFOLIO',
+                    route: '/portfolio'
                 },
             ]
         },
@@ -76,10 +85,12 @@ export default {
                 },
                 {
                     title: 'STARTUPSMART PACKAGES',
+                    route: '/start-up-smart'
 
                 },
                 {
                     title: 'PRODUCT TESTING TEAM',
+                    route: '/product-testing-team'
 
                 },
             ]
@@ -142,6 +153,7 @@ export default {
             subRouts: [
                 {
                     title: 'UPCOMING EVENTS',
+                    route: '/events'
                 },
                 {
                     title: 'HOST AN EVENT',

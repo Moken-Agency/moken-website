@@ -5,7 +5,8 @@ import Text from "../../../Text";
 import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 import {useHistory} from "react-router-dom";
 
-const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, subRouts = [], dividerColor = 'grey', onClick = () => {}, route = ''}) => {
+const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, subRouts = [],
+                      dividerColor = 'grey', onClick = () => {}, route = ''}) => {
     const [hover, setHover] = useState({isHover: false, color: '#000'})
     const {isMobile} = useWindowDimensions()
     let history = useHistory();
@@ -21,11 +22,11 @@ const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, su
     }
 
     const handleOnClick = () => {
-        console.warn('asdasdasdas', subRouts);
-
+        console.log('handleOnClick');
         if(!subRouts.length) {
-            console.warn('asdasdasdas');
-            history.push('/' + route)
+            history.push(route)
+        } else {
+            onClick()
         }
     }
     return (
@@ -36,9 +37,9 @@ const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, su
         </div>
             {subRouts.length ? <div className={'sub-routs'} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 {
-                    subRouts.map(({title = ''}, index) => {
+                    subRouts.map(({title = '', route = ''}, index) => {
                         return (
-                          <SubMenuItem key={'sub routs' + index} title={title} dividerColor={dividerColor}/>
+                          <SubMenuItem key={'sub routs' + index} title={title} dividerColor={dividerColor} route={route}/>
                         )
                     })
                 }
