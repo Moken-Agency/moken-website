@@ -74,6 +74,7 @@ export default {
             subRouts: [
                 {
                     title: 'About agency',
+                    route: '/about-agency'
                 },
                 {
                     title: 'Expertise',

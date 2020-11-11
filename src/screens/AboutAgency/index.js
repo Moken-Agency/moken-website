@@ -40,7 +40,7 @@ const AboutAgency = () => {
     }
 
     const imgDynamicStyles = {
-        // height: isButtonVisible ? '6vw' : 0,
+        height: isButtonVisible ? '2vw' : 0,
         opacity: isButtonVisible ? 1 : 0,
 
     }

@@ -47,8 +47,7 @@ const TestHome = () => {
 
 const routsWithHeaderFooter = [
     {
-        path: "/",
-        // path: "/about-agency",
+        path: "/about-agency",
         component: AboutAgency
     },
     {
