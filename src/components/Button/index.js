@@ -3,12 +3,12 @@ import './index.scss';
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Button = ({type = 'unborded', color = '', title = '', containerStyles = {}, additionalComponent,
-                    imgStyles = {}, onClick = () => {}, size = '1vw', mobSize = '3vw'}) => {
+                    imgStyles = {}, onClick = () => {}, size = '1vw', mobSize = '3vw', className = ''}) => {
     const {isMobile} = useWindowDimensions()
 
 
     return (
-        <button className={`button-container ${type} ${color}`}
+        <button className={`button-container ${type} ${color} ${className}`}
                 onClick={onClick}
                 style={{...containerStyles, fontSize: isMobile ? mobSize : size}}>
             {title}

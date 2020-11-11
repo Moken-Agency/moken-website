@@ -28,7 +28,7 @@ import YouTubeHost from "./screens/YouTubeHost";
 import Careers from "./screens/Careers";
 import Opportunities from "./screens/Opportunities";
 import Portfolio from "./screens/Portfolio";
-import Events from "./screens/Events";
+import Events from "./screens/UpcomingEvents";
 import TermsAndConditions from "./screens/TermsAndConditions";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import Expertise from "./screens/Expertise";
@@ -36,6 +36,8 @@ import StartUpSmart from "./screens/StartUpSmart";
 import ProductTestingTeam from "./screens/ProductTestingTeam";
 import OurPartners from "./screens/OurPartners";
 import AboutAgency from "./screens/AboutAgency";
+import UpcomingEvents from "./screens/UpcomingEvents";
+import Community from "./screens/Community";
 
 const TestHome = () => {
     return (
@@ -46,6 +48,10 @@ const TestHome = () => {
 }
 
 const routsWithHeaderFooter = [
+    {
+        path: "/community",
+        component: Community
+    },
     {
         path: "/about-agency",
         component: AboutAgency
@@ -75,8 +81,8 @@ const routsWithHeaderFooter = [
         component: TermsAndConditions
     },
     {
-        path: "/events",
-        component: Events
+        path: "/upcoming-events",
+        component: UpcomingEvents
     },
     {
         path: "/portfolio",

@@ -5,22 +5,17 @@ import Title from "../../components/Title";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import SecondImage from "../../images/package-second.svg";
 import options from "./options";
-import Explore from "./components/Explore";
+import Explore from "../../components/Explore";
 import ArrowUpRight from '../../images/arrow-up-right.png'
 import SubmitYourResume from "../../components/SubmitYourResume";
-import CommunityPartner from "../OurPartners/components/CommunityPartner";
+import CommunityPartner from "../../components/CommunityPartner";
 import EmailForm from "../../components/EmailForm";
+import Swiper from "../../components/Swiper";
 
 
 const AboutAgency = () => {
     const {isMobile} = useWindowDimensions();
-    const [isButtonVisible, setIsButtonVisible] = useState(true)
 
-    const scrollToEnd = () => {
-        const elem = document.getElementById('explores-container');
-        elem.scrollLeft = elem.scrollWidth;
-        setIsButtonVisible(false)
-    }
     const titleStyles = {
         fontSize: '3.7vw',
         fontFamily: 'Latinka ExtraLight',
@@ -31,29 +26,6 @@ const AboutAgency = () => {
         width: '30vw'
     }
 
-    const buttonDynamicStyles = {
-        opacity: isButtonVisible ? 1 : 0,
-        // width: isButtonVisible ? '6vw' : 0,
-        // height: isButtonVisible ? '6vw' : 0,
-        padding: isButtonVisible ? '3vw' : 0
-
-    }
-
-    const imgDynamicStyles = {
-        height: isButtonVisible ? '2vw' : 0,
-        opacity: isButtonVisible ? 1 : 0,
-
-    }
-
-    const onScroll = (event) => {
-        const elem = document.getElementById('explores-container');
-        if(elem.scrollLeft + elem.offsetWidth > elem.offsetWidth) {
-            setIsButtonVisible(false)
-        } else {
-            setIsButtonVisible(true)
-
-        }
-    }
     //
     // function() {
     //     let style = { transform: 'translateY(0px)' };
@@ -114,7 +86,7 @@ const AboutAgency = () => {
                       type={'extraLight'}>We increase website leads, maximize revenue and produce.</Text>
             </div>
 
-            <div className={'explores-container'} id={'explores-container'} onScroll={onScroll}>
+            <Swiper>
                 {
                     options.map((option, index) => {
                         return (
@@ -122,10 +94,8 @@ const AboutAgency = () => {
                         )
                     })
                 }
-              <div className={'explores-button'} style={buttonDynamicStyles} onClick={scrollToEnd}>
-                    <img src={ArrowUpRight} style={imgDynamicStyles}/>
-                </div>
-            </div>
+            </Swiper>
+
 
             <Title className={'partners-title'} title={'OUR IMPACT'} />
 

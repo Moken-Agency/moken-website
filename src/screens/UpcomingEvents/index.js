@@ -10,7 +10,7 @@ import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-const Events = () => {
+const UpcomingEvents = () => {
     const history = useHistory();
     const {isMobile} = useWindowDimensions()
 
@@ -41,4 +41,4 @@ const Events = () => {
     )
 }
 
-export default Events
+export default UpcomingEvents

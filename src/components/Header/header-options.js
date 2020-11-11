@@ -78,7 +78,7 @@ export default {
                 },
                 {
                     title: 'Expertise',
-
+                    route: '/expertise'
                 },
                 {
                     title: 'SPRINTS & ROADMAPS',
@@ -104,6 +104,7 @@ export default {
             subRouts: [
                 {
                     title: 'ABOUT THE COMMUNITY',
+                    route: '/community'
                 },
                 {
                     title: 'FOR STARTUPS',
@@ -154,7 +155,7 @@ export default {
             subRouts: [
                 {
                     title: 'UPCOMING EVENTS',
-                    route: '/events'
+                    route: '/upcoming-events'
                 },
                 {
                     title: 'HOST AN EVENT',

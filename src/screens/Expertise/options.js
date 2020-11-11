@@ -50,7 +50,7 @@ export default {
             route: ''
         },
         {
-            title: 'Events & Launch Activations',
+            title: 'UpcomingEvents & Launch Activations',
             route: ''
         },
         {

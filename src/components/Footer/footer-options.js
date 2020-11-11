@@ -12,7 +12,7 @@ export default {
                     },
                     {
                         title: 'Our Partners',
-                        route: ''
+                        route: '/our-partners'
                     },
                     {
                         title: 'Client Results',
@@ -71,7 +71,7 @@ export default {
                     },
                     {
                         title: 'Product Testing Team',
-                        route: ''
+                        route: '/product-testing-team'
                     },
                     {
                         title: 'Educate the Next Generation',

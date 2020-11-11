@@ -8,6 +8,7 @@ import Input from '../Input';
 import useValidation from '../../hooks/useValidation';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import validationRules from '../../constans/validation-rules';
+import {useHistory} from "react-router-dom";
 
 
 const { menuOption, socialsMedia, socialsMediaWhite, styles} = footerOptions;
@@ -16,6 +17,7 @@ const {joinFirstText, joinSecondText} = styles;
 
 const textStyle = {
     color: 'white',
+    cursor: 'pointer'
 };
 
 const containerStyles = {
@@ -37,6 +39,8 @@ const Footer = ({isOpen, setIsOpen}) => {
         errors,
         isSubmitting,
     } = useValidation({email: ''}, validationRules.sendEmailValidation);
+    let history = useHistory();
+
     const socialsData = width >= 600 ? socialsMedia : socialsMediaWhite;
 
     return (
@@ -65,8 +69,10 @@ const Footer = ({isOpen, setIsOpen}) => {
                 <div className={'left-footer-bar'}>
                     <Text textStyles={textStyle}>Copyright © Moken Startups Inc. 2020</Text>
                     <div className={'privacy-container'}>
-                        <Text textStyles={textStyle} type={'semiBold'} containerStyles={containerStyles}>PRIVACY POLICY</Text>
-                        <Text textStyles={textStyle} type={'semiBold'} containerStyles={containerStyles}>TERMS & CONDITIONS</Text>
+                        <Text onClick={() => history.push('/privacy')} textStyles={textStyle}
+                              type={'semiBold'} containerStyles={containerStyles}>PRIVACY POLICY</Text>
+                        <Text onClick={() => history.push('/terms')} textStyles={textStyle}
+                              type={'semiBold'} containerStyles={containerStyles}>TERMS & CONDITIONS</Text>
                     </div>
                 </div>
                 <div className={'socials-container'}>

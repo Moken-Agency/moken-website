@@ -24,7 +24,7 @@ export default {
             ]},
         {title: 'EXPLORE', routs: [
                 {title: 'Educate the Next Generation', route: ''},
-                {title: 'Upcoming Events', route: ''},
+                {title: 'Upcoming UpcomingEvents', route: ''},
                 {title: 'The Ecosystem', route: ''},
                 {title: 'The Science of Moken', route: ''},
                 {title: 'Innovation Week', route: ''},

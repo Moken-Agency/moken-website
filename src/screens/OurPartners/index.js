@@ -2,7 +2,7 @@ import React from "react";
 import Text from "../../components/Text";
 import Title from "../../components/Title";
 import './index.scss';
-import CommunityPartner from "./components/CommunityPartner";
+import CommunityPartner from "../../components/CommunityPartner";
 import SubmitYourResume from "../../components/SubmitYourResume";
 import ArrowUpRight from '../../images/arrow-up-right.png';
 import options from "./options";

@@ -45,34 +45,7 @@
   .our-partners-info-container {
 
   }
-  .explores-container {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    display: flex;
-    padding: 4vw 12vw;
-    position: relative;
-    .explores-button {
-      position: absolute;
-      //width: 6vw;
-      //height: 6vw;
-      padding: 3vw;
-      right: 5vw;
-      top: 13vw;
-      background-color: black;
-      border-radius: 100%;
-      transition: 1s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      img {
-        height: 2vw;
-      }
-      &:hover {
-        opacity: .6;
-      }
-    }
-  }
+
   .our-partners-help-clients-container {
     padding: 4vw 14vw;
     margin-bottom: 5vw;
