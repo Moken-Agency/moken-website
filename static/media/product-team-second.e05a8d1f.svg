@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="397" height="324" viewBox="0 0 397 324">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="#263DA8" d="M99.168 422.955c109.72 0 198.664-88.871 198.664-198.5 0-109.628-88.945-198.5-198.664-198.5v397z" transform="translate(-1118 -2277) translate(1118 2277) rotate(90 198.5 224.455)"/>
+                    <path fill="#FFC4AF" fill-rule="nonzero" d="M323.734 124.91C323.734 55.925 267.855 0 198.926 0 129.996 0 74.118 55.924 74.118 124.91h249.616z" transform="translate(-1118 -2277) translate(1118 2277)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
