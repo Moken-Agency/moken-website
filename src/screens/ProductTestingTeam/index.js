@@ -6,6 +6,8 @@ import options from "./options";
 import Join from "./components/Join";
 import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
+import ProductTestingTeamCircles from '../../images/product-team.svg';
+import ProductTestingTeamCircle from '../../images/product-team-second.svg';
 
 const {benefits, joins} = options;
 
@@ -16,29 +18,22 @@ const ProductTestingTeam = () => {
                 <Text className={'product-testing-title-first'} size={16} type={'semiBold'}>PRODUCT TESTING TEAM</Text>
                 <Text className={'product-testing-title-second'} size={75} type={'thin'}>The power to test what is impossible with exclusive user testing. </Text>
                 <div className={'circle-container'}>
-                    <div className={'circle-first'}>
-                        {/*<div/>*/}
-                    </div>
-                    <div className={'circle-second'}>
-                        {/*<div/>*/}
-                    </div>
-                    <div className={'circle-third'}>
-                        {/*<div/>*/}
-                    </div>
-                    <div className={'circle-forth'}>
-                        {/*<div/>*/}
-                    </div>
+                   <img src={ProductTestingTeamCircles} />
                 </div>
                 <Title title={'TEAM OVERVIEW'} className={'product-testing-title'}/>
                 <div className={'product-testing-sub-container'}>
                     <Text className={'enthusiastic-title'}
                           type={'extraLight'} size={55}>Enthusiastic individuals working together to create extraordinary startups</Text>
                     <div className={'role-container'}>
-                        <Text className={'role-title'} size={14} type={'light'}>Our role consists of taking the time to understand your business model, and suggesting
+                        <Text className={'role-title'} size={14} type={'light'}
+                              textStyles={{lineHeight: '35px'}}
+                        containerStyles={{width: '29.5vw'}}>Our role consists of taking the time to understand your business model, and suggesting
                             creative and high-performing digital strategies. Our avant-garde tactics are in line with
                             the current market, blend seamlessly with our clients’ operational realities, and eliminate
                             risks that aren’t necessary.</Text>
-                        <Text size={14} type={'semiBold'}>THE BENEFITS OF COLLABORATION</Text>
+                        <Text size={14}
+                              type={'semiBold'}
+                              textStyles={{letterSpacing: 4}}>THE BENEFITS OF COLLABORATION</Text>
                         <div className={'product-benefits-container'}>
                             {
                                 benefits.map(({title, subtitle}, index) => {
@@ -52,9 +47,10 @@ const ProductTestingTeam = () => {
                             }
                         </div>
                     </div>
+                    <img src={ProductTestingTeamCircle} className={'absolute-circle'} />
                 </div>
 
-                <Title title={'TEAM OVERVIEW'} className={'product-testing-title'}/>
+                <Title title={'HOW IT WORKS'} className={'product-testing-title'} size={14}/>
 
                 <div className={'joins-container'}>
                     <Text className={'joins-title'} size={55} type={'extraLight'}>Join Us Today.</Text>
@@ -74,7 +70,7 @@ const ProductTestingTeam = () => {
             </div>
 
             <ColorBlock  backgroundColor={'#ffc4af'} title={'Interested in getting exclusive access? \n' +
-            'Request more information.'} subtitle={'APPLY NOW'} textColor={'black'} />
+            'Request more information.'} subtitle={'APPLY NOW'} size={'3.7vw'} textColor={'black'} withIcon />
 
             <EmailForm title={'Stay in the loop & never miss a thing.'}
                        withForm

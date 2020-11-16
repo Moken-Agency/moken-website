@@ -38,6 +38,16 @@ import OurPartners from "./screens/OurPartners";
 import AboutAgency from "./screens/AboutAgency";
 import UpcomingEvents from "./screens/UpcomingEvents";
 import Community from "./screens/Community";
+import Branding from "./screens/Branding";
+import StrategyAdvisory from "./screens/StrategyAdvisory";
+import ProgramDrivenMarketing from "./screens/ProgramDrivenMarketing";
+import ProductDevelopment from "./screens/ProductDevelopment";
+import ProductDesign from "./screens/ProductDesign";
+import MarketResearchValidation from "./screens/MarketResearchValidation";
+import DesignDevelop from "./screens/DesignDevelop";
+import CommunityDevelopment from "./screens/CommunityDevelopment";
+import ProductStrategy from "./screens/ProductStrategy";
+import PartnershipPrograms from "./screens/PartnershipPrograms";
 
 const TestHome = () => {
     return (
@@ -48,6 +58,43 @@ const TestHome = () => {
 }
 
 const routsWithHeaderFooter = [
+
+    {
+        path: "/partnership-programs",
+        component: PartnershipPrograms
+    },
+    {
+        path: "/product-strategy",
+        component: ProductStrategy
+    },
+    {
+        path: "/community-development",
+        component: CommunityDevelopment
+    },{
+        path: "/design-develop",
+        component: DesignDevelop
+    },{
+        path: "/market-research-validation",
+        component: MarketResearchValidation
+    },{
+        path: "/product-design",
+        component: ProductDesign
+    },{
+        path: "/product-development",
+        component: ProductDevelopment
+    },
+    {
+        path: "/program-driven-marketing",
+        component: ProgramDrivenMarketing
+    },
+    {
+        path: "/strategy-advisory",
+        component: StrategyAdvisory
+    },
+    {
+        path: "/branding",
+        component: Branding
+    },
     {
         path: "/community",
         component: Community

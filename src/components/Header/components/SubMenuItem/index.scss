@@ -17,13 +17,16 @@
     left: 0
   }
   span {
-    color: black;
+    color: grey;
     padding: 0 2vw;
   }
   &:hover {
     background-color: #e8e8e8;
 
     transition: .5s;
+    span {
+      color: black !important;
+    }
 
     .sub-menu-divider {
       display: block;

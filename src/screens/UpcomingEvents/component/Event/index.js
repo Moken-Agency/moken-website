@@ -14,8 +14,8 @@ const Event = () => {
                 <Title title={'Event date'.toUpperCase()} containerStyles={{padding: 0, whiteSpace: 'nowrap'}}/>
             </div>
             <div>
-                <div style={{padding: '5vw 8vw'}}>
-                    <Text size={isMobile ? '9vw' : '4.5vw'}
+                <div style={{padding: '4.1vw 9.5vw 2vw 9.5vw'}}>
+                    <Text size={isMobile ? '9vw' : '3.4vw'}
                           type={'extraLight'} containerStyles={{marginBottom: '2vw'}}>Event title goes here</Text>
                     <Text  size={isMobile ? '4vw' : '1.6vw'}
                            type={'light'}

@@ -11,7 +11,7 @@ const SubMenuItem = ({title = '', dividerColor = '#000', route}) => {
             <div className={'sub-menu-divider'} style={{backgroundColor: dividerColor}}/>
             <div>
                 {/*<div className={'sub-menu-divider'}/>*/}
-                <Text size={'.8vw'} type={'semiBold'}>{title.toUpperCase()}</Text>
+                <Text size={'.8vw'} type={'semiBold'} color={'grey'}>{title.toUpperCase()}</Text>
             </div>
         </button>
     )

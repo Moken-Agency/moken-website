@@ -4,7 +4,7 @@
 }
 
 .our-partners-info-container {
-  padding: 10vw 0 10vw 25vw;
+  padding: 10.5vw 0 9vw 26vw;
   width: 35vw;
   @media only screen and (max-width: 600px) {
     padding: 10vw;
@@ -13,6 +13,11 @@
 }
 
 .our-partners-circles {
+  img {
+    height: 31vw;
+    margin-right: 5.5vw;
+    margin-bottom: 12.5vw;
+  }
   @media only screen and (max-width: 600px) {
     margin-top: 10vw;
   }
@@ -20,12 +25,12 @@
 
 .our-partners-second-info-container {
   padding: 0 10vw 0 14vw;
-
+  width: 55vw;
 }
 .our-partners-inline-info {
   display: flex;
   justify-content: space-between;
-  padding-top: 5vw;
+  padding-top: 3.5vw;
   margin-bottom: 18vw;
   div {
     width: 35vw;
@@ -41,8 +46,15 @@
     }
   }
 }
+
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12vw;
+}
+
 .comm-manager-container {
-  padding: 14vw;
+  padding: 7vw 11.3vw;
   display: flex;
   justify-content: space-between;
   @media only screen and (max-width: 600px) {

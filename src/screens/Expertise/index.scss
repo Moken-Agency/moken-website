@@ -22,7 +22,7 @@
     }
   }
   .expertise-first-wrapper {
-    padding: 25vw 10vw 20vw 10vw;
+    padding: 25vw 10vw 10.5vw 10vw;
     margin-bottom: 10vw;
     @media only screen and (max-width: 600px) {
       background-image: url(../../images/expertiseMobHeader.png);
@@ -31,6 +31,7 @@
       background-size: cover;
     }
       .expertise-title {
+        margin-bottom: .5vw;
       span {
         letter-spacing: .2vw;
         margin-bottom: 1vw;
@@ -40,46 +41,54 @@
       }
     }
   }
+  .expertise-started-title {
+    //margin: 0 0 10vw 0;
+    padding-left: 10vw;
+  }
   .expertise-second-wrapper {
-    padding: 0 10vw;
+    padding: 0 14vw;
     .expertise-started-subtitle {
       width: 52vw;
       @media only screen and (max-width: 600px) {
         width: auto;
       }
     }
-    .expertise-started-title {
-      margin: 0 0 10vw 0;
-      padding: 0;
-    }
+
   }
   .expertise-items-container {
-    padding: 12vw 10vw;
+    padding: 9.5vw 8vw 12vw 10vw;
   }
   .expertise-bottom-container {
     display: flex;
     justify-content: flex-end;
+    margin-top: 4.2vw;
     .expertise-bottom-block-container {
-      width: 80vw;
+      width: 80.6vw;
       background-color: black;
-      padding: 10vw 0 10vw 10vw;
+      padding: 8vw 0 8vw 9.4vw;
       display: flex;
       @media only screen and (max-width: 600px) {
         flex-direction: column-reverse;
       }
         .expertise-bottom-info-container {
         .expertise-bottom-first-info-container {
-          margin-right: 10vw;
+          margin-right: 12vw;
           .expertise-bottom-first-info-title {
             padding: 0;
             background-color: black;
+            margin-bottom: 4.5vw;
           }
           .expertise-bottom-first-info-text-first {
-            margin-bottom: 32px;
+            margin-bottom: 1.7vw;
+            span {
+              line-height: 4vw;
+            }
           }
           .expertise-bottom-first-info-text-second {
-            margin-bottom: 32px;
-
+            margin-bottom: 1.8vw;
+              span {
+                line-height: 2vw;
+              }
           }
           .expertise-bottom-first-info-text-third {
             margin-bottom: 70px;

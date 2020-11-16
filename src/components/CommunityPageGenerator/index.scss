@@ -1,0 +1,60 @@
+.community-page-generator-container {
+  .first-section {
+    padding: 10.9vw 0 8.2vw 0;
+
+    .first-section-container {
+      padding: 0 33.45vw 0 26.1vw
+    }
+    .first-section-title {
+
+    }
+    .first-section-img {
+      width: 83vw;
+      height: 44.9vw;
+      margin-bottom: 10.7vw;
+      background-color: #cdcdcd;
+    }
+    .first-section-info-container {
+      padding: 0 25.2vw 0 41.6vw;
+    }
+  }
+
+  .second-section {
+
+    .second-section-container {
+      display: flex;
+      padding: 0 13.6vw 0 10.1vw;
+      .second-section-title {
+        padding: 0;
+        white-space: nowrap;
+        height: 2vw;
+      }
+      .second-section-map-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 9.5vw;
+        margin-left: 12.3vw;
+        margin-bottom: 14.8vw;
+      }
+    }
+
+    .second-section-image-container {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 83vw;
+        height: 44.9vw;
+        margin-bottom: 14.8vw;
+        background-color: #cdcdcd;
+      }
+    }
+  }
+  .third-section  {
+    padding-bottom: 11.9vw;
+    .third-section-container {
+      padding: 0 10.1vw 0 14.2vw
+
+    }
+  }
+}

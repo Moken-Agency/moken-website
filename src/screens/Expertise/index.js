@@ -16,11 +16,13 @@ const Expertise = () => {
             {/*</div>*/}
             <div className={'expertise-first-wrapper'}>
                 <Text className={'expertise-title'} size={'1vw'} mobSize={14} type={'semiBold'} mobColor={'white'}>EXPERTISE</Text>
-                <Text className={'expertise-subtitle'} type={'thin'} size={'3.5vw'} mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
+                <Text className={'expertise-subtitle'} type={'thin'} size={'4.45vw'} mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
             </div>
+            <Title className={'expertise-started-title'} title={'GETTING STARTED'} />
+
             <div className={'expertise-second-wrapper'}>
-                <Title className={'expertise-started-title'} title={'GETTING STARTED'} />
                 <Text className={'expertise-started-subtitle'}
+                      textStyles={{marginTop: '8vw'}}
                       type={'extraLight'}
                       size={'3vw'}
                       mobSize={35}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
@@ -37,17 +39,18 @@ const Expertise = () => {
             <Title className={'expertise-started-title'} title={'PRODUCT'} />
             <div className={'expertise-items-container'}>
                 {
-                    marketing.map((props, index) => {
+                    product.map((props, index) => {
                         return (
                             <ExpertiseItem {...props} key={'expertise item ' + index} />
                         )
                     })
                 }
             </div>
+
             <Title className={'expertise-started-title'} title={'MARKETING & GROWTH'} />
             <div className={'expertise-items-container'}>
                 {
-                    product.map((props, index) => {
+                    marketing.map((props, index) => {
                         return (
                             <ExpertiseItem {...props} key={'expertise item ' + index} />
                         )
@@ -80,8 +83,13 @@ const Expertise = () => {
                             <Button title={'ROADMAPS & SPRINTS'}
                                     color={'black'}
                                     type={'bordered-white'}
-                                    containerStyles={{marginRight: '2vw'}}/>
-                            <Button title={'STARTUPSMART'} color={'white'} type={'bordered-white'}/>
+                                    size={'.85vw'}
+                                    containerStyles={{marginRight: '2.8vw', padding: '1.65vw 2vw'}}/>
+                            <Button title={'STARTUPSMART'}
+                                    color={'white'}
+                                    size={'.85vw'}
+                                    containerStyles={{padding: '1.65vw 1.7vw'}}
+                                    type={'bordered-white'}/>
                         </div>
                     </div>
                     <img src={ExpertiseImage} />

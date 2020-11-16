@@ -11,15 +11,19 @@
     //  height: .6vw;
     //}
   }
+  //.textarea {
+  //  //resize: auto;
+  //}
   .buttonContainer {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0.5vw;
-    height: 2vw;
-    @media screen and (max-width: 600px) {
-      height: 5vw;
-      margin-bottom: 2vw;
-    }
+    //margin-bottom: 0.5vw;
+    //height: 2vw;
+    padding: .5vw;
+    //@media screen and (max-width: 600px) {
+    //  height: 5vw;
+    //  margin-bottom: 2vw;
+    //}
     .input {
       width: 100%;
       border: 0;

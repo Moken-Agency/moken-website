@@ -1,6 +1,6 @@
 .portfolio-container {
   .portfolio-section-info {
-    padding: 5vw 14vw;
+    padding: 7vw 12.5vw;
     @media screen and (max-width: 600px) {
       padding: 20vw 10vw;
     }
@@ -11,21 +11,28 @@
       }
     }
     .portfolio-title-second {
-      width: 40vw;
+      width: 42vw;
+      line-height: 5vw;
+      margin-bottom: 5vw;
       @media screen and (max-width: 600px) {
         width: 63vw;
         margin-bottom: 15vw;
       }
     }
     .portfolio-startups-container {
+      position: relative;
+      left: 6.5vw;
       display: flex;
       justify-content: flex-end;
-      margin-bottom: 8vw;
+      margin-bottom: 7.5vw;
+      //padding-right: 5vw;
       flex-wrap: wrap;
     }
-    .companies-container {
-      margin-bottom: 10vw;
-    }
+
+  }
+  .companies-container {
+    margin-bottom: 10vw;
+    padding: 0 10vw;
   }
   //.block-container {
   //  padding: 6vw 10vw;

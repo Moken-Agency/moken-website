@@ -3,19 +3,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 6vw 7vw;
+    padding: 6.5vw 7vw 6vw 7vw;
     background-color: #fbfbfb;
     .menu-columns {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-bottom: 20px;
+      padding: 0 0 20px 4.4vw;
     }
     .send-email-updates-container {
-      padding-top: 30px;
+      padding-top: .5vw;
       width: 20vw;
       .logo {
-        height: 52px;
+        height: 3.1vw;
       }
     }
   }
@@ -25,15 +25,15 @@
     position: relative;
     .left-footer-bar {
       //padding: 60px 160px;
-      padding: 3vw 8vw;
+      padding: 3.8vw 11.4vw;
       width: 100%;
       background-color: black;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       .privacy-container {
         display: flex;
         flex-direction: row;
+        margin-left: 10vw;
       }
     }
     .socials-container {

@@ -17,13 +17,17 @@ const AboutAgency = () => {
     const {isMobile} = useWindowDimensions();
 
     const titleStyles = {
-        fontSize: '3.7vw',
+        fontSize: '3.35vw',
         fontFamily: 'Latinka ExtraLight',
-        marginBottom: '2vw'
+        marginBottom: '3.3vw',
+        lineHeight: '3.8vw'
     }
 
     const containerStyles = {
-        width: '30vw'
+        width: '30.5vw',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
     }
 
     //
@@ -43,6 +47,7 @@ const AboutAgency = () => {
                 <Text type={'semiBold'}
                       size={'1vw'}
                       mobSize={14}
+                      textStyles={{letterSpacing: 4}}
                       containerStyles={{marginBottom: isMobile ? '18vw' : '1.5vw'}}>MOKEN AGENCY</Text>
                 <Text type={'thin'}
                       size={'4.2vw'}
@@ -115,12 +120,14 @@ const AboutAgency = () => {
                     <div className={'app-container'}>
                         <Text size={'4.2vw'} type={'thin'}>Rent Your Ride</Text>
                         <Text size={'.9vw'}
+                              textStyles={{letterSpacing: 4}}
                               type={'semiBold'}>PRODUCT DESIGN & DEVELOPMENT</Text>
                     </div>
                     <div className={'app-container'}>
                         <Text size={'4.2vw'}
                               type={'thin'}>Prommoto</Text>
                         <Text size={'.9vw'}
+                              textStyles={{letterSpacing: 4}}
                               type={'semiBold'}>Product Design & Development</Text>
                     </div>
                 </div>

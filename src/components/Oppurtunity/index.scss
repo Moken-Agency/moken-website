@@ -3,12 +3,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw 0;
+  padding: 2vw 1.5vw;
   width: 34vw;
   border-bottom: 1px solid #a7a7a7;
+  &:first-of-type {
+    padding-top: 0;
+  }
   .opportunity-title-container {
     .opportunity-title-first {
-      margin-bottom: 1vw;
+      margin-bottom: 1.2vw;
+      span {
+        letter-spacing: 4px;
+      }
     }
   }
   .view-job {

@@ -7,13 +7,17 @@ import Opportunity from "../../components/Oppurtunity";
 import Title from "../../components/Title";
 import Input from "../../components/Input";
 import SubmitYourResume from "../../components/SubmitYourResume";
+import 'reactjs-popup/dist/index.css';
+import ReportBug from "../../components/ReportBug";
+import Popup from 'reactjs-popup';
 
 const Opportunities = () => {
     return (
         <div className={'opportunities-container'}>
+           <ReportBug />
             <section className={'opportunities-title-container'}>
-                <Text type={'semiBold'} size={'.6vw'} className={'main-title'}>CAREER OPPORTUNITIES</Text>
-                <Subtitle size={'3.1vw'} subtitle={'Work that matters.'} type={'thin'} className={'subtitle'}/>
+                <Text type={'semiBold'} size={'1vw'} className={'main-title'}>CAREER OPPORTUNITIES</Text>
+                <Subtitle size={'4.15vw'} subtitle={'Work that matters.'} type={'thin'} className={'subtitle'}/>
             </section>
             <section className={'opportunities-image-block-container'}>
                 <img src={''} className={'opportunities-image-block'}/>

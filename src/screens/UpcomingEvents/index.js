@@ -19,7 +19,7 @@ const UpcomingEvents = () => {
         <div className={'events-container'}>
             <section className={'events-header-container'} style={{backgroundImage: `url(${isMobile ? eventMob : event})`}}>
                 <Text size={isMobile ? '2vw' : '1vw'} className={'join-us'} type={'semiBold'} color={'white'}>JOIN US</Text>
-                <Text size={isMobile ? '10vw' : '5.5vw'} className={'upcoming-events'} type={'light'} color={'white'}>Upcoming Events</Text>
+                <Text size={isMobile ? '10vw' : '4.5vw'} className={'upcoming-events'} type={'thin'} color={'white'}>Upcoming Events</Text>
             </section>
             <section className={'events-list-container'}>
                 <div className={'events-list'}>

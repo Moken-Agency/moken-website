@@ -1,0 +1,23 @@
+.second-map-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9.5vw 0 15.4vw 0;
+  border-bottom: 1px solid #cdcdcd;
+  .second-map-item-title {
+    width: 40vw
+  }
+  .second-map-item-btn-container {
+    display: flex;
+    align-items: center;
+    .second-map-item-btn {
+      span {
+        letter-spacing: 4px;
+      }
+    }
+    img {
+      height: 1.6vw;
+      margin-left: 2.4vw;
+    }
+  }
+}

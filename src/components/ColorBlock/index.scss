@@ -1,8 +1,14 @@
 .block-container {
-  padding: 6vw 10vw;
+  padding: 6vw 14vw 6.7vw 10vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  div {
+    .color-block-image {
+      height: 1.5vw;
+      margin-left: 2.4vw;
+    }
+  }
   @media screen and (max-width: 600px) {
     flex-direction: column;
     padding: 20vw 12vw;

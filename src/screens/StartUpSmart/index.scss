@@ -4,19 +4,26 @@
     padding-bottom: 32vw;
   }
   .start-up-smart-first {
-    padding: 10vw 30vw;
+    padding: 10.5vw 32vw 0 26vw;
     @media only screen and (max-width: 600px) {
       padding: 30vw 10vw;
     }
       .start-up-smart-first-text-first {
-      margin-bottom: 1vw;
+        margin-bottom: 1.8vw;
+        letter-spacing: 4px;
         @media only screen and (max-width: 600px) {
           margin-bottom: 16vw;
+          letter-spacing:  3px;
         }
+    }
+    .start-up-smart-first-text-second {
+      span {
+        line-height: 4.9vw;
+      }
     }
   }
   .start-up-smart-second {
-    padding: 10vw 10vw 10vw 0;
+    padding: 10vw 20vw 10vw 0;
     @media only screen and (max-width: 600px) {
       margin-bottom: 16vw;
       img {
@@ -27,24 +34,28 @@
       width: 100%;
     }
   }
+  .start-up-smart-third-title {
+    //margin-bottom: 8vw;
+    padding-left: 10vw;
+  }
   .start-up-smart-third {
-    padding: 10vw 30vw 10vw 20vw;
+    padding: 7vw 30vw 0 14vw;
     @media only screen and (max-width: 600px) {
       padding: 10vw;
     }
-    .start-up-smart-third-title {
-      padding: 0;
-      margin-bottom: 8vw;
-    }
+
     .start-up-smart-third-text-first {
       margin-bottom: 2vw;
     }
     .start-up-smart-third-text-second {
       margin-bottom: 2vw;
     }
+    .start-up-smart-third-text-third {
+      letter-spacing: 3px;
+    }
   }
   .start-up-smart-forth {
-    padding: 10vw 0 10vw 10vw;
+    padding: 10vw 0 0 17.5vw;
     @media only screen and (max-width: 600px) {
       img {
         height: 35vw;
@@ -55,15 +66,23 @@
     }
   }
   .start-up-smart-fifth {
-    padding: 10vw 30vw;
+    padding: 10vw 35vw 0 35vw;
     @media only screen and (max-width: 600px) {
       padding: 10vw;
     }
     .start-up-smart-fifth-text-first {
-      margin-bottom: 3vw;
+      margin-bottom: 4.9vw;
+      span {
+        letter-spacing: 4px;
+      }
     }
     .start-up-smart-fifth-text-second {
       margin-bottom: 2.5vw;
+    }
+    .start-up-smart-fifth-text-third {
+      span {
+        line-height: 2vw;
+      }
     }
   }
 

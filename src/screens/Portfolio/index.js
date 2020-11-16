@@ -22,8 +22,13 @@ const Portfolio = (props) => {
     return (
         <div className={'portfolio-container'}>
             <section className={'portfolio-section-info'}>
-                <Text size={isMobile ? '3vw' : '1vw'} type={'semiBold'} className={'portfolio-title-first'}>PORTFOLIO</Text>
-                <Text size={isMobile ? '10vw' : '4vw'} type={'thin'} className={'portfolio-title-second'}>
+                <Text size={isMobile ? '3vw' : '1vw'}
+                      type={'semiBold'}
+                      textStyles={{letterSpacing: 4}}
+                      className={'portfolio-title-first'}>PORTFOLIO</Text>
+                <Text size={isMobile ? '10vw' : '4.5vw'}
+                      type={'thin'}
+                      className={'portfolio-title-second'}>
                     Great ideas driven by amazing people scaling for success.</Text>
                 <div className={'portfolio-startups-container'}>
                     {
@@ -34,18 +39,20 @@ const Portfolio = (props) => {
                         })
                     }
                 </div>
-                <div className={'companies-container'}>
-                    {
-                        companies.map((company, index) => {
-                            return (
-                                <Company {...company}  key={'company portfolio' + index}/>
-                            )
-                        })
-                    }
-                </div>
             </section>
+
+            <div className={'companies-container'}>
+                {
+                    companies.map((company, index) => {
+                        return (
+                            <Company {...company}  key={'company portfolio' + index}/>
+                        )
+                    })
+                }
+            </div>
             <ColorBlock title={'Do you want to be the next to make history?'}
                         subtitle={'CONNECT WITH US'}
+                        textWidth={'45vw'}
                         backgroundColor={'#263da8'}/>
             {/*<section className={'block-container'}>*/}
             {/*    <Text size={isMobile ? '9vw' : '5vw'}*/}

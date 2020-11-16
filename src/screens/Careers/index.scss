@@ -1,8 +1,7 @@
 .careers-container {
   .careers-first-section {
     display: flex;
-    align-items: center;
-    padding: 10vw;
+    padding: 10.5vw 0 10vw 26vw;
     flex-direction: column;
     @media only screen and (max-width: 600px) {
       align-items: flex-start;
@@ -10,11 +9,12 @@
     }
     .careers-first-text-container {
       width: 38vw;
+
       @media only screen and (max-width: 600px) {
         width: auto;
       }
     .careers-first-section-first-title {
-        margin-bottom: 20px;
+      margin-bottom: 38px;
       @media only screen and (max-width: 600px) {
         margin-bottom: 60px;
       }
@@ -23,7 +23,10 @@
         }
       }
       .careers-first-section-second-title {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        span {
+          line-height: 4.8vw;
+        }
         @media only screen and (max-width: 600px) {
           span {
             @media only screen and (max-width: 600px) {
@@ -62,7 +65,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding: 0 4vw;
+      padding-left: 4vw;
       margin-top: 9vw;
       @media only screen and (max-width: 600px) {
        flex-direction: column;
@@ -70,13 +73,14 @@
       .careers-second-subtitle {
         margin: 0;
         padding: 0;
-        width: 20vw;
+        width: 28vw;
         @media only screen and (max-width: 600px) {
           width: 60vw;
         }
       }
     }
-    .opportunities-container {
+    .careers-opportunities-container {
+      margin-top: 1vw;
       .view-all-opportunities {
         margin-top: 100px;
         .text {
@@ -98,15 +102,16 @@
     }
     .careers-third-container {
       padding: 0 4vw;
-      margin-top: 11vw;
+      margin-top: 10vw;
       .careers-third-subtitle {
         margin: 0;
         padding: 0;
       }
       .benefits-container {
-        margin-top: 6vw;
+        margin-top: 7.8vw;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         @media only screen and (max-width: 600px) {
           flex-direction: column;
           margin-top: 115px;
@@ -119,9 +124,9 @@
     justify-content: flex-end;
     margin-bottom: 10vw;
     .careers-black-block-container {
-      width: 77vw;
+      width: 81vw;
       background-color: black;
-      padding: 9vw 0 9vw 9vw;
+      padding: 7.6vw 0 4vw 9vw;
       display: flex;
       justify-content: space-between;
       @media screen and (max-width: 600px) {
@@ -156,15 +161,16 @@
           margin-bottom: 2vw;
         }
         .subtitle-comp-container {
-          margin: 5vw 0 2vw 0;
+          margin: 5vw 0 1vw 0;
           @media screen and (max-width: 600px) {
             margin: 30px 0;
           }
         }
       }
       .careers-black-block-right-container {
-        width: 40vw;
-        background-color: red;
+        img {
+          width: 40vw;
+        }
         @media screen and (max-width: 600px) {
           display: none;
         }

@@ -2,7 +2,7 @@ export default {
     gettingStarted: [
         {
             title: 'Branding',
-            route: ''
+            route: '/branding'
         },
         {
             title: 'Business Strategy',
@@ -21,15 +21,15 @@ export default {
     product: [
         {
             title: 'Product Strategy',
-            route: ''
+            route: '/product-strategy'
         },
         {
             title: 'Product Design',
-            route: ''
+            route: '/product-design'
         },
         {
             title: 'Product & Software Development',
-            route: ''
+            route: '/product-development'
         },
         {
             title: 'Product Marketing',
@@ -50,12 +50,12 @@ export default {
             route: ''
         },
         {
-            title: 'UpcomingEvents & Launch Activations',
-            route: ''
+            title: 'Events & Launch Activations',
+            route: '/upcoming-events'
         },
         {
             title: 'Website Design & Development',
-            route: ''
+            route: '/design-develop'
         },
     ]
 }

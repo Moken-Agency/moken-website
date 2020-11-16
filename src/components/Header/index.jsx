@@ -18,7 +18,6 @@ const Header = ({isOpen, setIsOpen}) => {
 
     let history = useHistory();
 
-
     return (
            <div className={'header-container'}>
                 <div className={'bar-container'}>
@@ -27,7 +26,7 @@ const Header = ({isOpen, setIsOpen}) => {
                             leftMenu.map(({title, withDivider, route}, index) => {
                                 return (
                                     <MenuItem key={'leftMenu' + index} title={title} withDivider={withDivider}
-                                              textStyles={topMenuTextStyles} route={route}/>
+                                              textStyles={topMenuTextStyles} route={route} size={'.61vw'}/>
                                 )
                             })
                         }
@@ -37,13 +36,13 @@ const Header = ({isOpen, setIsOpen}) => {
                             rightMenu.map(({title, withDivider}, index) => {
                                 return (
                                     <MenuItem key={'right menu' + index} title={title} withDivider={withDivider}
-                                              textStyles={topMenuTextStyles}/>
+                                              textStyles={topMenuTextStyles} size={'.61vw'}/>
                                 )
                             })
                         }
                     </div>
                 </div>
-                <div className={'bar-container'}>
+                <div className={'bar-container'} style={{padding: '0 6.6vw'}}>
                     <img src={Logo} className={'logo'}/>
                     <div style={{display: 'flex'}}>
                         <div className={'menu-container'}>
@@ -51,9 +50,11 @@ const Header = ({isOpen, setIsOpen}) => {
                                 mainMenu.map(({title, subRouts = [], dividerColor}, index) => {
                                     return (
                                         <MenuItem key={'main menu' + index} title={title} textStyles={mainMenuTextStyles}
-                                                  containerStyles={{marginRight: '1.5vw'}}
+                                                  containerStyles={{marginRight: '2.2vw', height: '4.7vw'}}
                                                   subRouts={subRouts}
                                                   dividerColor={dividerColor}
+                                                  className={'bar-with-menu-dropdown'}
+                                                  size={'.8vw'}
                                         />
                                     )
                                 })

@@ -20,14 +20,16 @@ const Company = ({companyName = '', projectName = '', description = '', city = '
                 <Text size={ isMobile ? '4.4vw' : '2vw'} type={'thin'} className={'project-name'}>{projectName}</Text>
             </div>
 
-            <Text size={isMobile ? '2.2vw' : '1vw'} className={'company-description'} type={'light'} containerStyles={{width: '30vw'}}>{description}</Text>
+            <Text size={isMobile ? '2.2vw' : '1vw'} className={'company-description'} type={'light'}>{description}</Text>
 
             <div className={'company-owner-container'}>
                 <div>
-                    <Text size={isMobile ? '2vw' : '.8vw'} className={'company-city'} type={'semiBold'}>{city}</Text>
-                    <Text size={isMobile ? '2.2vw' : '1vw'} className={'company-owner'} type={'light'}>{owner}</Text>
+                    <Text size={isMobile ? '2vw' : '1vw'} className={'company-city'} type={'semiBold'}>{city}</Text>
+                    <Text size={isMobile ? '2.2vw' : '1.05vw'} className={'company-owner'} type={'light'}>{owner}</Text>
                 </div>
-                <img src={arrow} className={'company-arrow'}/>
+                <div className={'company-arrow-container'}>
+                    <img src={arrow} className={'company-arrow'}/>
+                </div>
             </div>
 
         </div>

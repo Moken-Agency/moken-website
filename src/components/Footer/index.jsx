@@ -62,17 +62,20 @@ const Footer = ({isOpen, setIsOpen}) => {
                           containerStyles={{marginBottom: 20}}>We will send you updates related to all things Moken.</Text>
                     <Input withGoButton error={errors.email} value={values.email}
                            placeholder={'Email'} onSubmit={handleSubmit}
+                           backgroundColor={'#fbfbfb'}
                            onChange={(event) => handleChange({name: 'email', text: event.target.value})}/>
                 </div>
             </div>
             <div className={'bottom-footer-bar'}>
                 <div className={'left-footer-bar'}>
-                    <Text textStyles={textStyle}>Copyright © Moken Startups Inc. 2020</Text>
+                    <Text type={'semiBold'} size={'.8vw'} color={'white'}>Copyright © Moken Startups Inc. 2020</Text>
                     <div className={'privacy-container'}>
-                        <Text onClick={() => history.push('/privacy')} textStyles={textStyle}
-                              type={'semiBold'} containerStyles={containerStyles}>PRIVACY POLICY</Text>
-                        <Text onClick={() => history.push('/terms')} textStyles={textStyle}
-                              type={'semiBold'} containerStyles={containerStyles}>TERMS & CONDITIONS</Text>
+                        <Text onClick={() => history.push('/privacy')} type={'semiBold'} size={'0.55vw'} color={'white'}
+                              textStyles={{letterSpacing: 4}}
+                             containerStyles={containerStyles}>PRIVACY POLICY</Text>
+                        <Text onClick={() => history.push('/terms')} type={'semiBold'} size={'0.7vw'} color={'white'}
+                              textStyles={{letterSpacing: 4}}
+                              containerStyles={containerStyles}>TERMS & CONDITIONS</Text>
                     </div>
                 </div>
                 <div className={'socials-container'}>

@@ -1,23 +1,27 @@
 .benefit-title-first-container {
   padding: 2vw 0;
-  width: 25vw;
+  width: 31.5vw;
   margin-bottom: 5vw;
-  margin-right: 10vw;
+  //margin-right: 3x/vw;
   @media only screen and (max-width: 600px) {
     width: auto;
     margin-bottom: 95px;
   }
     .benefit-title-first {
-      margin-bottom: 1vw;
+      margin-bottom: 1.4vw;
+      letter-spacing: 5px;
       @media only screen and (max-width: 600px) {
         margin-bottom: 22px;
       }
     }
     .benefit-title-second {
-      margin-bottom: 1vw;
+      margin-bottom: 1.4vw;
       @media only screen and (max-width: 600px) {
         margin-bottom: 24px;
       }
     }
+  .benefit-title-third {
+    line-height: 2.06vw;
+  }
 
 }

@@ -19,7 +19,7 @@ const routeStyle = {
 }
 
 const containerRouteStyle = {
-    marginBottom: '0.5vw'
+    // marginBottom: '0.05vw'
 }
 
 const ColumnTextComponent = ({title, index, route}) => {
@@ -35,7 +35,7 @@ const ColumnTextComponent = ({title, index, route}) => {
     return (
         <Text key={'column menu' + index + title} textStyles={{...routeStyle, color}}
               type={'light'}
-              size={'.75vw'}
+              size={'1.1vw'}
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
               onClick={() => history.push(route)}
@@ -48,7 +48,10 @@ const ColumnMenu = ({routes = [], title}) => {
 
     return (
         <div className={'column-menu-container'}>
-            <Text type={'thin'} size={'1.9vw'} textStyles={titleStyles} containerStyles={containerTitleStyles}>{title}</Text>
+            <Text type={'semiBold'}
+                  size={'.8vw'}
+                  textStyles={{...titleStyles, letterSpacing: 4, marginBottom: '.85vw'}}
+                  containerStyles={containerTitleStyles}>{title.toUpperCase()}</Text>
             {
                 routes.map(({title, route}, index) => {
                     return <ColumnTextComponent key={index + 'ColumnTextComponent'}

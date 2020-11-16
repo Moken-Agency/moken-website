@@ -18,7 +18,7 @@ const EmailForm = ({withForm, title = '', width = 'auto', value='', className = 
                         textStyles={{letterSpacing: 0.3}}>{title}</Text>
                   <div className={'email-form-form'}>
                       <Input value={value} placeholder={'Your Email Address'} width={width}/>
-                      <Button title={'Subscribe'} color={'white'} type={'bordered'}/>
+                      <Button title={'SUBSCRIBE'} color={'white'} type={'bordered'}/>
                   </div>
               </div> : null}
           </>

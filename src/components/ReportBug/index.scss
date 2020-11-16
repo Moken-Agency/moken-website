@@ -1,0 +1,73 @@
+.report-bug-container {
+  padding: 21px 62px 62px 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    padding: 30px 30px 60px 30px;
+  }
+    .report-bug-left-container {
+    width: 29vw;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+      .btn-container {
+        display: flex;
+        justify-content: flex-start;
+        @media screen and (max-width: 600px) {
+          justify-content: center;
+        }
+      }
+    .first-input {
+      margin-bottom: 2.6vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 45px;
+      }
+    }
+    .second-input {
+      margin-bottom: 1vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 20px;
+      }
+    }
+    .third-input {
+      margin-bottom: 1.6vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 20px;
+      }
+    }
+    .screenshot-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 2.9vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 50px;
+
+      }
+        img {
+        width: 2.3vw;
+        height: 1.7vw;
+        margin-right: .85vw;
+          @media screen and (max-width: 600px) {
+            width: 28px;
+            height: 20px;
+            margin-right: 10px;
+          }
+        }
+      .screenshot-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+  .report-bug-right-container {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    img {
+      width: 50vw
+    }
+  }
+}

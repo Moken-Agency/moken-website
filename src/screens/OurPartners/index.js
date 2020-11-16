@@ -8,6 +8,10 @@ import ArrowUpRight from '../../images/arrow-up-right.png';
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import FirstCircle from '../../images/our-partner-first.svg';
+import SecondCircle from '../../images/our-partner-second.svg';
+import ThirdCircle from '../../images/our-partner-third.svg';
+
 const {involved, collaborates} = options;
 
 const OurPartners = () => {
@@ -18,13 +22,23 @@ const OurPartners = () => {
     return (
        <div className={'our-partners-container'}>
            <div className={'our-partners-info-container'}>
-               <Text type={'semiBold'} size={16} mobSize={14} containerStyles={{marginBottom: isMobile ? '18vw' : '1.5vw'}}>OUR PARTNERS</Text>
-               <Text type={'thin'} size={75} mobSize={45} containerStyles={{marginBottom: isMobile ? '5vw' : '1vw'}}>Success fuelled by partnership.</Text>
+               <Text type={'semiBold'}
+                     size={16}
+                     mobSize={14}
+                     textStyles={{letterSpacing: 4}}
+                     containerStyles={{marginBottom: isMobile ? '18vw' : '2.1vw'}}>OUR PARTNERS</Text>
+               <Text type={'thin'}
+                     size={75}
+                     mobSize={45}
+                     textStyles={{lineHeight: '80px'}}
+                     containerStyles={{marginBottom: isMobile ? '5vw' : '2vw'}}>Success fuelled by partnership.</Text>
                <Text type={'light'} size={20} mobSize={16}>Creating an unmatched global ecosystem, together.</Text>
            </div>
 
            <div className={'our-partners-circles'}>
-
+                <img src={FirstCircle} />
+                <img src={SecondCircle} />
+                <img src={ThirdCircle} />
            </div>
 
            <Title className={'partners-title'} title={'DRIVING THE FUTURE'} />
@@ -48,21 +62,22 @@ const OurPartners = () => {
            <Title className={'partners-title'} title={'PARTNERSHIP OPPORTUNITIES'} />
 
            <div className={'our-partners-second-info-container'}>
-               <Text size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
+               <Text size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you
+                   do to founders and startups, globally.</Text>
            </div>
 
            <div className={'comm-manager-container'}>
                {
                    involved.map((props, index) => {
                        return (
-                          <CommunityPartner {...props} key={CommunityPartner + index} />
+                          <CommunityPartner {...props} key={'CommunityPartner' + index} />
                        )
                    })
                }
            </div>
 
-           <div>
-               <SubmitYourResume title={'Expert Directory Coming Soon'} />
+           <div className={'submit-container'}>
+               <SubmitYourResume title={'Expert Directory Coming Soon'} color={'black'}/>
            </div>
 
            <Title className={'partners-title'} title={'OUR PARTNERS'} />

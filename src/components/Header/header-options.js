@@ -186,7 +186,7 @@ export default {
         letterSpacing: 3.6,
     },
     topMenuTextStyles: {
-        marginRight: 10,
+        // margin: '0 1.5vw',
         letterSpacing: 2.8,
     }
 }

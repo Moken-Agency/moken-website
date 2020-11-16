@@ -13,12 +13,12 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    height: 4vw;
+    //height: 4vw;
     .divider {
       width: 1px;
       height: 1.5vw;
       background-color: #000;
-      margin-right: 1vw
+      margin: 0 1.5vw
     }
 
   }
@@ -28,7 +28,7 @@
     flex-direction: column;
     box-shadow: 0 0 20px 0 #e0e0e0;
     position: absolute;
-    top: 8vw;
+    top: 7vw;
     padding: 2vw 0;
     background-color: white;
     z-index: 1;

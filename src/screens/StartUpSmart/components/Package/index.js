@@ -55,6 +55,7 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                 <div className={'package-button-container'}>
                   <Button title={'VIEW PACKAGE'}
                           color={'white'}
+                          size={'.9vw'}
                           onClick={() => setIsOpen(!isOpen)}
                           additionalComponent={returnAdditionalBtnComponent}
                           a={imgStyles}/>

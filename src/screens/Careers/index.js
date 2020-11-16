@@ -10,6 +10,7 @@ import Description from "../../components/Description";
 import SubmitYourResume from "../../components/SubmitYourResume";
 import {useHistory} from 'react-router-dom';
 import CareersMobImg from '../../images/careersMob.png';
+import ImagePeople from '../../images/careers-peopple.png'
 
 
 const Careers = () => {
@@ -33,11 +34,11 @@ const Careers = () => {
                     <Subtitle subtitle={'We’re hiring. If something piques your interest, let us know.'}
                               mobSize={35}
                               className={'careers-second-subtitle'}/>
-                    <div className={'opportunities-container'}>
+                    <div className={'careers-opportunities-container'}>
                         {
                             options.opportunities.map((opportunity, index) => {
                                 return (
-                                    <Opportunity  width={'auto'} {...opportunity} key={index + 'opportunities'} />
+                                    <Opportunity width={'39vw'} {...opportunity} key={index + 'opportunities'} />
                                 )
                             })
                         }
@@ -84,7 +85,7 @@ const Careers = () => {
                         <SubmitYourResume onClick={() => alert('submot resume')}/>
                     </div>
                     <div className={'careers-black-block-right-container'}>
-
+                        <img src={ImagePeople} />
                     </div>
                 </div>
             </section>

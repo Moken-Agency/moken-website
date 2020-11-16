@@ -1,12 +1,47 @@
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+
 .opportunities-container {
-  padding: 5vw 0;
+  padding: 10.7vw 0 5vw 0;
   @media screen and (max-width: 600px){
     padding: 20vw 0;
   }
   .opportunities-title-container {
     .main-title {
-      margin-left: 14vw;
-      margin-bottom: 1vw;
+      margin-left: 13vw;
+      margin-bottom: 2.6vw;
       letter-spacing: 4px;
       @media screen and (max-width: 600px){
         span {
@@ -15,7 +50,7 @@
       }
     }
     .subtitle {
-      width: 13vw;
+      width: 18vw;
       margin: 0;
       @media screen and (max-width: 600px){
         width: auto;
@@ -35,14 +70,15 @@
   .opportunities-image-block-container {
     display: flex;
     justify-content: flex-end;
-    padding: 5vw 0;
+    padding: 11vw 0 6.5vw;
     .opportunities-image-block {
-      width: 75vw;
-      height: 25vw;
+      width: 69vw;
+      height: 21vw;
       background-color: black;
     }
   }
   .opportunities-second-title {
+    margin: 4vw 0 9.5vw 0;
     @media screen and (max-width: 600px){
       width: auto;
       padding-right: 14vw;
@@ -57,13 +93,19 @@
   .opportunities-form-container {
     display: flex;
     justify-content: space-between;
-    padding: 14vw;
+    padding: 10vw;
     @media screen and (max-width: 600px){
       flex-direction: column-reverse;
     }
-    .opportunities-form-left-container, .opportunities-form-right-container {
-      width: 30vw;
+    .opportunities-form-left-container, {
+      width: 35vw;
       @media screen and (max-width: 600px){
+        width: auto;
+      }
+    }
+    .opportunities-form-right-container {
+      width: 30vw;
+      @media screen and (max-width: 600px) {
         width: auto;
       }
     }
