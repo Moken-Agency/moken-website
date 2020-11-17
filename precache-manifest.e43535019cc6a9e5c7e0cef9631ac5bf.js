@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2de42274750bfd05eee352105eb45f5c",
+    "revision": "fa2105541ac682b73db35daa1b779644",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "976c7faf7b84b1642291",
+    "revision": "bcba048b717435956150",
     "url": "/moken-website/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "8135702a47e08a510f39",
-    "url": "/moken-website/static/css/main.b2005163.chunk.css"
+    "revision": "df38de828b31e7010709",
+    "url": "/moken-website/static/css/main.a1fd7109.chunk.css"
   },
   {
-    "revision": "976c7faf7b84b1642291",
-    "url": "/moken-website/static/js/2.f66cea3e.chunk.js"
+    "revision": "bcba048b717435956150",
+    "url": "/moken-website/static/js/2.af25b4d9.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.f66cea3e.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.af25b4d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8135702a47e08a510f39",
-    "url": "/moken-website/static/js/main.d530fae7.chunk.js"
+    "revision": "df38de828b31e7010709",
+    "url": "/moken-website/static/js/main.bf07cd69.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -52,6 +52,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/Latinka Thin.a4ed4f32.otf"
   },
   {
+    "revision": "aa4b6ec178ef01b6c6f0a08b9f8f800c",
+    "url": "/moken-website/static/media/careers-circles.aa4b6ec1.svg"
+  },
+  {
+    "revision": "3c85c5daabf60a9f7384e764cf632a60",
+    "url": "/moken-website/static/media/careers-header.3c85c5da.jpg"
+  },
+  {
     "revision": "ab6875a03eb6819a7fd6107e940aae37",
     "url": "/moken-website/static/media/careers-peopple.ab6875a0.png"
   },
@@ -62,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "369cee7c217c815b62aa3916463f82c9",
     "url": "/moken-website/static/media/cross-white.369cee7c.png"
+  },
+  {
+    "revision": "d16607faa09452061767ac991d6183ac",
+    "url": "/moken-website/static/media/designer-header.d16607fa.svg"
   },
   {
     "revision": "f521b7e1b506b21be117966f238ea979",
@@ -82,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/moken-website/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "8a4c2a08af30fd34105864ecef5a56c8",
+    "url": "/moken-website/static/media/opportunities.8a4c2a08.jpg"
   },
   {
     "revision": "28040af107fb65d93c3a730f2b1298c3",
