@@ -1,51 +1,40 @@
+import careersOptions from '../Careers/options';
+
 export default [
+    ...careersOptions.opportunities,
+
     {
         title: 'MOKEN AGENCY',
-        subtitle: 'Social Media Manager',
-        route: '/social-media-manager'
-    },
-    {
-        title: 'MOKEN MEDIA',
-        subtitle: 'Community Engagement Specialist',
-        route: '/'
-    },
-    {
-        title: 'MOKEN EVENTS',
-        subtitle: 'Email Marketing Specialist',
-        route: '/email-marketing'
+        subtitle: 'Videographer',
+        route: '/videographer'
     },
     {
         title: 'MOKEN AGENCY',
-        subtitle: 'Community Manager',
-        route: '/community-manager'
-    },
-    {
-        title: 'MOKEN AGENCY',
-        subtitle: 'Event Coordinator',
-        route: '/event-coordinator'
+        subtitle: 'Creative Copywriter',
+        route: '/copywriter'
     },   {
         title: 'MOKEN AGENCY',
-        subtitle: 'YouTube host',
-        route: '/youtube-host'
+        subtitle: 'Lead Infrastructure Engineer',
+        route: '/lead-infrastructure-engineer'
     },
-    {
-        title: 'MOKEN COMMUNITY',
-        subtitle: 'Podcast Host',
-        route: '/podcast-host'
-    },
-    {
-        title: 'MOKEN AGENCY',
-        subtitle: 'Community Engagement Specialist',
-        route: ''
-    },
-    {
-        title: 'MOKEN COMMUNITY',
-        subtitle: 'Partnership Manager',
-        route: '/partnership-manager'
-    },
-    {
-        title: 'MOKEN AGENCY',
-        subtitle: 'Back End Developer',
-        route: '/backend-developer'
-    },
+    // {
+    //     title: 'MOKEN COMMUNITY',
+    //     subtitle: 'Podcast Host',
+    //     route: '/podcast-host'
+    // },
+    // {
+    //     title: 'MOKEN AGENCY',
+    //     subtitle: 'Community Engagement Specialist',
+    //     route: ''
+    // },
+    // {
+    //     title: 'MOKEN COMMUNITY',
+    //     subtitle: 'Partnership Manager',
+    //     route: '/partnership-manager'
+    // },
+    // {
+    //     title: 'MOKEN AGENCY',
+    //     subtitle: 'Back End Developer',
+    //     route: '/backend-developer'
+    // },
 ]

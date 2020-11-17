@@ -2,18 +2,23 @@ export default {
     opportunities: [
         {
             title: 'MOKEN AGENCY',
-            subtitle: 'Graphic Designer & Illustrator',
-            route: '/designer'
+            subtitle: 'Graphic-designer',
+            route: '/graphic-designer'
         },
         {
-            title: 'MOKEN STARTUPS',
-            subtitle: 'Community Engagement Specialist',
-            route: '/'
+            title: 'MOKEN AGENCY',
+            subtitle: 'Social Media Specialist',
+            route: '/social-media-manager'
         },
         {
-            title: 'MOKEN EVENTS',
-            subtitle: 'Event Coordinator',
-            route: '/'
+            title: 'MOKEN AGENCY',
+            subtitle: 'Email Marketing Specialist',
+            route: '/email-marketing'
+        },
+        {
+            title: 'MOKEN AGENCY',
+            subtitle: 'Photographer',
+            route: '/photographer'
         },
     ],
     benefits: [

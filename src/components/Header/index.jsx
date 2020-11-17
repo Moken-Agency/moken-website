@@ -17,6 +17,7 @@ const {
 const Header = ({isOpen, setIsOpen}) => {
 
     let history = useHistory();
+    const {isMobile} = useWindowDimensions()
 
     return (
            <div className={'header-container'}>
@@ -42,7 +43,7 @@ const Header = ({isOpen, setIsOpen}) => {
                         }
                     </div>
                 </div>
-                <div className={'bar-container'} style={{padding: '0 6.6vw'}}>
+                <div className={'bar-container'} style={{padding: isMobile ? '1 6.6vw' : '0 6.6vw'}}>
                     <img src={Logo} className={'logo'}/>
                     <div style={{display: 'flex'}}>
                         <div className={'menu-container'}>

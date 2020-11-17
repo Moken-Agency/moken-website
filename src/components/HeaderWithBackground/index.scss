@@ -1,0 +1,21 @@
+.header-with-background-container {
+  padding: 5.5vw 10vw 3vw 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  @media screen and (max-width: 600px) {
+    height: 80vh;
+    background-size: initial;
+  }
+  .header-with-background-join-us {
+    padding-top: 20vw;
+    margin-bottom: 1.7vw;
+    span {
+      letter-spacing: 4px;
+    }
+  }
+  .header-with-background-upcoming-events {
+    width: 25vw;
+  }
+}

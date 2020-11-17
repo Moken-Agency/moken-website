@@ -9,7 +9,7 @@ import Input from "../../components/Input";
 import SubmitYourResume from "../../components/SubmitYourResume";
 import 'reactjs-popup/dist/index.css';
 import ReportBug from "../../components/ReportBug";
-import Popup from 'reactjs-popup';
+import OpportunitiesImage from '../../images/opportunities.jpg'
 
 const Opportunities = () => {
     return (
@@ -20,7 +20,7 @@ const Opportunities = () => {
                 <Subtitle size={'4.15vw'} subtitle={'Work that matters.'} type={'thin'} className={'subtitle'}/>
             </section>
             <section className={'opportunities-image-block-container'}>
-                <img src={''} className={'opportunities-image-block'}/>
+                <img src={OpportunitiesImage} className={'opportunities-image-block'}/>
             </section>
             <Subtitle
                 className={'opportunities-second-title'}
@@ -50,8 +50,8 @@ const Opportunities = () => {
                     <Text type={'light'} size={'1.2vw'} className={'left-second-title'}>The Moken team is growing at a rapid pace, to stay in the loop and explore ways to work
                         together join our mailing list to never miss a beat.</Text>
                     <div className={'input-container'}>
-                        <Input placeholder={'Your name'} width={'12vw'}/>
-                        <Input placeholder={'Email'} width={'12vw'} withGoButton/>
+                        <Input placeholder={'Your name'} width={'12vw'} mobSize={15}/>
+                        <Input placeholder={'Email'} width={'12vw'} mobSize={15} withGoButton/>
                     </div>
                 </div>
 
@@ -61,12 +61,9 @@ const Opportunities = () => {
                           textStyles={{letterSpacing: 4}}
                     className={'right-first-title'}>TAKE A CHANCE</Text>
                     <Text type={'light'} size={'1.2vw'} className={'right-second-title'}>Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert software engineer, we look for unconventional excellence. Tell us how you think you can contribute.
-
                         Who knows, maybe you’re exactly what we’ve been looking for all along.</Text>
                     <SubmitYourResume color={'black'} onClick={() => alert('submot resume')} className={'submit'}/>
-
                 </div>
-
             </section>
         </div>
     )

@@ -9,6 +9,7 @@ import Button from "../../components/Button";
 import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import HeaderWithBackground from "../../components/HeaderWithBackground";
 
 const UpcomingEvents = () => {
     const history = useHistory();
@@ -17,10 +18,11 @@ const UpcomingEvents = () => {
 
     return (
         <div className={'events-container'}>
-            <section className={'events-header-container'} style={{backgroundImage: `url(${isMobile ? eventMob : event})`}}>
-                <Text size={isMobile ? '2vw' : '1vw'} className={'join-us'} type={'semiBold'} color={'white'}>JOIN US</Text>
-                <Text size={isMobile ? '10vw' : '4.5vw'} className={'upcoming-events'} type={'thin'} color={'white'}>Upcoming Events</Text>
-            </section>
+            {/*<section className={'events-header-container'} style={{backgroundImage: `url(${isMobile ? eventMob : event})`}}>*/}
+            {/*    <Text size={isMobile ? '2vw' : '1vw'} className={'join-us'} type={'semiBold'} color={'white'}>JOIN US</Text>*/}
+            {/*    <Text size={isMobile ? '10vw' : '4.5vw'} className={'upcoming-events'} type={'thin'} color={'white'}>Upcoming Events</Text>*/}
+            {/*</section>*/}
+            <HeaderWithBackground mobBackground={eventMob} webBackground={event} title={'JOIN US'} subtitle={'Upcoming Events'}/>
             <section className={'events-list-container'}>
                 <div className={'events-list'}>
                     <Event />

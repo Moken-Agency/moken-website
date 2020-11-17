@@ -2,8 +2,8 @@ import React from 'react';
 import PageGenerator from "../../components/PageGenerator";
 import otherOptions from './options'
 
-const Copywriter = () => {
-    return <PageGenerator data={otherOptions}/>
+const GraphicDesigner = () => {
+    return (<PageGenerator data={otherOptions}/>)
 }
 
-export default Copywriter
+export default GraphicDesigner

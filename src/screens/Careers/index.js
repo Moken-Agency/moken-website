@@ -10,11 +10,16 @@ import Description from "../../components/Description";
 import SubmitYourResume from "../../components/SubmitYourResume";
 import {useHistory} from 'react-router-dom';
 import CareersMobImg from '../../images/careersMob.png';
-import ImagePeople from '../../images/careers-peopple.png'
+import ImagePeople from '../../images/careers-peopple.png';
+import ImagePeopleHeader from '../../images/careers-header.jpg';
+import CareersCircles from '../../images/careers-circles.svg';
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 
 const Careers = () => {
     const history = useHistory();
+    const {isMobile} = useWindowDimensions()
+
 
     return (
         <div className={'careers-container'}>
@@ -26,7 +31,7 @@ const Careers = () => {
                         career forwards join us and help create change with the global brands of tomorrow.</Text>
                 </div>
             </section>
-            <img className={'image-section'} src={''} />
+            <img className={'image-section'} src={ImagePeopleHeader} />
 
             <section className={'careers-second-section'}>
                 <Title className={'careers-second-title'} title={'NEW OPPORTUNITIES'}/>
@@ -38,7 +43,7 @@ const Careers = () => {
                         {
                             options.opportunities.map((opportunity, index) => {
                                 return (
-                                    <Opportunity width={'39vw'} {...opportunity} key={index + 'opportunities'} />
+                                    <Opportunity width={isMobile ? 'auto' : '39vw'} {...opportunity} key={index + 'opportunities'} />
                                 )
                             })
                         }
@@ -51,6 +56,7 @@ const Careers = () => {
             </section>
 
             <section className={'careers-third-section'}>
+                <img src={CareersCircles} className={'circles'}/>
                 <Title className={'careers-third-title'} title={'BENEFITS & PERKS'}/>
                 <div className={'careers-third-container'}>
                     <Subtitle subtitle={'Discover why our team is the reason our community keeps coming back for more.\n'}

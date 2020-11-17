@@ -4,9 +4,7 @@ import otherOptions from './options'
 
 const SocialMediaManager = () => {
     return (
-        <div>
             <PageGenerator data={otherOptions}/>
-        </div>
     )
 }
 

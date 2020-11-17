@@ -48,6 +48,10 @@ import DesignDevelop from "./screens/DesignDevelop";
 import CommunityDevelopment from "./screens/CommunityDevelopment";
 import ProductStrategy from "./screens/ProductStrategy";
 import PartnershipPrograms from "./screens/PartnershipPrograms";
+import GraphicDesigner from "./screens/GraphicDesigner";
+import Photographer from "./screens/Photographer";
+import Videographer from "./screens/Videographer";
+import LeadInfrastructureEngineer from "./screens/LeadInfrastructureEngineer";
 
 const TestHome = () => {
     return (
@@ -187,6 +191,18 @@ const routsWithHeaderFooter = [
         component: PodcastHost
     },
     {
+        path: "/photographer",
+        component: Photographer
+    },
+    {
+        path: "/videographer",
+        component: Videographer
+    },
+    {
+        path: "/lead-infrastructure-engineer",
+        component: LeadInfrastructureEngineer
+    },
+    {
         path: "/social-media-manager",
         component: SocialMediaManager
     },
@@ -198,6 +214,10 @@ const routsWithHeaderFooter = [
     {
         path: "/backend-developer",
         component: BackendDeveloper
+    },
+    {
+        path: "/graphic-designer",
+        component: GraphicDesigner
     },
     {
         path: "/",
