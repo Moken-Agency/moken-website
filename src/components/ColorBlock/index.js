@@ -13,7 +13,7 @@ const ColorBlock = ({title = '', subtitle = '', backgroundColor = '', className 
         <>
             {backgroundColor !== '' ? <section className={`block-container ${className}`} style={{backgroundColor}}>
                 <Text size={isMobile ? '9vw' : size}
-                      type={'thin'}
+                      type={'extraLight'}
                       color={textColor}
                       className={'block-container-history'}
                       containerStyles={{width: isMobile ? 'auto' : textWidth}}>{title}</Text>

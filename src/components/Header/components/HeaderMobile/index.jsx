@@ -35,7 +35,7 @@ const HeaderMobile = ({isOpen = false, setIsOpen}) => {
     }
 
     const closeMenu = () => {
-        history.push("/")
+        history.goBack();
     }
     return (
         <section className={'header-mobile-container'} style={{height: isOpen ? '90vh' : '10vh',

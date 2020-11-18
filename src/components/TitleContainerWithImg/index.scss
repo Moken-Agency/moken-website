@@ -1,0 +1,35 @@
+.with-title-container-with-img-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8.9vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 190px;
+  }
+    .with-title-container-with-img-title-container {
+    .with-title-container-with-img-submit {
+      padding-left: 14vw;
+      margin-top: 0;
+      @media only screen and (max-width: 600px) {
+        padding-left: 10vw;
+      }
+    }
+    .with-title-container-with-img-description {
+      width: 26vw;
+      margin-bottom: 4vw;
+      @media only screen and (max-width: 600px) {
+        width: auto;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  img {
+    height: 29.7vw;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}

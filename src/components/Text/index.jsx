@@ -16,7 +16,6 @@ const Text = ({children = '', textStyles = {},containerStyles = {}, onMouseEnter
     const {isMobile} = useWindowDimensions()
 
 
-    console.log(className);
 
     return (
         <div className={`text-container ${className}`} style={containerStyles} onMouseLeave={handleOnMouseLeave}

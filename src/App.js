@@ -52,6 +52,7 @@ import GraphicDesigner from "./screens/GraphicDesigner";
 import Photographer from "./screens/Photographer";
 import Videographer from "./screens/Videographer";
 import LeadInfrastructureEngineer from "./screens/LeadInfrastructureEngineer";
+import JobOffer from "./screens/JobOffer";
 
 const TestHome = () => {
     return (
@@ -201,6 +202,10 @@ const routsWithHeaderFooter = [
     {
         path: "/lead-infrastructure-engineer",
         component: LeadInfrastructureEngineer
+    },
+    {
+        path: "/job-offer/:id",
+        component: JobOffer
     },
     {
         path: "/social-media-manager",

@@ -1,10 +1,10 @@
 .title-comp-container {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.8vw;;
   padding-left: 12vw;
   .title-comp-divider {
-    width: 3vw;
+    width: 2vw;
     height: 1px;
     background-color: black;
     margin-right: 2vw;
@@ -21,6 +21,7 @@
 
 @media only screen and (max-width: 600px) {
   .title-comp-container {
+    padding-left: 10vw;
     .title-comp-divider {
       width: 12vw;
       margin-right: 8vw;

@@ -17,6 +17,11 @@ export default [
         subtitle: 'Lead Infrastructure Engineer',
         route: '/lead-infrastructure-engineer'
     },
+    {
+        title: 'MOKEN AGENCY',
+        subtitle: 'Job Offer 1',
+        route: '/job-offer/first'
+    },
     // {
     //     title: 'MOKEN COMMUNITY',
     //     subtitle: 'Podcast Host',

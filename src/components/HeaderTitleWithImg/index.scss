@@ -1,0 +1,27 @@
+.header-title-with-img-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8vw 10vw 0 10vw;
+  margin-bottom: 19vw;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
+    .header-title-with-img-title-container {
+    padding-top: 14.6vw;
+  }
+  .header-title-with-image-container {
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      justify-content: flex-end;
+    }
+    img {
+      height: 28.5vw;
+      @media only screen and (max-width: 600px) {
+        height: auto;
+        width: 21vw;
+      }
+    }
+  }
+
+
+}

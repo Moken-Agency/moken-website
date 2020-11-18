@@ -6,8 +6,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Input = ({value, onChange = () => {}, placeholder, withGoButton, onSubmit = () => {}, error = '',
                    type = 'Latinka Medium', width ='100%', inputType = 'input', height = 'auto', className = '',
-                   size = '1vw', mobSize = size, resize = 'both',  backgroundColor = 'white'}) => {
-    console.log({error});
+                   size = '.9vw', mobSize = 14, resize = 'both',  backgroundColor = 'white'}) => {
     const {isMobile} = useWindowDimensions()
 
 

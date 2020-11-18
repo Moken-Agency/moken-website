@@ -10,7 +10,6 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 
 const ReportBug = (props) => {
-    console.log({props});
     const {isMobile} = useWindowDimensions()
 
     return (
