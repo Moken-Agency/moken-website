@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa2105541ac682b73db35daa1b779644",
+    "revision": "1654fb3e0eb18206473432a7040df603",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "bcba048b717435956150",
+    "revision": "d9ecf79d0fb8932d409c",
     "url": "/moken-website/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "df38de828b31e7010709",
-    "url": "/moken-website/static/css/main.a1fd7109.chunk.css"
+    "revision": "9c73bfe4ca5697e13a86",
+    "url": "/moken-website/static/css/main.9d610e8e.chunk.css"
   },
   {
-    "revision": "bcba048b717435956150",
-    "url": "/moken-website/static/js/2.af25b4d9.chunk.js"
+    "revision": "d9ecf79d0fb8932d409c",
+    "url": "/moken-website/static/js/2.2c7b9c64.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.af25b4d9.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.2c7b9c64.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df38de828b31e7010709",
-    "url": "/moken-website/static/js/main.bf07cd69.chunk.js"
+    "revision": "9c73bfe4ca5697e13a86",
+    "url": "/moken-website/static/js/main.180d2ef0.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -86,6 +86,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d2f4ad5c7779027e104621a0c572935e",
     "url": "/moken-website/static/media/idea-factory-light.d2f4ad5c.svg"
+  },
+  {
+    "revision": "6abb360130ee8be09159bb301a1caad5",
+    "url": "/moken-website/static/media/jobOffer1.6abb3601.svg"
+  },
+  {
+    "revision": "cd3af8fba04efbc8bed8e9812ff3a740",
+    "url": "/moken-website/static/media/jobOfferTitle1.cd3af8fb.svg"
   },
   {
     "revision": "3ed45cf80ae40d68c10a38965ff14915",
