@@ -1,0 +1,41 @@
+.people-leadership-container {
+  padding-bottom: 15vw;
+  .people-leadership-image {
+    width: 100vw;
+    margin-bottom: 12.4vw;
+  }
+  .padding-container {
+    padding: 0 38vw 0 14vw;
+    @media only screen and (max-width: 600px) {
+      padding: 0 10vw;
+    }
+  }
+  .people-images-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 14vw;
+    img {
+      background-color: #e0e0e0;
+      height: 9vw;
+      width: 21.4vw;
+      margin-bottom: 3.4vw;
+    }
+  }
+  .join-team-container {
+    width: 35vw;
+    padding-left: 14vw;
+    margin-top: 10.6vw;
+    @media only screen and (max-width: 600px) {
+      width: auto;
+      padding: 0 10vw;
+    }
+      .join-team-btn-container {
+      display: flex;
+      justify-content: space-between;
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+  }
+}

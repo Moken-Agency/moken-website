@@ -1,0 +1,18 @@
+.person-container {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    padding: 0 0 0 10vw;
+  }
+    img {
+    height: 320px;
+    background-color: #a7a7a7;
+    width: 15vw;
+    margin-bottom: 50px;
+    @media only screen and (max-width: 600px) {
+      width: 70vw;
+    }
+  }
+}

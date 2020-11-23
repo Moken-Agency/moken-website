@@ -68,13 +68,21 @@ const Footer = ({isOpen, setIsOpen}) => {
             </div>
             <div className={'bottom-footer-bar'}>
                 <div className={'left-footer-bar'}>
-                    <Text type={'semiBold'} size={'.8vw'} color={'white'}>Copyright © Moken Startups Inc. 2020</Text>
+                    <Text type={'light'} size={'.8vw'} mobSize={10} color={'white'}>Copyright © Moken Startups Inc. 2020</Text>
                     <div className={'privacy-container'}>
-                        <Text onClick={() => history.push('/privacy')} type={'semiBold'} size={'0.55vw'} color={'white'}
-                              textStyles={{letterSpacing: 4}}
+                        <Text onClick={() => history.push('/privacy')}
+                              type={'semiBold'}
+                              size={'0.55vw'}
+                              color={'white'}
+                              mobSize={10}
+                              textStyles={{letterSpacing: 2.33}}
                              containerStyles={containerStyles}>PRIVACY POLICY</Text>
-                        <Text onClick={() => history.push('/terms')} type={'semiBold'} size={'0.7vw'} color={'white'}
-                              textStyles={{letterSpacing: 4}}
+                        <Text onClick={() => history.push('/terms')}
+                              type={'semiBold'}
+                              size={'0.7vw'}
+                              color={'white'}
+                              mobSize={10}
+                              textStyles={{letterSpacing: 2.33}}
                               containerStyles={containerStyles}>TERMS & CONDITIONS</Text>
                     </div>
                 </div>

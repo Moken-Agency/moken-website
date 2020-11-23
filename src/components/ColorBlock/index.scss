@@ -7,6 +7,9 @@
     .color-block-image {
       height: 1.5vw;
       margin-left: 2.4vw;
+      @media screen and (max-width: 600px) {
+        height: 20px;
+      }
     }
   }
   @media screen and (max-width: 600px) {

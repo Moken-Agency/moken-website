@@ -1,0 +1,30 @@
+.title-two-descriptions-container {
+  padding: 0 16vw;
+  margin-top: 10vw;
+  margin-bottom: 13vw;
+  @media only screen and (max-width: 600px) {
+    padding: 0 44px;
+  }
+  .text-container {
+    margin-bottom: 64px;
+  }
+  .community-capabilities-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.95vw;
+    div {
+      width: 30vw;
+      align-items: flex-start;
+    }
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      div {
+        width: auto;
+        &:first-of-type {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}

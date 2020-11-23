@@ -49,7 +49,7 @@ export default {
                 },
                 {
                     title: 'PEOPLE & LEADERSHIP',
-                    route: '/'
+                    route: '/people-leadership'
 
                 },
                 {
@@ -159,6 +159,7 @@ export default {
                 },
                 {
                     title: 'HOST AN EVENT',
+                    route: '/host-an-event'
 
                 }, {
                     title: 'GET TICKETS',

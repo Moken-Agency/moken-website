@@ -17,7 +17,8 @@ const TitleContainerWithImg = ({title = '', description = '', imgURL = ''}) => {
                 <div className={'with-title-container-with-img-title-container'}>
                     <Title title={title} containerStyles={{marginBottom: isMobile ? 50 :'4vw'}}/>
                     <Description description={description}
-                                 size={16}
+                                 size={'1.23vw'}
+                                 mobSize={16}
                                  className={'with-title-container-with-img-description'}/>
                     <SubmitYourResume color={'black'} className={'with-title-container-with-img-submit'}/>
                 </div>

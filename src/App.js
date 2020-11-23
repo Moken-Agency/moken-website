@@ -53,6 +53,8 @@ import Photographer from "./screens/Photographer";
 import Videographer from "./screens/Videographer";
 import LeadInfrastructureEngineer from "./screens/LeadInfrastructureEngineer";
 import JobOffer from "./screens/JobOffer";
+import HostAnEvent from "./screens/HostAnEvent";
+import PeopleLeadership from "./screens/PeopleLeadership";
 
 const TestHome = () => {
     return (
@@ -71,6 +73,14 @@ const routsWithHeaderFooter = [
     {
         path: "/product-strategy",
         component: ProductStrategy
+    },
+    {
+        path: "/host-an-event",
+        component: HostAnEvent
+    },
+    {
+        path: "/people-leadership",
+        component: PeopleLeadership
     },
     {
         path: "/community-development",

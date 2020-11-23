@@ -1,0 +1,24 @@
+.header-title-container {
+  padding: 10vw 0 10vw 25vw;
+  width: 38vw;
+  margin-bottom: 225px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 200px 44px 0 44px;
+    width: 75vw;
+    margin-bottom: 110px;
+  }
+  .header-title-main-title {
+    letter-spacing: 4px;
+    margin-bottom: 1.4vw;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 48px;
+    }
+  }
+  .header-title-subtitle {
+    margin-bottom: 2.4vw;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 42px;
+    }
+  }
+}
