@@ -8,7 +8,7 @@ const Button = ({type = 'unborded', color = '', title = '', containerStyles = {}
 
 
     return (
-        <button className={`button-container ${type} ${color} ${className}`}
+        <button className={`button-container ${color} ${type} ${className}`}
                 onClick={onClick}
                 style={{...containerStyles, fontSize: isMobile ? mobSize : size}}>
             {title}

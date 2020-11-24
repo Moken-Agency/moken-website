@@ -1,8 +1,9 @@
 import React from 'react';
 import Popup from "reactjs-popup";
-import 'reactjs-popup/dist/index.css';
 import Button from "../Button";
 import './index.scss';
+import 'reactjs-popup/dist/index.css';
+
 
 
 const Modal = ({children, buttonTitle = '', buttonClassName = ''}) => {

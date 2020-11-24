@@ -10,11 +10,13 @@ import SubmitYourResume from "../../components/SubmitYourResume";
 import 'reactjs-popup/dist/index.css';
 import ReportBug from "../../components/ReportBug";
 import OpportunitiesImage from '../../images/opportunities.jpg'
+import Form from "../../components/Form";
 
 const Opportunities = () => {
     return (
         <div className={'opportunities-container'}>
            <ReportBug />
+           <Form/>
             <section className={'opportunities-title-container'}>
                 <Text type={'semiBold'} size={'1vw'} className={'main-title'}>CAREER OPPORTUNITIES</Text>
                 <Subtitle size={'4.15vw'} subtitle={'Work that matters.'} type={'thin'} className={'subtitle'}/>
