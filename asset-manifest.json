@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.c4686db7.chunk.css",
-    "main.js": "/moken-website/static/js/main.3a1c02a5.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.3a1c02a5.chunk.js.map",
+    "main.css": "/moken-website/static/css/main.7fa3638a.chunk.css",
+    "main.js": "/moken-website/static/js/main.f4483c40.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.f4483c40.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
     "static/css/2.f1b50ea8.chunk.css": "/moken-website/static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.02746d32.chunk.js": "/moken-website/static/js/2.02746d32.chunk.js",
-    "static/js/2.02746d32.chunk.js.map": "/moken-website/static/js/2.02746d32.chunk.js.map",
+    "static/js/2.cfec9924.chunk.js": "/moken-website/static/js/2.cfec9924.chunk.js",
+    "static/js/2.cfec9924.chunk.js.map": "/moken-website/static/js/2.cfec9924.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.41d40ef2debadc19a57bb7d0b57916b8.js": "/moken-website/precache-manifest.41d40ef2debadc19a57bb7d0b57916b8.js",
+    "precache-manifest.6645735387aa5bc6c167f99ecc39284f.js": "/moken-website/precache-manifest.6645735387aa5bc6c167f99ecc39284f.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.f1b50ea8.chunk.css.map": "/moken-website/static/css/2.f1b50ea8.chunk.css.map",
-    "static/css/main.c4686db7.chunk.css.map": "/moken-website/static/css/main.c4686db7.chunk.css.map",
-    "static/js/2.02746d32.chunk.js.LICENSE.txt": "/moken-website/static/js/2.02746d32.chunk.js.LICENSE.txt",
+    "static/css/main.7fa3638a.chunk.css.map": "/moken-website/static/css/main.7fa3638a.chunk.css.map",
+    "static/js/2.cfec9924.chunk.js.LICENSE.txt": "/moken-website/static/js/2.cfec9924.chunk.js.LICENSE.txt",
     "static/media/index.css": "/moken-website/static/media/Latinka Thin.a4ed4f32.otf",
     "static/media/careers-circles.svg": "/moken-website/static/media/careers-circles.aa4b6ec1.svg",
     "static/media/careers-header.jpg": "/moken-website/static/media/careers-header.3c85c5da.jpg",
@@ -21,6 +21,8 @@
     "static/media/careersMob.png": "/moken-website/static/media/careersMob.ca95c035.png",
     "static/media/cross-white.png": "/moken-website/static/media/cross-white.369cee7c.png",
     "static/media/designer-header.svg": "/moken-website/static/media/designer-header.d16607fa.svg",
+    "static/media/expertise-first-image.png": "/moken-website/static/media/expertise-first-image.ae9882a5.png",
+    "static/media/expertise-second.png": "/moken-website/static/media/expertise-second.5f8b89fa.png",
     "static/media/expertise.png": "/moken-website/static/media/expertise.f521b7e1.png",
     "static/media/index.scss": "/moken-website/static/media/expertiseMobHeader.bdf01bf9.png",
     "static/media/idea-factory-light.svg": "/moken-website/static/media/idea-factory-light.d2f4ad5c.svg",
@@ -33,6 +35,8 @@
     "static/media/our-partner-third.svg": "/moken-website/static/media/our-partner-third.4be50b89.svg",
     "static/media/package-first.svg": "/moken-website/static/media/package-first.ae9322f1.svg",
     "static/media/package-second.svg": "/moken-website/static/media/package-second.384fd935.svg",
+    "static/media/product-dev-web-first.png": "/moken-website/static/media/product-dev-web-first.ae2d409f.png",
+    "static/media/product-strategy-web-first.png": "/moken-website/static/media/product-strategy-web-first.2cbb73a4.png",
     "static/media/product-team-second.svg": "/moken-website/static/media/product-team-second.e05a8d1f.svg",
     "static/media/product-team.svg": "/moken-website/static/media/product-team.0d2a8ce5.svg",
     "static/media/report-bug-circles.png": "/moken-website/static/media/report-bug-circles.2871990a.png",
@@ -42,8 +46,8 @@
   "entrypoints": [
     "static/js/runtime-main.be4c88a6.js",
     "static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.02746d32.chunk.js",
-    "static/css/main.c4686db7.chunk.css",
-    "static/js/main.3a1c02a5.chunk.js"
+    "static/js/2.cfec9924.chunk.js",
+    "static/css/main.7fa3638a.chunk.css",
+    "static/js/main.f4483c40.chunk.js"
   ]
 }
