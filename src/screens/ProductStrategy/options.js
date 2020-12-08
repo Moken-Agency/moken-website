@@ -1,3 +1,8 @@
+import ExpertiseImageFirst from "../../images/expertise-first-image.png";
+import ProductStrategyWebFirst from "../../images/product-strategy-web-first.png";
+import ExpertiseImageSecond from "../../images/expertise-second.png";
+
+
 export default {
     firstSection: {
         title: {
@@ -6,7 +11,8 @@ export default {
             titleSecond: 'PRODUCT STRATEGY'
         },
         subtitle: 'Inclusive strategies that speak today’s consumer.',
-        imgURL: '',
+        imgURL: ProductStrategyWebFirst,
+        imgURLMobile: ExpertiseImageFirst,
         infoBlock: {
             infoTitleFirst: 'Intentional and strategic user experience has the potential to raise conversion rates by as much as 400%.',
             infoDescriptionFirst: 'Intuitive design and tailored usability is imperative in today’s technology focused world.' +
@@ -43,7 +49,7 @@ export default {
                 // route: ''
             },
         ],
-        imgURL: ''
+        imgURL: ExpertiseImageSecond
     },
     thirdSection: {
         title: 'WHAT WE DO',

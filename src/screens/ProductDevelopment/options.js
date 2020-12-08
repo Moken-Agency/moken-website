@@ -1,3 +1,8 @@
+import ExpertiseImageFirst from "../../images/expertise-first-image.png";
+import ProductDevWebFirst from "../../images/product-dev-web-first.png";
+import ExpertiseImageSecond from "../../images/expertise-second.png";
+
+
 export default {
     firstSection: {
         title: {
@@ -6,7 +11,8 @@ export default {
             titleSecond: 'PRODUCT DEVELOPMENT'
         },
         subtitle: 'Coding beautifully interactive products & platforms.',
-        imgURL: '',
+        imgURL: ProductDevWebFirst,
+        imgURLMobile: ExpertiseImageFirst,
         infoBlock: {
             infoTitleFirst: 'Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.',
             infoDescriptionFirst: 'An effective brand can give you a significant edge in today’s highly competitive market. We create emotional connections far beyond simply making your brand look visually appelling. We create authentic and unforgettable visuals and voice that connects with your customers.',
@@ -41,7 +47,7 @@ export default {
                 // route: ''
             },
         ],
-        imgURL: ''
+        imgURL: ExpertiseImageSecond
     },
     thirdSection: {
         title: 'WHAT WE DO',

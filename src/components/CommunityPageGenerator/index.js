@@ -8,6 +8,7 @@ import EmailForm from "../EmailForm";
 import Title from "../Title";
 import FirstMapItem from "./components/FirstMapItem";
 import SecondMapItem from "./components/SecondMapItem";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const dataExample = {
     firstSection : {
@@ -28,6 +29,7 @@ const dataExample = {
 
 const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => {
     console.log({firstSection});
+    const {isMobile} = useWindowDimensions()
 
     const {titleFirst = '', titleConjunctions = '', titleSecond = ''} = firstSection.title;
     const {infoTitleFirst = '', infoDescriptionFirst = '', infoSubtitleFirst = ''} = firstSection.infoBlock;
@@ -35,33 +37,38 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
         <div className={'community-page-generator-container'}>
             <section className={'first-section'}>
                 <div className={'first-section-container'}>
-                <div style={{display: 'flex', marginBottom: '1.2vw'}}>
+                <div style={{display: 'flex', marginBottom: '1.2vw', flexDirection: isMobile ? 'column' : 'row'}}>
                     <Text size={'.95vw'} type={'semiBold'}
+                          mobSize={14}
                           color={'#cdcdcdcd'}
                           textStyles={{letterSpacing: 4}}>{titleFirst}<span>&nbsp;</span></Text>
                     <Text size={'.95vw'} type={'semiBold'}
-                          textStyles={{letterSpacing: 4}}
+                          mobSize={14}
+                          textStyles={{letterSpacing: 4, marginBottom:  isMobile ? 70 : 0}}
                     >{`${titleConjunctions} ${titleSecond}`}</Text>
                 </div>
                     <Text size={'4.3vw'}  type={'thin'}
+                          mobSize={45}
                           textStyles={{letterSpacing: 4}}
-                          containerStyles={{marginBottom: '10.5vw'}}
+                          containerStyles={{ marginBottom: isMobile ? 150: '10.5vw'}}
                     >{firstSection.subtitle}</Text>
                 </div>
 
-                <img src={firstSection.imgURL} className={'first-section-img'}/>
+                <img src={isMobile ? firstSection.imgURLMobile : firstSection.imgURL} className={'first-section-img'}/>
                 <div className={'first-section-info-container'}>
                     <Text size={'3.3vw'}
+                          mobSize={35}
                           type={'extraLight'}
-                          containerStyles={{marginBottom: '5vw'}}
+                          containerStyles={{marginBottom: isMobile ? 40 : '5vw'}}
                           textStyles={{letterSpacing: 0.5,
                               // lineHeight: 63
                           }}>{infoTitleFirst}</Text>
                     <Text size={'1.2vw'} type={'light'}
+                          mobSize={16}
                         // textStyles={{lineHeight: 35}}
                           containerStyles={{marginBottom: '4.5vw'}}
                     >{infoDescriptionFirst}</Text>
-                    <Text size={'.84vw'} type={'semiBold'}>{infoSubtitleFirst}</Text>
+                    {!isMobile ? <Text size={'.84vw'} type={'semiBold'} textStyles={{letterSpacing: 4}}>{infoSubtitleFirst}</Text> : null}
                 </div>
             </section>
 

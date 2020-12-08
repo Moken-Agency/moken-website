@@ -1,9 +1,14 @@
 .community-page-generator-container {
   .first-section {
     padding: 10.9vw 0 8.2vw 0;
-
+    @media screen and (max-width: 600px) {
+      padding: 100px 0 0 0;
+    }
     .first-section-container {
-      padding: 0 33.45vw 0 26.1vw
+      padding: 0 33.45vw 0 26.1vw;
+      @media screen and (max-width: 600px) {
+        padding: 0 60px 0 50px;
+      }
     }
     .first-section-title {
 
@@ -13,9 +18,17 @@
       height: 44.9vw;
       margin-bottom: 10.7vw;
       background-color: #cdcdcd;
+      @media screen and (max-width: 600px) {
+        width: 100vw;
+        margin-bottom: 100px;
+      }
     }
     .first-section-info-container {
       padding: 0 25.2vw 0 41.6vw;
+      @media screen and (max-width: 600px) {
+        padding: 0 60px 0 50px;
+        margin-bottom: 170px;
+      }
     }
   }
 
@@ -23,6 +36,7 @@
 
     .second-section-container {
       display: flex;
+      flex-direction: column;
       padding: 0 13.6vw 0 10.1vw;
       .second-section-title {
         padding: 0;
@@ -34,8 +48,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 9.5vw;
-        margin-left: 12.3vw;
         margin-bottom: 14.8vw;
+        margin-left: 31.5vw;
+        @media only screen and (max-width: 600px) {
+          margin-left: 0;
+          padding: 0;
+          margin-top: 75px;
+          flex-direction: column;
+        }
       }
     }
 
@@ -47,14 +67,21 @@
         height: 44.9vw;
         margin-bottom: 14.8vw;
         background-color: #cdcdcd;
+        @media only screen and (max-width: 600px) {
+          margin-bottom: 100px;
+          width: 100vw;
+          height: 150px;
+        }
       }
     }
   }
   .third-section  {
     padding-bottom: 11.9vw;
     .third-section-container {
-      padding: 0 10.1vw 0 14.2vw
-
+      padding: 0 10.1vw 0 14.2vw;
+      @media only screen and (max-width: 600px) {
+        padding: 0 60px 0 50px;
+      }
     }
   }
 }

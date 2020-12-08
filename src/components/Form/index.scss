@@ -1,12 +1,16 @@
-.popup-content {
-  background: transparent;
-  width: 30%;
-  border-radius: 3vw;
-  padding: 0;
-  border: 0;
-  @media only screen and (max-width: 600px) {
-    width: 80%;
-    height: auto;
+
+.form-container {
+  background-color: transparent;
+  .popup-content {
+    background: transparent;
+    width: 30% !important;
+    border-radius: 3vw;
+    padding: 0;
+    border: 0;
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+      height: auto;
+    }
   }
 }
 .form-header {

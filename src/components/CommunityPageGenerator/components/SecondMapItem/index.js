@@ -7,9 +7,9 @@ import ArrowUpRight from '../../../../images/arrow-up-right.png'
 const SecondMapItem = ({title = '', btnTitle = ''}) => {
     return (
         <div className={'second-map-item-container'}>
-            <Text type={'extraLight'} size={'3.4vw'} className={'second-map-item-title'}>{title}</Text>
+            <Text type={'extraLight'} size={'3.4vw'} mobSize={35} className={'second-map-item-title'}>{title}</Text>
             <div className={'second-map-item-btn-container'}>
-                <Text type={'semiBold'} size={'.85vw'} className={'second-map-item-btn'}>{btnTitle}</Text>
+                <Text type={'semiBold'} size={'.85vw'} mobSize={12} className={'second-map-item-btn'}>{btnTitle}</Text>
                 <img src={ArrowUpRight} />
             </div>
         </div>

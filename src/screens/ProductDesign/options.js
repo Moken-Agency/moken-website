@@ -1,3 +1,7 @@
+import ExpertiseImageFirst from "../../images/expertise-first-image.png";
+import ExpertiseImageSecond from "../../images/expertise-second.png";
+
+
 export default {
     firstSection: {
         title: {
@@ -8,7 +12,8 @@ export default {
         subtitle: 'Designing strategic\n' +
             '& engaging user\n' +
             'experiences.',
-        imgURL: '',
+        imgURL: ExpertiseImageFirst,
+        imgURLMobile: ExpertiseImageFirst,
         infoBlock: {
             infoTitleFirst: 'Humans form 75% of their judgments on a website or platform’s credibility purely on its aesthetics.',
             infoDescriptionFirst: '52% of users say the main reason why they won’t return to a platform is aesthetics. ' +
@@ -34,7 +39,7 @@ export default {
             },
 
         ],
-        imgURL: ''
+        imgURL: ExpertiseImageSecond
     },
     thirdSection: {
         title: 'WHAT WE DO',
