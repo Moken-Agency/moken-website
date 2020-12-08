@@ -9,9 +9,9 @@ import './index.scss';
 //     marginBottom: isMobile ? 42 : '2.4vw'
 //
 // },
-const HeaderTitle = ({title = '', subtitle = '', description = ''}) => {
+const HeaderTitle = ({title = '', subtitle = '', description = '', marginBottom = 225 }) => {
     return (
-        <div className={'header-title-container'}>
+        <div className={'header-title-container'} style={{marginBottom}}>
             <Text size={'.9vw'}
                   mobSize={14}
                   type={'semiBold'}

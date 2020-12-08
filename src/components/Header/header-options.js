@@ -44,7 +44,7 @@ export default {
             subRouts: [
                 {
                     title: 'ABOUT MOKEN',
-                    route: '/'
+                    route: '/about-moken'
 
                 },
                 {
@@ -73,7 +73,7 @@ export default {
             dividerColor: '#ffc4af',
             subRouts: [
                 {
-                    title: 'About agency',
+                    title: 'AboutMoken agency',
                     route: '/about-agency'
                 },
                 {

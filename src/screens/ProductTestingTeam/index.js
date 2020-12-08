@@ -3,7 +3,7 @@ import Text from "../../components/Text";
 import './index.scss';
 import Title from "../../components/Title";
 import options from "./options";
-import Join from "./components/Join";
+import IterableCircle from "../../components/IterableCircle";
 import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
 import ProductTestingTeamCircles from '../../images/product-team.svg';
@@ -58,7 +58,7 @@ const ProductTestingTeam = () => {
                         {
                             joins.map((join, index) => {
                                 return (
-                                    <Join {...join}
+                                    <IterableCircle {...join}
                                           key={'join' + index}
                                           count={index + 1}
                                           isLast={index === joins.length - 1} />

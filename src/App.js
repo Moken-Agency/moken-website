@@ -55,6 +55,8 @@ import LeadInfrastructureEngineer from "./screens/LeadInfrastructureEngineer";
 import JobOffer from "./screens/JobOffer";
 import HostAnEvent from "./screens/HostAnEvent";
 import PeopleLeadership from "./screens/PeopleLeadership";
+import AboutMoken from "./screens/AboutMoken";
+import OurVision from "./screens/OurVision";
 
 const TestHome = () => {
     return (
@@ -67,8 +69,16 @@ const TestHome = () => {
 const routsWithHeaderFooter = [
 
     {
+        path: "/our-vision",
+        component: OurVision
+    },
+    {
         path: "/partnership-programs",
         component: PartnershipPrograms
+    },
+    {
+        path: "/about-moken",
+        component: AboutMoken
     },
     {
         path: "/product-strategy",
@@ -234,9 +244,13 @@ const routsWithHeaderFooter = [
         path: "/graphic-designer",
         component: GraphicDesigner
     },
+    // {
+    //     path: "/",
+    //     component: Opportunities
+    // },
     {
         path: "/",
-        component: Opportunities
+        component: OurVision
     },
 
 
@@ -267,7 +281,7 @@ function App() {
           {/*      <Link to="/">Home</Link>*/}
           {/*    </li>*/}
           {/*    <li>*/}
-          {/*      <Link to="/about">About</Link>*/}
+          {/*      <Link to="/about">AboutMoken</Link>*/}
           {/*    </li>*/}
           {/*    <li>*/}
           {/*      <Link to="/users">Users</Link>*/}

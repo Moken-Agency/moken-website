@@ -92,7 +92,7 @@ const Community = () => {
                     <Text size={'3.7vw'} mobSize={35} type={'extraLight'} containerStyles={styles.driven}>We are driven by the passion for working with determined innovators who live to make a change in the world.</Text>
                     <Text size={'1.35vw'} mobSize={16} type={'light'} containerStyles={styles.understand}>We understand that together we should see results, not just reports with the work we do. We've developed tailor-made strategies that assist in beating out the competition by tearing up the rule book. Through our agile approach, entrepreneurs, founders, and startups overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation. </Text>
                     <div className={'network-container'}>
-                        <SubmitYourResume title={'Join the Network'} color={'black'}/>
+                        <SubmitYourResume title={'IterableCircle the Network'} color={'black'}/>
                         <img src={ArrowTopRight} />
                     </div>
                 </div>

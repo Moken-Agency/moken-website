@@ -1,8 +1,8 @@
 import React from "react";
-import Text from "../../../../components/Text";
+import Text from "../Text";
 import './index.scss';
 
-const Join = ({title, subtitle, count, isLast}) => {
+const IterableCircle = ({title, subtitle, count, isLast}) => {
     return (
         <div className={'join-container'}>
             <div className={'join-left-container'}>
@@ -19,4 +19,4 @@ const Join = ({title, subtitle, count, isLast}) => {
     )
 }
 
-export default Join
+export default IterableCircle
