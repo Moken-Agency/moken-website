@@ -76,6 +76,7 @@ const AboutMoken = () => {
                         eliminating risks that aren’t necessary.
                     </Text>
                     <Text size={14}
+                          mobSize={10}
                           type={'semiBold'}
                           className={'about-moken-third-section-right-block-subtitle'}>HOW WE CAN COLLABORATE</Text>
 
@@ -94,6 +95,7 @@ const AboutMoken = () => {
                         }
                     </div>
                     <Text size={14}
+                          mobSize={10}
                           type={'semiBold'}
                           className={'about-moken-third-section-right-block-subtitle'}>CHOOSE YOUR PURPOSE</Text>
                     <SubmitYourResume  title={'Build & Scale Your Startup'} color={'black'} className={'marginZero'}/>

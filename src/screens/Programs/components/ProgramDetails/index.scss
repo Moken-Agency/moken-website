@@ -1,0 +1,28 @@
+.labs-details-container {
+  padding-right: 168px;
+  width: calc(100vw - 168px);
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 222px;
+  @media only screen and (max-width: 600px) {
+    width: auto;
+    padding-right: 0;
+    display: none;
+  }
+  .labs-details-block {
+    width: 40vw;
+    background-color: black;
+    padding: 25px 42px;
+    @media only screen and (max-width: 600px) {
+      width: auto;
+    }
+    .labs-details-title {
+      width: 10vw;
+      margin-bottom: 75px;
+    }
+    .labs-details-list-block {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

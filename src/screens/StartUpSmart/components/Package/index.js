@@ -70,6 +70,7 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                         return (
                             <div className={'description'}>
                                 <Text size={14}
+                                      mobSize={10}
                                       type={'semiBold'}
                                       containerStyles={{
                                           marginBottom: isMobile ? '8vw' : '1vw',
@@ -107,6 +108,7 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                                  className={'description'}
                                  key={'secCol packeges' + title + index}>
                                 <Text size={14}
+                                      mobSize={10}
                                       type={'semiBold'}
                                         containerStyles={{
                                             marginBottom: isMobile ? '8vw' : '1vw',

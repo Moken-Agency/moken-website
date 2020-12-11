@@ -1,0 +1,79 @@
+.labs-startups-title {
+  margin-bottom: 157px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+}
+
+.labs-startups-container {
+  padding: 0 202px;
+  display: flex;
+  margin-bottom: 200px;
+  @media screen and (max-width: 600px) {
+    padding: 0 43px;
+    flex-direction: column;
+    margin-bottom: 130px;
+
+  }
+  .labs-startups-first-text {
+    width: 40vw;
+    margin-right: 55px;
+    align-items: flex-start;
+    @media screen and (max-width: 600px) {
+      width: auto;
+      margin-right: auto;
+    }
+  }
+  .labs-startups-info-block {
+    padding-top: 40px;
+    width: 41vw;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+    .labs-startups-info-block-works-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 60px;
+      }
+      .labs-startups-info-block-work {
+        margin-bottom: 118px;
+        @media screen and (max-width: 600px) {
+          margin-bottom: 60px;
+        }
+        .labs-startups-info-block-work-first {
+          margin-bottom: 15px;
+          @media screen and (max-width: 600px) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .right-second-list-title {
+    margin-bottom: 93px;
+    @media screen and (max-width: 600px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+.labs-startups-info-right-title {
+  margin-bottom: 205px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 177px;
+  }
+}
+
+.labs-startups-info-right-first-title {
+  margin-bottom: 93px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 40px;
+  }
+}
+
+.huge-info-right-second-list-title {
+  margin-bottom: 45px;
+  margin-top: 0;
+}

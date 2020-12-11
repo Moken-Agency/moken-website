@@ -1,0 +1,15 @@
+import React from "react";
+import Title from "../Title";
+import Text from "../Text";
+import './index.scss';
+
+const TitleText = ({title = '', subtitle = '', className = ''}) => {
+    return (
+        <div className={`title-text-container ${className}`}>
+            <Title title={title} className={'title-text'}/>
+            <Text size={55} className={'title-text-subtitle'}  mobSize={35} type={'extraLight'}>{subtitle}</Text>
+        </div>
+    )
+}
+
+export default TitleText

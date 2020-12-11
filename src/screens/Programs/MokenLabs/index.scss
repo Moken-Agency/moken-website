@@ -1,0 +1,73 @@
+.labs-container {
+  padding-top: 185px;
+  padding-bottom: 142px;
+  @media only screen and (max-width: 600px) {
+    padding-top: 0;
+  }
+  .labs-main-title {
+    padding-left: 215px;
+    margin-bottom: 20px;
+      span {
+        letter-spacing: 4px;
+      }
+      @media only screen and (max-width: 600px) {
+        padding: 0 43px;
+      }
+    }
+  .labs-main-subtitle {
+    padding-left: 215px;
+    width: 60vw;
+    margin-bottom: 166px;
+    @media only screen and (max-width: 600px) {
+      padding: 0 43px;
+    }
+  }
+  .labs-image-first-container {
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 220px;
+    img {
+      width: 80vw;
+      height: 544px;
+    }
+  }
+  .labs-global-title {
+    margin-bottom: 150px;
+    @media only screen and (max-width: 600px) {
+     margin-bottom: 50px;
+    }
+  }
+  .labs-global-container {
+    padding: 0 238px;
+    @media only screen and (max-width: 600px) {
+      padding: 0 43px;
+    }
+    .labs-global-text-title {
+      margin-bottom: 172px;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 106px;
+      }
+    }
+    .labs-global-list-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 201px;
+      .labs-global-list-item {
+        width: 20vw;
+        margin-bottom: 4vw;
+        height: 25vw;
+        background-color: grey;
+      }
+    }
+  }
+
+  .labs-partner-guid-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 201px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}

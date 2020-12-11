@@ -125,7 +125,7 @@ const OurPartners = () => {
                        the current market, blend seamlessly with our clients’ operational realities, and eliminate
                        risks that aren’t necessary.</Text>
 
-                   <Text size={14} type={'semiBold'}>HOW WE CAN COLLABORATE</Text>
+                   <Text size={14} mobSize={10} type={'semiBold'}>HOW WE CAN COLLABORATE</Text>
                    <div className={'product-benefits-container'}>
                        {
                            collaborates.map(({title, subtitle}, index) => {
@@ -138,7 +138,7 @@ const OurPartners = () => {
                            })
                        }
                    </div>
-                   <Text size={14} type={'semiBold'} containerStyles={{marginTop: '4vw'}}>CHOOSE YOUR PURPOSE</Text>
+                   <Text size={14} mobSize={10} type={'semiBold'} containerStyles={{marginTop: '4vw'}}>CHOOSE YOUR PURPOSE</Text>
 
                    <SubmitYourResume title={'Moken Partner Program Guide'} color={'black'}/>
                    <SubmitYourResume title={'Ecosystem Partner Playbook'} color={'black'}/>

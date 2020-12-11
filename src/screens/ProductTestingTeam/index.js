@@ -25,13 +25,14 @@ const ProductTestingTeam = () => {
                     <Text className={'enthusiastic-title'}
                           type={'extraLight'} size={55}>Enthusiastic individuals working together to create extraordinary startups</Text>
                     <div className={'role-container'}>
-                        <Text className={'role-title'} size={14} type={'light'}
+                        <Text className={'role-title'} size={14} mobSize={10} type={'light'}
                               textStyles={{lineHeight: '35px'}}
                         containerStyles={{width: '29.5vw'}}>Our role consists of taking the time to understand your business model, and suggesting
                             creative and high-performing digital strategies. Our avant-garde tactics are in line with
                             the current market, blend seamlessly with our clients’ operational realities, and eliminate
                             risks that aren’t necessary.</Text>
                         <Text size={14}
+                              mobSize={10}
                               type={'semiBold'}
                               textStyles={{letterSpacing: 4}}>THE BENEFITS OF COLLABORATION</Text>
                         <div className={'product-benefits-container'}>

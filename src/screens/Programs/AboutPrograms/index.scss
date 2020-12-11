@@ -1,0 +1,53 @@
+.about-programs-container {
+  padding-bottom: 145px;
+  .about-programs-partnerships-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 202px;
+    margin-bottom: 184px;
+    @media screen and (max-width: 600px) {
+      padding: 43px;
+      overflow-x: scroll;
+    }
+  }
+  .about-programs {
+    .about-programs-title {
+      margin-bottom: 166px;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 50px;
+      }
+    }
+    .about-programs-block {
+      padding: 0 202px;
+      margin-bottom: 184px;
+      @media screen and (max-width: 600px) {
+        padding: 0 43px;
+      }
+      .about-program-text {
+        margin-bottom: 166px;
+        width: 52vw;
+        @media screen and (max-width: 600px) {
+          width: auto;
+          margin-bottom: 90px;
+        }
+      }
+      .about-programs-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .about-programs-item {
+          margin-bottom:10vw;
+        }
+
+      }
+    }
+  }
+
+  .about-programs-programs {
+    padding: 0 238px;
+    margin-bottom: 268px;
+    @media only screen and (max-width: 600px) {
+      padding: 0 43px;
+    }
+  }
+}

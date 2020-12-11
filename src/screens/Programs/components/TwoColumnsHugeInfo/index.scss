@@ -1,0 +1,82 @@
+.labs-benefits-container {
+  padding: 0 202px;
+  display: flex;
+  margin-bottom: 200px;
+  @media screen and (max-width: 600px) {
+    padding: 0 43px;
+    flex-direction: column;
+  }
+}
+
+.labs-benefits-title {
+  margin-bottom: 150px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+}
+.labs-benefits-container-title {
+  width: 40vw;
+  margin-right: 55px;
+  align-items: flex-start;
+  @media screen and (max-width: 600px) {
+    width: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+}
+.labs-benefits-container-info-block {
+  padding-top: 40px;
+  width: 41vw;
+  @media screen and (max-width: 600px) {
+    width: auto;
+    padding-top: 0;
+  }
+  .labs-benefits-container-info-block-first-title {
+    margin-bottom: 200px;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 150px;
+      }
+    }
+  .labs-benefits-container-info-block-second-title {
+    margin-bottom: 93px;
+    @media screen and (max-width: 600px) {
+      margin-bottom: 40px;
+    }
+  }
+  .labs-benefits-container-info-block-works-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+    .labs-benefits-container-info-block-work {
+      margin-bottom: 118px;
+      width: 15vw;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 60px;
+        width: auto;
+      }
+      .labs-benefits-list-item-first {
+        margin-bottom: 15px;
+        @media screen and (max-width: 600px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+.two-column-right-second-list-title {
+  margin-bottom: 93px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 40px;
+
+  }
+}
+
+.two-column-submit-your-resume {
+  margin-bottom: 45px;
+  margin-top: 0;
+}

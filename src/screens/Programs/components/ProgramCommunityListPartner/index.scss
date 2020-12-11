@@ -1,0 +1,26 @@
+.labs-join-title {
+  margin-bottom: 160px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+}
+
+.labs-join-container {
+  padding: 0 202px;
+  margin-bottom: 230px;
+  @media screen and (max-width: 600px) {
+    padding: 0 43px;
+  }
+  .labs-join-partners-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 166px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  .labs-join-schedule-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

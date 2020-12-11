@@ -1,0 +1,108 @@
+.courses-container {
+  padding-bottom: 147px;
+  .courses-image-block {
+    margin-bottom: 188px;
+  }
+  .courses-overview-title {
+
+  }
+  .courses-overview-container {
+    padding: 150px 238px 255px 238px;
+    @media only screen and (max-width: 600px) {
+      padding: 0 43px;
+      margin-bottom: 100px;
+    }
+    .courses-overview-first-text {
+      margin-bottom: 70px;
+    }
+  }
+  //.courses-courses-title {
+  //  margin-bottom: 160px;
+  //  @media only screen and (max-width: 600px) {
+  //    margin-bottom: 48px;
+  //  }
+  //}
+  //.courses-courses-container {
+  //  //padding: 0 12vw 0 14vw;
+  //  //@media only screen and (max-width: 600px) {
+  //  //  padding: 0 43px;
+  //  //}
+  //  .courses-courses-text {
+  //    margin-bottom: 208px;
+  //    width: 40vw;
+  //    padding: 0 12vw 0 14vw;
+  //
+  //    @media only screen and (max-width: 600px) {
+  //      width: auto;
+  //      padding: 0 43px;
+  //    }
+  //  }
+  //  .courses-list-container {
+  //    display: flex;
+  //    justify-content: space-between;
+  //    margin-bottom: 248px;
+  //    padding: 0 12vw 0 14vw;
+  //    @media only screen and (max-width: 600px) {
+  //      overflow-x: scroll;
+  //      padding: 0 0 0 43px;
+  //    }
+  //  }
+  //}
+
+  .course-color-block {
+    padding-top: 67px;
+    padding-bottom: 67px;
+    margin-bottom: 290px;
+  }
+
+  .courses-community-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 290px;
+    padding-left: 238px;
+    .courses-community-info-block {
+      margin-bottom: 62px;
+      margin-right: 73px;
+    }
+    img {
+      width: 750px;
+      height: 635px;
+    }
+  }
+
+  .courses-components-title {
+    margin-bottom: 155px;
+  }
+  .courses-components-list-container {
+    margin-bottom: 320px;
+    @media screen and (max-width: 600px){
+      margin-bottom: 200px;
+    }
+  }
+
+  .courses-partners-title {
+    margin-bottom: 155px;
+  }
+
+  .courses-partners-container {
+    padding: 0 238px;
+    margin-bottom: 279px;
+    .courses-partners-subtitle {
+      width: 40vw;
+      margin-bottom: 155px;
+    }
+    .courses-partners-images {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .courses-partners-image {
+        width: 20vw;
+        height: 10vw;
+        background-color: #a7a7a7;
+        margin-bottom: 5vw;
+      }
+    }
+  }
+
+}

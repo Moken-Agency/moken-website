@@ -15,9 +15,16 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 3.5vw;
+    .community-partner-btn {
+      padding: 1.7vw 2.1vw;
+      @media only screen and (max-width: 600px) {
+        padding: 17px 23px;
+
+      }
+    }
   }
   .community-partner-subtitle {
-    width: 16vw;
+    //width: 16vw;
     //margin-top: 1vw;
     @media only screen and (max-width: 600px) {
       width: auto;

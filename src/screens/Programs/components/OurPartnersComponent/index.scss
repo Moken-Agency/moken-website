@@ -1,0 +1,37 @@
+.labs-increase-title {
+  margin-bottom: 155px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+}
+
+.labs-increase-container {
+  padding: 0 202px;
+  margin-bottom: 178px;
+  @media screen and (max-width: 600px) {
+    padding: 0 43px;
+    margin-bottom: 140px;
+  }
+  .our-partners-text-title {
+    width: 60vw;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+  }
+  .labs-increase-list-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .labs-increase-list-item {
+      width: 20vw;
+      height: 144px;
+      background-color: grey;
+      margin-bottom: 3vw;
+      @media screen and (max-width: 600px) {
+        width: 120px;
+        height: 55px;
+        margin-bottom: 58px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.labs-overview-title {
+  margin-bottom: 150px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 50px;
+  }
+}
+
+
+.labs-overview-container {
+  padding: 0 238px;
+  margin-bottom: 206px;
+  @media screen and (max-width: 600px) {
+    padding: 0 43px;
+    margin-bottom: 135px;
+  }
+  .labs-overview-info-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+    .labs-overview-info-block-first-text {
+      width:30vw;
+      align-items: flex-start;
+      @media screen and (max-width: 600px) {
+        width: auto;
+        margin-bottom: 65px;
+      }
+    }
+    .labs-overview-info-block-second-text {
+      width: 30vw;
+      margin-bottom: 70px;
+      @media screen and (max-width: 600px) {
+        width: auto;
+      }
+    }
+  }
+}

@@ -28,7 +28,6 @@ import YouTubeHost from "./screens/YouTubeHost";
 import Careers from "./screens/Careers";
 import Opportunities from "./screens/Opportunities";
 import Portfolio from "./screens/Portfolio";
-import Events from "./screens/UpcomingEvents";
 import TermsAndConditions from "./screens/TermsAndConditions";
 import PrivacyPolicy from "./screens/PrivacyPolicy";
 import Expertise from "./screens/Expertise";
@@ -57,6 +56,12 @@ import HostAnEvent from "./screens/HostAnEvent";
 import PeopleLeadership from "./screens/PeopleLeadership";
 import AboutMoken from "./screens/AboutMoken";
 import OurVision from "./screens/OurVision";
+import MokenLabs from "./screens/Programs/MokenLabs";
+import Courses from "./screens/Programs/Courses";
+import FutureFounders from "./screens/Programs/FutureFounders";
+import RaisingRight from "./screens/Programs/RaisingRight";
+import IdeationToInnovation from "./screens/Programs/IdeationToInnovation";
+import AboutPrograms from "./screens/Programs/AboutPrograms";
 
 const TestHome = () => {
     return (
@@ -68,6 +73,30 @@ const TestHome = () => {
 
 const routsWithHeaderFooter = [
 
+    {
+        path: "/about-programs",
+        component: AboutPrograms
+    },
+    {
+        path: "/ideation-to-innovation",
+        component: IdeationToInnovation
+    },
+    {
+        path: "/raising-right",
+        component: RaisingRight
+    },
+    {
+        path: "/future-founders",
+        component: FutureFounders
+    },
+    {
+        path: "/moken-labs",
+        component: MokenLabs
+    },
+    {
+        path: "/courses",
+        component: Courses
+    },
     {
         path: "/our-vision",
         component: OurVision
@@ -250,8 +279,9 @@ const routsWithHeaderFooter = [
     // },
     {
         path: "/",
-        component: OurVision
+        component: AboutPrograms
     },
+
 
 
 ];
@@ -338,21 +368,3 @@ function App() {
 }
 
 export default App;
-
-
-// <>
-//     {width >= 600 ?
-//         <Header isOpen={isOpen} setIsOpen={setIsOpen}/> :
-//         <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen}/>
-//     }
-//     <Route
-//         path={route.path}
-//         children={<route.component />}
-//
-//         // render={props => (
-//         //     // pass the sub-routes down to keep nesting
-//         //     <route.component {...props} />
-//         // )}
-//     />
-//     <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
-// </>

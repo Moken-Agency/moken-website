@@ -1,0 +1,36 @@
+.courses-courses-title {
+  margin-bottom: 160px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 48px;
+  }
+}
+.courses-courses-container {
+  //padding: 0 12vw 0 14vw;
+  //@media only screen and (max-width: 600px) {
+  //  padding: 0 43px;
+  //}
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 100px;
+  }
+  .courses-courses-text {
+    margin-bottom: 208px;
+    width: 40vw;
+    padding: 0 12vw 0 14vw;
+
+    @media only screen and (max-width: 600px) {
+      width: auto;
+      padding: 0 43px;
+      margin-bottom: 100px;
+    }
+  }
+  .courses-list-container {
+    display: flex;
+    justify-content: space-between;
+    //margin-bottom: 248px;
+    padding: 0 12vw 248px 14vw;
+    @media only screen and (max-width: 600px) {
+      overflow-x: scroll;
+      padding: 0 0 30px 43px;
+    }
+  }
+}
