@@ -1,0 +1,9 @@
+.for-brands-container {
+  padding-bottom: 153px;
+  .for-brands-color-block {
+    padding: 67px 14vw;
+    @media only screen and (max-width: 600px) {
+      padding: 43px;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import options from './options';
 import ExpertiseItem from "./components/ExpertiseItem";
 import Button from "../../components/Button";
 import ExpertiseImage from '../../images/expertise.png'
+import HeaderTitle from "../../components/HeaderTitle";
 const {gettingStarted, marketing, product} = options;
 
 const Expertise = () => {
@@ -18,6 +19,7 @@ const Expertise = () => {
                 <Text className={'expertise-title'} size={'1vw'} mobSize={14} type={'semiBold'} mobColor={'white'}>EXPERTISE</Text>
                 <Text className={'expertise-subtitle'} type={'thin'} size={'4.45vw'} mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
             </div>
+
             <Title className={'expertise-started-title'} title={'GETTING STARTED'} />
 
             <div className={'expertise-second-wrapper'}>

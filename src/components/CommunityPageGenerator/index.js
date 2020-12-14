@@ -102,7 +102,7 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
                         })
                     }
 
-                    <EmailForm withForm title={'Stay in the loop & never miss a thing.'} width={'20vw'}/>
+                    <EmailForm withForm />
                 </div>
             </section>
 

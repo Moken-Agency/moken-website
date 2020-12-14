@@ -5,6 +5,7 @@ import React from "react";
 import './index.scss';
 import Button from "../../../../components/Button";
 import Title from "../../../../components/Title";
+import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 
 const HugeInfoAllListColumn = ({leftTitle,
                                    rightTitle,
@@ -16,6 +17,8 @@ const HugeInfoAllListColumn = ({leftTitle,
                                    secondList = [],
                                    withBtn = false,
                                    onClick = () => {}}) => {
+    const {isMobile} = useWindowDimensions()
+
     return (
        <>
            <Title title={mainTitle} className={'labs-startups-title'}/>
@@ -27,7 +30,11 @@ const HugeInfoAllListColumn = ({leftTitle,
                    mobSize={35}
                    className={'labs-startups-first-text'}>{leftTitle}</Text>
                <div className={'labs-startups-info-block'}>
-                   <Text size={20} mobSize={16} type={'light'} className={'labs-startups-info-right-title'}>{rightTitle}</Text>
+                   <Text size={20}
+                         mobSize={16}
+                         type={'light'}
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                         className={'labs-startups-info-right-title'}>{rightTitle}</Text>
 
                    <Text type={'semiBold'}
                          size={14}
@@ -39,8 +46,10 @@ const HugeInfoAllListColumn = ({leftTitle,
                            firstList.map(({title, subtitle}, index) => {
                                return (
                                    <div key={'labs works' + index} className={'labs-startups-info-block-work'}>
-                                       <Text size={22} type={'semiBold'} className={'labs-startups-info-block-work-first'}>{title}</Text>
-                                       <Text size={20} type={'light'}>{subtitle}</Text>
+                                       <Text size={22} mobSize={16} type={'semiBold'} className={'labs-startups-info-block-work-first'}>{title}</Text>
+                                       <Text size={20}
+                                             textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                                             mobSize={16} type={'light'}>{subtitle}</Text>
                                    </div>
                                )
                            })

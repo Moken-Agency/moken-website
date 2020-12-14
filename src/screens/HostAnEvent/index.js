@@ -10,8 +10,11 @@ import Swiper from "../../components/Swiper";
 import options from "./options";
 import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const HostAnEvent = () => {
+    const {isMobile} = useWindowDimensions();
+
    return (
        <div className={'host-an-event-container'}>
         <HeaderTitle title={'HOST AN EVENT'}
@@ -19,8 +22,10 @@ const HostAnEvent = () => {
                      description={'Creating an unmatched global ecosystem, together.'}/>
 
             <img src={HostImage} className={'host-an-event-header-container'}/>
-            <Title title={'OVERVIEW'} />
-            <TitleTwoDescriptions title={'A global startup program that fosters and invests in bright and passionate ' +
+
+            <TitleTwoDescriptions
+                mainTitle={'OVERVIEW'}
+                title={'A global startup program that fosters and invests in bright and passionate ' +
             'early stage founders with cutting-edge ideas.'}
                                   firstDescription={'We provide seed funding, strategic mentorship, a creative workspace, ' +
                                   'a multitude of perks, entrepreneurship-focused business training, and directly support ' +
@@ -55,33 +60,54 @@ const HostAnEvent = () => {
                        backgroundColor={'#263da8'}
                        withIcon/>
 
-           <Title title={'BRING US TO YOU'} />
-           <TitleTwoDescriptions title={'A global startup program that fosters and invests in bright and passionate early stage founders with cutting-edge ideas.'}
+           <TitleTwoDescriptions mainTitle={'BRING US TO YOU'}
+               title={'A global startup program that fosters and invests in bright and passionate early stage founders with cutting-edge ideas.'}
                                  firstDescription={'We provide seed funding, strategic mentorship, a creative workspace, a multitude of perks, entrepreneurship-focused business training, and directly support our startups through an expansive network of partner entities, mentors and investors. We create an environment where you can advance your company an incredible amount in a short period of time.'}
                                  secondDescription={'We partner with innovators through our tailored and integrative expertise, complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven outcomes.'}/>
 
             <div className={'central-container-with-info'}>
                 <Text className={'central-title'} type={'semiBold'} size={14} mobSize={10}>HOW WE HELP</Text>
                 <div className={'central-sub-container'}>
-                    <Text size={20} mobSize={16} type={'light'}>— We will create an Eventbrite page</Text>
-                    <Text size={20} mobSize={16} type={'light'}>— Verbal & written communications</Text>
-                    <Text size={20} mobSize={16} type={'light'}>— Venue & logistics management Negotiation & buget management Public Relations</Text>
-                    <Text size={20} mobSize={16} type={'light'}>— Flexible fee structures</Text>
+                    <Text size={20}
+                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                          mobSize={16}
+                          type={'light'}>— We will create an Eventbrite page</Text>
+                    <Text size={20}
+                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                          mobSize={16}
+                          type={'light'}>— Verbal & written communications</Text>
+                    <Text size={20}
+                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                          mobSize={16}
+                          type={'light'}>— Venue & logistics management Negotiation & buget management Public Relations</Text>
+                    <Text size={20}
+                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                          mobSize={16}
+                          type={'light'}>— Flexible fee structures</Text>
                 </div>
             </div>
 
            <div className={'central-container-with-info'}>
                <Text className={'central-title'} type={'semiBold'} size={14} mobSize={10}>REQUIREMENTS</Text>
                <div className={'central-sub-container'}>
-                   <Text size={20} mobSize={16} type={'light'}>— Provide target market</Text>
-                   <Text size={20} mobSize={16} type={'light'}>— Provide access to your desired invite list</Text>
-                   <Text size={20} mobSize={16} type={'light'}>— Provide us your desired budget</Text>
+                   <Text size={20}
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                         mobSize={16}
+                         type={'light'}>— Provide target market</Text>
+                   <Text size={20}
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                         mobSize={16}
+                         type={'light'}>— Provide access to your desired invite list</Text>
+                   <Text size={20}
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                         mobSize={16}
+                         type={'light'}>— Provide us your desired budget</Text>
                </div>
            </div>
 
             <ColorBlock title={'Ready to collaborate?'} type={'thin'} subtitle={'GET INVOLVED'} size={75} backgroundColor={'#000'}/>
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} withForm width={'20vw'} />
+            <EmailForm  withForm />
        </div>
    )
 }

@@ -1,0 +1,23 @@
+.something-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 320px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      padding: 0 43px;
+      margin-bottom: 100px;
+    }
+    .something-title {
+    align-items: flex-start;
+    margin-right: 10vw;
+  }
+  .something-block {
+    width: 15.5vw;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+      .something-block-subtitle {
+      margin-bottom: 20px;
+    }
+  }
+}

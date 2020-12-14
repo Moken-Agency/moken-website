@@ -63,7 +63,7 @@ const FutureFounders = () => {
                 subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
                 options={options.future}/>
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} withForm />
+            <EmailForm withForm />
         </div>
     )
 }

@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 230px;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 100px;
+  }
   div {
     .color-block-image {
       height: 1.5vw;

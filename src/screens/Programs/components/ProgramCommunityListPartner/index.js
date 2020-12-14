@@ -1,12 +1,11 @@
 import Text from "../../../../components/Text";
-import options from "../../MokenLabs/options";
 import CommunityPartner from "../../../../components/CommunityPartner";
 import SubmitYourResume from "../../../../components/SubmitYourResume";
 import React from "react";
 import './index.scss';
 import Title from "../../../../components/Title";
 
-const ProgramCommunityListPartner = ({title, subtitle, options, onClick = () => {}}) => {
+const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], onClick}) => {
    return (
        <>
            <Title title={title} className={'labs-join-title'} />
@@ -24,9 +23,9 @@ const ProgramCommunityListPartner = ({title, subtitle, options, onClick = () => 
                    }
                </div>
 
-               <div className={'labs-join-schedule-container'} >
+               {onClick ? <div className={'labs-join-schedule-container'}>
                    <SubmitYourResume title={'See your schedule'} color={'black'} onClick={onClick}/>
-               </div>
+               </div> : null}
             </section>
        </>
    )

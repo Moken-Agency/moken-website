@@ -11,6 +11,9 @@ import SubmitYourResume from "../../components/SubmitYourResume";
 import CommunityPartner from "../../components/CommunityPartner";
 import EmailForm from "../../components/EmailForm";
 import Swiper from "../../components/Swiper";
+import HeaderTitle from "../../components/HeaderTitle";
+import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
+import ImageBlock from "../../components/ImageBlock";
 
 
 const AboutAgency = () => {
@@ -43,45 +46,28 @@ const AboutAgency = () => {
 
     return (
         <div className={'about-agency-container'}>
-            <div className={'our-partners-info-container'}>
-                <Text type={'semiBold'}
-                      size={'1vw'}
-                      mobSize={14}
-                      textStyles={{letterSpacing: 4}}
-                      containerStyles={{marginBottom: isMobile ? '18vw' : '1.5vw'}}>MOKEN AGENCY</Text>
-                <Text type={'thin'}
-                      size={'4.2vw'}
-                      mobSize={45}
-                      containerStyles={{marginBottom: isMobile ? '5vw' : '1vw'}}>Where startups build, create & grow.</Text>
-                <Text type={'light'}
-                      containerStyles={{marginBottom: '28.7vw'}}
-                      size={'1.1vw'}
-                      mobSize={16}>Providing opportunities for startups and founders to build and develop their visions,
-                    ideas, and products.</Text>
-            </div>
-            <Title className={'partners-title'} title={'AGENCY OVERVIEW'} />
-            <div className={'our-partners-help-clients-container'}>
-                <Text size={'3.1vw'}
-                      mobSize={35}
-                      type={'extraLight'}>We help clients look at the world differently. Startups,
+
+            <HeaderTitle title={'MOKEN AGENCY'} subtitle={'Where startups build, create & grow.'}
+                         description={`Providing opportunities for startups and founders to build and develop their visions,
+                    ideas, and products.`} />
+
+                    <TitleTwoDescriptions mainTitle={'AGENCY OVERVIEW'}
+                                          title={`We help clients look at the world differently. Startups,
                     founders, and global industry leaders
-                    come to us to solve defining challenges.</Text>
-                <div className={'our-partners-capabilities-container'}>
-                    <Text size={'1.1vw'}
-                          type={'light'}>Our capabilities span the breadth of operations, project, and product
+                    come to us to solve defining challenges.`}
+                                          firstDescription={`Our capabilities span the breadth of operations, project, and product
                         management; business strategy; marketing; design; technology; revenue optimization; talent
                         acquisition; growth; and sales, across all industries through customized products, services,
-                        courses, workshops, solutions, and mentorship.</Text>
-                    <Text size={'1.1vw'}
-                          type={'light'}>We partner with innovators through our tailored and integrative expertise,
+                        courses, workshops, solutions, and mentorship.`}
+                                          secondDescription={`We partner with innovators through our tailored and integrative expertise,
                         complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior,
-                        and impactfully driven outcomes.</Text>
-                </div>
-            </div>
+                        and impactfully driven outcomes.`}
+                    />
 
-            <div className={'our-partners-first-img'}>
-                <img src={SecondImage} />
-            </div>
+
+
+
+            <ImageBlock url={SecondImage} position={'right'}/>
 
             <Title className={'partners-title'} title={'OUR EXPERTISE'} />
 
@@ -156,7 +142,7 @@ const AboutAgency = () => {
                       subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} />
 
                 </div>
-                <EmailForm withForm width={'20vw'} title={'Stay in the loop & never miss a thing.'} />
+                <EmailForm withForm  />
             </div>
 
         </div>

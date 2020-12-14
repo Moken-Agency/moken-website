@@ -1,0 +1,19 @@
+.about-program-container {
+  margin-bottom: 78px;
+  .about-program-title {
+    margin-bottom: 40px;
+  }
+  .about-program-divider {
+    width: 188px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 35px;
+    @media only screen and (max-width: 600px) {
+      width: 90px;
+    }
+  }
+  .about-program-text {
+    width: 100px;
+  }
+
+}

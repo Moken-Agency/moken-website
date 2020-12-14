@@ -1,0 +1,50 @@
+.mo-ken-container {
+  padding-bottom: 150px;
+  .mo-ken-header {
+    margin-bottom: 175px;
+  }
+  .mo-ken-overview {
+    padding-left: 12vw;
+    @media only screen and (max-width: 600px) {
+      padding: 0 43px;
+    }
+    .mo-ken-overview-title {
+      margin-bottom: 150px;
+      padding-left: 0;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 50px;
+      }
+    }
+    .mo-ken-overview-main {
+      padding-left: 2vw;
+      position: relative;
+      width: 50vw;
+      @media only screen and (max-width: 600px) {
+        width: auto;
+        padding-left: 0;
+      }
+      .mo-ken-overview-subtitle {
+        margin-bottom: 52px;
+      }
+      .mo-ken-overview-description {
+        margin-bottom: 230px;
+      }
+    }
+    img {
+      height: 628px;
+      width: 100%;
+      margin-bottom: 185px;
+      @media only screen and (max-width: 600px) {
+        height: 314px;
+      }
+    }
+  }
+
+  .mo-ken-color-block {
+    //padding: 67px 230px;
+    margin-bottom: 235px;
+  }
+  .key-notes-title {
+
+  }
+}

@@ -86,6 +86,8 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                                             return (
                                                 <Text key={'packages descriptions'+ title + index}
                                                       size={20}
+                                                      mobSize={16}
+                                                      textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                                                       containerStyles={{
                                                           marginBottom: isMobile ? '2vw' : '1vw',
                                                       }}
@@ -125,6 +127,8 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                                             return (
                                                 <Text size={20}
                                                       type={'light'}
+                                                      mobSize={16}
+                                                      textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                                                       containerStyles={{
                                                           marginBottom: isMobile ? '2vw' : '1vw',
                                                       }}

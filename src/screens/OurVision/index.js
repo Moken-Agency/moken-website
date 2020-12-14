@@ -9,8 +9,12 @@ import Value from "./Value";
 import ColorBlock from "../../components/ColorBlock";
 import IterableCircle from "../../components/IterableCircle";
 import EmailForm from "../../components/EmailForm";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const OurVision = () => {
+
+    const {isMobile} = useWindowDimensions();
+
     return (
         <div className={'our-vision-container'}>
             <HeaderTitle
@@ -29,7 +33,11 @@ const OurVision = () => {
                 <div className={'vision-beliefs-info-container'}>
                     <Text size={55} type={'extraLight'} className={'vision-beliefs-subtitle'}>Empowering one another in creating change around the world.</Text>
                     <div className={'vision-beliefs-info-right-container'}>
-                        <Text size={20} type={'light'} className={'vision-beliefs-info-right-container-text'}>We know that dynamic actions define the future and that the ambition to lead requires
+                        <Text size={20}
+                              mobSize={16}
+                              textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                              type={'light'}
+                              className={'vision-beliefs-info-right-container-text'}>We know that dynamic actions define the future and that the ambition to lead requires
                             the tenacity to adapt. This is why we partner with clients, startups, and founders who
                             challenge themselves to be exceptional leaders and are unwavering in our commitment to do
                              right by our clients, team, partners, and communities. We define our ambitions with clients,
@@ -53,7 +61,10 @@ const OurVision = () => {
                     <div className={'vision-values-right-container'}>
                         <Text size={16} type={'semiBold'} className={'vision-values-right-title'}>OUR VALUES</Text>
                         <Text size={55} type={'extraLight'} className={'vision-values-right-subtitle'}>We make it easy to kickstart your vision.</Text>
-                        <Text size={20} type={'light'} className={'vision-values-right-text'}>With packages at a startup price point, we work with founders and ideators with
+                        <Text size={20}
+                              mobSize={16}
+                              textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                              type={'light'} className={'vision-values-right-text'}>With packages at a startup price point, we work with founders and ideators with
                             high growth potential. We're passionate about big ideas and working with people who
                             feel the same.</Text>
                     </div>
@@ -89,7 +100,7 @@ const OurVision = () => {
                 <img src={''} className={'vision-works-image'}/>
             </section>
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} withForm/>
+            <EmailForm withForm />
 
         </div>
     )

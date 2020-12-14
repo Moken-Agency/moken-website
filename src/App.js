@@ -62,6 +62,16 @@ import FutureFounders from "./screens/Programs/FutureFounders";
 import RaisingRight from "./screens/Programs/RaisingRight";
 import IdeationToInnovation from "./screens/Programs/IdeationToInnovation";
 import AboutPrograms from "./screens/Programs/AboutPrograms";
+import ConnectWithUs from "./screens/ConnectWithUs";
+import MoPlusKen from "./screens/MoPlusKen";
+import InnovatorFeature from "./screens/InnovatorFeature";
+import ForInvestors from "./screens/ForInvestors";
+import ForStudents from "./screens/ForStudents";
+import ForStartups from "./screens/ForStartups";
+import ForBrands from "./screens/ForBrands";
+import AdvertiseWithUs from "./screens/AdvertiseWithUs";
+import ForFounders from "./screens/ForFounders";
+import CommunityPartnerScreen from "./screens/CommunityPartnerScreen";
 
 const TestHome = () => {
     return (
@@ -73,6 +83,46 @@ const TestHome = () => {
 
 const routsWithHeaderFooter = [
 
+    {
+        path: "/community-partner",
+        component: CommunityPartnerScreen
+    },
+    {
+        path: "/for-founders",
+        component: ForFounders
+    },
+    {
+        path: "/advertise-wth-us",
+        component: AdvertiseWithUs
+    },
+    {
+        path: "/for-brands",
+        component: ForBrands
+    },
+    {
+        path: "/for-startups",
+        component: ForStartups
+    },
+    {
+        path: "/for-students",
+        component: ForStudents
+    },
+    {
+        path: "/for-investors",
+        component: ForInvestors
+    },
+    {
+        path: "/innovator-feature",
+        component: InnovatorFeature
+    },
+    {
+        path: "/mo-ken",
+        component: MoPlusKen
+    },
+    {
+        path: "/connect-with-us",
+        component: ConnectWithUs
+    },
     {
         path: "/about-programs",
         component: AboutPrograms
@@ -279,7 +329,7 @@ const routsWithHeaderFooter = [
     // },
     {
         path: "/",
-        component: AboutPrograms
+        component: CommunityPartnerScreen
     },
 
 

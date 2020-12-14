@@ -1,0 +1,16 @@
+.underline-text-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 45px;
+  }
+  .underline-text-img {
+    margin-left: 38px;
+    height: 27px;
+    width: 27px;
+  }
+  .underline-text {
+    margin: 0;
+  }
+}

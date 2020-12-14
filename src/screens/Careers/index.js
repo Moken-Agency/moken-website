@@ -14,6 +14,7 @@ import ImagePeople from '../../images/careers-peopple.png';
 import ImagePeopleHeader from '../../images/careers-header.jpg';
 import CareersCircles from '../../images/careers-circles.svg';
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import HeaderTitle from "../../components/HeaderTitle";
 
 
 const Careers = () => {
@@ -23,14 +24,12 @@ const Careers = () => {
 
     return (
         <div className={'careers-container'}>
-            <section className={'careers-first-section'}>
-                <div className={'careers-first-text-container'}>
-                    <Text size={'1vw'} mobSize={14} type={'semiBold'} className={'careers-first-section-first-title'}>CAREERS</Text>
-                    <Text size={'5vw'} mobSize={45} type={'thin'} className={'careers-first-section-second-title'}>A team of experts who learn by doing.</Text>
-                    <Text size={'1.35vw'} mobSize={16} type={'light'} className={'careers-first-section-third-title'}>Powered by people and elevated by technology. If you’re looking for an opportunity to take your
-                        career forwards join us and help create change with the global brands of tomorrow.</Text>
-                </div>
-            </section>
+            <HeaderTitle title={'CAREERS'}
+                         description={`Powered by people and elevated by technology. If you’re looking for an opportunity to take your
+                        career forwards join us and help create change with the global brands of tomorrow.`}
+                         subtitle={`A team of experts who learn by doing.`}
+            />
+
             <img className={'image-section'} src={ImagePeopleHeader} />
 
             <section className={'careers-second-section'}>

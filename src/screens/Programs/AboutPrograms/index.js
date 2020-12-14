@@ -15,19 +15,7 @@ import InfoImgCompany from "../components/InfoImgCompany";
 import OurPartnersComponent from "../components/OurPartnersComponent";
 import EmailForm from "../../../components/EmailForm";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
-
-const Program = ({containerStyles}) => {
-    return (
-        <div style={{marginBottom: 78, ...containerStyles}}>
-            <Text style={{marginBottom: 40}} size={75} mobSize={55} type={'semiBold'}>120</Text>
-            <div style={{width: 188, height: 2, backgroundColor: 'black', marginBottom: 35}} />
-            <Text type={'light'}
-                  containerStyles={{width: 188}}
-                  size={20}
-                  mobSize={16}>This is a statistic note on someone</Text>
-        </div>
-    )
-}
+import AboutProgram from "./AboutProgram";
 
 const AboutPrograms = () => {
 
@@ -128,24 +116,24 @@ const AboutPrograms = () => {
                 <Title title={'THE PROGRAMS'} containerStyles={{padding: 0, marginBottom: isMobile ? 50: 124}} />
                 <div style={{paddingLeft: isMobile ? 0 : 50, display: 'flex', flexDirection: isMobile ? 'column' : 'row'}}>
                     <Text type={'extraLight'}
-                          containerStyles={{marginRight: isMobile ? 0 : 130, alignItems: 'flex-start', marginBottom: isMobile ? 30 : 0 }}
+                          containerStyles={{marginRight: isMobile ? 0 : 130, alignItems: 'flex-start', marginBottom: isMobile ? 88 : 0 }}
                           size={55}
                           mobSize={35}>We’re hiring. If something piques your interest,
                         let us know.</Text>
-                    <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                                  <Program containerStyles={{marginRight: 138}}/>
-                                  <Program />
+                    <div  className={'about-program-item-container'}>
+                                  <AboutProgram containerStyles={{marginRight: isMobile ? 0 : 138}} title={'120'} text={'This is a statistic note on someone'}/>
+                                  <AboutProgram title={'120'} text={'This is a statistic note on someone'}/>
 
                     </div>
-                    <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                        <Program containerStyles={{marginRight: 138}}/>
-                        <Program />
+                    <div className={'about-program-item-container'}>
+                        <AboutProgram containerStyles={{marginRight: isMobile ? 0 : 138}} title={'120'} text={'This is a statistic note on someone'}/>
+                        <AboutProgram title={'120'} text={'This is a statistic note on someone'} />
 
                     </div>
                 </div>
             </section>
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} withForm />
+            <EmailForm withForm />
 
         </div>
     )

@@ -29,6 +29,7 @@ const PeopleLeadership = () => {
                       containerStyles={{marginBottom: 52}}>We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.</Text>
                 <Text size={20}
                       mobSize={16}
+                      textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                       type={'light'}
                       containerStyles={{marginBottom: 110}}>Our role consists of taking the time to understand your business model, and suggesting creative
                     and high-performing digital strategies. Our avant-garde tactics are in line with the current market,
@@ -64,7 +65,12 @@ const PeopleLeadership = () => {
                       containerStyles={{marginBottom: 50}}
                       mobSize={35}
                       size={55}>We have something for everyone.</Text>
-                <Text type={'light'} containerStyles={{marginBottom: 100}} size={20}>The Moken team is growing at a rapid pace, to stay in the loop on additional ways to connct join our
+                <Text type={'light'}
+                      containerStyles={{marginBottom: 100}}
+                      size={20}
+                      mobSize={16}
+                      textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                >The Moken team is growing at a rapid pace, to stay in the loop on additional ways to connct join our
                     mailing list to never miss a beat.</Text>
                 <div className={'join-team-btn-container'}>
                     <Input width={'12vw'} placeholder={'Your name'}/>

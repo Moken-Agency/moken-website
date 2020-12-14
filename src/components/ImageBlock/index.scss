@@ -3,7 +3,8 @@
   display: flex;
   margin-bottom: 250px;
   img {
-    height: 555px;
-    width: 80vw;
+    min-height: 555px;
+    background-color: #a7a7a7;
+    width: 86vw;
   }
 }

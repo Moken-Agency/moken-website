@@ -1,0 +1,48 @@
+.image-title-sub-desc-list-container {
+  padding: 0 14vw;
+  display: flex;
+  margin-bottom: 210px;
+  @media only screen and (max-width: 600px) {
+    padding: 0 43px;
+    flex-direction: column;
+  }
+  .image-title-sub-desc-list-image {
+    margin-right: 150px;
+    width: 668px;
+    height: 1000px;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 110px;
+      width: 100%;
+      height: 430px;
+    }
+  }
+  div {
+    .image-title-sub-desc-list-title {
+      margin-bottom: 70px;
+      span {
+        letter-spacing: 4px;
+      }
+      @media only screen and (max-width: 600px) {
+        padding-left: 0;
+      }
+    }
+    .image-title-sub-desc-list-subtitle {
+      margin-bottom: 62px;
+      span {
+        letter-spacing: 0.5px;
+      }
+    }
+    .image-title-sub-desc-list-description {
+      margin-bottom: 73px;
+    }
+    .image-title-sub-desc-list-item {
+      margin-bottom: 68px;
+      .image-title-sub-desc-list-item-title {
+        margin-bottom: 15px;
+        span {
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}

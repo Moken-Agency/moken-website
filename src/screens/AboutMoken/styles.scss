@@ -3,7 +3,6 @@
 }
 
 .about-moken-container {
-  padding-top: 186px;
   padding-bottom: 155px;
   .about-moken-header {
     padding: 0 560px 0 440px;
@@ -28,24 +27,7 @@
     height: 544px;
     margin-bottom: 185px;
   }
-  .about-moken-first-info-section {
-    margin-bottom: 175px;
-    .about-moken-first-info-section-title {
-      margin-bottom: 152px;
-    }
-    .about-moken-first-info-section-subtitle {
-      padding: 0 238px;
-      margin-bottom: 133px;
-    }
-    .about-moken-first-info-section-row-block {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 238px;
-    }
-    .about-moken-row-block-text {
-      width: 550px;
-    }
-  }
+
   .about-moken-second-info-section {
     margin-bottom: 252px;
     .about-moken-second-divider {
@@ -95,33 +77,6 @@
     }
   }
 
-  .about-moken-third-section {
-    padding: 0 170px 0 200px;
-    display: flex;
-    margin-bottom: 266px;
-    .about-moken-third-section-title {
-      margin-right: 55px;
-      width: 512px;
-      align-items: flex-start;
-
-    }
-    .about-moken-third-section-right-block {
-      padding-top: 50px;
-      width: 670px;
-      .about-moken-third-section-right-block-first-title {
-        margin-bottom: 130px;
-        span {
-          line-height: 35px;
-        }
-      }
-      .about-moken-third-section-right-block-subtitle {
-        margin-bottom: 90px;
-        span {
-          letter-spacing: 4px;
-        }
-      }
-    }
-  }
   .about-name-color-block {
     margin-bottom: 114px;
     padding-top: 140px;

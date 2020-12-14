@@ -35,6 +35,15 @@
         font-size: 4vw;
       };
     }
+    .textarea {
+      width: 100%;
+      min-height: 155px;
+      font-family: 'Latinka Light', sans-serif;
+      font-size: 1vw;
+      @media screen and (max-width: 600px) {
+        font-size: 4vw;
+      };
+    }
     .goButton {
       border: 0;
       outline: 0;

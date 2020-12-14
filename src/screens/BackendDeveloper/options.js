@@ -112,6 +112,6 @@ export default [
         colorSubtitle: 'SEE OPPORTUNITIES'
     },
     {
-        withForm: true
+       withForm: true
     }
 ]

@@ -57,7 +57,7 @@ const StartUpSmart = () => {
 
             </div>
 
-            <EmailForm withForm title={'Stay in the loop & never miss a thing.'}/>
+            <EmailForm withForm />
 
 
         </div>

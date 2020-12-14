@@ -1,5 +1,6 @@
 import React from 'react';
 import Text from '../../../../components/Text';
+import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 
 const styles = {
     mainTitle: {
@@ -13,9 +14,12 @@ const styles = {
 }
 
 const MenuScreenBottomColumn = ({title = '', routs = []}) => {
+    const {isMobile} = useWindowDimensions();
     return (
         <div>
-            <Text size={20} type={'semiBold'} textStyles={styles.mainTitle} containerStyles={{marginBottom: 65}}>{title}</Text>
+            <Text size={20}
+                  mobSize={16}
+                  type={'semiBold'} textStyles={[styles.mainTitle, {lineHeight: isMobile ? '26px': '35px'}]} containerStyles={{marginBottom: 65}}>{title}</Text>
             {
                 routs.map(({title}, index) => {
                     return (

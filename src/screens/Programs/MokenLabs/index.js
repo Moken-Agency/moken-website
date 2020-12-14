@@ -141,14 +141,16 @@ const MokenLabs = () => {
             <ProgramCommunityListPartner
                 title={'GET INVOLVED'}
                 subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
-                options={options.firstPartners}/>
+                options={options.firstPartners}
+                onClick={() => {}}
+            />
 
 
 
             <OurPartnersComponent />
 
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} withForm />
+            <EmailForm withForm />
 
         </div>
     )

@@ -37,7 +37,7 @@ const UpcomingEvents = () => {
 
             {/*<div style={{width: '100%', height: 1, backgroundColor: '#d4d4d4', margin: '3vw 0'}}/>*/}
 
-            <EmailForm withForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} />
+            <EmailForm withForm />
 
         </div>
     )

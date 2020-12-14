@@ -1,31 +1,34 @@
 
-.labs-driven-container {
-  padding: 0 202px;
+.left-info-with-right-image-container {
+  padding: 0 12vw;
   margin-bottom: 230px;
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 600px) {
     padding: 0 43px;
     flex-direction: column;
+    margin-bottom: 80px;
 
   }
-  .labs-driven-info-container {
+  .left-info-with-right-image-info-container {
     display: flex;
     align-items: center;
     position: relative;
+    padding-left: 2vw;
     @media screen and (max-width: 600px) {
       flex-direction: column !important;
     }
-    .labs-driven-text-container {
+    .left-info-with-right-image-text-container {
       width: 40vw;
       margin-right: 100px;
       @media screen and (max-width: 600px) {
         width: auto;
         margin-right: auto;
+        margin-bottom: 100px;
       }
     }
   }
-  .labs-driven-title {
+  .left-info-with-right-image-title {
     margin-bottom: 157px;
     padding-left: 0;
     @media screen and (max-width: 600px) {
@@ -34,13 +37,12 @@
   }
 }
 
-.labs-driven-image {
+.left-info-with-right-image-image {
   width: 621px;
-  height: 1000px;
+  height: 635px;
   background-color: grey;
   @media screen and (max-width: 600px) {
     width: 100%;
     height: 427px;
-    margin-bottom: 107px;
   }
 }

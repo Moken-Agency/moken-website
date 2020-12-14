@@ -1,10 +1,26 @@
-.labs-week-title {
-  margin-bottom: 175px;
+.program-swiper-main-container {
+
+}
+
+.program-swiper-title {
+  margin-bottom: 145px;
   @media only screen and (max-width: 600px) {
     margin-bottom: 50px;
   }
 }
 
-.labs-swiper-container {
+.program-swiper-container {
   margin-bottom: 210px;
+}
+
+.program-swiper-subtitle {
+  padding-left: 14vw;
+  width: 730px;
+  margin-bottom: 145px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 50px;
+    width: auto;
+    padding: 0 43px;
+  }
+
 }

@@ -43,7 +43,7 @@ export default {
                         route: ''
                     },  {
                         title: 'Connect with Us',
-                        route: ''
+                        route: '/connect-with-us'
                     },  {
                         title: 'Privacy',
                         route: '/privacy'
@@ -67,7 +67,7 @@ export default {
                     },
                     {
                         title: 'Work with Mo + Ken',
-                        route: ''
+                        route: '/mo-ken'
                     },
                     {
                         title: 'Product Testing Team',

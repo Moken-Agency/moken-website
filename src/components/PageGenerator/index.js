@@ -61,7 +61,7 @@ const PageGenerator = ({data}) => {
 
                             <ColorBlock backgroundColor={colorBlock} subtitle={colorSubtitle} title={colorTitle}/>
                                     {/*<ColorBlock colorBlock={colorBlock} colorTitle={colorTitle} colorSubtitle={colorSubtitle}/>*/}
-                            <EmailForm withForm={withForm} title={'Stay in the loop & never miss a thing.'}/>
+                            <EmailForm withForm={withForm} />
                             <TitleContainerWithImg title={titleContainerWithImgTitle}
                                                        description={titleContainerWithImgDescription}
                                                        imgURL={titleContainerWithImgImageURL}

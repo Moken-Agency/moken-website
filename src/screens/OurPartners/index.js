@@ -11,6 +11,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import FirstCircle from '../../images/our-partner-first.svg';
 import SecondCircle from '../../images/our-partner-second.svg';
 import ThirdCircle from '../../images/our-partner-third.svg';
+import HeaderTitle from "../../components/HeaderTitle";
 
 const {involved, collaborates} = options;
 
@@ -21,19 +22,10 @@ const OurPartners = () => {
 
     return (
        <div className={'our-partners-container'}>
-           <div className={'our-partners-info-container'}>
-               <Text type={'semiBold'}
-                     size={16}
-                     mobSize={14}
-                     textStyles={{letterSpacing: 4}}
-                     containerStyles={{marginBottom: isMobile ? '18vw' : '2.1vw'}}>OUR PARTNERS</Text>
-               <Text type={'thin'}
-                     size={75}
-                     mobSize={45}
-                     textStyles={{lineHeight: '80px'}}
-                     containerStyles={{marginBottom: isMobile ? '5vw' : '2vw'}}>Success fuelled by partnership.</Text>
-               <Text type={'light'} size={20} mobSize={16}>Creating an unmatched global ecosystem, together.</Text>
-           </div>
+
+           <HeaderTitle title={'OUR PARTNERS'}
+                        subtitle={'Success fuelled by partnership.'}
+                        description={'Creating an unmatched global ecosystem, together.'} />
 
            <div className={'our-partners-circles'}>
                 <img src={FirstCircle} />
@@ -49,11 +41,17 @@ const OurPartners = () => {
                      type={'extraLight'}>We increase website leads, maximize revenu and produce a
                    positive ROI — validated with measurable results.</Text>
                <div className={'our-partners-inline-info'}>
-                   <Text type={'light'} size={20} mobSize={16}>Our capabilities span the breadth of operations, project, and product
+                   <Text type={'light'}
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                         size={20}
+                         mobSize={16}>Our capabilities span the breadth of operations, project, and product
                        management; business strategy; marketing; design; technology; revenue optimization;
                        talent acquisition; growth; and sales, across all industries through customized products,
                        services, courses, workshops, solutions, and mentorship.</Text>
-                   <Text type={'light'} size={20} mobSize={16}>We partner with innovators through our tailored and integrative expertise, complemented by a
+                   <Text type={'light'}
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                         size={20}
+                         mobSize={16}>We partner with innovators through our tailored and integrative expertise, complemented by a
                        vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully
                        driven outcomes.</Text>
                </div>
@@ -120,7 +118,7 @@ const OurPartners = () => {
                    <Text className={'role-title'}
                          size={20}
                          type={'light'}
-                         textStyles={{lineHeight: '35px'}}>Our role consists of taking the time to understand your business model, and suggesting
+                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}>Our role consists of taking the time to understand your business model, and suggesting
                        creative and high-performing digital strategies. Our avant-garde tactics are in line with
                        the current market, blend seamlessly with our clients’ operational realities, and eliminate
                        risks that aren’t necessary.</Text>
@@ -132,7 +130,10 @@ const OurPartners = () => {
                                return (
                                    <div className={'product-benefit-container'} key={'benefits' + index}>
                                        <Text size={22} type={'semiBold'} className={'product-benefit-title'}>{title}</Text>
-                                       <Text size={20} type={'light'}>{subtitle}</Text>
+                                       <Text size={20}
+                                             textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                                             mobSize={16}
+                                             type={'light'}>{subtitle}</Text>
                                    </div>
                                )
                            })
@@ -148,8 +149,7 @@ const OurPartners = () => {
                                      className={'last-submit-resume'}/>
                </div>
            </div>
-           <EmailForm title={'Stay in the loop & never miss a thing.'}
-                      withForm width={'20vw'}
+           <EmailForm withForm
                       className={'partners-email-form'}/>
 
        </div>

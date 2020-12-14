@@ -1,15 +1,17 @@
 .labs-benefits-container {
-  padding: 0 202px;
+  padding: 0 14vw;
   display: flex;
   margin-bottom: 200px;
   @media screen and (max-width: 600px) {
     padding: 0 43px;
     flex-direction: column;
+    margin-bottom: 170px;
   }
 }
 
 .labs-benefits-title {
   margin-bottom: 150px;
+  padding-left: 12vw;
   @media screen and (max-width: 600px) {
     margin-bottom: 50px;
   }

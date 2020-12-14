@@ -1,5 +1,8 @@
 .community-partner-container {
   border: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   //width: 18vw;
   .community-partner-info-container {
     padding: 3vw 4.9vw 1.5vw 3.7vw;
@@ -24,7 +27,7 @@
     }
   }
   .community-partner-subtitle {
-    //width: 16vw;
+    width: 16vw;
     //margin-top: 1vw;
     @media only screen and (max-width: 600px) {
       width: auto;

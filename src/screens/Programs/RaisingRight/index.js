@@ -49,7 +49,7 @@ const RaisingRight = () => {
 
             <OurPartnersComponent />
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} withForm />
+            <EmailForm withForm />
         </div>
     )
 }

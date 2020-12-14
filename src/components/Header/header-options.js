@@ -23,17 +23,17 @@ export default {
     rightMenu: [
         {
             title: 'The academy',
-            route: 'academy',
+            route: '/academy',
             withDivider: true
         },
         {
             title: 'Shop moken',
-            route: 'shop-moken',
+            route: '/shop-moken',
             withDivider: true
         },
         {
             title: 'Work with us',
-            route: 'work-with-us',
+            route: '/work-with-us',
         },
 
     ],
@@ -108,18 +108,23 @@ export default {
                 },
                 {
                     title: 'FOR STARTUPS',
+                    route: '/for-startups'
 
                 },
                 {
                     title: 'FOR INVESTORS',
+                    route: '/for-investors'
+
 
                 },
                 {
                     title: 'FOR STUDENTS',
+                    route: '/for-students'
 
                 },
                 {
-                    title: 'FOR AGENCIES',
+                    title: 'FOR BRANDS',
+                    route: '/for-brands'
 
                 },
                 {
@@ -134,18 +139,23 @@ export default {
             subRouts: [
                 {
                     title: 'ABOUT PROGRAMS',
+                    route: '/about-programs'
                 },
                 {
                     title: 'MOKENLABS',
+                    route: '/moken-labs'
                 },
                 {
-                    title: 'FUTUREFOUNDERS PROGRAM',
+                    title: 'FUTURE FOUNDERS PROGRAM',
+                    route: '/future-founders'
                 },
                 {
-                    title: 'RAISINGRIGHT PROGRAM',
+                    title: 'RAISING RIGHT PROGRAM',
+                    route: '/raising-right'
                 },
                 {
                     title: 'ADVISORS OF TOMORROW PROGRAM',
+                    route: '/advertise-wth-us'
                 }
             ]
         },

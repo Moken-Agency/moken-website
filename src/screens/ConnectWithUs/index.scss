@@ -1,0 +1,83 @@
+.connect-with-us-container {
+  margin-bottom: 272px;
+  padding-top: 140px;
+  header {
+    display: flex;
+    padding: 0 0 0 202px;
+    margin-bottom: 184px;
+    position: relative;
+    @media screen and (max-width: 600px) {
+      padding: 0 0 0 43px;
+      margin-bottom: 94px;
+      flex-direction: column;
+    }
+    .connect-with-us-header-info {
+      margin-right: 230px;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+      justify-content: flex-end;
+      @media screen and (max-width: 600px) {
+        margin-right: 0;
+      }
+    }
+    img {
+      height: 852px;
+      width: 100%;
+      background-color: grey;
+      @media screen and (max-width: 600px) {
+        height: 427px;
+      }
+    }
+  }
+  .connect-with-me-about-container {
+    padding: 0 14vw;
+    margin-bottom: 186px;
+    @media screen and (max-width: 600px) {
+      padding: 0 43px;
+      margin-bottom: 94px;
+    }
+    .connect-with-me-about-title {
+      margin-bottom: 96px;
+      padding-left: 0;
+      span {
+        letter-spacing: 4px;
+      }
+    }
+    .connect-with-me-about-interests {
+      display: flex;
+      flex-wrap: wrap;
+      @media screen and (max-width: 600px) {
+        justify-content: space-between;
+        margin-bottom: 70px;
+      }
+    }
+    form {
+      .form-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 23px;
+        @media screen and (max-width: 600px) {
+          flex-direction: column;
+          margin-bottom: 0;
+        }
+        .container {
+          @media screen and (max-width: 600px) {
+            margin-bottom: 35px;
+          }
+        }
+      }
+
+    }
+  }
+
+.full-image {
+    width: 100vw;
+    height: 800px;
+    background-color: #a7a7a7;
+    margin-bottom: 207px;
+    @media screen and (max-width: 600px) {
+      margin-bottom: 111px;
+    }
+  }
+}

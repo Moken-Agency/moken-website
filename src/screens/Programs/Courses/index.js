@@ -14,8 +14,10 @@ import LeftInfoWithRightImage from "../components/LeftInfoWithRightImage";
 import OurPartnersComponent from "../components/OurPartnersComponent";
 import ProgramColorBlock from "../components/ProgramColorBlock";
 import CoursesComponent from "../components/CoursesComponent";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const Courses = () => {
+    const {isMobile} = useWindowDimensions();
     return (
         <div className={'courses-container'}>
            <HeaderTitle title={'MOKEN PROGRAMS'}
@@ -27,7 +29,10 @@ const Courses = () => {
                <Text size={55} mobSize={35} type={'extraLight'} className={'courses-overview-first-text'}>Built by students and powered by First Round, we provide founders with a strong network of investors,
                    world-class mentors, and a $20,000 check.</Text>
 
-               <Text size={20} mobSize={16} type={'light'}>Our capabilities span the breadth of operations, project, and product management; business strategy;
+               <Text size={20}
+                     textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                     mobSize={16}
+                     type={'light'}>Our capabilities span the breadth of operations, project, and product management; business strategy;
                    marketing; design; technology; revenue optimization; talent acquisition; growth; and sales, across all
                    industries through customized products, services, courses, workshops, solutions, and mentorship.</Text>
            </section>
@@ -86,7 +91,7 @@ const Courses = () => {
             <OurPartnersComponent />
 
 
-            <EmailForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} withForm />
+            <EmailForm withForm />
 
         </div>
     )

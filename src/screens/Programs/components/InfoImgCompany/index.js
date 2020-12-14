@@ -21,7 +21,9 @@ const InfoImgCompany = ({mainTitle = '',
             <div style={{display: 'flex', paddingLeft: isMobile? 0 : 50, alignItems: 'center', flexDirection: isMobile ? 'column' : 'row'}}>
                 <div style={{marginRight: isMobile ? 0 : 100, marginBottom: isMobile ? 40 : 0}}>
                     <Text size={55} mobSize={35} type={'extraLight'} containerStyles={{marginBottom: 63}}>{title}</Text>
-                    <Text size={20} mobSize={16} type={'light'} containerStyles={{marginBottom: 55}}>{subtitle}</Text>
+                    <Text size={20}
+                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
+                          mobSize={16} type={'light'} containerStyles={{marginBottom: 55}}>{subtitle}</Text>
                     <div style={{position: 'relative', display: 'flex'}}>
                         <div style={{width: 2, height: 171, backgroundColor: 'black', marginRight: 38}} />
                         <div>

@@ -23,7 +23,7 @@ const Text = ({children = '', textStyles = {},containerStyles = {}, onMouseEnter
             <span style={{fontFamily: textTypes[type],
                 fontSize: isMobile ? mobSize : size,
                 color: isMobile ? mobColor: color,
-                ...textStyles,}} className={'text'}>{children}</span>
+                ...textStyles}} className={'text'}>{children}</span>
         </div>
     )
 }

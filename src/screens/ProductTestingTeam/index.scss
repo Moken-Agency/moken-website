@@ -1,85 +1,25 @@
-.product-testing-title {
-  padding: 0;
-  margin-bottom: 12vw;
-}
-
 .product-testing-team-container {
   .product-email-form {
     padding: 7vw 0;
   }
   .product-testing-info-container {
-    padding: 10vw;
-    .product-testing-title-first {
-      margin-bottom: 1vw;
-      span {
-        letter-spacing: 4px;
-      }
-    }
-    .product-testing-title-second {
-      width: 50vw;
-    }
 
     .joins-container {
       display: flex;
-      padding: 0 3vw;
+      padding: 0 14vw;
+      margin-bottom: 465px;
       .joins-title {
         align-items: flex-start;
         margin-right: 7vw;
       }
     }
     .circle-container {
-      margin: 8vw 0 12vw 0;
+      margin: 0 14vw 12vw 0;
       display: flex;
       justify-content: flex-end;
-      //div {
-      //  width: 8vw;
-      //  height: 8vw;
-      //  border-radius: 100%;
-      //  background-color: #263da8;
-      //  margin: 0 2vw;
-      //}
     }
     .product-testing-title {
-      padding: 0;
       margin-bottom: 12vw;
-    }
-    .product-testing-sub-container {
-      display: flex;
-
-      justify-content: space-between;
-      padding: 0 3vw;
-      position: relative;
-      .absolute-circle {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 18vw;
-      }
-      .enthusiastic-title {
-        width: 28vw;
-        margin-right: 6vw;
-        align-items: flex-start;
-      }
-      .role-container {
-        width: 42vw;
-        .role-title {
-          margin-bottom: 6.8vw;
-        }
-        .product-benefits-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          margin-top: 3.8vw;
-          margin-bottom: 32vw;
-          .product-benefit-container {
-            width: 20vw;
-            margin-bottom: 3vw;
-            .product-benefit-title {
-              margin-bottom: 1.5vw;
-            }
-          }
-        }
-      }
     }
   }
 

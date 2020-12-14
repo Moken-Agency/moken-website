@@ -177,6 +177,6 @@ export default [
     //     colorSubtitle: 'SEE OPPORTUNITIES'
     // },
     // {
-    //     withForm: true
+    //     : true
     // }
 ]

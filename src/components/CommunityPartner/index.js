@@ -10,8 +10,9 @@ const CommunityPartner = ({title, subtitle, btnTitle = 'GET INVOLVED', titleStyl
                 <Text size={'2vw'}
                       type={'thin'}
                       mobSize={25}
-                      containerStyles={{width: '11vw', marginBottom: 74}}
-                      textStyles={titleStyles}>{title}</Text>
+                      containerStyles={{marginBottom: 74}}
+                      textStyles={{whiteSpace: 'break-spaces', ...titleStyles}}
+                >{title}</Text>
                 <Text className={'community-partner-subtitle'}
                       size={18}
                       mobSize={16}

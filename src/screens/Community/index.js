@@ -142,7 +142,7 @@ const Community = () => {
                 </div>
             </div>
 
-            <EmailForm withForm title={'Stay in the loop & never miss a thing.'} width={'20vw'} />
+            <EmailForm  withForm />
 
         </div>
     )
