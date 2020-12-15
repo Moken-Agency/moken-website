@@ -32,6 +32,23 @@
 .bordered-white {
   border: 1px solid white;
 }
+.blue {
+  background-color: #1a01ba;
+  color: white;
+  border: 1px solid #1a01ba
+}
+
+.orange {
+  background-color: #fc665c;
+  color: white;
+  border: 1px solid #fc665c
+}
+
+.orange-bordered {
+  background-color: white;
+  color: #fc665c;
+  border: 1px solid #fc665c
+}
 
 .transparent {
   background-color: transparent;
@@ -43,5 +60,11 @@
   color: black;
   background-color: white;
   border-bottom: 1px solid black;
+}
+
+.innovation {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
 }
 

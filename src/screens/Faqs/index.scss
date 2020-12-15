@@ -1,0 +1,10 @@
+.faqs-container {
+  padding-bottom: 153px;
+  .faqs-list-container {
+    padding: 0 10vw;
+    @media only screen and (max-width: 600px) {
+      padding: 0 43px;
+      margin-bottom: 144px;
+    }
+  }
+}

@@ -1,7 +1,9 @@
 import React from "react";
 import './index.scss';
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+//type = borderd | unbordered | transparent | innovation
 
+//color = orange-bordered | orange | blue | black | white
 const Button = ({type = 'unborded', color = '', title = '', containerStyles = {}, additionalComponent,
                     imgStyles = {}, onClick = () => {}, size = '1vw', mobSize = '3vw', className = ''}) => {
     const {isMobile} = useWindowDimensions()

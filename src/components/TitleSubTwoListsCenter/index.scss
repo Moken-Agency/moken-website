@@ -1,0 +1,29 @@
+.title-sub-two-list-container {
+
+  .title-sub-two-list-title {
+    margin-bottom: 150px;
+    @media screen and(max-width: 600px) {
+      margin-bottom: 50px;
+    }
+  }
+  .title-sub-two-list-content {
+    .title-sub-two-list-subtitle {
+      padding: 0 14vw;
+      margin-bottom: 160px;
+      @media screen and(max-width: 600px) {
+        margin-bottom: 70px;
+      }
+    }
+    .title-sub-two-list-main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and(max-width: 600px) {
+        padding: 0 43px;
+        margin-bottom: 80px;
+
+      }
+    }
+  }
+
+}

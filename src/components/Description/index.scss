@@ -13,6 +13,10 @@
       font-size: 20px;
       line-height: 35px;
       white-space: pre-line;
+      letter-spacing: .18px;
+      @media screen and(max-width: 600px) {
+        line-height: 26px;
+      }
     }
   }
 }

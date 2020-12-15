@@ -10,6 +10,10 @@ import ColorBlock from "../../components/ColorBlock";
 import IterableCircle from "../../components/IterableCircle";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import ImageBlock from "../../components/ImageBlock";
+import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
+import HugeInfoAllListColumn from "../Programs/components/HugeInfoAllListColumn";
+import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList";
 
 const OurVision = () => {
 
@@ -24,55 +28,28 @@ const OurVision = () => {
                 description={'Built to support founders, Moken is a group of trailblazing companies specialized in all ' +
                 'things startup.'}/>
 
-            <section className={'vision-first-image-block'}>
-                <img src={''} />
-            </section>
+           <ImageBlock position={'right'} url={''} />
 
-            <section className={'vision-beliefs-container'}>
-                <Title title={'OUR BELIEFS'} className={'vision-beliefs-title'}/>
-                <div className={'vision-beliefs-info-container'}>
-                    <Text size={55} type={'extraLight'} className={'vision-beliefs-subtitle'}>Empowering one another in creating change around the world.</Text>
-                    <div className={'vision-beliefs-info-right-container'}>
-                        <Text size={20}
-                              mobSize={16}
-                              textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                              type={'light'}
-                              className={'vision-beliefs-info-right-container-text'}>We know that dynamic actions define the future and that the ambition to lead requires
+           <TwoColumnsHugeInfo title={'OUR BELIEFS'}
+                               leftTitle={'Empowering one another in creating change around the world.'}
+                               rightTitle={`We know that dynamic actions define the future and that the ambition to lead requires
                             the tenacity to adapt. This is why we partner with clients, startups, and founders who
                             challenge themselves to be exceptional leaders and are unwavering in our commitment to do
                              right by our clients, team, partners, and communities. We define our ambitions with clients,
                             then work together as one team to create high levels of value striving to set new standards
-                            of excellence within each industry.</Text>
+                            of excellence within each industry.`}
+                               rightFirstListTitle={''}
+                               firstList={options.beliefs}
+           />
 
-                       <div className={'vision-beliefs-list-container'}>
-                           {
-                               options.beliefs.map((belief, index) => {
-                                   return <Belief key={index + 'belief'} {...belief}/>
-                               })
-                           }
-                       </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className={'vision-values-container'}>
-                <img src={''} className={'vision-values-main-image'} />
-                <div>
-                    <div className={'vision-values-right-container'}>
-                        <Text size={16} type={'semiBold'} className={'vision-values-right-title'}>OUR VALUES</Text>
-                        <Text size={55} type={'extraLight'} className={'vision-values-right-subtitle'}>We make it easy to kickstart your vision.</Text>
-                        <Text size={20}
-                              mobSize={16}
-                              textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                              type={'light'} className={'vision-values-right-text'}>With packages at a startup price point, we work with founders and ideators with
+            <LeftImageTitleSubDesList imgUrl={''}
+                                      title={'OUR VALUES<'}
+                                      subtitle={'We make it easy to kickstart your vision.'}
+                                      list={options.values}
+                                      description={`With packages at a startup price point, we work with founders and ideators with
                             high growth potential. We're passionate about big ideas and working with people who
-                            feel the same.</Text>
-                    </div>
-                    {
-                        options.values.map((value) => <Value {...value}/>)
-                    }
-                </div>
-            </section>
+                            feel the same`}
+            />
 
             <ColorBlock title={'Looking for the next big thing?'}
                         subtitle={'GET INVOLVED'}
@@ -85,7 +62,7 @@ const OurVision = () => {
             <Title title={'HOW IT WORKS'} className={'vision-works-title'}/>
 
             <section className={'vision-works-container'}>
-             <div>
+             <div className={'vision-circles-list-container'}>
                  {
                      options.works.map((join, index) => {
                          return (

@@ -13,7 +13,7 @@ const EmailForm = ({title = 'Stay in the loop & never miss a thing.', width = '2
               { withForm ? <div className={`email-form-container ${className}`}>
                   <div className={'email-form-divider'}/>
                   <Text containerStyles={{margin: isMobile ? '4vw 0' : '80px 0'}}
-                        size={isMobile ? '5vw' : '2.5vw'}
+                        size={isMobile ? '5vw' : 35}
                         type={'thin'}
                         textStyles={{letterSpacing: 0.3}}>{title}</Text>
                   <div className={'email-form-form'}>

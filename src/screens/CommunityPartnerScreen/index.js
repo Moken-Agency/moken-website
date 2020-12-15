@@ -4,10 +4,17 @@ import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
 import './index.scss';
 import ColorBlock from "../../components/ColorBlock";
+import HeaderSecondType from "../../components/HeaderSecondType";
+import TitleSubTwoListCenter from "../../components/TitleSubTwoListsCenter";
+import options from './options';
+import EmailForm from "../../components/EmailForm";
 
 const CommunityPartnerScreen = () => {
     return (
         <div className={'community-partner-screen'}>
+            <HeaderSecondType title={'COMMUNITY PARTNERS'}
+                              subtitle={'Building unforgettable brands for start-ups with ambition.'}
+            />
             <ImageBlock position={'right'} />
             <TitleTwoDescriptions mainTitle={'OVERVIEW'}
                                   title={`A global startup program that fosters and invests in bright and passionate 
@@ -38,10 +45,28 @@ const CommunityPartnerScreen = () => {
                         textColor={'black'}
                         backgroundColor={'grey'}
                         type={'thin'}
-                        className={'for-investors-color-block'}
+                        className={'community-partner-color-block'}
                         size={30}
 
             />
+
+            <TitleSubTwoListCenter title={'PERKS & BENEFITS'}
+                                   subtitle={`A global startup program that fosters and invests in bright and 
+                                   passionate early stage founders with cutting-edge ideas.`}
+                                   lists={options.lists}
+                                   imageList={options.images}
+            />
+
+            <LeftInfoWithRightImage title={'Join our trusted community of partners and market what you do.'}
+                                    description={`Our role consists of taking the time to understand your business
+                                     model, and suggesting creative and high-performing digital strategies. Our
+                                      avant-garde tactics are in line with the current market, blend seamlessly 
+                                      with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
+                                    btnTitle={'APPLY TO INCUBATOR'}
+                                    imgUrl={''}
+            />
+
+            <EmailForm withForm />
 
 
         </div>

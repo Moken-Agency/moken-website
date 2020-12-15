@@ -1,0 +1,19 @@
+.start-up-screen-container {
+  padding-bottom: 153px;
+  .start-up-screen-color-block {
+    padding: 67px 14vw;
+    @media only screen and (max-width: 600px) {
+      padding: 43px;
+    }
+  }
+  .start-up-screen-image {
+    width: 100vw;
+    margin-bottom: 142px;
+    height: 800px;
+    background-color: #a7a7a7;
+    @media only screen and (max-width: 600px) {
+      height: 425px;
+      margin-bottom: 117px;
+    }
+  }
+}

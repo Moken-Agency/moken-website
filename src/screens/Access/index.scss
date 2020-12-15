@@ -1,0 +1,9 @@
+.access-container {
+  padding-bottom: 153px;
+  .access-color-block {
+    padding: 67px 14vw;
+    @media only screen and (max-width: 600px) {
+      padding: 43px;
+    }
+  }
+}

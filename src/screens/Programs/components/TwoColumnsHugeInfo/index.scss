@@ -37,6 +37,14 @@
     margin-bottom: 200px;
       @media screen and (max-width: 600px) {
         margin-bottom: 150px;
+        line-height: 26px;
+      }
+      span {
+        line-height: 35px;
+        letter-spacing: 0.5px;
+        @media screen and(max-width: 600px) {
+          line-height: 26px;
+        }
       }
     }
   .labs-benefits-container-info-block-second-title {

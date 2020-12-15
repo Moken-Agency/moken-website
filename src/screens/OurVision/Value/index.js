@@ -12,7 +12,7 @@ const Value = ({title = '', subtitle = ''}) => {
             <Text type={'semiBold'}
                   size={14}
                   mobSize={10}
-                  containerStyles={{marginBottom: 12}}
+                  containerStyles={{marginBottom: 16}}
                   textStyles={{letterSpacing: 4}}>{title}</Text>
             <Text type={'light'}
                   size={20}

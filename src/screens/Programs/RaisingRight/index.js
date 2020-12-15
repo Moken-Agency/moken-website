@@ -10,15 +10,17 @@ import OurPartnersComponent from "../components/OurPartnersComponent";
 import EmailForm from "../../../components/EmailForm";
 import './index.scss';
 import ProgramSwiper from "../components/ProgramSwiper";
+import HeaderWithBlackInfoBlock from "../../../components/HeaderWithBlackInfoBlock";
 
 
 const RaisingRight = () => {
     return (
         <div className={'raising-right-container'}>
-            <HeaderTitle title={'IDEATION TO INNOVATION'}
-                         description={'No Fees. No Equity. A virtual incubation program providing you the tools to take action, guiding you from ideation to innovation.'}
-                         subtitle={'An idea incubator taking you from  to launch in 12 weeks.'} />
-            <ProgramDetails />
+
+            <HeaderWithBlackInfoBlock title={'IDEATION TO INNOVATION'}
+                                      subtitle={'An idea incubator taking you from  to launch in 12 weeks.'}
+                                      description={'No Fees. No Equity. A virtual incubation program providing you the tools to take action, guiding you from ideation to innovation.'}
+            />
 
             <TitleTwoDescriptionWithBtn
                 title={'We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.'}

@@ -2,9 +2,19 @@
   width: 100vw;
   display: flex;
   margin-bottom: 250px;
-  img {
+  @media screen and (max-width: 600px) {
+    margin-bottom: 165px;
+  }
+    img {
     min-height: 555px;
     background-color: #a7a7a7;
     width: 86vw;
+      @media screen and (max-width: 600px) {
+        min-height: 427px;
+        width: calc(100vw - 43px);
+      }
+  }
+  .full {
+    width: 100vw;
   }
 }

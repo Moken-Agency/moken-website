@@ -1,73 +1,5 @@
 .our-vision-container {
-  .vision-first-image-block {
-    height: 286px;
-    //width: 100%;
-    margin-left: 290px;
-    background-color: #a7a7a7;
-    margin-bottom: 190px;
-  }
-
-  .vision-beliefs-container {
-    margin-bottom: 350px;
-    .vision-beliefs-title {
-      margin-bottom: 164px;
-    }
-    .vision-beliefs-info-container {
-      padding-left: 237px;
-      display: flex;
-      justify-content: space-between;
-      .vision-beliefs-subtitle {
-        width: 30vw;
-        padding-left: 30px;
-        align-items: flex-start;
-      }
-      .vision-beliefs-info-right-container {
-        width: 45vw;
-        .vision-beliefs-info-right-container-text {
-          margin-bottom: 140px;
-          span {
-            line-height: 35px;
-          }
-        }
-        .vision-beliefs-list-container {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-      }
-    }
-  }
-
-  .vision-values-container {
-    padding: 0 168px;
-    display: flex;
-    justify-content: space-between;
-    .vision-values-main-image {
-      width: 668px;
-      height: 1000px;
-      background-color: grey;
-      margin-right: 80px
-    }
-    div {
-      .vision-values-right-container {
-        padding-left: 80px;
-        margin-bottom: 70px;
-        .vision-values-right-title {
-          margin-bottom: 70px;
-          span {
-            letter-spacing: 4px;
-          }
-        }
-        .vision-values-right-subtitle {
-          margin-bottom: 62px;
-
-        }
-        .vision-values-right-text {
-          line-height: 35px;
-        }
-      }
-    }
-  }
+  padding-bottom: 156px;
 
   .vision-color-block {
     padding-top: 60px;
@@ -76,20 +8,33 @@
   }
 
   .vision-works-title {
-    padding-left: 160px;
     margin-bottom: 107px;
   }
   .vision-works-container {
-    padding: 0 160px;
+    padding: 0 14vw;
     display: flex;
     justify-content: space-between;
     margin-bottom: 273px;
-
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      padding: 0 43px;
+      margin-bottom: 111px;
+    }
+    .vision-circles-list-container {
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 125px;
+      }
+    }
     .vision-works-image {
       width: 670px;
       height: 1000px;
       margin-left: 55px;
       background-color: #a7a7a7;
+      @media only screen and (max-width: 600px) {
+        width: auto;
+        height: 425px;
+        margin-left: 0;
+      }
     }
   }
 }

@@ -20,17 +20,16 @@ import ProgramColorBlock from "../components/ProgramColorBlock";
 import ProgramSwiper from "../components/ProgramSwiper";
 import ProgramCommunityListPartner from "../components/ProgramCommunityListPartner";
 import HeaderTitle from "../../../components/HeaderTitle";
+import HeaderWithBlackInfoBlock from "../../../components/HeaderWithBlackInfoBlock";
 
 const MokenLabs = () => {
     return (
         <div className={'labs-container'}>
 
-            <HeaderTitle title={'MOKENLABS PROGRAM'}
-                         subtitle={'Building unforgettable brands for start-ups with ambition.'}
-                         description={'Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.com'}
+            <HeaderWithBlackInfoBlock title={'MOKENLABS PROGRAM'}
+                                      subtitle={'Building unforgettable brands for start-ups with ambition.'}
+                                      description={'Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.com'}
             />
-
-            <ProgramDetails />
 
 
             <TitleTwoDescriptionWithBtn

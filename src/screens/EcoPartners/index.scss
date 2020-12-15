@@ -1,0 +1,9 @@
+.eco-partner-screen {
+  padding-bottom: 153px;
+  .eco-partner-color-block {
+    padding: 67px 14vw;
+    @media only screen and (max-width: 600px) {
+      padding: 43px;
+    }
+  }
+}

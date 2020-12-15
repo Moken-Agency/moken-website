@@ -6,10 +6,13 @@ const positions = {
     right: 'flex-end'
 }
 
-const ImageBlock = ({url = '', position = 'left', className = ''}) => {
+//type = 'side' | ' full'
+//position = 'left' | ' right'
+
+const ImageBlock = ({url = '', position = 'left', className = '', type = 'side'}) => {
     return (
         <div className={`image-block-container ${className}`} style={{justifyContent: positions[position] }}>
-            <img src={url} />
+            <img src={url} className={`${type}`} />
         </div>
     )
 }

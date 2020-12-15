@@ -1,0 +1,25 @@
+.header-black-container {
+  .header-black-title-container {
+    padding:188px 0 0 215px;
+    width: 38vw;
+    margin-bottom: 60px;
+    @media only screen and (max-width: 600px) {
+      padding: 200px 43px 0 43px;
+      width: 75vw;
+      margin-bottom: 40px;
+    }
+    .header-black-main-title {
+      letter-spacing: 4px;
+      margin-bottom: 1.4vw;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 48px;
+      }
+    }
+    .header-black-subtitle {
+      margin-bottom: 2.4vw;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 42px;
+      }
+    }
+  }
+}

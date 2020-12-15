@@ -53,11 +53,11 @@ const TwoColumnsHugeInfo = ({title = '',
                       textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                       className={'labs-benefits-container-info-block-first-title'}>{rightTitle}</Text>
 
-                <Text type={'semiBold'}
-                      size={14}
-                      mobSize={10}
-                      className={'labs-benefits-container-info-block-second-title'}
-                      textStyles={{letterSpacing: 4}} containerStyles={{}}>{rightFirstListTitle}</Text>
+                {rightFirstListTitle ? <Text type={'semiBold'}
+                       size={14}
+                       mobSize={10}
+                       className={'labs-benefits-container-info-block-second-title'}
+                       textStyles={{letterSpacing: 4}} containerStyles={{}}>{rightFirstListTitle}</Text> : null}
 
                 <div className={'labs-benefits-container-info-block-works-container'} >
                     {

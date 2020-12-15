@@ -86,7 +86,7 @@ export default {
                 },
                 {
                     title: 'STARTUPSMART PACKAGES',
-                    route: '/start-up-smart'
+                    route: '/start-up-smart-packages'
 
                 },
                 {

@@ -1,0 +1,22 @@
+.mentorship-container {
+  padding-bottom: 153px;
+  .mentorship-partnerships-title {
+    margin-bottom: 160px;
+    @media screen and (max-width: 600px) {
+      margin-bottom: 50px;
+    }
+  }
+  .mentorship-partnerships-container {
+    padding: 0 12vw;
+    margin-bottom: 281px;
+    display: flex;
+    //flex-wrap: wrap;
+    @media screen and (max-width: 600px) {
+      padding: 40px 43px;
+      flex-direction: row;
+      justify-content: space-between;
+
+      overflow-x: scroll;
+    }
+  }
+}

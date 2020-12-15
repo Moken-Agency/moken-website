@@ -11,13 +11,14 @@ import HugeInfoAllListColumn from "../components/HugeInfoAllListColumn";
 import ProgramCommunityListPartner from "../components/ProgramCommunityListPartner";
 import EmailForm from "../../../components/EmailForm";
 import './index.scss';
+import HeaderWithBlackInfoBlock from "../../../components/HeaderWithBlackInfoBlock";
 
 const FutureFounders = () => {
     return (
         <div className={'future-founders-container'}>
-            <HeaderTitle title={'FUTUREFOUNDERS MENTORSHIP PROGRAM'}
-                         subtitle={'Inspiring student founders to scale their startup.'} />
-             <ProgramDetails />
+             <HeaderWithBlackInfoBlock title={'FUTUREFOUNDERS MENTORSHIP PROGRAM'}
+                                       subtitle={'Inspiring student founders to scale their startup.'}
+             />
 
              <TitleTwoDescriptionWithBtn
                  title={'Built by students and powered by First Round, we provide founders with a strong network of investors, world-class mentors, and a $20,000 check.'}

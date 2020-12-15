@@ -47,7 +47,6 @@ const ForInvestors = () => {
                         type={'thin'}
                         className={'for-investors-color-block'}
                         size={30}
-
             />
 
             <ProgramCommunityListPartner title={'GET CONNECTD IN THE MOKEN ECOSYSTEM'}

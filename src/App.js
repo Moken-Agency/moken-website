@@ -72,6 +72,13 @@ import ForBrands from "./screens/ForBrands";
 import AdvertiseWithUs from "./screens/AdvertiseWithUs";
 import ForFounders from "./screens/ForFounders";
 import CommunityPartnerScreen from "./screens/CommunityPartnerScreen";
+import EducationPartners from "./screens/EducationPartners";
+import EcoPartners from "./screens/EcoPartners";
+import StartUpScreen from "./screens/StartUpScreen";
+import Access from "./screens/Access";
+import Faqs from "./screens/Faqs";
+import Mentorship from "./screens/Mentorship";
+import InnovationCommittee from "./screens/InnovationCommittee";
 
 const TestHome = () => {
     return (
@@ -83,6 +90,30 @@ const TestHome = () => {
 
 const routsWithHeaderFooter = [
 
+    {
+        path: "/mentorship",
+        component: Mentorship
+    },
+    {
+        path: "/faqs",
+        component: Faqs
+    },
+    {
+        path: "/access",
+        component: Access
+    },
+    {
+        path: "/start-up-smart",
+        component: StartUpScreen
+    },
+    {
+        path: "/eco-partner",
+        component: EcoPartners
+    },
+    {
+        path: "/education-partner",
+        component: EducationPartners
+    },
     {
         path: "/community-partner",
         component: CommunityPartnerScreen
@@ -216,7 +247,7 @@ const routsWithHeaderFooter = [
         component: ProductTestingTeam
     },
     {
-        path: "/start-up-smart",
+        path: "/start-up-smart-packages",
         component: StartUpSmart
     },
     {
@@ -329,7 +360,7 @@ const routsWithHeaderFooter = [
     // },
     {
         path: "/",
-        component: CommunityPartnerScreen
+        component: Mentorship
     },
 
 
@@ -340,7 +371,10 @@ const routsWithoutHeaderFooter = [
         path: "/menuscreen",
         component: MenuScreen
     },
-
+    {
+        path: "/innovation-committee",
+        component: InnovationCommittee
+    },
 ];
 
 function App() {

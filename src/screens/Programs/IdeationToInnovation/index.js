@@ -12,15 +12,23 @@ import './index.scss';
 import HugeInfoAllListColumn from "../components/HugeInfoAllListColumn";
 import ProgramDetails from "../components/ProgramDetails";
 import ProgramSwiper from "../components/ProgramSwiper";
+import HeaderWithBlackInfoBlock from "../../../components/HeaderWithBlackInfoBlock";
 
 const IdeationToInnovation = () => {
     return (
         <div className={'ideation-to-innovation-container'}>
-            <HeaderTitle title={'IDEATION TO INNOVATION'}
-                         description={'No Fees. No Equity. A virtual incubation program providing you the tools to take action, guiding you from ideation to innovation.'}
-                         subtitle={'An idea incubator taking you from  to launch in 12 weeks.'} />
+            {/*<HeaderTitle title={'IDEATION TO INNOVATION'}*/}
+            {/*             description={''}*/}
+            {/*             subtitle={'An idea incubator taking you from  to launch in 12 weeks.'} />*/}
 
-            <ProgramDetails options={options.programs}/>
+            {/*<ProgramDetails options={options.programs}/>*/}
+
+
+            <HeaderWithBlackInfoBlock title={'IDEATION TO INNOVATION'}
+                                      subtitle={'An idea incubator taking you from  to launch in 12 weeks.'}
+                                      description={`No Fees. No Equity. A virtual incubation program providing you the tools to take action, guiding you from ideation to innovation. `}
+                                      blackInfoData={options.programs}
+            />
 
             <TitleTwoDescriptionWithBtn
                 title={'We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.'}
