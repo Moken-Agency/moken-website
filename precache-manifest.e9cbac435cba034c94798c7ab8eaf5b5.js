@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "00c5829eecd538e4f9bbac0791d3ea3d",
+    "revision": "29cf8f998adbb80c381becc2e3df4f94",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "9339fea624e6a9c57432",
+    "revision": "58ca92d9a8c655275ee2",
     "url": "/moken-website/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "3a10fb961d90cf9c1d72",
-    "url": "/moken-website/static/css/main.b4656776.chunk.css"
+    "revision": "9208c998c675e339b19b",
+    "url": "/moken-website/static/css/main.5e7d948e.chunk.css"
   },
   {
-    "revision": "9339fea624e6a9c57432",
-    "url": "/moken-website/static/js/2.19f32371.chunk.js"
+    "revision": "58ca92d9a8c655275ee2",
+    "url": "/moken-website/static/js/2.0dc4d9b9.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.19f32371.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.0dc4d9b9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a10fb961d90cf9c1d72",
-    "url": "/moken-website/static/js/main.00ad2bcf.chunk.js"
+    "revision": "9208c998c675e339b19b",
+    "url": "/moken-website/static/js/main.b9388603.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
     "url": "/moken-website/static/js/runtime-main.be4c88a6.js"
+  },
+  {
+    "revision": "9146084e572e7eef9ff4652c32b84cc5",
+    "url": "/moken-website/static/media/BlackLabel-Light.9146084e.ttf"
   },
   {
     "revision": "151ca8b47b79086beaefba24c6970383",
@@ -50,6 +54,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a4ed4f320cda150039005c51b4dfc688",
     "url": "/moken-website/static/media/Latinka Thin.a4ed4f32.otf"
+  },
+  {
+    "revision": "d6d1e711327e458dbe3de223d0570d17",
+    "url": "/moken-website/static/media/ZonaPro-ExtraBoldDemo.d6d1e711.otf"
+  },
+  {
+    "revision": "97a7a8b5ab46a4a0e16041a80155c45d",
+    "url": "/moken-website/static/media/ZonaPro-LightItalicDemo.97a7a8b5.otf"
   },
   {
     "revision": "aa4b6ec178ef01b6c6f0a08b9f8f800c",
@@ -94,6 +106,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d2f4ad5c7779027e104621a0c572935e",
     "url": "/moken-website/static/media/idea-factory-light.d2f4ad5c.svg"
+  },
+  {
+    "revision": "4b10e7fac8ecfb773912b62639aa1560",
+    "url": "/moken-website/static/media/innovation-mob-footer.4b10e7fa.svg"
+  },
+  {
+    "revision": "1ea57cb1ff4a3630323dd335f8d588ee",
+    "url": "/moken-website/static/media/innovation-mob-header.1ea57cb1.svg"
+  },
+  {
+    "revision": "dd66150ea3009101fa68ba0c33b8041b",
+    "url": "/moken-website/static/media/innovation-square.dd66150e.svg"
+  },
+  {
+    "revision": "3c7dc3c76b88261e8eebe83fb7d871cc",
+    "url": "/moken-website/static/media/innovation-week.3c7dc3c7.svg"
   },
   {
     "revision": "6abb360130ee8be09159bb301a1caad5",
@@ -162,5 +190,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f6fa9ca9e2ff08ba1edf725bbb7fe2a9",
     "url": "/moken-website/static/media/upeventsmob.f6fa9ca9.svg"
+  },
+  {
+    "revision": "ddf0c4b423485f1fa5e662443679265a",
+    "url": "/moken-website/static/media/zonapro-extrabold.ddf0c4b4.otf"
   }
 ]);
