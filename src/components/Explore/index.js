@@ -13,11 +13,12 @@ const Explore = ({title, subtitle, description}) => {
                   mobSize={22}
                   type={'thin'} className={'explore-subtitle'}>{subtitle}</Text>
             <div className={'explore-divider'}/>
-            <Text type={'semiBold'}
+            <Text type={'light'}
                   mobSize={10}
                   size={'.8vw'}
             >{description}</Text>
-            <Button title={'EXPLORE'} color={'white'}
+            <Button title={'EXPLORE'} backgroundColor={'transparent'}
+                    textColor={'black'}
                     size={'.6vw'}
                     mobSize={7.5}
                     className={'explore-btn'}

@@ -7,19 +7,17 @@ import Title from "../../components/Title";
 import EmailForm from "../../components/EmailForm";
 import options from "./options";
 import Package from "./components/Package";
+import HeaderTitle from "../../components/HeaderTitle";
 const { packages } = options;
 
 const StartUpSmart = () => {
     return (
         <div className={'start-up-smart-container'}>
-            <div className={'start-up-smart-first'}>
-                <Text className={'start-up-smart-first-text-first'}
-                      type={'semiBold'}
-                      size={'1vw'} mobSize={14}>STARTUPSMART PACKAGES</Text>
-                <Text className={'start-up-smart-first-text-second'} mobSize={45} type={'thin'} size={'4.4vw'}>
-                    Building unforgettable brands for start-ups with ambition.
-                </Text>
-            </div>
+
+            <HeaderTitle title={'STARTUPSMART PACKAGES'}
+                         subtitle={'Building unforgettable brands for start-ups with ambition.'}
+            />
+
             <div className={'start-up-smart-second'}>
                 <img src={FirstImage} />
             </div>

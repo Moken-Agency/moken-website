@@ -56,7 +56,7 @@ const MoPlusKen = () => {
                             firstList={options.helps}
                             rightSecondListTitle={'REQUIREMENTS'}
                             secondList={options.requirements}
-                            secondListLikeFirst={true}
+                            secondListLikeFirst
             />
 
             <ColorBlock className={'mo-ken-color-block'}

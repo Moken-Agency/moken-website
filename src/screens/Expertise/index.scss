@@ -81,13 +81,11 @@
           .expertise-bottom-first-info-text-first {
             margin-bottom: 1.7vw;
             span {
-              line-height: 4vw;
             }
           }
           .expertise-bottom-first-info-text-second {
             margin-bottom: 1.8vw;
               span {
-                line-height: 2vw;
               }
           }
           .expertise-bottom-first-info-text-third {
@@ -97,8 +95,10 @@
         }
       }
       .expertise-bottom-btn-container {
+        display: flex;
         @media only screen and (max-width: 600px) {
           padding-right: 10vw;
+          flex-direction: column;
           button {
             width: 100%;
             &:first-child {

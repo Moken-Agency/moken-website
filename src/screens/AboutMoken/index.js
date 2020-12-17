@@ -10,6 +10,7 @@ import HeaderTitle from "../../components/HeaderTitle";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import ImageBlock from "../../components/ImageBlock";
 
 const AboutMoken = () => {
     const {isMobile} = useWindowDimensions();
@@ -21,7 +22,7 @@ const AboutMoken = () => {
                  subtitle={'Backing ideas that create change.'}
                  description={'Built to support founders, Moken is a group of trailblazing companies specialized in all things startup.'} />
 
-            <div className={'about-moken-image'}/>
+            <ImageBlock position={'right'} />
 
 
             <TitleTwoDescriptions
@@ -32,13 +33,15 @@ const AboutMoken = () => {
             />
 
             <section className={'about-moken-second-info-section'}>
-                <Title className={'about-moken-second-info-section-title'} title={'WHAT WE DO'} />
-               <div style={{paddingLeft: 243, marginRight: 70, width: 555}}>
-                   <Text className={'about-moken-second-info-section-subtitle'} size={55} type={'extraLight'}>We are driven by the passion for working with determined innovators who live to make a change in the world.</Text>
+                <Title title={'WHAT WE DO'} />
+                    <div className={'about-moken-second-info-section-secondary-container'}>
+                   <Text className={'about-moken-second-info-section-subtitle'}
+                         size={55}
+                         mobSize={35}
+                         type={'extraLight'}>We are driven by the passion for working with determined innovators who live to make a change in the world.</Text>
                    <Text className={'about-moken-second-info-section-text'}
                          size={20}
                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-
                          mobSize={16}
                          type={'light'}>We understand that together we should see results, not just reports with every bit of work we do.
                        Through developing tailor-made strategies that assist in beating out the competition by tearing up the
@@ -49,9 +52,11 @@ const AboutMoken = () => {
                    <div className={'about-moken-second-kendra-block'}>
                        <div className={'about-moken-second-divider'}/>
                        <div className={'about-moken-second-kendra-info-block'}>
-                           <Text className={'about-moken-second-kendra-info-text'} type={'semiBold'} size={24}>Moken creates diversified opportunities for startups and founders driving economic
+                           <Text className={'about-moken-second-kendra-info-text'}
+                                 type={'semiBold'}
+                                 size={24} mobSize={18}>Moken creates diversified opportunities for startups and founders driving economic
                                and social impact, globally. </Text>
-                           <Text size={16} type={'semiBold'}>— Kendra Garagan | Founder & Partner</Text>
+                           <Text size={16} mobSize={12} type={'semiBold'}>— Kendra Garagan | Founder & Partner</Text>
                        </div>
                    </div>
                </div>
@@ -59,12 +64,21 @@ const AboutMoken = () => {
             </section>
 
             <section className={'about-moken-video-section'}>
+
+
+
+
                 <div className={'about-moken-video-info-block'}>
-                    <Text className={'about-moken-video-info-block-first-title'} size={22} type={'semiBold'}>This is where the video title goes</Text>
+                    <Text className={'about-moken-video-info-block-first-title'}
+                          size={16} type={'semiBold'}>THIS IS WHERE THE VIDEO TITLE GOES</Text>
                     <Text size={20}
+                          type={'light'}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           mobSize={16}>This is where the video CTA should go to outline the video content.</Text>
                 </div>
+                <video autoPlay
+                       src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'}
+                />
             </section>
 
             <TwoColumnsHugeInfo title={'MOKEN PILLARS'}

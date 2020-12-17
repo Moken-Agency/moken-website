@@ -30,11 +30,22 @@
 
   .about-moken-second-info-section {
     margin-bottom: 252px;
-    .about-moken-second-divider {
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 203px;
+    }
+      .about-moken-second-divider {
       width: 1px;
     }
-    .about-moken-second-info-section-title {
-      margin-bottom: 155px;
+
+    .about-moken-second-info-section-secondary-container {
+      padding-left: 243px;
+      margin-right: 7px;
+      width: 555px;
+      @media only screen and (max-width: 600px) {
+        width: auto;
+        padding: 0 43px;
+        margin-right: 0;
+      }
     }
     .about-moken-second-info-section-subtitle {
       margin-bottom: 80px;
@@ -60,19 +71,37 @@
       }
     }
   }
+
   .about-moken-video-section {
     position: relative;
-    height: 750px;
+    //height: 750px;
     background-color: #a7a7a7;
     margin-bottom: 178px;
-    .about-moken-video-info-block {
-      padding: 66px 171px;
-      background-color: white;
-      position: absolute;
-      right: 0;
-      bottom: 0;
+    video {
+      //position: absolute;
+      width: 100vw;
+
+    }
+    @media only screen and (max-width: 600px) {
+      //display: flex;
+      //flex-direction: column-reverse;
+    }
+      .about-moken-video-info-block {
+        padding: 66px 80px 66px 117px;
+        background-color: white;
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        bottom: 0;
+        @media only screen and (max-width: 600px) {
+          padding: 0 43px;
+          display: none;
+        }
       .about-moken-video-info-block-first-title {
         margin-bottom: 10px;
+        span {
+          letter-spacing: 4px;
+        }
       }
     }
   }

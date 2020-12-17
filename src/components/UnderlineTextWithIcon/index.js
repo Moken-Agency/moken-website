@@ -4,10 +4,10 @@ import ArrowUpRight from '../../images/arrow-up-right.png';
 import './index.scss';
 
 
-const UnderlineTextWithIcon = ({className = '', onClick, title = '', color = 'white', withIcon = false}) => {
+const UnderlineTextWithIcon = ({className = '', onClick, title = '', color = 'white', withIcon = false, size, mobSize }) => {
     return (
         <div className={`underline-text-container ${className}`}>
-           <SubmitYourResume className={'underline-text'} onClick={onClick} title={title} color={color} />
+           <SubmitYourResume size={size} mobSize={mobSize} className={'underline-text'} onClick={onClick} title={title} color={color} />
             {withIcon ? <img src={ArrowUpRight} className={'underline-text-img'}/> : null}
         </div>
     )

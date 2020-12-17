@@ -1,0 +1,122 @@
+.innovation-committee-container {
+  .innovation-committee-mob-image {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      margin-bottom: 50px;
+    }
+  }
+  header {
+    .innovation-committee-go-back-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      background-color: black;
+      .innovation-committee-go-back-transition-block {
+        display: flex;
+        transition: .5s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.02);
+        }
+        .innovation-committee-go-back-text {
+          margin-right: 27px;
+        }
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    .innovation-committee-nav-main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32px 80px;
+      @media screen and (max-width: 600px){
+        padding: 25px 0 50px 60px;
+      }
+      .innovation-committee-nav-container {
+        display: flex;
+        align-items: center;
+        @media only screen and (max-width: 600px) {
+          display: none;
+        }
+        nav {
+          display: flex;
+          align-items: center;
+          .innovation-committee-nav-item {
+            margin-right: 50px;
+            span {
+              white-space: pre-line;
+            }
+          }
+        }
+      }
+      img {
+        height: 65px;
+        @media only screen and (max-width: 600px) {
+          height: 42px;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 68px 188px;
+    display: flex;
+    @media only screen and (max-width: 600px) {
+      padding: 47px 43px;
+    }
+      .innovation-committee-main-container {
+        margin-right: 170px;
+        @media only screen and (max-width: 600px) {
+          margin-right: 0;
+        }
+      .innovation-committee-main-title {
+        margin-bottom: 30px;
+      }
+      .innovation-committee-main-text-container {
+        display: flex;
+      }
+      .innovation-committee-main-last-text {
+        margin-bottom: 50px;
+      }
+      .innovation-committee-main-text {
+        margin-bottom: 32px;
+        span {
+          line-height: 32px;
+        }
+      }
+      .innovation-committee-main-small-text {
+        margin-bottom: 13px;
+        padding-left: 25px;
+        span {
+          line-height: 16px;
+
+        }
+      }
+      .innovation-committee-btn-container {
+        display: flex;
+        @media screen and (max-width: 600px){
+          flex-direction: column;
+        }
+        .innovation-committee-btn-first {
+          margin-right: 40px;
+          @media screen and (max-width: 600px){
+            margin-right: 0;
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    .innovation-main-image {
+      width: 663px;
+      @media screen and (max-width: 600px){
+        display: none;
+      }
+    }
+  }
+}

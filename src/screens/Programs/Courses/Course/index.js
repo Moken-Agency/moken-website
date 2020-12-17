@@ -10,7 +10,11 @@ const Course = ({url, title = '', description = '', btnTitle = ''}) => {
             <section className={'course-component-info-block'}>
                 <Text size={35} className={'course-component-first'} mobSize={20} type={'thin'}>{title}</Text>
                 <Text size={18} mobSize={14} className={'course-component-second'} type={'light'}>{description}</Text>
-                <Button title={btnTitle} color={'black'} mobSize={10} type={'semiBold'} size={14}/>
+                <Button title={btnTitle}
+                        backgroundColor={'black'}
+                        textColor={'white'}
+                        mobSize={10}
+                        size={14}/>
             </section>
         </div>
     )

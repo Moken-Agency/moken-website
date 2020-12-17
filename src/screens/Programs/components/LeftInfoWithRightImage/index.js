@@ -23,7 +23,7 @@ const LeftInfoWithRightImage = ({mainTitle = '',title = '', description = '', bt
                               type={'light'}
                               textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                               containerStyles={{marginBottom: 85}}>{description}</Text>
-                        {btnTitle && <Button size={14} title={btnTitle} color={'black'}/>}
+                        {btnTitle && <Button size={14} title={btnTitle} backgroundColor={'black'} textColor={'white'}/>}
                     </div>
                    <img src={imgUrl}
                         className={'left-info-with-right-image-image'}

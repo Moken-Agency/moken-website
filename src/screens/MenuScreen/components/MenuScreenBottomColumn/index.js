@@ -19,7 +19,8 @@ const MenuScreenBottomColumn = ({title = '', routs = []}) => {
         <div>
             <Text size={20}
                   mobSize={16}
-                  type={'semiBold'} textStyles={[styles.mainTitle, {lineHeight: isMobile ? '26px': '35px'}]} containerStyles={{marginBottom: 65}}>{title}</Text>
+                  type={'semiBold'} textStyles={{...styles.mainTitle, lineHeight: isMobile ? '26px': '35px'}}
+                  containerStyles={{marginBottom: 65}}>{title}</Text>
             {
                 routs.map(({title}, index) => {
                     return (

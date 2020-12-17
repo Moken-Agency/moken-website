@@ -12,8 +12,12 @@ import FirstCircle from '../../images/our-partner-first.svg';
 import SecondCircle from '../../images/our-partner-second.svg';
 import ThirdCircle from '../../images/our-partner-third.svg';
 import HeaderTitle from "../../components/HeaderTitle";
+import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
+import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
+import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
+import ColorBlock from "../../components/ColorBlock";
 
-const {involved, collaborates} = options;
+const {involved, collaborates, purposes} = options;
 
 const OurPartners = () => {
 
@@ -33,50 +37,29 @@ const OurPartners = () => {
                 <img src={ThirdCircle} />
            </div>
 
-           <Title className={'partners-title'} title={'DRIVING THE FUTURE'} />
-
-           <div className={'our-partners-second-info-container'}>
-               <Text size={55}
-                     mobSize={35}
-                     type={'extraLight'}>We increase website leads, maximize revenu and produce a
-                   positive ROI — validated with measurable results.</Text>
-               <div className={'our-partners-inline-info'}>
-                   <Text type={'light'}
-                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                         size={20}
-                         mobSize={16}>Our capabilities span the breadth of operations, project, and product
+           <TitleTwoDescriptions mainTitle={'DRIVING THE FUTURE'}
+                                 title={`We increase website leads, maximize revenu and produce a
+                   positive ROI — validated with measurable results.`}
+                                 firstDescription={`Our capabilities span the breadth of operations, project, and product
                        management; business strategy; marketing; design; technology; revenue optimization;
                        talent acquisition; growth; and sales, across all industries through customized products,
-                       services, courses, workshops, solutions, and mentorship.</Text>
-                   <Text type={'light'}
-                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                         size={20}
-                         mobSize={16}>We partner with innovators through our tailored and integrative expertise, complemented by a
+                       services, courses, workshops, solutions, and mentorship.`}
+                                 secondDescription={`We partner with innovators through our tailored and integrative expertise, complemented by a
                        vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully
-                       driven outcomes.</Text>
-               </div>
-           </div>
+                       driven outcomes.`}
+           />
 
-           <Title className={'partners-title'} title={'PARTNERSHIP OPPORTUNITIES'} />
-
-           <div className={'our-partners-second-info-container'}>
-               <Text size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you
-                   do to founders and startups, globally.</Text>
-           </div>
-
-           <div className={'comm-manager-container'}>
-               {
-                   involved.map((props, index) => {
-                       return (
-                          <CommunityPartner {...props} key={'CommunityPartner' + index} />
-                       )
-                   })
-               }
-           </div>
-
-           <div className={'submit-container'}>
-               <SubmitYourResume title={'Expert Directory Coming Soon'} color={'black'}/>
-           </div>
+           <ProgramCommunityListPartner title={'PARTNERSHIP OPPORTUNITIES'}
+                                        subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
+                                        options={involved}
+                                        AdditionalComponent={() => {
+                                            return (
+                                                <div className={'submit-container'}>
+                                                    <SubmitYourResume title={'Expert Directory Coming Soon'} color={'black'}/>
+                                                </div>
+                                            )
+                                        }}
+           />
 
            <Title className={'partners-title'} title={'OUR PARTNERS'} />
 
@@ -94,61 +77,27 @@ const OurPartners = () => {
                </div>
            </div>
 
-           <div className={'black-block-container'}>
-               <Text size={30} type={'thin'} color={'white'}>Looking for the next big thing?</Text>
-               <div className={'black-block-right-container'}>
-                   <Text size={16}
-                         type={'semiBold'}
-                         color={'white'}
-                         textStyles={{letterSpacing: 4}}>GET INVOLVED</Text>
-                   <img src={ArrowUpRight} />
-               </div>
-           </div>
+           <ColorBlock title={'Looking for the next big thing?'}
+                       subtitle={'GET INVOLVED'}
+                       type={'thin'}
+                       size={40}
+                       mobSize={32}
+                       withIcon
+                       blockType={'middle'}
+                       backgroundColor={'black'}/>
 
-           <Title containerStyles={{marginTop: '10vw'}} className={'partners-title'} title={'LEVERAGE THE ECOSYSTEM'} />
-
-           <div className={'product-testing-sub-container'}>
-               <div className={'product-individual-container'}>
-                   <Text className={'enthusiastic-title'}
-                         type={'extraLight'} size={55} mobSize={35}>Enthusiastic individuals working together to create extraordinary startups</Text>
-
-               </div>
-
-               <div className={'role-container'}>
-                   <Text className={'role-title'}
-                         size={20}
-                         type={'light'}
-                         textStyles={{lineHeight: isMobile ? '26px': '35px'}}>Our role consists of taking the time to understand your business model, and suggesting
+           <TwoColumnsHugeInfo title={'LEVERAGE THE ECOSYSTEM'}
+                               leftTitle={'Enthusiastic individuals working together to create extraordinary startups'}
+                               rightTitle={`Our role consists of taking the time to understand your business model, and suggesting
                        creative and high-performing digital strategies. Our avant-garde tactics are in line with
                        the current market, blend seamlessly with our clients’ operational realities, and eliminate
-                       risks that aren’t necessary.</Text>
+                       risks that aren’t necessary`}
+                               rightFirstListTitle={'HOW WE CAN COLLABORATE'}
+                               firstList={collaborates}
+                               rightSecondListTitle={'CHOOSE YOUR PURPOSE'}
+                               secondListLikeFirst={purposes}
+           />
 
-                   <Text size={14} mobSize={10} type={'semiBold'}>HOW WE CAN COLLABORATE</Text>
-                   <div className={'product-benefits-container'}>
-                       {
-                           collaborates.map(({title, subtitle}, index) => {
-                               return (
-                                   <div className={'product-benefit-container'} key={'benefits' + index}>
-                                       <Text size={22} type={'semiBold'} className={'product-benefit-title'}>{title}</Text>
-                                       <Text size={20}
-                                             textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                                             mobSize={16}
-                                             type={'light'}>{subtitle}</Text>
-                                   </div>
-                               )
-                           })
-                       }
-                   </div>
-                   <Text size={14} mobSize={10} type={'semiBold'} containerStyles={{marginTop: '4vw'}}>CHOOSE YOUR PURPOSE</Text>
-
-                   <SubmitYourResume title={'Moken Partner Program Guide'} color={'black'}/>
-                   <SubmitYourResume title={'Ecosystem Partner Playbook'} color={'black'}/>
-                   <SubmitYourResume title={'Community Partner Playbook'} color={'black'}/>
-                   <SubmitYourResume title={'Startup Program Partner Playbook'}
-                                     color={'black'}
-                                     className={'last-submit-resume'}/>
-               </div>
-           </div>
            <EmailForm withForm
                       className={'partners-email-form'}/>
 

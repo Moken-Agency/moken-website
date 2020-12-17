@@ -1,8 +1,3 @@
-.partners-title {
-  padding-left: 10vw;
-  margin-bottom: 10vw;
-}
-
 
 .our-partners-circles {
   img {
@@ -15,10 +10,6 @@
   }
 }
 
-.our-partners-second-info-container {
-  padding: 0 10vw 0 14vw;
-  width: 55vw;
-}
 .our-partners-inline-info {
   display: flex;
   justify-content: space-between;
@@ -42,17 +33,8 @@
 .submit-container {
   display: flex;
   justify-content: flex-end;
-  padding-right: 12vw;
 }
 
-.comm-manager-container {
-  padding: 7vw 11.3vw;
-  display: flex;
-  justify-content: space-between;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-}
 .our-partners-container {
   //display: flex;
   @media only screen and (max-width: 600px) {

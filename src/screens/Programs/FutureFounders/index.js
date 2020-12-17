@@ -27,7 +27,7 @@ const FutureFounders = () => {
                  mainTitle={'PROGRAM OVERVIEW'}
              />
 
-             <ImageBlock position={'right'} url={''} />
+             <ImageBlock position={'right'} />
 
              <TwoColumnsHugeInfo
                  title={'PROGRAM BENEFITS'}

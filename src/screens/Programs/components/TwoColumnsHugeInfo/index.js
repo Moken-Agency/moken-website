@@ -80,6 +80,8 @@ const TwoColumnsHugeInfo = ({title = '',
                         return (
                                 <UnderlineTextWithIcon withIcon={secondListWithIcon}
                                                        color={'black'}
+                                                       size={34}
+                                                       mobSize={25}
                                                        className={'two-column-submit-your-resume'}
                                                        title={title}/>
                         )

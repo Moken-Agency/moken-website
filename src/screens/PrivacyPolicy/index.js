@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     return (
         <div className={'privacy-container'}>
             <div className={'privacy-header-container'}>
-                <Text size={100} mobSize={65} color={'white'} type={'thin'}>Privacy Policy</Text>
+                <Text size={100} mobSize={55} color={'white'} type={'thin'}>Privacy Policy</Text>
             </div>
             <PageGenerator data={otherOptions}/>
         </div>

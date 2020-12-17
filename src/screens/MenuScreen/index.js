@@ -21,7 +21,9 @@ const MenuScreen = (props) => {
     return (
             <>
                 {isMobile ?
-                    <HeaderMobile {...props} /> :
+
+                    <HeaderMobile {...props} />
+                    :
                     <div className={'menu-screen-container'}>
                     <div style={{display: 'flex', justifyContent: 'space-between', paddingRight: '2vw'}}>
                         <div/>

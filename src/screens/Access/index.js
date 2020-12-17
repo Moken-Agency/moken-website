@@ -17,7 +17,7 @@ const Access = () => {
                          description={'Together creating an unmatched global ecosystem.'}
             />
 
-            <ImageBlock type={'full'} url={''}/>
+            <ImageBlock type={'full'}/>
 
             <TitleRowSubDes title={'ABOUT MENTORSHIP'}
                             description={`We know that dynamic actions define the future and that the ambition to lead

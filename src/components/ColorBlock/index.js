@@ -5,17 +5,20 @@ import './index.scss';
 import ArrowUpRight from '../../images/arrow-up-right.png'
 import ArrowUpRightWhite from '../../images/arrow-up-right-white.png'
 
-
+//blockType = middle | big
 const ColorBlock = ({title = '', subtitle = '', backgroundColor = '', className = '', textWidth = '40vw', textColor = 'white', size = '4.5vw',
-                        withIcon = false, type = 'extraLight', mobSize = '9vw'}) => {
-    const {isMobile} = useWindowDimensions()
+                        withIcon = false, type = 'extraLight', mobSize = '9vw', blockType = 'big'}) => {
+    const {isMobile} = useWindowDimensions();
+    const mobSizeTemp = blockType === 'middle' ? 32 : mobSize;
+    const sizeTemp = blockType === 'middle' ? 40 : size;
+    const typeTemp = blockType === 'middle' ? 'thin' : type;
 
     return (
         <>
-            {backgroundColor !== '' ? <section className={`block-container ${className}`} style={{backgroundColor}}>
-                <Text size={size}
-                      type={type}
-                      mobSize={mobSize}
+            {backgroundColor !== '' ? <section className={`block-container ${className} ${blockType}`} style={{backgroundColor}}>
+                <Text size={sizeTemp}
+                      type={typeTemp}
+                      mobSize={mobSizeTemp}
                       color={textColor}
                       className={'block-container-history'}
                       containerStyles={{width: isMobile ? 'auto' : textWidth}}>{title}</Text>

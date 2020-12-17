@@ -42,5 +42,23 @@ export default {
             subtitle: 'Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.'
         },
 
-    ]
+    ],
+    purposes: [
+        {
+            title: 'Build & Scale Your Startup',
+            link: ''
+        },
+        {
+            title: 'Extend Your Network',
+            link: ''
+        },
+        {
+            title: 'Extend Your Network',
+            link: ''
+        },
+        {
+            title: 'Extend Your Network',
+            link: ''
+        },
+    ],
 }

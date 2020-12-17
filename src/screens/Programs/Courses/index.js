@@ -15,6 +15,7 @@ import OurPartnersComponent from "../components/OurPartnersComponent";
 import ProgramColorBlock from "../components/ProgramColorBlock";
 import CoursesComponent from "../components/CoursesComponent";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
+import TitleSubDescription from "../../../components/TitleSubDescription";
 
 const Courses = () => {
     const {isMobile} = useWindowDimensions();
@@ -23,19 +24,15 @@ const Courses = () => {
            <HeaderTitle title={'MOKEN PROGRAMS'}
                         subtitle={'Success fuelled by partnership.'}
                         description={'Together creating an unmatched global ecosystem.'} />
-           <ImageBlock position={'right'} url={''} className={'courses-image-block'}/>
-           <Title title={'PROGRAM OVERVIEW'} className={'courses-overview-title'}/>
-           <section className={'courses-overview-container'}>
-               <Text size={55} mobSize={35} type={'extraLight'} className={'courses-overview-first-text'}>Built by students and powered by First Round, we provide founders with a strong network of investors,
-                   world-class mentors, and a $20,000 check.</Text>
+           <ImageBlock position={'right'} className={'courses-image-block'}/>
 
-               <Text size={20}
-                     textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                     mobSize={16}
-                     type={'light'}>Our capabilities span the breadth of operations, project, and product management; business strategy;
+           <TitleSubDescription title={'PROGRAM OVERVIEW'}
+                                subtitle={`Built by students and powered by First Round, we provide founders with a strong network of investors,
+                   world-class mentors, and a $20,000 check.`}
+                                description={`Our capabilities span the breadth of operations, project, and product management; business strategy;
                    marketing; design; technology; revenue optimization; talent acquisition; growth; and sales, across all
-                   industries through customized products, services, courses, workshops, solutions, and mentorship.</Text>
-           </section>
+                   industries through customized products, services, courses, workshops, solutions, and mentorship.`}
+           />
 
             {/*<Title title={'THE COURSES'} className={'courses-courses-title'} />*/}
 

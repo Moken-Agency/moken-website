@@ -1,6 +1,6 @@
 .header-title-container {
-  padding: 10vw 0 0 25vw;
-  width: 38vw;
+  padding: 10vw 0 0 26.1vw;
+  width: 35vw;
   margin-bottom: 225px;
 
   @media only screen and (max-width: 600px) {
@@ -9,16 +9,34 @@
     margin-bottom: 110px;
   }
   .header-title-main-title {
-    letter-spacing: 4px;
-    margin-bottom: 1.4vw;
+    margin-bottom: 1.8vw;
+    span {
+      letter-spacing: 4px;
+    }
     @media only screen and (max-width: 600px) {
       margin-bottom: 48px;
     }
   }
   .header-title-subtitle {
-    margin-bottom: 2.4vw;
+    margin-bottom: 150px;
+    span {
+      letter-spacing: 4px;
+      line-height: 80px;
+      @media screen and(max-width: 600px) {
+        line-height: 50px;
+      }
+    }
     @media only screen and (max-width: 600px) {
       margin-bottom: 42px;
+    }
+  }
+
+  .header-title-description {
+    span {
+      line-height: 35px;
+      @media screen and(max-width: 600px) {
+        line-height: 26px;
+      }
     }
   }
 }

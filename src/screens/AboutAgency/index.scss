@@ -58,5 +58,10 @@
     padding-left: 14vw;
     margin-bottom: 5vw;
     width: 50vw;
+    @media only screen and (max-width: 600px) {
+      width: auto;
+      padding: 0 43px;
+      margin-bottom: 25px;
+    }
   }
 }

@@ -89,22 +89,20 @@ const AboutPrograms = () => {
 
             <section className={'about-programs'}>
                 <Title title={'THE PROGRAMS'} className={'about-programs-title'} />
-                <div className={'about-programs-block'}>
                     <Text className={'about-program-text'} size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
-                    <div className={'about-programs-list'}>
-                        {
-                            options.programsSecond.map((program, index) => {
-                                return (
-                                    <CommunityPartner {...program}
-                                                      containerStyles={{
-                                                          width: 90 / options.programs.length + 'vw',
-                                                          marginBottom: '5vw'
-                                                      }}/>
-                                )
-                            })
-                        }
+                <div className={'about-programs-list'}>
+                    {
+                        options.programsSecond.map((program, index) => {
+                            return (
+                                <CommunityPartner {...program}
+                                                  containerStyles={{
+                                                      width: 90 / options.programs.length + 'vw',
+                                                      marginBottom: '5vw'
+                                                  }}/>
+                            )
+                        })
+                    }
 
-                    </div>
                 </div>
             </section>
 

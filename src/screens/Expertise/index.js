@@ -83,14 +83,16 @@ const Expertise = () => {
                         </div>
                         <div className={'expertise-bottom-btn-container'}>
                             <Button title={'ROADMAPS & SPRINTS'}
-                                    color={'black'}
-                                    type={'bordered-white'}
+                                    backgroundColor={'black'}
                                     size={'.85vw'}
-                                    containerStyles={{marginRight: '2.8vw', padding: '1.65vw 2vw'}}/>
+                                    textColor={'white'}
+                                    borderType={'bordered'}
+                                    containerStyles={{marginRight: '2.8vw'}}
+                            />
                             <Button title={'STARTUPSMART'}
-                                    color={'white'}
+                                    backgroundColor={'white'}
+                                    textColor={'black'}
                                     size={'.85vw'}
-                                    containerStyles={{padding: '1.65vw 1.7vw'}}
                                     type={'bordered-white'}/>
                         </div>
                     </div>

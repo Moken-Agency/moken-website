@@ -10,6 +10,7 @@ import options from './portfolio-options';
 import Startups from "./components/Startups";
 import Company from "./components/Company";
 import ColorBlock from "../../components/ColorBlock";
+import HeaderSecondType from "../../components/HeaderSecondType";
 
 const {startups, companies} = options;
 
@@ -22,12 +23,15 @@ const Portfolio = (props) => {
     return (
         <div className={'portfolio-container'}>
             <section className={'portfolio-section-info'}>
-                <Text size={isMobile ? '3vw' : '1vw'}
+                <Text
                       type={'semiBold'}
+                      size={16}
+                      mobSize={14}
                       textStyles={{letterSpacing: 4}}
                       className={'portfolio-title-first'}>PORTFOLIO</Text>
-                <Text size={isMobile ? '10vw' : '4.5vw'}
+                <Text size={'4.5vw'}
                       type={'thin'}
+                      mobSize={45}
                       className={'portfolio-title-second'}>
                     Great ideas driven by amazing people scaling for success.</Text>
                 <div className={'portfolio-startups-container'}>
@@ -53,7 +57,9 @@ const Portfolio = (props) => {
             <ColorBlock title={'Do you want to be the next to make history?'}
                         subtitle={'CONNECT WITH US'}
                         textWidth={'45vw'}
-                        backgroundColor={'#263da8'}/>
+                        backgroundColor={'#000'}
+                        className={'portfolio-color-block'}
+            />
             {/*<section className={'block-container'}>*/}
             {/*    <Text size={isMobile ? '9vw' : '5vw'}*/}
             {/*          type={'thin'}*/}

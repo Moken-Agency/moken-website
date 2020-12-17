@@ -10,6 +10,12 @@ import Explore from "../../components/Explore";
 import CommunityPartner from "../../components/CommunityPartner";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import HeaderTitle from "../../components/HeaderTitle";
+import TitleSubDescription from "../../components/TitleSubDescription";
+import ImageBlock from "../../components/ImageBlock";
+import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
+import ColorBlock from "../../components/ColorBlock";
+import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 const {swiperData} = options;
 
 const Community = () => {
@@ -61,58 +67,37 @@ const Community = () => {
 
     return (
         <div className={'community-container'}>
-            <div className={'moken-container'}>
-                <Text size={'.9vw'}
-                      mobSize={14}
-                      type={'semiBold'}
-                      containerStyles={styles.moken}>MOKEN COMMUNITY</Text>
-                <Text size={'4.2vw'}
-                      mobSize={45}
-                      type={'thin'}
-                      containerStyles={styles.working}>Working on what matters, together.</Text>
-                <Text size={'1.1vw'}
-                      mobSize={16}
-                      type={'light'}>Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.com</Text>
-            </div>
 
-            <Title title={'ONE FUTURE, ONE COMMUNITY'}/>
+            <HeaderTitle title={'MOKEN COMMUNITY'}
+                         subtitle={'Working on what matters, together.'}
+                         description={`Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.co`}
+            />
 
-            <div className={'future-container'}>
-                <Text size={'3.74vw'} mobSize={35} type={'extraLight'} containerStyles={styles.increase}>We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.</Text>
-                <Text size={'1.4vw'} mobSize={16} type={'light'} containerStyles={styles.role}>Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.  Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities.</Text>
-                <Text size={'1vw'} mobSize={12} type={'semiBold'} containerStyles={styles.touch}>GET IN TOUCH</Text>
-            </div>
+            <ImageBlock type={'full'} />
 
-            <img src={''} className={'right-image'}/>
 
-            <Title title={'INNOVATOR NETWORK'}/>
+            <TitleSubDescription title={'ONE FUTURE, ONE COMMUNITY'}
+                                 subtitle={`We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.`}
+                                 description={`Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. 
+                    Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, 
+                    and eliminate risks that aren’t necessary.  Our avant-garde tactics are in line with the current market, blend seamlessly
+                    with our clients’ operational realities.`}
+                                 btnTitle={'GET IN TOUCH'}
+            />
 
-            <div className={'innovator-container'}>
-                <div className={'driven-container'}>
-                    <Text size={'3.7vw'} mobSize={35} type={'extraLight'} containerStyles={styles.driven}>We are driven by the passion for working with determined innovators who live to make a change in the world.</Text>
-                    <Text size={'1.35vw'} mobSize={16} type={'light'} containerStyles={styles.understand}>We understand that together we should see results, not just reports with the work we do. We've developed tailor-made strategies that assist in beating out the competition by tearing up the rule book. Through our agile approach, entrepreneurs, founders, and startups overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation. </Text>
-                    <div className={'network-container'}>
-                        <SubmitYourResume title={'IterableCircle the Network'} color={'black'}/>
-                        <img src={ArrowTopRight} />
-                    </div>
-                </div>
-                <div />
-            </div>
+            <ImageBlock position={'right'} />
 
-            <div className={'community-color-block'}>
-                <Text size={'2.7vw'} mobSize={20} type={'thin'} color={'white'}>Looking for the next big thing?</Text>
-                <Text size={'1.1vw'} mobSize={12} type={'semiBold'} color={'white'} textStyles={styles.download}>DOWNLOAD THE COMMUNITY GUIDE</Text>
-            </div>
 
-            <Title title={'OUR COMMUNITY'}/>
-
-            <div className={'community-leads-container'}>
-                <Text size={'3.7vw'} mobSize={35} type={'extraLight'}>We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.</Text>
-                <div className={'community-capabilities-container'}>
-                    <Text size={'1.4vw'} mobSize={16} type={'light'}>Our capabilities span the breadth of operations, project, and product management; business strategy; marketing; design; technology; revenue optimization; talent acquisition; growth; and sales, across all industries through customized products, services, courses, workshops, solutions, and mentorship.</Text>
-                    <Text size={'1.4vw'} mobSize={16} type={'light'}>We partner with innovators through our tailored and integrative expertise, complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven outcomes.</Text>
-                </div>
-            </div>
+            <TitleTwoDescriptions mainTitle={'OUR COMMUNITY'}
+                                  title={'We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.'}
+                                  firstDescription={`Our capabilities span the breadth of operations, project,
+                        and product management; business strategy; marketing; design; technology; revenue optimization; talent 
+                        acquisition; growth; and sales, across all industries through customized products, services, courses, 
+                        workshops, solutions, and mentorship.`}
+                                  secondDescription={`We partner with innovators through our tailored and integrative expertise,
+                        complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven 
+                        outcomes`}
+            />
 
             <Swiper className={'community-swiper-container'}>
                 {
@@ -124,23 +109,39 @@ const Community = () => {
                 }
             </Swiper>
 
-            <Title title={'GET INVOLVED'}/>
 
-            <div className={'community-join-container'}>
-                <Text size={'3.8vw'} mobSize={35} type={'extraLight'} containerStyles={styles.join}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
-                <div className={'community-trusted-partner-container'}>
-                    <CommunityPartner title={'Become a Mentor'}
-                                      subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
-                                      titleStyles={styles.titleStyles}
-                                      containerStyles={styles.containerStyles}
-                    />
-                    <CommunityPartner title={'Become a FutureFounder'}
-                                      subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
-                                      titleStyles={styles.titleStyles}
-                                      containerStyles={styles.containerStyles}
-                    />
-                </div>
-            </div>
+            <ColorBlock title={'Looking for the next big thing?'}
+                        subtitle={'DOWNLOAD THE COMMUNITY GUIDE'}
+                        type={'thin'}
+                        size={40}
+                        mobSize={32}
+                        className={'community-color-block'}
+                        backgroundColor={'black'}
+
+            />
+
+
+            <TitleSubDescription title={'ACCESS NETWORK'}
+                                 subtitle={'We are driven by the passion for working with determined innovators who live to make a change in the world.'}
+                                 description={`We understand that together we should see 
+                        results, not just reports with the work we do. We've developed tailor-made strategies that assist in beating out 
+                        the competition by tearing up the rule book. Through our agile approach, entrepreneurs, founders, and
+                        startups overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation. `}
+                                 AdditionalComponent={() => {
+                                     return (
+                                         <div className={'network-container'}>
+                                             <SubmitYourResume title={'Join the Network'} color={'black'}/>
+                                             <img src={ArrowTopRight} />
+                                         </div>
+                                     )
+                                 }}
+
+            />
+
+            <ProgramCommunityListPartner title={'GET INVOLVED'}
+                                         subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
+                                         options={options.founders}
+            />
 
             <EmailForm  withForm />
 

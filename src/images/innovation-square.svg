@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="663" height="663" viewBox="0 0 663 663">
+    <defs>
+        <path id="adgzbwnpha" d="M0 0H220.8V220.8H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g fill-rule="nonzero" transform="translate(-855 -219) translate(855 218) matrix(0 1 1 0 220.8 221.8)">
+                    <path fill="#FFF" d="M0 0H220.8V220.8H0z"/>
+                    <path fill="#1A01BA" d="M220.574 25.392v134.462c0 33.535-27.185 60.72-60.72 60.72H25.392c0-107.796 87.386-195.182 195.182-195.182z"/>
+                    <circle cx="183.288" cy="186.857" r="17.383" fill="#F34EBF"/>
+                </g>
+                <g fill-rule="nonzero" transform="translate(-855 -219) translate(855 218) matrix(0 1 1 0 0 442.6)">
+                    <path fill="#A5DDDA" d="M0 0H220.8V220.8H0z"/>
+                    <circle cx="110.705" cy="109.485" r="63.739" fill="#FFF"/>
+                    <path fill="#1A01BA" d="M111.886 109.054L128.088 109.054 128.088 110.821 111.886 110.821 111.886 126.869 109.842 126.869 109.842 110.821 93.931 110.821 93.931 109.054 109.842 109.054 109.842 92.712 111.886 92.712z"/>
+                </g>
+                <g fill-rule="nonzero">
+                    <path fill="#A5DDDA" d="M0 0H220.8V220.8H0z" transform="translate(-855 -219) translate(855 218) matrix(0 1 1 0 220.8 1)"/>
+                    <path fill="#FC665C" d="M220.8 0v110.4c0 60.972-49.428 110.4-110.4 110.4H0C0 98.856 98.856 0 220.8 0z" transform="translate(-855 -219) translate(855 218) matrix(0 1 1 0 220.8 1) matrix(1 0 0 -1 0 220.8)"/>
+                </g>
+                <g fill="#F5E304" fill-rule="nonzero">
+                    <path d="M0 0H220.8V220.8H0z" transform="translate(-855 -219) translate(855 218) matrix(0 1 1 0 220.8 442.6)"/>
+                </g>
+                <g transform="translate(-855 -219) translate(855 218) matrix(0 1 1 0 0 221.8)">
+                    <mask id="hmfuo09jwb" fill="#fff">
+                        <use xlink:href="#adgzbwnpha"/>
+                    </mask>
+                    <use fill="#FC665C" fill-rule="nonzero" xlink:href="#adgzbwnpha"/>
+                    <circle cx="220.495" cy="221.105" r="56.42" fill="#1A01BA" fill-rule="nonzero" mask="url(#hmfuo09jwb)"/>
+                    <circle cx="-.305" cy="-.305" r="56.42" fill="#1A01BA" fill-rule="nonzero" mask="url(#hmfuo09jwb)"/>
+                </g>
+                <g fill-rule="nonzero">
+                    <path fill="#FFF" d="M0 0L220.8 0 220.8 220.8 0 220.8z" transform="translate(-855 -219) translate(855 218) matrix(1 0 0 -1 0 221.8) rotate(90 110.4 110.4)"/>
+                    <path fill="#F34EBF" d="M60.72 0H220.8c0 121.944-98.856 220.8-220.8 220.8V60.72C0 27.185 27.185 0 60.72 0z" transform="translate(-855 -219) translate(855 218) matrix(1 0 0 -1 0 221.8) rotate(90 110.4 110.4)"/>
+                </g>
+                <g fill="#F5E304" fill-rule="nonzero">
+                    <path d="M0 0H220.8V220.8H0z" transform="translate(-855 -219) translate(855 218) translate(441.6 221.8)"/>
+                </g>
+                <g fill-rule="nonzero" transform="translate(-855 -219) translate(855 218) matrix(1 0 0 -1 441.6 663.4)">
+                    <path fill="#A5DDDA" d="M0 0H220.8V220.8H0z"/>
+                    <circle cx="110.705" cy="109.485" r="63.739" fill="#FFF"/>
+                    <path fill="#1A01BA" d="M111.886 109.054L128.088 109.054 128.088 110.821 111.886 110.821 111.886 126.869 109.842 126.869 109.842 110.821 93.931 110.821 93.931 109.054 109.842 109.054 109.842 92.712 111.886 92.712z"/>
+                </g>
+                <g fill-rule="nonzero">
+                    <path fill="#FC665C" d="M0 0H220.8V220.8H0z" transform="translate(-855 -219) translate(855 218) matrix(-1 0 0 1 662.4 1)"/>
+                    <path fill="#A5DDDA" d="M220.8 0c0 121.944-98.856 220.8-220.8 220.8C0 98.856 98.856 0 220.8 0z" transform="translate(-855 -219) translate(855 218) matrix(-1 0 0 1 662.4 1) matrix(-1 0 0 1 220.8 0)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

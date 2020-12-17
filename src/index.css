@@ -11,6 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'extraBold';
+  src: url('./fonts/zonapro-extrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'lightItalicDemo';
+  src: url('./fonts/ZonaPro-LightItalicDemo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'extraBoldDemo';
+  src: url('./fonts/ZonaPro-ExtraBoldDemo.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BlackLabel Light';
+  src: url('./fonts/BlackLabel-Light.ttf') format('truetype');
+}
 @font-face {
   font-family: 'Latinka ExtraBold';
   src: url('./fonts/Latinka ExtraBold.otf') format('opentype');

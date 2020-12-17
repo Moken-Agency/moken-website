@@ -26,7 +26,7 @@ const TitleTwoDescriptionWithBtn = ({title = '', firstText = '', secondText = ''
                               mobSize={16}
                               textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                               size={20}>{secondText}</Text>
-                        <Button color={'black'} title={'APPLY TO INCUBATOR'} onClick={onClick}/>
+                        <Button backgroundColor={'black'} textColor={'white'} title={'APPLY TO INCUBATOR'} onClick={onClick}/>
                     </div>
                 </div>
             </section>

@@ -3,15 +3,7 @@
   @media only screen and (max-width: 600px) {
     margin-bottom: 60px;
   }
-    .moken-container {
-    padding: 10vw 0 10vw 25vw;
-    width: 38vw;
-    @media only screen and (max-width: 600px) {
-     padding: 200px 44px 0 44px;
-      width: 75vw;
-      margin-bottom: 425px;
-    }
-  }
+
   .future-container {
     padding: 0 16vw;
     margin-top: 9.5vw;
@@ -36,46 +28,33 @@
     }
   }
 
-  .innovator-container {
-    padding: 0 16vw;
-    margin-top: 10vw;
-    margin-bottom: 9.4vw;
-    @media only screen and (max-width: 600px) {
-      margin-bottom: 768px;
-      padding: 0 44px;
+  .network-container {
+    display: flex;
+    align-items: center;
+    padding-left: 14vw;
+    margin-top: 135px;
+    .text-submit {
+      margin: 0;
     }
-    .driven-container {
-      width: 35vw;
+    @media only screen and (max-width: 600px) {
+      justify-content: space-between;
+      padding: 0 43px;
+      margin-top: 65px;
+    }
+    img {
+      height: 3vw;
+      margin-left: 1vw;
       @media only screen and (max-width: 600px) {
-        width: 70vw;
-      }
-      .network-container {
-        display: flex;
-        align-items: center;
-
-        .text-submit {
-          margin: 0;
-        }
-        @media only screen and (max-width: 600px) {
-         justify-content: space-between;
-        }
-        img {
-          height: 3vw;
-          margin-left: 1vw;
-          @media only screen and (max-width: 600px) {
-            height: 12vw;
-          }
-        }
+        height: 12vw;
       }
     }
   }
 
   .community-color-block {
-    padding: 3vw 16vw;
+    padding: 3vw 14vw;
     @media only screen and (max-width: 600px) {
       padding: 6vw 44px;
     }
-    background-color: #ff2a68;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,16 +107,4 @@
     margin-bottom: 16.3vw;
   }
 
-  .community-join-container {
-    padding: 0 16vw;
-    .community-trusted-partner-container {
-      margin-top: 11.1vw;
-      margin-bottom: 19vw;
-      display: flex;
-      justify-content: space-between;
-      @media only screen and (max-width: 600px) {
-        flex-direction: column;
-      }
-    }
-  }
 }

@@ -1,5 +1,5 @@
 .labs-benefits-container {
-  padding: 0 14vw;
+  padding: 0 12vw;
   display: flex;
   margin-bottom: 200px;
   @media screen and (max-width: 600px) {
@@ -10,14 +10,14 @@
 }
 
 .labs-benefits-title {
-  margin-bottom: 150px;
-  padding-left: 12vw;
+  margin-bottom: 180px;
+  padding-left: 10vw;
   @media screen and (max-width: 600px) {
     margin-bottom: 50px;
   }
 }
 .labs-benefits-container-title {
-  width: 40vw;
+  width: 35vw;
   margin-right: 55px;
   align-items: flex-start;
   @media screen and (max-width: 600px) {
@@ -27,8 +27,8 @@
   }
 }
 .labs-benefits-container-info-block {
-  padding-top: 40px;
-  width: 41vw;
+  padding-top: 55px;
+  width: 49.1vw;
   @media screen and (max-width: 600px) {
     width: auto;
     padding-top: 0;
@@ -41,7 +41,7 @@
       }
       span {
         line-height: 35px;
-        letter-spacing: 0.5px;
+        //letter-spacing: 0.5px;
         @media screen and(max-width: 600px) {
           line-height: 26px;
         }
@@ -63,7 +63,7 @@
     }
     .labs-benefits-container-info-block-work {
       margin-bottom: 118px;
-      width: 15vw;
+      width: 20vw;
       @media screen and (max-width: 600px) {
         margin-bottom: 60px;
         width: auto;

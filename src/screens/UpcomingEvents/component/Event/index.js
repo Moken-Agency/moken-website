@@ -14,12 +14,14 @@ const Event = () => {
                 <Title title={'Event date'.toUpperCase()} containerStyles={{padding: 0, whiteSpace: 'nowrap'}}/>
             </div>
             <div>
-                <div style={{padding: '4.1vw 9.5vw 2vw 9.5vw'}}>
+                <div style={{padding: isMobile ? '' : '4.1vw 9.5vw 7vw 9.5vw', marginBottom: isMobile  ? 90 : 0}}>
                     <Text size={isMobile ? '9vw' : '3.4vw'}
-                          type={'extraLight'} containerStyles={{marginBottom: '2vw'}}>Event title goes here</Text>
-                    <Text  size={isMobile ? '4vw' : '1.6vw'}
+                          mobSize={35}
+                          type={'extraLight'} containerStyles={{marginBottom: isMobile ? 54: '2vw'}}>Event title goes here</Text>
+                    <Text  size={'1.6vw'}
                            type={'light'}
-                           textStyles={{lineHeight: isMobile ? '5vw' : '3vw'}}>
+                           mobSize={16}
+                           textStyles={{lineHeight: isMobile ? '24px' : '3vw'}}>
                         Our role consists of taking the time to understand your business model,
                         and suggesting creative and high-performing digital strategies.
                         Our avant-garde tactics are in line with the current market,
@@ -28,8 +30,8 @@ const Event = () => {
                 </div>
 
                 <div className={'events-button-container'}>
-                    <Button title={'LEARN MORE'}  color={'white'}/>
-                    <Button title={'ATTEND EVENT'} color={'black'}/>
+                    <Button title={'LEARN MORE'}  backgroundColor={'white'} textColor={'black'}/>
+                    <Button title={'ATTEND EVENT'} backgroundColor={'black'} textColor={'white'}/>
                 </div>
             </div>
         </div>

@@ -20,7 +20,8 @@ const ProductTestingTeam = () => {
 
     return (
         <div className={'product-testing-team-container'}>
-            <HeaderTitle title={'PRODUCT TESTING TEAM'} subtitle={'The power to test what is impossible with exclusive user testing.'} marginBottom={0} />
+            <HeaderTitle title={'PRODUCT TESTING TEAM'} subtitle={'The power to test what is impossible with exclusive user testing.'}
+                         marginBottom={isMobile ? 206 : 0} />
             <div className={'product-testing-info-container'}>
                 <div className={'circle-container'}>
                    <img src={ProductTestingTeamCircles} />

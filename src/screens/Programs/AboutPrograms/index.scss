@@ -3,7 +3,7 @@
   .about-programs-partnerships-container {
     display: flex;
     justify-content: space-between;
-    padding: 0 14vw;
+    padding: 0 10vw;
     margin-bottom: 184px;
     @media screen and (max-width: 600px) {
       padding: 43px;
@@ -18,29 +18,29 @@
         margin-bottom: 50px;
       }
     }
-    .about-programs-block {
+
+    .about-program-text {
+      margin-bottom: 100px;
+      width: 52vw;
+      padding: 0 14vw;
+      @media screen and (max-width: 600px) {
+        width: auto;
+        margin-bottom: 90px;
+      }
+    }
+    .about-programs-list {
+      display: flex;
+      flex-wrap: wrap;
       padding: 0 14vw;
       margin-bottom: 184px;
       @media screen and (max-width: 600px) {
         padding: 0 43px;
       }
-      .about-program-text {
-        margin-bottom: 166px;
-        width: 52vw;
-        @media screen and (max-width: 600px) {
-          width: auto;
-          margin-bottom: 90px;
-        }
+      justify-content: space-between;
+      .about-programs-item {
+        margin-bottom:10vw;
       }
-      .about-programs-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .about-programs-item {
-          margin-bottom:10vw;
-        }
 
-      }
     }
   }
 

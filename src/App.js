@@ -360,7 +360,7 @@ const routsWithHeaderFooter = [
     // },
     {
         path: "/",
-        component: Mentorship
+        component: AboutMoken
     },
 
 

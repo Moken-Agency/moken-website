@@ -28,7 +28,7 @@ const OurVision = () => {
                 description={'Built to support founders, Moken is a group of trailblazing companies specialized in all ' +
                 'things startup.'}/>
 
-           <ImageBlock position={'right'} url={''} />
+           <ImageBlock position={'right'} />
 
            <TwoColumnsHugeInfo title={'OUR BELIEFS'}
                                leftTitle={'Empowering one another in creating change around the world.'}

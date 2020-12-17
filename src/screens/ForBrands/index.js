@@ -17,9 +17,7 @@ const ForBrands = () => {
                          description={'Together creating an unmatched global ecosystem.'}
             />
 
-            <ImageBlock position={'right'}
-                        url={''}
-            />
+            <ImageBlock position={'right'}/>
 
             <LeftInfoWithRightImage title={'Enthusiastic individuals working together to create extraordinary'}
                                     mainTitle={'PARTNERSHIPS'}

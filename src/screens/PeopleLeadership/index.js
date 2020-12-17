@@ -8,6 +8,7 @@ import options from "./options";
 import People from "./People";
 import Input from "../../components/Input";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import TitleSubDescription from "../../components/TitleSubDescription";
 
 const PeopleLeadership = () => {
 
@@ -21,35 +22,20 @@ const PeopleLeadership = () => {
                          description={'Looking for an opportunity to take your career forwards, send your portfolio to' +
                          ' careers@mokengroup.com'} />
             <img src={HostImage} className={'people-leadership-image'}/>
-            <Title title={'TEAM MOKEN'} containerStyles={{marginBottom: isMobile ? 50 : 150}}/>
-            <div className={'padding-container'}>
-                <Text size={55}
-                      mobSize={35}
-                      type={'extraLight'}
-                      containerStyles={{marginBottom: 52}}>We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.</Text>
-                <Text size={20}
-                      mobSize={16}
-                      textStyles={{lineHeight: isMobile ? '26px': '35px'}}
-                      type={'light'}
-                      containerStyles={{marginBottom: 110}}>Our role consists of taking the time to understand your business model, and suggesting creative
+
+            <TitleSubDescription title={'TEAM MOKEN'}
+                                 subtitle={`We increase website leads, maximize revenu and produce 
+                a positive ROI — validated with measurable results.`}
+                                 description={`Our role consists of taking the time to understand your business model, and suggesting creative
                     and high-performing digital strategies. Our avant-garde tactics are in line with the current market,
-                    blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.</Text>
-                <Text size={16}
-                      type={'semiBold'}
-                      containerStyles={{marginBottom: 170}}
-                      textStyles={{letterSpacing: 4}}>GET IN TOUCH</Text>
-            </div>
+                    blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
+                                 btnTitle={'GET IN TOUCH'}
+             />
             {
                 options.peopleGroups.map((people, index) => <People {...people} peopleIndex={index}/>)
             }
 
-            <Title title={'OUR EXTENDED TEAM'} containerStyles={{marginBottom: 150}}/>
-
-            <Text size={55}
-                  type={'extraLight'}
-                  mobSize={35}
-                  containerStyles={{paddingLeft: isMobile ? '10vw' : '18vw',
-                      width: isMobile ? 'auto' : '30vw'}}>We increase website leads, maximize revenue and produce.</Text>
+            <TitleSubDescription title={'OUR EXTENDED TEAM'} subtitle={'We increase website leads, maximize revenue and produce.'}/>
 
             <div className={'people-images-container'}>
                 {

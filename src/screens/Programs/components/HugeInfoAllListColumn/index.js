@@ -66,7 +66,10 @@ const HugeInfoAllListColumn = ({leftTitle,
 
                    {secondList.length ? secondList.map(({title, link}) => <SubmitYourResume className={'huge-info-right-second-list-title'} color={'black'} title={title}/>) : null}
 
-                   {withBtn ? <Button color={'black'} onClick={onClick}  title={btnTitle}/> : null}
+                   {withBtn ? <Button backgroundColor={'black'}
+                                      textColor={'white'}
+                                      onClick={onClick}
+                                      title={btnTitle}/> : null}
                </div>
            </section>
        </>

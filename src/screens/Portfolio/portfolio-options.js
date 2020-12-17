@@ -14,7 +14,7 @@ export default {
         },
         {
             title: '1.3M',
-            subTitle: 'IDEATION STAGE FUNDING'
+            subTitle: 'IDEATION FUNDING'
         },
     ],
     companies: [

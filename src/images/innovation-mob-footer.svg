@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="304" height="77" viewBox="0 0 304 77">
+    <defs>
+        <path id="iarsz3g8ma" d="M0 38.022H76.243V76.143H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-71 -804) translate(71 804) rotate(-90 115 -38)">
+                    <path fill="#1A01BA" fill-rule="nonzero" d="M0 0H76.243V76.243H0z"/>
+                    <ellipse cx="38.138" cy="37.366" fill="#F34EBF" fill-rule="nonzero" rx="31.276" ry="30.885"/>
+                    <mask id="jjdxnm55yb" fill="#fff">
+                        <use xlink:href="#iarsz3g8ma"/>
+                    </mask>
+                    <use fill="#F5E304" fill-rule="nonzero" xlink:href="#iarsz3g8ma"/>
+                    <ellipse cx="38.103" cy="37.998" fill="#FFF" fill-rule="nonzero" mask="url(#jjdxnm55yb)" rx="31.241" ry="30.854"/>
+                </g>
+                <g fill-rule="nonzero" transform="translate(-71 -804) translate(71 804) matrix(0 1 1 0 228 0)">
+                    <path fill="#FFF" d="M0 0H76.243V76.243H0z"/>
+                    <path fill="#1A01BA" d="M76.165 8.768v45.397c0 12.15-9.85 22-22 22H8.768c0-37.223 30.174-67.397 67.397-67.397z"/>
+                    <circle cx="63.29" cy="64.522" r="6.003" fill="#F34EBF"/>
+                </g>
+                <g fill-rule="nonzero">
+                    <path fill="#FC665C" d="M0 0H76.243V76.243H0z" transform="translate(-71 -804) translate(71 804) matrix(0 -1 -1 0 77 77)"/>
+                    <path fill="#A5DDDA" d="M76.243 0c0 42.108-34.135 76.243-76.243 76.243C0 34.135 34.135 0 76.243 0z" transform="translate(-71 -804) translate(71 804) matrix(0 -1 -1 0 77 77) matrix(-1 0 0 1 76.243 0)"/>
+                </g>
+                <g fill-rule="nonzero" transform="translate(-71 -804) translate(71 804) rotate(-90 77 0)">
+                    <path fill="#A5DDDA" d="M0 0H76.243V76.243H0z"/>
+                    <circle cx="38.227" cy="37.805" r="22.009" fill="#FFF"/>
+                    <path fill="#1A01BA" d="M38.634 37.657L44.229 37.657 44.229 38.267 38.634 38.267 38.634 43.808 37.929 43.808 37.929 38.267 32.435 38.267 32.435 37.657 37.929 37.657 37.929 32.013 38.634 32.013z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,5 @@
 .connect-with-us-container {
   margin-bottom: 272px;
-  padding-top: 140px;
   header {
     display: flex;
     padding: 0 0 0 202px;
@@ -47,6 +46,7 @@
     .connect-with-me-about-interests {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 110px;
       @media screen and (max-width: 600px) {
         justify-content: space-between;
         margin-bottom: 70px;

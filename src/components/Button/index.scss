@@ -2,10 +2,12 @@
  //padding: 1.4vw 3vw;
   padding: 1vw 1.7vw;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1vw;
   letter-spacing: 4px;
   font-family: "Latinka SemiBold", sans-serif;
-  border: 0;
   cursor: pointer;
   position: relative;
   @media screen and (max-width: 600px) {
@@ -25,44 +27,14 @@
   background-color: white;
   color: black;
 }
-.bordered {
-  border: 1px solid black;
-}
-
-.bordered-white {
-  border: 1px solid white;
-}
-.blue {
-  background-color: #1a01ba;
-  color: white;
-  border: 1px solid #1a01ba
-}
-
-.orange {
-  background-color: #fc665c;
-  color: white;
-  border: 1px solid #fc665c
-}
-
-.orange-bordered {
-  background-color: white;
-  color: #fc665c;
-  border: 1px solid #fc665c
-}
-
-.transparent {
-  background-color: transparent;
-  //color: black;
-}
-
-.bordered-bottom {
-  padding: 0 0 0.5vw 0;
-  color: black;
-  background-color: white;
-  border-bottom: 1px solid black;
-}
 
 .innovation {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.innovation-bordered {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border-top-left-radius: 50px;

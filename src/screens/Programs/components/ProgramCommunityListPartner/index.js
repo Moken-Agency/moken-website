@@ -5,7 +5,7 @@ import React from "react";
 import './index.scss';
 import Title from "../../../../components/Title";
 
-const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], onClick}) => {
+const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], onClick, AdditionalComponent}) => {
    return (
        <>
            <Title title={title} className={'labs-join-title'} />
@@ -26,6 +26,8 @@ const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], 
                {onClick ? <div className={'labs-join-schedule-container'}>
                    <SubmitYourResume title={'See your schedule'} color={'black'} onClick={onClick}/>
                </div> : null}
+
+               {AdditionalComponent ? <AdditionalComponent /> : null}
             </section>
        </>
    )

@@ -22,13 +22,34 @@ const UpcomingEvents = () => {
             {/*    <Text size={isMobile ? '2vw' : '1vw'} className={'join-us'} type={'semiBold'} color={'white'}>JOIN US</Text>*/}
             {/*    <Text size={isMobile ? '10vw' : '4.5vw'} className={'upcoming-events'} type={'thin'} color={'white'}>Upcoming Events</Text>*/}
             {/*</section>*/}
-            <HeaderWithBackground mobBackground={eventMob} webBackground={event} title={'JOIN US'} subtitle={'Upcoming Events'}/>
+           <header>
+               <div className={'events-header-block'}>
+                   <Text type={'semiBold'}
+                         containerStyles={{marginBottom: 20}}
+                         size={16}
+                         mobSize={14}
+                         textStyles={{letterSpacing: 4}}>JOIN US</Text>
+                   <Text type={'thin'}
+                         size={75}
+                         mobSize={45}
+                   >Upcoming</Text>
+                   <Text type={'thin'}
+                         size={75}
+                         mobSize={45}
+                   >Events</Text>
+
+               </div>
+
+               <img src={eventMob} />
+           </header>
             <section className={'events-list-container'}>
                 <div className={'events-list'}>
-                    <Event />
+                    {
+                        [1,2].map(() => <Event />)
+                    }
                 </div>
 
-                <Button type={'bordered-bottom'} title={'View all events'}/>
+                <Button borderType={'borderBottom'} title={'View all events'}/>
             </section>
 
             <ColorBlock title={'Looking to get more out of events?'}

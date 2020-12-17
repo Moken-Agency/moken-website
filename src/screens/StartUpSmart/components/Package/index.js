@@ -54,12 +54,17 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                 </div>
                 <div className={'package-button-container'}>
                   <Button title={'VIEW PACKAGE'}
-                          color={'white'}
+                          backgroundColor={'white'}
+                          textColor={'black'}
                           size={'.9vw'}
+                          // containerStyles={{paddingLeft: 0}}
                           onClick={() => setIsOpen(!isOpen)}
                           additionalComponent={returnAdditionalBtnComponent}
                           a={imgStyles}/>
-                  <Button title={'SELECT THIS PACKAGE'} color={'black'}/>
+                  <Button title={'SELECT THIS PACKAGE'}
+                          backgroundColor={'black'}
+                          textColor={'white'}
+                  />
               </div>
             </div>
 
@@ -166,11 +171,13 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
             </div>
         </div>
 
-            <div style={{display: "flex", justifyContent: 'center'}}>
-                <Button containerStyles={{display: isMobile ? 'block' : 'none'}}
-                        title={'SELECT THIS PACKAGE'}
-                        color={'black'}/>
-            </div>
+            {/*<div style={{display: "flex", justifyContent: 'center'}}>*/}
+            {/*    <Button containerStyles={{display: isMobile ? 'none' : 'block'}}*/}
+            {/*            title={'SELECT THIS PACKAGE'}*/}
+            {/*            backgroundColor={'black'}*/}
+            {/*            textColor={'white'}*/}
+            {/*    />*/}
+            {/*</div>*/}
 
         </div>
     )

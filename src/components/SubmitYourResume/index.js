@@ -3,11 +3,13 @@ import Text from "../Text";
 import './index.scss';
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-const SubmitYourResume = ({onClick = () => {}, className = '', color = 'white', title = 'Submit you resume'}) => {
+const SubmitYourResume = ({onClick = () => {}, className = '', color = 'white', title = 'Submit you resume',
+                              size = '1.5vw' , mobSize = 16}) => {
     const {isMobile} = useWindowDimensions()
 
     return (
-        <Text size={isMobile ? 16 : '1.5vw'}
+        <Text size={size}
+              mobSize={mobSize}
               type={'semiBold'}
               color={color}
               className={`text-submit ${className}`}

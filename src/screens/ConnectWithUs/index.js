@@ -8,6 +8,7 @@ import SubmitYourResume from "../../components/SubmitYourResume";
 import EmailForm from "../../components/EmailForm";
 import Title from "../../components/Title";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import ImageBlock from "../../components/ImageBlock";
 
 const ConnectWithUs = () => {
 
@@ -67,12 +68,12 @@ const ConnectWithUs = () => {
 
                 <form>
                     <div className={'form-container'}>
-                        <Input placeholder={'Your Name'} width={'35vw'}/>
-                        <Input placeholder={'Your Company'} width={'35vw'}/>
+                        <Input placeholder={'Your Name'} width={'30vw'}/>
+                        <Input placeholder={'Your Company'} width={'30vw'}/>
                     </div>
                     <div className={'form-container'}>
-                        <Input placeholder={'Email'} width={'35vw'}/>
-                        <Input placeholder={'Subject'} width={'35vw'}/>
+                        <Input placeholder={'Email'} width={'30vw'}/>
+                        <Input placeholder={'Subject'} width={'30vw'}/>
                     </div>
                     <Input placeholder={'Your Message'} inputType={'textarea'} resize={'vertical'} />
 
@@ -80,7 +81,7 @@ const ConnectWithUs = () => {
                 </form>
             </section>
 
-            <img className={'full-image'} src={''} />
+            <ImageBlock type={'full'}  />
 
             <EmailForm withForm  />
 

@@ -8,15 +8,28 @@
       display: flex;
       padding: 0 14vw;
       margin-bottom: 465px;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 142px;
+        padding-top: 50px;
+      }
       .joins-title {
         align-items: flex-start;
         margin-right: 7vw;
+        @media only screen and (max-width: 600px) {
+          display: none;
+        }
       }
     }
     .circle-container {
       margin: 0 14vw 12vw 0;
       display: flex;
       justify-content: flex-end;
+      img {
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          margin-bottom: 150px;
+        }
+      }
     }
     .product-testing-title {
       margin-bottom: 12vw;

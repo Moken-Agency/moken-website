@@ -18,7 +18,7 @@ const Mentorship = () => {
                          description={'Together creating an unmatched global ecosystem.'}
             />
 
-            <ImageBlock position={'right'} url={''} />
+            <ImageBlock position={'right'} />
 
             <TitleRowSubDes title={'ABOUT MENTORSHIP'}
                             subtitle={'Empowering one another in creating change around the world.'}

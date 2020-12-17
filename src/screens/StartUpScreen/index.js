@@ -7,6 +7,7 @@ import ColorBlock from "../../components/ColorBlock";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
+import ImageBlock from "../../components/ImageBlock";
 
 const StartUpScreen = () => {
     return (
@@ -16,7 +17,8 @@ const StartUpScreen = () => {
                         description={'Together creating an unmatched global ecosystem.'}
            />
 
-           <img src={''} className={'start-up-screen-image'}/>
+
+           <ImageBlock type={'full'} />
 
            <TitleSubDescription title={'OVERVIEW'}
                                 description={`People do not simply buy products or services, they buy brands with a 
