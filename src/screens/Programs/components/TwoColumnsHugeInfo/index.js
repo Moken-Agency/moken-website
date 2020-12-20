@@ -14,9 +14,11 @@ const FirstItem = ({title, subtitle}) => {
         <div className={'labs-benefits-container-info-block-work'}>
             <Text size={22}
                   type={'semiBold'}
+                  animationType={'fade-up'}
                   className={'labs-benefits-list-item-first'}>{title}</Text>
             <Text size={20}
                   mobSize={16}
+                  animationType={'fade-up'}
                   textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                   type={'light'}>{subtitle}</Text>
         </div>
@@ -43,6 +45,7 @@ const TwoColumnsHugeInfo = ({title = '',
                 type={'extraLight'}
                 size={55}
                 mobSize={35}
+                animationType={'fade-up'}
                 className={'labs-benefits-container-title'}>
                 {leftTitle}
                 </Text>
@@ -50,14 +53,17 @@ const TwoColumnsHugeInfo = ({title = '',
                 <Text size={20}
                       mobSize={16}
                       type={'light'}
+                      animationType={'fade-up'}
                       textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                       className={'labs-benefits-container-info-block-first-title'}>{rightTitle}</Text>
 
-                {rightFirstListTitle ? <Text type={'semiBold'}
-                       size={14}
-                       mobSize={10}
-                       className={'labs-benefits-container-info-block-second-title'}
-                       textStyles={{letterSpacing: 4}} containerStyles={{}}>{rightFirstListTitle}</Text> : null}
+                {rightFirstListTitle ?
+                    <Text type={'semiBold'}
+                          size={14}
+                          animationType={'fade-up'}
+                          mobSize={10}
+                          className={'labs-benefits-container-info-block-second-title'}
+                          textStyles={{letterSpacing: 4}} containerStyles={{}}>{rightFirstListTitle}</Text> : null}
 
                 <div className={'labs-benefits-container-info-block-works-container'} >
                     {
@@ -72,6 +78,7 @@ const TwoColumnsHugeInfo = ({title = '',
                 <Text type={'semiBold'}
                       size={14}
                       mobSize={10}
+                      animationType={'fade-up'}
                       className={'two-column-right-second-list-title'}
                       textStyles={{letterSpacing: 4}}>{rightSecondListTitle}</Text>
 

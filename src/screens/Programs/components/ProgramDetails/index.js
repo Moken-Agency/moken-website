@@ -33,9 +33,11 @@ const ProgramDetails = ({options = defaultOptions}) => {
                                     color={'white'}
                                     size={14}
                                     mobSize={10}
+                                    animationType={'fade-in'}
                                     containerStyles={{marginBottom: 11}}>{title.toUpperCase()}</Text>
                                 <Text
                                     type={'light'}
+                                    animationType={'fade-in'}
                                     textStyles={{whiteSpace: 'pre'}}
                                     color={'white'}
                                     size={16}>{subtitle}</Text>

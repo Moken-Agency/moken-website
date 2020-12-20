@@ -15,6 +15,7 @@ const OurPartnersComponent = ({title = defaultTitle, text = defaultText}) => {
             <section className={'labs-increase-container'}>
                 <Text size={55}
                       mobSize={35}
+                      data-aos="fade-in"
                       type={'extraLight'}
                       lassName={'our-partners-text-title'}
                       containerStyles={{marginBottom: 155}}>{defaultText}</Text>

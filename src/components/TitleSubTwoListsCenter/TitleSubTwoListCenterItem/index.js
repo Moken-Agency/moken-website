@@ -9,6 +9,7 @@ const TitleSubTwoListCenterItem = ({title, list}) => {
             <Text className={'title-sub-two-list-center-item-title'}
                   type={'semiBold'}
                   size={14}
+                  animationType={'fade-in'}
                   mobSize={10}
             >{title}</Text>
             <div className={'title-sub-two-list-center-item-main-list'}>

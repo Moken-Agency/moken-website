@@ -12,6 +12,7 @@ const TitleSubTwoListCenter = ({title = '', subtitle = '', lists = [], imageList
             <div className={'title-sub-two-list-content'}>
                 <Text size={55}
                       className={'title-sub-two-list-subtitle'}
+                      animationType={'fade-in'}
                       mobSize={35}
                       type={'extraLight'}>{subtitle}</Text>
                <div className={'title-sub-two-list-main-container'}>

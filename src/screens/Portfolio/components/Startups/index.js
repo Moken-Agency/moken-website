@@ -14,9 +14,11 @@ const Startups = ({title = '', subTitle = ''}) => {
     return (
         <div className={'startups-container'}>
                 <Text size={60}
+                      animationType={'fade-in'}
                       mobSize={40}
                       type={'semiBold'} className={'startups-title-first'}>{title}</Text>
                 <Text mobSize={12}
+                      animationType={'fade-in'}
                       size={14}
                       type={'semiBold'} className={'startups-title-second'}>{subTitle}</Text>
         </div>

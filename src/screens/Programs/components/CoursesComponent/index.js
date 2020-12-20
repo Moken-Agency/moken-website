@@ -11,9 +11,9 @@ const CoursesComponent = () => {
             <Title title={'THE COURSES'} className={'courses-courses-title'} />
 
             <section className={'courses-courses-container'}>
-                <Text size={55} mobSize={35} type={'extraLight'} className={'courses-courses-text'}>Self directed courses….Join our trusted community of partners and market
+                <Text animationType={'fade-up'} size={55} mobSize={35} type={'extraLight'} className={'courses-courses-text'}>Self directed courses….Join our trusted community of partners and market
                     what you do to founders and startups.</Text>
-                <div className={'courses-list-container'}>
+                <div data-aos="fade-up" className={'courses-list-container'}>
                     {
                         options.courses.map((course, index) => <Course {...course} key={'courses' + index} />)
                     }

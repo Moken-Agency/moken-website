@@ -17,8 +17,11 @@ const LeftInfoWithRightImage = ({mainTitle = '',title = '', description = '', bt
                     <div className={'left-info-with-right-image-text-container'}
                          style={{marginRight: !isLeftImage && !isMobile ? 100 : 0 }}
                     >
-                        <Text size={55} mobSize={35} type={'extraLight'} containerStyles={{marginBottom: 63}}>{title}</Text>
-                        <Text size={20}
+                        <Text
+                            animationType={'fade-up'}
+                            size={55} mobSize={35} type={'extraLight'} containerStyles={{marginBottom: 63}}>{title}</Text>
+                        <Text animationType={'fade-up'}
+                              size={20}
                               mobSize={16}
                               type={'light'}
                               textStyles={{lineHeight: isMobile ? '26px': '35px'}}
@@ -26,6 +29,7 @@ const LeftInfoWithRightImage = ({mainTitle = '',title = '', description = '', bt
                         {btnTitle && <Button size={14} title={btnTitle} backgroundColor={'black'} textColor={'white'}/>}
                     </div>
                    <img src={imgUrl}
+                        data-aos="fade-in"
                         className={'left-info-with-right-image-image'}
                         style={{marginRight: isLeftImage && !isMobile ? 100 : 0}}/>
                 </div>

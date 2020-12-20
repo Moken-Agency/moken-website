@@ -8,7 +8,7 @@ const UnderlineTextWithIcon = ({className = '', onClick, title = '', color = 'wh
     return (
         <div className={`underline-text-container ${className}`}>
            <SubmitYourResume size={size} mobSize={mobSize} className={'underline-text'} onClick={onClick} title={title} color={color} />
-            {withIcon ? <img src={ArrowUpRight} className={'underline-text-img'}/> : null}
+            {withIcon ? <img src={ArrowUpRight} data-aos="fade-up" className={'underline-text-img'}/> : null}
         </div>
     )
 }

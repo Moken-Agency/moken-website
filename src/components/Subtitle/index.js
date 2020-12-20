@@ -9,7 +9,11 @@ const Subtitle = ({subtitle = '', className = '', size = 55, mobSize = size, col
             {
                 subtitle ?  <div className={`subtitle-comp-container ${className}`} style={containerStyles}>
                     {
-                        subtitle ? <Text size={size} color={color} mobSize={mobSize} type={type}>{subtitle}</Text> : null
+                        subtitle ? <Text size={size}
+                                         color={color}
+                                         mobSize={mobSize}
+                                         animationType={'fade-in'}
+                                         type={type}>{subtitle}</Text> : null
                     }
                 </div> : null
             }

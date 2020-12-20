@@ -20,10 +20,11 @@ const HeaderTitle = ({title = '', subtitle = '', description = '', marginBottom 
                   mobSize={45}
                   type={'thin'}
                   className={'header-title-subtitle'}>{subtitle}</Text>
-            {description ? <Text size={'1.1vw'}
-                   mobSize={16}
-                   className={'header-title-description'}
-                   type={'light'}>{description}</Text> : null}
+            {description ?
+                <Text size={'1.1vw'}
+                      mobSize={16}
+                    className={'header-title-description'}
+                    type={'light'}>{description}</Text> : null}
         </div>
     )
 }

@@ -27,11 +27,13 @@ const HugeInfoAllListColumn = ({leftTitle,
                <Text
                    type={'extraLight'}
                    size={55}
+                   animationType={'fade-in'}
                    mobSize={35}
                    className={'labs-startups-first-text'}>{leftTitle}</Text>
                <div className={'labs-startups-info-block'}>
                    <Text size={20}
                          mobSize={16}
+                         animationType={'fade-in'}
                          type={'light'}
                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                          className={'labs-startups-info-right-title'}>{rightTitle}</Text>
@@ -39,15 +41,22 @@ const HugeInfoAllListColumn = ({leftTitle,
                    <Text type={'semiBold'}
                          size={14}
                          mobSize={10}
-                         textStyles={{letterSpacing: 4}} className={'labs-startups-info-right-first-title'}>{rightFirstListTitle}</Text>
+                         animationType={'fade-in'}
+                         textStyles={{letterSpacing: 4}}
+                         className={'labs-startups-info-right-first-title'}>{rightFirstListTitle}</Text>
 
                    <div className={'labs-startups-info-block-works-list'}>
                        {
                            firstList.map(({title, subtitle}, index) => {
                                return (
                                    <div key={'labs works' + index} className={'labs-startups-info-block-work'}>
-                                       <Text size={22} mobSize={16} type={'semiBold'} className={'labs-startups-info-block-work-first'}>{title}</Text>
+                                       <Text size={22}
+                                             mobSize={16}
+                                             animationType={'fade-up'}
+                                             type={'semiBold'}
+                                             className={'labs-startups-info-block-work-first'}>{title}</Text>
                                        <Text size={20}
+                                             animationType={'fade-up'}
                                              textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                                              mobSize={16} type={'light'}>{subtitle}</Text>
                                    </div>
@@ -58,13 +67,16 @@ const HugeInfoAllListColumn = ({leftTitle,
 
                    {rightSecondListTitle ? <Text type={'semiBold'}
                                                  size={14}
+                                                 animationType={'fade-up'}
                                                  mobSize={10}
                                                  textStyles={{letterSpacing: 4}}
                                                  className={'right-second-list-title'}
                                                  containerStyles={{}}>{rightSecondListTitle}</Text> : null}
 
 
-                   {secondList.length ? secondList.map(({title, link}) => <SubmitYourResume className={'huge-info-right-second-list-title'} color={'black'} title={title}/>) : null}
+                   {secondList.length ? secondList.map(({title, link}) => <SubmitYourResume className={'huge-info-right-second-list-title'}
+                                                                                            color={'black'}
+                                                                                            title={title}/>) : null}
 
                    {withBtn ? <Button backgroundColor={'black'}
                                       textColor={'white'}

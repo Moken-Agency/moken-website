@@ -12,11 +12,14 @@ const TitleTwoDescriptionWithBtn = ({title = '', firstText = '', secondText = ''
             <Title title={mainTitle} className={'labs-overview-title'}/>
 
             <section className={'labs-overview-container'}>
-                <Text size={55} mobSize={35} type={'extraLight'}>{title}</Text>
+                <Text size={55}
+                      animationType={'fade-in'}
+                      mobSize={35} type={'extraLight'}>{title}</Text>
                 <div className={'labs-overview-info-block'}>
                     <Text type={'light'}
                           className={'labs-overview-info-block-first-text'}
                           size={20}
+                          animationType={'fade-in'}
                           mobSize={16}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                     >{firstText}</Text>
@@ -24,6 +27,7 @@ const TitleTwoDescriptionWithBtn = ({title = '', firstText = '', secondText = ''
                         <Text type={'light'}
                               className={'labs-overview-info-block-second-text'}
                               mobSize={16}
+                              animationType={'fade-in'}
                               textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                               size={20}>{secondText}</Text>
                         <Button backgroundColor={'black'} textColor={'white'} title={'APPLY TO INCUBATOR'} onClick={onClick}/>

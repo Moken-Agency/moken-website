@@ -9,9 +9,18 @@ const Benefit = ({title = '', subtitle = '', description = ''}) => {
                 <Text size={'.8vw'}
                       mobSize={12}
                       type={'semiBold'}
+                      animationType={'fade-in'}
                       className={'benefit-title-first'}>{title}</Text>
-                <Text size={'1.85vw'} mobSize={30} type={'thin'} className={'benefit-title-second'}>{subtitle}</Text>
-                <Text size={'1.2vw'} mobSize={16} type={'light'} className={'benefit-title-third'}>{description}</Text>
+                <Text size={'1.85vw'}
+                      mobSize={30}
+                      animationType={'fade-in'}
+                      type={'thin'}
+                      className={'benefit-title-second'}>{subtitle}</Text>
+                <Text size={'1.2vw'}
+                      mobSize={16}
+                      animationType={'fade-in'}
+                      type={'light'}
+                      className={'benefit-title-third'}>{description}</Text>
         </div>
     )
 }

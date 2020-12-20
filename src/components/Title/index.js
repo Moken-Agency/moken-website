@@ -7,9 +7,14 @@ const Title = ({title, className = '', color = 'black', size = 14, containerStyl
         <>
             {
                 title ?
-                <div className={`title-comp-container ${className}`} style={containerStyles}>
-                    <div className={'title-comp-divider'} style={{backgroundColor: color}}/>
-                    <Text color={color} type={'semiBold'} size={size}>{title}</Text>
+                <div data-aos="fade-up" className={`title-comp-container ${className}`} style={containerStyles}>
+                    <div className={'title-comp-divider'}
+                         data-aos="fade-in"
+                         style={{backgroundColor: color}}/>
+                    <Text color={color}
+                          animationType={'fade-in'}
+                          type={'semiBold'}
+                          size={size}>{title}</Text>
                 </div> : null
             }
         </>

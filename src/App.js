@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -8,7 +7,6 @@ import {
   Link
 } from "react-router-dom";
 import Header from './components/Header'
-import HeaderMobile from './components/Header/components/HeaderMobile'
 import MenuScreen from './screens/MenuScreen'
 import Footer from './components/Footer'
 import useWindowDimensions from "./hooks/useWindowDimensions";
@@ -79,6 +77,8 @@ import Access from "./screens/Access";
 import Faqs from "./screens/Faqs";
 import Mentorship from "./screens/Mentorship";
 import InnovationCommittee from "./screens/InnovationCommittee";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TestHome = () => {
     return (
@@ -382,29 +382,13 @@ function App() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+    useEffect( () => {
+        AOS.init();
+    }, [])
 
   return (
       <Router>
         <div style={{minHeight: '100vh'}}>
-            {/*<MenuScreen isOpen={true} setIsOpen={setIsOpen}/>*/}
-
-
-          {/*<nav>*/}
-          {/*  <ul>*/}
-          {/*    <li>*/}
-          {/*      <Link to="/">Home</Link>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <Link to="/about">AboutMoken</Link>*/}
-          {/*    </li>*/}
-          {/*    <li>*/}
-          {/*      <Link to="/users">Users</Link>*/}
-          {/*    </li>*/}
-          {/*  </ul>*/}
-          {/*</nav>*/}
-
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
               <Switch>
                   {
                       routsWithoutHeaderFooter.map((route, index) => {

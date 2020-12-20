@@ -57,18 +57,24 @@ const Footer = ({isOpen, setIsOpen}) => {
                 </div>
                 <div className={'send-email-updates-container'}>
                     <img src={Logo} className={'logo'}/>
-                    <Text size={'2vw'} type={'thin'} textStyles={joinFirstText}>Join our newsletter</Text>
-                    <Text size={'1.3vw'} type={'light'} textStyles={joinSecondText}
+                    <Text size={'2vw'} type={'thin'}
+                          animationType={'fade-in'}
+                          textStyles={joinFirstText}>Join our newsletter</Text>
+                    <Text size={'1.3vw'} type={'light'}
+                          animationType={'fade-in'}
+                          textStyles={joinSecondText}
                           containerStyles={{marginBottom: 20}}>We will send you updates related to all things Moken.</Text>
                     <Input withGoButton error={errors.email} value={values.email}
                            placeholder={'Email'} onSubmit={handleSubmit}
                            backgroundColor={'#fbfbfb'}
+                           animationType={'fade-in'}
                            onChange={(event) => handleChange({name: 'email', text: event.target.value})}/>
                 </div>
             </div>
             <div className={'bottom-footer-bar'}>
                 <div className={'left-footer-bar'}>
-                    <Text type={'light'} size={'.8vw'} mobSize={10} color={'white'}>Copyright © Moken Startups Inc. 2020</Text>
+                    <Text type={'light'}
+                          size={'.8vw'} mobSize={10} color={'white'}>Copyright © Moken Startups Inc. 2020</Text>
                     <div className={'privacy-container'}>
                         <Text onClick={() => history.push('/privacy')}
                               type={'semiBold'}

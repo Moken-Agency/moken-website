@@ -12,6 +12,7 @@ const ProgramSwiper = ({options = [], title = 'WEEK BY WEEK', subtitle = ''}) =>
             <Title title={title} className={'program-swiper-title'} />
             {subtitle ? <Text size={55}
                               mobSize={35}
+                              animationType={'fade-in'}
                               type={'extraLight'}
                               className={'program-swiper-subtitle'}>{subtitle}</Text> : null}
 

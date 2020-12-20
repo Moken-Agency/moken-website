@@ -32,9 +32,9 @@ const OurPartners = () => {
                         description={'Creating an unmatched global ecosystem, together.'} />
 
            <div className={'our-partners-circles'}>
-                <img src={FirstCircle} />
-                <img src={SecondCircle} />
-                <img src={ThirdCircle} />
+                <img data-aos="fade-in" src={FirstCircle} />
+                <img data-aos="fade-in" src={SecondCircle} />
+                <img data-aos="fade-in" src={ThirdCircle} />
            </div>
 
            <TitleTwoDescriptions mainTitle={'DRIVING THE FUTURE'}
@@ -64,13 +64,15 @@ const OurPartners = () => {
            <Title className={'partners-title'} title={'OUR PARTNERS'} />
 
            <div className={'partners-increase-container'}>
-               <Text type={'extraLight'} size={55} mobSize={35}>We increase website leads, maximize revenu and produce a positive
+               <Text type={'extraLight'}
+                     animationType={'fade-in'}
+                     size={55} mobSize={35}>We increase website leads, maximize revenu and produce a positive
                    ROI — validated with measurable results.</Text>
                <div className={'partners-container'}>
                    {
                        ['','','','','','','','','', '', '', '', '', '', '', '', '', '',].map((_, index) => {
                            return (
-                               <div className={'grey-block'}/>
+                               <div data-aos="fade-in" className={'grey-block'}/>
                            )
                        })
                    }

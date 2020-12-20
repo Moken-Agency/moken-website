@@ -11,7 +11,7 @@ const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], 
            <Title title={title} className={'labs-join-title'} />
 
            <section className={'labs-join-container'}>
-               <Text type={'extraLight'} size={55} mobSize={35} textStyles={{letterSpacing: 0.5}}>{subtitle}</Text>
+               <Text animationType={'fade-in'} type={'extraLight'} size={55} mobSize={35} textStyles={{letterSpacing: 0.5}}>{subtitle}</Text>
 
                <div className={'labs-join-partners-list'}>
                    {

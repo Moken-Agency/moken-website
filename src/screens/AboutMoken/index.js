@@ -37,10 +37,12 @@ const AboutMoken = () => {
                     <div className={'about-moken-second-info-section-secondary-container'}>
                    <Text className={'about-moken-second-info-section-subtitle'}
                          size={55}
+                         animationType={'fade-up'}
                          mobSize={35}
                          type={'extraLight'}>We are driven by the passion for working with determined innovators who live to make a change in the world.</Text>
                    <Text className={'about-moken-second-info-section-text'}
                          size={20}
+                         animationType={'fade-up'}
                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                          mobSize={16}
                          type={'light'}>We understand that together we should see results, not just reports with every bit of work we do.
@@ -54,9 +56,13 @@ const AboutMoken = () => {
                        <div className={'about-moken-second-kendra-info-block'}>
                            <Text className={'about-moken-second-kendra-info-text'}
                                  type={'semiBold'}
+                                 animationType={'fade-up'}
                                  size={24} mobSize={18}>Moken creates diversified opportunities for startups and founders driving economic
                                and social impact, globally. </Text>
-                           <Text size={16} mobSize={12} type={'semiBold'}>— Kendra Garagan | Founder & Partner</Text>
+                           <Text size={16}
+                                 animationType={'fade-up'}
+                                 mobSize={12}
+                                 type={'semiBold'}>— Kendra Garagan | Founder & Partner</Text>
                        </div>
                    </div>
                </div>
@@ -70,9 +76,12 @@ const AboutMoken = () => {
 
                 <div className={'about-moken-video-info-block'}>
                     <Text className={'about-moken-video-info-block-first-title'}
-                          size={16} type={'semiBold'}>THIS IS WHERE THE VIDEO TITLE GOES</Text>
+                          size={16}
+                          animationType={'fade-up'}
+                          type={'semiBold'}>THIS IS WHERE THE VIDEO TITLE GOES</Text>
                     <Text size={20}
                           type={'light'}
+                          animationType={'fade-up'}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           mobSize={16}>This is where the video CTA should go to outline the video content.</Text>
                 </div>

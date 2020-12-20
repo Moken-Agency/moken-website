@@ -117,7 +117,8 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                                 <Text size={14}
                                       mobSize={10}
                                       type={'semiBold'}
-                                        containerStyles={{
+                                      animationType={'fade-in'}
+                                      containerStyles={{
                                             marginBottom: isMobile ? '8vw' : '1vw',
                                         }}
                                         textStyles={{
@@ -133,6 +134,7 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                                                 <Text size={20}
                                                       type={'light'}
                                                       mobSize={16}
+                                                      animationType={'fade-in'}
                                                       textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                                                       containerStyles={{
                                                           marginBottom: isMobile ? '2vw' : '1vw',
@@ -159,9 +161,13 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                                     <Text type={'semiBold'}
                                           size={14}
                                           mobSize={10}
+                                          animationType={'fade-in'}
                                           textStyles={{letterSpacing: 4}}
                                     >{subtitle}</Text> : null}
-                                <Text size={55} mobSize={35} type={'extraLight'}>
+                                <Text size={55}
+                                      animationType={'fade-in'}
+                                      mobSize={35}
+                                      type={'extraLight'}>
                                     {title}
                                 </Text>
                             </div>

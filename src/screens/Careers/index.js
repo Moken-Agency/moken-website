@@ -48,6 +48,7 @@ const Careers = () => {
                         }
                         <Text size={22}
                               type={'semiBold'}
+                              animationType={'fade-in'}
                               className={'text-submit'}
                               onClick={() => history.push('/opportunities')}>View all opportunities</Text>
                     </div>

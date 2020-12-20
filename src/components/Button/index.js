@@ -37,7 +37,7 @@ const Button = ({
     };
 
     return (
-        <button className={`button-container ${type} ${className}`}
+        <button data-aos="fade-in" className={`button-container ${type} ${className}`}
                 onClick={onClick}
                 style={{...bordersStyles[borderType], ...containerStyles, backgroundColor: colors[backgroundColor]}}>
             <Text className={``}

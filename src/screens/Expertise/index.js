@@ -16,8 +16,13 @@ const Expertise = () => {
             {/*    <div className={'expertise-circle-second'}/>*/}
             {/*</div>*/}
             <div className={'expertise-first-wrapper'}>
-                <Text className={'expertise-title'} size={'1vw'} mobSize={14} type={'semiBold'} mobColor={'white'}>EXPERTISE</Text>
-                <Text className={'expertise-subtitle'} type={'thin'} size={'4.45vw'} mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
+                <Text className={'expertise-title'}
+                      animationType={'fade-in'}
+                      size={'1vw'} mobSize={14} type={'semiBold'} mobColor={'white'}>EXPERTISE</Text>
+                <Text className={'expertise-subtitle'}
+                      type={'thin'} size={'4.45vw'}
+                      animationType={'fade-in'}
+                      mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
             </div>
 
             <Title className={'expertise-started-title'} title={'GETTING STARTED'} />
@@ -26,6 +31,7 @@ const Expertise = () => {
                 <Text className={'expertise-started-subtitle'}
                       textStyles={{marginTop: '8vw'}}
                       type={'extraLight'}
+                      animationType={'fade-in'}
                       size={'3vw'}
                       mobSize={35}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
             </div>
@@ -67,16 +73,19 @@ const Expertise = () => {
                             <Title color={'white'} title={'TAKE A CHANCE'} className={'expertise-bottom-first-info-title'} />
                             <Text color={'white'}
                                   type={'extraLight'}
+                                  animationType={'fade-in'}
                                   size={'3vw'}
                                   mobSize={35}
                                   className={'expertise-bottom-first-info-text-first'}>Not exactly what you were looking for?</Text>
                             <Text color={'white'}
                                   type={'light'}
                                   size={'1vw'}
+                                  animationType={'fade-in'}
                                   mobSize={16}
                                   className={'expertise-bottom-first-info-text-second'}>Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert developer, we look for unconventional excellence. Tell us how you think you can contribute.</Text>
                             <Text color={'white'}
                                   type={'light'}
+                                  animationType={'fade-in'}
                                   size={'1vw'}
                                   mobSize={16}
                                   className={'expertise-bottom-first-info-text-third'}>Who knows, maybe you’re exactly what we’ve been looking for all along.</Text>

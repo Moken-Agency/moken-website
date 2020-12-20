@@ -27,10 +27,12 @@ const Portfolio = (props) => {
                       type={'semiBold'}
                       size={16}
                       mobSize={14}
+                      animationType={'fade-in'}
                       textStyles={{letterSpacing: 4}}
                       className={'portfolio-title-first'}>PORTFOLIO</Text>
                 <Text size={'4.5vw'}
                       type={'thin'}
+                      animationType={'fade-in'}
                       mobSize={45}
                       className={'portfolio-title-second'}>
                     Great ideas driven by amazing people scaling for success.</Text>

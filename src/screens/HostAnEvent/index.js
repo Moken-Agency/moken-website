@@ -40,6 +40,7 @@ const HostAnEvent = () => {
             <Text className={'host-an-event-subtitle'}
                   size={55}
                   mobSize={35}
+                  animationType={'fade-in'}
                   type={'extraLight'}>An event designed for any budget, goal, and community.</Text>
 
            <Swiper className={'community-swiper-container'}>
@@ -71,18 +72,22 @@ const HostAnEvent = () => {
                     <Text size={20}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           mobSize={16}
+                          animationType={'fade-in'}
                           type={'light'}>— We will create an Eventbrite page</Text>
                     <Text size={20}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           mobSize={16}
+                          animationType={'fade-in'}
                           type={'light'}>— Verbal & written communications</Text>
                     <Text size={20}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           mobSize={16}
+                          animationType={'fade-in'}
                           type={'light'}>— Venue & logistics management Negotiation & buget management Public Relations</Text>
                     <Text size={20}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           mobSize={16}
+                          animationType={'fade-in'}
                           type={'light'}>— Flexible fee structures</Text>
                 </div>
             </div>
@@ -93,14 +98,17 @@ const HostAnEvent = () => {
                    <Text size={20}
                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                          mobSize={16}
+                         animationType={'fade-in'}
                          type={'light'}>— Provide target market</Text>
                    <Text size={20}
                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                          mobSize={16}
+                         animationType={'fade-in'}
                          type={'light'}>— Provide access to your desired invite list</Text>
                    <Text size={20}
                          textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                          mobSize={16}
+                         animationType={'fade-in'}
                          type={'light'}>— Provide us your desired budget</Text>
                </div>
            </div>

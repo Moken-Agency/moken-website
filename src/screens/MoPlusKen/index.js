@@ -29,12 +29,13 @@ const MoPlusKen = () => {
             <section className={'mo-ken-overview'}>
                 <Title title={'OVERVIEW'} className={'mo-ken-overview-title'}/>
                 <div className={'mo-ken-overview-main'}>
-                    <Text className={'mo-ken-overview-subtitle'} size={55} mobSize={35} type={'extraLight'}>We increase
+                    <Text className={'mo-ken-overview-subtitle'} animationType={'fade-in'} size={55} mobSize={35} type={'extraLight'}>We increase
                         website leads, maximize revenu and produce a positive ROI — validated with measurable results.
                     </Text>
                     <Text className={'mo-ken-overview-description'}
                           textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                           size={20}
+                          animationType={'fade-in'}
                           mobSize={16}
                           type={'light'}>People do not
                         simply buy products or services, they buy brands with a purpose. By providing unique
@@ -43,7 +44,7 @@ const MoPlusKen = () => {
                         founders to create brands that defy the odds, defeat big competition and disrupt their industries.
                     </Text>
                 </div>
-                <img src={''}/>
+                <img src={''} data-aos="fade-in"/>
             </section>
 
             <TwoColumnsHugeInfo title={'HOW WE CAN COLLABORATE'}

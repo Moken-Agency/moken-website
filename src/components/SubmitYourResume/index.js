@@ -12,6 +12,7 @@ const SubmitYourResume = ({onClick = () => {}, className = '', color = 'white', 
               mobSize={mobSize}
               type={'semiBold'}
               color={color}
+              animationType={'fade-up'}
               className={`text-submit ${className}`}
               onClick={onClick}>{title}</Text>
     )

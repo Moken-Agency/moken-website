@@ -40,7 +40,9 @@ const ProductTestingTeam = () => {
                 <Title title={'HOW IT WORKS'} className={'product-testing-title'}/>
 
                 <div className={'joins-container'}>
-                    <Text className={'joins-title'} size={55} type={'extraLight'}>Join Us Today.</Text>
+                    <Text className={'joins-title'}
+                          animationType={'fade-in'}
+                          size={55} type={'extraLight'}>Join Us Today.</Text>
                     <div>
                         {
                             joins.map((join, index) => {

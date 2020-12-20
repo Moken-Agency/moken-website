@@ -13,11 +13,12 @@ const HeaderTitleWithImg = ({title = '', subtitle = '', imgURL = '', withHeaderT
                 <div className={'header-title-with-img-title-container'}>
                     <Text type={'semiBold'} mobSize={14}
                           color={color}
+                          animationType={'fade-in'}
                           textStyles={{letterSpacing: 4, marginBottom: isMobile ? 50 : 0}}>{title}</Text>
                     <Subtitle type={'thin'} color={color} subtitle={subtitle}
                               containerStyles={{padding: 0}}/>
                 </div>
-                <div className={'header-title-with-image-container'}>
+                <div className={'header-title-with-image-container'} data-aos="fade-in">
                     <img src={imgURL}/>
                 </div>
             </div> : null}

@@ -40,15 +40,19 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
                 <div style={{display: 'flex', marginBottom: '1.2vw', flexDirection: isMobile ? 'column' : 'row'}}>
                     <Text size={'.95vw'} type={'semiBold'}
                           mobSize={14}
+                          animationType={'fade-in'}
                           color={'#cdcdcdcd'}
                           textStyles={{letterSpacing: 4}}>{titleFirst}<span>&nbsp;</span></Text>
                     <Text size={'.95vw'} type={'semiBold'}
                           mobSize={14}
+                          animationType={'fade-in'}
+
                           textStyles={{letterSpacing: 4, marginBottom:  isMobile ? 70 : 0}}
                     >{`${titleConjunctions} ${titleSecond}`}</Text>
                 </div>
                     <Text size={'4.3vw'}  type={'thin'}
                           mobSize={45}
+                          animationType={'fade-in'}
                           textStyles={{letterSpacing: 4}}
                           containerStyles={{ marginBottom: isMobile ? 150: '10.5vw'}}
                     >{firstSection.subtitle}</Text>
@@ -58,6 +62,7 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
                 <div className={'first-section-info-container'}>
                     <Text size={'3.3vw'}
                           mobSize={35}
+                          animationType={'fade-in'}
                           type={'extraLight'}
                           containerStyles={{marginBottom: isMobile ? 40 : '5vw'}}
                           textStyles={{letterSpacing: 0.5,
@@ -65,6 +70,7 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
                           }}>{infoTitleFirst}</Text>
                     <Text size={'1.2vw'} type={'light'}
                           mobSize={16}
+                          animationType={'fade-in'}
                         // textStyles={{lineHeight: 35}}
                           containerStyles={{marginBottom: '4.5vw'}}
                     >{infoDescriptionFirst}</Text>

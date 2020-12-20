@@ -46,10 +46,14 @@ const Opportunities = () => {
 
             <section className={'opportunities-form-container'}>
                 <div className={'opportunities-form-left-container'}>
-                    <Text size={'3vw'} subtitle={'Not exactly what you were looking for?'} type={'extraLight'} className={'subtitle'}>
+                    <Text size={'3vw'}
+                          animationType={'fade-in'}
+                          subtitle={'Not exactly what you were looking for?'} type={'extraLight'} className={'subtitle'}>
                         Not exactly what you were looking for?
                     </Text>
-                    <Text type={'light'} size={'1.2vw'} className={'left-second-title'}>The Moken team is growing at a rapid pace, to stay in the loop and explore ways to work
+                    <Text type={'light'}
+                          animationType={'fade-in'}
+                          size={'1.2vw'} className={'left-second-title'}>The Moken team is growing at a rapid pace, to stay in the loop and explore ways to work
                         together join our mailing list to never miss a beat.</Text>
                     <div className={'input-container'}>
                         <Input placeholder={'Your name'} width={'12vw'} mobSize={15}/>
@@ -58,11 +62,16 @@ const Opportunities = () => {
                 </div>
 
                 <div className={'opportunities-form-right-container'}>
-                    <Text type={'semiBold'} size={'.8vw'}
+                    <Text type={'semiBold'}
+                          animationType={'fade-in'}
+                          size={'.8vw'}
                           containerStyles={{marginBottom: '1.5vw'}}
                           textStyles={{letterSpacing: 4}}
                     className={'right-first-title'}>TAKE A CHANCE</Text>
-                    <Text type={'light'} size={'1.2vw'} className={'right-second-title'}>Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert software engineer, we look for unconventional excellence. Tell us how you think you can contribute.
+                    <Text type={'light'}
+                          animationType={'fade-in'}
+                          size={'1.2vw'}
+                          className={'right-second-title'}>Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert software engineer, we look for unconventional excellence. Tell us how you think you can contribute.
                         Who knows, maybe you’re exactly what we’ve been looking for all along.</Text>
                     <SubmitYourResume color={'black'} onClick={() => alert('submot resume')} className={'submit'}/>
                 </div>

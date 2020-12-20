@@ -49,7 +49,7 @@ const MokenLabs = () => {
 
             <ProgramSwiper options={options.weeks}/>
 
-            <section className={'labs-image-first-container'} style={{}}>
+            <section className={'labs-image-first-container'} style={{}} data-aos="fade-in">
                 <img src={''} style={{}}/>
             </section>
 
@@ -71,7 +71,7 @@ const MokenLabs = () => {
             />
 
 
-            <section style={{marginBottom: 190}}>
+            <section style={{marginBottom: 190}} data-aos="fade-in">
                 <img src={''} style={{height: 544, width: '80vw'}} />
             </section>
 
@@ -82,6 +82,7 @@ const MokenLabs = () => {
                     type={'extraLight'}
                     size={55}
                     mobSize={35}
+                    animationType={'fade-in'}
                     textStyles={{letterSpace: 0.5}}
                     className={'labs-global-text-title'}
                     containerStyles={{}}>A global startup program that fosters and invests in bright and
@@ -91,7 +92,7 @@ const MokenLabs = () => {
                     {
                         [1,2,3,4,5,6].map(() => {
                             return (
-                                <div className={'labs-global-list-item'} />
+                                <div className={'labs-global-list-item'} data-aos="fade-in" />
                             )
                         })
                     }

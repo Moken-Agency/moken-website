@@ -12,9 +12,10 @@ const FaqComponent = ({title, faqs = [], isLast = false}) => {
             <div className={'faq-component-title-container'}>
                 <Text type={'extraLight'}
                       size={55}
+                      animationType={'fade-in'}
                       mobSize={35}
                     className={'faq-component-title'}>{title}</Text>
-                <button onClick={handleOpenFaq}>
+                <button onClick={handleOpenFaq} data-aos="fade-in">
                     <Text size={100} type={'thin'} mobSize={65}>{isOpen ? '-' : '+'}</Text>
                 </button>
             </div>
@@ -25,6 +26,7 @@ const FaqComponent = ({title, faqs = [], isLast = false}) => {
                             <Text key={'FaqComponentText' + index}
                                   className={'faq-component-list-item'}
                                   type={'light'}
+                                  animationType={'fade-in'}
                                   size={20}
                                   mobSize={16}
                             >{faq}</Text>

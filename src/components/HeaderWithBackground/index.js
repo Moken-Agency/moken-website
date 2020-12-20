@@ -15,10 +15,12 @@ const HeaderWithBackground = ({mobBackground, webBackground, title = '', subtitl
                     <Text size={isMobile ? '2vw' : '1vw'}
                           className={'header-with-background-join-us'}
                           type={'semiBold'}
+                          animationType={'fade-in'}
                           color={'white'}>{title}</Text>
                     <Text size={isMobile ? '10vw' : '4.5vw'}
                           className={'header-with-background-upcoming-events'}
                           type={'thin'}
+                          animationType={'fade-in'}
                           color={'white'}>{subtitle}</Text>
                 </section> : null
             }

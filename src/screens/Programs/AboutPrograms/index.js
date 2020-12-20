@@ -59,7 +59,11 @@ const AboutPrograms = () => {
             <section className={'about-programs'}>
                 <Title title={'THE PROGRAMS'} className={'about-programs-title'} />
                 <div className={'about-programs-block'}>
-                    <Text className={'about-program-text'} size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
+                    <Text className={'about-program-text'}
+                          size={55}
+                          mobSize={35}
+                          animationType={'fade-in'}
+                          type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
                     <div className={'about-programs-list'}>
                         {
                             options.programs.map((program, index) => {
@@ -89,7 +93,9 @@ const AboutPrograms = () => {
 
             <section className={'about-programs'}>
                 <Title title={'THE PROGRAMS'} className={'about-programs-title'} />
-                    <Text className={'about-program-text'} size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
+                    <Text className={'about-program-text'}
+                          animationType={'fade-in'}
+                          size={55} mobSize={35} type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
                 <div className={'about-programs-list'}>
                     {
                         options.programsSecond.map((program, index) => {
@@ -116,6 +122,7 @@ const AboutPrograms = () => {
                     <Text type={'extraLight'}
                           containerStyles={{marginRight: isMobile ? 0 : 130, alignItems: 'flex-start', marginBottom: isMobile ? 88 : 0 }}
                           size={55}
+                          animationType={'fade-in'}
                           mobSize={35}>We’re hiring. If something piques your interest,
                         let us know.</Text>
                     <div  className={'about-program-item-container'}>

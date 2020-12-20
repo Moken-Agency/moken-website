@@ -6,10 +6,16 @@ import './index.scss';
 const Course = ({url, title = '', description = '', btnTitle = ''}) => {
     return (
         <div className={'course-container'}>
-            <img src={url} />
+            <img src={url} data-aos="fade-in"/>
             <section className={'course-component-info-block'}>
-                <Text size={35} className={'course-component-first'} mobSize={20} type={'thin'}>{title}</Text>
-                <Text size={18} mobSize={14} className={'course-component-second'} type={'light'}>{description}</Text>
+                <Text
+                    animationType={'fade-in'}
+                    size={35} className={'course-component-first'} mobSize={20} type={'thin'}>{title}</Text>
+                <Text animationType={'fade-in'}
+                      size={18}
+                      mobSize={14}
+                      className={'course-component-second'}
+                      type={'light'}>{description}</Text>
                 <Button title={btnTitle}
                         backgroundColor={'black'}
                         textColor={'white'}

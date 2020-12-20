@@ -17,8 +17,10 @@ const Event = () => {
                 <div style={{padding: isMobile ? '' : '4.1vw 9.5vw 7vw 9.5vw', marginBottom: isMobile  ? 90 : 0}}>
                     <Text size={isMobile ? '9vw' : '3.4vw'}
                           mobSize={35}
+                          animationType={'fade-in'}
                           type={'extraLight'} containerStyles={{marginBottom: isMobile ? 54: '2vw'}}>Event title goes here</Text>
                     <Text  size={'1.6vw'}
+                           animationType={'fade-in'}
                            type={'light'}
                            mobSize={16}
                            textStyles={{lineHeight: isMobile ? '24px' : '3vw'}}>

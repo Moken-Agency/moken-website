@@ -5,7 +5,8 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 
 const Text = ({children = '', textStyles = {},containerStyles = {}, onMouseEnter = () => {}, onMouseLeave = () => {},
-                  onClick = () => {}, type = 'medium', size = 12, mobSize = size, className = '', color = 'black', mobColor = color}) => {
+                  onClick = () => {}, type = 'medium', size = 12, mobSize = size, className = '', color = 'black',
+                  mobColor = color, animationType = ''}) => {
 
     const handleOnMouseEnter = () => {
         onMouseEnter()
@@ -20,7 +21,7 @@ const Text = ({children = '', textStyles = {},containerStyles = {}, onMouseEnter
     return (
         <div className={`text-container ${className}`} style={containerStyles} onMouseLeave={handleOnMouseLeave}
              onMouseEnter={handleOnMouseEnter} onClick={onClick}>
-            <span style={{fontFamily: textTypes[type],
+            <span data-aos={animationType} style={{fontFamily: textTypes[type],
                 fontSize: isMobile ? mobSize : size,
                 color: isMobile ? mobColor: color,
                 ...textStyles}} className={'text'}>{children}</span>

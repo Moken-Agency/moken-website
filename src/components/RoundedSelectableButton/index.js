@@ -9,6 +9,7 @@ const RoundedSelectableButton = ({title = '', onClick = () => {}, isSelected = f
         <div onClick={onClick} className={`rounded-selectable-button ${isSelected ? 'rounded-selectable-button-selected' : ''}`}>
             <Text size={20}
                   mobSize={16}
+                  animationType={'fade-in'}
                   type={'light'}
                   textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                   color={isSelected ? 'white' : 'black'}>{title}</Text>

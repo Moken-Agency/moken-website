@@ -131,7 +131,7 @@ const Community = () => {
                                      return (
                                          <div className={'network-container'}>
                                              <SubmitYourResume title={'Join the Network'} color={'black'}/>
-                                             <img src={ArrowTopRight} />
+                                             <img data-aos="fade-up" src={ArrowTopRight} />
                                          </div>
                                      )
                                  }}

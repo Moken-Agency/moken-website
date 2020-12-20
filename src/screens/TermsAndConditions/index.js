@@ -8,7 +8,11 @@ const TermsAndConditions = () => {
     return (
         <div className={'terms-container'}>
             <div className={'terms-header-container'}>
-                <Text size={100} mobSize={65} color={'white'} type={'thin'}>Terms & Conditions</Text>
+                <Text size={100}
+                      mobSize={65}
+                      animationType={'fade-in'}
+                      color={'white'}
+                      type={'thin'}>Terms & Conditions</Text>
             </div>
             <PageGenerator data={otherOptions}/>
         </div>

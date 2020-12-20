@@ -7,9 +7,14 @@ const AboutProgram = ({containerStyles = {}, title = '', text= ''}) => {
     const {isMobile} = useWindowDimensions();
     return (
         <div className={'about-program-container'} style={containerStyles}>
-            <Text className={'about-program-title'} size={75} mobSize={40} type={'semiBold'}>{title}</Text>
+            <Text className={'about-program-title'}
+                  size={75}
+                  animationType={'fade-in'}
+                  mobSize={40}
+                  type={'semiBold'}>{title}</Text>
             <div className={'about-program-divider'} />
             <Text type={'light'}
+                  animationType={'fade-in'}
                   size={20}
                   textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                   className={'about-program-text'}

@@ -6,8 +6,12 @@ import './index.scss';
 const TitleText = ({title = '', subtitle = '', className = ''}) => {
     return (
         <div className={`title-text-container ${className}`}>
-            <Title title={title} className={'title-text'}/>
-            <Text size={55} className={'title-text-subtitle'}  mobSize={35} type={'extraLight'}>{subtitle}</Text>
+            <Title title={title}
+                   animationType={'fade-in'}
+                   className={'title-text'}/>
+            <Text size={55}
+                  animationType={'fade-in'}
+                  className={'title-text-subtitle'}  mobSize={35} type={'extraLight'}>{subtitle}</Text>
         </div>
     )
 }

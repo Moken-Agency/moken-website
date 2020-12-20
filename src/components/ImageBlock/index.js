@@ -13,7 +13,7 @@ const positions = {
 
 const ImageBlock = ({url = SecondImage, position = 'left', className = '', type = 'side'}) => {
     return (
-        <div className={`image-block-container ${className}`} style={{justifyContent: positions[position] }}>
+        <div data-aos="fade-up" className={`image-block-container ${className}`} style={{justifyContent: positions[position] }}>
             <img src={url} className={`${type}`} />
         </div>
     )

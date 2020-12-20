@@ -9,12 +9,14 @@ const CommunityPartner = ({title, subtitle, btnTitle = 'GET INVOLVED', titleStyl
             <div className={'community-partner-info-container'}>
                 <Text size={'2vw'}
                       type={'thin'}
+                      animationType={'fade-in'}
                       mobSize={25}
                       containerStyles={{marginBottom: 74}}
                       textStyles={{whiteSpace: 'break-spaces', ...titleStyles}}
                 >{title}</Text>
                 <Text className={'community-partner-subtitle'}
                       size={18}
+                      animationType={'fade-in'}
                       mobSize={16}
                       textStyles={{lineHeight: '28px'}}
                       type={'light'}>{subtitle}</Text>

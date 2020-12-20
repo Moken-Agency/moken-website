@@ -12,12 +12,14 @@ const TitleRowSubDes = ({title = '', subtitle = '', description = '', onClick}) 
                 <Text className={'title-row-sub-desc-subtitle'}
                       type={'extraLight'}
                       size={55}
+                      animationType={'fade-in'}
                       mobSize={35}
                 >{subtitle}</Text>
                 <div className={'title-row-sub-description-container'}>
                     <Text className={'title-row-sub-desc-description'}
                           size={20}
                           type={'light'}
+                          animationType={'fade-in'}
                           mobSize={16}
                     >{description}</Text>
                     {onClick ? <Button className={'title-row-sub-desc-btn'}

@@ -9,7 +9,12 @@ const Description = ({description = [], color, className = '', size = 12, mobSiz
                 {
                     description.map(({title}, index) => {
                         return (
-                            <Text size={size} mobSize={mobSize} key={title + index} type={type} color={color}>{title}</Text>
+                            <Text animationType={'fade-in'}
+                                  size={size}
+                                  mobSize={mobSize}
+                                  key={title + index}
+                                  type={type}
+                                  color={color}>{title}</Text>
                         )
                     })
                 }
