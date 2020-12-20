@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.fd1daf6d.chunk.css",
-    "main.js": "/moken-website/static/js/main.169aa36e.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.169aa36e.chunk.js.map",
+    "main.css": "/moken-website/static/css/main.9949ccd5.chunk.css",
+    "main.js": "/moken-website/static/js/main.f8776697.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.f8776697.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
-    "static/css/2.f1b50ea8.chunk.css": "/moken-website/static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.8df59c40.chunk.js": "/moken-website/static/js/2.8df59c40.chunk.js",
-    "static/js/2.8df59c40.chunk.js.map": "/moken-website/static/js/2.8df59c40.chunk.js.map",
+    "static/css/2.d2b3272e.chunk.css": "/moken-website/static/css/2.d2b3272e.chunk.css",
+    "static/js/2.35a39c45.chunk.js": "/moken-website/static/js/2.35a39c45.chunk.js",
+    "static/js/2.35a39c45.chunk.js.map": "/moken-website/static/js/2.35a39c45.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.6f2d5b5d24ef5122724e512c8f3bd5e1.js": "/moken-website/precache-manifest.6f2d5b5d24ef5122724e512c8f3bd5e1.js",
+    "precache-manifest.a6f24b1d4b993b55a5aeb3f59fa156f1.js": "/moken-website/precache-manifest.a6f24b1d4b993b55a5aeb3f59fa156f1.js",
     "service-worker.js": "/moken-website/service-worker.js",
-    "static/css/2.f1b50ea8.chunk.css.map": "/moken-website/static/css/2.f1b50ea8.chunk.css.map",
-    "static/css/main.fd1daf6d.chunk.css.map": "/moken-website/static/css/main.fd1daf6d.chunk.css.map",
-    "static/js/2.8df59c40.chunk.js.LICENSE.txt": "/moken-website/static/js/2.8df59c40.chunk.js.LICENSE.txt",
+    "static/css/2.d2b3272e.chunk.css.map": "/moken-website/static/css/2.d2b3272e.chunk.css.map",
+    "static/css/main.9949ccd5.chunk.css.map": "/moken-website/static/css/main.9949ccd5.chunk.css.map",
+    "static/js/2.35a39c45.chunk.js.LICENSE.txt": "/moken-website/static/js/2.35a39c45.chunk.js.LICENSE.txt",
     "static/media/index.css": "/moken-website/static/media/zonapro-extrabold.ddf0c4b4.otf",
     "static/media/careers-circles.svg": "/moken-website/static/media/careers-circles.aa4b6ec1.svg",
     "static/media/careers-header.jpg": "/moken-website/static/media/careers-header.3c85c5da.jpg",
@@ -32,7 +32,7 @@
     "static/media/innovation-week.svg": "/moken-website/static/media/innovation-week.3c7dc3c7.svg",
     "static/media/jobOffer1.svg": "/moken-website/static/media/jobOffer1.6abb3601.svg",
     "static/media/jobOfferTitle1.svg": "/moken-website/static/media/jobOfferTitle1.cd3af8fb.svg",
-    "static/media/logo.svg": "/moken-website/static/media/logo.5d5d9eef.svg",
+    "static/media/logo.svg": "/moken-website/static/media/logo.3ed45cf8.svg",
     "static/media/opportunities.jpg": "/moken-website/static/media/opportunities.8a4c2a08.jpg",
     "static/media/our-partner-first.svg": "/moken-website/static/media/our-partner-first.28040af1.svg",
     "static/media/our-partner-second.svg": "/moken-website/static/media/our-partner-second.55ffb417.svg",
@@ -49,9 +49,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.be4c88a6.js",
-    "static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.8df59c40.chunk.js",
-    "static/css/main.fd1daf6d.chunk.css",
-    "static/js/main.169aa36e.chunk.js"
+    "static/css/2.d2b3272e.chunk.css",
+    "static/js/2.35a39c45.chunk.js",
+    "static/css/main.9949ccd5.chunk.css",
+    "static/js/main.f8776697.chunk.js"
   ]
 }
