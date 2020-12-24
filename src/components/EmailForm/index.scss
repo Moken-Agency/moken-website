@@ -12,8 +12,9 @@
     }
   .email-form-form {
     display: flex;
-    width: 30vw;
+    //width: 30vw;
     justify-content: center;
+    align-items: flex-end;
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       width: auto;

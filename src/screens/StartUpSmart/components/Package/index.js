@@ -14,7 +14,7 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
         transform: `rotate(${isOpen ? '-' : ''}90deg)`,
         position: 'relative',
         transition: '.5s',
-        top: '.3vw',
+        // top: '.3vw',
         left: '.5vw'
     };
 
@@ -64,6 +64,7 @@ const Package = ({title, subtitle, firstColumn, secondColumn, thirdColumn}) => {
                   <Button title={'SELECT THIS PACKAGE'}
                           backgroundColor={'black'}
                           textColor={'white'}
+                          containerStyles={{ padding: isMobile ? '' : '31px 35px'}}
                   />
               </div>
             </div>

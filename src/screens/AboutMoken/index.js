@@ -17,7 +17,6 @@ const AboutMoken = () => {
     return (
         <div className={'about-moken-container'}>
             <HeaderTitle
-                 marginBottom={142}
                  title={'ABOUT MOKEN'}
                  subtitle={'Backing ideas that create change.'}
                  description={'Built to support founders, Moken is a group of trailblazing companies specialized in all things startup.'} />
@@ -62,6 +61,7 @@ const AboutMoken = () => {
                            <Text size={16}
                                  animationType={'fade-up'}
                                  mobSize={12}
+                                 textStyles={{letterSpacing: 4}}
                                  type={'semiBold'}>— Kendra Garagan | Founder & Partner</Text>
                        </div>
                    </div>
@@ -70,10 +70,6 @@ const AboutMoken = () => {
             </section>
 
             <section className={'about-moken-video-section'}>
-
-
-
-
                 <div className={'about-moken-video-info-block'}>
                     <Text className={'about-moken-video-info-block-first-title'}
                           size={16}
@@ -86,6 +82,7 @@ const AboutMoken = () => {
                           mobSize={16}>This is where the video CTA should go to outline the video content.</Text>
                 </div>
                 <video autoPlay
+                       muted
                        src={'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'}
                 />
             </section>

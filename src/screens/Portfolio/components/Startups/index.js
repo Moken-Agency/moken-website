@@ -20,6 +20,7 @@ const Startups = ({title = '', subTitle = ''}) => {
                 <Text mobSize={12}
                       animationType={'fade-in'}
                       size={14}
+                      textStyles={{letterSpacing: 4}}
                       type={'semiBold'} className={'startups-title-second'}>{subTitle}</Text>
         </div>
 

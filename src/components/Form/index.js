@@ -13,7 +13,13 @@ const Form = ({backgroundColor = '#ff7d3e', formName = 'Test'}) => {
                    nested>
                 {(close) => (
                     <div>
-                        <Button type={'transparent'}  color={'white'} className={'form-close'} title={'CLOSE'} size={16} onClick={close}/>
+                        <Button type={'transparent'}
+                                textColor={'white'}
+                                backgroundColor={'black'}
+                                className={'form-close'}
+                                title={'CLOSE'}
+                                size={16}
+                                onClick={close}/>
                         <div className={'form-header'} style={{backgroundColor}}>
                             <Text className={'form-name-title'}
                                   color={'white'}

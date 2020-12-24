@@ -23,8 +23,7 @@ const CommunityPartner = ({title, subtitle, btnTitle = 'GET INVOLVED', titleStyl
             </div>
 
             <div className={'community-partner-btn-container'}>
-                <Button color={'black'}
-                        title={btnTitle}
+                <Button title={btnTitle}
                         size={'.8vw'}
                         mobSize={10}
                         className={'community-partner-btn'}

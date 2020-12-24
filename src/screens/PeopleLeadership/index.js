@@ -29,7 +29,6 @@ const PeopleLeadership = () => {
                                  description={`Our role consists of taking the time to understand your business model, and suggesting creative
                     and high-performing digital strategies. Our avant-garde tactics are in line with the current market,
                     blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
-                                 btnTitle={'GET IN TOUCH'}
              />
             {
                 options.peopleGroups.map((people, index) => <People {...people} peopleIndex={index}/>)
@@ -49,20 +48,20 @@ const PeopleLeadership = () => {
             <div className={'join-team-container'}>
                 <Text type={'extraLight'}
                       animationType={'fade-in'}
-                      containerStyles={{marginBottom: 50}}
+                      containerStyles={{marginBottom: 50, width:isMobile ? 'auto' : '30vw'}}
                       mobSize={35}
                       size={55}>We have something for everyone.</Text>
                 <Text type={'light'}
                       animationType={'fade-in'}
-                      containerStyles={{marginBottom: 100}}
+                      containerStyles={{marginBottom: 100, width: isMobile ? 'auto' : '35vw'}}
                       size={20}
                       mobSize={16}
                       textStyles={{lineHeight: isMobile ? '26px': '35px'}}
                 >The Moken team is growing at a rapid pace, to stay in the loop on additional ways to connct join our
                     mailing list to never miss a beat.</Text>
                 <div data-aos="fade-in" className={'join-team-btn-container'}>
-                    <Input width={'12vw'} placeholder={'Your name'}/>
-                    <Input width={'12vw'} withGoButton placeholder={'Email'}/>
+                    <Input width={236} placeholder={'Your name'}/>
+                    <Input width={270} withGoButton placeholder={'Email'}/>
                 </div>
             </div>
         </div>

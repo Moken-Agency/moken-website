@@ -1,6 +1,7 @@
 .button-container {
  //padding: 1.4vw 3vw;
-  padding: 1vw 1.7vw;
+  padding: 31px 35px;
+
   outline: none;
   display: flex;
   align-items: center;
@@ -10,6 +11,7 @@
   font-family: "Latinka SemiBold", sans-serif;
   cursor: pointer;
   position: relative;
+  height: 40px;
   @media screen and (max-width: 600px) {
     font-size: .95vw;
     padding: 4vw 6vw;

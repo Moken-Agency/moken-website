@@ -10,6 +10,7 @@ import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HeaderWithBackground from "../../components/HeaderWithBackground";
+import SubmitYourResume from "../../components/SubmitYourResume";
 
 const UpcomingEvents = () => {
     const history = useHistory();
@@ -49,7 +50,7 @@ const UpcomingEvents = () => {
                     }
                 </div>
 
-                <Button borderType={'borderBottom'} title={'View all events'}/>
+                <SubmitYourResume title={'View all events'} color={'black'}/>
             </section>
 
             <ColorBlock title={'Looking to get more out of events?'}

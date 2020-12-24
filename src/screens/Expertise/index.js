@@ -7,9 +7,12 @@ import ExpertiseItem from "./components/ExpertiseItem";
 import Button from "../../components/Button";
 import ExpertiseImage from '../../images/expertise.png'
 import HeaderTitle from "../../components/HeaderTitle";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 const {gettingStarted, marketing, product} = options;
 
 const Expertise = () => {
+    const {isMobile} = useWindowDimensions();
+
     return (
         <div className={'expertise-container'}>
             {/*<div className={'expertise-circle-main'}>*/}
@@ -29,7 +32,8 @@ const Expertise = () => {
 
             <div className={'expertise-second-wrapper'}>
                 <Text className={'expertise-started-subtitle'}
-                      textStyles={{marginTop: '8vw'}}
+                      // textStyles={{marginTop: '8vw'}}
+                    containerStyles={{marginBottom: isMobile ? 100: '8vw'}}
                       type={'extraLight'}
                       animationType={'fade-in'}
                       size={'3vw'}
@@ -93,16 +97,21 @@ const Expertise = () => {
                         <div className={'expertise-bottom-btn-container'}>
                             <Button title={'ROADMAPS & SPRINTS'}
                                     backgroundColor={'black'}
-                                    size={'.85vw'}
+                                    size={14}
+                                    mobSize={10}
                                     textColor={'white'}
                                     borderType={'bordered'}
-                                    containerStyles={{marginRight: '2.8vw'}}
+                                    containerStyles={{marginRight: '2.8vw', padding: isMobile ? '' : '31px 35px' }}
                             />
                             <Button title={'STARTUPSMART'}
                                     backgroundColor={'white'}
                                     textColor={'black'}
-                                    size={'.85vw'}
-                                    type={'bordered-white'}/>
+                                    size={14}
+                                    mobSize={10}
+                                    type={'bordered-white'}
+                                    containerStyles={{ padding: isMobile ? '' : '31px 35px' }}
+
+                            />
                         </div>
                     </div>
                     <img src={ExpertiseImage} />

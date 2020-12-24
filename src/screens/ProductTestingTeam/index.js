@@ -12,6 +12,9 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HeaderTitle from "../../components/HeaderTitle";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
+import HeaderSecondType from "../../components/HeaderSecondType";
+import ImageBlock from "../../components/ImageBlock";
+import SecondImage from '../../images/product-testing-team-second.jpg'
 
 const {benefits, joins} = options;
 
@@ -20,8 +23,9 @@ const ProductTestingTeam = () => {
 
     return (
         <div className={'product-testing-team-container'}>
-            <HeaderTitle title={'PRODUCT TESTING TEAM'} subtitle={'The power to test what is impossible with exclusive user testing.'}
-                         marginBottom={isMobile ? 206 : 0} />
+             <HeaderSecondType title={'PRODUCT TESTING TEAM'}
+                               subtitle={'The power to test what is impossible with exclusive user testing.'}
+             />
             <div className={'product-testing-info-container'}>
                 <div className={'circle-container'}>
                    <img src={ProductTestingTeamCircles} />
@@ -36,6 +40,9 @@ const ProductTestingTeam = () => {
                                     rightFirstListTitle={'THE BENEFITS OF COLLABORATION'}
                                     firstList={benefits}
                                     />
+
+                <ImageBlock position={'right'} url={SecondImage}/>
+
 
                 <Title title={'HOW IT WORKS'} className={'product-testing-title'}/>
 
@@ -58,10 +65,16 @@ const ProductTestingTeam = () => {
                 </div>
             </div>
 
+            <div className={'product-testing-team-circle-container'}>
+                <img src={ProductTestingTeamCircle} />
+
+            </div>
+
             <ProgramCommunityListPartner title={'LET’S BUILD'}
                                          subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
                                          options={options.programs}
             />
+
 
 
 

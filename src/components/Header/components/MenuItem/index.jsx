@@ -7,7 +7,7 @@ import {useHistory} from "react-router-dom";
 
 const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, subRouts = [],
                       dividerColor = 'grey', onClick = () => {}, route = '', size = 11, className = ''}) => {
-    const [hover, setHover] = useState({isHover: false, color: '#000'})
+    const [hover, setHover] = useState({isHover: true, color: '#000'})
     const {isMobile} = useWindowDimensions()
     let history = useHistory();
     const onMouseEnter = () => {
@@ -17,7 +17,7 @@ const MenuItem = ({containerStyles = {}, textStyles = {}, title, withDivider, su
     }
     const onMouseLeave = () => {
         if(!isMobile) {
-            setHover({isHover: false, color: '#000'})
+            setHover({isHover: true, color: '#000'})
         }
     }
 

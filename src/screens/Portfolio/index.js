@@ -60,6 +60,9 @@ const Portfolio = (props) => {
                         subtitle={'CONNECT WITH US'}
                         textWidth={'45vw'}
                         backgroundColor={'#000'}
+                        type={'thin'}
+                        size={75}
+                        mobSize={55}
                         className={'portfolio-color-block'}
             />
             {/*<section className={'block-container'}>*/}

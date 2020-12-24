@@ -11,7 +11,7 @@ const Input = ({value, onChange = () => {}, placeholder, withGoButton, onSubmit 
     const {isMobile} = useWindowDimensions()
     return (
         <div className={`container ${className}`}>
-            <div className={'buttonContainer'} data-aos="fade-up">
+            <div className={'buttonContainer'} data-aos="fade-in">
                 {inputType === 'input' ?
                     <input className={'input'}
                            value={value}
@@ -33,11 +33,11 @@ const Input = ({value, onChange = () => {}, placeholder, withGoButton, onSubmit 
                               onChange={onChange}
                               placeholder={placeholder}/>}
                 {withGoButton && <button className={'goButton'} onClick={onSubmit}>
-                    <Text type={'semiBold'} size={'1vw'}>Go</Text>
+                    <Text type={'semiBold'} size={22}>Go</Text>
                 </button>}
             </div>
 
-            <div className={'divider'} data-aos="fade-up" style={{backgroundColor: error ? 'red' : 'black'}}/>
+            <div className={'divider'} data-aos="fade-in" style={{backgroundColor: error ? 'red' : 'black'}}/>
         </div>
     )
 }

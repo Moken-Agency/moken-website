@@ -15,15 +15,15 @@ const Event = () => {
             </div>
             <div>
                 <div style={{padding: isMobile ? '' : '4.1vw 9.5vw 7vw 9.5vw', marginBottom: isMobile  ? 90 : 0}}>
-                    <Text size={isMobile ? '9vw' : '3.4vw'}
+                    <Text size={55}
                           mobSize={35}
                           animationType={'fade-in'}
-                          type={'extraLight'} containerStyles={{marginBottom: isMobile ? 54: '2vw'}}>Event title goes here</Text>
-                    <Text  size={'1.6vw'}
+                          type={'extraLight'} containerStyles={{marginBottom: isMobile ? 44: '2vw'}}>Event title goes here</Text>
+                    <Text  size={20}
                            animationType={'fade-in'}
                            type={'light'}
                            mobSize={16}
-                           textStyles={{lineHeight: isMobile ? '24px' : '3vw'}}>
+                           textStyles={{lineHeight: isMobile ? '24px' : '35px'}}>
                         Our role consists of taking the time to understand your business model,
                         and suggesting creative and high-performing digital strategies.
                         Our avant-garde tactics are in line with the current market,
@@ -33,7 +33,7 @@ const Event = () => {
 
                 <div className={'events-button-container'}>
                     <Button title={'LEARN MORE'}  backgroundColor={'white'} textColor={'black'}/>
-                    <Button title={'ATTEND EVENT'} backgroundColor={'black'} textColor={'white'}/>
+                    <Button title={'ATTEND EVENT'} containerStyles={{padding: '31px 35px'}} backgroundColor={'black'} textColor={'white'}/>
                 </div>
             </div>
         </div>

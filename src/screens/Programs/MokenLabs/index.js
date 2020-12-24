@@ -21,6 +21,7 @@ import ProgramSwiper from "../components/ProgramSwiper";
 import ProgramCommunityListPartner from "../components/ProgramCommunityListPartner";
 import HeaderTitle from "../../../components/HeaderTitle";
 import HeaderWithBlackInfoBlock from "../../../components/HeaderWithBlackInfoBlock";
+import ImageBlock from "../../../components/ImageBlock";
 
 const MokenLabs = () => {
     return (
@@ -53,6 +54,8 @@ const MokenLabs = () => {
                 <img src={''} style={{}}/>
             </section>
 
+            <ImageBlock position={'right'} />
+
 
 
 
@@ -69,11 +72,6 @@ const MokenLabs = () => {
                 secondList={options.purposes}
 
             />
-
-
-            <section style={{marginBottom: 190}} data-aos="fade-in">
-                <img src={''} style={{height: 544, width: '80vw'}} />
-            </section>
 
             <Title title={'YOUR MENTORS'} className={'labs-global-title'} />
 

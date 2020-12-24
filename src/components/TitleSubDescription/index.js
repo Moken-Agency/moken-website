@@ -20,9 +20,9 @@ const TitleSubDescription = ({title = '', subtitle = '', description = '', btnTi
                     <div className={'title-sub-description-btn-container'}>
                         <Button className={'title-sub-description-btn'}
                                 title={btnTitle}
+                                textColor={'black'}
                                 backgroundColor={'transparent'}
-                                containerStyles={{padding: 0}}
-                                textColor={'black'}/>
+                                containerStyles={{padding: 0}}/>
                     </div>
                     : null
             }

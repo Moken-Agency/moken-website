@@ -28,6 +28,9 @@
     .expertise-item-img {
       height: 3.5vw;
       margin-left: 2vw;
+      @media only screen and (max-width: 600px) {
+        height: 30px;
+      }
     }
   }
 }

@@ -24,15 +24,32 @@
       margin: 0 14vw 12vw 0;
       display: flex;
       justify-content: flex-end;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 0;
+      }
       img {
         @media only screen and (max-width: 600px) {
           width: 100%;
-          margin-bottom: 150px;
+          margin-bottom: 135px;
         }
       }
     }
     .product-testing-title {
       margin-bottom: 12vw;
+    }
+  }
+
+  .product-testing-team-circle-container {
+    position: relative;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+      img {
+      position: absolute;
+      right: 241px;
+      height: 324px;
+      width: 397px;
+      bottom: 20px
     }
   }
 

@@ -9,7 +9,7 @@ const TitleTwoDescriptions = ({mainTitle = '', title = '', firstDescription = ''
             <Title title={mainTitle} className={'title-two-descriptions-main-title'}/>
 
             <div className={'title-two-descriptions-container'}>
-                <Text animationType={'fade-up'} size={'3.7vw'} mobSize={35} type={'extraLight'}>{title}</Text>
+                <Text animationType={'fade-up'} size={55} mobSize={35} type={'extraLight'}>{title}</Text>
                 <div className={'community-capabilities-container'} data-aos="fade-up">
                     <Text size={'1.4vw'}
                           animationType={'fade-in'}

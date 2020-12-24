@@ -1,6 +1,6 @@
 .portfolio-container {
   .portfolio-section-info {
-    padding: 10vw 12.5vw 7vw 12.5vw;
+    padding: 9vw 12.5vw 0 12.5vw;
     @media screen and (max-width: 600px) {
       padding: 114px 43px 143px 43px;
     }
@@ -12,7 +12,7 @@
     }
     .portfolio-title-second {
       width: 42vw;
-      margin-bottom: 5vw;
+      margin-bottom: 1.8vw;
       @media screen and (max-width: 600px) {
         width: auto;
         margin-bottom: 15vw;
@@ -21,7 +21,7 @@
     }
     .portfolio-startups-container {
       position: relative;
-      left: 6.5vw;
+      left: 5vw;
       display: flex;
       justify-content: flex-end;
       margin-bottom: 7.5vw;

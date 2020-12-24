@@ -11,15 +11,21 @@ const EmailForm = ({title = 'Stay in the loop & never miss a thing.', width = '2
     return (
           <>
               { withForm ? <div className={`email-form-container ${className}`}>
-                  <div data-aos="fade-up" className={'email-form-divider'}/>
-                  <Text containerStyles={{margin: isMobile ? '4vw 0' : '80px 0'}}
-                        size={isMobile ? '5vw' : 35}
-                        animationType={'fade-up'}
+                  <div data-aos="fade-in" className={'email-form-divider'}/>
+                  <Text
+                      containerStyles={{margin: isMobile ? '4vw 0' : '80px 0'}}
+                        size={isMobile ? '5vw' : 30}
+                        animationType={'fade-in'}
                         type={'thin'}
                         textStyles={{letterSpacing: 0.3}}>{title}</Text>
                   <div className={'email-form-form'}>
                       <Input value={value} placeholder={'Your Email Address'} size={20} mobSize={16} width={width}/>
-                      <Button title={'SUBSCRIBE'} color={'white'} type={'bordered'}/>
+                      <Button size={14} mobSize={12} title={'SUBSCRIBE'}
+                              textColor={'black'}
+                              borderType={'bordered'}
+                              backgroundColor={'white'}
+                              containerStyles={{padding: '0 25px'}}
+                      />
                   </div>
               </div> : null }
           </>

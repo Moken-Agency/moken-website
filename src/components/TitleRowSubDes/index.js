@@ -26,8 +26,7 @@ const TitleRowSubDes = ({title = '', subtitle = '', description = '', onClick}) 
                                        title={'APPLY TO INCUBATOR'}
                                        onClick={onClick}
                                        size={14}
-                                       type={'bordered'}
-                                       color={'black'}/> : null}
+                                       borderType={'bordered'}/> : null}
                 </div>
 
             </div>

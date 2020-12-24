@@ -19,6 +19,12 @@
       flex-direction: column;
     }
   }
+  .program-community-list-partner-subtitle {
+    width: 929px;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+  }
   .labs-join-schedule-container {
     display: flex;
     justify-content: flex-end;

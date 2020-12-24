@@ -29,14 +29,18 @@
       }
     }
     .about-programs-list {
-      display: flex;
+      //display: flex;
       flex-wrap: wrap;
       padding: 0 14vw;
       margin-bottom: 184px;
+      display: grid;
+      //grid-template-columns: 178px 178px 178px;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
       @media screen and (max-width: 600px) {
         padding: 0 43px;
+        grid-template-columns: 1fr;
       }
-      justify-content: space-between;
       .about-programs-item {
         margin-bottom:10vw;
       }

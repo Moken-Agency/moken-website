@@ -56,11 +56,12 @@
 @media only screen and (max-width: 600px) {
   .footer-container {
     .top-footer-bar {
-      padding: 45px 45px 0 45px;
+      padding: 45px 43px 0 43px;
       position: relative;
       .menu-columns {
         flex-direction: column;
         width: 100%;
+        padding: 0;
       }
       .send-email-updates-container {
         display: none;

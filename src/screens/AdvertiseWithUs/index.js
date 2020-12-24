@@ -8,17 +8,16 @@ import ProgramSwiper from "../Programs/components/ProgramSwiper";
 import options from './options';
 import EmailForm from "../../components/EmailForm";
 import './index.scss';
+import HeaderSecondType from "../../components/HeaderSecondType";
 
 const AdvertiseWithUs = () => {
     return (
         <div className={'advertise-with-us-container'}>
-            <HeaderTitle title={'ADVERTISE WITH US'}
-                         subtitle={'Building unforgettable brands for start-ups with ambition.'}
-            />
 
-            <ImageBlock position={'right'}
-                        url={''}
-            />
+            <HeaderSecondType title={'ADVERTISE WITH US'}
+                              subtitle={'Building unforgettable brands for start-ups with ambition.'}/>
+
+            <ImageBlock position={'right'}/>
 
             <TitleTwoDescriptions mainTitle={`OVERVIEW`}
                                   title={`A global startup program that fosters and invests in bright and passionate

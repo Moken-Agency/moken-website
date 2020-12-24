@@ -1,5 +1,6 @@
 .menu-main-container{
   display: flex;
+  position: relative;
   &:hover .sub-routs {
     display: flex;
   }
@@ -28,7 +29,9 @@
     flex-direction: column;
     box-shadow: 0 0 20px 0 #e0e0e0;
     position: absolute;
-    top: 7vw;
+    top: 4.7vw;
+    min-width: 15vw;
+    left: -6vw;
     padding: 2vw 0;
     background-color: white;
     z-index: 1;

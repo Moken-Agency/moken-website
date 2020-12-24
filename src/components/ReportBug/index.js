@@ -59,7 +59,7 @@ const ReportBug = (props) => {
                            </div>
 
                     <div className={'btn-container'}>
-                        <Button size={'.8vw'} mobSize={12} type={'bordered'} color={'white'} title={'REPORT THE BUG'}/>
+                        <Button size={'.8vw'} mobSize={12} borderType={'bordered'} color={'white'} title={'REPORT THE BUG'}/>
                     </div>
                 </div>
                 <div className={'report-bug-right-container'}>

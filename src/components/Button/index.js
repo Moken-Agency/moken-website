@@ -4,6 +4,8 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Text from "../Text";
 import colors from '../../constans/colors';
 //type = borderd | unbordered | transparent | innovation
+import textTypes from '../../constans/text-types';
+
 
 //color = orange-bordered | coral | blue | black | white
 const Button = ({
@@ -13,10 +15,9 @@ const Button = ({
                     title = '',
                     containerStyles = {},
                     additionalComponent,
-                    imgStyles = {},
                     onClick = () => {},
                     borderType = 'default',
-                    size = 16,
+                    size = 14,
                     mobSize = '3vw',
                     className = '',
                     textType = 'semiBold'}) => {
@@ -42,8 +43,9 @@ const Button = ({
                 style={{...bordersStyles[borderType], ...containerStyles, backgroundColor: colors[backgroundColor]}}>
             <Text className={``}
                   color={colors[textColor]}
-                  size={size} mobSize={mobSize} containerStyles={{justifyContent: 'center'}} textStyles={{whiteSpace: 'nowrap'}} type={textType}>{title}</Text>
-            {/*{title}*/}
+                  size={size} mobSize={mobSize}
+                  containerStyles={{justifyContent: 'center'}}
+                  textStyles={{whiteSpace: 'nowrap'}} type={textType}>{title}</Text>
             {additionalComponent ? additionalComponent() : null}
         </button>
     )

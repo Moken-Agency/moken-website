@@ -66,7 +66,7 @@
     }
   }
   .start-up-smart-fifth {
-    padding: 10vw 35vw 0 35vw;
+    padding: 0 35vw 0 35vw;
     @media only screen and (max-width: 600px) {
       padding: 10vw;
     }
@@ -103,6 +103,25 @@
         letter-spacing: 4px;
 
       }
+    }
+  }
+  .boundaries-container {
+    padding: 0 350px;
+    margin-bottom: 282px;
+    display: grid;
+    grid-template-columns: 178px 178px 178px;
+    //grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 124px;
+    grid-row-gap: 60px;
+    justify-content: center;
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: 1fr
+    }
+      div {
+      width: 178px;
+      height: 178px;
+      background-color: #a7a7a7;
+      //margin: 0 62px 60px 62px;
     }
   }
 }
