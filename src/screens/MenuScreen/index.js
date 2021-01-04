@@ -25,12 +25,12 @@ const MenuScreen = (props) => {
                     <HeaderMobile {...props} />
                     :
                     <div className={'menu-screen-container'}>
-                    <div style={{display: 'flex', justifyContent: 'space-between', paddingRight: '2vw'}}>
+                    <div  data-aos="fade-up" style={{display: 'flex', justifyContent: 'space-between', paddingRight: '2vw', paddingTop: '2vw'}}>
                         <div/>
                         <Burger isOpen type={'white'} setIsOpen={() => {history.push('/')}}/>
                         {/*<Burger setIsOpen={setIsOpen} isOpen={isOpen} type={'white'}/>*/}
                     </div>
-                    <div className={'menu-screen-top-columns-container'}>
+                    <div data-aos="fade-up" className={'menu-screen-top-columns-container'}>
                         {
                             menuScreenTopOptions.columns.map(({title, description, subTitle, image}, index) => {
                                 return (
@@ -44,10 +44,13 @@ const MenuScreen = (props) => {
                             })
                         }
                     </div>
-                    <div className={'menu-screen-top-column-divider'}/>
+                    <div  data-aos="fade-up" className={'menu-screen-top-column-divider'}/>
 
-                    <div className={'menu-screen-bottom-columns-container'}>
-                        <div className={'menu-screen-bottom-container'}>
+                    <div
+                          className={'menu-screen-bottom-columns-container'}>
+                        <div  data-aos="fade-up"
+                              data-aos-delay="200"
+                              className={'menu-screen-bottom-container'}>
                             {
                                 menuScreenBottomOptions.columns.map(({title, routs}, index) => {
                                     return (
@@ -58,7 +61,10 @@ const MenuScreen = (props) => {
                                 })
                             }
                         </div>
-                        <div className={'socials-header-menu-container'}>
+                        <div  data-aos="fade-up"
+                              data-aos-delay="400"
+
+                              className={'socials-header-menu-container'}>
                             {
                                 socialsMedia.map(({image, link}, index) => {
                                     return  <a key={'socials header' + index} href={link}>

@@ -5,12 +5,12 @@ import './index.scss';
 const HeaderTitle = ({title = '', subtitle = '', description = '', marginBottom = 225 }) => {
     return (
         <div className={'header-title-container'} style={{marginBottom}}>
-            <Text size={'.9vw'}
+            <Text size={16}
                   mobSize={14}
                   animationType={'fade-in'}
                   type={'semiBold'}
                   className={'header-title-main-title'}>{title}</Text>
-            <Text size={'4.2vw'}
+            <Text size={75}
                   animationType={'fade-in'}
                   mobSize={45}
                   type={'thin'}

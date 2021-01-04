@@ -19,7 +19,9 @@ const AboutMoken = () => {
             <HeaderTitle
                  title={'ABOUT MOKEN'}
                  subtitle={'Backing ideas that create change.'}
-                 description={'Built to support founders, Moken is a group of trailblazing companies specialized in all things startup.'} />
+                 description={'Built to support founders, Moken is a group of trailblazing companies specialized in all things startup.'}
+                 marginBottom={isMobile ? 160 : 142}
+            />
 
             <ImageBlock position={'right'} />
 

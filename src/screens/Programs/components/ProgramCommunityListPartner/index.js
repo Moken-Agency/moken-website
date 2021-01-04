@@ -22,7 +22,7 @@ const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], 
                    {
                        options.map((option) => {
                            return (
-                               <CommunityPartner {...option} containerStyles={{width:60 / options.length + 'vw'}}/>
+                               <CommunityPartner {...option} containerStyles={{width:70 / options.length + 'vw'}}/>
                            )
                        })
                    }

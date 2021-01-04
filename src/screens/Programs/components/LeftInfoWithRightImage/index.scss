@@ -14,7 +14,10 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 4vw;
+
+    justify-content: space-around;
+
+    //padding-left: 4vw;
     @media screen and (max-width: 600px) {
       flex-direction: column !important;
     }

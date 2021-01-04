@@ -8,17 +8,20 @@ import options from './options';
 import EmailForm from "../../components/EmailForm";
 import './index.scss';
 import TitleCenterImagesList from "../../components/TitleCenterImagesList";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const ForStartups = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'for-startups-container'}>
             <HeaderTitle title={'FOR STARTUPS'}
                          subtitle={'Success fuelled by partnership.'}
                          description={'Together creating an unmatched global ecosystem.'}
+                         marginBottom={isMobile ? 95 : 107}
             />
 
             <ImageBlock position={'right'}
-                        url={''}
             />
 
             <LeftInfoWithRightImage title={'Join our trusted community of partners and market what you do.'}

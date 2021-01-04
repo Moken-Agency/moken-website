@@ -21,7 +21,7 @@ const defaultOptions =    [
 
 const ProgramDetails = ({options = defaultOptions}) => {
     return (
-        <section className={'labs-details-container'}>
+        <section className={'labs-details-container'} data-aos="fade-in">
             <div className={'labs-details-block'}>
                 <Text className={'labs-details-title'} color={'white'} size={31} type={'thin'}>Program Details</Text>
                 <div className={'labs-details-list-block'}>
@@ -33,11 +33,9 @@ const ProgramDetails = ({options = defaultOptions}) => {
                                     color={'white'}
                                     size={14}
                                     mobSize={10}
-                                    animationType={'fade-in'}
                                     containerStyles={{marginBottom: 11}}>{title.toUpperCase()}</Text>
                                 <Text
                                     type={'light'}
-                                    animationType={'fade-in'}
                                     textStyles={{whiteSpace: 'pre'}}
                                     color={'white'}
                                     size={16}>{subtitle}</Text>

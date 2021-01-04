@@ -35,7 +35,9 @@
       margin-bottom: 184px;
       display: grid;
       //grid-template-columns: 178px 178px 178px;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 60px;
+      grid-column-gap: 60px;
       justify-content: center;
       @media screen and (max-width: 600px) {
         padding: 0 43px;
@@ -49,7 +51,7 @@
   }
 
   .about-programs-programs {
-    padding: 0 238px;
+    padding: 0 10vw;
     margin-bottom: 268px;
     @media only screen and (max-width: 600px) {
       padding: 0 43px;

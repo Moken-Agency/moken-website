@@ -19,13 +19,17 @@ const Expertise = () => {
             {/*    <div className={'expertise-circle-second'}/>*/}
             {/*</div>*/}
             <div className={'expertise-first-wrapper'}>
-                <Text className={'expertise-title'}
-                      animationType={'fade-in'}
-                      size={'1vw'} mobSize={14} type={'semiBold'} mobColor={'white'}>EXPERTISE</Text>
-                <Text className={'expertise-subtitle'}
-                      type={'thin'} size={'4.45vw'}
-                      animationType={'fade-in'}
-                      mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
+                <div>
+                    <Text className={'expertise-title'}
+                          animationType={'fade-in'}
+                          size={16} mobSize={14} type={'semiBold'} mobColor={'white'}>EXPERTISE</Text>
+                    <Text className={'expertise-subtitle'}
+                          type={'thin'} size={75}
+                          animationType={'fade-in'}
+                          mobSize={45} mobColor={'white'}>Let’s Build the Future</Text>
+                </div>
+
+                <img src={''} />
             </div>
 
             <Title className={'expertise-started-title'} title={'GETTING STARTED'} />

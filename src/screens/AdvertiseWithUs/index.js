@@ -9,13 +9,19 @@ import options from './options';
 import EmailForm from "../../components/EmailForm";
 import './index.scss';
 import HeaderSecondType from "../../components/HeaderSecondType";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const AdvertiseWithUs = () => {
-    return (
+
+        const {isMobile} = useWindowDimensions()
+
+        return (
         <div className={'advertise-with-us-container'}>
 
             <HeaderSecondType title={'ADVERTISE WITH US'}
-                              subtitle={'Building unforgettable brands for start-ups with ambition.'}/>
+                              subtitle={'Building unforgettable brands for start-ups with ambition.'}
+                              marginBottom={isMobile ? 287 : 184}
+            />
 
             <ImageBlock position={'right'}/>
 

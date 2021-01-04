@@ -8,18 +8,22 @@ import options from './options';
 import EmailForm from "../../components/EmailForm";
 import './index.scss';
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const ForStudents = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'for-students-container'}>
             <HeaderTitle title={'FOR STUDENTS'}
                          subtitle={'Success fuelled by partnership.'}
                          description={'The future generation is the core of our community. ' +
                          'They work with us to create a future that is better than tthe last.'}
+                         marginBottom={isMobile ? 107 : 107}
+
             />
 
             <ImageBlock position={'right'}
-                        url={''}
             />
 
             <LeftInfoWithRightImage title={'We are driven by the passion for working with determined innovators who live to make a change in the world.'}

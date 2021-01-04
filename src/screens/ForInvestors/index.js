@@ -7,17 +7,21 @@ import ProgramCommunityListPartner from "../Programs/components/ProgramCommunity
 import options from './options';
 import EmailForm from "../../components/EmailForm";
 import './index.scss';
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const ForInvestors = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'for-investors-container'}>
             <HeaderTitle title={'FOR INVESTORS'}
                          subtitle={'Success fuelled by partnership.'}
                          description={'Together creating an unmatched global ecosystem.'}
+                         marginBottom={isMobile ? 107 : 107}
             />
 
             <ImageBlock position={'right'}
-                        url={''}
+                        // url={''}
             />
 
             <LeftInfoWithRightImage title={'Join our trusted community of partners and market what you do.'}

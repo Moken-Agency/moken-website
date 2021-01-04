@@ -22,8 +22,15 @@
     }
   }
   .expertise-first-wrapper {
-    padding: 25vw 10vw 10.5vw 10vw;
+    padding: 0 0 0 168px;
     margin-bottom: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      width: 800px;
+      height: 800px;
+    }
     @media only screen and (max-width: 600px) {
       background-image: url(../../images/expertiseMobHeader.png);
       background-repeat: no-repeat;
@@ -33,6 +40,7 @@
     }
       .expertise-title {
         margin-bottom: .5vw;
+        padding-top: 420px;
       span {
         letter-spacing: .2vw;
         margin-bottom: 1vw;

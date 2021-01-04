@@ -120,9 +120,6 @@ const MokenLabs = () => {
             rightSecondListTitle={'LEARN MORE'}
             secondList={options.learnMore}/>
 
-
-
-
             <LeftInfoWithRightImage title={'We are driven by the\n' +
                                     'passion for working with determined innovators who live to make a change in the world.'}
                                     description={'We understand that together\n' +
@@ -143,10 +140,7 @@ const MokenLabs = () => {
                 onClick={() => {}}
             />
 
-
-
             <OurPartnersComponent />
-
 
             <EmailForm withForm />
 

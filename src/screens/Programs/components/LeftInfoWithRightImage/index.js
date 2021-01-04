@@ -15,7 +15,7 @@ const LeftInfoWithRightImage = ({mainTitle = '',title = '', description = '', bt
                 {mainTitle && <Title title={mainTitle} className={'left-info-with-right-image-title'}/>}
                 <div className={'left-info-with-right-image-info-container'} style={{flexDirection: isLeftImage ? 'row-reverse' : 'row'}}>
                     <div className={'left-info-with-right-image-text-container'}
-                         style={{marginRight: !isLeftImage && !isMobile ? 100 : 0 }}
+                         style={{marginRight: !isLeftImage && !isMobile ? 150 : 0 }}
                     >
                         <Text
                             animationType={'fade-up'}
@@ -31,7 +31,7 @@ const LeftInfoWithRightImage = ({mainTitle = '',title = '', description = '', bt
                    <img src={imgUrl}
                         data-aos="fade-in"
                         className={'left-info-with-right-image-image'}
-                        style={{marginRight: isLeftImage && !isMobile ? 100 : 0}}/>
+                        style={{marginRight: isLeftImage && !isMobile ? 150 : 0}}/>
                 </div>
             </section>
     )

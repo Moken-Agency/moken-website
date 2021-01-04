@@ -28,6 +28,7 @@ const Careers = () => {
                          description={`Powered by people and elevated by technology. If you’re looking for an opportunity to take your
                         career forwards join us and help create change with the global brands of tomorrow.`}
                          subtitle={`A team of experts who learn by doing.`}
+                         marginBottom={isMobile ? 99 : 207}
             />
 
             <img className={'image-section'} src={ImagePeopleHeader} />

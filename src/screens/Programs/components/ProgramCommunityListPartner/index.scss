@@ -6,27 +6,34 @@
 }
 
 .labs-join-container {
-  padding: 0 14vw;
   margin-bottom: 230px;
-  @media screen and (max-width: 600px) {
-    padding: 0 43px;
-  }
+
   .labs-join-partners-list {
     display: flex;
     justify-content: space-between;
     margin-top: 166px;
+    padding: 0 10vw;
     @media screen and (max-width: 600px) {
+      padding: 0 43px;
       flex-direction: column;
+
     }
   }
   .program-community-list-partner-subtitle {
     width: 929px;
+    padding: 0 14vw;
     @media screen and (max-width: 600px) {
+      padding: 0 43px;
       width: auto;
     }
   }
   .labs-join-schedule-container {
     display: flex;
     justify-content: flex-end;
+    padding: 0 10vw;
+    @media screen and (max-width: 600px) {
+      padding: 0 43px;
+
+    }
   }
 }

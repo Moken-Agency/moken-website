@@ -71,6 +71,7 @@ const Community = () => {
             <HeaderTitle title={'MOKEN COMMUNITY'}
                          subtitle={'Working on what matters, together.'}
                          description={`Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.co`}
+                         marginBottom={isMobile ? 400 : 107}
             />
 
             <ImageBlock type={'full'} />

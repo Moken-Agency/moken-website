@@ -26,7 +26,7 @@ const AboutPrograms = () => {
         <div className={'about-programs-container'}>
             <HeaderTitle title={'MOKEN PROGRAMS'}
                          subtitle={'Success fuelled by partnership.'}
-                         description={'Together creating an unmatched global ecosystem.'} />
+                         description={'Together creating an unmatched global ecosystem.'} marginBottom={isMobile ? 243 : 179}/>
 
              <section className={'about-programs-partnerships-container'}>
                  {
@@ -64,7 +64,7 @@ const AboutPrograms = () => {
                           mobSize={35}
                           animationType={'fade-in'}
                           type={'extraLight'}>Join our trusted community of partners and market what you do to founders and startups, globally.</Text>
-                    <div className={'about-programs-list'}>
+                    <div className={'about-programs-list'} style={{'grid-template-columns': '1fr 1fr'}}>
                         {
                             options.programs.map((program, index) => {
                                 return (

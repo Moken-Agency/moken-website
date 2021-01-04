@@ -8,13 +8,18 @@ import TitleCenterImagesList from "../../components/TitleCenterImagesList";
 import options from "../ForStartups/options";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import EmailForm from "../../components/EmailForm";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const ForBrands = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'for-brands-container'}>
             <HeaderTitle title={'FOR BRANDS'}
                          subtitle={'Success fuelled by partnership.'}
                          description={'Together creating an unmatched global ecosystem.'}
+                         marginBottom={isMobile ? 107 : 107}
+
             />
 
             <ImageBlock position={'right'}/>

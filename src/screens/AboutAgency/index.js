@@ -17,6 +17,8 @@ import TitleSubDescription from "../../components/TitleSubDescription";
 
 
 const AboutAgency = () => {
+    const {isMobile} = useWindowDimensions()
+
 
     return (
         <div className={'about-agency-container'}>

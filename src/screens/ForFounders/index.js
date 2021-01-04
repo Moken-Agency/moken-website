@@ -8,17 +8,21 @@ import ProgramCommunityListPartner from "../Programs/components/ProgramCommunity
 import options from "./options";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import EmailForm from "../../components/EmailForm";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const ForFounders = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'for-founders-container'}>
            <HeaderTitle title={'FOR FOUNDERS'}
                         subtitle={'Success fuelled by partnership.'}
                         description={'Together creating an unmatched global ecosystem.'}
+                        marginBottom={isMobile ? 107 : 107}
+
            />
 
             <ImageBlock position={'right'}
-                        url={''}
             />
 
             <LeftInfoWithRightImage mainTitle={'ACCESS NETWORK'}
