@@ -142,6 +142,8 @@ const Community = () => {
             <ProgramCommunityListPartner title={'GET INVOLVED'}
                                          subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
                                          options={options.founders}
+                                         widthItem={'30vw'}
+
             />
 
             <EmailForm  withForm />

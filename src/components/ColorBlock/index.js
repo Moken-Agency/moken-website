@@ -6,7 +6,7 @@ import ArrowUpRight from '../../images/arrow-up-right.png'
 import ArrowUpRightWhite from '../../images/arrow-up-right-white.png'
 
 //blockType = middle | big
-const ColorBlock = ({title = '', subtitle = '', backgroundColor = '', className = '', textWidth = '40vw', textColor = 'white', size = '4.5vw',
+const ColorBlock = ({title = '', subtitle = '', backgroundColor = '', className = '', textWidth = '36vw', textColor = 'white', size = 65,
                         withIcon = false, type = 'extraLight', mobSize = '9vw', blockType = 'big'}) => {
     const {isMobile} = useWindowDimensions();
     const mobSizeTemp = blockType === 'middle' ? 32 : mobSize;

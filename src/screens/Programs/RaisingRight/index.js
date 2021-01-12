@@ -19,7 +19,10 @@ const RaisingRight = () => {
 
             <HeaderWithBlackInfoBlock title={'IDEATION TO INNOVATION'}
                                       subtitle={'An idea incubator taking you from  to launch in 12 weeks.'}
-                                      description={'No Fees. No Equity. A virtual incubation program providing you the tools to take action, guiding you from ideation to innovation.'}
+                                      description={'No Fees. No Equity. A virtual incubation program providing you the tools to ' +
+                                      'take action, guiding you from ideation to innovation.'}
+                                      type={'raising-right'}
+                                      programSubtitle={'LAUNCHING MARCH 2021'}
             />
 
             <TitleTwoDescriptionWithBtn

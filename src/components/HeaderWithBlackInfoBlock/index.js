@@ -10,7 +10,7 @@ import ProgramDetails from "../../screens/Programs/components/ProgramDetails";
 //     marginBottom: isMobile ? 42 : '2.4vw'
 //
 // },
-const HeaderWithBlackInfoBlock = ({title = '', subtitle = '', description = '', marginBottom = 225, blackInfoData }) => {
+const HeaderWithBlackInfoBlock = ({title = '', subtitle = '', description = '', marginBottom = 225, blackInfoData, type = '', programSubtitle }) => {
     return (
         <div className={'header-black-container'} style={{marginBottom}}>
            <div className={'header-black-title-container'}>
@@ -30,7 +30,7 @@ const HeaderWithBlackInfoBlock = ({title = '', subtitle = '', description = '', 
                                     className={'header-black-description'}
                                     type={'light'}>{description}</Text> : null}
            </div>
-            <ProgramDetails options={blackInfoData} />
+            <ProgramDetails options={blackInfoData} type={type} subtitle={programSubtitle}/>
 
         </div>
     )

@@ -9,6 +9,7 @@ import Title from "../Title";
 import FirstMapItem from "./components/FirstMapItem";
 import SecondMapItem from "./components/SecondMapItem";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import ImageBlock from "../ImageBlock";
 
 const dataExample = {
     firstSection : {
@@ -50,7 +51,9 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
                           textStyles={{letterSpacing: 4, marginBottom:  isMobile ? 70 : 0}}
                     >{`${titleConjunctions} ${titleSecond}`}</Text>
                 </div>
-                    <Text size={'4.3vw'}  type={'thin'}
+                    {/*<Text size={'4.3vw'}  */}
+                    <Text size={'4.3vw'}
+                          type={'thin'}
                           mobSize={45}
                           animationType={'fade-in'}
                           textStyles={{letterSpacing: 4}}
@@ -60,21 +63,23 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
 
                 <img src={isMobile ? firstSection.imgURLMobile : firstSection.imgURL} className={'first-section-img'}/>
                 <div className={'first-section-info-container'}>
-                    <Text size={'3.3vw'}
+                    {/*<Text size={'3.3vw'}*/}
+                    <Text size={55}
                           mobSize={35}
                           animationType={'fade-in'}
                           type={'extraLight'}
-                          containerStyles={{marginBottom: isMobile ? 40 : '5vw'}}
+                          containerStyles={{marginBottom: isMobile ? 40 : 62}}
                           textStyles={{letterSpacing: 0.5,
                               // lineHeight: 63
                           }}>{infoTitleFirst}</Text>
-                    <Text size={'1.2vw'} type={'light'}
+                    <Text size={20} type={'light'}
                           mobSize={16}
                           animationType={'fade-in'}
                         // textStyles={{lineHeight: 35}}
-                          containerStyles={{marginBottom: '4.5vw'}}
+                          containerStyles={{ lineHeight: '35px'}}
+                          // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
                     >{infoDescriptionFirst}</Text>
-                    {!isMobile ? <Text size={'.84vw'} type={'semiBold'} textStyles={{letterSpacing: 4}}>{infoSubtitleFirst}</Text> : null}
+                    {/*{!isMobile ? <Text size={'.84vw'} type={'semiBold'} textStyles={{letterSpacing: 4}}>{infoSubtitleFirst}</Text> : null}*/}
                 </div>
             </section>
 
@@ -92,9 +97,11 @@ const CommunityPageGenerator = ({firstSection, secondSection, thirdSection}) => 
                     </div>
                 </div>
 
-                <div className={'second-section-image-container'}>
-                    <img src={secondSection.imgURL} />
-                </div>
+                <ImageBlock position={'right'}/>
+
+                {/*<div className={'second-section-image-container'}>*/}
+                {/*    <img src={secondSection.imgURL} />*/}
+                {/*</div>*/}
             </section>
 
             <section className={'third-section'}>

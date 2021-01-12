@@ -5,7 +5,7 @@ import React from "react";
 import './index.scss';
 import Title from "../../../../components/Title";
 
-const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], onClick, AdditionalComponent}) => {
+const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], onClick, AdditionalComponent, widthItem = 70 / options.length + 'vw' }) => {
    return (
        <>
            <Title title={title} className={'labs-join-title'} />
@@ -22,7 +22,7 @@ const ProgramCommunityListPartner = ({title = '', subtitle = ' ', options = [], 
                    {
                        options.map((option) => {
                            return (
-                               <CommunityPartner {...option} containerStyles={{width:70 / options.length + 'vw'}}/>
+                               <CommunityPartner {...option} containerStyles={{width: widthItem}}/>
                            )
                        })
                    }

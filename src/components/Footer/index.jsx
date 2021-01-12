@@ -56,7 +56,7 @@ const Footer = ({isOpen, setIsOpen}) => {
                     }
                 </div>
                 <div className={'send-email-updates-container'}>
-                    <img src={Logo} className={'logo'}/>
+                    <img src={Logo} className={'logo'} onClick={() => history.push('/')}/>
                     <Text size={'2vw'} type={'thin'}
                           animationType={'fade-in'}
                           textStyles={joinFirstText}>Join our newsletter</Text>
@@ -96,7 +96,7 @@ const Footer = ({isOpen, setIsOpen}) => {
                     {
                         socialsData.map(({image, link}, index) => {
                             return (
-                                <a key={'socials' + index} href={link}>
+                                <a key={'socials' + index} href={link} target="_blank" rel="noopener noreferrer">
                                     <img src={image} alt={'social'}/>
                                 </a>
                             )

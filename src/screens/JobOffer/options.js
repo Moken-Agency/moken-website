@@ -1,7 +1,16 @@
 import JobOffer1 from '../../images/jobOffer1.svg';
 import JobOfferTitle1 from '../../images/jobOfferTitle1.svg';
+import ColorBlock from "../../components/ColorBlock";
+import React from "react";
 
 export default {
+    colorBlockOptions: {
+        textWidth: '45vw',
+        backgroundColor: '#000',
+        type: 'thin',
+        size: 75,
+        mobSize: 55
+    },
     first: [
         {
             headerTitleWithImgTitle: 'CAREER OPPORTUNITIES',

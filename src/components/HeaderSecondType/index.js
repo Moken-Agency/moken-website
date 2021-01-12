@@ -2,9 +2,9 @@ import React from "react";
 import Text from "../Text";
 import './index.scss';
 
-const HeaderSecondType = ({title = '', subtitle = '', marginBottom}) => {
+const HeaderSecondType = ({title = '', subtitle = '', marginBottom, className = ''}) => {
     return (
-        <div className={'header-second-title-container'} style={{marginBottom}}>
+        <div className={`header-second-title-container ${className}`} style={{marginBottom}}>
             <Text size={16}
                   mobSize={14}
                   animationType={'fade-in'}

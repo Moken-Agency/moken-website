@@ -2,8 +2,11 @@ import React from "react";
 import Text from "../Text";
 import Button from "../Button";
 import './index.scss';
+import {useHistory} from "react-router-dom";
 
-const Explore = ({title, subtitle, description}) => {
+const Explore = ({title, subtitle, description, route = ''}) => {
+    const history = useHistory();
+
     return (
         <div className={'explore-container'}>
             <Text size={'.8vw'}
@@ -21,6 +24,7 @@ const Explore = ({title, subtitle, description}) => {
                   size={'.8vw'}
             >{description}</Text>
             <Button title={'EXPLORE'} backgroundColor={'transparent'}
+                    onClick={() => history.push(route)}
                     textColor={'black'}
                     size={'.6vw'}
                     animationType={'fade-in'}

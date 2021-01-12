@@ -14,7 +14,7 @@ const TermsAndConditions = () => {
                       color={'white'}
                       type={'thin'}>Terms & Conditions</Text>
             </div>
-            <PageGenerator data={otherOptions}/>
+            <PageGenerator data={otherOptions} containerStyles={{padding: '12vw 0'}}/>
         </div>
     )
 }

@@ -11,6 +11,7 @@ import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import EmailForm from "../../components/EmailForm";
 import Something from "./Something";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import background from '../../images/careers-peopple.png';
 
 const MoPlusKen = () => {
 
@@ -24,6 +25,7 @@ const MoPlusKen = () => {
                                 color={'white'}
                                 className={'mo-ken-header'}
                                 imgURL={''}
+                                backgroundImage={background}
             />
 
             <section className={'mo-ken-overview'}>

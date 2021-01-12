@@ -4,22 +4,22 @@ import Subtitle from "../Subtitle";
 import './index.scss';
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-const HeaderTitleWithImg = ({title = '', subtitle = '', imgURL = '', withHeaderTitleWithImg, color = 'black'}) => {
+const HeaderTitleWithImg = ({title = '', subtitle = '', imgURL = '', withHeaderTitleWithImg, color = 'black', backgroundImage = '', className = ''}) => {
     const {isMobile} = useWindowDimensions()
 
     return (
         <>
-            {withHeaderTitleWithImg ? <div className={'header-title-with-img-container'}>
+            {withHeaderTitleWithImg ? <div className={`header-title-with-img-container ${className}`}
+                                           style={{backgroundImage: `url(${backgroundImage})`}}>
                 <div className={'header-title-with-img-title-container'}>
                     <Text type={'semiBold'} mobSize={14}
                           color={color}
+                          size={16}
                           animationType={'fade-in'}
-                          textStyles={{letterSpacing: 4, marginBottom: isMobile ? 50 : 0}}>{title}</Text>
-                    <Subtitle type={'thin'} color={color} subtitle={subtitle}
-                              containerStyles={{padding: 0}}/>
-                </div>
-                <div className={'header-title-with-image-container'} data-aos="fade-in">
-                    <img src={imgURL}/>
+                          textStyles={{letterSpacing: 4, marginBottom: isMobile ? 50 : 20}}>{title}</Text>
+                              <Text size={75} textStyles={{lineHeight: '80px'}} color={color} type={'thin'}>
+                                  {subtitle}
+                              </Text>
                 </div>
             </div> : null}
         </>

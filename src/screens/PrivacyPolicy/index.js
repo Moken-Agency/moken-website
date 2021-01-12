@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
                       animationType={'fade-in'}
                       mobSize={55} color={'white'} type={'thin'}>Privacy Policy</Text>
             </div>
-            <PageGenerator data={otherOptions}/>
+            <PageGenerator data={otherOptions} containerStyles={{padding: '12vw 0'}}/>
         </div>
     )
 }

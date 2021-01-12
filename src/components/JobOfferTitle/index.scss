@@ -1,16 +1,15 @@
-.header-title-with-img-container {
+.job-offer-title-container {
   display: flex;
   justify-content: space-between;
-  padding: 432px 10vw 184px 168px;
+  padding: 8vw 10vw 0 10vw;
   margin-bottom: 19vw;
-  background-color: #a7a7a7;
   @media only screen and (max-width: 600px) {
     flex-direction: column-reverse;
   }
-    .header-title-with-img-title-container {
-    //padding-top: 14.6vw;
+    .job-offer-title-title-container {
+    padding-top: 14.6vw;
   }
-  .header-title-with-image-container {
+  .job-offer-title-with-image-container {
     @media only screen and (max-width: 600px) {
       display: flex;
       justify-content: flex-end;

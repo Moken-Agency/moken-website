@@ -3,14 +3,10 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import './index.scss';
 import { useHistory } from "react-router-dom";
 import Text from "../../components/Text";
-import Title from "../../components/Title";
-import Subtitle from "../../components/Subtitle";
-
 import options from './portfolio-options';
 import Startups from "./components/Startups";
 import Company from "./components/Company";
 import ColorBlock from "../../components/ColorBlock";
-import HeaderSecondType from "../../components/HeaderSecondType";
 
 const {startups, companies} = options;
 

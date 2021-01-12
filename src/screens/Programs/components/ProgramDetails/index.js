@@ -9,22 +9,35 @@ const defaultOptions =    [
         subtitle: 'Mentorship'
     },{
         title: 'LOCATION',
-        subtitle: 'Vancouver & Toronto'
+        subtitle: `Vancouver 
+& Toronto`
     },{
         title: 'LENGTH',
         subtitle: '12 Weeks'
     },{
         title: 'STATUS',
-        subtitle: 'Applications Open January 2021'
+        subtitle: `Applications Open 
+January 2021`
     },
 ];
 
-const ProgramDetails = ({options = defaultOptions}) => {
+const ProgramDetails = ({options = defaultOptions, type, subtitle}) => {
     return (
-        <section className={'labs-details-container'} data-aos="fade-in">
-            <div className={'labs-details-block'}>
-                <Text className={'labs-details-title'} color={'white'} size={31} type={'thin'}>Program Details</Text>
-                <div className={'labs-details-list-block'}>
+        <section className={`labs-details-container`} data-aos="fade-in">
+            <div className={`labs-details-block ${`block-${type}`}`}>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                    <Text className={`labs-details-title ${`title-${type}`}`} color={'white'}
+                          size={type === 'mokenlabs' ? 50 : 31} type={'thin'}
+                          textStyles={{lineHeight: type === 'mokenlabs' ? '60px' : 'auto'}}
+                    >Program Details</Text>
+                    {subtitle ? <Text color={'white'}
+                                      containerStyles={{alignItems: 'flex-start'}}
+                                      size={16}
+                                      textStyles={{letterSpacing: 4}}
+                    >{subtitle}</Text> : null}
+                </div>
+
+                <div className={`labs-details-list-block ${`list-${type}`}`}>
                     {options.map(({title, subtitle}) => {
                         return (
                             <div>

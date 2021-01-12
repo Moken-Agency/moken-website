@@ -7,20 +7,20 @@ export default {
                 title: 'The Company',
                 routes: [
                     {
-                        title: 'Who’s Who & What’s What',
-                        route: ''
+                        title: 'About Moken',
+                        route: '/'
+                    },
+                    {
+                        title: 'The Agency',
+                        route: '/about-agency'
                     },
                     {
                         title: 'Our Partners',
                         route: '/our-partners'
                     },
                     {
-                        title: 'Client Results',
-                        route: ''
-                    },
-                    {
-                        title: 'Investors',
-                        route: ''
+                        title: 'Access Network',
+                        route: '/access',
                     },
                     {
                         title: 'Careers',
@@ -37,11 +37,9 @@ export default {
                 routes: [
                     {
                         title: 'FAQ',
-                        route: ''
-                    },  {
-                        title: 'Help Centre',
-                        route: ''
-                    },  {
+                        route: '/faqs'
+                    },
+                    {
                         title: 'Connect with Us',
                         route: '/connect-with-us'
                     },  {
@@ -59,11 +57,11 @@ export default {
                 routes: [
                     {
                         title: 'Become a Partner',
-                        route: ''
+                        route: '/partnership-programs'
                     },
                     {
                         title: 'Sponsor the Future',
-                        route: ''
+                        route: '/advertise-with-us'
                     },
                     {
                         title: 'Work with Mo + Ken',
@@ -75,11 +73,11 @@ export default {
                     },
                     {
                         title: 'Educate the Next Generation',
-                        route: ''
+                        route: '/mentorship'
                     },
                     {
-                        title: 'Innovation Committee',
-                        route: ''
+                        title: 'Innovation Week',
+                        route: '/innovation-committee'
                     },
 
                 ]
@@ -87,18 +85,18 @@ export default {
         ]
     },
     socialsMedia: [
-        {image: twitter, link: ''},
-        {image: behance, link: ''},
-        {image: instagram, link: ''},
-        {image: linkedin, link: ''},
-        {image: dribbble, link: ''},
+        {image: twitter, link: 'https://www.twitter.com/mokenstartups'},
+        {image: behance, link: 'https://www.behance.net/mokenagency'},
+        {image: instagram, link: 'https://www.instagram.com/mokenstartups'},
+        {image: linkedin, link: 'https://www.linkedin.com/company/mokenstartups'},
+        {image: dribbble, link: 'https://dribbble.com/mokenagency'},
     ],
     socialsMediaWhite: [
-        {image: twitterWhite, link: ''},
-        {image: behanceWhite, link: ''},
-        {image: instagramWhite, link: ''},
-        {image: linkedinWhite, link: ''},
-        {image: dribbbleWhite, link: ''},
+        {image: twitterWhite, link: 'https://www.twitter.com/mokenstartups'},
+        {image: behanceWhite, link: 'https://www.behance.net/mokenagency'},
+        {image: instagramWhite, link: 'https://www.instagram.com/mokenstartups'},
+        {image: linkedinWhite, link: 'https://www.linkedin.com/company/mokenstartups'},
+        {image: dribbbleWhite, link: 'https://dribbble.com/mokenagency'},
     ],
 
     styles: {

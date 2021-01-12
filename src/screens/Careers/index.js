@@ -25,8 +25,9 @@ const Careers = () => {
     return (
         <div className={'careers-container'}>
             <HeaderTitle title={'CAREERS'}
-                         description={`Powered by people and elevated by technology. If you’re looking for an opportunity to take your
-                        career forwards join us and help create change with the global brands of tomorrow.`}
+                         description={`At Moken we’re powered by people and elevated by technology. If you’re looking 
+                         for an opportunity to take your career to the next level, join us and help create change with 
+                         the global brands of tomorrow.`}
                          subtitle={`A team of experts who learn by doing.`}
                          marginBottom={isMobile ? 99 : 207}
             />

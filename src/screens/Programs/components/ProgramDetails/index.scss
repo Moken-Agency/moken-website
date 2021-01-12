@@ -10,19 +10,51 @@
     display: none;
   }
   .labs-details-block {
-    width: 40vw;
+    width: 35vw;
     background-color: black;
-    padding: 75px 42px;
+    padding: 53px 20px 53px 42px;
     @media only screen and (max-width: 600px) {
       width: auto;
     }
     .labs-details-title {
-      width: 10vw;
       margin-bottom: 75px;
     }
     .labs-details-list-block {
       display: flex;
       justify-content: space-between;
+      //width: 200px
     }
+    .container-mokenlabs {
+      padding: 53px 42px;
+    }
+    .list-mokenlabs {
+      //display: flex;
+      //flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      grid-row-gap: 40px;
+      grid-column-gap: 40px;
+
+
+
+      //justify-content: space-between;
+      //align-items: center;
+    }
+  }
+  .block-mokenlabs {
+    display: flex;
+    padding: 53px 43px
+  }
+  .block-raising-right {
+    padding: 53px 43px
+  }
+
+  .title-mokenlabs {
+    width: 190px;
+    margin-right: 72px;
+  }
+  .title-raising-right {
+    width: 160px;
   }
 }

@@ -10,7 +10,7 @@ const ImageTitleSubDescList = ({title = '', subtitle = '', description = '', lis
         <div className={'image-title-sub-desc-list-container'}>
             <img data-aos="fade-in" className={'image-title-sub-desc-list-image'} src={imgURL}/>
             <div>
-                <Title className={'image-title-sub-desc-list-title'} title={title}/>
+                <Text className={'image-title-sub-desc-list-title'} type={'semiBold'} size={16} mobSize={14}>{title}</Text>
                 <Text size={55}
                       className={'image-title-sub-desc-list-subtitle'}
                       animationType={'fade-in'}

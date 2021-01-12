@@ -1,5 +1,22 @@
 export default {
-
+    programDetailsData: [
+        {
+            title: 'TYPE',
+            subtitle: `Intensive Equity 
+Investment Program`
+        },{
+            title: 'LOCATION',
+            subtitle: `Global`
+        },{
+            title: 'LENGTH',
+            subtitle: `Needs Basis
+(No Indefinite Term)`
+        },{
+            title: 'STATUS',
+            subtitle: `Applications Open 
+January 2021`
+        },
+    ],
     weeks: [
         {
             title: 'Benefit',

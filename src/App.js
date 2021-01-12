@@ -4,8 +4,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
+import {  } from "react-router-dom";
 import Header from './components/Header'
 import MenuScreen from './screens/MenuScreen'
 import Footer from './components/Footer'
@@ -80,14 +82,6 @@ import InnovationCommittee from "./screens/InnovationCommittee";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const TestHome = () => {
-    return (
-        <div style={{width: '100vw', height: '50vw', backgroundColor: 'red'}}>
-            <span>HOME</span>
-        </div>
-    )
-}
-
 const routsWithHeaderFooter = [
 
     {
@@ -123,7 +117,7 @@ const routsWithHeaderFooter = [
         component: ForFounders
     },
     {
-        path: "/advertise-wth-us",
+        path: "/advertise-with-us",
         component: AdvertiseWithUs
     },
     {
@@ -131,7 +125,7 @@ const routsWithHeaderFooter = [
         component: ForBrands
     },
     {
-        path: "/for-startups",
+        path: '/for-startups',
         component: ForStartups
     },
     {
@@ -377,61 +371,72 @@ const routsWithoutHeaderFooter = [
     },
 ];
 
+
+
+
+
+
 function App() {
   const {width} = useWindowDimensions()
 
   const [isOpen, setIsOpen] = useState(false);
 
     useEffect( () => {
-        AOS.init();
+        AOS.init(
+            {
+                once: true
+            }
+        );
     }, [])
 
   return (
-      <Router>
-        <div style={{minHeight: '100vh'}}>
-              <Switch>
-                  {
-                      routsWithoutHeaderFooter.map((route, index) => {
-                          return (
-                                  <Route
-                                      key={'routsWithoutHeaderFooter' + index}
-                                      path={route.path}
-                                      children={<route.component />}
-                                      // render={props => (
-                                      //     // pass the sub-routes down to keep nesting
-                                      //     <route.component {...props} />
-                                      // )}
-                                  />
-                          )
-                      })
-                  }
-                  {
-                      routsWithHeaderFooter.map((route, index) => {
-                          return (
+          <Router>
+              <ScrollToTop/>
+              <div style={{minHeight: '100vh'}}>
+                  <Switch>
+                      {
+                          routsWithoutHeaderFooter.map((route, index) => {
+                              return (
+                                      <Route
+                                          key={'routsWithoutHeaderFooter' + index}
+                                          path={route.path}
+                                          children={<route.component />}
+                                          // render={props => (
+                                          //     // pass the sub-routes down to keep nesting
+                                          //     <route.component {...props} />
+                                          // )}
+                                      />
+                              )
+                          })
+                      }
+                      {
+                          routsWithHeaderFooter.map((route, index) => {
+                              return (
 
-                                  <Route
-                                      key={'routsWithHeaderFooter' + index}
-                                      path={route.path}
-                                      // children={<route.component />}
-                                      children={props => {
-                                          // pass the sub-routes down to keep nesting
-                                          return (
-                                              <>
-                                                  <Header isOpen={isOpen} setIsOpen={setIsOpen}/>
-                                                <route.component {...props} />
-                                                  <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
-                                              </>
-                                          )
-                                      }}
-                                  />
-                          )
-                      })
-                  }
+                                      <Route
+                                          key={'routsWithHeaderFooter' + index}
+                                          path={route.path}
+                                          // children={<route.component />}
+                                          children={props => {
+                                              // pass the sub-routes down to keep nesting
+                                              return (
+                                                  <>
+                                                      <Header isOpen={isOpen} setIsOpen={setIsOpen}/>
+                                                    <route.component {...props} />
+                                                      <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
+                                                  </>
+                                              )
+                                          }}
+                                      />
+                              )
+                          })
+                      }
 
 
-              </Switch>
-        </div>
-      </Router>
+                  </Switch>
+            </div>
+        </Router>
+
   );
 }
 

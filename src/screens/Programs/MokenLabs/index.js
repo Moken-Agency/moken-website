@@ -30,6 +30,8 @@ const MokenLabs = () => {
             <HeaderWithBlackInfoBlock title={'MOKENLABS PROGRAM'}
                                       subtitle={'Building unforgettable brands for start-ups with ambition.'}
                                       description={'Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.com'}
+                                      type={'mokenlabs'}
+                                      blackInfoData={options.programDetailsData}
             />
 
 

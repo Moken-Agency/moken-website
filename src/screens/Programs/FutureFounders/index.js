@@ -62,7 +62,9 @@ const FutureFounders = () => {
             <ProgramCommunityListPartner
                 title={'CREATE THE FUTURE'}
                 subtitle={'Join our trusted community of partners and market what you do to founders and startups, globally.'}
-                options={options.future}/>
+                options={options.future}
+                widthItem={'30vw'}
+            />
 
             <EmailForm withForm />
         </div>

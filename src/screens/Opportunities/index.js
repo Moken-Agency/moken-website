@@ -8,19 +8,27 @@ import Title from "../../components/Title";
 import Input from "../../components/Input";
 import SubmitYourResume from "../../components/SubmitYourResume";
 import 'reactjs-popup/dist/index.css';
-import ReportBug from "../../components/ReportBug";
 import OpportunitiesImage from '../../images/opportunities.jpg'
-import Form from "../../components/Form";
+import HeaderSecondType from "../../components/HeaderSecondType";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+import ImageBlock from "../../components/ImageBlock";
 
 const Opportunities = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'opportunities-container'}>
-           <ReportBug />
-           <Form/>
-            <section className={'opportunities-title-container'}>
-                <Text type={'semiBold'} size={'1vw'} className={'main-title'}>CAREER OPPORTUNITIES</Text>
-                <Subtitle size={'4.15vw'} subtitle={'Work that matters.'} type={'thin'} className={'subtitle'}/>
-            </section>
+           {/*<ReportBug />*/}
+           {/*<Form/>*/}
+           {/* <section className={'opportunities-title-container'}>*/}
+           {/*     <Text type={'semiBold'} size={'1vw'} className={'main-title'}>CAREER OPPORTUNITIES</Text>*/}
+           {/*     <Subtitle size={'4.15vw'} subtitle={'Work that matters.'} type={'thin'} className={'subtitle'}/>*/}
+           {/* </section>*/}
+
+           <HeaderSecondType title={'CAREER OPPORTUNITIES'} subtitle={'Together, we’ll do things that make an impact.'}
+                             marginBottom={isMobile ? 12 : 146}
+           />
+
             <section className={'opportunities-image-block-container'}>
                 <img src={OpportunitiesImage} className={'opportunities-image-block'}/>
             </section>
@@ -36,6 +44,7 @@ const Opportunities = () => {
                             <Opportunity {...opportunity}
                                          key={index + 'opportunities'}
                                          width={'71vw'}
+                                         isFirst={index === 0}
                                          stylesContainer={{padding: '2vw 5vw', borderColor: '#efefef'}}/>
                         )
                     })

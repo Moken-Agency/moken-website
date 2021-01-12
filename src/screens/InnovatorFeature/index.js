@@ -6,16 +6,22 @@ import ImageTitleSubDescList from "../../components/ImageTitleSubDescList";
 import options from './options';
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
 import EmailForm from "../../components/EmailForm";
+import ImageBlock from "../../components/ImageBlock";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const InnovatorFeature = () => {
+    const {isMobile} = useWindowDimensions()
+
     return (
         <div className={'innovator-container'}>
             <HeaderTitle title={'MENTORSHIP'}
                          subtitle={'Success fuelled by partnership.'}
                          description={'Together creating an unmatched global ecosystem.'}
+                         marginBottom={isMobile ? 152 : 142}
             />
 
-            <img src={'innovator-image-block'}/>
+
+            <ImageBlock type={'full'} />
 
             <TitleTwoDescriptionWithBtn title={'We increase website leads, maximize revenu and produce a positive ROI ' +
             '— validated with measurable results.'}

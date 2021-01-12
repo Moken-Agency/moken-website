@@ -48,10 +48,10 @@ const ColumnMenu = ({routes = [], title}) => {
 
     return (
         <div className={'column-menu-container'}>
-            <Text type={'thin'}
-                  size={'1.4vw'}
+            <Text type={'semiBold'}
+                  size={14}
                   textStyles={{...titleStyles, letterSpacing: 4, marginBottom: '.85vw'}}
-                  containerStyles={{...containerTitleStyles, marginRight: '2.3vw'}}>{title}</Text>
+                  containerStyles={{...containerTitleStyles, marginRight: '2.3vw'}}>{title.toUpperCase()}</Text>
             {
                 routes.map(({title, route}, index) => {
                     return <ColumnTextComponent key={index + 'ColumnTextComponent'}

@@ -10,13 +10,14 @@ import HeaderWithBackground from "../HeaderWithBackground";
 import HeaderTitleWithImg from "../HeaderTitleWithImg";
 import TitleContainerWithImg from "../TitleContainerWithImg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import JobOfferTitle from "../JobOfferTitle";
 
-const PageGenerator = ({data}) => {
+const PageGenerator = ({data, containerStyles = {}}) => {
     console.log({data});
     const {isMobile} = useWindowDimensions()
 
     return (
-        <div className={'page-generator-container'}>
+        <div className={'page-generator-container'} style={containerStyles}>
             {
                 data.map(({title = '',
                               subtitle,
@@ -41,8 +42,10 @@ const PageGenerator = ({data}) => {
                           }, index) => {
                     return (
                         <div key={'page-generator-container' + index}>
-                            <HeaderTitleWithImg withHeaderTitleWithImg={withHeaderTitleWithImg} title={headerTitleWithImgTitle}
-                                                subtitle={headerTitleWithImgSubtitle} imgURL={headerTitleWithImgURL}/>
+                            <JobOfferTitle withHeaderTitleWithImg={withHeaderTitleWithImg} title={headerTitleWithImgTitle}
+                                           subtitle={headerTitleWithImgSubtitle} imgURL={headerTitleWithImgURL}/>
+                            {/*<HeaderTitleWithImg withHeaderTitleWithImg={withHeaderTitleWithImg} title={headerTitleWithImgTitle}*/}
+                            {/*                    subtitle={headerTitleWithImgSubtitle} imgURL={headerTitleWithImgURL}/>*/}
                             <HeaderWithBackground title={headerTitle}
                                                   subtitle={headerSubtitle}
                                                   webBackground={webHeaderBackground}
@@ -56,7 +59,7 @@ const PageGenerator = ({data}) => {
                                       mobSize={35}
                                       subtitle={subtitle}
                                       containerStyles={{marginBottom: isMobile ? 50 : '3vw'}}/>
-                            <Description type={'light'} mobSize={16} description={description} size={'1.23vw'}/>
+                            <Description type={'light'} mobSize={16} description={description} size={20}/>
                             <Submit submitForm={submit}/>
 
                             <ColorBlock backgroundColor={colorBlock} subtitle={colorSubtitle} title={colorTitle}/>
