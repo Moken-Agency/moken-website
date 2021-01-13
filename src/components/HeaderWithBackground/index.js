@@ -1,31 +1,49 @@
 import Text from "../Text";
 import React from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import './index.scss';
+import "./index.scss";
 
-const HeaderWithBackground = ({mobBackground, webBackground, title = '', subtitle = '', containerStyles = {}}) => {
-    const {isMobile} = useWindowDimensions()
+const HeaderWithBackground = ({
+  mobBackground,
+  webBackground,
+  title = "",
+  subtitle = "",
+  containerStyles = {},
+}) => {
+  const { isMobile } = useWindowDimensions();
 
-    return (
-        <>
-            {
-                title !== '' ?  <section className={'header-with-background-container'}
-                                         style={{...containerStyles,
-                                             backgroundImage: `url(${isMobile ? mobBackground : webBackground})`}}>
-                    <Text size={isMobile ? '2vw' : '1vw'}
-                          className={'header-with-background-join-us'}
-                          type={'semiBold'}
-                          animationType={'fade-in'}
-                          color={'white'}>{title}</Text>
-                    <Text size={isMobile ? '10vw' : '4.5vw'}
-                          className={'header-with-background-upcoming-events'}
-                          type={'thin'}
-                          animationType={'fade-in'}
-                          color={'white'}>{subtitle}</Text>
-                </section> : null
-            }
-        </>
-    )
-}
+  return (
+    <>
+      {title !== "" ? (
+        <section
+          className={"header-with-background-container"}
+          style={{
+            ...containerStyles,
+            backgroundImage: `url(${isMobile ? mobBackground : webBackground})`,
+          }}
+        >
+          <Text
+            size={isMobile ? "2vw" : "1vw"}
+            className={"header-with-background-join-us"}
+            type={"semiBold"}
+            animationType={"fade-in"}
+            color={"white"}
+          >
+            {title}
+          </Text>
+          <Text
+            size={isMobile ? "10vw" : "4.5vw"}
+            className={"header-with-background-upcoming-events"}
+            type={"thin"}
+            animationType={"fade-in"}
+            color={"white"}
+          >
+            {subtitle}
+          </Text>
+        </section>
+      ) : null}
+    </>
+  );
+};
 
-export default HeaderWithBackground
+export default HeaderWithBackground;

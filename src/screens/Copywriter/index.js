@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import PageGenerator from "../../components/PageGenerator";
-import otherOptions from './options'
+import otherOptions from "./options";
 
 const Copywriter = () => {
-    return <PageGenerator data={otherOptions}/>
-}
+  return <PageGenerator data={otherOptions} />;
+};
 
-export default Copywriter
+export default Copywriter;

@@ -1,9 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const TextButton = (text) => {
-    return (
-            <button></button>
-    )
-}
+  return <button></button>;
+};
 
-export default TextButton
+export default TextButton;

@@ -3,11 +3,11 @@ import CommunityPageGenerator from "../../components/CommunityPageGenerator";
 import options from "./options";
 
 const StrategyAdvisory = () => {
-    return (
-        <div>
-            <CommunityPageGenerator {...options}/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <CommunityPageGenerator {...options} />
+    </div>
+  );
+};
 
-export default StrategyAdvisory
+export default StrategyAdvisory;

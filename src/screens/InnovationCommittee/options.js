@@ -1,31 +1,31 @@
 export default {
-    menu: [
-        {
-            title: `Schedule`,
-            subtitle: '/'
-        },
-        {
-            title: `Get 
+  menu: [
+    {
+      title: `Schedule`,
+      subtitle: "/",
+    },
+    {
+      title: `Get 
                     Involved`,
-            subtitle: '/'
-        },
-        {
-            title: `Speakers 
+      subtitle: "/",
+    },
+    {
+      title: `Speakers 
             & Stages`,
-            subtitle: '/'
-        },
-        {
-            title: `Partners
+      subtitle: "/",
+    },
+    {
+      title: `Partners
                     & Sponsors`,
-            subtitle: '/'
-        },
-        {
-            title: `Shop`,
-            subtitle: '/'
-        },
-        {
-            title: `Contact`,
-            subtitle: '/'
-        },
-    ]
-}
+      subtitle: "/",
+    },
+    {
+      title: `Shop`,
+      subtitle: "/",
+    },
+    {
+      title: `Contact`,
+      subtitle: "/",
+    },
+  ],
+};

@@ -3,11 +3,11 @@ import CommunityPageGenerator from "../../components/CommunityPageGenerator";
 import options from "./options";
 
 const ProgramDrivenMarketing = () => {
-    return (
-        <div>
-            <CommunityPageGenerator {...options}/>
-        </div>
-    )
-}
+  return (
+    <div>
+      <CommunityPageGenerator {...options} />
+    </div>
+  );
+};
 
-export default ProgramDrivenMarketing
+export default ProgramDrivenMarketing;

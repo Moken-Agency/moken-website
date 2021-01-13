@@ -2,60 +2,62 @@ import ExpertiseImageFirst from "../../images/expertise-first-image.png";
 import ProductDevWebFirst from "../../images/product-dev-web-first.png";
 import ExpertiseImageSecond from "../../images/expertise-second.png";
 
-
 export default {
-    firstSection: {
-        title: {
-            titleFirst: 'EXPERTISE',
-            titleConjunctions: '//',
-            titleSecond: 'PRODUCT DEVELOPMENT'
-        },
-        subtitle: 'Coding beautifully interactive products & platforms.',
-        imgURL: ProductDevWebFirst,
-        imgURLMobile: ExpertiseImageFirst,
-        infoBlock: {
-            infoTitleFirst: 'Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.',
-            infoDescriptionFirst: 'An effective brand can give you a significant edge in today’s highly competitive market. We create emotional connections far beyond simply making your brand look visually appelling. We create authentic and unforgettable visuals and voice that connects with your customers.',
-            infoSubtitleFirst: '— WORK WITH US'
-        }
+  firstSection: {
+    title: {
+      titleFirst: "EXPERTISE",
+      titleConjunctions: "//",
+      titleSecond: "PRODUCT DEVELOPMENT",
     },
-    secondSection: {
-        title: 'PRODUCT STRATEGY CAPABILITIES',
-        mapItems: [
-            {
-                title: 'Mobile App Development',
-                // route: ''
-            },
-            {
-                title: 'Web App Development',
-                // route: ''
-            },
-            {
-                title: 'Artificial Intelligence',
-                // route: ''
-            },
-            {
-                title: 'Back End Development',
-                // route: ''
-            },
-            {
-                title: 'Front End Development',
-                // route: ''
-            },
-            {
-                title: 'DevOps & Infrastructure',
-                // route: ''
-            },
-        ],
-        imgURL: ExpertiseImageSecond
+    subtitle: "Coding beautifully interactive products & platforms.",
+    imgURL: ProductDevWebFirst,
+    imgURLMobile: ExpertiseImageFirst,
+    infoBlock: {
+      infoTitleFirst:
+        "Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.",
+      infoDescriptionFirst:
+        "An effective brand can give you a significant edge in today’s highly competitive market. We create emotional connections far beyond simply making your brand look visually appelling. We create authentic and unforgettable visuals and voice that connects with your customers.",
+      infoSubtitleFirst: "— WORK WITH US",
     },
-    thirdSection: {
-        title: 'WHAT WE DO',
-        mapItems: [
-            {
-                title: 'Enthusiastic individuals working together to create extraordinary results.',
-                btnTitle: 'EXPLORE OUR EXPERTISE'
-            }
-        ]
-    }
-}
+  },
+  secondSection: {
+    title: "PRODUCT STRATEGY CAPABILITIES",
+    mapItems: [
+      {
+        title: "Mobile App Development",
+        // route: ''
+      },
+      {
+        title: "Web App Development",
+        // route: ''
+      },
+      {
+        title: "Artificial Intelligence",
+        // route: ''
+      },
+      {
+        title: "Back End Development",
+        // route: ''
+      },
+      {
+        title: "Front End Development",
+        // route: ''
+      },
+      {
+        title: "DevOps & Infrastructure",
+        // route: ''
+      },
+    ],
+    imgURL: ExpertiseImageSecond,
+  },
+  thirdSection: {
+    title: "WHAT WE DO",
+    mapItems: [
+      {
+        title:
+          "Enthusiastic individuals working together to create extraordinary results.",
+        btnTitle: "EXPLORE OUR EXPERTISE",
+      },
+    ],
+  },
+};

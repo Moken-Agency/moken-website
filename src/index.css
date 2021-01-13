@@ -1,58 +1,57 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 @font-face {
-  font-family: 'extraBold';
-  src: url('./fonts/zonapro-extrabold.otf') format('opentype');
+  font-family: "extraBold";
+  src: url("./fonts/zonapro-extrabold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'lightItalicDemo';
-  src: url('./fonts/ZonaPro-LightItalicDemo.otf') format('opentype');
+  font-family: "lightItalicDemo";
+  src: url("./fonts/ZonaPro-LightItalicDemo.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'extraBoldDemo';
-  src: url('./fonts/ZonaPro-ExtraBoldDemo.otf') format('opentype');
+  font-family: "extraBoldDemo";
+  src: url("./fonts/ZonaPro-ExtraBoldDemo.otf") format("opentype");
 }
 @font-face {
-  font-family: 'BlackLabel Light';
-  src: url('./fonts/BlackLabel-Light.ttf') format('truetype');
+  font-family: "BlackLabel Light";
+  src: url("./fonts/BlackLabel-Light.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Latinka ExtraBold';
-  src: url('./fonts/Latinka ExtraBold.otf') format('opentype');
+  font-family: "Latinka ExtraBold";
+  src: url("./fonts/Latinka ExtraBold.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Latinka ExtraLight';
-  src: url('./fonts/Latinka ExtraLight.otf') format('opentype');
+  font-family: "Latinka ExtraLight";
+  src: url("./fonts/Latinka ExtraLight.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Latinka Light';
-  src: url('./fonts/Latinka Light.otf') format('opentype');
+  font-family: "Latinka Light";
+  src: url("./fonts/Latinka Light.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Latinka Medium';
-  src: url('./fonts/Latinka Medium.otf') format('opentype');
+  font-family: "Latinka Medium";
+  src: url("./fonts/Latinka Medium.otf") format("opentype");
 }
 @font-face {
-  font-family: 'Latinka SemiBold';
-  src: url('./fonts/Latinka SemiBold.otf') format('opentype');
+  font-family: "Latinka SemiBold";
+  src: url("./fonts/Latinka SemiBold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Latinka Thin';
-  src: url('./fonts/Latinka Thin.otf') format('opentype');
+  font-family: "Latinka Thin";
+  src: url("./fonts/Latinka Thin.otf") format("opentype");
 }
-

@@ -1,9 +1,15 @@
 .about-program-container {
   margin-bottom: 78px;
   width: 215px;
+  @media only screen and (max-width: 600px) {
+    width: 90px;
+  }
 
   .about-program-title {
     margin-bottom: 40px;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
   .about-program-divider {
     width: 188px;
@@ -12,6 +18,8 @@
     margin-bottom: 35px;
     @media only screen and (max-width: 600px) {
       width: 90px;
+      margin-bottom: 20px;
+
     }
   }
   .about-program-text {

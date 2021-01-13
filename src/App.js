@@ -1,18 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import './App.scss';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import "./App.scss";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
-import {  } from "react-router-dom";
-import Header from './components/Header'
-import MenuScreen from './screens/MenuScreen'
-import Footer from './components/Footer'
+import {} from "react-router-dom";
+import Header from "./components/Header";
+import MenuScreen from "./screens/MenuScreen";
+import Footer from "./components/Footer";
 import useWindowDimensions from "./hooks/useWindowDimensions";
-import Other from './screens/Other';
+import Other from "./screens/Other";
 import BackendDeveloper from "./screens/BackendDeveloper";
 import CommunityManager from "./screens/CommunityManager";
 import Copywriter from "./screens/Copywriter";
@@ -79,364 +74,349 @@ import Access from "./screens/Access";
 import Faqs from "./screens/Faqs";
 import Mentorship from "./screens/Mentorship";
 import InnovationCommittee from "./screens/InnovationCommittee";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const routsWithHeaderFooter = [
+  {
+    path: "/mentorship",
+    component: Mentorship,
+  },
+  {
+    path: "/faqs",
+    component: Faqs,
+  },
+  {
+    path: "/access",
+    component: Access,
+  },
+  {
+    path: "/start-up-smart",
+    component: StartUpScreen,
+  },
+  {
+    path: "/eco-partner",
+    component: EcoPartners,
+  },
+  {
+    path: "/education-partner",
+    component: EducationPartners,
+  },
+  {
+    path: "/community-partner",
+    component: CommunityPartnerScreen,
+  },
+  {
+    path: "/for-founders",
+    component: ForFounders,
+  },
+  {
+    path: "/advertise-with-us",
+    component: AdvertiseWithUs,
+  },
+  {
+    path: "/for-brands",
+    component: ForBrands,
+  },
+  {
+    path: "/for-startups",
+    component: ForStartups,
+  },
+  {
+    path: "/for-students",
+    component: ForStudents,
+  },
+  {
+    path: "/for-investors",
+    component: ForInvestors,
+  },
+  {
+    path: "/innovator-feature",
+    component: InnovatorFeature,
+  },
+  {
+    path: "/mo-ken",
+    component: MoPlusKen,
+  },
+  {
+    path: "/connect-with-us",
+    component: ConnectWithUs,
+  },
+  {
+    path: "/about-programs",
+    component: AboutPrograms,
+  },
+  {
+    path: "/ideation-to-innovation",
+    component: IdeationToInnovation,
+  },
+  {
+    path: "/raising-right",
+    component: RaisingRight,
+  },
+  {
+    path: "/future-founders",
+    component: FutureFounders,
+  },
+  {
+    path: "/moken-labs",
+    component: MokenLabs,
+  },
+  {
+    path: "/courses",
+    component: Courses,
+  },
+  {
+    path: "/our-vision",
+    component: OurVision,
+  },
+  {
+    path: "/partnership-programs",
+    component: PartnershipPrograms,
+  },
+  {
+    path: "/about-moken",
+    component: AboutMoken,
+  },
+  {
+    path: "/product-strategy",
+    component: ProductStrategy,
+  },
+  {
+    path: "/host-an-event",
+    component: HostAnEvent,
+  },
+  {
+    path: "/people-leadership",
+    component: PeopleLeadership,
+  },
+  {
+    path: "/community-development",
+    component: CommunityDevelopment,
+  },
+  {
+    path: "/design-develop",
+    component: DesignDevelop,
+  },
+  {
+    path: "/market-research-validation",
+    component: MarketResearchValidation,
+  },
+  {
+    path: "/product-design",
+    component: ProductDesign,
+  },
+  {
+    path: "/product-development",
+    component: ProductDevelopment,
+  },
+  {
+    path: "/program-driven-marketing",
+    component: ProgramDrivenMarketing,
+  },
+  {
+    path: "/strategy-advisory",
+    component: StrategyAdvisory,
+  },
+  {
+    path: "/branding",
+    component: Branding,
+  },
+  {
+    path: "/community",
+    component: Community,
+  },
+  {
+    path: "/about-agency",
+    component: AboutAgency,
+  },
+  {
+    path: "/our-partners",
+    component: OurPartners,
+  },
+  {
+    path: "/product-testing-team",
+    component: ProductTestingTeam,
+  },
+  {
+    path: "/start-up-smart-packages",
+    component: StartUpSmart,
+  },
+  {
+    path: "/expertise",
+    component: Expertise,
+  },
+  {
+    path: "/privacy",
+    component: PrivacyPolicy,
+  },
+  {
+    path: "/terms",
+    component: TermsAndConditions,
+  },
+  {
+    path: "/upcoming-events",
+    component: UpcomingEvents,
+  },
+  {
+    path: "/portfolio",
+    component: Portfolio,
+  },
+  {
+    path: "/careers",
+    component: Careers,
+  },
 
-    {
-        path: "/mentorship",
-        component: Mentorship
-    },
-    {
-        path: "/faqs",
-        component: Faqs
-    },
-    {
-        path: "/access",
-        component: Access
-    },
-    {
-        path: "/start-up-smart",
-        component: StartUpScreen
-    },
-    {
-        path: "/eco-partner",
-        component: EcoPartners
-    },
-    {
-        path: "/education-partner",
-        component: EducationPartners
-    },
-    {
-        path: "/community-partner",
-        component: CommunityPartnerScreen
-    },
-    {
-        path: "/for-founders",
-        component: ForFounders
-    },
-    {
-        path: "/advertise-with-us",
-        component: AdvertiseWithUs
-    },
-    {
-        path: "/for-brands",
-        component: ForBrands
-    },
-    {
-        path: '/for-startups',
-        component: ForStartups
-    },
-    {
-        path: "/for-students",
-        component: ForStudents
-    },
-    {
-        path: "/for-investors",
-        component: ForInvestors
-    },
-    {
-        path: "/innovator-feature",
-        component: InnovatorFeature
-    },
-    {
-        path: "/mo-ken",
-        component: MoPlusKen
-    },
-    {
-        path: "/connect-with-us",
-        component: ConnectWithUs
-    },
-    {
-        path: "/about-programs",
-        component: AboutPrograms
-    },
-    {
-        path: "/ideation-to-innovation",
-        component: IdeationToInnovation
-    },
-    {
-        path: "/raising-right",
-        component: RaisingRight
-    },
-    {
-        path: "/future-founders",
-        component: FutureFounders
-    },
-    {
-        path: "/moken-labs",
-        component: MokenLabs
-    },
-    {
-        path: "/courses",
-        component: Courses
-    },
-    {
-        path: "/our-vision",
-        component: OurVision
-    },
-    {
-        path: "/partnership-programs",
-        component: PartnershipPrograms
-    },
-    {
-        path: "/about-moken",
-        component: AboutMoken
-    },
-    {
-        path: "/product-strategy",
-        component: ProductStrategy
-    },
-    {
-        path: "/host-an-event",
-        component: HostAnEvent
-    },
-    {
-        path: "/people-leadership",
-        component: PeopleLeadership
-    },
-    {
-        path: "/community-development",
-        component: CommunityDevelopment
-    },{
-        path: "/design-develop",
-        component: DesignDevelop
-    },{
-        path: "/market-research-validation",
-        component: MarketResearchValidation
-    },{
-        path: "/product-design",
-        component: ProductDesign
-    },{
-        path: "/product-development",
-        component: ProductDevelopment
-    },
-    {
-        path: "/program-driven-marketing",
-        component: ProgramDrivenMarketing
-    },
-    {
-        path: "/strategy-advisory",
-        component: StrategyAdvisory
-    },
-    {
-        path: "/branding",
-        component: Branding
-    },
-    {
-        path: "/community",
-        component: Community
-    },
-    {
-        path: "/about-agency",
-        component: AboutAgency
-    },
-    {
-        path: "/our-partners",
-        component: OurPartners
-    },
-    {
-        path: "/product-testing-team",
-        component: ProductTestingTeam
-    },
-    {
-        path: "/start-up-smart-packages",
-        component: StartUpSmart
-    },
-    {
-        path: "/expertise",
-        component: Expertise
-    },
-    {
-        path: "/privacy",
-        component: PrivacyPolicy
-    },
-    {
-        path: "/terms",
-        component: TermsAndConditions
-    },
-    {
-        path: "/upcoming-events",
-        component: UpcomingEvents
-    },
-    {
-        path: "/portfolio",
-        component: Portfolio
-    },
-    {
-        path: "/careers",
-        component: Careers
-    },
+  {
+    path: "/opportunities",
+    component: Opportunities,
+  },
 
-    {
-        path: "/opportunities",
-        component: Opportunities
-    },
+  {
+    path: "/other",
+    component: Other,
+  },
 
-    {
-        path: "/other",
-        component: Other
-    },
+  {
+    path: "/community-manager",
+    component: CommunityManager,
+  },
+  {
+    path: "/copywriter",
+    component: Copywriter,
+  },
+  {
+    path: "/designer",
+    component: Designer,
+  },
+  {
+    path: "/email-marketing",
+    component: EmailMarketing,
+  },
+  {
+    path: "/event-coordinator",
+    component: EventCoordinator,
+  },
+  {
+    path: "/illustrator-graphic",
+    component: IllustratorGraphic,
+  },
+  {
+    path: "/frontend-developer",
+    component: FrontendDeveloper,
+  },
+  {
+    path: "/partnership-manager",
+    component: PartnershipManager,
+  },
+  {
+    path: "/podcast-host",
+    component: PodcastHost,
+  },
+  {
+    path: "/photographer",
+    component: Photographer,
+  },
+  {
+    path: "/videographer",
+    component: Videographer,
+  },
+  {
+    path: "/lead-infrastructure-engineer",
+    component: LeadInfrastructureEngineer,
+  },
+  {
+    path: "/job-offer/:id",
+    component: JobOffer,
+  },
+  {
+    path: "/social-media-manager",
+    component: SocialMediaManager,
+  },
 
-    {
-        path: "/community-manager",
-        component: CommunityManager
-    },
-    {
-        path: "/copywriter",
-        component: Copywriter
-    },
-    {
-        path: "/designer",
-        component: Designer
-    },
-    {
-        path: "/email-marketing",
-        component: EmailMarketing
-    },
-    {
-        path: "/event-coordinator",
-        component: EventCoordinator
-    },
-    {
-        path: "/illustrator-graphic",
-        component: IllustratorGraphic
-    },
-    {
-        path: "/frontend-developer",
-        component: FrontendDeveloper
-    },
-    {
-        path: "/partnership-manager",
-        component: PartnershipManager
-    },
-    {
-        path: "/podcast-host",
-        component: PodcastHost
-    },
-    {
-        path: "/photographer",
-        component: Photographer
-    },
-    {
-        path: "/videographer",
-        component: Videographer
-    },
-    {
-        path: "/lead-infrastructure-engineer",
-        component: LeadInfrastructureEngineer
-    },
-    {
-        path: "/job-offer/:id",
-        component: JobOffer
-    },
-    {
-        path: "/social-media-manager",
-        component: SocialMediaManager
-    },
-
-    {
-        path: "/youtube-host",
-        component: YouTubeHost
-    },
-    {
-        path: "/backend-developer",
-        component: BackendDeveloper
-    },
-    {
-        path: "/graphic-designer",
-        component: GraphicDesigner
-    },
-    // {
-    //     path: "/",
-    //     component: Opportunities
-    // },
-    {
-        path: "/",
-        component: AboutMoken
-    },
-
-
-
+  {
+    path: "/youtube-host",
+    component: YouTubeHost,
+  },
+  {
+    path: "/backend-developer",
+    component: BackendDeveloper,
+  },
+  {
+    path: "/graphic-designer",
+    component: GraphicDesigner,
+  },
+  // {
+  //     path: "/",
+  //     component: Opportunities
+  // },
+  {
+    path: "/",
+    component: AboutMoken,
+  },
 ];
 const routsWithoutHeaderFooter = [
-    {
-        path: "/menuscreen",
-        component: MenuScreen
-    },
-    {
-        path: "/innovation-committee",
-        component: InnovationCommittee
-    },
+  {
+    path: "/menuscreen",
+    component: MenuScreen,
+  },
+  {
+    path: "/innovation-committee",
+    component: InnovationCommittee,
+  },
 ];
 
-
-
-
-
-
 function App() {
-  const {width} = useWindowDimensions()
+  const { width } = useWindowDimensions();
 
   const [isOpen, setIsOpen] = useState(false);
 
-    useEffect( () => {
-        AOS.init(
-            {
-                once: true
-            }
-        );
-    }, [])
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
 
   return (
-          <Router>
-              <ScrollToTop/>
-              <div style={{minHeight: '100vh'}}>
-                  <Switch>
-                      {
-                          routsWithoutHeaderFooter.map((route, index) => {
-                              return (
-                                      <Route
-                                          key={'routsWithoutHeaderFooter' + index}
-                                          path={route.path}
-                                          children={<route.component />}
-                                          // render={props => (
-                                          //     // pass the sub-routes down to keep nesting
-                                          //     <route.component {...props} />
-                                          // )}
-                                      />
-                              )
-                          })
-                      }
-                      {
-                          routsWithHeaderFooter.map((route, index) => {
-                              return (
-
-                                      <Route
-                                          key={'routsWithHeaderFooter' + index}
-                                          path={route.path}
-                                          // children={<route.component />}
-                                          children={props => {
-                                              // pass the sub-routes down to keep nesting
-                                              return (
-                                                  <>
-                                                      <Header isOpen={isOpen} setIsOpen={setIsOpen}/>
-                                                    <route.component {...props} />
-                                                      <Footer isOpen={isOpen} setIsOpen={setIsOpen}/>
-                                                  </>
-                                              )
-                                          }}
-                                      />
-                              )
-                          })
-                      }
-
-
-                  </Switch>
-            </div>
-        </Router>
-
+    <Router>
+      <ScrollToTop />
+      <div style={{ minHeight: "100vh" }}>
+        <Switch>
+          {routsWithoutHeaderFooter.map((route, index) => {
+            return (
+              <Route
+                key={"routsWithoutHeaderFooter" + index}
+                path={route.path}
+                children={<route.component />}
+                // render={props => (
+                //     // pass the sub-routes down to keep nesting
+                //     <route.component {...props} />
+                // )}
+              />
+            );
+          })}
+          {routsWithHeaderFooter.map((route, index) => {
+            return (
+              <Route
+                key={"routsWithHeaderFooter" + index}
+                path={route.path}
+                // children={<route.component />}
+                children={(props) => {
+                  // pass the sub-routes down to keep nesting
+                  return (
+                    <>
+                      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+                      <route.component {...props} />
+                      <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
+                    </>
+                  );
+                }}
+              />
+            );
+          })}
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
