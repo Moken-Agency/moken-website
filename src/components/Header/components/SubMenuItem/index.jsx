@@ -28,7 +28,7 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
         <Text
           size={".8vw"}
           textStyles={{
-            letterSpacing: 2,
+            letterSpacing: 3,
             textAlign: "initial",
             whiteSpace: "pre",
             // color: hoveredIndex !== null && hoveredIndex !== index ? 'rgba(0,0,0,.15)' : 'black'
