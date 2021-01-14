@@ -11,7 +11,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px 0;
+      padding: 23px 0;
       background-color: black;
       .innovation-committee-go-back-transition-block {
         display: flex;
@@ -34,7 +34,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 32px 80px;
+      padding: 22px 78px 22px 80px;
       @media screen and (max-width: 600px){
         padding: 25px 0 50px 60px;
       }
@@ -56,7 +56,7 @@
         }
       }
       img {
-        height: 65px;
+        height: 50px;
         @media only screen and (max-width: 600px) {
           height: 42px;
         }
@@ -65,13 +65,16 @@
   }
 
   main {
-    padding: 68px 188px;
+    padding: 68px 170px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     @media only screen and (max-width: 600px) {
       padding: 47px 43px;
     }
       .innovation-committee-main-container {
         margin-right: 170px;
+        width: 550px;
         @media only screen and (max-width: 600px) {
           margin-right: 0;
         }

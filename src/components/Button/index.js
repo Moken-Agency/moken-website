@@ -8,7 +8,7 @@ import textTypes from "../../constans/text-types";
 
 //color = orange-bordered | coral | blue | black | white
 const Button = ({
-  type = "",
+  type = "default",
   backgroundColor = "black",
   textColor = "white",
   title = "",
@@ -36,6 +36,15 @@ const Button = ({
     },
   };
 
+  const textStyles = {
+    innovation: {
+      letterSpacing: 0
+    },
+    default: {
+      letterSpacing: 4
+    }
+  }
+
   return (
     <button
       data-aos="fade-in"
@@ -52,8 +61,8 @@ const Button = ({
         color={colors[textColor]}
         size={size}
         mobSize={mobSize}
-        containerStyles={{ justifyContent: "center" }}
-        textStyles={{ whiteSpace: "nowrap" }}
+        containerStyles={{ justifyContent: "center",  }}
+        textStyles={{ whiteSpace: "nowrap", ...textStyles[type] }}
         type={textType}
       >
         {title}

@@ -11,15 +11,18 @@ import InnovationMobHeaderImage from "../../images/innovation-mob-header.svg";
 import InnovationMobFooterImage from "../../images/innovation-mob-footer.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ImageBlock from "../../components/ImageBlock";
+import {useHistory} from "react-router-dom";
 
 const InnovationCommittee = () => {
+  const history = useHistory();
+
   const { isMobile } = useWindowDimensions();
 
   return (
     <div className={"innovation-committee-container"}>
       <header>
         <div className={"innovation-committee-go-back-container"}>
-          <div className={"innovation-committee-go-back-transition-block"}>
+          <div className={"innovation-committee-go-back-transition-block"} onClick={() => history.push('')}>
             <Text
               className={"innovation-committee-go-back-text"}
               color={"white"}
@@ -105,13 +108,13 @@ const InnovationCommittee = () => {
             across the global startup ecosystem.
           </Text>
 
-          <Text
-            size={12}
-            type={"extraBoldDemo"}
-            className={"innovation-committee-main-small-text"}
-          >
-            Committee Applications Now Open
-          </Text>
+          {/*<Text*/}
+          {/*  size={12}*/}
+          {/*  type={"extraBoldDemo"}*/}
+          {/*  className={"innovation-committee-main-small-text"}*/}
+          {/*>*/}
+          {/*  Committee Applications Now Open*/}
+          {/*</Text>*/}
 
           <div className={"innovation-committee-btn-container"}>
             <Button
