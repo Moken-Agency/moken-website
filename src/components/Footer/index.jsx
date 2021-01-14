@@ -22,7 +22,7 @@ const textStyle = {
 const containerStyles = {
   marginLeft: "2vw",
   marginRight: "2vw",
-  fontSize: 12,
+
   cursor: "pointer",
 };
 
@@ -100,10 +100,10 @@ const Footer = ({ isOpen, setIsOpen }) => {
             <Text
               onClick={() => history.push("/privacy")}
               type={"semiBold"}
-              size={"0.55vw"}
+              size={12}
               color={"white"}
               mobSize={10}
-              textStyles={{ letterSpacing: 2.33 }}
+              textStyles={{ letterSpacing: 4 }}
               containerStyles={containerStyles}
             >
               PRIVACY POLICY
@@ -111,10 +111,10 @@ const Footer = ({ isOpen, setIsOpen }) => {
             <Text
               onClick={() => history.push("/terms")}
               type={"semiBold"}
-              size={"0.7vw"}
+              size={12}
               color={"white"}
               mobSize={10}
-              textStyles={{ letterSpacing: 2.33 }}
+              textStyles={{ letterSpacing: 4 }}
               containerStyles={containerStyles}
             >
               TERMS & CONDITIONS

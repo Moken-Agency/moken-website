@@ -81,6 +81,7 @@ const ForFounders = () => {
         }
         options={options.founders}
         widthItem={"30vw"}
+        type={"big"}
       />
 
       <TwoColumnsHugeInfo

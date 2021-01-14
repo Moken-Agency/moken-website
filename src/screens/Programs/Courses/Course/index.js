@@ -8,24 +8,26 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
     <div className={"course-container"}>
       <img src={url} data-aos="fade-in" />
       <section className={"course-component-info-block"}>
-        <Text
-          animationType={"fade-in"}
-          size={35}
-          className={"course-component-first"}
-          mobSize={20}
-          type={"thin"}
-        >
-          {title}
-        </Text>
-        <Text
-          animationType={"fade-in"}
-          size={18}
-          mobSize={14}
-          className={"course-component-second"}
-          type={"light"}
-        >
-          {description}
-        </Text>
+        <div>
+          <Text
+            animationType={"fade-in"}
+            size={35}
+            className={"course-component-first"}
+            mobSize={20}
+            type={"thin"}
+          >
+            {title}
+          </Text>
+          <Text
+            animationType={"fade-in"}
+            size={18}
+            mobSize={14}
+            className={"course-component-second"}
+            type={"light"}
+          >
+            {description}
+          </Text>
+        </div>
         <Button
           title={btnTitle}
           backgroundColor={"black"}

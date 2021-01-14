@@ -8,6 +8,7 @@ const JobOffer = ({ match }) => {
     <PageGenerator
       data={options[id]}
       containerStyles={{ paddingBottom: "12vw" }}
+      descriptionOptions={options.descriptionOptions}
     />
   );
 };

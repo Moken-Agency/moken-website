@@ -5,7 +5,7 @@ import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 const styles = {
   mainTitle: {
     color: "white",
-    // letterSpacing: 4
+    letterSpacing: 4,
   },
   routs: {
     color: "white",
@@ -16,7 +16,7 @@ const styles = {
 const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
   const { isMobile } = useWindowDimensions();
   return (
-    <div>
+    <div style={{ marginRight: 150 }}>
       <Text
         size={20}
         mobSize={16}
@@ -34,7 +34,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
           <Text
             size={18}
             textStyles={styles.routs}
-            containerStyles={{ marginBottom: 10, marginRight: 100 }}
+            containerStyles={{ marginBottom: 15 }}
             type={"light"}
             key={"MenuScreenBottomColumnRouts" + index}
           >

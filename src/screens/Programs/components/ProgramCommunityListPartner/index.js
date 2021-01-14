@@ -4,6 +4,7 @@ import SubmitYourResume from "../../../../components/SubmitYourResume";
 import React from "react";
 import "./index.scss";
 import Title from "../../../../components/Title";
+import BigDataSquares from "../../../../components/BigDataSquares";
 
 const ProgramCommunityListPartner = ({
   title = "",
@@ -12,6 +13,8 @@ const ProgramCommunityListPartner = ({
   onClick,
   AdditionalComponent,
   widthItem = 70 / options.length + "vw",
+  itemContainerStyles = {},
+  type = "",
 }) => {
   return (
     <>
@@ -32,10 +35,19 @@ const ProgramCommunityListPartner = ({
         <div className={"labs-join-partners-list"}>
           {options.map((option) => {
             return (
-              <CommunityPartner
-                {...option}
-                containerStyles={{ width: widthItem }}
-              />
+              <>
+                {type === "big" ? (
+                  <BigDataSquares {...option} />
+                ) : (
+                  <CommunityPartner
+                    {...option}
+                    containerStyles={{
+                      width: widthItem,
+                      ...itemContainerStyles,
+                    }}
+                  />
+                )}
+              </>
             );
           })}
         </div>

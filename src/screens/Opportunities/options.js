@@ -2,7 +2,11 @@ import careersOptions from "../Careers/options";
 
 export default [
   ...careersOptions.opportunities,
-
+  {
+    title: "MOKEN AGENCY",
+    subtitle: "Managing Director of Events",
+    route: "/job-offer/managing-director-of-events",
+  },
   {
     title: "MOKEN AGENCY",
     subtitle: "Videographer",

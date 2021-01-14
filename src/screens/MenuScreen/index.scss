@@ -7,14 +7,16 @@
   z-index: 1;
   min-height: 100vh;
   .menu-screen-top-columns-container {
-    padding: 76px 135px 90px 135px;
+    padding: 20px 135px 50px 135px;
     display: flex;
   }
   .menu-screen-top-column-divider {
-    width: 90vw;
+    width: 88vw;
     height: 1px;
     background-color: white;
     margin: 0 auto;
+    position: relative;
+    left: -2vw;
   }
 
   .menu-screen-bottom-columns-container {
@@ -28,7 +30,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding: 1vw;
+      padding: 2.8vw 1.6vw;
       background-color: white;
       position: absolute;
       right: 0;
@@ -36,8 +38,8 @@
       a {
         cursor: pointer;
         img {
-          height: 1.5vw;
-          margin: 1vw;
+          height: 2.1vw;
+          padding: 1vw;
         }
       }
     }

@@ -14,12 +14,16 @@ const CommunityPartner = ({
     <div className={"community-partner-container"} style={containerStyles}>
       <div className={"community-partner-info-container"}>
         <Text
-          size={"2vw"}
+          size={39}
           type={"thin"}
           animationType={"fade-in"}
           mobSize={25}
-          containerStyles={{ marginBottom: 74 }}
-          textStyles={{ whiteSpace: "break-spaces", ...titleStyles }}
+          containerStyles={{ marginBottom: 45 }}
+          textStyles={{
+            whiteSpace: "break-spaces",
+            ...titleStyles,
+            lineHeight: "35px",
+          }}
         >
           {title}
         </Text>

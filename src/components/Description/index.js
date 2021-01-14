@@ -9,12 +9,13 @@ const Description = ({
   size = 12,
   mobSize = size,
   type = "light",
+  withoutMargin = false,
 }) => {
   return (
     <>
       {description.length ? (
         <div className={`description-container ${className}`}>
-          {description.map(({ title }, index) => {
+          {description.map(({ title, containerStyles = [] }, index) => {
             return (
               <Text
                 animationType={"fade-in"}
@@ -23,6 +24,10 @@ const Description = ({
                 key={title + index}
                 type={type}
                 textStyles={{ lineHeight: "35px" }}
+                containerStyles={{
+                  marginBottom: withoutMargin ? 0 : "1.7vw",
+                  ...containerStyles,
+                }}
                 color={color}
               >
                 {title}

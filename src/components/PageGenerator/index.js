@@ -12,7 +12,11 @@ import TitleContainerWithImg from "../TitleContainerWithImg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import JobOfferTitle from "../JobOfferTitle";
 
-const PageGenerator = ({ data, containerStyles = {} }) => {
+const PageGenerator = ({
+  data,
+  containerStyles = {},
+  descriptionOptions = {},
+}) => {
   console.log({ data });
   const { isMobile } = useWindowDimensions();
 
@@ -76,6 +80,7 @@ const PageGenerator = ({ data, containerStyles = {} }) => {
                 mobSize={16}
                 description={description}
                 size={20}
+                {...descriptionOptions}
               />
               <Submit submitForm={submit} />
 

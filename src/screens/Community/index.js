@@ -140,7 +140,8 @@ const Community = () => {
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
         options={options.founders}
-        widthItem={"30vw"}
+        // widthItem={"25vw"}
+        itemContainerStyles={{ width: "25vw", height: "25vw" }}
       />
 
       <EmailForm withForm />

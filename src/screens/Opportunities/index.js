@@ -57,7 +57,6 @@ const Opportunities = () => {
       </div>
 
       <Title
-        size={"1vw"}
         title={"UNLIMITED OPPORTUNITIES"}
         containerStyles={{ marginTop: "14vw" }}
       />

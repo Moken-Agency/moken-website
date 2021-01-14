@@ -22,16 +22,6 @@ export default {
       ],
     },
     {
-      title: "LEARN",
-      routs: [
-        { title: "Business Resources", route: "" },
-        { title: "Private Coaching", route: "" },
-        { title: "Apply to MokenLabs", route: "" },
-        { title: "TBD", route: "" },
-        { title: "TBD", route: "" },
-      ],
-    },
-    {
       title: "EXPLORE",
       routs: [
         { title: "Educate the Next Generation", route: "" },

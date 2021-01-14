@@ -3,7 +3,6 @@
 }
 
 .about-moken-container {
-  padding-bottom: 155px;
   .about-moken-header {
     padding: 0 560px 0 440px;
     margin-bottom: 142px;
@@ -75,12 +74,15 @@
   .about-moken-video-section {
     position: relative;
     //height: 750px;
-    background-color: #a7a7a7;
+    //background-color: #a7a7a7;
     margin-bottom: 178px;
+    display: flex;
+    justify-content: center;
 
     video {
       //position: absolute;
-      width: 100vw;
+      //width: 100vw;
+      height: 80vh;
     }
     @media only screen and (max-width: 600px) {
       //display: flex;

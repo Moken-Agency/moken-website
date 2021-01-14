@@ -17,6 +17,9 @@ export default [
         title: `We're looking for three innovative videographers based in Toronto, Vancouver, and Winnipeg eager 
         to create the unthinkable while getting in on the ground floor of a rapidly growing company and community.
          This is a chance to join a startup community with traction while learning all the ins and outs of new media.`,
+        containerStyles: {
+          marginBottom: "1.7vw",
+        },
       },
       {
         title: `We are seeking Videographers to work independently and with our team through producing and editing 

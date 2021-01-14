@@ -1,8 +1,7 @@
 .connect-with-us-container {
-  margin-bottom: 272px;
   header {
     display: flex;
-    padding: 0 0 0 202px;
+    padding: 0 0 0 170px;
     margin-bottom: 184px;
     position: relative;
     @media screen and (max-width: 600px) {
@@ -14,14 +13,14 @@
       margin-right: 230px;
       display: flex;
       flex-direction: column;
-      padding-bottom: 100px;
+      padding-bottom: 40px;
       justify-content: flex-end;
       @media screen and (max-width: 600px) {
         margin-right: 0;
       }
     }
     img {
-      height: 852px;
+      height: 750px;
       width: 100%;
       background-color: grey;
       @media screen and (max-width: 600px) {
@@ -30,7 +29,7 @@
     }
   }
   .connect-with-me-about-container {
-    padding: 0 14vw;
+    padding: 0 9vw;
     margin-bottom: 186px;
     @media screen and (max-width: 600px) {
       padding: 0 43px;
@@ -47,12 +46,14 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 110px;
+      padding-left: 1vw;
       @media screen and (max-width: 600px) {
         justify-content: space-between;
         margin-bottom: 70px;
       }
     }
     form {
+      padding: 0 2.1vw;
       .form-container {
         display: flex;
         justify-content: space-between;
@@ -81,3 +82,4 @@
     }
   }
 }
+

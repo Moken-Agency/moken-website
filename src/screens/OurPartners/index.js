@@ -55,10 +55,12 @@ const OurPartners = () => {
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
         options={involved}
+        itemContainerStyles={{}}
         AdditionalComponent={() => {
           return (
             <div className={"submit-container"}>
               <SubmitYourResume
+                size={22}
                 title={"Expert Directory Coming Soon"}
                 color={"black"}
               />

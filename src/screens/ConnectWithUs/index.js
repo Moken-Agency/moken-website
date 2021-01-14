@@ -62,11 +62,14 @@ const ConnectWithUs = () => {
       </header>
 
       <section className={"connect-with-me-about-container"}>
-        {/*<Text className={'connect-with-me-about-title'} type={'semiBold'} size={16}>I’M INTERESTED IN HEARING MORE ABOUT,</Text>*/}
-        <Title
-          title={"I’M INTERESTED IN HEARING MORE ABOUT,"}
+        <Text
           className={"connect-with-me-about-title"}
-        />
+          type={"semiBold"}
+          size={16}
+        >
+          I’M INTERESTED IN HEARING MORE ABOUT,
+        </Text>
+
         <div className={"connect-with-me-about-interests"}>
           {options.interests.map((interest, index) => {
             return (
@@ -82,14 +85,15 @@ const ConnectWithUs = () => {
 
         <form>
           <div className={"form-container"}>
-            <Input placeholder={"Your Name"} width={"30vw"} />
-            <Input placeholder={"Your Company"} width={"30vw"} />
+            <Input placeholder={"Your Name"} width={"37.5vw"} size={20} />
+            <Input placeholder={"Your Company"} width={"37.5vw"} size={20} />
           </div>
           <div className={"form-container"}>
-            <Input placeholder={"Email"} width={"30vw"} />
-            <Input placeholder={"Subject"} width={"30vw"} />
+            <Input placeholder={"Email"} width={"37.5vw"} size={20} />
+            <Input placeholder={"Subject"} width={"37.5vw"} size={20} />
           </div>
           <Input
+            size={20}
             placeholder={"Your Message"}
             inputType={"textarea"}
             resize={"vertical"}

@@ -1,5 +1,5 @@
 .course-container {
-  width: 23vw;
+  width: 24vw;
   position: relative;
   -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.35);
@@ -21,17 +21,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .course-component-first {
-      margin-bottom: 22px;
-
-      @media screen and (max-width: 600px){
-        margin-bottom: 12px;
-      }
-    }
-    .course-component-second {
-      margin-bottom: 49px;
-      @media screen and (max-width: 600px){
+    div {
+      .course-component-first {
         margin-bottom: 22px;
+
+        @media screen and (max-width: 600px){
+          margin-bottom: 12px;
+        }
+      }
+      .course-component-second {
+        margin-bottom: 49px;
+        @media screen and (max-width: 600px){
+          margin-bottom: 22px;
+        }
       }
     }
   }

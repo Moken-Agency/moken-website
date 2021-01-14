@@ -9,6 +9,7 @@ const styles = {
   },
   description: {
     color: "white",
+    lineHeight: "29px",
   },
   subTitle: {
     color: "white",

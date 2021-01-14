@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Text from "../../components/Text";
 import Title from "../../components/Title";
 import "./styles.scss";
@@ -11,9 +11,13 @@ import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ImageBlock from "../../components/ImageBlock";
+import ReactPlayer from "react-player";
+import img from "../../images/innovation-mob-header.svg";
 
 const AboutMoken = () => {
   const { isMobile } = useWindowDimensions();
+
+  const [playing, setPlaying] = useState(false);
   return (
     <div className={"about-moken-container"}>
       <HeaderTitle
@@ -99,32 +103,65 @@ const AboutMoken = () => {
       </section>
 
       <section className={"about-moken-video-section"}>
-        <div className={"about-moken-video-info-block"}>
-          <Text
-            className={"about-moken-video-info-block-first-title"}
-            size={16}
-            animationType={"fade-up"}
-            type={"semiBold"}
-          >
-            THIS IS WHERE THE VIDEO TITLE GOES
-          </Text>
-          <Text
-            size={20}
-            type={"light"}
-            animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-            mobSize={16}
-          >
-            This is where the video CTA should go to outline the video content.
-          </Text>
-        </div>
-        <video
-          autoPlay
-          muted
-          src={
-            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        {/*<div className={"about-moken-video-info-block"}>*/}
+        {/*  <Text*/}
+        {/*    className={"about-moken-video-info-block-first-title"}*/}
+        {/*    size={16}*/}
+        {/*    animationType={"fade-up"}*/}
+        {/*    type={"semiBold"}*/}
+        {/*  >*/}
+        {/*    THIS IS WHERE THE VIDEO TITLE GOES*/}
+        {/*  </Text>*/}
+        {/*  <Text*/}
+        {/*    size={20}*/}
+        {/*    type={"light"}*/}
+        {/*    animationType={"fade-up"}*/}
+        {/*    textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}*/}
+        {/*    mobSize={16}*/}
+        {/*  >*/}
+        {/*    This is where the video CTA should go to outline the video content.*/}
+        {/*  </Text>*/}
+        {/*</div>*/}
+        <ReactPlayer
+          height={"80vh"}
+          width={"100vw"}
+          controls
+          playing={playing}
+          playIcon={
+            <button
+              onClick={() => setPlaying(!playing)}
+              style={{
+                width: 135,
+                height: 135,
+                backgroundColor: "white",
+                borderRadius: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div
+                style={{
+                  width: 0,
+                  height: 0,
+                  "border-style": "solid",
+                  "border-width": "7px 0 7px 12.1px",
+                  "border-color": "transparent transparent transparent #000000",
+                }}
+              />
+            </button>
           }
+          light="https://previews.123rf.com/images/illdirection/illdirection1603/illdirection160300030/55596780-path-with-landscape-background.jpg"
+          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
         />
+        {/*  <video*/}
+        {/*  // autoPlay*/}
+        {/*    controls*/}
+        {/*  muted*/}
+        {/*  src={*/}
+        {/*    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"*/}
+        {/*  }*/}
+        {/*/>*/}
       </section>
 
       <TwoColumnsHugeInfo

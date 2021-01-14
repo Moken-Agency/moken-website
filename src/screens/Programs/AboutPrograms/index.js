@@ -16,6 +16,8 @@ import OurPartnersComponent from "../components/OurPartnersComponent";
 import EmailForm from "../../../components/EmailForm";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import AboutProgram from "./AboutProgram";
+import BigDataSquares from "../../../components/BigDataSquares";
+import Button from "../../../components/Button";
 
 const AboutPrograms = () => {
   const { isMobile } = useWindowDimensions();
@@ -88,17 +90,12 @@ const AboutPrograms = () => {
             founders and startups, globally.
           </Text>
           <div className={"about-programs-list"}>
-            {options.programs.map((program, index) => {
-              return (
-                <CommunityPartner
-                  {...program}
-                  containerStyles={{
-                    width: 120 / options.programs.length + "vw",
-                    marginBottom: isMobile ? 100 : "5vw",
-                  }}
-                />
-              );
-            })}
+            {options.programs.map((data, index) => (
+              <BigDataSquares
+                key={"BigDataSquares programmes" + index}
+                {...data}
+              />
+            ))}
           </div>
         </div>
       </section>

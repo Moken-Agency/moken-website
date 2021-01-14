@@ -70,7 +70,7 @@
   .opportunities-form-container {
     display: flex;
     justify-content: space-between;
-    padding: 10vw;
+    padding: 0 10vw 10vw 10vw;
     @media screen and (max-width: 600px){
       flex-direction: column-reverse;
     }

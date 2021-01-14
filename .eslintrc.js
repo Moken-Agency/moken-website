@@ -7,18 +7,16 @@ module.exports = {
   extends: "eslint:recommended",
   parserOptions: {
     ecmaVersion: 2018,
-    "sourceType": "module"
-
+    sourceType: "module",
   },
   rules: {
     "no-console": "error",
-    "no-unused-vars" : 2,
-    "no-undef" : 2
+    "no-unused-vars": 2,
+    "no-undef": 2,
   },
-  "ecmaFeatures": {
-    "modules": true,
-    "spread" : true,
-    "restParams" : true
+  ecmaFeatures: {
+    modules: true,
+    spread: true,
+    restParams: true,
   },
-
 };

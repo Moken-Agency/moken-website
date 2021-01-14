@@ -78,6 +78,7 @@ const ForStudents = () => {
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
+        type={"big"}
         options={options.programs}
       />
 

@@ -19,6 +19,9 @@ export default {
     size: 75,
     mobSize: 55,
   },
+  descriptionOptions: {
+    withoutMargin: true,
+  },
   videographer,
   "social-media-specialist": socialMediaSpecialist,
   "email-marketing-specialist": emailMarketingSpecialist,

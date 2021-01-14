@@ -1,5 +1,4 @@
 .about-programs-container {
-  padding-bottom: 145px;
   .about-programs-partnerships-container {
     display: flex;
     justify-content: space-between;
@@ -29,16 +28,16 @@
       }
     }
     .about-programs-list {
-      //display: flex;
+      display: flex;
       flex-wrap: wrap;
       padding: 0 14vw;
       margin-bottom: 184px;
-      display: grid;
+      //display: grid;
       //grid-template-columns: 178px 178px 178px;
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 60px;
-      grid-column-gap: 60px;
-      justify-content: center;
+      //grid-template-columns: 1fr 1fr;
+      //grid-row-gap: 60px;
+      //grid-column-gap: 60px;
+      justify-content: space-between;
       @media screen and (max-width: 600px) {
         padding: 0 43px;
         grid-template-columns: 1fr;

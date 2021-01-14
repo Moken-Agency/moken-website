@@ -88,6 +88,7 @@ const ForBrands = () => {
         }
         options={options.programs}
         widthItem={"30vw"}
+        type={"big"}
       />
 
       <EmailForm withForm />
