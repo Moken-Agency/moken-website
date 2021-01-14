@@ -22,7 +22,7 @@ const InnovationCommittee = () => {
     <div className={"innovation-committee-container"}>
       <header>
         <div className={"innovation-committee-go-back-container"}>
-          <div className={"innovation-committee-go-back-transition-block"} onClick={() => history.push('')}>
+          <div className={"innovation-committee-go-back-transition-block"} onClick={() => history.push('/start-up-smart-packages')}>
             <Text
               className={"innovation-committee-go-back-text"}
               color={"white"}
