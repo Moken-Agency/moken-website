@@ -103,29 +103,28 @@ const AboutMoken = () => {
       </section>
 
       <section className={"about-moken-video-section"}>
-        {/*<div className={"about-moken-video-info-block"}>*/}
-        {/*  <Text*/}
-        {/*    className={"about-moken-video-info-block-first-title"}*/}
-        {/*    size={16}*/}
-        {/*    animationType={"fade-up"}*/}
-        {/*    type={"semiBold"}*/}
-        {/*  >*/}
-        {/*    THIS IS WHERE THE VIDEO TITLE GOES*/}
-        {/*  </Text>*/}
-        {/*  <Text*/}
-        {/*    size={20}*/}
-        {/*    type={"light"}*/}
-        {/*    animationType={"fade-up"}*/}
-        {/*    textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}*/}
-        {/*    mobSize={16}*/}
-        {/*  >*/}
-        {/*    This is where the video CTA should go to outline the video content.*/}
-        {/*  </Text>*/}
-        {/*</div>*/}
+        <div className={"about-moken-video-info-block"}>
+          <Text
+            className={"about-moken-video-info-block-first-title"}
+            size={16}
+            animationType={"fade-up"}
+            type={"semiBold"}
+          >
+            THIS IS WHERE THE VIDEO TITLE GOES
+          </Text>
+          <Text
+            size={20}
+            type={"light"}
+            animationType={"fade-up"}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            mobSize={16}
+          >
+            This is where the video CTA should go to outline the video content.
+          </Text>
+        </div>
         <ReactPlayer
           height={"80vh"}
           width={"100vw"}
-          controls
           playing={playing}
           playIcon={
             <button

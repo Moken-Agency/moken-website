@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import "./index.scss";
 import Text from "../../../Text";
 import { useHistory } from "react-router-dom";
@@ -7,6 +7,9 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
   let history = useHistory();
 
 
+  const returnTextColor = useMemo(() => {
+    return hoveredIndex === null ? '#000' : hoveredIndex === index ? 'rgba(0,0,0,.15)' : 'grey';
+  }, [hoveredIndex, hoveredIndex])
 
 
   return (
@@ -32,7 +35,7 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
           }}
           containerStyles={{ alignItems: "flex-start" }}
           type={"semiBold"}
-          color={hoveredIndex !== null && hoveredIndex !== index ? 'rgba(0,0,0,.15)' : 'grey'}
+          color={returnTextColor}
         >
           {title.toUpperCase()}
         </Text>
