@@ -18,6 +18,7 @@ const MenuItem = ({
   className = "",
 }) => {
   const [hover, setHover] = useState({ isHover: true, color: "#000" });
+  const [hoveredIndex, setHoveredIndex] = useState(null)
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
   const onMouseEnter = () => {
@@ -72,6 +73,9 @@ const MenuItem = ({
                 title={title}
                 dividerColor={dividerColor}
                 route={route}
+                setHoveredIndex={setHoveredIndex}
+                hoveredIndex={hoveredIndex}
+                index={index}
               />
             );
           })}

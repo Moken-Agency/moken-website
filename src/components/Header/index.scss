@@ -1,8 +1,8 @@
-
 .menu-container {
   display: flex;
   flex-direction: row;
   background-color: white;
+  z-index: 1;
 }
 .bar-container {
   display: flex;
