@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moken-website/static/css/main.1d9527c8.chunk.css",
-    "main.js": "/moken-website/static/js/main.ce0499ce.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.ce0499ce.chunk.js.map",
+    "main.js": "/moken-website/static/js/main.38ba361e.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.38ba361e.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
     "static/css/2.d2b3272e.chunk.css": "/moken-website/static/css/2.d2b3272e.chunk.css",
     "static/js/2.74d629a3.chunk.js": "/moken-website/static/js/2.74d629a3.chunk.js",
     "static/js/2.74d629a3.chunk.js.map": "/moken-website/static/js/2.74d629a3.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.a096b4c68212acaaa9fbd5083ce31d24.js": "/moken-website/precache-manifest.a096b4c68212acaaa9fbd5083ce31d24.js",
+    "precache-manifest.086c0c3a411188d5e16d4c681812c710.js": "/moken-website/precache-manifest.086c0c3a411188d5e16d4c681812c710.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.d2b3272e.chunk.css.map": "/moken-website/static/css/2.d2b3272e.chunk.css.map",
     "static/css/main.1d9527c8.chunk.css.map": "/moken-website/static/css/main.1d9527c8.chunk.css.map",
@@ -52,6 +52,6 @@
     "static/css/2.d2b3272e.chunk.css",
     "static/js/2.74d629a3.chunk.js",
     "static/css/main.1d9527c8.chunk.css",
-    "static/js/main.ce0499ce.chunk.js"
+    "static/js/main.38ba361e.chunk.js"
   ]
 }
