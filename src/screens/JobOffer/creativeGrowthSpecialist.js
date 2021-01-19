@@ -31,7 +31,7 @@ export default [
     ],
   },
   {
-    title: "In this role...",
+    title: "In this role",
   },
   {
     description: [

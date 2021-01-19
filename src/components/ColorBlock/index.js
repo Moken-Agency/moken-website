@@ -2,8 +2,8 @@ import Text from "../Text";
 import React from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import "./index.scss";
-import ArrowUpRight from "../../images/arrow-up-right.png";
-import ArrowUpRightWhite from "../../images/arrow-up-right-white.png";
+import ArrowUpRight from "../../images/arrow-top-right-black.png";
+import ArrowUpRightWhite from "../../images/arrrow-top-right-white.png";
 
 //blockType = middle | big
 const ColorBlock = ({

@@ -34,7 +34,7 @@ export default [
     ],
   },
   {
-    title: "In this role...",
+    title: "In this role",
   },
   {
     description: [
@@ -43,195 +43,195 @@ export default [
       },
       {
         title:
-          "You’ll harness your skills to mix social management with content creation to scale a\n" +
+          "- You’ll harness your skills to mix social management with content creation to scale a\n" +
           "variety of social media accounts;",
       },
       {
-        title: `You’ll work directly with the Managing Partner of Moken, Creative Director, and Marketing Teams as well as in many cases a whole group of startup founders and superstars who are next up for changing the world;`,
+        title: `- You’ll work directly with the Managing Partner of Moken, Creative Director, and Marketing Teams as well as in many cases a whole group of startup founders and superstars who are next up for changing the world;`,
       },
       {
-        title: `You’ll develop social media content strategies to increase engagement and visibility across all channels (Facebook, Instagram, LinkedIn, Twitter, YouTube, etc...);`,
+        title: `- You’ll develop social media content strategies to increase engagement and visibility across all channels (Facebook, Instagram, LinkedIn, Twitter, YouTube, etc...);`,
       },
       {
-        title: `Secure backlinks on external websites via direct outreach through social media;`,
+        title: `- Secure backlinks on external websites via direct outreach through social media;`,
       },
       {
-        title: `You’ll be responsible for managing the organic content distributed across all social accounts and platforms;`,
+        title: `- You’ll be responsible for managing the organic content distributed across all social accounts and platforms;`,
       },
       {
-        title: `You’ll manage online social channels by engaging with communities daily to answer and monitor questions;`,
+        title: `- You’ll manage online social channels by engaging with communities daily to answer and monitor questions;`,
       },
       {
-        title: `You’ll identify and escalate social community feedback, issues, and trends for the purpose of improving our followers’ overall brand experience;`,
+        title: `- You’ll identify and escalate social community feedback, issues, and trends for the purpose of improving our followers’ overall brand experience;`,
       },
       {
-        title: `You’ll drive our social recruitment strategy by highlighting the personal and professional achievements of employees and profile key positions with the company;`,
+        title: `- You’ll drive our social recruitment strategy by highlighting the personal and professional achievements of employees and profile key positions with the company;`,
       },
       {
-        title: `You’ll work with fellow marketing leaders to execute on content and advertising initiatives;
+        title: `- You’ll work with fellow marketing leaders to execute on content and advertising initiatives;
 `,
       },
       {
         title:
-          "You’ll be responsible for creating consistent posts targeted at specific audiences and\n" +
+          "- You’ll be responsible for creating consistent posts targeted at specific audiences and\n" +
           "demographics throughout Instagram, Twitter, IGTV, IG Stories, Facebook, and\n" +
           "LinkedIn;",
       },
       {
         title:
-          "You’ll be responsible for creating consistent posts targeted at specific audiences and\n" +
+          "- You’ll be responsible for creating consistent posts targeted at specific audiences and\n" +
           "demographics throughout Instagram, Twitter, IGTV, IG Stories, Facebook, and\n" +
           "LinkedIn;",
       },
       {
         title:
-          "You’ll create and/or manage engaging and informative content via blogs, newsletters,\n" +
+          "- You’ll create and/or manage engaging and informative content via blogs, newsletters,\n" +
           "video and social media while ensuring brand consistency across all channels.",
       },
       {
         title:
-          "You’ll build and engage with our digital community while managing and maintaining\n" +
+          "- You’ll build and engage with our digital community while managing and maintaining\n" +
           "post schedules across each platform;",
       },
       {
         title:
-          "You’ll tweak strategic plans to best ensure success with strengths, company focus,\n" +
+          "- You’ll tweak strategic plans to best ensure success with strengths, company focus,\n" +
           "and ‘thought-leadership’ focuses are aligned;",
       },
       {
         title:
-          "You’ll develop contacts with founders, brands, organizations, and individuals within our target market while determining strategies to further engage and leverage these relationships;",
+          "- You’ll develop contacts with founders, brands, organizations, and individuals within our target market while determining strategies to further engage and leverage these relationships;",
       },
       {
         title:
-          "You’ll be required to stay informed about industry trends to determine the best content for each social platform;",
+          "- You’ll be required to stay informed about industry trends to determine the best content for each social platform;",
       },
       {
         title:
-          "You will gain valuable knowledge into how an entrepreneur, startup, and company with global reach operate on a day-to-day basis.\n",
+          "- You will gain valuable knowledge into how an entrepreneur, startup, and company with global reach operate on a day-to-day basis.\n",
       },
     ],
   },
   {
-    title: `On day one we'll expect you to be...`,
+    title: `On day one we'll expect you to be`,
   },
   {
     description: [
       {
         title:
-          "You’re a lover of all things social media. From IGTV to Twitter to LinkedIn and YouTube, if it’s social media, it's your thing;",
+          "- You’re a lover of all things social media. From IGTV to Twitter to LinkedIn and YouTube, if it’s social media, it's your thing;",
       },
       {
         title:
-          "You’re incredibly knowledgeable in the areas of marketing, as well as experience in public relations, human resources, professional communication, and negotiation;",
+          "- You’re incredibly knowledgeable in the areas of marketing, as well as experience in public relations, human resources, professional communication, and negotiation;",
       },
       {
         title:
-          "You have a take-charge temperament and are tenaciously persuasive;",
+          "- You have a take-charge temperament and are tenaciously persuasive;",
       },
       {
         title:
-          "Your negotiation skills, active listening and time management skills are a strength\n" +
+          "- Your negotiation skills, active listening and time management skills are a strength\n" +
           "and can be seen in your daily activities and interactions;",
       },
       {
         title:
-          "You have complex problem-solving skills and understand the relative costs and\n" +
+          "- You have complex problem-solving skills and understand the relative costs and\n" +
           "benefits as it relates to each potential opportunity presented;",
       },
       {
         title:
-          "You have integrity, you’re independent, and all the while you’re incredibly cooperative",
+          "- You have integrity, you’re independent, and all the while you’re incredibly cooperative",
       },
       {
         title:
-          "You have immense attention to detail, persistence, initiative, and the ability to accept\n" +
+          "- You have immense attention to detail, persistence, initiative, and the ability to accept\n" +
           "criticism, but deal calmly in high-stress situations;",
       },
       {
-        title: "You have a strong understanding of social media platforms;",
+        title: "- You have a strong understanding of social media platforms;",
       },
       {
-        title: "You have excellent writing and editing skills.",
+        title: "- You have excellent writing and editing skills.",
       },
     ],
   },
   {
-    title: "As a person you are...",
+    title: "As a person you are",
   },
   {
     description: [
       {
-        title: "You’re hardworking and motivated;",
+        title: "- You’re hardworking and motivated;",
       },
       {
         title:
-          "You’re a natural-born connector and thrive on building community through digital;",
+          "- You’re a natural-born connector and thrive on building community through digital;",
       },
       {
         title:
-          "You enjoy independent work, but also thrive in a team environment;",
+          "- You enjoy independent work, but also thrive in a team environment;",
       },
       {
         title:
-          "You’re passionate about creating an impact and strive for success in anything you\n" +
+          "- You’re passionate about creating an impact and strive for success in anything you\n" +
           "do;",
       },
       {
         title:
-          "You have a high degree of accountability and understand the importance of leading\n" +
+          "- You have a high degree of accountability and understand the importance of leading\n" +
           "with honesty and integrity;",
       },
       {
         title:
-          "You communicate effectively and voice your opinions when you truly believe in\n" +
+          "- You communicate effectively and voice your opinions when you truly believe in\n" +
           "something but are always looking and listening to alternative opinions, methods, and\n" +
           "suggestions from those around you;",
       },
       {
         title:
-          "You’re confident in yourself but not afraid to ask questions or for help when\n" +
+          "- You’re confident in yourself but not afraid to ask questions or for help when\n" +
           "necessary;",
       },
       {
         title:
-          "You’re not afraid to try new things and never shy away from the unknown;",
+          "- You’re not afraid to try new things and never shy away from the unknown;",
       },
       {
-        title: "You’re up for a challenge and are willing to learn as you go;",
+        title: "- You’re up for a challenge and are willing to learn as you go;",
       },
       {
         title:
-          "You know you might not know everything, but you’re determined to figure it out along\n" +
+          "- You know you might not know everything, but you’re determined to figure it out along\n" +
           "the way;",
       },
       {
         title:
-          "Your attention to detail is an area of strength in which you pride yourself on;",
+          "- Your attention to detail is an area of strength in which you pride yourself on;",
       },
       {
         title:
-          "You’re a people person and know how to navigate your way through a conversation,\n" +
+          "- You’re a people person and know how to navigate your way through a conversation,\n" +
           "even if it may be completely out of your comfort zone;",
       },
       {
         title:
-          "You have no problem picking up the phone, or other method of communication and\n" +
+          "- You have no problem picking up the phone, or other method of communication and\n" +
           "reaching out to whomever is needed to get the job done;",
       },
       {
         title:
-          "You have a strong interest in the entrepreneurship and startup industries;",
+          "- You have a strong interest in the entrepreneurship and startup industries;",
       },
       {
         title:
-          "You understand that not everyone always has an answer for you, but you’re okay figuring it out as you go;",
+          "- You understand that not everyone always has an answer for you, but you’re okay figuring it out as you go;",
       },
       {
-        title: "You’re driven by creating something that you can be proud of;",
+        title: "- You’re driven by creating something that you can be proud of;",
       },
       {
-        title: "You’re focused and heavily value achieving success as a team.",
+        title: "- You’re focused and heavily value achieving success as a team.",
       },
     ],
   },
@@ -242,11 +242,11 @@ export default [
     description: [
       {
         title:
-          "In this role, you will gain the opportunity to establish long term relationships while potentially shaping the future of Moken and startups throughout Canada.",
+          "- In this role, you will gain the opportunity to establish long term relationships while potentially shaping the future of Moken and startups throughout Canada.",
       },
       {
         title:
-          "If successful in your role, you will also be privy to additional bonus incentives in projects and ventures.",
+          "- If successful in your role, you will also be privy to additional bonus incentives in projects and ventures.",
       },
     ],
   },

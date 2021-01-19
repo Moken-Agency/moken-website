@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "../../../../components/Text";
 import useWindowDimensions from "../../../../hooks/useWindowDimensions";
+import './index.scss';
 
 const styles = {
   mainTitle: {
@@ -9,6 +10,7 @@ const styles = {
   },
   routs: {
     color: "white",
+      cursor: 'pointer'
     // letterSpacing: 4
   },
 };
@@ -34,6 +36,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
           <Text
             size={18}
             textStyles={styles.routs}
+            className={'black-menu-bottom-column-item'}
             containerStyles={{ marginBottom: 15 }}
             type={"light"}
             key={"MenuScreenBottomColumnRouts" + index}

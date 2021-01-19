@@ -4,6 +4,11 @@ export default [
   ...careersOptions.opportunities,
   {
     title: "MOKEN AGENCY",
+    subtitle: "Creative Growth Specialist",
+    route: "/job-offer/creative-growth-specialist",
+  },
+  {
+    title: "MOKEN AGENCY",
     subtitle: "Managing Director of Events",
     route: "/job-offer/managing-director-of-events",
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../../../Text";
 import "./index.scss";
-import ArrowUpRight from "../../../../images/arrow-up-right.png";
+import ArrowUpRight from "../../../../images/arrow-top-right-black.png";
 
 const SecondMapItem = ({ title = "", btnTitle = "" }) => {
   return (

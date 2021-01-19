@@ -36,7 +36,7 @@ export default [
     ],
   },
   {
-    title: "Your Day to Day...",
+    title: "Your Day to Day",
   },
   {
     description: [

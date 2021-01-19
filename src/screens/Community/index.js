@@ -4,7 +4,7 @@ import "./index.scss";
 import Title from "../../components/Title";
 import options from "./options";
 import SubmitYourResume from "../../components/SubmitYourResume";
-import ArrowTopRight from "../../images/arrow-up-right.png";
+import ArrowTopRight from "../../images/arrow-top-right-black.png";
 import Swiper from "../../components/Swiper";
 import Explore from "../../components/Explore";
 import CommunityPartner from "../../components/CommunityPartner";

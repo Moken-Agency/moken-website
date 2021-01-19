@@ -143,133 +143,133 @@ export default [
     description: [
       {
         title:
-          "You’ll have 2-4 years industry experience in a specific field of expertise;",
+          "- You’ll have 2-4 years industry experience in a specific field of expertise;",
       },
       {
         title:
-          "You’ll be familiar with startup functionality and the tumultuous day to day operations\n" +
+          "- You’ll be familiar with startup functionality and the tumultuous day to day operations\n" +
           "and well as the challenges that go along with it;",
       },
       {
         title:
-          "You’ll boast the ability to work with a diverse range of startups and founders;",
+          "- You’ll boast the ability to work with a diverse range of startups and founders;",
       },
       {
         title:
-          "You’re reliable and have the time management skills to attend and participate\n" +
+          "- You’re reliable and have the time management skills to attend and participate\n" +
           "actively in scheduled consulting and advisory meetings.",
       },
       {
         title:
-          "You’ll have ample communication skills to communicate your experiences and\n" +
+          "- You’ll have ample communication skills to communicate your experiences and\n" +
           "knowledge;",
       },
       {
         title:
-          "You’ll be excited about incorporating your ideas into the diverse vision of the future\n" +
+          "- You’ll be excited about incorporating your ideas into the diverse vision of the future\n" +
           "our founders and startups have;",
       },
       {
         title:
-          "You’ll be uber passionate about your work and take pride in it;",
+          "- You’ll be uber passionate about your work and take pride in it;",
       },
       {
-        title: "You’ll be ready to motivate and inspire founders holistically;",
+        title: "- You’ll be ready to motivate and inspire founders holistically;",
       },
       {
         title:
-          "You’ll have good networking skills to help you stay connected with the right people\n" +
+          "- You’ll have good networking skills to help you stay connected with the right people\n" +
           "and resources;",
       },
       {
-        title: "You’re hardworking and motivated;",
+        title: "- You’re hardworking and motivated;",
       },
       {
         title:
-          "You’re a natural-born connector and thrive on building community through\n" +
+          "- You’re a natural-born connector and thrive on building community through\n" +
           "relationships and knowledge sharing;",
       },
       {
         title:
-          "You enjoy independent work, but also thrive in a team environment when the\n" +
+          "- You enjoy independent work, but also thrive in a team environment when the\n" +
           "advisory requires it;",
       },
       {
         title:
-          "You’re passionate about creating an impact and strive for success in anything you\n" +
+          "- You’re passionate about creating an impact and strive for success in anything you\n" +
           "do;",
       },
       {
         title:
-          "You have a high degree of accountability and understand the importance of leading\n" +
+          "- You have a high degree of accountability and understand the importance of leading\n" +
           "with honesty and integrity;",
       },
       {
         title:
-          "You communicate effectively and voice your opinions when you truly believe in\n" +
+          "- You communicate effectively and voice your opinions when you truly believe in\n" +
           "something but are always looking and listening to alternative opinions, methods, and\n" +
           "suggestions from those around you;",
       },
       {
         title:
-          "You’re confident in yourself but not afraid to ask questions or for clarification when\n" +
+          "- You’re confident in yourself but not afraid to ask questions or for clarification when\n" +
           "necessary;",
       },
       {
         title:
-          "You’re not afraid to dive into new projects and never shy away from the unknown;",
+          "- You’re not afraid to dive into new projects and never shy away from the unknown;",
       },
       {
-        title: "You’re up for a challenge and are willing to learn as you go;",
+        title: "- You’re up for a challenge and are willing to learn as you go;",
       },
       {
         title:
-          "You know that despite vast experience you may not know everything, but you’re\n" +
+          "- You know that despite vast experience you may not know everything, but you’re\n" +
           "determined to figure it out along the way;",
       },
       {
         title:
-          "You’ll have a proven track record within the world of business and more specifically\n" +
+          "- You’ll have a proven track record within the world of business and more specifically\n" +
           "working with startups;",
       },
       {
         title:
-          "You’re a fast learner and are comfortable working with founders who have new and\n" +
+          "- You’re a fast learner and are comfortable working with founders who have new and\n" +
           "innovative ideas;",
       },
       {
         title:
-          "You have a strong comfort level in advising and mentoring but know that your\n" +
+          "- You have a strong comfort level in advising and mentoring but know that your\n" +
           "experience is just a baseline and not necessarily the path that the founder will follow;",
       },
       {
         title:
-          "Your attention to detail is an area of strength in which you pride yourself on;",
+          "- Your attention to detail is an area of strength in which you pride yourself on;",
       },
       {
         title:
-          "You’re a people person and know how to navigate your way through a conversation,\n" +
+          "- You’re a people person and know how to navigate your way through a conversation,\n" +
           "even if it may at times be completely out of your comfort zone;",
       },
       {
         title:
-          "You have a strong interest in the entrepreneurship and startup industries;",
+          "- You have a strong interest in the entrepreneurship and startup industries;",
       },
       {
         title:
-          "You understand that founders may not always have an answer for you because of\n" +
+          "- You understand that founders may not always have an answer for you because of\n" +
           "their stage, but you’re okay helping them figure it out as they go;",
       },
       {
         title:
-          "You’re driven by providing valuable feedback that aids in creating something you can\n" +
+          "- You’re driven by providing valuable feedback that aids in creating something you can\n" +
           "be proud of;",
       },
       {
-        title: "You’re focused and heavily value achieving success as a team;",
+        title: "- You’re focused and heavily value achieving success as a team;",
       },
       {
-        title: "Know what you know, and know what you don't.",
+        title: "- Know what you know, and know what you don't.",
       },
     ],
   },

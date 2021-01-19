@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../../../../components/Text";
 import "./index.scss";
-import arrow from "../../../../images/arrow-up-right.png";
+import arrow from "../../../../images/arrrow-top-right-white.png";
 
 const styles = {
   title: {
@@ -45,7 +45,7 @@ const MenuScreenTopColumn = ({
       >
         {description}
       </Text>
-      <div>
+      <div className={'subtitle-arrow-container'}>
         <Text
           size={14}
           mobSize={10}
@@ -54,7 +54,7 @@ const MenuScreenTopColumn = ({
         >
           {subTitle}
         </Text>
-        <img src={arrow} />
+        <img src={arrow} className={'black-menu-image'}/>
       </div>
     </div>
   );

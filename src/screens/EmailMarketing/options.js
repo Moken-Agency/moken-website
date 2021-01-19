@@ -71,7 +71,7 @@ export default [
   },
 
   {
-    title: "On day one we'll expect you to be...",
+    title: "On day one we'll expect you to be",
   },
 
   {
@@ -116,7 +116,7 @@ export default [
   },
 
   {
-    title: "As a person you are...",
+    title: "As a person you are",
   },
 
   {

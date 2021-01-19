@@ -37,7 +37,7 @@ const Text = ({
       <span
         data-aos={animationType}
         style={{
-          fontFamily: textTypes[type],
+          fontFamily: `${textTypes[type]}, sans-serif`,
           fontSize: isMobile ? mobSize : size,
           color: isMobile ? mobColor : color,
           ...textStyles,

@@ -33,7 +33,7 @@ export default [
     ],
   },
   {
-    title: "In this role...",
+    title: "In this role",
   },
   {
     description: [
@@ -170,7 +170,7 @@ export default [
     titleContainerWithImgDescription: [
       {
         title:
-          "Please note: This is a one of a kind, flexible entrepreneurial style opportunity with a unique compensation package aimed at performance with a limitless earning potential. We encourage all those who believe they have what it takes to be successful and are up for the challenge to apply.",
+          "- Please note: This is a one of a kind, flexible entrepreneurial style opportunity with a unique compensation package aimed at performance with a limitless earning potential. We encourage all those who believe they have what it takes to be successful and are up for the challenge to apply.",
       },
       {
         title:

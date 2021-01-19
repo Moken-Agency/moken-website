@@ -1,0 +1,7 @@
+.black-menu-bottom-column-item {
+  transition: 1s;
+  cursor: pointer;
+  &:hover {
+    opacity: .6;
+  }
+}

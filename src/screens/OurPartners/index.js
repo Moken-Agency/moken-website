@@ -4,7 +4,7 @@ import Title from "../../components/Title";
 import "./index.scss";
 import CommunityPartner from "../../components/CommunityPartner";
 import SubmitYourResume from "../../components/SubmitYourResume";
-import ArrowUpRight from "../../images/arrow-up-right.png";
+import ArrowUpRight from "../../images/arrow-top-right-black.png";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";

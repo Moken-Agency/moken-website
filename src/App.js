@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
-import {} from "react-router-dom";
+import { Helmet } from 'react-helmet';
+import routsTitles from "./routsTitles";
+
 import Header from "./components/Header";
 import MenuScreen from "./screens/MenuScreen";
 import Footer from "./components/Footer";
@@ -384,34 +386,43 @@ function App() {
         <Switch>
           {routsWithoutHeaderFooter.map((route, index) => {
             return (
+
               <Route
                 key={"routsWithoutHeaderFooter" + index}
                 path={route.path}
-                children={<route.component />}
-                // render={props => (
-                //     // pass the sub-routes down to keep nesting
-                //     <route.component {...props} />
-                // )}
+                children={(props) => (
+                      <>
+                        <Helmet>
+                          <title>{routsTitles[props.location.pathname]}</title>
+                        </Helmet>
+                        <route.component />
+                      </>
+                    )}
               />
             );
           })}
           {routsWithHeaderFooter.map((route, index) => {
             return (
-              <Route
-                key={"routsWithHeaderFooter" + index}
-                path={route.path}
-                // children={<route.component />}
-                children={(props) => {
-                  // pass the sub-routes down to keep nesting
-                  return (
-                    <>
-                      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-                      <route.component {...props} />
-                      <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
-                    </>
-                  );
-                }}
-              />
+
+                  <Route
+                    key={"routsWithHeaderFooter" + index}
+                    path={route.path}
+                    // children={<route.component />}
+                    children={(props) => {
+                      // pass the sub-routes down to keep nesting
+                      console.log({props});
+                      return (
+                        <>
+                          <Helmet>
+                            <title>{routsTitles[props.location.pathname]}</title>
+                          </Helmet>
+                          <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+                          <route.component {...props} />
+                          <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
+                        </>
+                      );
+                    }}
+                  />
             );
           })}
         </Switch>

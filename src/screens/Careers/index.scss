@@ -1,14 +1,10 @@
 .careers-container {
   .image-section {
-    height: 800px;
     width: 100vw;
     background-color: grey;
-    @media only screen and (max-width: 600px) {
-      height: 180px;
-    }
   }
   .careers-second-section {
-    padding: 10vw;
+    padding: 10vw 10vw 4.5vw 10vw;
 
     .careers-second-title {
       margin: 0;

@@ -3,7 +3,7 @@ import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
 import Text from "../../../../components/Text";
-import arrow from "../../../../images/arrow-up-right.png";
+import arrow from "../../../../images/arrow-top-right-black.png";
 
 const Company = ({
   companyName = "",

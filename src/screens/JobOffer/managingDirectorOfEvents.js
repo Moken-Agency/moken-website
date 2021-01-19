@@ -31,7 +31,7 @@ export default [
     ],
   },
   {
-    title: "In this role...",
+    title: "In this role",
   },
   {
     description: [
@@ -80,7 +80,7 @@ export default [
     ],
   },
   {
-    title: "On day one we'll expect you’ll...",
+    title: "On day one we'll expect you’ll",
   },
   {
     description: [

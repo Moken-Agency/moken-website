@@ -2,7 +2,7 @@ export default {
   opportunities: [
     {
       title: "MOKEN AGENCY",
-      subtitle: "Graphic-designer",
+      subtitle: "Graphic Designer & Illustrator",
       route: "/job-offer/graphic-designer",
     },
     {
@@ -11,16 +11,10 @@ export default {
       route: "/job-offer/startup-advisor",
     },
     {
-      title: "MOKEN AGENCY",
-      subtitle: "Creative Growth Specialist",
-      route: "/job-offer/creative-growth-specialist",
+      title: "MOKEN EVENTS",
+      subtitle: "Event Coordinator",
+      route: "/event-coordinator",
     },
-
-    // {
-    //   title: "MOKEN AGENCY",
-    //   subtitle: "Photographer",
-    //   route: "/photographer",
-    // },
   ],
   benefits: [
     {
