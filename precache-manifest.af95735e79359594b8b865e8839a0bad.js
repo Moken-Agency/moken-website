@@ -1,31 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "30066290f034fe802c171135b63f8ca8",
+    "revision": "0d43e0c6fe747f5fc6da30d581aa8b26",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "d485a3d883781aaa2074",
+    "revision": "1972473fb159e064dbc8",
     "url": "/moken-website/static/css/2.d2b3272e.chunk.css"
   },
   {
-    "revision": "43d2de76e197dc8532e4",
-    "url": "/moken-website/static/css/main.a14e1262.chunk.css"
+    "revision": "40180105a8900d4428a7",
+    "url": "/moken-website/static/css/main.2dac375e.chunk.css"
   },
   {
-    "revision": "d485a3d883781aaa2074",
-    "url": "/moken-website/static/js/2.f49f05ef.chunk.js"
+    "revision": "1972473fb159e064dbc8",
+    "url": "/moken-website/static/js/2.4817c353.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.f49f05ef.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.4817c353.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "43d2de76e197dc8532e4",
-    "url": "/moken-website/static/js/main.3b826b61.chunk.js"
+    "revision": "40180105a8900d4428a7",
+    "url": "/moken-website/static/js/main.29c06bac.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
     "url": "/moken-website/static/js/runtime-main.be4c88a6.js"
+  },
+  {
+    "revision": "750b8bd32aa7d86b5e19b0ace5f7c000",
+    "url": "/moken-website/static/media/001-instagram-2.750b8bd3.svg"
+  },
+  {
+    "revision": "7f632dc614ae382a7dafab36cfd18421",
+    "url": "/moken-website/static/media/002-twitter.7f632dc6.svg"
+  },
+  {
+    "revision": "9b3d2c5add894aa375a2e125eaf909eb",
+    "url": "/moken-website/static/media/006-linkedin.9b3d2c5a.svg"
+  },
+  {
+    "revision": "b31d55976182298cdae7e3baf7bc93ba",
+    "url": "/moken-website/static/media/007-behance.b31d5597.svg"
+  },
+  {
+    "revision": "9d26ad142e3227a14bbafba0c9235a29",
+    "url": "/moken-website/static/media/008-dribbble.9d26ad14.svg"
   },
   {
     "revision": "9146084e572e7eef9ff4652c32b84cc5",
@@ -132,8 +152,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/jobOfferTitle1.cd3af8fb.svg"
   },
   {
-    "revision": "3ed45cf80ae40d68c10a38965ff14915",
-    "url": "/moken-website/static/media/logo.3ed45cf8.svg"
+    "revision": "734089c6ba64f3d0142ae314b30f1f9c",
+    "url": "/moken-website/static/media/moken.734089c6.svg"
   },
   {
     "revision": "8a4c2a08af30fd34105864ecef5a56c8",
