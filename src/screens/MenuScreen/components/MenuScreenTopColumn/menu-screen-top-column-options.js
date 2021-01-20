@@ -7,7 +7,7 @@ export default {
       description:
         "Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert developer, we look for unconventional excellence. ",
       subTitle: "LEARN MORE",
-      route: "",
+      route: "/startup-smart-packages",
     },
     {
       title: "Innovator Network",

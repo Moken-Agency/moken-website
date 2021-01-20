@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../../../../components/Text";
 import "./index.scss";
 import arrow from "../../../../images/arrrow-top-right-white.png";
+import {useHistory} from "react-router-dom";
 
 const styles = {
   title: {
@@ -22,7 +23,10 @@ const MenuScreenTopColumn = ({
   description = "",
   subTitle = "",
   image,
+    route
 }) => {
+  const history = useHistory();
+
   return (
     <div className={"menu-screen-top-column-container"}>
       {image ? (
@@ -50,7 +54,9 @@ const MenuScreenTopColumn = ({
           size={14}
           mobSize={10}
           type={"semiBold"}
+          className={'black-menu-screen-subtitle'}
           textStyles={styles.subTitle}
+          onClick={() => history.push(route)}
         >
           {subTitle}
         </Text>

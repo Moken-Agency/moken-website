@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import MenuItem from "./components/MenuItem";
 import "./index.scss";
-import Logo from "../../images/logo.svg";
 import Burger from "./components/Burger";
 import headerOptions from "./header-options";
 import { useHistory } from "react-router-dom";
 
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import Logo from "../Logo";
 
 const {
   leftMenu,
@@ -55,7 +55,15 @@ const Header = ({ isOpen, setIsOpen }) => {
         className={"bar-container"}
         style={{ padding: isMobile ? "1vw 6.6vw" : "0 6.6vw" }}
       >
-        <img src={Logo} className={"logo"} onClick={() => history.push("/")} />
+          {/*<div style={{display: 'flex', alignItems: 'flex-end'}}>*/}
+          {/*    <img*/}
+          {/*        src={Logo}*/}
+          {/*        className={"logo"}*/}
+          {/*        onClick={() => history.push("/")}*/}
+          {/*    />*/}
+          {/*    <div style={{width: '.6vw', height: '.6vw', borderRadius: '.6vw', marginLeft: '.2vw', backgroundColor: 'red'}}/>*/}
+          {/*</div>*/}
+          <Logo />
         <div style={{ display: "flex" }}>
           <div className={"menu-container"}>
             {mainMenu.map(({ title, subRouts = [], dividerColor }, index) => {

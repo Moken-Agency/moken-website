@@ -14,8 +14,9 @@ import ImageBlock from "../../components/ImageBlock";
 import ReactPlayer from "react-player";
 import img from "../../images/innovation-mob-header.svg";
 
-const AboutMoken = () => {
-  const { isMobile } = useWindowDimensions();
+const AboutMoken = (props) => {
+    console.log({props});
+    const { isMobile } = useWindowDimensions();
 
   const [playing, setPlaying] = useState(false);
   return (

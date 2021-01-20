@@ -25,7 +25,7 @@ export default {
     '/courses': 'Moken | Courses',
     '/our-vision': 'Moken | Our Vision',
     '/partnership-programs': 'Moken | Partnership-programs',
-    '/about-moken': 'Moken | About',
+    '/about-moken': 'Moken | About Moken',
     '/product-strategy': 'Moken | Product strategy',
     '/host-an-event': 'Moken | Host an event',
     '/people-leadership': 'Moken | People leadship',

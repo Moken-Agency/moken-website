@@ -45,14 +45,11 @@ const MenuScreen = (props) => {
             className={"menu-screen-top-columns-container"}
           >
             {menuScreenTopOptions.columns.map(
-              ({ title, description, subTitle, image }, index) => {
+              (options, index) => {
                 return (
                   <MenuScreenTopColumn
                     key={"MenuScreenTopColumn" + index}
-                    title={title}
-                    description={description}
-                    subTitle={subTitle}
-                    image={image}
+                    {...options}
                   />
                 );
               }

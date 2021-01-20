@@ -53,7 +53,7 @@ const MenuItem = ({
           size={size}
           textStyles={{
             ...textStyles,
-            color: hover.isHover ? hover.color : "#000",
+            color: "#000",
           }}
         >
           {title.toUpperCase()}

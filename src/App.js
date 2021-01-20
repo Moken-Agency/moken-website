@@ -354,6 +354,7 @@ const routsWithHeaderFooter = [
   // },
   {
     path: "/",
+    test: 'ASD',
     component: AboutMoken,
   },
 ];

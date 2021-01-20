@@ -3,12 +3,13 @@ import "./styles.scss";
 import footerOptions from "./footer-options";
 import ColumnMenu from "./components/ColumnMenu";
 import Text from "../../components/Text";
-import Logo from "../../images/logo.svg";
+// import Logo from "../../images/moken.svg";
 import Input from "../Input";
 import useValidation from "../../hooks/useValidation";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import validationRules from "../../constans/validation-rules";
 import { useHistory } from "react-router-dom";
+import Logo from "../Logo";
 
 const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
 const { menuColumns } = menuOption;
@@ -55,11 +56,15 @@ const Footer = ({ isOpen, setIsOpen }) => {
           })}
         </div>
         <div className={"send-email-updates-container"}>
-          <img
-            src={Logo}
-            className={"logo"}
-            onClick={() => history.push("/")}
-          />
+          {/*<div style={{display: 'flex', alignItems: 'flex-end'}}>*/}
+          {/*  <img*/}
+          {/*      src={Logo}*/}
+          {/*      className={"logo"}*/}
+          {/*      onClick={() => history.push("/")}*/}
+          {/*  />*/}
+          {/*  <div style={{width: '.6vw', height: '.6vw', borderRadius: '.6vw', marginLeft: '.2vw', backgroundColor: 'red'}}/>*/}
+          {/*</div>*/}
+          <Logo />
           <Text
             size={"2vw"}
             type={"thin"}
