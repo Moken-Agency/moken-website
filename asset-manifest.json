@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.da83a41c.chunk.css",
+    "main.css": "/moken-website/static/css/main.08477378.chunk.css",
     "main.js": "/moken-website/static/js/main.5709097b.chunk.js",
     "main.js.map": "/moken-website/static/js/main.5709097b.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
@@ -9,10 +9,10 @@
     "static/js/2.a876ba99.chunk.js": "/moken-website/static/js/2.a876ba99.chunk.js",
     "static/js/2.a876ba99.chunk.js.map": "/moken-website/static/js/2.a876ba99.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.7aaf8d40430c4f89d5de856c3978f382.js": "/moken-website/precache-manifest.7aaf8d40430c4f89d5de856c3978f382.js",
+    "precache-manifest.c919a46bfbca91f25b073d6a0ab0b684.js": "/moken-website/precache-manifest.c919a46bfbca91f25b073d6a0ab0b684.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.d2b3272e.chunk.css.map": "/moken-website/static/css/2.d2b3272e.chunk.css.map",
-    "static/css/main.da83a41c.chunk.css.map": "/moken-website/static/css/main.da83a41c.chunk.css.map",
+    "static/css/main.08477378.chunk.css.map": "/moken-website/static/css/main.08477378.chunk.css.map",
     "static/js/2.a876ba99.chunk.js.LICENSE.txt": "/moken-website/static/js/2.a876ba99.chunk.js.LICENSE.txt",
     "static/media/001-instagram-2-black.svg": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg",
     "static/media/001-instagram-2.svg": "/moken-website/static/media/001-instagram-2.750b8bd3.svg",
@@ -72,7 +72,7 @@
     "static/js/runtime-main.be4c88a6.js",
     "static/css/2.d2b3272e.chunk.css",
     "static/js/2.a876ba99.chunk.js",
-    "static/css/main.da83a41c.chunk.css",
+    "static/css/main.08477378.chunk.css",
     "static/js/main.5709097b.chunk.js"
   ]
 }
