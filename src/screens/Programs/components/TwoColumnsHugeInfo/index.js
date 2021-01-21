@@ -42,13 +42,14 @@ const TwoColumnsHugeInfo = ({
   secondList = [],
   secondListLikeFirst = false,
   secondListWithIcon = false,
+  containerStyles = {}
 }) => {
   const { isMobile } = useWindowDimensions();
 
   return (
     <>
       <Title title={title} className={"labs-benefits-title"} />
-      <section className={"labs-benefits-container"}>
+      <section className={"labs-benefits-container"} style={containerStyles}>
         <Text
           type={"extraLight"}
           size={55}
@@ -84,22 +85,22 @@ const TwoColumnsHugeInfo = ({
             </Text>
           ) : null}
 
-          <div className={"labs-benefits-container-info-block-works-container"}>
-            {firstList.map((el, index) => {
-              return <FirstItem {...el} key={"first item" + index} />;
-            })}
-          </div>
+            {firstList && firstList.length ? <div className={"labs-benefits-container-info-block-works-container"}>
+                {firstList.map((el, index) => {
+                    return <FirstItem {...el} key={"first item" + index}/>;
+                })}
+            </div> : null}
 
-          <Text
-            type={"semiBold"}
-            size={14}
-            mobSize={10}
-            animationType={"fade-up"}
-            className={"two-column-right-second-list-title"}
-            textStyles={{ letterSpacing: 4 }}
-          >
-            {rightSecondListTitle}
-          </Text>
+            {rightSecondListTitle ? <Text
+                type={"semiBold"}
+                size={14}
+                mobSize={10}
+                animationType={"fade-up"}
+                className={"two-column-right-second-list-title"}
+                textStyles={{letterSpacing: 4}}
+            >
+                {rightSecondListTitle}
+            </Text> : null}
 
           {!secondListLikeFirst
             ? secondList.map(({ title = "", subtitle = "", link = "" }) => {
@@ -116,13 +117,14 @@ const TwoColumnsHugeInfo = ({
               })
             : null}
 
-          <div className={"labs-benefits-container-info-block-works-container"}>
             {secondListLikeFirst
-              ? secondList.map(({ title = "", subtitle = "", link = "" }) => {
-                  return <FirstItem title={title} subtitle={subtitle} />;
-                })
-              : null}
-          </div>
+                ? <div className={"labs-benefits-container-info-block-works-container"}>
+                    {
+                        secondList.map(({ title = "", subtitle = "", link = "" }) => {
+                            return <FirstItem title={title} subtitle={subtitle} />;
+                        })
+                    }
+          </div> : null}
         </div>
       </section>
     </>

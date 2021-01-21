@@ -1,6 +1,6 @@
 import React from "react";
 import SubmitYourResume from "../SubmitYourResume";
-import ArrowUpRight from "../../images/arrow-top-right-black.png";
+import ArrowUpRight from "../../images/arrow-up-right-black.svg";
 import "./index.scss";
 
 const UnderlineTextWithIcon = ({

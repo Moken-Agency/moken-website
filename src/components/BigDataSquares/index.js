@@ -23,17 +23,18 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED" }) => {
         size={55}
         type={isMobile ? "thin" : "extraLight"}
         mobSize={25}
+        containerStyles={{marginRight: 35}}
         textStyles={{ lineHeight: isMobile ? "24px" : "63px" }}
       >
         {title}
       </Text>
       <Text
-        size={20}
+        size={18}
         type={"light"}
         mobSize={16}
         textStyles={{ lineHeight: isMobile ? "25px" : "35px" }}
         containerStyles={{
-          width: isMobile ? "auto" : 388,
+          width: isMobile ? "auto" : 278,
           marginBottom: isMobile ? 44 : 0,
           marginTop: isMobile ? 22 : 0,
         }}
@@ -47,7 +48,7 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED" }) => {
           textColor={"white"}
           mobSize={10}
           containerStyles={{ padding: isMobile ? "23px 16px" : "35px 32px" }}
-          size={16}
+          size={14}
         />
       </div>
     </div>

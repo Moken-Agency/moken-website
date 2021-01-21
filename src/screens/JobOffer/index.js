@@ -7,7 +7,7 @@ const JobOffer = ({ match }) => {
   return (
     <PageGenerator
       data={options[id]}
-      containerStyles={{ paddingBottom: "12vw" }}
+      // containerStyles={{ paddingBottom: "12vw" }}
       descriptionOptions={options.descriptionOptions}
     />
   );

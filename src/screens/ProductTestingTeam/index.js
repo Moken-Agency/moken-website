@@ -35,6 +35,7 @@ const ProductTestingTeam = () => {
         </div>
 
         <TwoColumnsHugeInfo
+            containerStyles={{marginBottom: isMobile ? 170 : 0}}
           title={"TEAM OVERVIEW"}
           leftTitle={
             "Enthusiastic individuals working together to create extraordinary startups"
@@ -86,6 +87,7 @@ const ProductTestingTeam = () => {
         }
         options={options.programs}
         widthItem={"30vw"}
+        type={'big'}
       />
 
       <EmailForm withForm className={"product-email-form"} />

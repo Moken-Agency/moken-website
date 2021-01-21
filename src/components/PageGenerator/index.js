@@ -31,6 +31,7 @@ const PageGenerator = ({
             colorBlock,
             colorTitle,
             colorSubtitle,
+              colorBlockProps = {},
             submit,
             withForm,
             headerTitle,
@@ -88,6 +89,7 @@ const PageGenerator = ({
                 backgroundColor={colorBlock}
                 subtitle={colorSubtitle}
                 title={colorTitle}
+                {...colorBlockProps}
               />
               {/*<ColorBlock colorBlock={colorBlock} colorTitle={colorTitle} colorSubtitle={colorSubtitle}/>*/}
               <EmailForm withForm={withForm} />

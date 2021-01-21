@@ -1,7 +1,7 @@
 export default {
   leftMenu: [
     {
-      title: "Investors",
+      title: "Access networks",
       route: "/investors",
       withDivider: true,
     },

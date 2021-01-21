@@ -1,13 +1,13 @@
-import instagram from "./001-instagram-2.svg";
-import instagramWhite from "./001-instagram-2.png";
-import twitter from "./002-twitter.svg";
-import twitterWhite from "./002-twitter-white.png";
-import linkedin from "./006-linkedin.svg";
-import linkedinWhite from "./006-linkedin-white.png";
-import behance from "./007-behance.svg";
-import behanceWhite from "./007-behance-white.png";
-import dribbble from "./008-dribbble.svg";
-import dribbbleWhite from "./008-dribbble-white.png";
+import instagram from "./001-instagram-2-black.svg";
+import instagramWhite from "./001-instagram-2.svg";
+import twitter from "./002-twitter-black.svg";
+import twitterWhite from "./002-twitter.svg";
+import linkedin from "./006-linkedin-black.svg";
+import linkedinWhite from "./006-linkedin.svg";
+import behance from "./007-behance-black.svg";
+import behanceWhite from "./007-behance.svg";
+import dribbble from "./008-dribbble-black.svg";
+import dribbbleWhite from "./008-dribbble.svg";
 
 export {
   instagram,

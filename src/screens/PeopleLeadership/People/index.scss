@@ -1,16 +1,30 @@
-.people-container {
-  margin-bottom: 150px;
-  display: flex;
 
-  @media only screen and (max-width: 600px) {
-    align-items: flex-start !important;
+.people-main-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  .people-employees-container {
+    height: 318px;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 50px;
   }
-  .people-second-container {
-    width: 86vw;
+
+  .people-container {
+    margin-bottom: 150px;
     display: flex;
+
     @media only screen and (max-width: 600px) {
-      overflow-y: scroll;
-      width: auto;
+      align-items: flex-start !important;
+    }
+    .people-second-container {
+      width: 86vw;
+      display: flex;
+      @media only screen and (max-width: 600px) {
+        overflow-y: scroll;
+        width: auto;
+      }
     }
   }
 }
+

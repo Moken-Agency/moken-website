@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../../../../components/Text";
 import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 import './index.scss';
+import {useHistory} from "react-router-dom";
 
 const styles = {
   mainTitle: {
@@ -17,7 +18,9 @@ const styles = {
 
 const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
   const { isMobile } = useWindowDimensions();
-  return (
+  const history = useHistory();
+
+    return (
     <div style={{ marginRight: 150 }}>
       <Text
         size={20}
@@ -31,7 +34,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
       >
         {title}
       </Text>
-      {routs.map(({ title }, index) => {
+      {routs.map(({ title, route }, index) => {
         return (
           <Text
             size={18}
@@ -40,6 +43,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
             containerStyles={{ marginBottom: 15 }}
             type={"light"}
             key={"MenuScreenBottomColumnRouts" + index}
+            onClick={() => history.push(route)}
           >
             {title}
           </Text>

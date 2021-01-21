@@ -112,6 +112,7 @@ const MokenLabs = () => {
           <SubmitYourResume
             title={"Moken Partner Program Guide"}
             color={"black"}
+            size={34}
           />
         </div>
       </section>

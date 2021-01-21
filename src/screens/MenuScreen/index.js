@@ -67,12 +67,11 @@ const MenuScreen = (props) => {
               className={"menu-screen-bottom-container"}
             >
               {menuScreenBottomOptions.columns.map(
-                ({ title, routs }, index) => {
+                (props, index) => {
                   return (
                     <MenuScreenBottomColumn
                       key={"MenuScreenTopColumn" + index}
-                      title={title}
-                      routs={routs}
+                      {...props}
                     />
                   );
                 }

@@ -1,20 +1,20 @@
 export default {
   startups: [
     {
-      title: "5+",
-      subTitle: "INDUSTRIES",
-    },
-    {
-      title: "6",
-      subTitle: "STARTUPS",
-    },
-    {
       title: "2",
-      subTitle: "ACQUISITTIONS",
+      subTitle: "ACQUIRED COMPANIES",
+    },
+    {
+      title: "6+",
+      subTitle: "INDUSTRIES PENETRATED",
+    },
+    {
+      title: "5M",
+      subTitle: "LINES OF CODE DEVELOPED",
     },
     {
       title: "1.3M",
-      subTitle: "IDEATION FUNDING",
+      subTitle: "IDEATION STAGE FUNDING ",
     },
   ],
   companies: [

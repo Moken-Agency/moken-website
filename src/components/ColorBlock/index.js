@@ -2,8 +2,8 @@ import Text from "../Text";
 import React from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import "./index.scss";
-import ArrowUpRight from "../../images/arrow-top-right-black.png";
-import ArrowUpRightWhite from "../../images/arrrow-top-right-white.png";
+import ArrowUpRight from "../../images/arrow-up-right-black.svg";
+import ArrowUpRightWhite from "../../images/arrow-up-right-white.svg";
 
 //blockType = middle | big
 const ColorBlock = ({
@@ -18,6 +18,7 @@ const ColorBlock = ({
   type = "extraLight",
   mobSize = "9vw",
   blockType = "big",
+    containerStyles = {}
 }) => {
   const { isMobile } = useWindowDimensions();
   const mobSizeTemp = blockType === "middle" ? 32 : mobSize;
@@ -30,7 +31,7 @@ const ColorBlock = ({
         <section
           data-aos="fade-up"
           className={`block-container ${className} ${blockType}`}
-          style={{ backgroundColor }}
+          style={{ ...containerStyles, backgroundColor }}
         >
           <Text
             size={sizeTemp}

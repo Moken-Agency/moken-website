@@ -4,7 +4,6 @@ import Title from "../../components/Title";
 import "./index.scss";
 import CommunityPartner from "../../components/CommunityPartner";
 import SubmitYourResume from "../../components/SubmitYourResume";
-import ArrowUpRight from "../../images/arrow-top-right-black.png";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
@@ -16,6 +15,7 @@ import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import ColorBlock from "../../components/ColorBlock";
+import arrowUpRight from '../../images/arrow-up-right-black.svg';
 
 const { involved, collaborates, purposes } = options;
 
@@ -77,12 +77,16 @@ const OurPartners = () => {
           animationType={"fade-in"}
           size={55}
           mobSize={35}
+          containerStyles={{width: isMobile ? 'auto' : 900}}
         >
           We increase website leads, maximize revenu and produce a positive ROI
           — validated with measurable results.
         </Text>
         <div className={"partners-container"}>
           {[
+            "",
+            "",
+            "",
             "",
             "",
             "",
@@ -118,21 +122,31 @@ const OurPartners = () => {
         backgroundColor={"black"}
       />
 
-      <TwoColumnsHugeInfo
-        title={"LEVERAGE THE ECOSYSTEM"}
-        leftTitle={
-          "Enthusiastic individuals working together to create extraordinary startups"
-        }
-        rightTitle={`Our role consists of taking the time to understand your business model, and suggesting
-                       creative and high-performing digital strategies. Our avant-garde tactics are in line with
-                       the current market, blend seamlessly with our clients’ operational realities, and eliminate
-                       risks that aren’t necessary`}
-        rightFirstListTitle={"HOW WE CAN COLLABORATE"}
-        firstList={collaborates}
-        rightSecondListTitle={"CHOOSE YOUR PURPOSE"}
-        secondListLikeFirst={purposes}
-      />
-
+      {/*<TwoColumnsHugeInfo*/}
+      {/*  title={"LEVERAGE THE ECOSYSTEM"}*/}
+      {/*  leftTitle={*/}
+      {/*    "Enthusiastic individuals working together to create extraordinary startups"*/}
+      {/*  }*/}
+      {/*  rightTitle={`Our role consists of taking the time to understand your business model, and suggesting*/}
+      {/*                 creative and high-performing digital strategies. Our avant-garde tactics are in line with*/}
+      {/*                 the current market, blend seamlessly with our clients’ operational realities, and eliminate*/}
+      {/*                 risks that aren’t necessary`}*/}
+      {/*  rightFirstListTitle={"HOW WE CAN COLLABORATE"}*/}
+      {/*  firstList={collaborates}*/}
+      {/*  rightSecondListTitle={"CHOOSE YOUR PURPOSE"}*/}
+      {/*  secondListLikeFirst={purposes}*/}
+      {/*/>*/}
+    <Title title={'GET INVOLVED'}/>
+    <div className={'explore-our-partners-container'}>
+        <Text size={55}
+              mobSize={35}
+              type={'extraLight'}
+              containerStyles={{width: isMobile ? 'auto' : 583}}>Interested in becoming a partner and leveraging a global community network?</Text>
+        <div className={'explore-our-partners-potential-container'}>
+            <Text type={'semiBold'} size={14} textStyles={{letterSpacing: 4, marginRight: 40}}>EXPLORE THE POTENTIAL</Text>
+            <img src={arrowUpRight} style={{width: 27, height: 27}}/>
+        </div>
+    </div>
       <EmailForm withForm className={"partners-email-form"} />
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../../../../components/Text";
 import "./index.scss";
-import arrow from "../../../../images/arrrow-top-right-white.png";
+import arrow from "../../../../images/arrow-up-right-white.svg";
 import {useHistory} from "react-router-dom";
 
 const styles = {

@@ -2,10 +2,10 @@ import React from "react";
 import "./index.scss";
 import Text from "../../../components/Text";
 
-const Person = ({ name = "", positions = [], photo, peopleIndex }) => {
+const Person = ({ name = "", positions = [] }) => {
   return (
-    <div className={"person-container"}>
-      <img src={photo} data-aos="fade-in" />
+    <div className={"person-container"} style={{}}>
+      {/*<img src={photo} data-aos="fade-in" />*/}
       <Text
         animationType={"fade-in"}
         size={22}

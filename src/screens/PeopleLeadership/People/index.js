@@ -8,25 +8,31 @@ const People = ({ people, peopleIndex, title }) => {
   const { isMobile } = useWindowDimensions();
 
   return (
-    <div>
-      {isMobile ? (
-        <Title title={title} containerStyles={{ marginBottom: "10vw" }} />
-      ) : null}
-      <div
-        className={"people-container"}
-        data-aos="fade-in"
-        style={{
+      <div  style={{
           display: "flex",
-          justifyContent: peopleIndex % 2 !== 0 ? "flex-start" : "flex-end",
-        }}
-      >
-        <div className={"people-second-container"}>
-          {people.map((person, index) => (
-            <Person {...person} key={"person" + index} />
-          ))}
-        </div>
+          flexDirection: "column",
+          alignItems: peopleIndex % 2 !== 0 ? "flex-start" : "flex-end",
+      }}>
+          <div className={'people-main-container'}>
+              {isMobile ? (
+                  <Title title={title} containerStyles={{ marginBottom: "10vw" }} />
+              ) : null}
+              <img src={''} className={'people-employees-container'}/>
+
+              <div
+                  className={"people-container"}
+                  data-aos="fade-in"
+
+              >
+                  <div className={"people-second-container"}>
+                      {people.map((person, index) => (
+                          <Person {...person} key={"person" + index} />
+                      ))}
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
+
   );
 };
 

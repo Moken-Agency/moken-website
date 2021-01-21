@@ -4,7 +4,7 @@ import "./index.scss";
 import Title from "../../components/Title";
 import options from "./options";
 import SubmitYourResume from "../../components/SubmitYourResume";
-import ArrowTopRight from "../../images/arrow-top-right-black.png";
+import ArrowTopRight from "../../images/arrow-up-right-black.svg";
 import Swiper from "../../components/Swiper";
 import Explore from "../../components/Explore";
 import CommunityPartner from "../../components/CommunityPartner";
@@ -16,6 +16,8 @@ import ImageBlock from "../../components/ImageBlock";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import ColorBlock from "../../components/ColorBlock";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
+import communitySVG from '../../images/Community.svg';
+
 const { swiperData } = options;
 
 const Community = () => {
@@ -64,11 +66,12 @@ const Community = () => {
 
   return (
     <div className={"community-container"}>
+        <img src={communitySVG} className={'community-absolute-img'}/>
       <HeaderTitle
         title={"MOKEN COMMUNITY"}
         subtitle={"Working on what matters, together."}
         description={`Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.co`}
-        marginBottom={isMobile ? 400 : 107}
+        marginBottom={isMobile ? 400 : 378}
       />
 
       <ImageBlock type={"full"} />
@@ -142,6 +145,7 @@ const Community = () => {
         options={options.founders}
         // widthItem={"25vw"}
         itemContainerStyles={{ width: "25vw", height: "25vw" }}
+        type={'big'}
       />
 
       <EmailForm withForm />

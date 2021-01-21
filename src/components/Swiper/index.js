@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ArrowUpRight from "../../images/arrrow-top-right-white.png";
+import ArrowUpRight from "../../images/arrow-up-right-white.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import "./index.scss";
 

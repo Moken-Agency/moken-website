@@ -4,7 +4,7 @@ import Text from "../../components/Text";
 import "./index.scss";
 import InnovationWeekSvg from "../../images/innovation-week.svg";
 import InnovationSquare from "../../images/innovation-square.svg";
-import ArrowUpRight from "../../images/arrrow-top-right-white.png";
+import ArrowUpRight from "../../images/arrow-up-right-white.svg";
 import options from "./options";
 import colors from "../../constans/colors";
 import InnovationMobHeaderImage from "../../images/innovation-mob-header.svg";

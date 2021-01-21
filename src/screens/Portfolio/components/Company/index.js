@@ -3,7 +3,7 @@ import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
 import Text from "../../../../components/Text";
-import arrow from "../../../../images/arrow-top-right-black.png";
+import arrow from "../../../../images/arrow-up-right-black.svg";
 
 const Company = ({
   companyName = "",
@@ -41,6 +41,7 @@ const Company = ({
         animationType={"fade-in"}
         className={"company-description"}
         type={"light"}
+        textStyles={{lineHeight: isMobile ? "2.2vw" : "1.8vw" }}
       >
         {description}
       </Text>
