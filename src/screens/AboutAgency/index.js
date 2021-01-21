@@ -80,42 +80,83 @@ const AboutAgency = () => {
         {/*        aren’t necessary.</Text>*/}
         {/*</div>*/}
 
-        <div className={"apps-container"}>
-          <div className={"app-container"}>
-            <Text size={"4.2vw"} type={"thin"}>
-              Rent Your Ride
-            </Text>
-            <Text
-              size={".9vw"}
-              textStyles={{ letterSpacing: 4 }}
-              type={"semiBold"}
-            >
-              PRODUCT DESIGN & DEVELOPMENT
-            </Text>
-          </div>
-          <div className={"app-container"}>
-            <Text size={"4.2vw"} type={"thin"}>
-              Prommoto
-            </Text>
-            <Text
-              size={".9vw"}
-              textStyles={{ letterSpacing: 4 }}
-              type={"semiBold"}
-            >
-              Product Design & Development
-            </Text>
-          </div>
+        {/*<div className={"apps-container"}>*/}
+        {/*  <div className={"app-container"}>*/}
+        {/*    <Text size={"4.2vw"} type={"thin"}>*/}
+        {/*      Rent Your Ride*/}
+        {/*    </Text>*/}
+        {/*    <Text*/}
+        {/*      size={".9vw"}*/}
+        {/*      textStyles={{ letterSpacing: 4 }}*/}
+        {/*      type={"semiBold"}*/}
+        {/*    >*/}
+        {/*      PRODUCT DESIGN & DEVELOPMENT*/}
+        {/*    </Text>*/}
+        {/*  </div>*/}
+        {/*  <div className={"app-container"}>*/}
+        {/*    <Text size={"4.2vw"} type={"thin"}>*/}
+        {/*      Prommoto*/}
+        {/*    </Text>*/}
+        {/*    <Text*/}
+        {/*      size={".9vw"}*/}
+        {/*      textStyles={{ letterSpacing: 4 }}*/}
+        {/*      type={"semiBold"}*/}
+        {/*    >*/}
+        {/*      Product Design & Development*/}
+        {/*    </Text>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+
+        <div className={'agency-products-container'}>
+            {
+                [1,2,3,4,5].map((_, index) => {
+                    return (
+                        <div className={'agency-product-container'}>
+                            <img src={''}/>
+                           <div style={{opacity: index !== 0 ? 0.1 : 1 }}>
+                               <Text size={75}
+                                     mobSize={55}
+                                     type={'thin'}>Rent Your Ride</Text>
+                               <Text size={16}
+                                     mobSize={14}
+                                     textStyles={{letterSpacing: 4}}
+                                     type={'semiBold'}>PRODUCT DESIGN & DEVELOPMENT</Text>
+                           </div>
+                        </div>
+                    )
+                })
+            }
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginBottom: "13.5vw",
-          }}
-        >
-          <SubmitYourResume title={"View all projects"} color={"black"} />
-        </div>
+        {/*<div*/}
+        {/*  style={{*/}
+        {/*    display: "flex",*/}
+        {/*    justifyContent: "center",*/}
+        {/*    marginBottom: "13.5vw",*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  <SubmitYourResume title={"View all projects"} color={"black"} />*/}
+        {/*</div>*/}
       </div>
+
+        <Title title={'WHAT OUR CLIENTS SAY'}/>
+
+        <div className={'client-say-wrapper-container'}>
+            <div className={'client-say-container'}>
+                <Text size={30}
+                      type={'thin'}
+                      containerStyles={{width: 662}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</Text>
+                <div className={'client-say-text-container'}>
+                    <div>
+                        <Text size={14} type={'semiBold'} containerStyles={{marginBottom: 3}}>— CLIENT</Text>
+                        <Text size={12} type={'semiBold'} containerStyles={{marginLeft: 18}}>Company Name</Text>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
 
       <ProgramCommunityListPartner
         title={"LET’S BUILD"}

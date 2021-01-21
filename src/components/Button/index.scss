@@ -11,13 +11,14 @@
   font-family: "Latinka SemiBold", sans-serif;
   cursor: pointer;
   position: relative;
-  &:hover {
-    opacity: .5;
-  }
+  height: 40px;
   @media screen and (max-width: 600px) {
     font-size: .95vw;
     padding: 4vw 6vw;
     letter-spacing: 3px;
+  }
+    &:hover {
+    opacity: .5;
   }
 }
 .black {
