@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0d43e0c6fe747f5fc6da30d581aa8b26",
+    "revision": "cfa98d02946fc24c3280da8d0dc8134e",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "1972473fb159e064dbc8",
+    "revision": "ba34f7f2e6e74e40ab31",
     "url": "/moken-website/static/css/2.d2b3272e.chunk.css"
   },
   {
-    "revision": "40180105a8900d4428a7",
-    "url": "/moken-website/static/css/main.2dac375e.chunk.css"
+    "revision": "b003487372a94cbe4330",
+    "url": "/moken-website/static/css/main.da83a41c.chunk.css"
   },
   {
-    "revision": "1972473fb159e064dbc8",
-    "url": "/moken-website/static/js/2.4817c353.chunk.js"
+    "revision": "ba34f7f2e6e74e40ab31",
+    "url": "/moken-website/static/js/2.a876ba99.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.4817c353.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.a876ba99.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "40180105a8900d4428a7",
-    "url": "/moken-website/static/js/main.29c06bac.chunk.js"
+    "revision": "b003487372a94cbe4330",
+    "url": "/moken-website/static/js/main.5709097b.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -29,19 +29,39 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "750b8bd32aa7d86b5e19b0ace5f7c000",
+    "url": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg"
+  },
+  {
+    "revision": "750b8bd32aa7d86b5e19b0ace5f7c000",
     "url": "/moken-website/static/media/001-instagram-2.750b8bd3.svg"
+  },
+  {
+    "revision": "d77c0f8dc53242f37632b67dea5423b4",
+    "url": "/moken-website/static/media/002-twitter-black.d77c0f8d.svg"
   },
   {
     "revision": "7f632dc614ae382a7dafab36cfd18421",
     "url": "/moken-website/static/media/002-twitter.7f632dc6.svg"
   },
   {
+    "revision": "75187040e7d6fe9ad06111c106c3fe35",
+    "url": "/moken-website/static/media/006-linkedin-black.75187040.svg"
+  },
+  {
     "revision": "9b3d2c5add894aa375a2e125eaf909eb",
     "url": "/moken-website/static/media/006-linkedin.9b3d2c5a.svg"
   },
   {
+    "revision": "28072b2aa7277bce1f170f9a0d7cd0dd",
+    "url": "/moken-website/static/media/007-behance-black.28072b2a.svg"
+  },
+  {
     "revision": "b31d55976182298cdae7e3baf7bc93ba",
     "url": "/moken-website/static/media/007-behance.b31d5597.svg"
+  },
+  {
+    "revision": "ca3aeaf2798615e9c755ee86ff64c060",
+    "url": "/moken-website/static/media/008-dribbble-black.ca3aeaf2.svg"
   },
   {
     "revision": "9d26ad142e3227a14bbafba0c9235a29",
@@ -50,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9146084e572e7eef9ff4652c32b84cc5",
     "url": "/moken-website/static/media/BlackLabel-Light.9146084e.ttf"
+  },
+  {
+    "revision": "cbcc4e8c12468f5415c2b6c4a245c206",
+    "url": "/moken-website/static/media/Community.cbcc4e8c.svg"
   },
   {
     "revision": "151ca8b47b79086beaefba24c6970383",
@@ -82,6 +106,46 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "97a7a8b5ab46a4a0e16041a80155c45d",
     "url": "/moken-website/static/media/ZonaPro-LightItalicDemo.97a7a8b5.otf"
+  },
+  {
+    "revision": "33084271b607583d872ea2a4e451636e",
+    "url": "/moken-website/static/media/arrow-up-right-black.33084271.svg"
+  },
+  {
+    "revision": "182afab8ffffc61c216a332a061d974b",
+    "url": "/moken-website/static/media/arrow-up-right-white.182afab8.svg"
+  },
+  {
+    "revision": "d8378fb1c3a9fe92f2463352b068c67d",
+    "url": "/moken-website/static/media/benefit1.d8378fb1.svg"
+  },
+  {
+    "revision": "9277c08d9e87ab52d2554c816e94614f",
+    "url": "/moken-website/static/media/benefit2.9277c08d.svg"
+  },
+  {
+    "revision": "a3d66e54599436fb5e7db613ab5e5e07",
+    "url": "/moken-website/static/media/benefit3.a3d66e54.svg"
+  },
+  {
+    "revision": "59c43151096c8f0936896bf3f891632d",
+    "url": "/moken-website/static/media/benefit4.59c43151.svg"
+  },
+  {
+    "revision": "4d0955dfb946c68342df6b733a548e82",
+    "url": "/moken-website/static/media/benefit5.4d0955df.svg"
+  },
+  {
+    "revision": "36d60544906aadf4b3ebe9ce0e8ab47d",
+    "url": "/moken-website/static/media/benefit6.36d60544.svg"
+  },
+  {
+    "revision": "4ed725597c13e1862abe3c5561f03fea",
+    "url": "/moken-website/static/media/benefit7.4ed72559.svg"
+  },
+  {
+    "revision": "abbfaa63aabb3ba4f1862b97bf0f9ee7",
+    "url": "/moken-website/static/media/benefit8.abbfaa63.svg"
   },
   {
     "revision": "aa4b6ec178ef01b6c6f0a08b9f8f800c",
