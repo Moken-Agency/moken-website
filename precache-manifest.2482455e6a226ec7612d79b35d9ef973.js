@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddade84d219790d6b620d0308f2cbc96",
+    "revision": "816477beb3008cd0929ef2a146647a8d",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "ba34f7f2e6e74e40ab31",
+    "revision": "e642de91c52cbaaca57a",
     "url": "/moken-website/static/css/2.d2b3272e.chunk.css"
   },
   {
-    "revision": "2b8282e346562bf9ac15",
-    "url": "/moken-website/static/css/main.bdfffac0.chunk.css"
+    "revision": "ca324c31091a7c090668",
+    "url": "/moken-website/static/css/main.bb22a2ed.chunk.css"
   },
   {
-    "revision": "ba34f7f2e6e74e40ab31",
-    "url": "/moken-website/static/js/2.a876ba99.chunk.js"
+    "revision": "e642de91c52cbaaca57a",
+    "url": "/moken-website/static/js/2.91942742.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/moken-website/static/js/2.a876ba99.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.91942742.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b8282e346562bf9ac15",
-    "url": "/moken-website/static/js/main.8e7a1db7.chunk.js"
+    "revision": "ca324c31091a7c090668",
+    "url": "/moken-website/static/js/main.6b5f417d.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "750b8bd32aa7d86b5e19b0ace5f7c000",
     "url": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg"
-  },
-  {
-    "revision": "750b8bd32aa7d86b5e19b0ace5f7c000",
-    "url": "/moken-website/static/media/001-instagram-2.750b8bd3.svg"
   },
   {
     "revision": "d77c0f8dc53242f37632b67dea5423b4",
@@ -206,6 +202,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3c7dc3c76b88261e8eebe83fb7d871cc",
     "url": "/moken-website/static/media/innovation-week.3c7dc3c7.svg"
+  },
+  {
+    "revision": "95c0110624267ed7e0f56efe9ae7c33d",
+    "url": "/moken-website/static/media/instagram-white.95c01106.svg"
   },
   {
     "revision": "6abb360130ee8be09159bb301a1caad5",
