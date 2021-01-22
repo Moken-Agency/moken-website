@@ -2,27 +2,27 @@ export default {
   benefits: [
     {
       images: [],
-      title: "Passion & Commitment",
+      title: "BRAND STRATEGY SESSIONS",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Two one-on-one strategy sessions to identify your brand design needs and strategize the best ways to create an identity that will attract your ideal clients.",
     },
     {
       images: [],
-      title: "Practicality",
+      title: "BASIC BRAND STYLE GUIDE",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "A custom brand style guide including brand standards (typography, colors, usage guidelines, styling notes, and brand application examples) to help keep your usage consistent and on-brand.",
     },
     {
       images: [],
-      title: "Flexible Finances",
+      title: "BRAND STRATEGY SESSIONS",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Two one-on-one strategy sessions to identify your brand design needs and strategize the best ways to create an identity that will attract your ideal clients.",
     },
-    {
-      images: [],
-      title: "One Team, One Goal",
-      subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
-    },
+    // {
+    //   images: [],
+    //   title: "One Team, One Goal",
+    //   subtitle:
+    //     "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+    // },
   ],
 };

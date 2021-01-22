@@ -14,8 +14,8 @@ export default {
     },
     {
       title: "MOKEN EVENTS",
-      subtitle: "Event Coordinator",
-      route: "/event-coordinator",
+      subtitle: "Managing Director of Programs",
+      route: "/managing-director-of-programs",
     },
   ],
   benefits: [

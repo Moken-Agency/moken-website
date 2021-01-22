@@ -57,8 +57,7 @@ const Expertise = () => {
           size={"3vw"}
           mobSize={35}
         >
-          Join our trusted community of partners and market what you do to
-          founders and startups, globally.
+            We’re a startup and business scalability agency determined to help founders build, create, and grow.
         </Text>
       </div>
       <div className={"expertise-items-container"}>

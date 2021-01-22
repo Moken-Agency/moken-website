@@ -64,6 +64,7 @@ const Access = () => {
       />
 
       <LeftInfoWithRightImage
+        withoutRightPadding
         mainTitle={"ACCESS PARTNER PROGRAM"}
         title={"Join our trusted community of partners and market what you do."}
         description={`Our role consists of taking the time to understand your business model, 

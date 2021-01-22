@@ -9,11 +9,9 @@ export default {
     imgURL: "",
     infoBlock: {
       infoTitleFirst:
-        "Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.",
+        "Slow websites & poor user experience lead to an annual $2.6 billion revenue loss & turn away 89% of consumers",
       infoDescriptionFirst:
-        "An effective brand can give you a significant edge in today’s highly competitive market." +
-        " We create emotional connections far beyond simply making your brand look visually appelling. We create authentic" +
-        " and unforgettable visuals and voice that connects with your customers.",
+        "An effective website can give you a significant edge in today’s highly competitive, ever-evolving digital market. We create intuitive and functional websites far beyond simply making you look visually apealing online. We design and develop with strategic marketing initiatives and user experience at the forefront aimed at caputuring the attention and guiding your audience through your funnel.",
       infoSubtitleFirst: "— WORK WITH US",
     },
   },
@@ -21,23 +19,23 @@ export default {
     title: "PRODUCT STRATEGY CAPABILITIES",
     mapItems: [
       {
-        title: "Market Research",
+        title: "Web Design",
         // route: ''
       },
       {
-        title: "Business Validation",
+        title: "E-Commerce Development",
         // route: ''
       },
       {
-        title: "Product Validation",
+        title: "Back End Development",
         // route: ''
       },
       {
-        title: "ThinkTank",
+        title: "CMS Design & Development",
         // route: ''
       },
       {
-        title: "Focus Groups",
+        title: "Front End Development",
       },
     ],
     imgURL: "",

@@ -114,7 +114,7 @@ const CommunityPageGenerator = ({
             mobSize={16}
             animationType={"fade-in"}
             // textStyles={{lineHeight: 35}}
-            containerStyles={{ lineHeight: "35px" }}
+            containerStyles={{ lineHeight: "35px", paddingRight: !isMobile ? 140 : null }}
             // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
           >
             {infoDescriptionFirst}
@@ -141,7 +141,7 @@ const CommunityPageGenerator = ({
           </div>
         </div>
 
-        <ImageBlock position={"right"} />
+        <ImageBlock position={"right"} url={secondSection.imgURL}/>
 
         {/*<div className={'second-section-image-container'}>*/}
         {/*    <img src={secondSection.imgURL} />*/}
@@ -149,7 +149,7 @@ const CommunityPageGenerator = ({
       </section>
 
       <section className={"third-section"}>
-        <Title title={thirdSection.title} />
+        <Title title={thirdSection.title} className={'community-page-generator-title'}/>
         <div className={"third-section-container"}>
           {thirdSection.mapItems.map((item, index) => {
             return (

@@ -14,9 +14,8 @@ export default {
     imgURLMobile: ExpertiseImageFirst,
     infoBlock: {
       infoTitleFirst:
-        "Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.",
-      infoDescriptionFirst:
-        "An effective brand can give you a significant edge in today’s highly competitive market. We create emotional connections far beyond simply making your brand look visually appelling. We create authentic and unforgettable visuals and voice that connects with your customers.",
+        "Consumer spending is projected to increase by 92 percent to $157 billion worldwide on apps by 2022.",
+      infoDescriptionFirst: "Creating powerful, high performance mobile and web apps, built with success in mind is what you need. This is why we aren't afraid to source the best tech options for each of your goals. Together, we build, connect and scale digital platforms to develop award-winning technology perfectly aligned with today's markets.",
       infoSubtitleFirst: "— WORK WITH US",
     },
   },

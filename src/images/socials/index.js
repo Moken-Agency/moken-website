@@ -1,5 +1,5 @@
 import instagram from "./001-instagram-2-black.svg";
-import instagramWhite from "./001-instagram-2.svg";
+import instagramWhite from "./instagram-white.svg";
 import twitter from "./002-twitter-black.svg";
 import twitterWhite from "./002-twitter.svg";
 import linkedin from "./006-linkedin-black.svg";

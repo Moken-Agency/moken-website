@@ -12,12 +12,13 @@ const LeftInfoWithRightImage = ({
   btnTitle = "",
   imgUrl = "",
   isLeftImage = false,
+  withoutRightPadding = false
 }) => {
   const { isMobile } = useWindowDimensions();
   console.log({ isMobile });
 
   return (
-    <section className={"left-info-with-right-image-container"}>
+    <section className={"left-info-with-right-image-container"} style={{paddingRight: withoutRightPadding ? 0 : null}}>
       {mainTitle && (
         <Title
           title={mainTitle}
@@ -26,7 +27,7 @@ const LeftInfoWithRightImage = ({
       )}
       <div
         className={"left-info-with-right-image-info-container"}
-        style={{ flexDirection: isLeftImage ? "row-reverse" : "row" }}
+        style={{ flexDirection: isLeftImage ? "row-reverse" : "row", paddingLeft: withoutRightPadding ? '4vw' : null }}
       >
         <div
           className={"left-info-with-right-image-text-container"}

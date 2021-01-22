@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "../Modal";
+import Modal from 'react-modal';
 import "./index.scss";
 import Text from "../Text";
 import Input from "../Input";
@@ -8,15 +8,37 @@ import Circles from "../../images/report-bug-circles.png";
 import Button from "../Button";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
-const ReportBug = (props) => {
+const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
   const { isMobile } = useWindowDimensions();
+  const customStyles = {
+    content : {
+      backgroundColor: 'rgba(0, 0, 0, 0.1)',
 
+    }
+  };
   return (
     <Modal
-      buttonTitle={"report a bug".toUpperCase()}
-      buttonClassName={"report-a-bug-button"}
+        isOpen={isOpen}
+        customStyles={customStyles}
+        style={{
+          overlay: {
+            backgroundColor: 'rgb(253, 253, 253, 50%)',
+
+          },
+          // content: {
+          //   width: widthVW + 'vw',
+          //   height: heightVH + 'vh'
+          // }
+        }}
+        // className="Modal"
     >
       <div className={"report-bug-container"}>
+        <Text containerStyles={{position: 'absolute', right: 10, top: 10, cursor: 'pointer'}}
+              type={'semiBold'}
+              size={16}
+              textStyles={{letterSpacing: 4}}
+              onClick={() => setIsOpen(false)}>CLOSE</Text>
+
         <div className={"report-bug-left-container"}>
           <Text
             size={".8vw"}
@@ -31,7 +53,7 @@ const ReportBug = (props) => {
             mobSize={16}
             type={"semiBold"}
             textStyles={{ letterSpacing: 4 }}
-            containerStyles={{ marginBottom: isMobile ? 20 : 0 }}
+            containerStyles={{ marginBottom: isMobile ? 20 : 18 }}
           >
             SOMETHING JUST NOT WORKING RIGHT?
           </Text>
@@ -39,7 +61,7 @@ const ReportBug = (props) => {
             size={"4.3vw"}
             mobSize={45}
             type={"thin"}
-            containerStyles={{ marginBottom: isMobile ? 55 : "5.4vw" }}
+            containerStyles={{ marginBottom: isMobile ? 55 : 55 }}
           >
             Report a Bug
           </Text>

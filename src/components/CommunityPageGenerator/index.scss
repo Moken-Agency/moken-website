@@ -15,7 +15,7 @@
     }
     .first-section-img {
       width: 83vw;
-      height: 44.9vw;
+      min-height: 44.9vw;
       margin-bottom: 10.7vw;
       background-color: #cdcdcd;
       @media screen and (max-width: 600px) {
@@ -42,6 +42,7 @@
         padding: 0;
         white-space: nowrap;
         height: 2vw;
+        margin-bottom: 0;
       }
       .second-section-map-container {
         display: flex;
@@ -76,10 +77,13 @@
     }
   }
   .third-section  {
+    .community-page-generator-title {
+      margin-bottom: 0;
+    }
     .third-section-container {
       padding: 0 10.1vw 0 14.2vw;
       @media only screen and (max-width: 600px) {
-        padding: 0 60px 0 50px;
+        padding: 0 46px;
       }
     }
   }

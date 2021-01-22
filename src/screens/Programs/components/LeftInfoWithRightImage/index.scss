@@ -14,15 +14,12 @@
     display: flex;
     align-items: center;
     position: relative;
-
-    justify-content: space-around;
-
-    //padding-left: 4vw;
+    justify-content: space-between;
     @media screen and (max-width: 600px) {
       flex-direction: column !important;
     }
     .left-info-with-right-image-text-container {
-      width: 40vw;
+      //width: 40vw;
       margin-right: 100px;
       @media screen and (max-width: 600px) {
         width: auto;

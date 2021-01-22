@@ -22,6 +22,7 @@ import ProgramCommunityListPartner from "../components/ProgramCommunityListPartn
 import HeaderTitle from "../../../components/HeaderTitle";
 import HeaderWithBlackInfoBlock from "../../../components/HeaderWithBlackInfoBlock";
 import ImageBlock from "../../../components/ImageBlock";
+import Mentor from "./Mentor";
 
 const MokenLabs = () => {
   return (
@@ -84,6 +85,8 @@ const MokenLabs = () => {
         secondList={options.purposes}
       />
 
+      <ImageBlock />
+
       <Title title={"YOUR MENTORS"} className={"labs-global-title"} />
 
       <section className={"labs-global-container"}>
@@ -103,7 +106,7 @@ const MokenLabs = () => {
         <div className={"labs-global-list-container"}>
           {[1, 2, 3, 4, 5, 6].map(() => {
             return (
-              <div className={"labs-global-list-item"} data-aos="fade-in" />
+             <Mentor/>
             );
           })}
         </div>

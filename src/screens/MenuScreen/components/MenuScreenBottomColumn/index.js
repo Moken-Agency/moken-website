@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import Text from "../../../../components/Text";
 import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 import './index.scss';
-import {useHistory} from "react-router-dom";
+import RouteComponent from "./RouteComponent";
+import ReportBug from "../../../../components/ReportBug";
 
 const styles = {
   mainTitle: {
@@ -16,9 +17,12 @@ const styles = {
   },
 };
 
+const a = () => {
+  return  <ReportBug isOpen={true}/>
+}
+
 const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
   const { isMobile } = useWindowDimensions();
-  const history = useHistory();
 
     return (
     <div style={{ marginRight: 150 }}>
@@ -34,19 +38,24 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
       >
         {title}
       </Text>
-      {routs.map(({ title, route }, index) => {
+
+      {/*{a()}*/}
+      {routs.map(({ title, route, pressableComponent }, index) => {
         return (
-          <Text
-            size={18}
-            textStyles={styles.routs}
-            className={'black-menu-bottom-column-item'}
-            containerStyles={{ marginBottom: 15 }}
-            type={"light"}
-            key={"MenuScreenBottomColumnRouts" + index}
-            onClick={() => history.push(route)}
-          >
-            {title}
-          </Text>
+            <>
+              <RouteComponent title={title} route={route} pressableComponent={pressableComponent}/>
+              {/*{PressableComponent ? <PressableComponent /> : <Text*/}
+              {/*    size={18}*/}
+              {/*    textStyles={styles.routs}*/}
+              {/*    className={'black-menu-bottom-column-item'}*/}
+              {/*    containerStyles={{marginBottom: 15}}*/}
+              {/*    type={"light"}*/}
+              {/*    key={"MenuScreenBottomColumnRouts" + index}*/}
+              {/*    // onClick={() => history.push(route)}*/}
+              {/*>*/}
+              {/*  {title}*/}
+              {/*</Text>}*/}
+          </>
         );
       })}
     </div>

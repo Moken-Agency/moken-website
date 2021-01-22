@@ -5,7 +5,7 @@ export default {
       route: "/branding",
     },
     {
-      title: "Business Strategy",
+      title: "Strategic Advisory",
       route: "",
     },
     {
@@ -14,7 +14,7 @@ export default {
     },
     {
       title: "Market Research & Validation",
-      route: "",
+      route: "/market-research-validation",
     },
   ],
   product: [
@@ -28,7 +28,7 @@ export default {
     },
     {
       title: "Product & Software Development",
-      route: "/product-development",
+      route: "",
     },
     {
       title: "Product Marketing",
@@ -46,7 +46,7 @@ export default {
     },
     {
       title: "Community Development",
-      route: "",
+      route: "/community-development",
     },
     {
       title: "Events & Launch Activations",

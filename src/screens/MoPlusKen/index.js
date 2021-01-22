@@ -101,7 +101,6 @@ const MoPlusKen = () => {
         imgUrl={""}
       />
 
-      <Title title={"CONFERENCES & KEYNOTES"} className={"key-notes-title"} />
 
       <TitleTwoDescriptions
         mainTitle={"CONFERENCES & KEYNOTES"}

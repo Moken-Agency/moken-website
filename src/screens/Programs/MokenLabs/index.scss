@@ -39,15 +39,15 @@
       }
     }
     .labs-global-list-container {
-      display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 195px;
-      .labs-global-list-item {
-        width: 20vw;
-        margin-bottom: 4vw;
-        height: 25vw;
-        background-color: grey;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 89px;
+      grid-column-gap: 156px;
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
       }
     }
   }

@@ -1,3 +1,6 @@
+import firstImage from '../../images/expertise-first-image.png'
+import secondImage from '../../images/expertise-second.png'
+
 export default {
   firstSection: {
     title: {
@@ -6,7 +9,7 @@ export default {
       titleSecond: "BRANDING",
     },
     subtitle: "Telling emotionally compelling stories that create action.",
-    imgURL: "",
+    imgURL: firstImage,
     infoBlock: {
       infoTitleFirst:
         "Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.",
@@ -35,7 +38,7 @@ export default {
         // route: ''
       },
     ],
-    imgURL: "",
+    imgURL: secondImage,
   },
   thirdSection: {
     title: "WHAT WE DO",

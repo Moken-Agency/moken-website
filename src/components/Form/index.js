@@ -4,11 +4,24 @@ import "./index.scss";
 import "reactjs-popup/dist/index.css";
 import Text from "../Text";
 import Button from "../Button";
+import Modal from 'react-modal';
 
-const Form = ({ backgroundColor = "#ff7d3e", formName = "Test" }) => {
-  return (
+const customStyles = {
+    content : {
+        top                   : '50%',
+        left                  : '50%',
+        right                 : 'auto',
+        bottom                : 'auto',
+        marginRight           : '-50%',
+        transform             : 'translate(-50%, -50%)'
+    }
+};
+
+const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen }) => {
+    return (
     <div className={"form-container"}>
-      <Popup trigger={<button className={""}>{"Form"}</button>} modal nested>
+      <Modal isOpen={isOpen} className="Modal" customStyles={customStyles}>
+      {/*<Popup trigger={<button className={""}>{"Form"}</button>} modal nested>*/}
         {(close) => (
           <div>
             <Button
@@ -45,7 +58,7 @@ const Form = ({ backgroundColor = "#ff7d3e", formName = "Test" }) => {
             </div>
           </div>
         )}
-      </Popup>
+      </Modal>
     </div>
   );
 };

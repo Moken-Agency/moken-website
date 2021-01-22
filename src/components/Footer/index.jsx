@@ -3,7 +3,6 @@ import "./styles.scss";
 import footerOptions from "./footer-options";
 import ColumnMenu from "./components/ColumnMenu";
 import Text from "../../components/Text";
-// import Logo from "../../images/moken.svg";
 import Input from "../Input";
 import useValidation from "../../hooks/useValidation";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
@@ -29,6 +28,8 @@ const containerStyles = {
 
 const Footer = ({ isOpen, setIsOpen }) => {
   const { width } = useWindowDimensions();
+  const { isMobile } = useWindowDimensions();
+
 
   const {
     handleSubmit,
@@ -39,7 +40,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
   } = useValidation({ email: "" }, validationRules.sendEmailValidation);
   let history = useHistory();
 
-  const socialsData = width >= 600 ? socialsMedia : socialsMediaWhite;
+  const socialsData = !isMobile ? socialsMedia : socialsMediaWhite;
 
   return (
     <div className={"footer-container"}>
@@ -119,7 +120,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
               size={12}
               color={"white"}
               mobSize={10}
-              textStyles={{ letterSpacing: 4 }}
+              textStyles={{ letterSpacing: isMobile ? 3 : 4 }}
               containerStyles={containerStyles}
             >
               TERMS & CONDITIONS

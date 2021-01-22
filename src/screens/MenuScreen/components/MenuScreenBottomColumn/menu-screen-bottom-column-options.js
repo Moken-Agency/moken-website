@@ -1,3 +1,8 @@
+import Modal from "../../../../components/Modal";
+import React from "react";
+import ReportBug from "../../../../components/ReportBug";
+import Form from "../../../../components/Form";
+
 export default {
   columns: [
     {
@@ -34,8 +39,11 @@ export default {
       routs: [
         { title: "Contact Us", route: "/connect-with-us" },
         { title: "FAQ", route: "/FAQ" },
-        { title: "Meet the Team", route: "" },
-        { title: "Report a Bug", route: "" },
+        { title: "Meet the Team", route: ""},
+        { title: "Report a Bug", route: "", pressableComponent: (isOpen, setIsOpen) => {
+            return <ReportBug isOpen={isOpen} setIsOpen={setIsOpen} widthVW={40} heightVH={90}/>
+          }
+        },
       ],
     },
   ],

@@ -133,7 +133,7 @@ const HeaderMobile = ({ isOpen = false, setIsOpen }) => {
                   onClick={() => {
                     history.push(route);
                   }}
-                  textStyles={{ textTransform: "uppercase" }}
+                  textStyles={{ textTransform: "uppercase", letterSpacing: 3 }}
                 >
                   {title}
                 </Text>
