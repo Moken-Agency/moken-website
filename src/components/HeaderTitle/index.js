@@ -11,7 +11,8 @@ const HeaderTitle = ({
   return (
     <div className={"header-title-container"} style={{ marginBottom }}>
       <Text
-        size={16}
+        size={'1vw'}
+        // size={16}
         mobSize={14}
         animationType={"fade-in"}
         type={"semiBold"}
@@ -20,7 +21,8 @@ const HeaderTitle = ({
         {title}
       </Text>
       <Text
-        size={75}
+        size={'4.7vw'}
+        // size={75}
         animationType={"fade-in"}
         mobSize={45}
         type={"thin"}

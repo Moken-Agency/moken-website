@@ -12,8 +12,8 @@ export default {
     },
     {
       title: "Insights",
-      route: "/insights",
       withDivider: true,
+      link: 'https://medium.com/insights'
     },
     {
       title: "Careers",

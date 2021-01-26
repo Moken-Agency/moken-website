@@ -37,9 +37,10 @@
     }
 
     .about-moken-second-info-section-secondary-container {
-      padding-left: 243px;
+      padding-left: 14vw;
       margin-right: 7px;
-      width: 555px;
+      width: 34.5vw;
+      //width: 555px;
       @media only screen and (max-width: 600px) {
         width: auto;
         padding: 0 43px;
@@ -47,25 +48,30 @@
       }
     }
     .about-moken-second-info-section-subtitle {
-      margin-bottom: 90px;
+      margin-bottom: 5.6vw;
+      //margin-bottom: 90px;
     }
     .about-moken-second-info-section-text {
-      margin-bottom: 80px;
+      margin-bottom: 5.5vw;
+      //margin-bottom: 80px;
     }
     .about-moken-second-kendra-block {
       display: flex;
       align-items: center;
       margin: 5px 0;
       .about-moken-second-divider {
-        height: 171px;
+        height: 10.7vw;
+        //height: 171px;
         width: 1px;
         background-color: black;
-        margin-right: 45px;
+        margin-right: 2.8vw;
+        //margin-right: 45px;
       }
       .about-moken-second-kendra-info-block {
-        width: 555px;
+        //width: 555px;
         .about-moken-second-kendra-info-text {
-          margin-bottom: 45px;
+          margin-bottom: 2.9vw;
+          //margin-bottom: 45px;
         }
       }
     }
@@ -75,7 +81,8 @@
     position: relative;
     //height: 750px;
     //background-color: #a7a7a7;
-    margin-bottom: 178px;
+    //margin-bottom: 178px;
+    margin-bottom: 11.1vw;
     display: flex;
     justify-content: center;
 
@@ -89,7 +96,8 @@
       //flex-direction: column-reverse;
     }
       .about-moken-video-info-block {
-        padding: 66px 80px 66px 117px;
+        //padding: 66px 80px 66px 117px;
+        padding: 4.1vw 5vw 4.1vw 7.3vw;;
         background-color: white;
         position: absolute;
         z-index: 3;
@@ -109,13 +117,26 @@
   }
 
   .about-name-color-block {
-    margin-bottom: 114px;
-    padding-top: 140px;
-    padding-bottom: 180px;
+    //margin-bottom: 114px;
+    padding-top: 11.2vw;
+    padding-bottom: 11.2vw;
+    margin-bottom: 7.1vw;
   }
   .collaborate {
     width: 300px;
     margin-bottom: 118px
+  }
+
+}
+
+.video-container {
+  &:hover {
+    .pause-btn {
+      display: flex;
+    }
+  }
+  .pause-btn {
+    display: none;
   }
 
 }

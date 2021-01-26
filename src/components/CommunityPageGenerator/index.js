@@ -82,7 +82,7 @@ const CommunityPageGenerator = ({
             type={"thin"}
             mobSize={45}
             animationType={"fade-in"}
-            textStyles={{ letterSpacing: 4 }}
+            textStyles={{ letterSpacing: 4, lineHeight: isMobile ? '45px' : '4.3vw'}}
             containerStyles={{ marginBottom: isMobile ? 150 : "10.5vw" }}
           >
             {firstSection.subtitle}

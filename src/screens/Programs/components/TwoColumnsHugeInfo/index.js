@@ -12,7 +12,8 @@ const FirstItem = ({ title, subtitle }) => {
   return (
     <div className={"labs-benefits-container-info-block-work"}>
       <Text
-        size={22}
+        size={'1.4vw'}
+        // size={22}
         type={"semiBold"}
         animationType={"fade-up"}
         className={"labs-benefits-list-item-first"}
@@ -20,10 +21,11 @@ const FirstItem = ({ title, subtitle }) => {
         {title}
       </Text>
       <Text
-        size={20}
+        size={'1.25vw'}
+        // size={20}
         mobSize={16}
         animationType={"fade-up"}
-        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+        textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
         type={"light"}
       >
         {subtitle}
@@ -52,7 +54,8 @@ const TwoColumnsHugeInfo = ({
       <section className={"labs-benefits-container"} style={containerStyles}>
         <Text
           type={"extraLight"}
-          size={55}
+          size={'3.4vw'}
+          // size={55}
           mobSize={35}
           animationType={"fade-up"}
           className={"labs-benefits-container-title"}
@@ -61,11 +64,12 @@ const TwoColumnsHugeInfo = ({
         </Text>
         <div className={"labs-benefits-container-info-block"}>
           <Text
-            size={20}
+            size={'1.25vw'}
+            // size={20}
             mobSize={16}
             type={"light"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
             className={"labs-benefits-container-info-block-first-title"}
           >
             {rightTitle}
@@ -74,7 +78,8 @@ const TwoColumnsHugeInfo = ({
           {rightFirstListTitle ? (
             <Text
               type={"semiBold"}
-              size={14}
+              size={'.88vw'}
+              // size={14}
               animationType={"fade-up"}
               mobSize={10}
               className={"labs-benefits-container-info-block-second-title"}

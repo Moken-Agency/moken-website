@@ -4,9 +4,7 @@ import options from "./options";
 
 const StrategyAdvisory = () => {
   return (
-    <div>
       <CommunityPageGenerator {...options} />
-    </div>
   );
 };
 

@@ -9,17 +9,19 @@
   .title-two-descriptions-container {
     margin-top: 10vw;
     padding: 0 4vw;
-    margin-bottom: 174px;
+    margin-bottom: 11vw;
+    //margin-bottom: 174px;
     @media only screen and (max-width: 600px) {
       padding: 0;
     }
     .text-container {
-      margin-bottom: 64px;
+      margin-bottom: 4vw;
+      //margin-bottom: 64px;
     }
     .community-capabilities-container {
       display: flex;
       justify-content: space-between;
-      margin-top: 50px;
+      //margin-top: 50px;
       div {
         width: 32.5vw;
         align-items: flex-start;

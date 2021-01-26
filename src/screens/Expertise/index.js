@@ -26,7 +26,7 @@ const Expertise = () => {
             size={16}
             mobSize={14}
             type={"semiBold"}
-            mobColor={"white"}
+            // mobColor={"white"}
           >
             EXPERTISE
           </Text>
@@ -36,13 +36,13 @@ const Expertise = () => {
             size={75}
             animationType={"fade-in"}
             mobSize={45}
-            mobColor={"white"}
+            // mobColor={"white"}
           >
             Let’s Build the Future
           </Text>
         </div>
 
-        {/*<img src={''} />*/}
+        <img src={''} />
       </div>
 
       <Title className={"expertise-started-title"} title={"GETTING STARTED"} />
@@ -88,7 +88,7 @@ const Expertise = () => {
             <div className={"expertise-bottom-first-info-container"}>
               <Title
                 color={"white"}
-                title={"TAKE A CHANCE"}
+                title={"FIND WHAT YOU NEED"}
                 className={"expertise-bottom-first-info-title"}
               />
               <Text
@@ -107,24 +107,25 @@ const Expertise = () => {
                 size={"1vw"}
                 animationType={"fade-in"}
                 mobSize={16}
+                textStyles={{}}
                 className={"expertise-bottom-first-info-text-second"}
+                containerStyles={{marginBottom: isMobile ? 50 : null}}
               >
-                Not everyone fits into a pre-defined job description. Whether
-                you’re a professional ostrich babysitter or an expert developer,
-                we look for unconventional excellence. Tell us how you think you
-                can contribute.
+                  Not to worry, we’ve got you. If you’re looking for something a little more integrative check out our
+                  roadmaps & sprint offerings. Or perhaps you need something specific, developed in an effective and
+                  efficient manner. If that’s it, check out StartupSmart for an array of à la carte options at a startup price point.
               </Text>
-              <Text
-                color={"white"}
-                type={"light"}
-                animationType={"fade-in"}
-                size={"1vw"}
-                mobSize={16}
-                className={"expertise-bottom-first-info-text-third"}
-              >
-                Who knows, maybe you’re exactly what we’ve been looking for all
-                along.
-              </Text>
+              {/*<Text*/}
+              {/*  color={"white"}*/}
+              {/*  type={"light"}*/}
+              {/*  animationType={"fade-in"}*/}
+              {/*  size={"1vw"}*/}
+              {/*  mobSize={16}*/}
+              {/*  className={"expertise-bottom-first-info-text-third"}*/}
+              {/*>*/}
+              {/*  Who knows, maybe you’re exactly what we’ve been looking for all*/}
+              {/*  along.*/}
+              {/*</Text>*/}
             </div>
             <div className={"expertise-bottom-btn-container"}>
               <Button

@@ -6,7 +6,8 @@ const Title = ({
   title,
   className = "",
   color = "black",
-  size = 14,
+  size = '.9vw',
+  // size = 14,
   containerStyles = {},
 }) => {
   return (

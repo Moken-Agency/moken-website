@@ -6,12 +6,11 @@ export default {
       titleSecond: "MARKET RESEARCH & VALIDATION",
     },
     subtitle: "Deliberate outcomes through data driven decisions.",
-    imgURL: "",
+    // imgURL: "",
     infoBlock: {
       infoTitleFirst:
-        "Slow websites & poor user experience lead to an annual $2.6 billion revenue loss & turn away 89% of consumers",
-      infoDescriptionFirst:
-        "An effective website can give you a significant edge in today’s highly competitive, ever-evolving digital market. We create intuitive and functional websites far beyond simply making you look visually apealing online. We design and develop with strategic marketing initiatives and user experience at the forefront aimed at caputuring the attention and guiding your audience through your funnel.",
+        "85% of product failure can be traced to a lack of market research & product market fit validation issues.",
+      infoDescriptionFirst: "Unfortunately there’s no ‘plug and play’ way to go about solving this and the common online survey ‘go-to’ simply won’t cut it. Each market, solution, and startup is different, which is why our team works with you to develop a custom validation and research process delivering the raw data, clarity, and feedback directly from the market to determine and confirm the next step.",
       infoSubtitleFirst: "— WORK WITH US",
     },
   },
@@ -19,26 +18,26 @@ export default {
     title: "PRODUCT STRATEGY CAPABILITIES",
     mapItems: [
       {
-        title: "Web Design",
+        title: "Market Research",
         // route: ''
       },
       {
-        title: "E-Commerce Development",
+        title: "Business Validation",
         // route: ''
       },
       {
-        title: "Back End Development",
+        title: "Product Validation",
         // route: ''
       },
       {
-        title: "CMS Design & Development",
+        title: "ThinkTank",
         // route: ''
       },
       {
-        title: "Front End Development",
+        title: "Focus Groups",
       },
     ],
-    imgURL: "",
+    // imgURL: "",
   },
   thirdSection: {
     title: "WHAT WE DO",

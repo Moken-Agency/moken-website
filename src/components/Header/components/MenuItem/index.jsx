@@ -16,6 +16,7 @@ const MenuItem = ({
   route = "",
   size = 11,
   className = "",
+    link
 }) => {
   const [hover, setHover] = useState({ isHover: true, color: "#000" });
   const [hoveredIndex, setHoveredIndex] = useState(null)
@@ -35,7 +36,7 @@ const MenuItem = ({
   const handleOnClick = () => {
     console.log("handleOnClick");
     if (!subRouts.length) {
-      history.push(route);
+     link ? window.open(link, '_blank') : history.push(route);
     } else {
       onClick();
     }

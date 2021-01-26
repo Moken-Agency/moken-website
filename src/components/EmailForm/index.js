@@ -20,8 +20,8 @@ const EmailForm = ({
         <div className={`email-form-container ${className}`}>
           <div data-aos="fade-in" className={"email-form-divider"} />
           <Text
-            containerStyles={{ margin: isMobile ? "4vw 0" : "80px 0" }}
-            size={isMobile ? "5vw" : 30}
+            containerStyles={{ margin: isMobile ? "4vw 0" : "5vw 0" }}
+            size={isMobile ? "5vw" : '2vw'}
             animationType={"fade-in"}
             type={"thin"}
             textStyles={{ letterSpacing: 0.3 }}
@@ -37,7 +37,8 @@ const EmailForm = ({
               width={width}
             />
             <Button
-              size={14}
+              size={'.9vw'}
+              // size={14}
               mobSize={12}
               title={"SUBSCRIBE"}
               textColor={"black"}

@@ -1,0 +1,37 @@
+.video-player-container {
+  position: relative;
+  &:hover {
+    .pause-btn {
+      display: flex;
+    }
+  }
+  .pause-btn {
+    display: none;
+    position: absolute;
+
+    top: calc(50% - 67px);
+    left: calc(50% - 67px);
+    z-index: 1;
+  }
+  .video-btn-container {
+    transition: 1s;
+    display: flex;
+    width: 135px;
+    height: 135px;
+    background-color: white;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 12.1px;
+    border-color: transparent transparent transparent #000000;
+  }
+
+}

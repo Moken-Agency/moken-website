@@ -13,6 +13,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ImageBlock from "../../components/ImageBlock";
 import ReactPlayer from "react-player";
 import img from "../../images/innovation-mob-header.svg";
+import VideoPlayer from "./VideoPlayer";
 
 const AboutMoken = (props) => {
     console.log({props});
@@ -27,7 +28,7 @@ const AboutMoken = (props) => {
         description={
           "Built to support founders, Moken is a group of trailblazing companies specialized in all things startup."
         }
-        marginBottom={isMobile ? 160 : 142}
+        marginBottom={isMobile ? 160 : '8.9vw'}
       />
 
       <ImageBlock position={"right"} />
@@ -50,7 +51,8 @@ const AboutMoken = (props) => {
         <div className={"about-moken-second-info-section-secondary-container"}>
           <Text
             className={"about-moken-second-info-section-subtitle"}
-            size={55}
+            size={'3.4vw'}
+            // size={55}
             animationType={"fade-up"}
             mobSize={35}
             type={"extraLight"}
@@ -60,9 +62,10 @@ const AboutMoken = (props) => {
           </Text>
           <Text
             className={"about-moken-second-info-section-text"}
-            size={20}
+            size={'1.25vw'}
+            // size={20}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
             mobSize={16}
             type={"light"}
           >
@@ -82,14 +85,16 @@ const AboutMoken = (props) => {
                 className={"about-moken-second-kendra-info-text"}
                 type={"semiBold"}
                 animationType={"fade-up"}
-                size={24}
+                size={'1.5vw'}
+                // size={24}
                 mobSize={18}
               >
                 Moken creates diversified opportunities for startups and
                 founders driving economic and social impact, globally.{" "}
               </Text>
               <Text
-                size={16}
+                size={'1vw'}
+                // size={16}
                 animationType={"fade-up"}
                 mobSize={12}
                 textStyles={{ letterSpacing: 4 }}
@@ -107,53 +112,80 @@ const AboutMoken = (props) => {
         <div className={"about-moken-video-info-block"}>
           <Text
             className={"about-moken-video-info-block-first-title"}
-            size={16}
+            // size={16}
+            size={'1vw'}
             animationType={"fade-up"}
             type={"semiBold"}
           >
             THIS IS WHERE THE VIDEO TITLE GOES
           </Text>
           <Text
-            size={20}
+            // size={20}
+            size={'1.2vw'}
             type={"light"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
             mobSize={16}
           >
             This is where the video CTA should go to outline the video content.
           </Text>
         </div>
-        <ReactPlayer
-          height={"80vh"}
-          width={"100vw"}
-          playing={playing}
-          playIcon={
-            <button
-              onClick={() => setPlaying(!playing)}
-              style={{
-                width: 135,
-                height: 135,
-                backgroundColor: "white",
-                borderRadius: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: 0,
-                  height: 0,
-                  "border-style": "solid",
-                  "border-width": "7px 0 7px 12.1px",
-                  "border-color": "transparent transparent transparent #000000",
-                }}
-              />
-            </button>
-          }
-          light="https://previews.123rf.com/images/illdirection/illdirection1603/illdirection160300030/55596780-path-with-landscape-background.jpg"
-          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-        />
+          {/*<div style={{position: 'relative'}} className={'video-container'}>*/}
+          {/*    <button*/}
+          {/*        className={'pause-btn'}*/}
+          {/*        style={{*/}
+          {/*            position: 'absolute',*/}
+          {/*            width: 135,*/}
+          {/*            height: 135,*/}
+          {/*            backgroundColor: "white",*/}
+          {/*            borderRadius: "100%",*/}
+          {/*            justifyContent: "center",*/}
+          {/*            alignItems: "center",*/}
+          {/*            outline: 'none',*/}
+          {/*            border: 0,*/}
+          {/*            top: 'calc(50% - 67px)',*/}
+          {/*            left: 'calc(50% - 67px)'*/}
+          {/*        }}*/}
+          {/*    >*/}
+          {/*     <Text type={'semiBold'} size={34}>||</Text>*/}
+          {/*    </button>*/}
+          {/*    <ReactPlayer*/}
+          {/*        height={"80vh"}*/}
+          {/*        width={"100vw"}*/}
+          {/*        playing={playing}*/}
+          {/*        // controls*/}
+          {/*        playIcon={*/}
+          {/*            <button*/}
+          {/*                onClick={() => setPlaying(!playing)}*/}
+          {/*                style={{*/}
+          {/*                    width: 135,*/}
+          {/*                    height: 135,*/}
+          {/*                    backgroundColor: "white",*/}
+          {/*                    borderRadius: "100%",*/}
+          {/*                    display: "flex",*/}
+          {/*                    justifyContent: "center",*/}
+          {/*                    alignItems: "center",*/}
+          {/*                    outline: 'none',*/}
+          {/*                    border: 0*/}
+          {/*                }}*/}
+          {/*            >*/}
+          {/*                <div*/}
+          {/*                    style={{*/}
+          {/*                        width: 0,*/}
+          {/*                        height: 0,*/}
+          {/*                        "border-style": "solid",*/}
+          {/*                        "border-width": "7px 0 7px 12.1px",*/}
+          {/*                        "border-color": "transparent transparent transparent #000000",*/}
+          {/*                    }}*/}
+          {/*                />*/}
+          {/*            </button>*/}
+          {/*        }*/}
+          {/*        light="https://previews.123rf.com/images/illdirection/illdirection1603/illdirection160300030/55596780-path-with-landscape-background.jpg"*/}
+          {/*        url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"*/}
+          {/*    />*/}
+          {/*</div>*/}
+          <VideoPlayer />
+
         {/*  <video*/}
         {/*  // autoPlay*/}
         {/*    controls*/}

@@ -24,7 +24,7 @@ const Header = ({ isOpen, setIsOpen }) => {
     <div className={"header-container"}>
       <div className={"bar-container"}>
         <div className={"menu-container"}>
-          {leftMenu.map(({ title, withDivider, route }, index) => {
+          {leftMenu.map(({ title, withDivider, route, link }, index) => {
             return (
               <MenuItem
                 key={"leftMenu" + index}
@@ -32,6 +32,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 withDivider={withDivider}
                 textStyles={topMenuTextStyles}
                 route={route}
+                link={link}
                 size={".61vw"}
               />
             );
