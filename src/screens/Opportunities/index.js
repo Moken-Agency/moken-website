@@ -12,6 +12,7 @@ import OpportunitiesImage from "../../images/opportunities.jpg";
 import HeaderSecondType from "../../components/HeaderSecondType";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ImageBlock from "../../components/ImageBlock";
+import OpportunitiesPeopleLeadershipEmailComponent from "../../components/OpportunitiesPeopleLeadershipEmailComponent";
 
 const Opportunities = () => {
   const { isMobile } = useWindowDimensions();
@@ -56,73 +57,14 @@ const Opportunities = () => {
         })}
       </div>
 
-      <Title
-        title={"UNLIMITED OPPORTUNITIES"}
-        containerStyles={{ marginTop: "14vw" }}
-      />
-
-      <section className={"opportunities-form-container"}>
-        <div className={"opportunities-form-left-container"}>
-          <Text
-            size={"3vw"}
-            animationType={"fade-in"}
+        <OpportunitiesPeopleLeadershipEmailComponent
+            title={'UNLIMITED OPPORTUNITIES'}
             subtitle={"Not exactly what you were looking for?"}
-            type={"extraLight"}
-            className={"subtitle"}
-          >
-            Not exactly what you were looking for?
-          </Text>
-          <Text
-            type={"light"}
-            animationType={"fade-in"}
-            size={"1.2vw"}
-            className={"left-second-title"}
-          >
-            The Moken team is growing at a rapid pace, to stay in the loop and
-            explore ways to work together join our mailing list to never miss a
-            beat.
-          </Text>
-          <div className={"input-container"}>
-            <Input placeholder={"Your name"} width={"12vw"} mobSize={15} />
-            <Input
-              placeholder={"Email"}
-              width={"12vw"}
-              mobSize={15}
-              withGoButton
-            />
-          </div>
-        </div>
-
-        <div className={"opportunities-form-right-container"}>
-          <Text
-            type={"semiBold"}
-            animationType={"fade-in"}
-            size={".8vw"}
-            containerStyles={{ marginBottom: "1.5vw" }}
-            textStyles={{ letterSpacing: 4 }}
-            className={"right-first-title"}
-          >
-            TAKE A CHANCE
-          </Text>
-          <Text
-            type={"light"}
-            animationType={"fade-in"}
-            size={"1.2vw"}
-            className={"right-second-title"}
-          >
-            Not everyone fits into a pre-defined job description. Whether you’re
-            a professional ostrich babysitter or an expert software engineer, we
-            look for unconventional excellence. Tell us how you think you can
-            contribute. Who knows, maybe you’re exactly what we’ve been looking
-            for all along.
-          </Text>
-          <SubmitYourResume
-            color={"black"}
-            onClick={() => alert("submot resume")}
-            className={"submit"}
-          />
-        </div>
-      </section>
+            description={"The Moken team is growing at a rapid pace, to stay in the loop and\n" +
+            "            explore ways to work together join our mailing list to never miss a\n" +
+            "            beat."}
+            imgURL={' '}
+        />
     </div>
   );
 };

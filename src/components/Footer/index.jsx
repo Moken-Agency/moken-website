@@ -106,7 +106,8 @@ const Footer = ({ isOpen, setIsOpen }) => {
             <Text
               onClick={() => history.push("/privacy")}
               type={"semiBold"}
-              size={12}
+              size={'.75vw'}
+              // size={12}
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: 4 }}
@@ -117,7 +118,8 @@ const Footer = ({ isOpen, setIsOpen }) => {
             <Text
               onClick={() => history.push("/terms")}
               type={"semiBold"}
-              size={12}
+              size={'.75vw'}
+              // size={12}
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: isMobile ? 3 : 4 }}

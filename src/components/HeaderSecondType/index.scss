@@ -1,21 +1,32 @@
 .header-second-title-container {
-  padding: 124px 0 0 215px;
-  margin-bottom: 184px;
-  width: 700px;
+  padding: 7.6vw 0 0 13.5vw;
+  //padding: 124px 0 0 215px;
+  //margin-bottom: 184px;
+  margin-bottom: 9vw;
+  //width: 700px;
+  width: 40vw;
     @media only screen and (max-width: 600px) {
     padding: 142px 43px 0 43px;
     width: auto;
     margin-bottom: 206px;
   }
   .header-second-main-title {
-    letter-spacing: 4px;
+    letter-spacing: .25vw;
     margin-bottom: 1.4vw;
     @media only screen and (max-width: 600px) {
       margin-bottom: 48px;
+      letter-spacing: 4px;
+
     }
   }
   .header-second-subtitle {
     margin-bottom: 2.4vw;
+    span {
+      line-height: 4.7vw;
+      @media only screen and (max-width: 600px) {
+        line-height: 45px;
+      }
+    }
     @media only screen and (max-width: 600px) {
       margin-bottom: 42px;
     }

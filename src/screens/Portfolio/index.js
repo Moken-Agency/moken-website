@@ -54,7 +54,7 @@ const Portfolio = (props) => {
         textWidth={"45vw"}
         backgroundColor={"#000"}
         type={"thin"}
-        size={75}
+        // size={75}
         mobSize={55}
         className={"portfolio-color-block"}
       />

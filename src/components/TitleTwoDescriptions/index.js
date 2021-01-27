@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../Text";
 import "./index.scss";
 import Title from "../Title";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const TitleTwoDescriptions = ({
   mainTitle = "",
@@ -9,6 +10,8 @@ const TitleTwoDescriptions = ({
   firstDescription = "",
   secondDescription = "",
 }) => {
+  const { isMobile } = useWindowDimensions();
+
   return (
     <div className={"title-two-descriptions-main-container"}>
       <Title
@@ -29,10 +32,10 @@ const TitleTwoDescriptions = ({
         </Text>
         <div className={"community-capabilities-container"} data-aos="fade-up">
           <Text
-            size={'1.2vw'}
+            size={'1.25vw'}
             // size={20}
             animationType={"fade-in"}
-            textStyles={{ lineHeight: '2.2vw' }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
             // textStyles={{ lineHeight: "35px" }}
             mobSize={16}
             type={"light"}
@@ -40,9 +43,12 @@ const TitleTwoDescriptions = ({
             {firstDescription}
           </Text>
           <Text
-            size={20}
+            // size={20}
+            size={'1.25vw'}
             animationType={"fade-in"}
-            textStyles={{ lineHeight: "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+
+              // textStyles={{ lineHeight: "35px" }}
             mobSize={16}
             type={"light"}
           >

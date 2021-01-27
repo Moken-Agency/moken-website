@@ -6,7 +6,7 @@ export default {
     },
     {
       title: "Strategic Advisory",
-      route: "",
+      route: "/strategy-advisory",
     },
     {
       title: "Investments & Raising",

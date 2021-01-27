@@ -18,13 +18,14 @@ const ProgramCommunityListPartner = ({
 }) => {
   return (
     <>
-      <Title title={title} className={"labs-join-title"} />
+      <Title title={title} />
 
       <section className={"labs-join-container"}>
         <Text
           animationType={"fade-in"}
           type={"extraLight"}
-          size={55}
+          size={'3.4vw'}
+          // size={55}
           mobSize={35}
           className={"program-community-list-partner-subtitle"}
           textStyles={{ letterSpacing: 0.5 }}

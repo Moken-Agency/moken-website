@@ -77,7 +77,7 @@ const ForStartups = () => {
 
       <TitleCenterImagesList
         title={"A FEW OF THE OTHER STARTUPS WE WORK WITH"}
-        list={["", "", "", "", ""]}
+        list={new Array(10).fill(0)}
       />
 
       <ProgramCommunityListPartner

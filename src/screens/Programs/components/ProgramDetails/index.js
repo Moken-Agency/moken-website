@@ -32,9 +32,9 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
           <Text
             className={`labs-details-title ${`title-${type}`}`}
             color={"white"}
-            size={type === "mokenlabs" ? 50 : 31}
+            size={type === "mokenlabs" ? '3.1vw' : '1.95vw'}
             type={"thin"}
-            textStyles={{ lineHeight: type === "mokenlabs" ? "60px" : "auto" }}
+            textStyles={{ lineHeight: type === "mokenlabs" ? "3.7vw" : "auto" }}
           >
             Program Details
           </Text>
@@ -42,7 +42,9 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
             <Text
               color={"white"}
               containerStyles={{ alignItems: "flex-start" }}
-              size={16}
+              // size={16}
+              size={'.95vw'}
+
               textStyles={{ letterSpacing: 4 }}
             >
               {subtitle}
@@ -57,7 +59,8 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
                 <Text
                   type={"semiBold"}
                   color={"white"}
-                  size={14}
+                  size={'.9vw'}
+                  // size={14}
                   mobSize={10}
                   containerStyles={{ marginBottom: 11 }}
                 >
@@ -67,7 +70,9 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
                   type={"light"}
                   textStyles={{ whiteSpace: "pre" }}
                   color={"white"}
-                  size={16}
+                  size={'.95vw'}
+
+                  // size={16}
                 >
                   {subtitle}
                 </Text>

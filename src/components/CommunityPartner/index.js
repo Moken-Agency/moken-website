@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../Text";
 import Button from "../Button";
 import "./index.scss";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const CommunityPartner = ({
   title,
@@ -10,11 +11,14 @@ const CommunityPartner = ({
   titleStyles = {},
   containerStyles = {},
 }) => {
-  return (
+    const { isMobile } = useWindowDimensions();
+
+    return (
     <div className={"community-partner-container"} style={containerStyles}>
       <div className={"community-partner-info-container"}>
         <Text
-          size={39}
+          size={'2.45vw'}
+          // size={39}
           type={"thin"}
           animationType={"fade-in"}
           mobSize={25}
@@ -22,17 +26,20 @@ const CommunityPartner = ({
           textStyles={{
             whiteSpace: "break-spaces",
             ...titleStyles,
-            lineHeight: "35px",
+            lineHeight: isMobile? '35px' : "2.45vw",
+            // lineHeight: "35px",
           }}
         >
           {title}
         </Text>
         <Text
           className={"community-partner-subtitle"}
-          size={18}
+          size={'1.15vw'}
+          // size={18}
           animationType={"fade-in"}
           mobSize={16}
-          textStyles={{ lineHeight: "28px" }}
+          textStyles={{ lineHeight: isMobile? '28px':  "1.8vw" }}
+          // textStyles={{ lineHeight: "28px" }}
           type={"light"}
         >
           {subtitle}

@@ -15,7 +15,7 @@ export default {
     {
       title: "MOKEN EVENTS",
       subtitle: "Managing Director of Programs",
-      route: "/managing-director-of-programs",
+      route: "/job-offer/managing-director-of-programs",
     },
   ],
   benefits: [

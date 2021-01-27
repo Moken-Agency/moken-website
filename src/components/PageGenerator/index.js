@@ -80,7 +80,9 @@ const PageGenerator = ({
                 type={"light"}
                 mobSize={16}
                 description={description}
-                size={20}
+                size={'1.25vw'}
+                textStyles={{lineHeight: isMobile ? '35px' : '2.2vw'}}
+                // size={20}
                 {...descriptionOptions}
               />
               <Submit submitForm={submit} />

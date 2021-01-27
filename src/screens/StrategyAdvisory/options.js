@@ -6,7 +6,7 @@ export default {
       titleSecond: "STRATEGY & ADVISORY",
     },
     subtitle: "Defining direction through expertise & experience.",
-    imgURL: "",
+    // imgURL: "",
     infoBlock: {
       infoTitleFirst:
         "Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.",
@@ -38,7 +38,7 @@ export default {
         title: "Focus Groups",
       },
     ],
-    imgURL: "",
+    // imgURL: "",
   },
   thirdSection: {
     title: "WHAT WE DO",

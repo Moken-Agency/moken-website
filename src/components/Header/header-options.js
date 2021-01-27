@@ -179,10 +179,10 @@ export default {
     },
   ],
   mainMenuTextStyles: {
-    letterSpacing: 3.6,
+    letterSpacing: '.2vw',
   },
   topMenuTextStyles: {
     // margin: '0 1.5vw',
-    letterSpacing: 2.8,
+    letterSpacing: '.18vw'
   },
 };

@@ -75,6 +75,7 @@ const Careers = () => {
               "Discover why our team is the reason our community keeps coming back for more.\n"
             }
             mobSize={35}
+            size={'3.4vw'}
             className={"careers-third-subtitle"}
           />
           <div className={"benefits-container"}>
@@ -105,6 +106,7 @@ const Careers = () => {
               color={"white"}
               mobSize={16}
               size={"1vw"}
+              textStyles={{lineHeight: isMobile ? null : '2.1vw'}}
               description={[
                 {
                   title:
@@ -117,7 +119,7 @@ const Careers = () => {
               ]}
             />
             {/*<Text size={22} type={'semiBold'} color={'white'}  className={'text-submit'}>Submit you resume</Text>*/}
-            <SubmitYourResume onClick={() => alert("submot resume")} />
+            <SubmitYourResume onClick={() => alert("submot resume")} size={'1.25vw'} />
           </div>
           <div className={"careers-black-block-right-container"}>
             <img src={ImagePeople} />

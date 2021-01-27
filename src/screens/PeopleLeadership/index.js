@@ -9,6 +9,7 @@ import People from "./People";
 import Input from "../../components/Input";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import TitleSubDescription from "../../components/TitleSubDescription";
+import OpportunitiesPeopleLeadershipEmailComponent from "../../components/OpportunitiesPeopleLeadershipEmailComponent";
 
 const PeopleLeadership = () => {
   const { isMobile } = useWindowDimensions();
@@ -48,40 +49,15 @@ const PeopleLeadership = () => {
         ))}
       </div>
 
-      <Title title={"JOIN THE TEAM"} />
+        <OpportunitiesPeopleLeadershipEmailComponent
+            title={'JOIN THE TEAM'}
+            subtitle={"We have something for everyone."}
+            description={`The Moken team is growing at a rapid pace, to stay in the loop on
+          additional ways to connct join our mailing list to never miss a beat.`}
+            imgURL={''}
+        />
 
-      <div className={"join-team-container"}>
-        <Text
-          type={"extraLight"}
-          animationType={"fade-in"}
-          containerStyles={{
-            marginBottom: 50,
-            width: isMobile ? "auto" : "30vw",
-          }}
-          mobSize={35}
-          size={55}
-        >
-          We have something for everyone.
-        </Text>
-        <Text
-          type={"light"}
-          animationType={"fade-in"}
-          containerStyles={{
-            marginBottom: 100,
-            width: isMobile ? "auto" : "35vw",
-          }}
-          size={20}
-          mobSize={16}
-          textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-        >
-          The Moken team is growing at a rapid pace, to stay in the loop on
-          additional ways to connct join our mailing list to never miss a beat.
-        </Text>
-        <div data-aos="fade-in" className={"join-team-btn-container"}>
-          <Input width={236} placeholder={"Your name"} />
-          <Input width={270} withGoButton placeholder={"Email"} />
-        </div>
-      </div>
+
     </div>
   );
 };

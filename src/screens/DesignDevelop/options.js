@@ -7,7 +7,7 @@ export default {
     },
     subtitle:
       "Increase leads, maximize revenue & produce ROI positive results.",
-    imgURL: "",
+    // imgURL: "",
     infoBlock: {
       infoTitleFirst:
         "Slow websites & poor user experience lead to an annual $2.6 billion revenue loss & turn away 89% of consumers",
@@ -39,7 +39,7 @@ export default {
         title: "Front End Development",
       },
     ],
-    imgURL: "",
+    // imgURL: "",
   },
   thirdSection: {
     title: "WHAT WE DO",

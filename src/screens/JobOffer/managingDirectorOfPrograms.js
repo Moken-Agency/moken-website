@@ -4,7 +4,7 @@ import JobOfferTitle1 from "../../images/jobOfferTitle1.svg";
 export default [
     {
         headerTitleWithImgTitle: "CAREER OPPORTUNITIES",
-        headerTitleWithImgSubtitle: " Managing Director of Programs",
+        headerTitleWithImgSubtitle: "Managing Director of Programs",
         withHeaderTitleWithImg: true,
         headerTitleWithImgURL: JobOffer1,
     },
@@ -90,7 +90,7 @@ export default [
                 withDash: true
             },
             {
-                title: '●You’ll have extensive experience in fast-paced environments within the tech, startup,entrepreneurial, investing, and growth industries;',
+                title: 'You’ll have extensive experience in fast-paced environments within the tech, startup,entrepreneurial, investing, and growth industries;',
                 withDash: true
             },
             {

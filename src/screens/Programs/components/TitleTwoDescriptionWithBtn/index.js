@@ -19,7 +19,8 @@ const TitleTwoDescriptionWithBtn = ({
 
       <section className={"labs-overview-container"}>
         <Text
-          size={55}
+          size={'3.4vw'}
+          // size={55}
           animationType={"fade-in"}
           mobSize={35}
           type={"extraLight"}
@@ -30,10 +31,10 @@ const TitleTwoDescriptionWithBtn = ({
           <Text
             type={"light"}
             className={"labs-overview-info-block-first-text"}
-            size={20}
+            size={'1.25vw'}
             animationType={"fade-in"}
             mobSize={16}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
           >
             {firstText}
           </Text>
@@ -43,8 +44,8 @@ const TitleTwoDescriptionWithBtn = ({
               className={"labs-overview-info-block-second-text"}
               mobSize={16}
               animationType={"fade-in"}
-              textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-              size={20}
+              textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+              size={'1.25vw'}
             >
               {secondText}
             </Text>

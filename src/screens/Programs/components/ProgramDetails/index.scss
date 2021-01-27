@@ -1,9 +1,10 @@
 .labs-details-container {
   padding-right: 168px;
-  width: calc(100vw - 168px);
+  width: 90vw;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 222px;
+  //margin-bottom: 222px;
+  margin-bottom: 12vw;
   @media only screen and (max-width: 600px) {
     width: auto;
     padding-right: 0;
@@ -17,7 +18,8 @@
       width: auto;
     }
     .labs-details-title {
-      margin-bottom: 75px;
+      margin-bottom: 4.7vw;
+      //margin-bottom: 75px;
     }
     .labs-details-list-block {
       display: flex;
@@ -44,10 +46,11 @@
   }
   .block-mokenlabs {
     display: flex;
-    padding: 43px;
+    padding: 2.7vw;
+
   }
   .block-raising-right {
-    padding: 53px 43px
+    padding: 53px 2.7vw;
   }
 
   .title-mokenlabs {

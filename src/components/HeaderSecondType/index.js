@@ -14,7 +14,8 @@ const HeaderSecondType = ({
       style={{ marginBottom }}
     >
       <Text
-        size={16}
+        size={'1vw'}
+        // size={16}
         mobSize={14}
         animationType={"fade-in"}
         type={"semiBold"}
@@ -23,7 +24,8 @@ const HeaderSecondType = ({
         {title}
       </Text>
       <Text
-        size={75}
+          size={'4.7vw'}
+          // size={75}
         mobSize={45}
         animationType={"fade-in"}
         type={"thin"}

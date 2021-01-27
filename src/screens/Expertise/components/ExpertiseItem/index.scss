@@ -20,13 +20,15 @@
       transform: scale(1.05);
     }
     .expertise-item-learn {
-      letter-spacing: 4px;
+      letter-spacing: .25vw;
       @media only screen and (max-width: 600px) {
+        letter-spacing: 4px;
         display: none;
       }
     }
     .expertise-item-img {
-      height: 27px;
+      height: 1.7vw;
+      //height: 27px;
       margin-left: 2vw;
       @media only screen and (max-width: 600px) {
         height: 30px;

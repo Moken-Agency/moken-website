@@ -1,11 +1,12 @@
 .labs-benefits-container {
   padding: 0 12vw;
   display: flex;
-  margin-bottom: 200px;
+  //margin-bottom: 200px;
+  margin-bottom: 12.5vw;
   @media screen and (max-width: 600px) {
     padding: 0 43px;
     flex-direction: column;
-    margin-bottom: 170px;
+    margin-bottom: 107px;
   }
 }
 
@@ -96,4 +97,8 @@
 .two-column-submit-your-resume {
   margin-bottom: 45px;
   margin-top: 0;
+  @media screen and (max-width: 600px) {
+    margin-bottom: 20px;
+
+  }
 }

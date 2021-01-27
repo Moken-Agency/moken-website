@@ -52,7 +52,8 @@ const ColumnMenu = ({ routes = [], title }) => {
     <div className={"column-menu-container"}>
       <Text
         type={"semiBold"}
-        size={14}
+        size={'.9vw'}
+        // size={14}
         textStyles={{ ...titleStyles, letterSpacing: 4, marginBottom: ".85vw" }}
         containerStyles={{ ...containerTitleStyles, marginRight: "2.3vw" }}
       >

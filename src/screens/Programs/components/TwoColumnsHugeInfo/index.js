@@ -13,7 +13,7 @@ const FirstItem = ({ title, subtitle }) => {
     <div className={"labs-benefits-container-info-block-work"}>
       <Text
         size={'1.4vw'}
-        // size={22}
+        mobSize={22}
         type={"semiBold"}
         animationType={"fade-up"}
         className={"labs-benefits-list-item-first"}
@@ -113,8 +113,9 @@ const TwoColumnsHugeInfo = ({
                   <UnderlineTextWithIcon
                     withIcon={secondListWithIcon}
                     color={"black"}
-                    size={34}
-                    mobSize={25}
+                    size={'2.13vw'}
+                    // size={34}
+                    mobSize={18}
                     className={"two-column-submit-your-resume"}
                     title={title}
                   />

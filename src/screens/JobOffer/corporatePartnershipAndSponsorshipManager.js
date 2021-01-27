@@ -14,9 +14,9 @@ export default [
     title: "Role Overview",
   },
   {
-    subtitle: 'We are seeking an out-of the box thinker hungry for a creative, fast paced, entrepreneurial work" +\n' +
-        '          " environment to lead through the role of Corporate Partnership & Sponsorship Manager who will play a " +\n' +
-        '          "major role in driving partnerships and revenue for our teams at Moken."'
+    subtitle: 'We are seeking an out-of the box thinker hungry for a creative, fast paced, entrepreneurial work' +
+        'environment to lead through the role of Corporate Partnership & Sponsorship Manager who will play a ' +
+        'major role in driving partnerships and revenue for our teams at Moken.'
   },
   {
     description: [

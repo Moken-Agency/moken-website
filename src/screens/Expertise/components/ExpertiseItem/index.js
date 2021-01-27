@@ -14,7 +14,8 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
   return (
     <div className={"expertise-item-container"}>
       <Text
-        size={75}
+        size={'4.7vw'}
+        // size={75}
         animationType={"fade-in"}
         mobSize={35}
         type={"thin"}
@@ -24,7 +25,7 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
       </Text>
       <div className={"expertise-item-right"} onClick={goToRoute}>
         <Text
-          size={14}
+          size={'.9vw'}
           type={"semiBold"}
           mobSize={12}
           className={"expertise-item-learn"}

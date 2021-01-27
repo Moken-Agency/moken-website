@@ -8,6 +8,7 @@
     cursor: pointer;
     @media screen and (max-width: 600px) {
       font-size: 4vw !important;
+      padding-bottom: 5px;
     }
     &:hover {
       color: grey;

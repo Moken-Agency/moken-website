@@ -5,9 +5,11 @@
       padding: 100px 0 0 0;
     }
     .first-section-container {
-      padding: 0 33.45vw 0 26.1vw;
+      padding: 0 0 0 26.1vw;
+      width: 39vw;
       @media screen and (max-width: 600px) {
         padding: 0 60px 0 50px;
+        width: auto;
       }
     }
     .first-section-title {

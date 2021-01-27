@@ -10,6 +10,7 @@ const Description = ({
   mobSize = size,
   type = "light",
   withoutMargin = false,
+                       textStyles = {}
 }) => {
   return (
     <>
@@ -21,14 +22,14 @@ const Description = ({
               alignItems: 'flex-start',
               display: "flex",
               ...containerStyles}}>
-              {withDash? <div style={{width: '2vw', height: 1, backgroundColor: 'black', marginTop: 16,  marginRight: 16}}/> : null}
+              {withDash? <div data-aos="fade-in" style={{width: '2vw', height: 1, backgroundColor: 'black', marginTop: 16,  marginRight: 16}}/> : null}
               <Text
                 animationType={"fade-in"}
                 size={size}
                 mobSize={mobSize}
                 key={title + index}
                 type={type}
-                textStyles={{ lineHeight: "35px" }}
+                textStyles={{ lineHeight: "35px", ...textStyles }}
                 containerStyles={{
                   marginBottom: 0,
                   width: "100%"

@@ -1,7 +1,8 @@
 
 .left-info-with-right-image-container {
   padding: 0 10vw;
-  margin-bottom: 230px;
+  //margin-bottom: 230px;
+  margin-bottom: 14.4vw;
   display: flex;
   flex-direction: column;
   @media screen and (max-width: 600px) {
@@ -38,8 +39,10 @@
 }
 
 .left-info-with-right-image-image {
-  width: 621px;
-  height: 635px;
+  width: 38.8vw;
+  //width: 621px;
+  height: 39.4vw;
+  //height: 635px;
   background-color: grey;
   @media screen and (max-width: 600px) {
     width: 100%;

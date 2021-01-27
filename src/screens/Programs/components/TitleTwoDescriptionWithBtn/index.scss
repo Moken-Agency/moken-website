@@ -1,14 +1,14 @@
 .labs-overview-title {
-  margin-bottom: 150px;
+  //margin-bottom: 150px;
   @media screen and (max-width: 600px) {
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
   }
 }
 
 
 .labs-overview-container {
-  padding: 0 238px;
-  margin-bottom: 206px;
+  padding: 0 14vw;
+  margin-bottom: 12.5vw;
   @media screen and (max-width: 600px) {
     padding: 0 43px;
     margin-bottom: 135px;
@@ -16,12 +16,12 @@
   .labs-overview-info-block {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
+    margin-top: 4vw;
     @media screen and (max-width: 600px) {
       flex-direction: column;
     }
     .labs-overview-info-block-first-text {
-      width:30vw;
+      width:32.5vw;
       align-items: flex-start;
       @media screen and (max-width: 600px) {
         width: auto;
@@ -29,7 +29,7 @@
       }
     }
     .labs-overview-info-block-second-text {
-      width: 30vw;
+      width: 32.5vw;
       margin-bottom: 70px;
       @media screen and (max-width: 600px) {
         width: auto;

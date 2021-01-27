@@ -1,16 +1,21 @@
 import React from "react";
 import Text from "../Text";
 import "./index.scss";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Subtitle = ({
   subtitle = "",
   className = "",
-  size = 55,
+  size = '3.4vw',
+  // size = 55,
   mobSize = size,
   color = "black",
   type = "extraLight",
   containerStyles = {},
+    textStyles = {}
 }) => {
+  const { isMobile } = useWindowDimensions();
+
   return (
     <>
       {subtitle ? (
@@ -25,6 +30,7 @@ const Subtitle = ({
               mobSize={mobSize}
               animationType={"fade-in"}
               type={type}
+              textStyles={{lineHeight: isMobile ? null : '4vw', ...textStyles}}
             >
               {subtitle}
             </Text>

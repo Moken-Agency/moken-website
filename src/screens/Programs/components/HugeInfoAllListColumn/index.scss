@@ -8,7 +8,7 @@
 .labs-startups-container {
   padding: 0 14vw;
   display: flex;
-  margin-bottom: 200px;
+  margin-bottom: 12.5vw;
   @media screen and (max-width: 600px) {
     padding: 0 43px;
     flex-direction: column;
@@ -16,17 +16,17 @@
 
   }
   .labs-startups-first-text {
-    width: 40vw;
-    margin-right: 55px;
     align-items: flex-start;
+    width: 35vw;
+    margin-right: 3.3vw;
     @media screen and (max-width: 600px) {
       width: auto;
       margin-right: auto;
     }
   }
   .labs-startups-info-block {
-    padding-top: 40px;
-    width: 41vw;
+    padding-top: 3.4vw;
+    width: 49.1vw;
     @media screen and (max-width: 600px) {
       width: auto;
     }
@@ -39,12 +39,12 @@
         margin-bottom: 60px;
       }
       .labs-startups-info-block-work {
-        margin-bottom: 118px;
+        margin-bottom: 7.3vw;
         @media screen and (max-width: 600px) {
           margin-bottom: 60px;
         }
         .labs-startups-info-block-work-first {
-          margin-bottom: 15px;
+          margin-bottom: .9vw;
           @media screen and (max-width: 600px) {
             margin-bottom: 20px;
           }
@@ -61,7 +61,7 @@
   }
 }
 .labs-startups-info-right-title {
-  margin-bottom: 205px;
+  margin-bottom: 12.45vw;
   @media screen and (max-width: 600px) {
     margin-bottom: 177px;
   }

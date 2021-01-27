@@ -39,7 +39,10 @@
       margin-bottom: 96px;
       padding-left: 0;
       span {
-        letter-spacing: 4px;
+        letter-spacing: .25vw;
+        @media only screen and (max-width: 600px) {
+          letter-spacing: 4px;
+        }
       }
     }
     .connect-with-me-about-interests {

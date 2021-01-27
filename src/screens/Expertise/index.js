@@ -23,7 +23,8 @@ const Expertise = () => {
           <Text
             className={"expertise-title"}
             animationType={"fade-in"}
-            size={16}
+            // size={16}
+            size={'1vw'}
             mobSize={14}
             type={"semiBold"}
             // mobColor={"white"}
@@ -33,7 +34,8 @@ const Expertise = () => {
           <Text
             className={"expertise-subtitle"}
             type={"thin"}
-            size={75}
+            size={'4.7vw'}
+            // size={75}
             animationType={"fade-in"}
             mobSize={45}
             // mobColor={"white"}
@@ -107,7 +109,7 @@ const Expertise = () => {
                 size={"1vw"}
                 animationType={"fade-in"}
                 mobSize={16}
-                textStyles={{}}
+                textStyles={{lineHeight: isMobile ? null : '1.7vw'}}
                 className={"expertise-bottom-first-info-text-second"}
                 containerStyles={{marginBottom: isMobile ? 50 : null}}
               >
@@ -131,23 +133,23 @@ const Expertise = () => {
               <Button
                 title={"ROADMAPS & SPRINTS"}
                 backgroundColor={"black"}
-                size={14}
+                // size={14}
                 mobSize={10}
                 textColor={"white"}
                 borderType={"bordered"}
                 containerStyles={{
                   marginRight: "2.8vw",
-                  padding: isMobile ? "" : "31px 35px",
+                  padding: isMobile ? "" : "1.95vw 2.2vw",
                 }}
               />
               <Button
                 title={"STARTUPSMART"}
                 backgroundColor={"white"}
                 textColor={"black"}
-                size={14}
+                // size={14}
                 mobSize={10}
                 type={"bordered-white"}
-                containerStyles={{ padding: isMobile ? "" : "31px 35px" }}
+                containerStyles={{ padding: isMobile ? "" : "1.95vw 2.2vw" }}
               />
             </div>
           </div>

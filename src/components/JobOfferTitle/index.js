@@ -22,17 +22,20 @@ const JobOfferTitle = ({
               type={"semiBold"}
               mobSize={14}
               color={color}
-              size={16}
+              size={'1vw'}
+              // size={16}
               animationType={"fade-in"}
-              textStyles={{ letterSpacing: 4, marginBottom: 15 }}
+              textStyles={{ letterSpacing: 4}}
+              containerStyles={{marginBottom: 15 }}
             >
               {title}
             </Text>
             <Text
               type={"thin"}
-              size={104}
+              size={'6.5vw'}
+              // size={104}
               color={color}
-              textStyles={{ lineHeight: "105px" }}
+              textStyles={{ lineHeight: isMobile ? "105px" : '6.6vw' }}
               containerStyles={{ padding: 0 }}
             >
               {subtitle}

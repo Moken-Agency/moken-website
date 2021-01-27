@@ -22,7 +22,10 @@
       align-items: flex-start;
       width: 525px;
       span {
-        letter-spacing: 4px;
+        letter-spacing: .25vw;
+        @media only screen and (max-width: 600px) {
+          letter-spacing: 4px;
+        }
       }
       @media only screen and (max-width: 600px) {
         width: auto;

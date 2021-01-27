@@ -32,9 +32,11 @@ const EmailForm = ({
             <Input
               value={value}
               placeholder={"Your Email Address"}
-              size={20}
+              size={'1.25vw'}
+                // size={20}
               mobSize={16}
               width={width}
+              containerStyles={{width: isMobile ? '100%': '20vw'}}
             />
             <Button
               size={'.9vw'}

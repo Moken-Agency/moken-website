@@ -46,6 +46,8 @@ const CommunityPageGenerator = ({
     infoDescriptionFirst = "",
     infoSubtitleFirst = "",
   } = firstSection.infoBlock;
+
+  const letterSpacing = isMobile ? 4 :'0.2vw';
   return (
     <div className={"community-page-generator-container"}>
       <section className={"first-section"}>
@@ -63,7 +65,7 @@ const CommunityPageGenerator = ({
               mobSize={14}
               animationType={"fade-in"}
               color={"#cdcdcdcd"}
-              textStyles={{ letterSpacing: 4 }}
+              textStyles={{ letterSpacing }}
             >
               {titleFirst}
               <span>&nbsp;</span>
@@ -73,7 +75,7 @@ const CommunityPageGenerator = ({
               type={"semiBold"}
               mobSize={14}
               animationType={"fade-in"}
-              textStyles={{ letterSpacing: 4, marginBottom: isMobile ? 70 : 0 }}
+              textStyles={{ letterSpacing, marginBottom: isMobile ? 70 : 0 }}
             >{`${titleConjunctions} ${titleSecond}`}</Text>
           </div>
           {/*<Text size={'4.3vw'}  */}
@@ -82,7 +84,7 @@ const CommunityPageGenerator = ({
             type={"thin"}
             mobSize={45}
             animationType={"fade-in"}
-            textStyles={{ letterSpacing: 4, lineHeight: isMobile ? '45px' : '4.3vw'}}
+            textStyles={{ letterSpacing, lineHeight: isMobile ? '45px' : '4.3vw'}}
             containerStyles={{ marginBottom: isMobile ? 150 : "10.5vw" }}
           >
             {firstSection.subtitle}
@@ -96,11 +98,12 @@ const CommunityPageGenerator = ({
         <div className={"first-section-info-container"}>
           {/*<Text size={'3.3vw'}*/}
           <Text
-            size={55}
+            size={'3.4vw'}
+            // size={55}
             mobSize={35}
             animationType={"fade-in"}
             type={"extraLight"}
-            containerStyles={{ marginBottom: isMobile ? 40 : 62 }}
+            containerStyles={{ marginBottom: isMobile ? 40 : '3.8vw' }}
             textStyles={{
               letterSpacing: 0.5,
               // lineHeight: 63
@@ -109,13 +112,16 @@ const CommunityPageGenerator = ({
             {infoTitleFirst}
           </Text>
           <Text
-            size={20}
+            size={'1.25vw'}
+            // size={20}
             type={"light"}
             mobSize={16}
             animationType={"fade-in"}
             // textStyles={{lineHeight: 35}}
-            containerStyles={{ lineHeight: "35px", paddingRight: !isMobile ? 140 : null }}
-            // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
+            containerStyles={{ paddingRight: !isMobile ? '8vw' : null }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+
+              // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
           >
             {infoDescriptionFirst}
           </Text>

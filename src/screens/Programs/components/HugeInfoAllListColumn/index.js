@@ -28,7 +28,9 @@ const HugeInfoAllListColumn = ({
       <section className={"labs-startups-container"}>
         <Text
           type={"extraLight"}
-          size={55}
+          // size={55}
+          size={'3.4vw'}
+
           animationType={"fade-in"}
           mobSize={35}
           className={"labs-startups-first-text"}
@@ -37,11 +39,12 @@ const HugeInfoAllListColumn = ({
         </Text>
         <div className={"labs-startups-info-block"}>
           <Text
-            size={20}
+            // size={20}
+            size={'1.25vw'}
             mobSize={16}
             animationType={"fade-in"}
             type={"light"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
             className={"labs-startups-info-right-title"}
           >
             {rightTitle}
@@ -49,7 +52,8 @@ const HugeInfoAllListColumn = ({
 
           <Text
             type={"semiBold"}
-            size={14}
+            // size={14}
+            size={'.88vw'}
             mobSize={10}
             animationType={"fade-in"}
             textStyles={{ letterSpacing: 4 }}
@@ -66,7 +70,9 @@ const HugeInfoAllListColumn = ({
                   className={"labs-startups-info-block-work"}
                 >
                   <Text
-                    size={22}
+                    // size={22}
+                    size={'1.4vw'}
+
                     mobSize={16}
                     animationType={"fade-up"}
                     type={"semiBold"}
@@ -75,9 +81,9 @@ const HugeInfoAllListColumn = ({
                     {title}
                   </Text>
                   <Text
-                    size={20}
+                    size={'1.25vw'}
                     animationType={"fade-up"}
-                    textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+                    textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
                     mobSize={16}
                     type={"light"}
                   >
@@ -91,7 +97,7 @@ const HugeInfoAllListColumn = ({
           {rightSecondListTitle ? (
             <Text
               type={"semiBold"}
-              size={14}
+              size={'.88vw'}
               animationType={"fade-up"}
               mobSize={10}
               textStyles={{ letterSpacing: 4 }}

@@ -75,7 +75,8 @@ const OurPartners = () => {
         <Text
           type={"extraLight"}
           animationType={"fade-in"}
-          size={55}
+          size={'3.4vw'}
+          // size={55}
           mobSize={35}
           containerStyles={{width: isMobile ? 'auto' : 900}}
         >
@@ -138,13 +139,20 @@ const OurPartners = () => {
       {/*/>*/}
     <Title title={'GET INVOLVED'}/>
     <div className={'explore-our-partners-container'}>
-        <Text size={55}
+        <Text size={'3.4vw'}
+              // size={55}
               mobSize={35}
               type={'extraLight'}
-              containerStyles={{width: isMobile ? 'auto' : 583}}>Interested in becoming a partner and leveraging a global community network?</Text>
+              containerStyles={{width: isMobile ? 'auto' : '37vw'}}
+              // containerStyles={{width: isMobile ? 'auto' : 583}}
+        >Interested in becoming a partner and leveraging a global community network?</Text>
         <div className={'explore-our-partners-potential-container'}>
-            <Text type={'semiBold'} size={14} textStyles={{letterSpacing: 4, marginRight: 40}}>EXPLORE THE POTENTIAL</Text>
-            <img src={arrowUpRight} style={{width: 27, height: 27}}/>
+            <Text type={'semiBold'}
+                  size={'.9vw'}
+                  mobSize={12}
+                  // size={14}
+                  textStyles={{letterSpacing: 4, marginRight: 40}}>EXPLORE THE POTENTIAL</Text>
+            <img src={arrowUpRight} style={{width: '1.7vw', height: '1.7vw'}}/>
         </div>
     </div>
       <EmailForm withForm className={"partners-email-form"} />

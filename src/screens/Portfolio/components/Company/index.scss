@@ -10,7 +10,10 @@
     .company-name {
       margin-bottom: 1vw;
       span {
-        letter-spacing: 4px;
+        letter-spacing: .25vw;
+        @media only screen and (max-width: 600px) {
+          letter-spacing: 4px;
+        }
       }
       @media screen and (max-width: 600px) {
         margin-bottom: 5.5vw;
@@ -24,7 +27,7 @@
     .company-city {
       margin-bottom: .5vw;
       span {
-        letter-spacing: 4px;
+        letter-spacing: .25vw;
       }
       @media screen and (max-width: 600px) {
         margin-bottom: 3vw;

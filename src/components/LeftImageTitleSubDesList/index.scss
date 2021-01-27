@@ -31,7 +31,10 @@
       .left-image-title-sub-desc-right-title {
         margin-bottom: 70px;
         span {
-          letter-spacing: 4px;
+          letter-spacing: .25vw;
+          @media only screen and (max-width: 600px) {
+            letter-spacing: 4px;
+          }
         }
       }
       .left-image-title-sub-desc-right-subtitle {

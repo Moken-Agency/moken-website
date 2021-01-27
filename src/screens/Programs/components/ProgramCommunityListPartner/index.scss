@@ -11,7 +11,8 @@
   .labs-join-partners-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 166px;
+    margin-top: 10.4vw;
+    //margin-top: 166px;
     padding: 0 11vw;
     @media screen and (max-width: 600px) {
       padding: 0 43px;
@@ -20,7 +21,9 @@
     }
   }
   .program-community-list-partner-subtitle {
-    width: 929px;
+    width: 62vw;
+    //width: 929px;
+
     padding: 0 14vw;
     @media screen and (max-width: 600px) {
       padding: 0 43px;

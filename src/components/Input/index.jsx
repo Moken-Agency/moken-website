@@ -20,10 +20,11 @@ const Input = ({
   mobSize = 14,
   resize = "both",
   backgroundColor = "white",
+    containerStyles= {}
 }) => {
   const { isMobile } = useWindowDimensions();
   return (
-    <div className={`container ${className}`}>
+    <div className={`container ${className}`} style={containerStyles}>
       <div className={"buttonContainer"} data-aos="fade-in">
         {inputType === "input" ? (
           <input
@@ -31,7 +32,7 @@ const Input = ({
             value={value}
             style={{
               fontFamily: textTypes[type],
-              width,
+              // width,
               height,
               fontSize: isMobile ? mobSize : size,
               backgroundColor,
@@ -57,7 +58,7 @@ const Input = ({
         )}
         {withGoButton && (
           <button className={"goButton"} onClick={onSubmit}>
-            <Text type={"semiBold"} size={22}>
+            <Text type={"semiBold"} size={'1.4vw'}>
               Go
             </Text>
           </button>
