@@ -1,14 +1,14 @@
 .image-block-container {
   width: 100vw;
   display: flex;
-  margin-bottom: 15.7vw;
-  //margin-bottom: 250px;
+  //margin-bottom: 15.7vw;
+  margin-bottom: 250px;
 
   @media screen and (max-width: 600px) {
     margin-bottom: 165px;
   }
     img {
-    background-color: #a7a7a7;
+    //background-color: #a7a7a7;
     width: 86vw;
       @media screen and (max-width: 600px) {
         width: calc(100vw - 43px);

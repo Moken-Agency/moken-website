@@ -32,37 +32,66 @@
 
   .about-moken-second-info-section {
     margin-bottom: 252px;
+
     @media only screen and (max-width: 600px) {
       margin-bottom: 203px;
     }
-      .about-moken-second-divider {
-      width: 1px;
-    }
-
-    .about-moken-second-info-section-secondary-container {
-      padding-left: 14vw;
-      margin-right: 7px;
-      width: 34.5vw;
-      //width: 555px;
+    .about-moken-second-info-img-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 14vw;
+      @media only screen and (min-width: 601px) and (max-width: 1100px) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
       @media only screen and (max-width: 600px) {
-        width: auto;
+        flex-direction: column;
         padding: 0 43px;
-        margin-right: 0;
       }
+        .about-moken-second-divider {
+        width: 1px;
+      }
+
+      .about-moken-second-info-section-secondary-container {
+        margin-right: 7px;
+        width: 34.5vw;
+        //width: 555px;
+        @media only screen and (min-width: 601px) and (max-width: 1100px) {
+         width: auto;
+        }
+        @media only screen and (max-width: 600px) {
+          width: auto;
+          margin-right: 0;
+        }
+      }
+      .about-moken-second-info-section-subtitle {
+        margin-bottom: 5.6vw;
+        //margin-bottom: 90px;
+        @media only screen and (max-width: 600px) {
+          margin-bottom: 64px;
+        }
+      }
+      .about-moken-second-info-section-text {
+        margin-bottom: 5.5vw;
+        //margin-bottom: 80px;
+        @media only screen and (max-width: 600px) {
+          margin-bottom: 100px;
+        }
     }
-    .about-moken-second-info-section-subtitle {
-      margin-bottom: 5.6vw;
-      //margin-bottom: 90px;
-      @media only screen and (max-width: 600px) {
-        margin-bottom: 64px;
+      img {
+        background-color: grey;
+        width: 32vw;
+        @media only screen and (max-width: 1100px) {
+          width: 100%;
+          min-height: 200px;
+          margin-top: 50px;
+        }
+        //@media only screen and (max-width: 600px) {
+        //  flex-direction: column;
+        //  padding: 0;
+        //}
       }
-    }
-    .about-moken-second-info-section-text {
-      margin-bottom: 5.5vw;
-      //margin-bottom: 80px;
-      @media only screen and (max-width: 600px) {
-        margin-bottom: 100px;
-      }
+
     }
     .about-moken-second-kendra-block {
       display: flex;
@@ -133,12 +162,7 @@
     }
   }
 
-  .about-name-color-block {
-    //margin-bottom: 114px;
-    padding-top: 11.2vw;
-    padding-bottom: 11.2vw;
-    margin-bottom: 7.1vw;
-  }
+
   .collaborate {
     width: 300px;
     margin-bottom: 118px

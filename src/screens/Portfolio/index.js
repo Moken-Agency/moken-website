@@ -57,6 +57,7 @@ const Portfolio = (props) => {
         // size={75}
         mobSize={55}
         className={"portfolio-color-block"}
+        onClick={() => history.push('connect-with-us')}
       />
       {/*<section className={'block-container'}>*/}
       {/*    <Text size={isMobile ? '9vw' : '5vw'}*/}

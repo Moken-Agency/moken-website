@@ -22,8 +22,8 @@ const TitleTwoDescriptions = ({
       <div className={"title-two-descriptions-container"}>
         <Text
           animationType={"fade-up"}
-          size={'3.4vw'}
-          // size={55}
+          // size={'3.4vw'}
+          size={55}
           mobSize={35}
           // textStyles={{lineHeight: '0px'}}
           type={"extraLight"}
@@ -32,23 +32,22 @@ const TitleTwoDescriptions = ({
         </Text>
         <div className={"community-capabilities-container"} data-aos="fade-up">
           <Text
-            size={'1.25vw'}
-            // size={20}
+            // size={'1.25vw'}
+            size={20}
             animationType={"fade-in"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-            // textStyles={{ lineHeight: "35px" }}
+            // textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+            textStyles={{ lineHeight: "35px" }}
             mobSize={16}
             type={"light"}
           >
             {firstDescription}
           </Text>
           <Text
-            // size={20}
-            size={'1.25vw'}
+            size={20}
+            // size={'1.25vw'}
             animationType={"fade-in"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-
-              // textStyles={{ lineHeight: "35px" }}
+            // textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+              textStyles={{ lineHeight: "35px" }}
             mobSize={16}
             type={"light"}
           >

@@ -149,6 +149,10 @@ export default {
       dividerColor: "#263da8",
       subRouts: [
         {
+          title: 'EVENTS',
+          route: '/events'
+        },
+        {
           title: "UPCOMING EVENTS",
           route: "/upcoming-events",
         },

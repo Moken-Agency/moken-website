@@ -1,0 +1,50 @@
+.title-short-list-with-btn-section {
+  padding: 10vw 10vw 4.5vw 10vw;
+
+  .title-short-list-with-btn-title {
+    margin: 0;
+    padding: 0;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 50px;
+    }
+  }
+  .title-short-list-with-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 4vw;
+    margin-top: 9vw;
+    position: relative;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+    .title-short-list-with-btn-subtitle {
+      margin: 0;
+      padding: 0;
+      width: 32vw;
+      @media only screen and (max-width: 600px) {
+        width: 60vw;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .title-short-list-with-btn-opportunities-container {
+    margin-top: 1vw;
+    .view-all-opportunities {
+      margin-top: 100px;
+      .text {
+        border-bottom: 1px solid;
+        padding-bottom: 8px;
+        &:hover {
+          color: grey;
+        }
+      }
+    }
+    .text-submit {
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 150px;
+      }
+    }
+  }
+}

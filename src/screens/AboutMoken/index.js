@@ -26,7 +26,8 @@ const AboutMoken = (props) => {
         title={"ABOUT MOKEN"}
         subtitle={"Backing ideas that create change."}
         description={
-          "Built to support founders, Moken is a group of trailblazing companies specialized in all things startup."
+          `Built to support founders, Moken is a company specialized in all things startup. Together, we have the 
+          mission of creating a global community-driven startup ecosystem designed to inspire, educate, and connect.`
         }
         marginBottom={isMobile ? 160 : '8.9vw'}
       />
@@ -48,152 +49,89 @@ const AboutMoken = (props) => {
 
       <section className={"about-moken-second-info-section"}>
         <Title title={"WHAT WE DO"} />
-        <div className={"about-moken-second-info-section-secondary-container"}>
-          <Text
-            className={"about-moken-second-info-section-subtitle"}
-            size={'3.4vw'}
-            // size={55}
-            animationType={"fade-up"}
-            mobSize={35}
-            type={"extraLight"}
-          >
-            We are driven by the passion for working with determined innovators
-            who live to make a change in the world.
-          </Text>
-          <Text
-            className={"about-moken-second-info-section-text"}
-            size={'1.25vw'}
-            // size={20}
-            animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-            mobSize={16}
-            type={"light"}
-          >
-            We understand that together we should see results, not just reports
-            with every bit of work we do. Through developing tailor-made
-            strategies that assist in beating out the competition by tearing up
-            the rule book, our agile approach arms entrepreneurs, founders, and
-            startups with the tools necessary to overcome the odds by
-            predicting, measuring, mitigating, and managing the risk associated
-            with innovation.
-          </Text>
+        <div className={'about-moken-second-info-img-container'}>
+            <div className={"about-moken-second-info-section-secondary-container"}>
+                <Text
+                    className={"about-moken-second-info-section-subtitle"}
+                    // size={'3.4vw'}
+                    size={55}
+                    animationType={"fade-up"}
+                    mobSize={35}
+                    type={"extraLight"}
+                >
+                    We are driven by the passion for working with determined innovators
+                    who live to make a change in the world.
+                </Text>
+                <Text
+                    className={"about-moken-second-info-section-text"}
+                    // size={'1.25vw'}
+                    size={20}
+                    animationType={"fade-up"}
+                    textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+                    mobSize={16}
+                    type={"light"}
+                >
+                    We understand that together we should see results, not just reports with every bit of work we do. Through developing tailor-made strategies that assist in beating out the competition by tearing up the rule book, our agile approach arms entrepreneurs, founders, and startups with the tools necessary to overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation.
+                </Text>
 
-          <div className={"about-moken-second-kendra-block"}>
-            <div className={"about-moken-second-divider"} />
-            <div className={"about-moken-second-kendra-info-block"}>
-              <Text
-                className={"about-moken-second-kendra-info-text"}
-                type={"semiBold"}
-                animationType={"fade-up"}
-                size={'1.5vw'}
-                // size={24}
-                mobSize={18}
-              >
-                Moken creates diversified opportunities for startups and
-                founders driving economic and social impact, globally.{" "}
-              </Text>
-              <Text
-                size={'1vw'}
-                // size={16}
-                animationType={"fade-up"}
-                mobSize={12}
-                textStyles={{ letterSpacing: 4 }}
-                type={"semiBold"}
-              >
-                — Kendra Garagan | Founder & Partner
-              </Text>
+                <div className={"about-moken-second-kendra-block"}>
+                    <div className={"about-moken-second-divider"} />
+                    <div className={"about-moken-second-kendra-info-block"}>
+                        <Text
+                            className={"about-moken-second-kendra-info-text"}
+                            type={"semiBold"}
+                            animationType={"fade-up"}
+                            // size={'1.5vw'}
+                            size={24}
+                            mobSize={18}
+                        >
+                            “We access founders potential through collaborating to create opportunties within diversified industries by creating disruptive ideas and technology.”
+                        </Text>
+                        <Text
+                            // size={'1vw'}
+                            size={16}
+                            animationType={"fade-up"}
+                            mobSize={12}
+                            textStyles={{ letterSpacing: 4 }}
+                            type={"semiBold"}
+                        >
+                            — Kendra Garagan | Founder & Partner
+                        </Text>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <img src={''}/>
+
         </div>
-        <div />
       </section>
 
       <section className={"about-moken-video-section"}>
         <div className={"about-moken-video-info-block"}>
           <Text
             className={"about-moken-video-info-block-first-title"}
-            // size={16}
-            size={'1vw'}
+            size={16}
+            // size={'1vw'}
             animationType={"fade-up"}
             type={"semiBold"}
           >
             THIS IS WHERE THE VIDEO TITLE GOES
           </Text>
           <Text
-            // size={20}
-            size={'1.2vw'}
+            size={20}
+            // size={'1.2vw'}
             type={"light"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
             mobSize={16}
           >
-            This is where the video CTA should go to outline the video content.
+              Video Coming Soon
           </Text>
         </div>
-          {/*<div style={{position: 'relative'}} className={'video-container'}>*/}
-          {/*    <button*/}
-          {/*        className={'pause-btn'}*/}
-          {/*        style={{*/}
-          {/*            position: 'absolute',*/}
-          {/*            width: 135,*/}
-          {/*            height: 135,*/}
-          {/*            backgroundColor: "white",*/}
-          {/*            borderRadius: "100%",*/}
-          {/*            justifyContent: "center",*/}
-          {/*            alignItems: "center",*/}
-          {/*            outline: 'none',*/}
-          {/*            border: 0,*/}
-          {/*            top: 'calc(50% - 67px)',*/}
-          {/*            left: 'calc(50% - 67px)'*/}
-          {/*        }}*/}
-          {/*    >*/}
-          {/*     <Text type={'semiBold'} size={34}>||</Text>*/}
-          {/*    </button>*/}
-          {/*    <ReactPlayer*/}
-          {/*        height={"80vh"}*/}
-          {/*        width={"100vw"}*/}
-          {/*        playing={playing}*/}
-          {/*        // controls*/}
-          {/*        playIcon={*/}
-          {/*            <button*/}
-          {/*                onClick={() => setPlaying(!playing)}*/}
-          {/*                style={{*/}
-          {/*                    width: 135,*/}
-          {/*                    height: 135,*/}
-          {/*                    backgroundColor: "white",*/}
-          {/*                    borderRadius: "100%",*/}
-          {/*                    display: "flex",*/}
-          {/*                    justifyContent: "center",*/}
-          {/*                    alignItems: "center",*/}
-          {/*                    outline: 'none',*/}
-          {/*                    border: 0*/}
-          {/*                }}*/}
-          {/*            >*/}
-          {/*                <div*/}
-          {/*                    style={{*/}
-          {/*                        width: 0,*/}
-          {/*                        height: 0,*/}
-          {/*                        "border-style": "solid",*/}
-          {/*                        "border-width": "7px 0 7px 12.1px",*/}
-          {/*                        "border-color": "transparent transparent transparent #000000",*/}
-          {/*                    }}*/}
-          {/*                />*/}
-          {/*            </button>*/}
-          {/*        }*/}
-          {/*        light="https://previews.123rf.com/images/illdirection/illdirection1603/illdirection160300030/55596780-path-with-landscape-background.jpg"*/}
-          {/*        url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"*/}
-          {/*    />*/}
-          {/*</div>*/}
+
           <VideoPlayer />
 
-        {/*  <video*/}
-        {/*  // autoPlay*/}
-        {/*    controls*/}
-        {/*  muted*/}
-        {/*  src={*/}
-        {/*    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"*/}
-        {/*  }*/}
-        {/*/>*/}
+
       </section>
 
       <TwoColumnsHugeInfo
@@ -202,8 +140,12 @@ const AboutMoken = (props) => {
           "Enthusiastic individuals working together to create extraordinary startups."
         }
         rightTitle={
-          "From ideation stage to high growth innovation, our role consists of taking the time to understand your business model, suggest creative and high-performing strategies, while implementing crucial aspects to supplement your growing needs. Our avant-garde tactics are in line with the current market, blending seamlessly with each startup’s operational realities, while eliminating risks that aren’t necessary.\n" +
-          "\n"
+            `The Moken Pillars are the key divisions within Moken Startups that together create who we are. They’re how
+             we interact and engage with our community, and each address a unique necessary for startup success. 
+             From ideation stage to high growth innovation, our role consists of taking the time to understand your
+              business model, suggest creative and high-performing strategies, while implementing crucial aspects
+               to supplement your growing needs. Our avant-garde tactics are in line with the current market, 
+               blending seamlessly with each startup’s operational realities, while eliminating risks that aren’t necessary.`
         }
         rightFirstListTitle={"HOW WE CAN COLLABORATE"}
         firstList={options.collaborates}
@@ -213,11 +155,11 @@ const AboutMoken = (props) => {
       />
 
       <ColorBlock
-        title={"Interested in this position?"}
+        title={"Let’s create magic together."}
         subtitle={"APPLY NOW"}
-        backgroundColor={"rgb(0,9,50)"}
-        textWidth={"auto"}
-        className={"about-name-color-block"}
+        withIcon
+        backgroundColor={"#000"}
+        textWidth={isMobile ? 'auto' : 580}
       />
 
       <EmailForm withForm />

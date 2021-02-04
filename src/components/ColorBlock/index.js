@@ -19,7 +19,8 @@ const ColorBlock = ({
   type = "extraLight",
   mobSize = "9vw",
   blockType = "big",
-    containerStyles = {}
+  containerStyles = {},
+  onClick = () => {}
 }) => {
   const { isMobile } = useWindowDimensions();
   const mobSizeTemp = blockType === "middle" ? 32 : mobSize;
@@ -45,7 +46,7 @@ const ColorBlock = ({
           >
             {title}
           </Text>
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "center", cursor: 'pointer' }} onClick={onClick}>
             <Text
               size={".95vw"}
               type={"semiBold"}

@@ -21,6 +21,7 @@ const Button = ({
   mobSize = "3vw",
   className = "",
   textType = "semiBold",
+                  disabled = false
 }) => {
   const { isMobile } = useWindowDimensions();
 
@@ -48,9 +49,11 @@ const Button = ({
 
   return (
     <button
-      data-aos="fade-in"
-      className={`button-container ${type} ${className}`}
+      // data-aos="fade-in"
+      // className={`button-container ${type} ${className}`}
+      className={`button-container ${type} ${className} ${disabled ? 'disabled' : ' '}`}
       onClick={onClick}
+      disabled={disabled}
       style={{
         ...bordersStyles[borderType],
         ...containerStyles,

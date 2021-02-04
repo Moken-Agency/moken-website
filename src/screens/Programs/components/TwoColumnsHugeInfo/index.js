@@ -6,13 +6,15 @@ import Title from "../../../../components/Title";
 import UnderlineTextWithIcon from "../../../../components/UnderlineTextWithIcon";
 import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 
-const FirstItem = ({ title, subtitle }) => {
+const FirstItem = ({ title, subtitle, imgURL = '' }) => {
   const { isMobile } = useWindowDimensions();
 
   return (
     <div className={"labs-benefits-container-info-block-work"}>
+        <img src={imgURL} className={'first-item-img'}/>
       <Text
-        size={'1.4vw'}
+        size={22}
+        // size={'1.4vw'}
         mobSize={22}
         type={"semiBold"}
         animationType={"fade-up"}
@@ -21,11 +23,11 @@ const FirstItem = ({ title, subtitle }) => {
         {title}
       </Text>
       <Text
-        size={'1.25vw'}
-        // size={20}
+        // size={'1.25vw'}
+        size={20}
         mobSize={16}
         animationType={"fade-up"}
-        textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
         type={"light"}
       >
         {subtitle}
@@ -54,8 +56,8 @@ const TwoColumnsHugeInfo = ({
       <section className={"labs-benefits-container"} style={containerStyles}>
         <Text
           type={"extraLight"}
-          size={'3.4vw'}
-          // size={55}
+          // size={'3.4vw'}
+          size={55}
           mobSize={35}
           animationType={"fade-up"}
           className={"labs-benefits-container-title"}
@@ -64,12 +66,12 @@ const TwoColumnsHugeInfo = ({
         </Text>
         <div className={"labs-benefits-container-info-block"}>
           <Text
-            size={'1.25vw'}
-            // size={20}
+            // size={'1.25vw'}
+            size={20}
             mobSize={16}
             type={"light"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
             className={"labs-benefits-container-info-block-first-title"}
           >
             {rightTitle}
@@ -78,8 +80,8 @@ const TwoColumnsHugeInfo = ({
           {rightFirstListTitle ? (
             <Text
               type={"semiBold"}
-              size={'.88vw'}
-              // size={14}
+              // size={'.88vw'}
+              size={14}
               animationType={"fade-up"}
               mobSize={10}
               className={"labs-benefits-container-info-block-second-title"}
@@ -113,8 +115,8 @@ const TwoColumnsHugeInfo = ({
                   <UnderlineTextWithIcon
                     withIcon={secondListWithIcon}
                     color={"black"}
-                    size={'2.13vw'}
-                    // size={34}
+                    // size={'2.13vw'}
+                    size={34}
                     mobSize={18}
                     className={"two-column-submit-your-resume"}
                     title={title}

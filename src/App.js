@@ -78,11 +78,16 @@ import Mentorship from "./screens/Mentorship";
 import InnovationCommittee from "./screens/InnovationCommittee";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Events from "./screens/Events";
 
 const routsWithHeaderFooter = [
   {
     path: "/mentorship",
     component: Mentorship,
+  },
+  {
+    path: "/events",
+    component: Events,
   },
   {
     path: "/faqs",

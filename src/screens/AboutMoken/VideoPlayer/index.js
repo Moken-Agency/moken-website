@@ -3,7 +3,7 @@ import "./styles.scss";
 import Text from "../../../components/Text";
 import ReactPlayer from "react-player";
 
-const VideoPlayer = (props) => {
+const VideoPlayer = ({url = ''}) => {
     const [playing, setPlaying] = useState(false);
     const [isHover, setIsHover] = useState(false);
     const [onStart, setOnStart] = useState(false);
@@ -11,7 +11,7 @@ const VideoPlayer = (props) => {
     <div className={"video-player-container"}
          onMouseEnter={() => setIsHover(true)}
          onMouseLeave={() => setIsHover(false)}>
-        <div className={'video-container'}>
+        <div className={`video-container ${url ? '' : 'no-video-container'}`}>
             <button
                 data-aos="fade-in"
                 className={'pause-btn video-btn-container'}
@@ -24,7 +24,7 @@ const VideoPlayer = (props) => {
                     className={'triangle'}
                 />}
             </button>
-            <ReactPlayer
+            {url ? <ReactPlayer
                 muted
                 height={"80vh"}
                 width={"100vw"}
@@ -42,8 +42,18 @@ const VideoPlayer = (props) => {
                     </button>
                 }
                 light="https://previews.123rf.com/images/illdirection/illdirection1603/illdirection160300030/55596780-path-with-landscape-background.jpg"
-                url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-            />
+                url={url}
+            /> :   <button
+                data-aos="fade-in"
+                className={'video-btn-container'}
+                onClick={() => setPlaying(!playing)}
+            >
+                <Text type={'semiBold'} size={16} textStyles={{ letterSpacing: 4}}>
+                    COMING
+                    SOON
+                </Text>
+
+            </button>}
         </div>
 
     </div>

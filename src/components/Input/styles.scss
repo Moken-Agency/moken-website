@@ -5,8 +5,8 @@
   }
   .divider {
     width: 100%;
-    height: 1px;
-    background-color: black;
+    //height: 1px;
+    //background-color: black;
     //@media screen and (max-width: 600px) {
     //  height: .6vw;
     //}
@@ -19,7 +19,6 @@
     flex-direction: row;
     //margin-bottom: 0.5vw;
     //height: 2vw;
-    padding: 10px 0;
     //@media screen and (max-width: 600px) {
     //  height: 5vw;
     //  margin-bottom: 2vw;
@@ -38,15 +37,7 @@
         font-size: 4vw;
       };
     }
-    .textarea {
-      width: 100%;
-      min-height: 155px;
-      font-family: 'Latinka Light', sans-serif;
-      font-size: 1vw;
-      @media screen and (max-width: 600px) {
-        font-size: 4vw;
-      };
-    }
+
     .goButton {
       border: 0;
       outline: 0;
@@ -65,5 +56,117 @@
       }
     }
   }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 155px;
+  height: 100%;
+}
+
+
+.float-label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 350px;
+  position: relative;
 
 }
+
+.float-label input {
+  width: 100%;
+  height: 56px;
+  padding-top: 14px;
+  outline: 0;
+  //border-bottom: 1px solid #ddd;
+  border: 0;
+  background: #fff;
+  border-bottom: 1px solid black;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.Error {
+  border-color: red!important;
+  color: red !important;
+}
+
+.float-label label {
+  //font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+
+.float-label:focus-within label {
+  transform: translate(0, 14px) scale(0.75);
+}
+
+.float-label:focus-within input {
+  border-bottom: 1px solid #263da8;
+
+}
+.float-label .Active {
+
+  transform: translate(0, 14px) scale(0.75);
+}
+
+
+
+
+
+
+.float-label-textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 350px;
+  position: relative;
+
+}
+
+.float-label-textarea textarea {
+  width: 100%;
+  padding-top: 14px;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.float-label-textarea label {
+  //font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999;
+  pointer-events: none;
+  position: absolute;
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+}
+
+.float-label-textarea:focus-within label {
+  transform: translate(0, -4px) scale(0.75);
+}
+.float-label-textarea .Active {
+  transform: translate(0, -4px) scale(0.75);
+}
+
+
+
+.input-error-message {
+  top: 10px;
+  position: relative;
+}
+
+
+

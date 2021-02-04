@@ -15,6 +15,7 @@ import ImagePeopleHeader from "../../images/careers-header.jpg";
 import CareersCircles from "../../images/careers-circles.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HeaderTitle from "../../components/HeaderTitle";
+import TitleShortListWithBtn from "../../components/TitleShortListWithBtn";
 
 const Careers = () => {
   const history = useHistory();
@@ -33,38 +34,12 @@ const Careers = () => {
 
       <img className={"image-section"} src={ImagePeopleHeader} />
 
-      <section className={"careers-second-section"}>
-        <Title className={"careers-second-title"} title={"NEW OPPORTUNITIES"} />
-        <div className={"careers-second-container"}>
-          <Subtitle
-            subtitle={
-              "We’re hiring. If something piques your interest, let us know."
-            }
-            mobSize={35}
-            className={"careers-second-subtitle"}
-          />
-          <div className={"careers-opportunities-container"}>
-            {options.opportunities.map((opportunity, index) => {
-              return (
-                <Opportunity
-                  width={isMobile ? "auto" : "39vw"}
-                  {...opportunity}
-                  key={index + "opportunities"}
-                />
-              );
-            })}
-            <Text
-              size={22}
-              type={"semiBold"}
-              animationType={"fade-in"}
-              className={"text-submit"}
-              onClick={() => history.push("/opportunities")}
-            >
-              View all opportunities
-            </Text>
-          </div>
-        </div>
-      </section>
+      <TitleShortListWithBtn title={'NEW OPPORTUNITIES'}
+                             subtitle={'We’re hiring. If something piques your interest, let us know.'}
+                             list={options.opportunities}
+                             btnTitle={'View all opportunities'}
+                             btnOnClick={() => history.push("/opportunities")}
+      />
 
       <section className={"careers-third-section"}>
         <img src={CareersCircles} className={"circles"} />

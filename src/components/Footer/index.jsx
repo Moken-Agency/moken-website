@@ -90,7 +90,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
             placeholder={"Email"}
             onSubmit={handleSubmit}
             backgroundColor={"#fbfbfb"}
-            animationType={"fade-in"}
+            // animationType={"fade-in"}
             onChange={(event) =>
               handleChange({ name: "email", text: event.target.value })
             }

@@ -28,11 +28,11 @@ const PeopleLeadership = () => {
 
       <TitleSubDescription
         title={"TEAM MOKEN"}
-        subtitle={`We increase website leads, maximize revenu and produce 
-                a positive ROI — validated with measurable results.`}
-        description={`Our role consists of taking the time to understand your business model, and suggesting creative
-                    and high-performing digital strategies. Our avant-garde tactics are in line with the current market,
-                    blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
+        subtitle={`Two founders. Twenty-eight team members. Six countries. Seventeen cities. Fourteen advisors. One integrated team.`}
+        description={`A team that thrives on trust. We may be small, but we’re a global and powerful team of creators,
+         who have a passion for what we do. We start each day with new ideas, help each other grow, and learn from one another.
+          Each aspect of our work is perfected to the extent that allows us to support the reputation of a trusted 
+          partner and consitently raises the bar driving our ambition higher and higher.`}
       />
       {options.peopleGroups.map((people, index) => (
         <People {...people} peopleIndex={index} />
@@ -40,7 +40,8 @@ const PeopleLeadership = () => {
 
       <TitleSubDescription
         title={"OUR EXTENDED TEAM"}
-        subtitle={"We increase website leads, maximize revenue and produce."}
+        subtitle={"Growing together through collaboration."}
+        containerStyles={{marginBottom: '8vw'}}
       />
 
       <div className={"people-images-container"}>
@@ -52,8 +53,9 @@ const PeopleLeadership = () => {
         <OpportunitiesPeopleLeadershipEmailComponent
             title={'JOIN THE TEAM'}
             subtitle={"We have something for everyone."}
-            description={`The Moken team is growing at a rapid pace, to stay in the loop on
-          additional ways to connct join our mailing list to never miss a beat.`}
+            description={`Our goal is to deliver amazing experiences that make people talk, and build strategic value
+             for brands, tech, entertainment, arts & culture. The Moken team is growing at a rapid pace, to stay in
+              the loop on additional ways to connct join our mailing list to never miss a beat.`}
             imgURL={''}
         />
 

@@ -10,9 +10,10 @@ const TitleSubDescription = ({
   description = "",
   btnTitle = "",
   AdditionalComponent,
+    containerStyles = {}
 }) => {
   return (
-    <div className={"title-sub-description-container"}>
+    <div className={"title-sub-description-container"} style={containerStyles}>
       <Title title={title} className={"title-sub-description-title"} />
       <Text
         className={"title-sub-description-subtitle"}

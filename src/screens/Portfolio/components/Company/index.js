@@ -23,6 +23,7 @@ const Company = ({
           animationType={"fade-in"}
           type={"semiBold"}
           className={"company-name"}
+          mobSize={12}
         >
           {companyName}
         </Text>
@@ -31,6 +32,7 @@ const Company = ({
           animationType={"fade-in"}
           type={"thin"}
           className={"project-name"}
+          mobSize={30}
         >
           {projectName}
         </Text>
@@ -53,6 +55,8 @@ const Company = ({
             animationType={"fade-in"}
             className={"company-city"}
             type={"semiBold"}
+            textStyles={{letterSpacing: 4}}
+            mobSize={12}
           >
             {city}
           </Text>
@@ -61,6 +65,7 @@ const Company = ({
             animationType={"fade-in"}
             className={"company-owner"}
             type={"light"}
+            mobSize={16}
           >
             {owner}
           </Text>

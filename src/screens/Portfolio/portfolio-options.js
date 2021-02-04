@@ -49,13 +49,13 @@ export default {
       city: "BURNABY, BC",
       owner: "",
     },
-    {
-      companyName: "MOKENLABS",
-      projectName: "Postess",
-      description: "NEED DESCRIPTION HERE….",
-      city: "VANCOUVER, BC",
-      owner: "Nazar Ostrozhynsky",
-    },
+    // {
+    //   companyName: "MOKENLABS",
+    //   projectName: "Postess",
+    //   description: "NEED DESCRIPTION HERE….",
+    //   city: "VANCOUVER, BC",
+    //   owner: "Nazar Ostrozhynsky",
+    // },
     {
       companyName: "ACQUIRED",
       projectName: "Binary Vision Studios",

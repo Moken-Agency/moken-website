@@ -3,56 +3,6 @@
     width: 100vw;
     background-color: grey;
   }
-  .careers-second-section {
-    padding: 10vw 10vw 4.5vw 10vw;
-
-    .careers-second-title {
-      margin: 0;
-      padding: 0;
-      @media only screen and (max-width: 600px) {
-        margin-bottom: 50px;
-      }
-    }
-    .careers-second-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-left: 4vw;
-      margin-top: 9vw;
-      position: relative;
-
-      @media only screen and (max-width: 600px) {
-       flex-direction: column;
-      }
-      .careers-second-subtitle {
-        margin: 0;
-        padding: 0;
-        width: 28vw;
-        @media only screen and (max-width: 600px) {
-          width: 60vw;
-          margin-bottom: 50px;
-        }
-      }
-    }
-    .careers-opportunities-container {
-      margin-top: 1vw;
-      .view-all-opportunities {
-        margin-top: 100px;
-        .text {
-          border-bottom: 1px solid;
-          padding-bottom: 8px;
-          &:hover {
-            color: grey;
-          }
-        }
-      }
-      .text-submit {
-        @media only screen and (max-width: 600px) {
-          margin-bottom: 150px;
-        }
-      }
-    }
-  }
   .careers-third-section {
     padding: 10vw;
     position: relative;

@@ -3,27 +3,22 @@ export default {
     {
       title: "Moken Agency",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
-    },
-    {
-      title: "Moken Programs",
-      subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Moken Agency provides opportunities  to turn a idea into reality in the most efficient, and scalable way possible. In other words, it’s where founders and startups build, create, and grow.",
     },
     {
       title: "Moken Events",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Moken Events is where we enage with as a community to connect, network, and create meaningful relationships. In short, it’s where founders and startups experience and share.",
     },
     {
-      title: "Moken Media",
+      title: "Moken Program",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Moken Programs creates a safe and inclusive environment to test, learn, fail, and play through diverse program and course offerings. Essentially, it’s here where founders and startups learn and evolve.",
     },
     {
-      title: "Access by Moken",
+      title: "Access",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "An exclusive, invite-only community-driven platform of tools, content & courses for the next generation startups & founders. Access has something for everyone. In a nutshell, it’s where startups and founders connect, scale, and succeed.",
     },
   ],
   purposes: [
@@ -32,15 +27,15 @@ export default {
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Access Your Full Potential",
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Connect & Extend Your Network",
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Learn to Create The Future",
       link: "",
     },
   ],

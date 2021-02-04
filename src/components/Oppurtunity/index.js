@@ -11,6 +11,8 @@ const Opportunity = ({
   width = "34vw",
   stylesContainer = {},
   isFirst = false,
+    btnTitle= ' VIEW JOB',
+    action
 }) => {
   const history = useHistory();
 
@@ -41,14 +43,14 @@ const Opportunity = ({
           {subtitle}
         </Text>
       </div>
-      <button className={"view-job"} onClick={() => history.push(route)}>
+      <button className={"view-job"} onClick={() => action ? action() : history.push(route)}>
         <Text
           size={".8vw"}
           animationType={"fade-in"}
           textStyles={{ letterSpacing: 4, cursor: "pointer" }}
           type={"semiBold"}
         >
-          VIEW JOB
+          {btnTitle}
         </Text>
         <img
           className={"opportunity-arrow"}

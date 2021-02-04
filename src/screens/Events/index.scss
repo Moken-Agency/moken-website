@@ -1,0 +1,28 @@
+.events-header-container {
+  width: 700px;
+}
+
+.creative-community {
+  padding-left: 14vw;
+  margin-bottom: 130px;
+  @media only screen and (max-width: 601px) {
+    padding: 0 43px;
+  }
+}
+
+.creative-community-text-container {
+  width: 725px;
+  margin-bottom: 50px;
+  padding-left: 2vw;
+  @media only screen and (max-width: 601px) {
+    width: auto;
+  }
+}
+
+.creative-community-first-text-container {
+  width: 622px;
+  margin-bottom: 50px;
+  @media only screen and (max-width: 601px) {
+    width: auto;
+  }
+}

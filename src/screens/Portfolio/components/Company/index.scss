@@ -1,10 +1,15 @@
 .company-container {
-  display: flex;
+  //display: flex;
   justify-content: space-between;
   border-top: 1px solid #cecece;
   padding: 5vw 3.5vw 1vw 4.5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    grid-template-columns: 1fr;
+    padding: 10vw 0;
   }
     div {
     .company-name {
@@ -43,7 +48,7 @@
         //height: 2vw;
         width: 2vw;
         @media screen and (max-width: 600px) {
-          height: 10vw;
+          height: 6vw;
           position: initial;
           width: auto
         }
@@ -55,6 +60,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &:nth-of-type(3n) {
+      align-items: flex-end;
+    }
     @media screen and (max-width: 600px) {
       flex-direction: row;
       }
