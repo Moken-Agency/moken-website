@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8ef02de93f1da30bb9cb4946609191c",
+    "revision": "e25f1ffbcc5a30e435c51cbed26c6ca1",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "757e3489038531eaab3e",
+    "revision": "67f7922a71899e04ee26",
     "url": "/moken-website/static/css/2.d2b3272e.chunk.css"
   },
   {
-    "revision": "f9a202718a8bcae1eea4",
-    "url": "/moken-website/static/css/main.5732b19e.chunk.css"
+    "revision": "f748112fabce0985b7d1",
+    "url": "/moken-website/static/css/main.f65da880.chunk.css"
   },
   {
-    "revision": "757e3489038531eaab3e",
-    "url": "/moken-website/static/js/2.fc948c32.chunk.js"
+    "revision": "67f7922a71899e04ee26",
+    "url": "/moken-website/static/js/2.e9654fc1.chunk.js"
   },
   {
-    "revision": "a1a636632721a402612df3e043dd630d",
-    "url": "/moken-website/static/js/2.fc948c32.chunk.js.LICENSE.txt"
+    "revision": "98c92e4a71422a59c3daed74f16a0206",
+    "url": "/moken-website/static/js/2.e9654fc1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9a202718a8bcae1eea4",
-    "url": "/moken-website/static/js/main.1fce3f90.chunk.js"
+    "revision": "f748112fabce0985b7d1",
+    "url": "/moken-website/static/js/main.06e0239a.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -190,6 +190,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1ea57cb1ff4a3630323dd335f8d588ee",
     "url": "/moken-website/static/media/innovation-mob-header.1ea57cb1.svg"
+  },
+  {
+    "revision": "2fd5b52de5ee66ae03cdf040c7664831",
+    "url": "/moken-website/static/media/innovation-mob-header@3x.2fd5b52d.png"
   },
   {
     "revision": "dd66150ea3009101fa68ba0c33b8041b",
