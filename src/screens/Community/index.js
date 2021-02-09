@@ -144,7 +144,7 @@ const Community = () => {
         }
         options={options.founders}
         // widthItem={"25vw"}
-        itemContainerStyles={{ width: "25vw", height: "25vw" }}
+        // itemContainerStyles={{ width: "25vw", height: "25vw" }}
         type={'big'}
       />
 

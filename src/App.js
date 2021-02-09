@@ -377,6 +377,7 @@ const routsWithoutHeaderFooter = [
 function App() {
   const { width } = useWindowDimensions();
 
+
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -386,54 +387,54 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <div style={{ minHeight: "100vh" }}>
-        <Switch>
-          {routsWithoutHeaderFooter.map((route, index) => {
-            return (
-
-              <Route
-                key={"routsWithoutHeaderFooter" + index}
-                path={route.path}
-                children={(props) => (
-                      <>
-                        <Helmet>
-                          <title>{routsTitles[props.location.pathname]}</title>
-                        </Helmet>
-                        <route.component />
-                      </>
-                    )}
-              />
-            );
-          })}
-          {routsWithHeaderFooter.map((route, index) => {
-            return (
+        <Router>
+          <ScrollToTop />
+          <div style={{ minHeight: "100vh" }}>
+            <Switch>
+              {routsWithoutHeaderFooter.map((route, index) => {
+                return (
 
                   <Route
-                    key={"routsWithHeaderFooter" + index}
+                    key={"routsWithoutHeaderFooter" + index}
                     path={route.path}
-                    // children={<route.component />}
-                    children={(props) => {
-                      // pass the sub-routes down to keep nesting
-                      console.log({props});
-                      return (
-                        <>
-                          <Helmet>
-                            <title>{routsTitles[props.location.pathname]}</title>
-                          </Helmet>
-                          <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-                          <route.component {...props} />
-                          <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
-                        </>
-                      );
-                    }}
+                    children={(props) => (
+                          <>
+                            <Helmet>
+                              <title>{routsTitles[props.location.pathname]}</title>
+                            </Helmet>
+                            <route.component />
+                          </>
+                        )}
                   />
-            );
-          })}
-        </Switch>
-      </div>
-    </Router>
+                );
+              })}
+              {routsWithHeaderFooter.map((route, index) => {
+                return (
+
+                      <Route
+                        key={"routsWithHeaderFooter" + index}
+                        path={route.path}
+                        // children={<route.component />}
+                        children={(props) => {
+                          // pass the sub-routes down to keep nesting
+                          console.log({props});
+                          return (
+                            <>
+                              <Helmet>
+                                <title>{routsTitles[props.location.pathname]}</title>
+                              </Helmet>
+                              <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+                              <route.component {...props} />
+                              <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
+                            </>
+                          );
+                        }}
+                      />
+                );
+              })}
+            </Switch>
+          </div>
+        </Router>
   );
 }
 

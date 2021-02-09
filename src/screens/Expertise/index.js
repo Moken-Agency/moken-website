@@ -23,8 +23,8 @@ const Expertise = () => {
           <Text
             className={"expertise-title"}
             animationType={"fade-in"}
-            // size={16}
-            size={'1vw'}
+            size={16}
+            // size={'1vw'}
             mobSize={14}
             type={"semiBold"}
             // mobColor={"white"}
@@ -34,8 +34,8 @@ const Expertise = () => {
           <Text
             className={"expertise-subtitle"}
             type={"thin"}
-            size={'4.7vw'}
-            // size={75}
+            // size={'4.7vw'}
+            size={75}
             animationType={"fade-in"}
             mobSize={45}
             // mobColor={"white"}
@@ -47,7 +47,7 @@ const Expertise = () => {
         <img src={''} />
       </div>
 
-      <Title className={"expertise-started-title"} title={"GETTING STARTED"} />
+      <Title title={"GETTING STARTED"} />
 
       <div className={"expertise-second-wrapper"}>
         <Text
@@ -56,7 +56,7 @@ const Expertise = () => {
           containerStyles={{ marginBottom: isMobile ? 100 : "8vw" }}
           type={"extraLight"}
           animationType={"fade-in"}
-          size={"3vw"}
+          size={55}
           mobSize={35}
         >
             We’re a startup and business scalability agency determined to help founders build, create, and grow.
@@ -97,7 +97,7 @@ const Expertise = () => {
                 color={"white"}
                 type={"extraLight"}
                 animationType={"fade-in"}
-                size={"3vw"}
+                size={55}
                 mobSize={35}
                 className={"expertise-bottom-first-info-text-first"}
               >
@@ -106,10 +106,11 @@ const Expertise = () => {
               <Text
                 color={"white"}
                 type={"light"}
-                size={"1vw"}
+                size={20}
+                // size={"1vw"}
                 animationType={"fade-in"}
                 mobSize={16}
-                textStyles={{lineHeight: isMobile ? null : '1.7vw'}}
+                textStyles={{lineHeight: isMobile ? null : '35px'}}
                 className={"expertise-bottom-first-info-text-second"}
                 containerStyles={{marginBottom: isMobile ? 50 : null}}
               >
@@ -138,7 +139,7 @@ const Expertise = () => {
                 textColor={"white"}
                 borderType={"bordered"}
                 containerStyles={{
-                  marginRight: "2.8vw",
+                  marginRight: 30,
                   padding: isMobile ? "" : "1.95vw 2.2vw",
                 }}
               />

@@ -61,7 +61,7 @@ const Input = ({
                 <div className={'float-label'} style={{backgroundColor}}>
                   <input
                       // onChange={(e) => handleTextChange(e.target.value)}
-                      //    value={value}
+                         value={value}
                          className={`${errorMessage ? 'Error' : ''}`}
                          style={{fontSize: isMobile ? mobSize : size,fontFamily: textTypes[typeText] }}
                          {...rest}
@@ -87,7 +87,7 @@ const Input = ({
         ) : (
             <div className={`float-label-textarea ${inputType}`} style={{backgroundColor}}>
               <textarea
-                     // value={value}
+                     value={value}
                      // onChange={(e) => handleTextChange(e.target.value)}
                      style={{fontSize: isMobile ? mobSize : size,
                        fontFamily: textTypes[typeText],

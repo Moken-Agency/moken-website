@@ -16,6 +16,7 @@ import ProgramCommunityListPartner from "../Programs/components/ProgramCommunity
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import ColorBlock from "../../components/ColorBlock";
 import arrowUpRight from '../../images/arrow-up-right-black.svg';
+import ImageBlock from "../../components/ImageBlock";
 
 const { involved, collaborates, purposes } = options;
 
@@ -27,26 +28,25 @@ const OurPartners = () => {
       <HeaderTitle
         title={"OUR PARTNERS"}
         subtitle={"Success fuelled by partnership."}
-        description={"Creating an unmatched global ecosystem, together."}
+        description={"Creating an unmatched global ecosystem, together through unrilvaled access to technology, talent, and industry experts for startups and founders."}
       />
 
-      <div className={"our-partners-circles"}>
-        <img data-aos="fade-in" src={FirstCircle} />
-        <img data-aos="fade-in" src={SecondCircle} />
-        <img data-aos="fade-in" src={ThirdCircle} />
-      </div>
+      {/*<div className={"our-partners-circles"}>*/}
+      {/*  <img data-aos="fade-in" src={FirstCircle} />*/}
+      {/*  <img data-aos="fade-in" src={SecondCircle} />*/}
+      {/*  <img data-aos="fade-in" src={ThirdCircle} />*/}
+      {/*</div>*/}
+
+      <ImageBlock position={'right'}/>
 
       <TitleTwoDescriptions
         mainTitle={"DRIVING THE FUTURE"}
-        title={`We increase website leads, maximize revenu and produce a
-                   positive ROI — validated with measurable results.`}
-        firstDescription={`Our capabilities span the breadth of operations, project, and product
-                       management; business strategy; marketing; design; technology; revenue optimization;
-                       talent acquisition; growth; and sales, across all industries through customized products,
-                       services, courses, workshops, solutions, and mentorship.`}
-        secondDescription={`We partner with innovators through our tailored and integrative expertise, complemented by a
-                       vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully
-                       driven outcomes.`}
+        title={`
+        We believe in strong partnerships. We push ourselves and our partners in pursuit of assisting great people leading engaging brands.`}
+        firstDescription={`
+        Moken’s Partner Program aims to provide the necessary access and resources to founders, startups, and innovators. We do this through educating the big thinkers, the dreamers, and the doers while cultivating greater participation in the field of technology through providing crucial resources making what’s possible more accessible to the mainstream.`}
+        secondDescription={`
+        Anchored in simplicity we develop strategic partnerships with gamechanging individuals and companies that want to do better and be better. We know we have the power to shape the world, just as great partnerships have the power to revolutionize industries.`}
       />
 
       <ProgramCommunityListPartner
@@ -75,13 +75,13 @@ const OurPartners = () => {
         <Text
           type={"extraLight"}
           animationType={"fade-in"}
-          size={'3.4vw'}
-          // size={55}
+          // size={'3.4vw'}
+          size={55}
           mobSize={35}
-          containerStyles={{width: isMobile ? 'auto' : 900}}
+          className={'partners-increase-title'}
+          // containerStyles={{width: isMobile ? 'auto' : 900}}
         >
-          We increase website leads, maximize revenu and produce a positive ROI
-          — validated with measurable results.
+            Meet a few of our collaborative, community-focused partners that pair their passion with purpose.
         </Text>
         <div className={"partners-container"}>
           {[
@@ -113,8 +113,8 @@ const OurPartners = () => {
       </div>
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"GET INVOLVED"}
+        title={"Ready to make an impact?"}
+        subtitle={"DOWNLOAD THE PARTNER GUIDE"}
         type={"thin"}
         size={40}
         mobSize={32}
@@ -139,23 +139,24 @@ const OurPartners = () => {
       {/*/>*/}
     <Title title={'GET INVOLVED'}/>
     <div className={'explore-our-partners-container'}>
-        <Text size={'3.4vw'}
-              // size={55}
+        <Text
+            // size={'3.4vw'}
+              size={55}
               mobSize={35}
               type={'extraLight'}
-              containerStyles={{width: isMobile ? 'auto' : '37vw'}}
+              containerStyles={{width: isMobile ? 'auto' : '600px'}}
               // containerStyles={{width: isMobile ? 'auto' : 583}}
         >Interested in becoming a partner and leveraging a global community network?</Text>
         <div className={'explore-our-partners-potential-container'}>
             <Text type={'semiBold'}
-                  size={'.9vw'}
+                  // size={'.9vw'}
                   mobSize={12}
-                  // size={14}
+                  size={14}
                   textStyles={{letterSpacing: 4, marginRight: 40}}>EXPLORE THE POTENTIAL</Text>
             <img src={arrowUpRight} style={{width: '1.7vw', height: '1.7vw'}}/>
         </div>
     </div>
-      <EmailForm withForm className={"partners-email-form"} />
+      <EmailForm withForm />
     </div>
   );
 };

@@ -16,9 +16,10 @@ const MenuItem = ({
   route = "",
   size = 11,
   className = "",
+  isComingSoon,
     link
 }) => {
-  const [hover, setHover] = useState({ isHover: true, color: "#000" });
+  const [hover, setHover] = useState({ isHover: false, color: "#000" });
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
@@ -27,9 +28,10 @@ const MenuItem = ({
       setHover({ isHover: true, color: dividerColor });
     }
   };
+  console.log(hover, title);
   const onMouseLeave = () => {
     if (!isMobile) {
-      setHover({ isHover: true, color: "#000" });
+      setHover({ isHover: false, color: "#000" });
     }
   };
 
@@ -43,7 +45,7 @@ const MenuItem = ({
   };
   return (
     <div
-      className={`menu-main-container ${className}`}
+      className={`menu-main-container ${className} ${isComingSoon && hover.isHover ? 'coming-soon' : ''}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={handleOnClick}
@@ -54,10 +56,10 @@ const MenuItem = ({
           size={size}
           textStyles={{
             ...textStyles,
-            color: "#000",
+            color: isComingSoon && hover.isHover  ? '#b4b4b4' : "#000",
           }}
         >
-          {title.toUpperCase()}
+          {isComingSoon && hover.isHover ? `Coming soon`.toUpperCase() : title.toUpperCase() }
         </Text>
         {withDivider && <div className={"divider"} />}
       </div>

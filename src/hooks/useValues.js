@@ -254,6 +254,12 @@ export default (
         [values],
     );
 
+    const clearValues = () => {
+        console.log({initialValues});
+        console.log(getInitialErrors(initialValues));
+        setValues(initialValues)
+    }
+
     const getProps = (fieldName) => {
         return {
             ...propsByName[fieldName],
@@ -270,5 +276,5 @@ export default (
         ([fieldName, value]) => !validate(fieldName, value, values),
     );
 
-    return [values, getProps, isFormValid, errors];
+    return [values, getProps, isFormValid, errors, clearValues];
 };

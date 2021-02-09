@@ -30,7 +30,7 @@ const Subtitle = ({
               mobSize={mobSize}
               animationType={"fade-in"}
               type={type}
-              textStyles={{lineHeight: isMobile ? null : '4vw', ...textStyles}}
+              textStyles={{lineHeight: isMobile ? null : '75px', ...textStyles}}
             >
               {subtitle}
             </Text>

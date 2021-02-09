@@ -29,7 +29,7 @@ const HugeInfoAllListColumn = ({
         <Text
           type={"extraLight"}
           // size={55}
-          size={'3.4vw'}
+          size={55}
 
           animationType={"fade-in"}
           mobSize={35}

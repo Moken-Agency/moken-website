@@ -98,7 +98,7 @@ const CommunityPageGenerator = ({
         <div className={"first-section-info-container"}>
           {/*<Text size={'3.3vw'}*/}
           <Text
-            size={'3.4vw'}
+            size={55}
             // size={55}
             mobSize={35}
             animationType={"fade-in"}
@@ -112,8 +112,8 @@ const CommunityPageGenerator = ({
             {infoTitleFirst}
           </Text>
           <Text
-            size={'1.25vw'}
-            // size={20}
+            // size={'1.25vw'}
+            size={20}
             type={"light"}
             mobSize={16}
             animationType={"fade-in"}

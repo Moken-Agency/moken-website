@@ -14,7 +14,7 @@ const InfoImgCompany = ({
   founderName = "",
   founderTitle = "",
 }) => {
-  const { isMobile } = useWindowDimensions();
+  const { isMobile, isMiddleResolution } = useWindowDimensions();
 
   return (
     <section className={"info-img-company"}>
@@ -25,15 +25,15 @@ const InfoImgCompany = ({
       <div
         style={{
           display: "flex",
-          paddingLeft: isMobile ? 0 : 50,
+          paddingLeft: isMobile || isMiddleResolution ? 0 : 50,
           alignItems: "center",
-          flexDirection: isMobile ? "column" : "row",
+          flexDirection: isMobile || isMiddleResolution ? "column" : "row",
         }}
       >
         <div
           style={{
             marginRight: isMobile ? 0 : 100,
-            marginBottom: isMobile ? 40 : 0,
+            marginBottom: isMobile || isMiddleResolution ? 40 : 0,
           }}
         >
           <Text
@@ -105,7 +105,7 @@ const InfoImgCompany = ({
         <img
           src={imgURL}
           style={{
-            width: isMobile ? "100%" : "30vw",
+            width: isMobile || isMiddleResolution ? "100%" : "30vw",
             height: isMobile ? 400 : 1000,
           }}
         />

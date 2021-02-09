@@ -17,8 +17,8 @@ const CommunityPartner = ({
     <div className={"community-partner-container"} style={containerStyles}>
       <div className={"community-partner-info-container"}>
         <Text
-          size={'2.45vw'}
-          // size={39}
+          // size={'2.45vw'}
+          size={39}
           type={"thin"}
           animationType={"fade-in"}
           mobSize={25}
@@ -26,7 +26,7 @@ const CommunityPartner = ({
           textStyles={{
             whiteSpace: "break-spaces",
             ...titleStyles,
-            lineHeight: isMobile? '35px' : "2.45vw",
+            lineHeight: isMobile? '35px' : "45px",
             // lineHeight: "35px",
           }}
         >
@@ -34,11 +34,11 @@ const CommunityPartner = ({
         </Text>
         <Text
           className={"community-partner-subtitle"}
-          size={'1.15vw'}
-          // size={18}
+          // size={'1.15vw'}
+          size={18}
           animationType={"fade-in"}
           mobSize={16}
-          textStyles={{ lineHeight: isMobile? '28px':  "1.8vw" }}
+          textStyles={{ lineHeight: isMobile? '28px':  "35px" }}
           // textStyles={{ lineHeight: "28px" }}
           type={"light"}
         >
@@ -49,7 +49,8 @@ const CommunityPartner = ({
       <div className={"community-partner-btn-container"}>
         <Button
           title={btnTitle}
-          size={".8vw"}
+          // size={".8vw"}
+          size={14}
           mobSize={10}
           className={"community-partner-btn"}
         />

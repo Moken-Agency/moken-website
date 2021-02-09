@@ -35,6 +35,9 @@
     @media only screen and (max-width: 600px) {
       padding: 0 43px;
     }
+    @media only screen and (min-width: 601px) and (max-width: 1100px) {
+      padding: 0 100px;
+    }
     .labs-global-text-title {
       margin-bottom: 172px;
       @media only screen and (max-width: 600px) {
@@ -51,6 +54,9 @@
       grid-column-gap: 156px;
       @media only screen and (max-width: 600px) {
         grid-template-columns: 1fr;
+      }
+      @media only screen and (min-width: 601px) and (max-width: 1450px) {
+        grid-template-columns: 1fr 1fr;
       }
     }
   }

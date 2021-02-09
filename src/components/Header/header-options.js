@@ -2,12 +2,12 @@ export default {
   leftMenu: [
     {
       title: "Access networks",
-      route: "/investors",
       withDivider: true,
+      link: 'network.mokenstartups.com'
     },
     {
       title: "Partners",
-      route: "/partners",
+      route: "/our-partners",
       withDivider: true,
     },
     {
@@ -22,7 +22,7 @@ export default {
   ],
   rightMenu: [
     {
-      title: "The academy",
+      title: "STARTUPSMART PODCAST",
       route: "/academy",
       withDivider: true,
     },
@@ -30,10 +30,11 @@ export default {
       title: "Shop moken",
       route: "/shop-moken",
       withDivider: true,
+      isComingSoon: true
     },
     {
       title: "Work with us",
-      route: "/work-with-us",
+      route: "/connect-with-us",
     },
   ],
   mainMenu: [

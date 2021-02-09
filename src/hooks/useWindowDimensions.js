@@ -22,5 +22,7 @@ export default function useWindowDimensions() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return { ...windowDimensions, isMobile: windowDimensions.width < 600 };
+  return { ...windowDimensions,
+    isMobile: windowDimensions.width < 600,
+    isMiddleResolution: windowDimensions.width > 600 && windowDimensions.width < 1450 };
 }

@@ -24,7 +24,7 @@ const ProgramCommunityListPartner = ({
         <Text
           animationType={"fade-in"}
           type={"extraLight"}
-          size={'3.4vw'}
+          size={55}
           // size={55}
           mobSize={35}
           className={"program-community-list-partner-subtitle"}
@@ -43,8 +43,8 @@ const ProgramCommunityListPartner = ({
                   <CommunityPartner
                     {...option}
                     containerStyles={{
-                      width: widthItem,
-                      ...itemContainerStyles,
+                      // width: widthItem,
+                      // ...itemContainerStyles,
                     }}
                   />
                 )}

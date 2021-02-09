@@ -36,28 +36,28 @@ const LeftInfoWithRightImage = ({
           <Text
             animationType={"fade-up"}
             // size={55}
-            size={'3.4vw'}
+            size={55}
             mobSize={35}
             type={"extraLight"}
-            containerStyles={{ marginBottom: '4vw' }}
+            containerStyles={{ marginBottom: '50px' }}
           >
             {title}
           </Text>
           <Text
             animationType={"fade-up"}
-            size={'1.25vw'}
-            // size={20}
+            // size={'1.25vw'}
+            size={20}
             mobSize={16}
             type={"light"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-            containerStyles={{ marginBottom: '5.3vw' }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            containerStyles={{ marginBottom: '55px' }}
           >
             {description}
           </Text>
           {btnTitle && (
             <Button
-              size={'.9vw'}
-              // size={14}
+              // size={'.9vw'}
+              size={14}
               title={btnTitle}
               backgroundColor={"black"}
               textColor={"white"}
@@ -68,7 +68,7 @@ const LeftInfoWithRightImage = ({
           src={imgUrl}
           data-aos="fade-in"
           className={"left-info-with-right-image-image"}
-          style={{ marginRight: isLeftImage && !isMobile ? '9vw' : 0 }}
+          style={{ marginRight: isLeftImage && !isMobile ? 50 : 0 }}
         />
       </div>
     </section>

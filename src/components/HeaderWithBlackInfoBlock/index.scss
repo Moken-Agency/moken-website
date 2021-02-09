@@ -6,6 +6,11 @@
     width: 38vw;
     //margin-bottom: 60px;
     margin-bottom: 3.8vw;
+    @media only screen and (min-width: 601px) and (max-width: 1250px) {
+      width: auto;
+      padding-right: 13.4vw;
+
+    }
     @media only screen and (max-width: 600px) {
       padding: 200px 43px 0 43px;
       width: 75vw;

@@ -3,6 +3,7 @@ import Text from "../../../../components/Text";
 import "./index.scss";
 import ArrowUpRight from "../../../../images/arrow-up-right-black.svg";
 import { useHistory } from "react-router-dom";
+import Button from "../../../../components/Button";
 
 const ExpertiseItem = ({ title = "", route = "/" }) => {
   let history = useHistory();
@@ -14,8 +15,8 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
   return (
     <div className={"expertise-item-container"}>
       <Text
-        size={'4.7vw'}
-        // size={75}
+        // size={'4.7vw'}
+        size={75}
         animationType={"fade-in"}
         mobSize={35}
         type={"thin"}
@@ -25,7 +26,7 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
       </Text>
       <div className={"expertise-item-right"} onClick={goToRoute}>
         <Text
-          size={'.9vw'}
+            size={16}
           type={"semiBold"}
           mobSize={12}
           className={"expertise-item-learn"}

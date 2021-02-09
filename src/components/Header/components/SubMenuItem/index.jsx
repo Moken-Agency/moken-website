@@ -26,7 +26,7 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
       <div>
         {/*<div className={'sub-menu-divider'}/>*/}
         <Text
-          size={".8vw"}
+          size={14}
           textStyles={{
             letterSpacing: 3,
             textAlign: "initial",

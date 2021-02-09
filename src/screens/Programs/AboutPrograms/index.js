@@ -133,8 +133,7 @@ const AboutPrograms = () => {
               <CommunityPartner
                 {...program}
                 containerStyles={{
-                  width: 90 / options.programs.length + "vw",
-                  marginBottom: "5vw",
+                  // width: 90 / options.programs.length + "vw",
                 }}
               />
             );
@@ -155,11 +154,12 @@ const AboutPrograms = () => {
           containerStyles={{ padding: 0, marginBottom: isMobile ? 50 : 124 }}
         />
         <div
-          style={{
-            paddingLeft: isMobile ? 0 : 50,
-            display: "flex",
-            flexDirection: isMobile ? "column" : "row",
-          }}
+            className={'about-program-numbers-container'}
+          // style={{
+          //   paddingLeft: isMobile ? 0 : 50,
+          //   display: "flex",
+          //   flexDirection: isMobile ? "column" : "row",
+          // }}
         >
           <Text
             type={"extraLight"}
@@ -184,8 +184,6 @@ const AboutPrograms = () => {
               title={"120"}
               text={"This is a statistic note on someone"}
             />
-          </div>
-          <div className={"about-program-item-container"}>
             <AboutProgram
               containerStyles={{ marginRight: isMobile ? 0 : 138 }}
               title={"120"}

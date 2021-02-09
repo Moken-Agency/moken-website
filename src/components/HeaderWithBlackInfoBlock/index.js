@@ -23,7 +23,8 @@ const HeaderWithBlackInfoBlock = ({
     <div className={"header-black-container"} style={{ marginBottom }}>
       <div className={"header-black-title-container"}>
         <Text
-          size={".9vw"}
+            size={16}
+          // size={".9vw"}
           mobSize={14}
           animationType={"fade-in"}
           type={"semiBold"}
@@ -32,7 +33,8 @@ const HeaderWithBlackInfoBlock = ({
           {title}
         </Text>
         <Text
-          size={"4.2vw"}
+          // size={"4.2vw"}
+          size={75}
           mobSize={45}
           animationType={"fade-in"}
           type={"thin"}
@@ -42,7 +44,7 @@ const HeaderWithBlackInfoBlock = ({
         </Text>
         {description ? (
           <Text
-            size={"1.1vw"}
+            size={20}
             mobSize={16}
             animationType={"fade-in"}
             className={"header-black-description"}

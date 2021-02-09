@@ -80,7 +80,7 @@ const StartUpSmart = () => {
           animationType={"fade-in"}
           className={"start-up-smart-fifth-text-second"}
           type={"extraLight"}
-          size={"3.4vw"}
+          size={55}
         >
           We make it easy to kickstart your vision.
         </Text>
@@ -115,7 +115,7 @@ const StartUpSmart = () => {
         </Text>
         <Text
           mobSize={35}
-          size={"3vw"}
+          size={55}
           animationType={"fade-in"}
           className={"start-up-smart-sixth-text-first"}
           type={"extraLight"}

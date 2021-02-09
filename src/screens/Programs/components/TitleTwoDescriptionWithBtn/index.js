@@ -19,7 +19,7 @@ const TitleTwoDescriptionWithBtn = ({
 
       <section className={"labs-overview-container"}>
         <Text
-          size={'3.4vw'}
+          size={55}
           // size={55}
           animationType={"fade-in"}
           mobSize={35}

@@ -3,19 +3,19 @@ export default {
     {
       title: "Community Partners",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Innovators, advisors, industry experts, consultants, students, thought leaders, and small businesses whose value goes far beyond their expertise. `,
       route: "",
     },
     {
       title: "Ecosystem Partners",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Influential, access, and education driven programs powering students, founders, and entrepreneurial endeavours throughout the startup ecosystem.`,
       route: "",
     },
     {
       title: "Ecosystem Partners",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Tech companies and solution providers with deep vertical market experience and expertise to help our startups and founder overcome challenges.`,
       route: "",
     },
   ],

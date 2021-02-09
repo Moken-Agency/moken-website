@@ -1,7 +1,8 @@
 .expertise-item-container {
   display: flex;
   align-items: center;
-  padding: 2.5vw 0 .9vw 4.3vw;
+  padding: 40px 0 16px 65px;
+  //padding: 2.5vw 0 .9vw 4.3vw;
   border-bottom: 1px solid #cdcdcd;
   justify-content: space-between;
   @media only screen and (max-width: 600px) {
@@ -20,9 +21,8 @@
       transform: scale(1.05);
     }
     .expertise-item-learn {
-      letter-spacing: .25vw;
+      letter-spacing: 4px;
       @media only screen and (max-width: 600px) {
-        letter-spacing: 4px;
         display: none;
       }
     }

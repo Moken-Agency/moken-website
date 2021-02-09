@@ -14,12 +14,12 @@ import ImageBlock from "../../components/ImageBlock";
 import ReactPlayer from "react-player";
 import img from "../../images/innovation-mob-header.svg";
 import VideoPlayer from "./VideoPlayer";
+import {useHistory} from "react-router-dom";
 
 const AboutMoken = (props) => {
-    console.log({props});
-    const { isMobile } = useWindowDimensions();
-
-  const [playing, setPlaying] = useState(false);
+console.log({props});
+const { isMobile } = useWindowDimensions();
+const history = useHistory();
   return (
     <div className={"about-moken-container"}>
       <HeaderTitle
@@ -156,9 +156,10 @@ const AboutMoken = (props) => {
 
       <ColorBlock
         title={"Let’s create magic together."}
-        subtitle={"APPLY NOW"}
+        subtitle={"CONNECT WITH US"}
         withIcon
         backgroundColor={"#000"}
+        onClick={() => history.push('/connect-with-us')}
         textWidth={isMobile ? 'auto' : 580}
       />
 

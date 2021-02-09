@@ -33,28 +33,28 @@ const Header = ({ isOpen, setIsOpen }) => {
                 textStyles={topMenuTextStyles}
                 route={route}
                 link={link}
-                size={".61vw"}
+                size={11}
               />
             );
           })}
         </div>
         <div className={"menu-container"}>
-          {rightMenu.map(({ title, withDivider }, index) => {
+          {rightMenu.map(({ title, withDivider, isComingSoon }, index) => {
             return (
               <MenuItem
                 key={"right menu" + index}
                 title={title}
                 withDivider={withDivider}
                 textStyles={topMenuTextStyles}
-                size={".61vw"}
+                size={11}
+                isComingSoon={isComingSoon}
               />
             );
           })}
         </div>
       </div>
       <div
-        className={"bar-container"}
-        style={{ padding: isMobile ? "1vw 6.6vw" : "0 6.6vw" }}
+        className={"bar-container second-bar-container"}
       >
           {/*<div style={{display: 'flex', alignItems: 'flex-end'}}>*/}
           {/*    <img*/}
@@ -65,7 +65,7 @@ const Header = ({ isOpen, setIsOpen }) => {
           {/*    <div style={{width: '.6vw', height: '.6vw', borderRadius: '.6vw', marginLeft: '.2vw', backgroundColor: 'red'}}/>*/}
           {/*</div>*/}
           <Logo />
-        <div style={{ display: "flex" }}>
+        <div className={'menu-container-wrapper'}>
           <div className={"menu-container"}>
             {mainMenu.map(({ title, subRouts = [], dividerColor }, index) => {
               return (
@@ -73,11 +73,11 @@ const Header = ({ isOpen, setIsOpen }) => {
                   key={"main menu" + index}
                   title={title}
                   textStyles={mainMenuTextStyles}
-                  containerStyles={{ marginRight: "2.2vw", height: "4.7vw" }}
+                  containerStyles={{ marginRight: 35, height: 73 }}
                   subRouts={subRouts}
                   dividerColor={dividerColor}
                   className={"bar-with-menu-dropdown"}
-                  size={".8vw"}
+                  size={14}
                 />
               );
             })}

@@ -16,9 +16,9 @@ const Button = ({
   additionalComponent,
   onClick = () => {},
   borderType = "default",
-  size = '.9vw',
-  // size = 14,
-  mobSize = "3vw",
+  // size = '.9vw',
+  size = 14,
+  mobSize = 12,
   className = "",
   textType = "semiBold",
                   disabled = false
