@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9148b4dee796e76bd34a938378dbfe7f",
+    "revision": "5f91b42be674a9fe36a22f19fcd358d9",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "d5e15676119bdb638eac",
+    "revision": "0dd21b9fd6583858fd26",
     "url": "/moken-website/static/css/2.d2b3272e.chunk.css"
   },
   {
-    "revision": "5f291e8b6551780dd643",
-    "url": "/moken-website/static/css/main.d97beef4.chunk.css"
+    "revision": "410558e85becfdb2b631",
+    "url": "/moken-website/static/css/main.880fc5df.chunk.css"
   },
   {
-    "revision": "d5e15676119bdb638eac",
-    "url": "/moken-website/static/js/2.60a128e7.chunk.js"
+    "revision": "0dd21b9fd6583858fd26",
+    "url": "/moken-website/static/js/2.28ae2d66.chunk.js"
   },
   {
     "revision": "98c92e4a71422a59c3daed74f16a0206",
-    "url": "/moken-website/static/js/2.60a128e7.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.28ae2d66.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f291e8b6551780dd643",
-    "url": "/moken-website/static/js/main.5d6066b5.chunk.js"
+    "revision": "410558e85becfdb2b631",
+    "url": "/moken-website/static/js/main.0f1c2222.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9d26ad142e3227a14bbafba0c9235a29",
     "url": "/moken-website/static/media/008-dribbble.9d26ad14.svg"
+  },
+  {
+    "revision": "e14816b9883534f552d74493ce59eed8",
+    "url": "/moken-website/static/media/5e349c95d8d0c2121b0d4ecd_Fast-LogoWhite.e14816b9.svg"
   },
   {
     "revision": "9146084e572e7eef9ff4652c32b84cc5",
@@ -112,12 +116,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/Latinka Thin.a4ed4f32.otf"
   },
   {
+    "revision": "656b970ef3bf3b7fafd807ffb2fa462d",
+    "url": "/moken-website/static/media/Mohamed.656b970e.jpg"
+  },
+  {
+    "revision": "7f07cdd1d21b30fb61db9729d3f877f4",
+    "url": "/moken-website/static/media/Twilio—Segment—Horizontal—DarkAcai.7f07cdd1.svg"
+  },
+  {
     "revision": "d6d1e711327e458dbe3de223d0570d17",
     "url": "/moken-website/static/media/ZonaPro-ExtraBoldDemo.d6d1e711.otf"
   },
   {
     "revision": "97a7a8b5ab46a4a0e16041a80155c45d",
     "url": "/moken-website/static/media/ZonaPro-LightItalicDemo.97a7a8b5.otf"
+  },
+  {
+    "revision": "024ea8f55c2d888b9feb3dc4ca549603",
+    "url": "/moken-website/static/media/activate.024ea8f5.svg"
   },
   {
     "revision": "33084271b607583d872ea2a4e451636e",
@@ -232,6 +248,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/jobOfferTitle1.cd3af8fb.svg"
   },
   {
+    "revision": "16abb675e65a5f0b574985edb25a74a2",
+    "url": "/moken-website/static/media/logo-default.16abb675.svg"
+  },
+  {
     "revision": "734089c6ba64f3d0142ae314b30f1f9c",
     "url": "/moken-website/static/media/moken.734089c6.svg"
   },
@@ -290,6 +310,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f6fa9ca9e2ff08ba1edf725bbb7fe2a9",
     "url": "/moken-website/static/media/upeventsmob.f6fa9ca9.svg"
+  },
+  {
+    "revision": "8dfb1a7f31b0f3da920c579499dc24f3",
+    "url": "/moken-website/static/media/web-color-startups-leftaligned.8dfb1a7f.svg"
   },
   {
     "revision": "ddf0c4b423485f1fa5e662443679265a",
