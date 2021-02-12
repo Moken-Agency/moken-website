@@ -1,17 +1,21 @@
+.community-partner-container-wrapper {
+  padding: 25px;
+}
+
 .community-partner-container {
   border: 1px solid #cdcdcd;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 513px;
-  height: 513px;
+  width: 401px;
+  height: 401px;
   @media only screen and (min-width: 601px) and (max-width: 1350px) {
     //width: 400px;
     //height: 400px;
   }
     .community-partner-info-container {
     //padding: 3vw 4.9vw 0 3.7vw;
-      padding: 35px 80px 0 62px;
+      padding: 35px 60px 0 60px;
   }
   @media only screen and (max-width: 600px) {
     width: auto !important;
@@ -23,7 +27,6 @@
   .community-partner-btn-container {
     display: flex;
     justify-content: flex-end;
-    //margin-top: 3.5vw;
   }
   .community-partner-subtitle {
     //width: 370px;
@@ -36,4 +39,8 @@
       width: auto;
     }
   }
+}
+
+.community-partner-btn {
+  padding: 22px 25px;
 }

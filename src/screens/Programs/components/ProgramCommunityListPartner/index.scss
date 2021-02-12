@@ -5,19 +5,24 @@
   }
 }
 
+
+
+
 .labs-join-container {
   margin-bottom: 230px;
 
   .labs-join-partners-list {
-    display: grid;
-    justify-content: space-between;
-    margin-top: 10.4vw;
-    //margin-top: 166px;
-    padding: 0 11vw;
-    grid-template-columns: repeat(auto-fill, 400px);
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    //grid-auto-flow: column;
+    //margin-top: 166px;
+    padding: 0 calc(10vw - 40px);
+    //grid-template-columns: 1fr 1fr;
+    //grid-template-columns: repeat(auto-fill, 400px);
+    //grid-row-gap: 40px;
+    //grid-column-gap: 40px;
+    //flex-wrap: wrap;
     @media only screen and (min-width: 601px) and (max-width: 1100px) {
       flex-direction: column;
       //grid-template-columns: 1fr 1fr;
@@ -31,6 +36,13 @@
       grid-template-columns: 1fr;
 
     }
+  }
+  .big-styles-container {
+    margin-top: 85px;
+  }
+
+  .small-styles-container {
+    margin-top: 115px;
   }
   .program-community-list-partner-subtitle {
     width: 62vw;

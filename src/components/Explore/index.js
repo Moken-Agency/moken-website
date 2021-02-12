@@ -4,12 +4,13 @@ import Button from "../Button";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
 
-const Explore = ({ title, subtitle, description, route = "" }) => {
+const Explore = ({ title, subtitle, description, route = "", isActive }) => {
   const history = useHistory();
 
   return (
       <div className={'explore-container-wrapper'}>
-          <div className={"explore-container"}>
+          <div className={`explore-container`}>
+          {/*<div className={`explore-container ${isActive ? 'explore-active-container' : ''}`}>*/}
               <Text
                   size={".8vw"}
                   mobSize={10}

@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Text from "../../components/Text";
 import "./index.scss";
 import Title from "../../components/Title";
 import options from "./options";
+// import SwiperCore, { Navigation } from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/swiper.scss';
+// import 'swiper/components/navigation/navigation.scss';
+// import 'swiper/components/pagination/pagination.scss';
+// import 'swiper/components/scrollbar/scrollbar.scss';
 import SubmitYourResume from "../../components/SubmitYourResume";
 import ArrowTopRight from "../../images/arrow-up-right-black.svg";
 import Swiper from "../../components/Swiper";
@@ -18,11 +24,17 @@ import ColorBlock from "../../components/ColorBlock";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import communitySVG from '../../images/Community.svg';
 import Button from "../../components/Button";
+import Subtitle from "../../components/Subtitle";
 
 const { swiperData } = options;
 
+// SwiperCore.use([Virtual]);
+
+
 const Community = () => {
   const { isMobile } = useWindowDimensions();
+
+
 
   const styles = {
     titleStyles: {
@@ -102,13 +114,54 @@ const Community = () => {
 
       <Title title={'OUR COMMUNITY'} />
 
-      <Text type={'extraLight'} size={55} containerStyles={{padding: '0 14vw', width: 723, marginBottom: 100}}>Explore the opportunites within the Moken community.</Text>
+      <Text type={'extraLight'}
+            size={55}
+            mobSize={35}
+            containerStyles={{padding: '0 14vw',
+                width: isMobile ? 'auto' : 723,
+                marginBottom: isMobile ? 50 : 100}}>Explore the opportunites within the Moken community.</Text>
 
-      <Swiper>
-        {swiperData.map((option, index) => {
-          return <Explore {...option} key={"explore " + index} />;
-        })}
-      </Swiper>
+        {/*<Swiper spaceBetween={0}*/}
+        {/*        slidesPerView={3}*/}
+        {/*        wrapperTag={'ul'}*/}
+        {/*        navigation*/}
+        {/*        onSwiper={(swiper) => console.log(swiper)}*/}
+
+        {/*>*/}
+        {/*    {swiperData.map((option, index) => {*/}
+        {/*        return (*/}
+        {/*            <SwiperSlide wrapperTag={'li'} tag={'section'} navigation>*/}
+        {/*                {({ isActive }) => (*/}
+        {/*                    <Explore {...option} isActive={isActive} key={"explore " + index} />*/}
+        {/*                )}*/}
+        {/*            </SwiperSlide>*/}
+        {/*        )*/}
+        {/*    })}*/}
+        {/*</Swiper>*/}
+        {/*<Swiper*/}
+        {/*    spaceBetween={50}*/}
+        {/*    slidesPerView={3}*/}
+        {/*    pagination={{ clickable: true }}*/}
+        {/*    scrollbar={{ draggable: true }}*/}
+        {/*    onSwiper={(swiper) => console.log(swiper)}*/}
+        {/*    onSlideChange={() => console.log('slide change')}*/}
+        {/*>*/}
+        {/*    <SwiperSlide>Slide 1</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 2</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 3</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
+        {/*</Swiper>*/}
+
+      <Swiper Component={Explore} swiperData={swiperData}/>
+        {/*{swiperData.map((option, index) => {*/}
+        {/*  return <Explore {...option} key={"explore " + index} />;*/}
+        {/*})}*/}
+
 
       <ColorBlock
         title={"Creating our future, together."}

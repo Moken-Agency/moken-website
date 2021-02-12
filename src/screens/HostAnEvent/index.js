@@ -53,11 +53,7 @@ Whether B2C, B2B or employee engagement, we strongly believe that exhibitions sh
         An event designed for any budget, goal, and community.
       </Text>
 
-      <Swiper className={"community-swiper-container"}>
-        {options.swiperData.map((option, index) => {
-          return <Explore {...option} key={"explore " + index} />;
-        })}
-      </Swiper>
+      <Swiper Component={Explore} swiperData={options.swiperData} />
 
       <ColorBlock
         size={30}

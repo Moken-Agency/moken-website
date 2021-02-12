@@ -53,6 +53,7 @@ A validated method to turn your idea into a successful business.`}
         subtitle={
           "Align all your opportunities into one growth pathway to get there faster and smarter."
         }
+        type={'big'}
         options={options.partners}
       />
 

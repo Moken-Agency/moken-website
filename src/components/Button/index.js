@@ -49,8 +49,6 @@ const Button = ({
 
   return (
     <button
-      // data-aos="fade-in"
-      // className={`button-container ${type} ${className}`}
       className={`button-container ${type} ${className} ${disabled ? 'disabled' : ' '}`}
       onClick={onClick}
       disabled={disabled}

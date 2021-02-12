@@ -33,7 +33,7 @@ const ProgramCommunityListPartner = ({
           {subtitle}
         </Text>
 
-        <div className={"labs-join-partners-list"}>
+        <div className={`labs-join-partners-list ${type === 'big' ? 'big-styles-container' : 'small-styles-container'}`}>
           {options.map((option) => {
             return (
               <>

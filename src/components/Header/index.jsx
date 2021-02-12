@@ -46,7 +46,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 title={title}
                 withDivider={withDivider}
                 textStyles={topMenuTextStyles}
-                size={11}
+                size={12}
                 isComingSoon={isComingSoon}
               />
             );
@@ -73,11 +73,11 @@ const Header = ({ isOpen, setIsOpen }) => {
                   key={"main menu" + index}
                   title={title}
                   textStyles={mainMenuTextStyles}
-                  containerStyles={{ marginRight: 35, height: 73 }}
+                  containerStyles={{ marginRight: 45, height: 90 }}
                   subRouts={subRouts}
                   dividerColor={dividerColor}
                   className={"bar-with-menu-dropdown"}
-                  size={14}
+                  size={15}
                 />
               );
             })}

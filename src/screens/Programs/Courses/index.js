@@ -84,11 +84,8 @@ const Courses = () => {
         className={"courses-components-title"}
       />
 
-      <Swiper className={"courses-components-list-container"}>
-        {options.components.map((option, index) => {
-          return <Explore {...option} key={"explore " + index} />;
-        })}
-      </Swiper>
+      <Swiper Component={Explore} swiperData={options.components} />
+
 
       <OurPartnersComponent />
 

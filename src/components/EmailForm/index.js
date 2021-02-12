@@ -48,7 +48,7 @@ const EmailForm = ({
         <div className={`email-form-container ${className}`}>
           <div data-aos="fade-in" className={"email-form-divider"} />
           <Text
-            containerStyles={{ margin: isMobile ? "4vw 0" : "3vw 0 1vw 0" }}
+            containerStyles={{ margin: isMobile ? "4vw 0" : "70px 0 78px 0" }}
             size={isMobile ? "5vw" : '2vw'}
             animationType={"fade-in"}
             type={"thin"}

@@ -2,6 +2,7 @@ import React from "react";
 import options from "../../MokenLabs/options";
 import Text from "../../../../components/Text";
 import "./index.scss";
+import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 
 const defaultOptions = [
   {
@@ -25,6 +26,9 @@ January 2021`,
 ];
 
 const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
+
+  const { isMobile } = useWindowDimensions();
+
   return (
     <section className={`labs-details-container`} data-aos="fade-in">
       <div className={`labs-details-block ${`block-${type}`}`}>
@@ -55,7 +59,7 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
         <div className={`labs-details-list-block ${`list-${type}`}`}>
           {options.map(({ title, subtitle }) => {
             return (
-              <div>
+              <div style={!type && !isMobile ? {marginRight: 30} : null}>
                 <Text
                   type={"semiBold"}
                   color={"white"}

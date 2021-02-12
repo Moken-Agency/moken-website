@@ -1,125 +1,71 @@
-import React, { useState } from "react";
+import React, {useRef, useState} from "react";
+import SwiperCore, { Navigation } from 'swiper';
+import { Swiper as SwiperComponent, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
 import ArrowUpRight from "../../images/arrow-up-right-white.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import "./index.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-import {Carousel} from "react-responsive-carousel";
-import Text from "../Text";
+SwiperCore.use([Navigation]);
 
-const Swiper = ({ centerSlidePercentage = 25,
-                    centerMode = true,
-                    dynamicHeight = false,
-                    children,
-                    showIndicators = false,
-                    showThumbs = false,
-                    showStatus = false,
-                    backgroundColor = 'white'}) => {
+const Swiper = ({ swiperData = [], Component}) => {
     const { isMobile } = useWindowDimensions();
 
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
+
+    console.log('prevRefprevRef', prevRef.current);
+    console.log('nextRefnextRef', nextRef.current);
 
     return (
-      <div className={'swiper-container'}>
-          <Carousel
-              showThumbs={showThumbs}
-              showStatus={showStatus}
-              transitionTime={1000}
-              showIndicators={showIndicators}
-              centerMode={centerMode}
-              centerSlidePercentage={isMobile ? 100 : centerSlidePercentage}
-              dynamicHeight={dynamicHeight}
-              renderArrowNext={(onClickHandler, hasNext, label) =>
-                  hasNext && !isMobile && (
-                      <div className={'swiper-button-container  button-right'}>
-                          <a
-                              className={"swiper-button"}
-                              // style={buttonDynamicStyles}
-                              onClick={onClickHandler}>
-                              <img src={ArrowUpRight} />
-                          </a>
-                      </div>
-                  )
-              }
+      <div className={'swiper-component-container'}>
+          <SwiperComponent
+                  spaceBetween={0}
+                  slidesPerView={isMobile ? 1 : 4}
+                  wrapperTag={'ul'}
+                   navigation={{
+                       prevEl: prevRef.current ? prevRef.current : undefined,
+                       nextEl: nextRef.current ? nextRef.current : undefined,
+                   }}
+                   onInit={(swiper) => {
+                       swiper.params.navigation.prevEl = prevRef.current;
+                       swiper.params.navigation.nextEl = nextRef.current;
+                       swiper.navigation.update();
+                   }}
+                  onSwiper={(swiper) => console.log(swiper)}
+                  onClideChange={(slide) => {
+                      console.log(slide)
+                  }}
 
-              renderArrowPrev={(onClickHandler, hasNext, label) =>
-                  hasNext && !isMobile && (
-                      <div className={'swiper-button-container  button-left'}>
-                          <div
-                              className={"swiper-button"}
-                              // style={buttonDynamicStyles}
-                              onClick={onClickHandler}>
-                              <img src={ArrowUpRight} />
-                          </div>
-                      </div>
-                  )
-              }
-              renderItem={(item) => {
-                  return (
-                      <div
-                          style={{
-                              backgroundColor: backgroundColor
-                          }}
-                      >
-                          {item}
-                      </div>
-                  )
-              }}
           >
-              {children}
+              {swiperData.map((option, index) => {
+                  return (
+                              <SwiperSlide wrapperTag={'li'} tag={'section'}>
+                                  {({ isActive }) => (
+                                      <Component {...option} isActive={isActive} key={"explore " + index} />
+                                  )}
+                              </SwiperSlide>
+                  )
+              })}
 
-          </Carousel>
+              {/*<div ref={prevRef} className="cursor-pointer button-left">*/}
+              {/*    <img*/}
+              {/*        src={ArrowUpRight}*/}
+              {/*    />*/}
+              {/*</div>*/}
+              <div ref={nextRef} className="cursor-pointer button-right">
+                  <img
+                      src={ArrowUpRight}
+                  />
+              </div>
+          </SwiperComponent>
+
       </div>
 
   );
 };
 export default Swiper;
-
-{/*<div*/}
-{/*    id={"swiper"}*/}
-{/*    className={`swiper-container ${className}`}*/}
-{/*    onScroll={onScroll}*/}
-{/*>*/}
-{/*  {children}*/}
-{/*  <div*/}
-{/*      className={"swiper-button-container"}*/}
-{/*      style={buttonContainerDynamicStyles}*/}
-{/*  >*/}
-
-{/*  </div>*/}
-{/*</div>*/}
-{/*</Carousel>*/}
-
-// const { isMobile } = useWindowDimensions();
-// const [isButtonVisible, setIsButtonVisible] = useState(true);
-//
-// const scrollToEnd = () => {
-//   const elem = document.getElementById("swiper");
-//   elem.scrollLeft = elem.scrollWidth;
-//   setIsButtonVisible(false);
-// };
-
-// const buttonDynamicStyles = {
-//   // width: isButtonVisible ? '6vw' : 0,
-//   // height: isButtonVisible ? '6vw' : 0,
-//   padding: isButtonVisible ? (isMobile ? "5vw" : "2vw") : 0,
-// };
-
-// const buttonContainerDynamicStyles = {
-//   // width: isButtonVisible ? '6vw' : 0,
-//   // height: isButtonVisible ? '6vw' : 0,
-//   height: isButtonVisible ? (isMobile ? 257 : "24vw") : 0,
-//   width: isButtonVisible ? (isMobile ? "20vw" : "22vw") : 0,
-// };
-//
-// const imgDynamicStyles = {
-//   height: isButtonVisible ? (isMobile ? "6vw" : "3vw") : 0,
-// };
-//
-// const onScroll = () => {
-//   const elem = document.getElementById("swiper");
-//   if (elem.scrollLeft + elem.offsetWidth > elem.offsetWidth) {
-//     setIsButtonVisible(false);
-//   } else {
-//     setIsButtonVisible(true);
-//   }
-// };

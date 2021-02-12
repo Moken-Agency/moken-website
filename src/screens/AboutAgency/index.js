@@ -51,11 +51,7 @@ const AboutAgency = () => {
         </Text>
       </div>
 
-      <Swiper>
-        {options.explores.map((option, index) => {
-          return <Explore {...option} key={"explore " + index} />;
-        })}
-      </Swiper>
+      <Swiper Component={Explore} swiperData={options.explores} />
 
       <TitleSubDescription
         title={"OUR IMPACT"}
@@ -163,6 +159,7 @@ const AboutAgency = () => {
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
+        type={'big'}
         options={options.programs}
         widthItem={"30vw"}
       />

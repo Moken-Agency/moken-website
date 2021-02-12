@@ -69,7 +69,7 @@ in pursuit of success.`
         subtitle={
           "Supporting the growth, health, and impact of new ventures by equipping student innovators with the tools and resources needed for success."
         }
-        // type={"big"}
+        type={"big"}
         options={options.programs}
       />
 

@@ -56,7 +56,7 @@ const MenuItem = ({
           size={size}
           textStyles={{
             ...textStyles,
-            color: isComingSoon && hover.isHover  ? '#b4b4b4' : "#000",
+            color: isComingSoon && hover.isHover  ? '#b4b4b4' : !isComingSoon && hover.isHover ? dividerColor : '#000',
           }}
         >
           {isComingSoon && hover.isHover ? `Coming soon`.toUpperCase() : title.toUpperCase() }
