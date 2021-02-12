@@ -51,44 +51,47 @@ const CommunityPageGenerator = ({
   return (
     <div className={"community-page-generator-container"}>
       <section className={"first-section"}>
-        <div className={"first-section-container"}>
-          <div
-            style={{
-              display: "flex",
-              marginBottom: "1.2vw",
-              flexDirection: isMobile ? "column" : "row",
-            }}
-          >
-            <Text
-              size={".95vw"}
-              type={"semiBold"}
-              mobSize={14}
-              animationType={"fade-in"}
-              color={"#cdcdcdcd"}
-              textStyles={{ letterSpacing }}
+        <div className={'first-section-container-wrapper'}>
+          <div className={"first-section-container"}>
+            <div
+                style={{
+                  display: "flex",
+                  marginBottom: "1.2vw",
+                  flexDirection: isMobile ? "column" : "row",
+                }}
             >
-              {titleFirst}
-              <span>&nbsp;</span>
-            </Text>
+              <Text
+                  size={16}
+                  type={"semiBold"}
+                  mobSize={14}
+                  animationType={"fade-in"}
+                  color={"#cdcdcdcd"}
+                  textStyles={{ letterSpacing }}
+              >
+                {titleFirst}
+                <span>&nbsp;</span>
+              </Text>
+              <Text
+                  size={16}
+                  type={"semiBold"}
+                  mobSize={14}
+                  animationType={"fade-in"}
+                  textStyles={{ letterSpacing, marginBottom: isMobile ? 70 : 0 }}
+              >{`${titleConjunctions} ${titleSecond}`}</Text>
+            </div>
+            {/*<Text size={'4.3vw'}  */}
             <Text
-              size={".95vw"}
-              type={"semiBold"}
-              mobSize={14}
-              animationType={"fade-in"}
-              textStyles={{ letterSpacing, marginBottom: isMobile ? 70 : 0 }}
-            >{`${titleConjunctions} ${titleSecond}`}</Text>
+                size={75}
+                type={"thin"}
+                mobSize={45}
+                animationType={"fade-in"}
+                textStyles={{ letterSpacing, lineHeight: isMobile ? '45px' : '75px'}}
+                containerStyles={{ marginBottom: isMobile ? 150 : "10.5vw" }}
+            >
+              {firstSection.subtitle}
+            </Text>
           </div>
-          {/*<Text size={'4.3vw'}  */}
-          <Text
-            size={"4.3vw"}
-            type={"thin"}
-            mobSize={45}
-            animationType={"fade-in"}
-            textStyles={{ letterSpacing, lineHeight: isMobile ? '45px' : '4.3vw'}}
-            containerStyles={{ marginBottom: isMobile ? 150 : "10.5vw" }}
-          >
-            {firstSection.subtitle}
-          </Text>
+
         </div>
 
         <img
@@ -103,7 +106,7 @@ const CommunityPageGenerator = ({
             mobSize={35}
             animationType={"fade-in"}
             type={"extraLight"}
-            containerStyles={{ marginBottom: isMobile ? 40 : '3.8vw' }}
+            containerStyles={{ marginBottom: isMobile ? 40 : '75px' }}
             textStyles={{
               letterSpacing: 0.5,
               // lineHeight: 63
@@ -119,7 +122,7 @@ const CommunityPageGenerator = ({
             animationType={"fade-in"}
             // textStyles={{lineHeight: 35}}
             containerStyles={{ paddingRight: !isMobile ? '8vw' : null }}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
 
               // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
           >

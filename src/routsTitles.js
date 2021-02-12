@@ -1,6 +1,8 @@
 export default {
     '/': 'Moken | Home',
     '/moken-website': 'Moken | About Moken',
+    '/product-marketing': 'Moken | Product Marketing',
+    '/advisors': 'Moken | Advisors',
     '/mentorship': 'Moken | Mentorship',
     '/faqs': 'Moken | FAQS',
     '/access': 'Moken | Access',

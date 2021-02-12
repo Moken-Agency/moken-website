@@ -79,6 +79,10 @@ import InnovationCommittee from "./screens/InnovationCommittee";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Events from "./screens/Events";
+import Advisors from "./screens/Advisors";
+import ProductMarketing from "./screens/ProductMarketing";
+import CommunityDrivenGrowth from "./screens/CommunityDrivenGrowth";
+import PartnershipsGrowth from "./screens/PartnershipsGrowth";
 
 const routsWithHeaderFooter = [
   {
@@ -228,6 +232,22 @@ const routsWithHeaderFooter = [
   {
     path: "/branding",
     component: Branding,
+  },
+  {
+    path: "/product-marketing",
+    component: ProductMarketing,
+  },
+  {
+    path: "/community-driven-growth",
+    component: CommunityDrivenGrowth,
+  },
+  {
+    path: "/partnerships-growth",
+    component: PartnershipsGrowth,
+  },
+  {
+    path: "/advisors",
+    component: Advisors,
   },
   {
     path: "/community",

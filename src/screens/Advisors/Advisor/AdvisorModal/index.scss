@@ -1,0 +1,73 @@
+.advertise-modal {
+  //height: 50vh;
+  //width: 80vw;
+  position: absolute;
+  //top: 50%;
+  //left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //right: 50%;
+  //bottom: 50%;
+  //transform: translate(-50%, -50%);
+  outline: none;
+}
+
+.advertise-overlay {
+  background-color: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.advisor-modal-container {
+  //height: 50vh;
+  width: 80vw;
+  padding: 45px;
+  background-color: white;
+  .advisor-modal-info-container {
+    display: grid;
+    grid-template-columns: 378px 1fr 222px;
+    grid-column-gap: 55px;
+    div {
+      img {
+        width: 378px;
+        margin-bottom: 39px;
+      }
+      .advisor-modal-info-socials-list {
+        display: flex;
+        margin-top: 10px;
+      }
+    }
+    .advisor-second-container {
+      .advisor-bio-container {
+        margin-bottom: 56px;
+      }
+    }
+    .rates-container {
+      padding-top: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .rates-list-container {
+      }
+    }
+
+  }
+
+}
+
+.view-advisor-btn {
+  margin-bottom: 25px;
+}
+
+.advisor-close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}

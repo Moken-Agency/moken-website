@@ -48,7 +48,7 @@ const ColorBlock = ({
           </Text>
           <div style={{ display: "flex", alignItems: "center", cursor: 'pointer' }} onClick={onClick}>
             <Text
-              size={".95vw"}
+              size={16}
               type={"semiBold"}
               mobSize={"3vw"}
               animationType={"fade-in"}

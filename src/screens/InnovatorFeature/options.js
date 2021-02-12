@@ -1,28 +1,25 @@
 export default {
   list: [
     {
-      title: "BRAND STRATEGY SESSIONS",
+      title: "FEATURE ARTICLE & SHOWCASE",
       subtitle:
-        "Two one-on-one strategy sessions to identify your brand design needs and strategize the best" +
-        " ways to create an identity that will attract your ideal clients.",
+        'A feature showcase article posted on our Blog “Insights” read by innovators around the globe, as well as shared with our community press.'
     },
     {
-      title: "BASIC BRAND STYLE GUIDE",
+      title: "SOCIAL MEDIA PROMOTION",
       subtitle:
-        "A custom brand style guide including brand standards (typography, colors, usage guidelines, " +
-        "styling notes, and brand application examples) to help keep your usage consistent and on-brand.",
+        `Promotion on social media via Moken Startups’, Moken Agency, and Access by Moken’s official social media 
+        channels as well as those of a number of our affiliates, team members, partners, and community.`
     },
     {
-      title: "BRAND STRATEGY SESSIONS",
+      title: "ACCESS THE FUTURE",
       subtitle:
-        "Two one-on-one strategy sessions to identify your brand design needs and strategize the best " +
-        "ways to create an identity that will attract your ideal clients.",
+        `Early access to our exclusive innovation-driven platform of tools, resources, content, rewards, and courses for the next generation of gamechanging startups and founders.`,
     },
     {
-      title: "BASIC BRAND STYLE GUIDE",
+      title: "BUILD & GROW EFFECTIVELY",
       subtitle:
-        "A custom brand style guide including brand standards (typography, colors, usage guidelines, " +
-        "styling notes, and brand application examples) to help keep your usage consistent and on-brand.",
+        `Support throughout your startup journey with exclusive rewards, service offerings, as well as 15% off any solutions and services needed to help you succeed.`,
     },
   ],
 };

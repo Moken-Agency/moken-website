@@ -4,19 +4,19 @@ export default {
       title: "Community Partners",
       subtitle:
       `Innovators, advisors, industry experts, consultants, students, thought leaders, and small businesses whose value goes far beyond their expertise. `,
-      route: "",
+      route: "/community-partner",
     },
     {
       title: "Ecosystem Partners",
       subtitle:
       `Influential, access, and education driven programs powering students, founders, and entrepreneurial endeavours throughout the startup ecosystem.`,
-      route: "",
+      route: "/eco-partner",
     },
     {
       title: "Ecosystem Partners",
       subtitle:
       `Tech companies and solution providers with deep vertical market experience and expertise to help our startups and founder overcome challenges.`,
-      route: "",
+      route: "/eco-partner",
     },
   ],
   collaborates: [

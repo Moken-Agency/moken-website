@@ -17,6 +17,7 @@ import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import ColorBlock from "../../components/ColorBlock";
 import arrowUpRight from '../../images/arrow-up-right-black.svg';
 import ImageBlock from "../../components/ImageBlock";
+import partnersImage from '../../images/partners';
 
 const { involved, collaborates, purposes } = options;
 
@@ -84,31 +85,12 @@ const OurPartners = () => {
             Meet a few of our collaborative, community-focused partners that pair their passion with purpose.
         </Text>
         <div className={"partners-container"}>
-          {[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-          ].map((_, index) => {
-            return <div data-aos="fade-in" className={"grey-block"} />;
-          })}
+          {Object.values(partnersImage).map((value) => {
+              return <div data-aos="fade-in" className={"grey-block"}>
+                  <img src={value} style={{width: '100%', height: '100%'}} />
+              </div>
+          })
+          }
         </div>
       </div>
 

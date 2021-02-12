@@ -3,7 +3,7 @@ import Text from "../../../../components/Text";
 import "./index.scss";
 
 const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
-  return (
+    return (
     <div className={"benefit-title-first-container"}>
       <img src={img} className={'benefit-shape-image'}/>
       <Text

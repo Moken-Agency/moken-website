@@ -8,7 +8,7 @@ const FirstMapItem = ({ title = "" }) => {
       <Text
         type={"semiBold"}
         animationType={"fade-in"}
-        size={"1.3vw"}
+        size={22}
         mobSize={22}
       >
         {title}

@@ -33,6 +33,7 @@ const PeopleLeadership = () => {
          who have a passion for what we do. We start each day with new ideas, help each other grow, and learn from one another.
           Each aspect of our work is perfected to the extent that allows us to support the reputation of a trusted 
           partner and consitently raises the bar driving our ambition higher and higher.`}
+        containerStyles={{marginBottom: 150}}
       />
       {options.peopleGroups.map((people, index) => (
         <People {...people} peopleIndex={index} />

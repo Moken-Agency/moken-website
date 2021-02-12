@@ -59,8 +59,8 @@ export const sfetch = async ({
 
 export const sget = ({ url }: { url: string }) =>
   sfetch({ method: "GET", url, body: null });
-export const spost = ({ url, body }: { url: string, body: Object }) =>
-  sfetch({ method: "POST", url, body });
+export const spost = ({ url, body, headersData }: { url: string, body: Object, headersData: Object }) =>
+  sfetch({ method: "POST", url, body, headersData });
 export const sput = ({ url, body }: { url: string, body: Object }) =>
   sfetch({ method: "PUT", url, body });
 export const sdelete = ({ url, body }: { url: string, body: Object }) =>

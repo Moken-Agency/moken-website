@@ -3,9 +3,11 @@ import Button from "../Button";
 import React from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import './index.scss';
+import {useHistory} from "react-router-dom";
 
-const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED" }) => {
+const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED", route = '/' }) => {
   const { isMobile } = useWindowDimensions();
+  let history = useHistory();
 
   return (
     <div
@@ -51,7 +53,9 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED" }) => {
           backgroundColor={"black"}
           textColor={"white"}
           mobSize={10}
-          // containerStyles={{ padding: isMobile ? "23px 16px" : "35px 32px" }}
+          onClick={() => history.push(route)}
+
+            // containerStyles={{ padding: isMobile ? "23px 16px" : "35px 32px" }}
           // size={14}
         />
       </div>

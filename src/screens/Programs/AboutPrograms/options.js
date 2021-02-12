@@ -27,24 +27,24 @@ export default {
   ],
   experiences: [
     {
-      title: "Moken Agency",
+      title: "Sourcing",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Opportunity identification through a structured research and validation process surrounding specific target verticals, customer segments, and business models.",
     },
     {
-      title: "Title goes here",
+      title: "Development",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Fast execution of proven processes and structures with the creation of the first proof of concept (PoC), and identification of potential industry partners.",
     },
     {
-      title: "Title goes here",
+      title: "Launch",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Fine-tune, prototype, and market test the minimum valuable product (MVP) to validate and pivot to ensure an effective market launch. Product Marketing",
     },
     {
-      title: "Title goes here",
+      title: "All Creation is Collaboration",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "With our mission, we aim to attract various stakeholders to help shape the world of tomorrow on today’s actions and collectively benefit from the true potential that the Machine Economy has to offer.",
     },
   ],
   programs: [

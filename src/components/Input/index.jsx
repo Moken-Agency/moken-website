@@ -94,6 +94,7 @@ const Input = ({
                        resize,
                        minHeight: 350
                      }}
+                     defaultValue={''}
                      {...rest}
               />
 

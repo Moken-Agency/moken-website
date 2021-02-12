@@ -18,6 +18,10 @@
       width: auto;
       padding: 0 43px;
     }
+    @media screen and(max-width: 903px) {
+      width: auto;
+      padding-right: 14vw;
+    }
       span {
       line-height: 63px;
       letter-spacing: .5px;

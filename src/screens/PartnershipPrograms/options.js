@@ -5,14 +5,14 @@ export default {
       titleConjunctions: "//",
       titleSecond: "PARTNERSHIP & GROWTH PROGRAMS",
     },
-    subtitle: "Inclusive strategies that speak today’s consumer.",
+    subtitle: "Solid strategic framework & real, relevant connnections.",
     imgURL: "",
     infoBlock: {
       infoTitleFirst:
-        "Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.",
+      "Companies with referral programs have a 70% higher conversion rate, and report a 69% faster close time on sales",
       infoDescriptionFirst:
-        "An effective brand can give you a significant edge in today’s highly competitive market. We create emotional connections far beyond simply making your brand look visually appelling. We create authentic and unforgettable visuals and voice that connects with your customers.",
-      infoSubtitleFirst: "— WORK WITH US",
+      "Growing your sales footprint and diversifying your network through partner driven growth tactics is a key way to accelerate scalbility and develop contagious social currency. Our team leverages the value and potential of partner programs, and dives deep to understand your business model to best align the appropriate range of opportunities ensuring success.",
+      // infoSubtitleFirst: "— WORK WITH US",
     },
   },
   secondSection: {

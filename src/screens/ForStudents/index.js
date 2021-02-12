@@ -17,10 +17,9 @@ const ForStudents = () => {
     <div className={"for-students-container"}>
       <HeaderTitle
         title={"FOR STUDENTS"}
-        subtitle={"Success fuelled by partnership."}
+        subtitle={"Leverage your potential."}
         description={
-          "The future generation is the core of our community. " +
-          "They work with us to create a future that is better than tthe last."
+          `The future generation is the core of our community. We work together to create a future that is better than the last.`
         }
         marginBottom={isMobile ? 107 : 107}
       />
@@ -29,32 +28,27 @@ const ForStudents = () => {
 
       <LeftInfoWithRightImage
         title={
-          "We are driven by the passion for working with determined innovators who live to make a change in the world."
+          `Fast track yourself 
+in pursuit of success.`
         }
-        mainTitle={"JOIN THE NETWORK"}
-        description={`We understand that together we should see results, not just reports with the work we do. 
-                                    We've developed tailor-made strategies that assist in beating out the competition by tearing up the rule book.
-                                     Through our agile approach, entrepreneurs, founders, and startups overcome the odds by predicting, measuring, 
-                                     mitigating, and managing the risk associated with innovation. `}
-        btnTitle={"APPLY TO INCUBATOR"}
+        mainTitle={"ACCESS YOUR POTENTIAL"}
+        description={`The Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where aspiring entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another. Leverage the network to help make better, well-informed decisions about the things that are most important to you & your future. `}
+        btnTitle={"JOIN THE NETWORK"}
       />
 
       <LeftInfoWithRightImage
         title={
-          "Enthusiastic individuals working together to create extraordinary"
+          "Gain leadership skills, hands on experience, and unlock opportunity."
         }
         mainTitle={"AMBASSADOR PROGRAM"}
-        description={`Our role consists of taking the time to understand your business model,
-                                     and suggesting creative and high-performing digital strategies. Our avant-garde tactics
-                                      are in line with the current market, blend seamlessly with our clients’ operational 
-                                      realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        description={`Get ready to join the next generation of startups, or even unlock the opportunity to create your own. Through our Ambassador Program we hand students the reins to create their own future by bridging the gap between educational environments and the fast paced business world. We help students create connections to fast track careers while becoming a leader on campus by providing opportunities for the entire student body.`}
+        btnTitle={"LEARN MORE"}
         isLeftImage
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"APPLY NOW"}
+        title={"StartupSmart Podcast"}
+        subtitle={"LISTEN IN SPOTIFY"}
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
@@ -64,21 +58,18 @@ const ForStudents = () => {
       />
 
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
-        mainTitle={"COURSES"}
-        description={`Our role consists of taking the time to understand your business model,
-                                     and suggesting creative and high-performing digital strategies. Our avant-garde 
-                                     tactics are in line with the current market, blend seamlessly with our clients’
-                                      operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        title={"Education is the core of growth where knowledge drives innovation forwards."}
+        mainTitle={"ON DEMAND LEARNING"}
+        description={`Access learning modules, startup focused resources, and educational opportunities developed to help you level up using our curated library of courses, webinars, and other actionn driven materials designed to help validate, build, and grow in all areas of a startup.`}
+        btnTitle={"EXPLORE COURSES"}
       />
 
       <ProgramCommunityListPartner
         title={"PROGRAMS"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "Supporting the growth, health, and impact of new ventures by equipping student innovators with the tools and resources needed for success."
         }
-        type={"big"}
+        // type={"big"}
         options={options.programs}
       />
 
@@ -87,10 +78,10 @@ const ForStudents = () => {
         leftTitle={
           "Enthusiastic individuals working together to create extraordinary startups."
         }
-        rightTitle={
-          "From ideation stage to high growth innovation, our role consists of taking the time to understand your business model, suggest creative and high-performing strategies, while implementing crucial aspects to supplement your growing needs. Our avant-garde tactics are in line with the current market, blending seamlessly with each startup’s operational realities, while eliminating risks that aren’t necessary.\n" +
-          "\n"
-        }
+        // rightTitle={
+        //   "From ideation stage to high growth innovation, our role consists of taking the time to understand your business model, suggest creative and high-performing strategies, while implementing crucial aspects to supplement your growing needs. Our avant-garde tactics are in line with the current market, blending seamlessly with each startup’s operational realities, while eliminating risks that aren’t necessary.\n" +
+        //   "\n"
+        // }
         rightFirstListTitle={"HOW WE CAN COLLABORATE"}
         firstList={options.collaborates}
         rightSecondListTitle={"CHOOSE YOUR PURPOSE"}

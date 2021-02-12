@@ -38,15 +38,16 @@ export default {
   ],
   founders: [
     {
-      title: "Innovator \n" + "Feature",
+      title: "Become a Mentor",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Comprised of creative minds, savvy business owners, industry professionals, brands, and tech companies, our mentorship program brings the brightest minds together to learn, teach, network, and inspire founders and startups on a global magnitude.",
+      btnTitle: 'GET INVOLVED'
     },
     {
-      title: "Personal \n" + "Branding",
+      title: "Become a Partner",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      btnTitle: "APPLY NOW",
+        "Leverage the power community by accessing value driven benefits no matter your need. Our partnership program provides unique and integrative ways to collaborate while powering the startup community forwards one giant leap at a time.",
+      btnTitle: "GET INVOLVED",
     },
   ],
 };

@@ -43,13 +43,14 @@ export default {
     {
       title: "FutureFounders Program",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `A diversity driven program inspiring the next generation to take the future in their hands. Connecting established companies and their founders with future founders to help them take their first step into the world of entrepreneurship. `,
+      btnTitle: 'LEARN MORE'
     },
     {
-      title: "Ideate to \n" + "Innovate Program",
+      title: "Ideation to Innovation",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      btnTitle: "APPLY NOW",
+      `With support from leading industry mentors, partners and experts, we assist emerging founders refine their business ideas and develop the skills necessary, and build the strong foundation needed to scaling a competitive business, globally. `,
+      btnTitle: "LEARN MORE",
     },
   ],
 };

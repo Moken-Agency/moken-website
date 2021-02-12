@@ -1,0 +1,33 @@
+.advisor-container {
+  position: relative;
+  width: 300px;
+  height: 358px;
+  background-color: grey;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .advisor-info-container {
+    padding: 26px 19px;
+    background-color: black;
+    min-width: 245px;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    @media only screen and (min-width: 601px) and (max-width: 1100px) {
+      //width: 100%;
+      //padding-right: 13.4vw;
+
+    }
+    @media only screen and (max-width: 600px) {
+      min-width: auto;
+      right: -25px;
+      padding: 20px 26px;
+    }
+  }
+  .advisor-social-links-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

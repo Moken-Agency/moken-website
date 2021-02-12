@@ -1,6 +1,6 @@
 .labs-details-container {
-  padding-right: 168px;
-  width: 90vw;
+  padding-right: 100px;
+  //width: 90vw;
   display: flex;
   justify-content: flex-end;
   //margin-bottom: 222px;
@@ -11,7 +11,7 @@
     display: none;
   }
   .labs-details-block {
-    width: 35vw;
+    //width: 35vw;
     background-color: black;
     padding: 53px 20px 53px 42px;
     @media only screen and (max-width: 600px) {

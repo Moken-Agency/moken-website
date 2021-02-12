@@ -17,67 +17,57 @@ const ForFounders = () => {
     <div className={"for-founders-container"}>
       <HeaderTitle
         title={"FOR FOUNDERS"}
-        subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        subtitle={"Empathetic and experience powered support."}
+        description={"Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed."}
         marginBottom={isMobile ? 107 : 107}
       />
 
       <ImageBlock position={"right"} />
 
       <LeftInfoWithRightImage
-        mainTitle={"ACCESS NETWORK"}
-        title={"Join our trusted community of partners and market what you do."}
-        description={`Our role consists of taking the time to understand your business model, 
-                                    and suggesting creative and high-performing digital strategies. Our avant-garde
-                                     tactics are in line with the current market, blend seamlessly with our clients’
-                                      operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        mainTitle={"ACCESS YOUR FUTURE"}
+        title={"Your power lies in your ability to connect."}
+        description={`The Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`}
+        btnTitle={"JOIN THE NETWORK"}
         imgUrl={""}
       />
 
       <LeftInfoWithRightImage
-        mainTitle={"EDUCATION & PROGRAMING TO TAKE YOU TO THE NEXT LEVEL"}
+        mainTitle={"ELEVATE YOURSELF TO THE NEXT LEVEL"}
         title={
-          "COURSES & PROGRAMS individuals working together to create extraordinary"
+          "Knowledge is what fuels growth and drives innovation forwards."
         }
-        description={`Our role consists of taking the time to understand your business model, 
-                                    and suggesting creative and high-performing digital strategies. Our avant-garde
-                                     tactics are in line with the current market, blend seamlessly with our clients’
-                                      operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        description={`Accessible learning modules, founder focused resources, and educational opportunities developed to help you level up using our library of courses, webinars, and other materials designed to help you validate, build, and grow successfully.`}
+        btnTitle={"LEARN MORE"}
         imgUrl={""}
         isLeftImage
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"APPLY NOW"}
+        title={"StartupSmart Podcast"}
+        subtitle={"LISTEN ON SPOTIFY"}
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
         type={"thin"}
-        className={"for-founders-color-block"}
-        size={30}
+        // className={"for-founders-color-block"}
+        // size={30}
       />
 
       <LeftInfoWithRightImage
-        mainTitle={"STARTUPSMART"}
+        mainTitle={"STRATEGIC PARTNERSHIPS"}
         title={
-          "We are driven by the passion for working with determined innovators who live to make a change in the world."
+          "Backing ideas that create real change."
         }
-        description={`We understand that together we should see results, not just reports 
-                                    with the work we do. We've developed tailor-made strategies that assist in beating
-                                     out the competition by tearing up the rule book. Through our agile approach,
-                                      entrepreneurs, founders, and startups overcome the odds by predicting, measuring,
-                                       mitigating, and managing the risk associated with innovation. `}
-        btnTitle={"APPLY TO INCUBATOR"}
+        description={`We understand that startups are built stronger and flourish when founders work together. With that in mind, we've developed an exclusive accelerator program that can be custom tailored to suit any founder’s needs. By harnessing the power of potential and tearing up the rule book, Moken helps early stage founders launch faster, stronger, and more efficiently. Through our agile approach, we overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation while building for scale. `}
+        btnTitle={"EXPLORE MOKENLABS"}
         imgUrl={""}
       />
 
       <ProgramCommunityListPartner
-        title={"FOUNNDER BRANDING"}
+        title={"LEVERAGE YOUR POTENTIAL"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "We are driven by the passion for working with determined innovators who live to make a change in the world."
         }
         options={options.founders}
         widthItem={"30vw"}
@@ -85,13 +75,9 @@ const ForFounders = () => {
       />
 
       <TwoColumnsHugeInfo
-        title={"MOKEN AGENCY"}
-        leftTitle={`Enthusiastic individuals working together to create extraordinary startups.`}
-        rightTitle={`From ideation stage to high growth innovation, our role consists 
-                                of taking the time to understand your business model, suggest creative and 
-                                high-performing strategies, while implementing crucial aspects to supplement your growing 
-                                needs. Our avant-garde tactics are in line with the current market, blending seamlessly 
-                                with each startup’s operational realities, while eliminating risks that aren’t necessary.`}
+        title={"BUILD YOUR FUTURE"}
+        leftTitle={`Working with visionary founders to build & grow disruptive startups.`}
+        rightTitle={`From ideation stage to high growth innovation, our role consists of taking the time to understand your business model, suggest creative and high-performing strategies, while implementing crucial aspects to supplement your growing needs. Our avant-garde tactics are in line with the current market, blending seamlessly with each startup’s operational realities, while eliminating risks that aren’t necessary.`}
         rightFirstListTitle={"HOW WE CAN COLLABORATE"}
         firstList={options.collaborates}
         rightSecondListTitle={"CHOOSE YOUR PURPOSE"}

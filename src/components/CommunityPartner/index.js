@@ -3,6 +3,7 @@ import Text from "../Text";
 import Button from "../Button";
 import "./index.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import {useHistory} from "react-router-dom";
 
 const CommunityPartner = ({
   title,
@@ -10,23 +11,25 @@ const CommunityPartner = ({
   btnTitle = "GET INVOLVED",
   titleStyles = {},
   containerStyles = {},
+  route = '/'
 }) => {
     const { isMobile } = useWindowDimensions();
+    let history = useHistory();
 
     return (
     <div className={"community-partner-container"} style={containerStyles}>
       <div className={"community-partner-info-container"}>
         <Text
           // size={'2.45vw'}
-          size={39}
+          size={55}
           type={"thin"}
           animationType={"fade-in"}
-          mobSize={25}
+          // mobSize={25}
           containerStyles={{ marginBottom: 45 }}
           textStyles={{
             whiteSpace: "break-spaces",
             ...titleStyles,
-            lineHeight: isMobile? '35px' : "45px",
+            lineHeight:  "75px",
             // lineHeight: "35px",
           }}
         >
@@ -37,8 +40,8 @@ const CommunityPartner = ({
           // size={'1.15vw'}
           size={18}
           animationType={"fade-in"}
-          mobSize={16}
-          textStyles={{ lineHeight: isMobile? '28px':  "35px" }}
+          // mobSize={16}
+          textStyles={{ lineHeight: isMobile? '28px':  "29px" }}
           // textStyles={{ lineHeight: "28px" }}
           type={"light"}
         >
@@ -53,6 +56,7 @@ const CommunityPartner = ({
           size={14}
           mobSize={10}
           className={"community-partner-btn"}
+          onClick={() => history.push(route)}
         />
       </div>
     </div>

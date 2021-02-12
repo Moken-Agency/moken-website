@@ -1,6 +1,10 @@
 export default {
   gettingStarted: [
     {
+      title: 'Advisors',
+      route: '/advisors'
+    },
+    {
       title: "Branding",
       route: "/branding",
     },
@@ -32,13 +36,21 @@ export default {
     },
     {
       title: "Product Marketing",
-      route: "",
+      route: "/product-marketing",
+    },
+    {
+      title: "Partnerships Growth",
+      route: "/partnerships-growth",
     },
   ],
   marketing: [
     {
       title: "Growth Programs",
       route: "",
+    },
+    {
+      title: "Community Driven Growth",
+      route: "/community-driven-growth",
     },
     {
       title: "Partnerships",

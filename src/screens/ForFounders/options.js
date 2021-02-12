@@ -1,15 +1,16 @@
 export default {
   founders: [
     {
-      title: "Innovator \n" + "Feature",
+      title: "Innovator Feature",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "A community driven approach to showcasing & highlighting hardworking founders & innovators in the global startup ecosystem who are creating the future.",
+      btnTitle: 'SHARE YOUR STORY'
     },
     {
-      title: "Personal \n" + "Branding",
+      title: "Community Events",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      btnTitle: "APPLY NOW",
+        "Events are one of the most effective ways to help a startup grow. Moken Events aims to bridge the gap early on making it easier for founders to host and attend events that directly impact their goals and integrate into the startup ecosystem with flair.",
+      btnTitle: "GET INVOLVED",
     },
   ],
   collaborates: [

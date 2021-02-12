@@ -13,38 +13,33 @@ const StartUpScreen = () => {
   return (
     <div className={"start-up-screen-container"}>
       <HeaderTitle
-        title={"STARTUP SMART"}
-        subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        title={"STARTUPSMART"}
+        subtitle={"Building a great company takes time."}
+        description={"Created to aid founders in kickstarting their ventures smarter and faster. No matter the stage we're here to support your journey."}
       />
 
       <ImageBlock type={"full"} />
 
       <TitleSubDescription
-        title={"OVERVIEW"}
-        description={`People do not simply buy products or services, they buy brands with a 
-                                purpose. By providing unique brand experiences, a startup is able to effectively 
-                                convert potential users into brand ambassadors and differentiate themselves at an early 
-                                stage from competitors. At Kenergy, we work directly with founders to create brands that
-                                 defy the odds, defeat big competition and disrupt their industries.  `}
-        subtitle={`We increase website leads, maximize revenu and produce a positive ROI — 
-                                validated with measurable results.`}
+        title={"STARTING UP SMART"}
+        description={`We develop innovative ideas that transform sectors and challenge the established models. We build 
+        online businesses that are ready to grow, design and develop tech companies aimed at scale, and create unforgettable 
+        experiences with service based companies by working together with founders who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`}
+        subtitle={`We build, create & grow disruptive startups for visionary founders & corporations by starting up smart.`}
       />
 
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
+        title={`Learn. Build. Scale. 
+A validated method to turn your idea into a successful business.`}
         mainTitle={"MOST COMPREHENSIVE STARTUP COURSE AVAILABLE"}
-        description={`Our role consists of taking the time to understand your business model,
-                                    and suggesting creative and high-performing digital strategies. Our avant-garde 
-                                    tactics are in line with the current market, blend seamlessly with our clients’
-                                     operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        description={`An array of founder focused courses driven by experience together creating all-in-one formula specifically designed for entrepreneurs, led by experts in topics ranging from business modeling, engineering and communication.`}
+        btnTitle={"EXPLORE COURSE"}
         imgUrl={""}
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"APPLY NOW"}
+        title={"StartupSmart Kits"}
+        subtitle={"COMING SOON"}
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
@@ -54,23 +49,21 @@ const StartUpScreen = () => {
       />
 
       <ProgramCommunityListPartner
-        title={"GET CONNECTD IN THE MOKEN ECOSYSTEM"}
+        title={"GET INVOLVED"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "Align all your opportunities into one growth pathway to get there faster and smarter."
         }
         options={options.partners}
       />
 
       <LeftInfoWithRightImage
+          isLeftImage
         title={
-          "Let us host a demo day for you Enthusiastic individuals working"
+          "Connecting with people on a human level always results in better conversations."
         }
-        mainTitle={"STARTUP SMART EVENTS"}
-        description={`Our role consists of taking the time to understand your business model,
-                                    and suggesting creative and high-performing digital strategies. Our avant-garde 
-                                    tactics are in line with the current market, blend seamlessly with our clients’
-                                     operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        mainTitle={"STARTUPSMART PODCAST"}
+        description={`Join Moken founders Mo + Ken explore the world of entrepreneurship through wide-ranging experiences, global connections, and a collective drive to help founders build market-leading companies. Dive deep into all things startups with this experiential, founder driven podcast filled with valuable insight and the occasional side of sass.`}
+        btnTitle={"LISTEN ON SPOTIFY"}
         imgUrl={""}
       />
 

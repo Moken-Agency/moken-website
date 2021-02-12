@@ -91,8 +91,11 @@ const Footer = ({ isOpen, setIsOpen }) => {
             onSubmit={handleSubmit}
             backgroundColor={"#fbfbfb"}
             // animationType={"fade-in"}
-            onChange={(event) =>
+            onChange={(event) => {
+              console.log(event.target.value);
               handleChange({ name: "email", text: event.target.value })
+            }
+
             }
           />
         </div>

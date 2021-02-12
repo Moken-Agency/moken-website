@@ -17,6 +17,7 @@ import ProgramCommunityListPartner from "../Programs/components/ProgramCommunity
 import ColorBlock from "../../components/ColorBlock";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import communitySVG from '../../images/Community.svg';
+import Button from "../../components/Button";
 
 const { swiperData } = options;
 
@@ -70,7 +71,7 @@ const Community = () => {
       <HeaderTitle
         title={"MOKEN COMMUNITY"}
         subtitle={"Working on what matters, together."}
-        description={`Looking for an opportunity to take your career forwards, send your portfolio to careers@mokengroup.co`}
+        description={`We strive to build a community comprised of passionate entrepreneurs, innovators, investors, and builders who share a goal of making an impact.`}
         marginBottom={isMobile ? 400 : 378}
       />
 
@@ -78,69 +79,66 @@ const Community = () => {
 
       <TitleSubDescription
         title={"ONE FUTURE, ONE COMMUNITY"}
-        subtitle={`We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results.`}
-        description={`Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. 
-                    Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, 
-                    and eliminate risks that aren’t necessary.  Our avant-garde tactics are in line with the current market, blend seamlessly
-                    with our clients’ operational realities.`}
-        btnTitle={"GET IN TOUCH"}
+        subtitle={`A powerhouse collection of the brightest minds of the future.`}
+        description={`Powered by our community, Moken bridges the gap between investors, builders, and talent to create a driven, supportive community that makes it more enjoyable for founders to build and grow their ventures. Although we set high standards for ourselves and build trust-based relationships, this also means we’re not afraid to be who we are and lead by example every step of the way. At Moken, we truly believe in the power of technology as the biggest communication facilitator and strive to harness it in our pursuit to bring startup accessibility to all founders around the world.`}
+        // btnTitle={"GET IN TOUCH"}
       />
 
       <ImageBlock position={"right"} />
 
-      <TitleTwoDescriptions
-        mainTitle={"OUR COMMUNITY"}
-        title={
-          "We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results."
-        }
-        firstDescription={`Our capabilities span the breadth of operations, project,
-                        and product management; business strategy; marketing; design; technology; revenue optimization; talent 
-                        acquisition; growth; and sales, across all industries through customized products, services, courses, 
-                        workshops, solutions, and mentorship.`}
-        secondDescription={`We partner with innovators through our tailored and integrative expertise,
-                        complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven 
-                        outcomes`}
-      />
+      {/*<TitleTwoDescriptions*/}
+      {/*  mainTitle={"OUR COMMUNITY"}*/}
+      {/*  title={*/}
+      {/*    "We increase website leads, maximize revenu and produce a positive ROI — validated with measurable results."*/}
+      {/*  }*/}
+      {/*  firstDescription={`Our capabilities span the breadth of operations, project,*/}
+      {/*                  and product management; business strategy; marketing; design; technology; revenue optimization; talent */}
+      {/*                  acquisition; growth; and sales, across all industries through customized products, services, courses, */}
+      {/*                  workshops, solutions, and mentorship.`}*/}
+      {/*  secondDescription={`We partner with innovators through our tailored and integrative expertise,*/}
+      {/*                  complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven */}
+      {/*                  outcomes`}*/}
+      {/*/>*/}
 
-      <Swiper className={"community-swiper-container"}>
+      <Title title={'OUR COMMUNITY'} />
+
+      <Text type={'extraLight'} size={55} containerStyles={{padding: '0 14vw', width: 723, marginBottom: 100}}>Explore the opportunites within the Moken community.</Text>
+
+      <Swiper>
         {swiperData.map((option, index) => {
           return <Explore {...option} key={"explore " + index} />;
         })}
       </Swiper>
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"DOWNLOAD THE COMMUNITY GUIDE"}
+        title={"Creating our future, together."}
+        subtitle={"JOIN THE COMMUNITY"}
         type={"thin"}
         size={40}
         mobSize={32}
-        className={"community-color-block"}
+        // className={"community-color-block"}
         backgroundColor={"black"}
       />
 
       <TitleSubDescription
         title={"ACCESS NETWORK"}
         subtitle={
-          "We are driven by the passion for working with determined innovators who live to make a change in the world."
+          "Driven by the passion for working with determined innovators who live to make a change in the world."
         }
-        description={`We understand that together we should see 
-                        results, not just reports with the work we do. We've developed tailor-made strategies that assist in beating out 
-                        the competition by tearing up the rule book. Through our agile approach, entrepreneurs, founders, and
-                        startups overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation. `}
+        description={`An exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`}
         AdditionalComponent={() => {
           return (
             <div className={"network-container"}>
-              <SubmitYourResume title={"Join the Network"} color={"black"} />
-              <img data-aos="fade-up" src={ArrowTopRight} style={{height: '2vw'}} />
+                <Button title={'JOIN THE NETWORK'} />
             </div>
           );
         }}
       />
 
       <ProgramCommunityListPartner
-        title={"GET INVOLVED"}
+        title={"COLLABORATE WITH US"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "Our astounding community becomes even more incredible with more bright minds. Collaborate and join our evolving community."
         }
         options={options.founders}
         // widthItem={"25vw"}

@@ -26,7 +26,7 @@ const ProgramSwiper = ({
         </Text>
       ) : null}
 
-      <Swiper className={"program-swiper-container"}>
+      <Swiper centerSlidePercentage={25}>
         {options.map((option, index) => {
           return <Explore {...option} key={"explore " + index} />;
         })}

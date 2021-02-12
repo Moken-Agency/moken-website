@@ -26,8 +26,8 @@ const AboutPrograms = () => {
     <div className={"about-programs-container"}>
       <HeaderTitle
         title={"MOKEN PROGRAMS"}
-        subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        subtitle={"Where Startups learn & evolve."}
+        description={"We create better futures through innovation. Shall we start something extraordinary?"}
         marginBottom={isMobile ? 243 : 179}
       />
 
@@ -45,7 +45,9 @@ const AboutPrograms = () => {
           "Enthusiastic individuals working together to create extraordinary startups"
         }
         description={
-          "Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary."
+            `Dubai Future Accelerators (DFA), an initiative by Dubai Future Foundation, facilitates the collaboration between government entities and private sector organizations with start-ups, scale-ups, and innovative SMEs from around the world to co-create solutions for future challenges. DFA’s fall program is hosted in collaboration with Dubai Roads and Transport Authority, Dubai Electricity and Water Authority, Dubai Health Authority and Etisalat Digital.
+We are idea generators, goal seekers, challenge-thirsty professionals, creators of unique Internet projects. We deliver unconventional solutions, combining the most advanced web technologies, modern design and bold communication. For us, each project is a meaningful adventure, in which we become partners with our clients, on the road to perfection.
+Our community of practice operates through high-touch programs, robust content, and a global portfolio of redemptive business & nonprofit ventures.`
         }
         mainTitle={"PROGRAMS OVERVIEW"}
         isLeftImage
@@ -57,10 +59,9 @@ const AboutPrograms = () => {
           "Enthusiastic individuals working together to create extraordinary startups"
         }
         rightTitle={
-          "Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.\n" +
-          "\n"
+          `Uninhibited thinking. Great ideas need to be created freely. There are no rules or formulas or meticulously complicated planning. We are people who understand the nuances of society’s underbelly, and express them, cultivated by the collective experiences of the party.`
         }
-        rightFirstListTitle={"WHERE IMPACT MATTERS"}
+        rightFirstListTitle={"Venture Development Process"}
         firstList={options.experiences}
       />
 
@@ -70,7 +71,7 @@ const AboutPrograms = () => {
       />
 
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
+        title={"Our connecting network comes together to foster your projects, give them wings and believe in the success."}
         description={
           "Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary."
         }
