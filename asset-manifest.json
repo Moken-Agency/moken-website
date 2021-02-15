@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.0d22c0ad.chunk.css",
-    "main.js": "/moken-website/static/js/main.90881c82.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.90881c82.chunk.js.map",
+    "main.css": "/moken-website/static/css/main.3fee1471.chunk.css",
+    "main.js": "/moken-website/static/js/main.4bccae09.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.4bccae09.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
     "static/css/2.5b0cdeff.chunk.css": "/moken-website/static/css/2.5b0cdeff.chunk.css",
-    "static/js/2.3e88ba1b.chunk.js": "/moken-website/static/js/2.3e88ba1b.chunk.js",
-    "static/js/2.3e88ba1b.chunk.js.map": "/moken-website/static/js/2.3e88ba1b.chunk.js.map",
+    "static/js/2.236af24d.chunk.js": "/moken-website/static/js/2.236af24d.chunk.js",
+    "static/js/2.236af24d.chunk.js.map": "/moken-website/static/js/2.236af24d.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.9a8437c4b7746dc6744ea809af5879aa.js": "/moken-website/precache-manifest.9a8437c4b7746dc6744ea809af5879aa.js",
+    "precache-manifest.e4c97530b1f6c667d9921031634f1aea.js": "/moken-website/precache-manifest.e4c97530b1f6c667d9921031634f1aea.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.5b0cdeff.chunk.css.map": "/moken-website/static/css/2.5b0cdeff.chunk.css.map",
-    "static/css/main.0d22c0ad.chunk.css.map": "/moken-website/static/css/main.0d22c0ad.chunk.css.map",
-    "static/js/2.3e88ba1b.chunk.js.LICENSE.txt": "/moken-website/static/js/2.3e88ba1b.chunk.js.LICENSE.txt",
+    "static/css/main.3fee1471.chunk.css.map": "/moken-website/static/css/main.3fee1471.chunk.css.map",
+    "static/js/2.236af24d.chunk.js.LICENSE.txt": "/moken-website/static/js/2.236af24d.chunk.js.LICENSE.txt",
     "static/media/001-instagram-2-black.svg": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg",
     "static/media/002-twitter-black.svg": "/moken-website/static/media/002-twitter-black.d77c0f8d.svg",
     "static/media/002-twitter.svg": "/moken-website/static/media/002-twitter.7f632dc6.svg",
@@ -82,8 +82,8 @@
   "entrypoints": [
     "static/js/runtime-main.be4c88a6.js",
     "static/css/2.5b0cdeff.chunk.css",
-    "static/js/2.3e88ba1b.chunk.js",
-    "static/css/main.0d22c0ad.chunk.css",
-    "static/js/main.90881c82.chunk.js"
+    "static/js/2.236af24d.chunk.js",
+    "static/css/main.3fee1471.chunk.css",
+    "static/js/main.4bccae09.chunk.js"
   ]
 }
