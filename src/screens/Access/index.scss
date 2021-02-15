@@ -1,4 +1,11 @@
 .access-container {
+  .access-header-subtitle {
+    max-width: 811px;
+  }
+
+  .access-header-description {
+    max-width: 613px;
+  }
   .access-color-block {
     padding: 67px 14vw;
     @media only screen and (max-width: 600px) {

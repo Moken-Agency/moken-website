@@ -65,21 +65,22 @@ const Footer = ({ isOpen, setIsOpen }) => {
           {/*  />*/}
           {/*  <div style={{width: '.6vw', height: '.6vw', borderRadius: '.6vw', marginLeft: '.2vw', backgroundColor: 'red'}}/>*/}
           {/*</div>*/}
-          <Logo />
+          <Logo className={'footer-logo'}/>
           <Text
-            size={"2vw"}
+            size={30}
             type={"thin"}
             animationType={"fade-in"}
-            textStyles={joinFirstText}
+            textStyles={{lineHeight: '35px'}}
+            className={'footer-join-text'}
           >
             Join our newsletter
           </Text>
           <Text
-            size={"1.3vw"}
+            size={20}
             type={"light"}
             animationType={"fade-in"}
             textStyles={joinSecondText}
-            containerStyles={{ marginBottom: 20 }}
+            containerStyles={{ marginBottom: 20, lineHeight: "35px"}}
           >
             We will send you updates related to all things Moken.
           </Text>
@@ -102,15 +103,18 @@ const Footer = ({ isOpen, setIsOpen }) => {
       </div>
       <div className={"bottom-footer-bar"}>
         <div className={"left-footer-bar"}>
-          <Text type={"light"} size={".8vw"} mobSize={10} color={"white"}>
+          <Text type={"light"}
+                // size={".8vw"}
+                size={12}
+                mobSize={10} color={"white"}>
             Copyright © Moken Startups Inc. 2020
           </Text>
           <div className={"privacy-container"}>
             <Text
               onClick={() => history.push("/privacy")}
               type={"semiBold"}
-              size={'.75vw'}
-              // size={12}
+              // size={'.75vw'}
+              size={12}
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: 4 }}
@@ -121,8 +125,8 @@ const Footer = ({ isOpen, setIsOpen }) => {
             <Text
               onClick={() => history.push("/terms")}
               type={"semiBold"}
-              size={'.75vw'}
-              // size={12}
+              // size={'.75vw'}
+              size={12}
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: isMobile ? 3 : 4 }}

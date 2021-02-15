@@ -2,21 +2,20 @@ export default {
   benefits: [
     {
       images: [],
-      title: "BRAND STRATEGY SESSIONS",
-      subtitle:
-        "Two one-on-one strategy sessions to identify your brand design needs and strategize the best ways to create an identity that will attract your ideal clients.",
+      title: "GROUPS",
+      subtitle: "From a book club where entrepreneurs, innovators, and founders connect, share, and apply learnings to an exclusive group for female founders by female founders to a startup job board we create community within community t"
     },
     {
       images: [],
-      title: "BASIC BRAND STYLE GUIDE",
+      title: "RESOURCES",
       subtitle:
-        "A custom brand style guide including brand standards (typography, colors, usage guidelines, styling notes, and brand application examples) to help keep your usage consistent and on-brand.",
+      "You'll gain access to hundreds of curated resources rolled out weekly on topics like branding, raising capital, creating culture, and growth aimed at assisting you scale your business."
     },
     {
       images: [],
-      title: "BRAND STRATEGY SESSIONS",
+      title: "NETWORKING",
       subtitle:
-        "Two one-on-one strategy sessions to identify your brand design needs and strategize the best ways to create an identity that will attract your ideal clients.",
+      "You'll meet founders who share your passion and interests, who do similar things, or who care about the same topics while discovering inspirations, thought-provoking conversations, and expert perspectives."
     },
     // {
     //   images: [],

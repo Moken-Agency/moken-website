@@ -18,8 +18,11 @@ const ForFounders = () => {
       <HeaderTitle
         title={"FOR FOUNDERS"}
         subtitle={"Empathetic and experience powered support."}
-        description={"Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed."}
+        description={
+            'Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed.'
+        }
         marginBottom={isMobile ? 107 : 107}
+        subtitleClassName={'for-founder-header-subtitle'}
       />
 
       <ImageBlock position={"right"} />

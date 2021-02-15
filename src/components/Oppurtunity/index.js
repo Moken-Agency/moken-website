@@ -27,9 +27,10 @@ const Opportunity = ({
     >
       <div className={"opportunity-title-container"}>
         <Text
-          size={".9vw"}
+            size={16}
           animationType={"fade-in"}
           type={"semiBold"}
+            mobSize={14}
           className={"opportunity-title-first"}
         >
           {title}

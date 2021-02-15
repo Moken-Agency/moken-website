@@ -16,14 +16,14 @@
     margin-top: 9vw;
     position: relative;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1300px) {
       flex-direction: column;
     }
     .title-short-list-with-btn-subtitle {
       margin: 0;
       padding: 0;
       width: 32vw;
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 1300px) {
         width: 60vw;
         margin-bottom: 50px;
       }

@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useEffect, useMemo, useRef, useState} from "react";
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper as SwiperComponent, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
@@ -13,19 +13,48 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 SwiperCore.use([Navigation]);
 
 const Swiper = ({ swiperData = [], Component}) => {
-    const { isMobile } = useWindowDimensions();
+    const { isMobile, isMiddleBiggest, isMiddleSmallest } = useWindowDimensions();
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
-    console.log('prevRefprevRef', prevRef.current);
-    console.log('nextRefnextRef', nextRef.current);
+
+    const slidesPerView = useMemo(() => {
+
+        if(isMobile) {
+            return 1
+        } else if(isMiddleBiggest) {
+             return 3
+        } else if(isMiddleSmallest) {
+            return 2
+        }
+        return 4
+    }, [isMobile, isMiddleBiggest, isMiddleSmallest]);
+
+    const breakpoints ={
+        // when window width is >= 320px
+        '0': {
+            slidesPerView: 1,
+        },
+        // when window width is >= 480px
+        '601': {
+            slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        '850': {
+            slidesPerView: 3,
+        },
+        '1450': {
+            slidesPerView: 4,
+        }
+    };
 
     return (
       <div className={'swiper-component-container'}>
           <SwiperComponent
                   spaceBetween={0}
-                  slidesPerView={isMobile ? 1 : 4}
+                  breakpoints={breakpoints}
+                  slidesPerView={4}
                   wrapperTag={'ul'}
                    navigation={{
                        prevEl: prevRef.current ? prevRef.current : undefined,
@@ -52,11 +81,11 @@ const Swiper = ({ swiperData = [], Component}) => {
                   )
               })}
 
-              {/*<div ref={prevRef} className="cursor-pointer button-left">*/}
-              {/*    <img*/}
-              {/*        src={ArrowUpRight}*/}
-              {/*    />*/}
-              {/*</div>*/}
+              <div ref={prevRef} className="cursor-pointer button-left">
+                  <img
+                      src={ArrowUpRight}
+                  />
+              </div>
               <div ref={nextRef} className="cursor-pointer button-right">
                   <img
                       src={ArrowUpRight}

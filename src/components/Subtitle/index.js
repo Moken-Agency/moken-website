@@ -6,8 +6,8 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 const Subtitle = ({
   subtitle = "",
   className = "",
-  size = '3.4vw',
-  // size = 55,
+  // size = '3.4vw',
+  size = 55,
   mobSize = size,
   color = "black",
   type = "extraLight",

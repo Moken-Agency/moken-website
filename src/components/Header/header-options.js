@@ -3,7 +3,7 @@ export default {
     {
       title: "Access networks",
       withDivider: true,
-      link: 'network.mokenstartups.com'
+      link: 'https://network.mokenstartups.com'
     },
     {
       title: "Partners",
@@ -69,7 +69,7 @@ export default {
       dividerColor: "#ffc4af",
       subRouts: [
         {
-          title: "About Moken agency",
+          title: "About Agency",
           route: "/about-agency",
         },
         {

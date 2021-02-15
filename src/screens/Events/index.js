@@ -51,7 +51,7 @@ const Events = () => {
 
     return (
     <div>
-        <HeaderSecondType className={'events-header-container'}
+        <HeaderSecondType
                           title={'MOKEN EVENTS'}
                           subtitle={'Creating unforgettable experiences to connect humans.'}
         />

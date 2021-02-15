@@ -4,35 +4,38 @@ export default {
       title: "Innovator Feature",
       subtitle:
         "A community driven approach to showcasing & highlighting hardworking founders & innovators in the global startup ecosystem who are creating the future.",
-      btnTitle: 'SHARE YOUR STORY'
+      btnTitle: 'SHARE YOUR STORY',
+      route: '/startup-smart'
     },
     {
       title: "Community Events",
       subtitle:
         "Events are one of the most effective ways to help a startup grow. Moken Events aims to bridge the gap early on making it easier for founders to host and attend events that directly impact their goals and integrate into the startup ecosystem with flair.",
       btnTitle: "GET INVOLVED",
+      route: '/upcoming-events'
+
     },
   ],
   collaborates: [
     {
-      title: "Moken Agency",
+      title: "Ideate",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "We make it easier for founders to explore and validate their business ideas and run them through the critical steps required before getting started.",
     },
     {
-      title: "Moken Programs",
+      title: "Build",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "We work along side founders to co-build their ventures by offering hands-on operational, and co-founding support throughout the building stage.",
     },
     {
-      title: "Moken Events",
+      title: "Grow",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Through simple planning, strong execution, and deliberate measurement, we make it possible for founders to exponentially and successfully grow their ventures.",
     },
     {
-      title: "Access Network",
+      title: "Advise",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "We connect founders with curated advisors to help them solve key business challenges - from early-stage to growth.",
     },
   ],
   purposes: [
@@ -41,15 +44,15 @@ export default {
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Access Your Full Potential",
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Connect & Extend Your Network",
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Learn to Create The Future ",
       link: "",
     },
   ],

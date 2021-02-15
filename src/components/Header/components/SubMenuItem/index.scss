@@ -13,7 +13,7 @@
   .sub-menu-divider {
     display: none;
     height: 100%;
-    width: 2px;
+    width: 4px;
     position: absolute;
     left: 0
   }
@@ -23,7 +23,7 @@
     padding: 0 32px;
   }
   &:hover {
-    background-color: #f3f3f3;
+    background-color: rgba(0,0,0, 0.03);
 
     transition: .5s;
     span {
@@ -32,6 +32,7 @@
 
     .sub-menu-divider {
       display: block;
+      //width: 3px;
     }
   }
 }

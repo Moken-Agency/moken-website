@@ -12,7 +12,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive }) => {
           <div className={`explore-container`}>
           {/*<div className={`explore-container ${isActive ? 'explore-active-container' : ''}`}>*/}
               <Text
-                  size={".8vw"}
+                  size={14}
                   mobSize={10}
                   animationType={"fade-in"}
                   type={"semiBold"}
@@ -21,7 +21,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive }) => {
                   {title}
               </Text>
               <Text
-                  size={"1.7vw"}
+                  size={28}
                   mobSize={22}
                   animationType={"fade-in"}
                   type={"thin"}
@@ -30,7 +30,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive }) => {
                   {subtitle}
               </Text>
               <div className={"explore-divider"} />
-              <Text type={"light"} mobSize={10} animationType={"fade-in"} size={".8vw"}>
+              <Text type={"light"} mobSize={10} animationType={"fade-in"} size={16}>
                   {description}
               </Text>
               <Button
@@ -38,7 +38,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive }) => {
                   backgroundColor={"transparent"}
                   onClick={() => history.push(route)}
                   textColor={"black"}
-                  size={".6vw"}
+                  size={9}
                   animationType={"fade-in"}
                   mobSize={7.5}
                   className={"explore-btn"}

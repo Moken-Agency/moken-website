@@ -4,7 +4,7 @@ import LogoSVG from "../../images/moken.svg";
 import './index.scss';
 import options from "./options";
 
-const Logo = () => {
+const Logo = ({className = ''}) => {
     let history = useHistory();
     let {pathname} = useLocation();
     const circleColor = useMemo(() => {
@@ -19,7 +19,7 @@ const Logo = () => {
     console.log({circleColor});
 
     return (
-        <div className={'logo-container'}>
+        <div className={`logo-container ${className}`}>
             <img
                 src={LogoSVG}
                 className={"logo"}

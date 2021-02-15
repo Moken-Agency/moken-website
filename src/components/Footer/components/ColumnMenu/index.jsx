@@ -8,9 +8,6 @@ const titleStyles = {
   // lineHeight: 35,
 };
 
-const containerTitleStyles = {
-  marginBottom: 35,
-};
 
 const routeStyle = {
   marginBottom: "1vw",
@@ -36,7 +33,7 @@ const ColumnTextComponent = ({ title, index, route }) => {
       key={"column menu" + index + title}
       textStyles={{ ...routeStyle, color }}
       type={"light"}
-      size={"1.1vw"}
+      size={20}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={() => history.push(route)}
@@ -52,10 +49,10 @@ const ColumnMenu = ({ routes = [], title }) => {
     <div className={"column-menu-container"}>
       <Text
         type={"semiBold"}
-        size={'.9vw'}
-        // size={14}
+        // size={'.9vw'}
+        size={14}
         textStyles={{ ...titleStyles, letterSpacing: 4, marginBottom: ".85vw" }}
-        containerStyles={{ ...containerTitleStyles, marginRight: "2.3vw" }}
+        containerStyles={{ marginBottom: 35, marginRight: "2.3vw" }}
       >
         {title.toUpperCase()}
       </Text>

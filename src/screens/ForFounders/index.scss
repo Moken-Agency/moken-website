@@ -1,4 +1,10 @@
 .for-founders-container {
+  .for-founder-header-subtitle {
+    max-width: 867px;
+  }
+  .for-founder-header-description {
+    max-width: 703px;
+  }
   .for-founders-color-block {
     padding: 67px 14vw;
     @media only screen and (max-width: 600px) {

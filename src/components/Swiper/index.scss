@@ -31,7 +31,7 @@
   &:hover {
     transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
     opacity: 1;
-    transform: scale(1.1);
+    //transform: scale(1.1);
   }
   @media only screen and (max-width: 600px) {
     display: none;
@@ -56,11 +56,15 @@
 
 
 .button-right {
-  right: 15px;
+  right: 90px;
 }
 
 .button-left {
   transform: rotate(-90deg);
-  left: 15px;
+  left: 90px;
+}
+
+.swiper-button-disabled {
+  display: none;
 }
 
