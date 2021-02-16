@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95fcf22703793db41628a5280d594b22",
+    "revision": "bd7a28ff756fcd1735aa3e313d36ba7a",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "3d773dc5242d61d6b079",
+    "revision": "68cef9798bb7343c6c7d",
     "url": "/moken-website/static/css/2.5b0cdeff.chunk.css"
   },
   {
-    "revision": "4bc23d89b8eff0f76e72",
-    "url": "/moken-website/static/css/main.3fee1471.chunk.css"
+    "revision": "6f8c01b22e44bd7c7ff4",
+    "url": "/moken-website/static/css/main.1cbd57de.chunk.css"
   },
   {
-    "revision": "3d773dc5242d61d6b079",
-    "url": "/moken-website/static/js/2.236af24d.chunk.js"
+    "revision": "68cef9798bb7343c6c7d",
+    "url": "/moken-website/static/js/2.f0a2011b.chunk.js"
   },
   {
     "revision": "98c92e4a71422a59c3daed74f16a0206",
-    "url": "/moken-website/static/js/2.236af24d.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.f0a2011b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4bc23d89b8eff0f76e72",
-    "url": "/moken-website/static/js/main.4bccae09.chunk.js"
+    "revision": "6f8c01b22e44bd7c7ff4",
+    "url": "/moken-website/static/js/main.ad3be572.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -90,6 +90,74 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7ef9a5255097d50ff7bcfb5cb89e782e",
     "url": "/moken-website/static/media/Group 211.7ef9a525.svg"
+  },
+  {
+    "revision": "acc1d575fe059e1c33e61493d08f2060",
+    "url": "/moken-website/static/media/KonnectBlack.acc1d575.otf"
+  },
+  {
+    "revision": "ac199b1fc93daf917cd9408c647a09af",
+    "url": "/moken-website/static/media/KonnectBlackItalic.ac199b1f.otf"
+  },
+  {
+    "revision": "ce3102ff525e3a5e1f2a8cf62c2f1e18",
+    "url": "/moken-website/static/media/KonnectBold.ce3102ff.otf"
+  },
+  {
+    "revision": "2fbf22607004efc1b6415acc13609f21",
+    "url": "/moken-website/static/media/KonnectBoldItalic.2fbf2260.otf"
+  },
+  {
+    "revision": "1af6d2f5272bad512ccd51d7dafc0a0c",
+    "url": "/moken-website/static/media/KonnectExtraBold.1af6d2f5.otf"
+  },
+  {
+    "revision": "28440b9ecc43a7d0ff93be76e57a9266",
+    "url": "/moken-website/static/media/KonnectExtraBoldItalic.28440b9e.otf"
+  },
+  {
+    "revision": "05521759ff989e83228062ac5ffd39db",
+    "url": "/moken-website/static/media/KonnectHairlineItalic.05521759.otf"
+  },
+  {
+    "revision": "de39436235f68b19618bb98a24dba422",
+    "url": "/moken-website/static/media/KonnectItalic.de394362.otf"
+  },
+  {
+    "revision": "085dd8ed759873f60b12ffce39064ea9",
+    "url": "/moken-website/static/media/KonnectLight.085dd8ed.otf"
+  },
+  {
+    "revision": "3fad909ba63e9d37aece83c1ef48848e",
+    "url": "/moken-website/static/media/KonnectLightItalic.3fad909b.otf"
+  },
+  {
+    "revision": "ccd27af548359fcda9ad599efddaef3f",
+    "url": "/moken-website/static/media/KonnectMedium.ccd27af5.otf"
+  },
+  {
+    "revision": "a231048bab63e2f9fd4baf62cab4c186",
+    "url": "/moken-website/static/media/KonnectMediumItalic.a231048b.otf"
+  },
+  {
+    "revision": "367658d3db199c5c0a8dcee27f9b6bc3",
+    "url": "/moken-website/static/media/KonnectRegular.367658d3.otf"
+  },
+  {
+    "revision": "3f08ca51c351afde3e41cbd2e990e52a",
+    "url": "/moken-website/static/media/KonnectSemiBold.3f08ca51.otf"
+  },
+  {
+    "revision": "12cdf7671f28316f702337960c7e1e86",
+    "url": "/moken-website/static/media/KonnectSemiBoldItalic.12cdf767.otf"
+  },
+  {
+    "revision": "dd534f3a3a0980e86b9136dcb323dd6e",
+    "url": "/moken-website/static/media/KonnectThin.dd534f3a.otf"
+  },
+  {
+    "revision": "10f973402ed94efe5e6b25551886219a",
+    "url": "/moken-website/static/media/KonnectThinItalic.10f97340.otf"
   },
   {
     "revision": "151ca8b47b79086beaefba24c6970383",
