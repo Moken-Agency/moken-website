@@ -56,9 +56,6 @@ Whether B2C, B2B or employee engagement, we strongly believe that exhibitions sh
       <Swiper Component={Explore} swiperData={options.swiperData} />
 
       <ColorBlock
-        size={30}
-        type={"thin"}
-        className={"host-an-event-color-block"}
         title={"Looking for the next big thing?"}
         subtitle={"APPLY NOW"}
         backgroundColor={"#263da8"}

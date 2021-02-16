@@ -79,12 +79,9 @@ const MoPlusKen = () => {
       />
 
       <ColorBlock
-        className={"mo-ken-color-block"}
         title={"Looking for the next big thing?"}
         subtitle={"APPLY NOW"}
         withIcon
-        type={"thin"}
-        size={30}
         backgroundColor={"grey"}
         textColor={"black"}
       />

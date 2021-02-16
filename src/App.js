@@ -83,6 +83,7 @@ import Advisors from "./screens/Advisors";
 import ProductMarketing from "./screens/ProductMarketing";
 import CommunityDrivenGrowth from "./screens/CommunityDrivenGrowth";
 import PartnershipsGrowth from "./screens/PartnershipsGrowth";
+import Home from "./screens/Home";
 
 const routsWithHeaderFooter = [
   {
@@ -379,9 +380,13 @@ const routsWithHeaderFooter = [
   // },
   {
     path: "/",
-    test: 'ASD',
-    component: AboutMoken,
+    component: Home,
   },
+  // {
+  //   path: "/",
+  //   test: 'ASD',
+  //   component: AboutMoken,
+  // },
 ];
 const routsWithoutHeaderFooter = [
   {

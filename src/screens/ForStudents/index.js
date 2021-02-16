@@ -52,9 +52,6 @@ in pursuit of success.`
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
-        type={"thin"}
-        className={"for-students-color-block"}
-        size={30}
       />
 
       <LeftInfoWithRightImage

@@ -38,7 +38,7 @@ const LeftInfoWithRightImage = ({
             // size={55}
             size={55}
             mobSize={35}
-            type={"extraLight"}
+            type={"kBold"}
             containerStyles={{ marginBottom: '50px' }}
           >
             {title}
@@ -48,7 +48,7 @@ const LeftInfoWithRightImage = ({
             // size={'1.25vw'}
             size={20}
             mobSize={16}
-            type={"light"}
+            type={"kMiddle"}
             textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
             containerStyles={{ marginBottom: '55px' }}
           >

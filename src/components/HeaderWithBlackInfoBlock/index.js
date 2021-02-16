@@ -27,7 +27,8 @@ const HeaderWithBlackInfoBlock = ({
           // size={".9vw"}
           mobSize={14}
           animationType={"fade-in"}
-          type={"semiBold"}
+          type={"kMiddle"}
+          // type={"semiBold"}
           className={"header-black-main-title"}
         >
           {title}
@@ -37,7 +38,8 @@ const HeaderWithBlackInfoBlock = ({
           size={75}
           mobSize={45}
           animationType={"fade-in"}
-          type={"thin"}
+          type={"kBold"}
+          // type={"thin"}
           className={"header-black-subtitle"}
         >
           {subtitle}
@@ -48,7 +50,8 @@ const HeaderWithBlackInfoBlock = ({
             mobSize={16}
             animationType={"fade-in"}
             className={"header-black-description"}
-            type={"light"}
+            // type={"light"}
+            type={"kMiddle"}
           >
             {description}
           </Text>

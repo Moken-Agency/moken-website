@@ -3,7 +3,7 @@ import "./index.scss";
 import Text from "../../../Text";
 import { useHistory } from "react-router-dom";
 
-const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex = () => {}, hoveredIndex, index }) => {
+const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex = () => {}, hoveredIndex, index, link ='' }) => {
   let history = useHistory();
 
 
@@ -12,10 +12,12 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
   }, [hoveredIndex, hoveredIndex])
 
 
-  return (
+    return (
     <button
       className={"sub-menu-item-container"}
-      onClick={() => history.push(route)}
+      onClick={() => {
+        link ? window.open(link, '_blank') : history.push(route)
+      }}
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >

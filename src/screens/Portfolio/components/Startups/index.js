@@ -11,11 +11,12 @@ const Startups = ({ title = "", subTitle = "" }) => {
   return (
     <div className={"startups-container"}>
       <Text
-        size={'3.8vw'}
-        // size={60}
+        // size={'3.8vw'}
+        size={60}
         animationType={"fade-in"}
         mobSize={40}
-        type={"semiBold"}
+        type={"kBold"}
+        // type={"semiBold"}
         className={"startups-title-first"}
       >
         {title}
@@ -23,10 +24,11 @@ const Startups = ({ title = "", subTitle = "" }) => {
       <Text
         mobSize={12}
         animationType={"fade-in"}
-        size={'.9vw'}
-        // size={14}
+        // size={'.9vw'}
+        size={14}
         textStyles={{ letterSpacing: 4 }}
-        type={"semiBold"}
+        type={"kMiddle"}
+        // type={"semiBold"}
         className={"startups-title-second"}
       >
         {subTitle}

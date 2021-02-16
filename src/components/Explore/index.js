@@ -4,7 +4,7 @@ import Button from "../Button";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
 
-const Explore = ({ title, subtitle, description, route = "", isActive }) => {
+const Explore = ({ title, subtitle, description, route = "", isActive}) => {
   const history = useHistory();
 
   return (

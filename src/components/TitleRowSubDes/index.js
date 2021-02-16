@@ -9,6 +9,7 @@ const TitleRowSubDes = ({
   subtitle = "",
   description = "",
   onClick,
+                          descriptions = []
 }) => {
   return (
     <div className={"title-row-sub-desc-container"}>
@@ -24,15 +25,32 @@ const TitleRowSubDes = ({
           {subtitle}
         </Text>
         <div className={"title-row-sub-description-container"}>
-          <Text
-            className={"title-row-sub-desc-description"}
-            size={20}
-            type={"light"}
-            animationType={"fade-in"}
-            mobSize={16}
-          >
-            {description}
-          </Text>
+          {
+            descriptions.length ? descriptions.map((el, index) => {
+              return (
+                  <Text
+                      className={"title-row-sub-desc-description"}
+                      size={20}
+                      type={"light"}
+                      animationType={"fade-in"}
+                      mobSize={16}
+                      containerStyles={{marginBottom: description.length - 1 === index ? 0 : 20}}
+                  >
+                    {el}
+                  </Text>
+              )
+            }) :
+              <Text
+                className={"title-row-sub-desc-description"}
+                size={20}
+                type={"light"}
+                animationType={"fade-in"}
+                mobSize={16}
+            >
+              {description}
+            </Text>
+          }
+
           {onClick ? (
             <Button
               className={"title-row-sub-desc-btn"}

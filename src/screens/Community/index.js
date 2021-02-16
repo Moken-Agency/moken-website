@@ -166,8 +166,6 @@ const Community = () => {
       <ColorBlock
         title={"Creating our future, together."}
         subtitle={"JOIN THE COMMUNITY"}
-        type={"thin"}
-        size={40}
         mobSize={32}
         // className={"community-color-block"}
         backgroundColor={"black"}

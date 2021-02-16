@@ -15,14 +15,18 @@
     height: 27px;
   }
   .subtitle-arrow-container {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-  }
-  .black-menu-screen-subtitle {
-    cursor: pointer;
     transition: 1s;
     &:hover {
       opacity: .6;
     }
+  }
+  .black-menu-screen-subtitle {
+    //transition: 1s;
+    //&:hover {
+    //  opacity: .6;
+    //}
   }
 }

@@ -19,7 +19,8 @@ const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
         size={"1.85vw"}
         mobSize={30}
         animationType={"fade-in"}
-        type={"thin"}
+        type={"kThin"}
+        // type={"thin"}
         className={"benefit-title-second"}
       >
         {subtitle}
@@ -28,7 +29,8 @@ const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
         size={"1.2vw"}
         mobSize={16}
         animationType={"fade-in"}
-        type={"light"}
+        type={"kLight"}
+        // type={"light"}
         className={"benefit-title-third"}
       >
         {description}

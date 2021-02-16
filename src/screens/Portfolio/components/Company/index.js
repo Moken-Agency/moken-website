@@ -19,31 +19,31 @@ const Company = ({
     <div className={"company-container"}>
       <div>
         <Text
-          size={isMobile ? "2.2vw" : "1vw"}
+          size={16}
           animationType={"fade-in"}
-          type={"semiBold"}
+          type={"kMiddle"}
           className={"company-name"}
           mobSize={12}
         >
           {companyName}
         </Text>
         <Text
-          size={isMobile ? "4.4vw" : "2vw"}
           animationType={"fade-in"}
-          type={"thin"}
+          type={"kBold"}
           className={"project-name"}
-          mobSize={30}
+          size={30}
+          mobSize={22}
         >
           {projectName}
         </Text>
       </div>
 
       <Text
-        size={isMobile ? "2.2vw" : "1vw"}
+        size={18}
         animationType={"fade-in"}
         className={"company-description"}
-        type={"light"}
-        textStyles={{lineHeight: isMobile ? "2.2vw" : "1.8vw" }}
+        type={"kLight"}
+        textStyles={{lineHeight: isMobile ? "2.2vw" : '29px' }}
       >
         {description}
       </Text>
@@ -51,20 +51,20 @@ const Company = ({
       <div className={"company-owner-container"}>
         <div>
           <Text
-            size={isMobile ? "2vw" : "1vw"}
+            size={14}
             animationType={"fade-in"}
             className={"company-city"}
-            type={"semiBold"}
+            type={"kMiddle"}
             textStyles={{letterSpacing: 4}}
             mobSize={12}
           >
             {city}
           </Text>
           <Text
-            size={isMobile ? "2.2vw" : "1.05vw"}
+            size={16}
             animationType={"fade-in"}
             className={"company-owner"}
-            type={"light"}
+            type={"kLight"}
             mobSize={16}
           >
             {owner}

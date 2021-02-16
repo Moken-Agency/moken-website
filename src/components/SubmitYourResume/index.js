@@ -18,7 +18,8 @@ const SubmitYourResume = ({
     <Text
       size={size}
       mobSize={mobSize}
-      type={"semiBold"}
+      type={"kSemiBold"}
+      // type={"semiBold"}
       color={color}
       animationType={"fade-up"}
       className={`text-submit ${className}`}

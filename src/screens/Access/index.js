@@ -24,18 +24,21 @@ const Access = () => {
 
       <TitleRowSubDes
         title={"ABOUT ACCESS"}
-        description={`The Access Network is an exclusive, invite-only network built for ambitious humans just like you. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.
-
-As humans we are built for connection. Even though we are more connected in certain ways, as innovators we are often painfully devoid of the true connection of being honest, vulnerable and real with other people. The Access Network is for exactly that. It's for those who have the desire to connect with other ambitious founders, creators, freelancers, business owners, and industry experts and are willing to openly share experience and expertise.`}
+        descriptions={[
+            'The Access Network is an exclusive, invite-only network built for ambitious humans just like you. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.',
+            'As humans we are built for connection. Even though we are more connected in certain ways, as innovators we are often painfully devoid of the true connection of being honest, vulnerable and real with other people. The Access Network is for exactly that. It\'s for those who have the desire to connect with other ambitious founders, creators, freelancers, business owners, and industry experts and are willing to openly share experience and expertise.`'
+        ]}
         subtitle={"Empowering one another in creating change around the world."}
       />
 
       <LeftInfoWithRightImage
         mainTitle={"ACCESS NETWORK"}
         title={"Join our trusted community of founders and startups and scale what you do."}
-        description={`The Access Network is a place for founders, entrepreneurs, innovators, and investors to connect and grow, together. You'll learn from others' experience to help scale your ideas, avoid mistakes, and grow your venture. You'll connect with founders, investors, and innovators around the world who understand where you're at and what you're going through. And finally, you'll discover unmatched opportunities designed to promote and support you and your venture every step of the way by industry experts.`}
+        description={`
+        }The Access Network is a place for founders, entrepreneurs, innovators, and investors to connect and grow, together. You'll learn from others' experience to help scale your ideas, avoid mistakes, and grow your venture. You'll connect with founders, investors, and innovators around the world who understand where you're at and what you're going through. And finally, you'll discover unmatched opportunities designed to promote and support you and your venture every step of the way by industry experts.`}
         imgUrl={""}
         btnTitle={"JOIN THE NETWORK"}
+        withoutRightPadding
       />
 
       <ColorBlock
@@ -44,8 +47,8 @@ As humans we are built for connection. Even though we are more connected in cert
         withIcon
         textColor={"white"}
         backgroundColor={"black"}
+        blockType={'middle'}
         type={"thin"}
-        // className={"access-color-block"}
         // size={30}
       />
 

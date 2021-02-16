@@ -43,9 +43,6 @@ A validated method to turn your idea into a successful business.`}
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
-        type={"thin"}
-        className={"start-up-screen-color-block"}
-        size={30}
       />
 
       <ProgramCommunityListPartner

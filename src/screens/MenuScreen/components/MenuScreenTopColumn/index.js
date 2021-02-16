@@ -49,14 +49,13 @@ const MenuScreenTopColumn = ({
       >
         {description}
       </Text>
-      <div className={'subtitle-arrow-container'}>
+      <div className={'subtitle-arrow-container'}   onClick={() => history.push(route)}>
         <Text
           size={14}
           mobSize={10}
           type={"semiBold"}
           className={'black-menu-screen-subtitle'}
           textStyles={styles.subTitle}
-          onClick={() => history.push(route)}
         >
           {subTitle}
         </Text>

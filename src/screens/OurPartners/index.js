@@ -97,9 +97,6 @@ const OurPartners = () => {
       <ColorBlock
         title={"Ready to make an impact?"}
         subtitle={"DOWNLOAD THE PARTNER GUIDE"}
-        type={"thin"}
-        size={40}
-        mobSize={32}
         withIcon
         blockType={"middle"}
         backgroundColor={"black"}

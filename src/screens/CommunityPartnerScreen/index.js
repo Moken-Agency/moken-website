@@ -50,8 +50,6 @@ const CommunityPartnerScreen = () => {
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
-        type={"thin"}
-        className={"community-partner-color-block"}
         size={30}
       />
 

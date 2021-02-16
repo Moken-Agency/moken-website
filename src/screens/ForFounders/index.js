@@ -50,9 +50,9 @@ const ForFounders = () => {
         title={"StartupSmart Podcast"}
         subtitle={"LISTEN ON SPOTIFY"}
         withIcon
-        textColor={"black"}
-        backgroundColor={"grey"}
-        type={"thin"}
+        textColor={"white"}
+        backgroundColor={"black"}
+        blockType={'middle'}
         // className={"for-founders-color-block"}
         // size={30}
       />

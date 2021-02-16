@@ -18,7 +18,8 @@ const Portfolio = (props) => {
     <div className={"portfolio-container"}>
       <section className={"portfolio-section-info"}>
         <Text
-          type={"semiBold"}
+          type={"kMiddle"}
+          // type={"semiBold"}
           size={16}
           mobSize={14}
           animationType={"fade-in"}
@@ -29,7 +30,7 @@ const Portfolio = (props) => {
         </Text>
         <Text
           size={"4.5vw"}
-          type={"thin"}
+          type={"kBold"}
           animationType={"fade-in"}
           mobSize={45}
           className={"portfolio-title-second"}
@@ -53,10 +54,10 @@ const Portfolio = (props) => {
         subtitle={"CONNECT WITH US"}
         textWidth={"45vw"}
         backgroundColor={"#000"}
-        type={"thin"}
-        size={75}
+        // type={"thin"}
         mobSize={55}
-        className={"portfolio-color-block"}
+        containerStyles={{marginBottom: 0}}
+        // className={"portfolio-color-block"}
         onClick={() => history.push('connect-with-us')}
       />
       {/*<section className={'block-container'}>*/}

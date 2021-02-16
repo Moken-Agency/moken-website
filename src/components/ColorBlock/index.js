@@ -14,9 +14,9 @@ const ColorBlock = ({
   textWidth = "36vw",
   textColor = "white",
   // size = '4.06vw',
-  size = 65,
+  size = 55,
   withIcon = false,
-  type = "extraLight",
+  type = "kLight",
   mobSize = "9vw",
   blockType = "big",
   containerStyles = {},
@@ -25,7 +25,7 @@ const ColorBlock = ({
   const { isMobile } = useWindowDimensions();
   const mobSizeTemp = blockType === "middle" ? 32 : mobSize;
   const sizeTemp = blockType === "middle" ? 40 : size;
-  const typeTemp = blockType === "middle" ? "thin" : type;
+  const typeTemp = blockType === "middle" ? "kMiddle" : type;
 
   return (
     <>

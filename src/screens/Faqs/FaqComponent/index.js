@@ -19,7 +19,7 @@ const FaqComponent = ({ title, faqs = [], isLast = false }) => {
         >
           {title}
         </Text>
-        <button onClick={handleOpenFaq} data-aos="fade-in">
+        <button onClick={handleOpenFaq} data-aos="fade-in" style={{cursor: 'pointer'}}>
           <Text size={100} type={"thin"} mobSize={65}>
             {isOpen ? "-" : "+"}
           </Text>

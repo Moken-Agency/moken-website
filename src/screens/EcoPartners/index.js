@@ -50,8 +50,6 @@ const EcoPartners = () => {
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
-        type={"thin"}
-        className={"eco-partner-color-block"}
         size={30}
       />
 

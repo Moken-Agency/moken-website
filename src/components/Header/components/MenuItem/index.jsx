@@ -52,7 +52,7 @@ const MenuItem = ({
     >
       <div className={"menu-item-container"} style={containerStyles}>
         <Text
-          type={"semiBold"}
+          type={"kMedium"}
           size={size}
           textStyles={{
             ...textStyles,
@@ -69,10 +69,11 @@ const MenuItem = ({
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-          {subRouts.map(({ title = "", route = "" }, index) => {
+          {subRouts.map(({ title = "", route = "", link = '' }, index) => {
             return (
               <SubMenuItem
                 key={"sub routs" + index}
+                link={link}
                 title={title}
                 dividerColor={dividerColor}
                 route={route}

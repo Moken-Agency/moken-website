@@ -51,8 +51,6 @@ const EducationPartners = () => {
         textColor={"black"}
         backgroundColor={"grey"}
         type={"thin"}
-        className={"education-partner-color-block"}
-        size={30}
       />
 
       <TitleSubTwoListCenter

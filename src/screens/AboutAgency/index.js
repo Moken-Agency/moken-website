@@ -46,7 +46,7 @@ const AboutAgency = () => {
       <Title className={"partners-title"} title={"OUR EXPERTISE"} />
 
       <div className={"about-agency-increase-container"}>
-        <Text size={"3.1vw"} mobSize={35} type={"extraLight"}>
+        <Text size={"3.1vw"} mobSize={35} type={"kBold"}>
           We increase website leads, maximize revenue and produce.
         </Text>
       </div>

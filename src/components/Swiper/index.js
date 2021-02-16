@@ -75,7 +75,7 @@ const Swiper = ({ swiperData = [], Component}) => {
                   return (
                               <SwiperSlide wrapperTag={'li'} tag={'section'}>
                                   {({ isActive }) => (
-                                      <Component {...option} isActive={isActive} key={"explore " + index} />
+                                      <Component {...option} isActive={isActive} key={"explore " + index} cursor={'grab'} />
                                   )}
                               </SwiperSlide>
                   )

@@ -1,7 +1,7 @@
 export default {
   leftMenu: [
     {
-      title: "Access networks",
+      title: "Access network",
       withDivider: true,
       link: 'https://network.mokenstartups.com'
     },
@@ -40,7 +40,7 @@ export default {
   mainMenu: [
     {
       title: "About",
-      dividerColor: "#b3b3b3",
+      dividerColor: "#000",
       subRouts: [
         {
           title: "ABOUT MOKEN",
@@ -115,7 +115,8 @@ export default {
           route: "/for-brands",
         },
         {
-          title: "FOR CORPORATIONS",
+          title: "FOR FOUNDERS",
+          route: '/for-founders'
         },
       ],
     },
@@ -167,21 +168,25 @@ export default {
       ],
     },
     {
-      title: "Media",
-      route: "media",
+      title: "Access",
+      route: "/access",
       dividerColor: "#ff7d3e",
       subRouts: [
         {
-          title: "INSIGHTS BY MOKENS",
+          title: "ABOUT ACCESS",
+          route: '/access'
         },
         {
-          title: "STARTUPSMART PODCAST",
-        },
-        {
-          title: "BECOME A HOST",
+          title: "ACCESS NETWORK",
+          link: 'https://network.mokenstartups.com'
         },
       ],
-    },
+    }
+    // {
+    //   title: "Media",
+    //   route: "media",
+    //   dividerColor: "#ff7d3e",
+
   ],
   mainMenuTextStyles: {
     letterSpacing: '.2vw',

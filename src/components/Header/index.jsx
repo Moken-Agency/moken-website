@@ -67,17 +67,18 @@ const Header = ({ isOpen, setIsOpen }) => {
           <Logo />
         <div className={'menu-container-wrapper'}>
           <div className={"menu-container"}>
-            {mainMenu.map(({ title, subRouts = [], dividerColor }, index) => {
+            {mainMenu.map(({ title, subRouts = [], dividerColor, route }, index) => {
               return (
                 <MenuItem
                   key={"main menu" + index}
                   title={title}
+                  route={route}
                   textStyles={mainMenuTextStyles}
                   containerStyles={{ marginRight: 45, height: 90 }}
                   subRouts={subRouts}
                   dividerColor={dividerColor}
                   className={"bar-with-menu-dropdown"}
-                  size={15}
+                  size={14}
                 />
               );
             })}

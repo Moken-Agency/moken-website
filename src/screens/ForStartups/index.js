@@ -55,9 +55,6 @@ const ForStartups = () => {
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
-        type={"thin"}
-        className={"for-investors-color-block"}
-        size={30}
       />
 
       <LeftInfoWithRightImage

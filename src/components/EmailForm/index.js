@@ -21,17 +21,17 @@ const EmailForm = ({
 
   const handleSubscribe = async () => {
     // https://api.mailerlite.com/api/v2/subscribers
-    try {
-      const response = await spost({url: 'https://api.mailerlite.com/api/v2/subscribers', body: {
-          email: values.email
-        }, headersData: {
-          'X-MailerLite-ApiKey': 'ad3840165bb63b833ad553646d67bdcb',
-          'Content-Type': 'application/json',
-        }});
-      console.log({response});
-    } catch (e) {
-      alert('Errror')
-    }
+    // try {
+    //   const response = await spost({url: 'https://api.mailerlite.com/api/v2/subscribers', body: {
+    //       email: values.email
+    //     }, headersData: {
+    //       'X-MailerLite-ApiKey': 'ad3840165bb63b833ad553646d67bdcb',
+    //       'Content-Type': 'application/json',
+    //     }});
+    //   console.log({response});
+    // } catch (e) {
+    //   alert('Errror')
+    // }
 
 
   }
@@ -51,7 +51,8 @@ const EmailForm = ({
             containerStyles={{ margin: isMobile ? "4vw 0" : "70px 0 78px 0" }}
             size={isMobile ? "5vw" : '2vw'}
             animationType={"fade-in"}
-            type={"thin"}
+            type={"kThin"}
+            // type={"thin"}
             textStyles={{ letterSpacing: 0.3 }}
           >
             {title}

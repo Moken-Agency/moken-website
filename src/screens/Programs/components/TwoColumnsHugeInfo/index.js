@@ -17,7 +17,8 @@ const FirstItem = ({ title, subtitle, imgURL = '' }) => {
         size={22}
         // size={'1.4vw'}
         mobSize={22}
-        type={"semiBold"}
+        type={"kBold"}
+        // type={"semiBold"}
         animationType={"fade-up"}
         className={"labs-benefits-list-item-first"}
       >
@@ -29,7 +30,8 @@ const FirstItem = ({ title, subtitle, imgURL = '' }) => {
         mobSize={16}
         animationType={"fade-up"}
         textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-        type={"light"}
+        type={"kMiddle"}
+        // type={"light"}
       >
         {subtitle}
       </Text>
@@ -58,7 +60,8 @@ const TwoColumnsHugeInfo = ({
       <Title title={title} className={"labs-benefits-title"} />
       <section className={"labs-benefits-container"} style={containerStyles}>
         <Text
-          type={"extraLight"}
+          type={"kBold"}
+          // type={"extraLight"}
           // size={'3.4vw'}
           size={55}
           mobSize={35}
@@ -72,7 +75,8 @@ const TwoColumnsHugeInfo = ({
             // size={'1.25vw'}
             size={20}
             mobSize={16}
-            type={"light"}
+            type={"kMiddle"}
+            // type={"light"}
             animationType={"fade-up"}
             textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
             className={"labs-benefits-container-info-block-first-title"}
@@ -82,7 +86,8 @@ const TwoColumnsHugeInfo = ({
 
           {rightFirstListTitle ? (
             <Text
-              type={"semiBold"}
+              type={"kMiddle"}
+              // type={"semiBold"}
               // size={'.88vw'}
               size={14}
               animationType={"fade-up"}
@@ -102,7 +107,8 @@ const TwoColumnsHugeInfo = ({
             </div> : null}
 
             {rightSecondListTitle ? <Text
-                type={"semiBold"}
+                type={"kMiddle"}
+                // type={"semiBold"}
                 size={14}
                 mobSize={10}
                 animationType={"fade-up"}

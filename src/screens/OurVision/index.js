@@ -61,9 +61,6 @@ const OurVision = () => {
         title={"Looking for the next big thing?"}
         subtitle={"GET INVOLVED"}
         withIcon
-        type={"thin"}
-        size={40}
-        className={"vision-color-block"}
         backgroundColor={"black"}
       />
 

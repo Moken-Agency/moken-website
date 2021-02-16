@@ -5,7 +5,7 @@ export default {
       subtitle:
         "A community driven approach to showcasing & highlighting hardworking founders & innovators in the global startup ecosystem who are creating the future.",
       btnTitle: 'SHARE YOUR STORY',
-      route: '/startup-smart'
+      route: '/start-up-smart'
     },
     {
       title: "Community Events",

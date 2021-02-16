@@ -26,7 +26,7 @@ const Input = ({
   withGoButton,
   onSubmit = () => {},
   error = "",
-  typeText = "Latinka Medium",
+  typeText = "kMiddle",
   width = "100%",
   inputType = "input",
   height = "auto",

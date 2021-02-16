@@ -23,7 +23,7 @@ const ProgramCommunityListPartner = ({
       <section className={"labs-join-container"}>
         <Text
           animationType={"fade-in"}
-          type={"extraLight"}
+          type={"kBold"}
           size={55}
           // size={55}
           mobSize={35}

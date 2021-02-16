@@ -18,6 +18,102 @@ code {
 }
 
 @font-face {
+  font-family: "kBlack";
+  src: url("./fonts/KonnectBlack.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kBlackItalic";
+  src: url("./fonts/KonnectBlackItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kBold";
+  src: url("./fonts/KonnectBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kBoldItalic";
+  src: url("./fonts/KonnectBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kExtraBold";
+  src: url("./fonts/KonnectExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kExtraBoldItalic";
+  src: url("./fonts/KonnectExtraBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kHairline";
+  src: url("./fonts/KonnectHairlineItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kItalic";
+  src: url("./fonts/KonnectItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kLight";
+  src: url("./fonts/KonnectLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kLightItalic";
+  src: url("./fonts/KonnectLightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kMedium";
+  src: url("./fonts/KonnectMedium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kMediumItalic";
+  src: url("./fonts/KonnectMediumItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kRegular";
+  src: url("./fonts/KonnectRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kSemiBold";
+  src: url("./fonts/KonnectSemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kSemiBoldItalic";
+  src: url("./fonts/KonnectSemiBoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kThin";
+  src: url("./fonts/KonnectThin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "kThinItalic";
+  src: url("./fonts/KonnectThinItalic.otf") format("opentype");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
   font-family: "lightItalicDemo";
   src: url("./fonts/ZonaPro-LightItalicDemo.otf") format("opentype");
 }

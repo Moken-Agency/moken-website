@@ -13,10 +13,9 @@ const Logo = ({className = ''}) => {
                 return url === pathname
             })
         })
-        return urlObject && urlObject.color ? urlObject.color : `rgb(230, 65, 104)`
+        return urlObject && urlObject.color ? urlObject.color : `#ff2a68`
     }, []);
 
-    console.log({circleColor});
 
     return (
         <div className={`logo-container ${className}`}>

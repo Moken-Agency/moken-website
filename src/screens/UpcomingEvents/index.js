@@ -57,7 +57,6 @@ const UpcomingEvents = () => {
         title={"Looking to get more out of events?"}
         subtitle={"GET INVOLVED"}
         backgroundColor={"#263da8"}
-        className={"events-color-block"}
       />
 
       {/*<div style={{width: '100%', height: 1, backgroundColor: '#d4d4d4', margin: '3vw 0'}}/>*/}

@@ -7,21 +7,21 @@ export default {
       description:
         "Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert developer, we look for unconventional excellence. ",
       subTitle: "LEARN MORE",
-      route: "/startup-smart-packages",
+      route: "/start-up-smart",
     },
     {
       title: "Innovator Network",
       description:
         "Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert developer, we look for unconventional excellence. ",
       subTitle: "EXPAND",
-      route: "",
+      route: "/access",
     },
     {
       image: Idea,
       description:
         "Not everyone fits into a pre-defined job description. Whether you’re a professional ostrich babysitter or an expert developer, we look for unconventional excellence. ",
       subTitle: "WINNIPEG, MB",
-      route: "",
+      route: "/innovator-feature",
     },
   ],
 };

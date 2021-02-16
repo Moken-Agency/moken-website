@@ -19,7 +19,7 @@ export default {
         routes: [
           {
             title: "About Moken",
-            route: "/",
+            route: "/about-moken",
           },
           {
             title: "The Agency",
