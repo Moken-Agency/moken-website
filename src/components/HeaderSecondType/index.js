@@ -18,7 +18,8 @@ const HeaderSecondType = ({
         size={16}
         mobSize={14}
         animationType={"fade-in"}
-        type={"semiBold"}
+        type={"kMiddle"}
+        // type={"semiBold"}
         className={"header-second-main-title"}
       >
         {title}
@@ -28,7 +29,8 @@ const HeaderSecondType = ({
           size={75}
         mobSize={45}
         animationType={"fade-in"}
-        type={"thin"}
+        type={"kBold"}
+        // type={"thin"}
         className={"header-second-subtitle"}
       >
         {subtitle}

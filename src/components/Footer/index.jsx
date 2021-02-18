@@ -68,19 +68,19 @@ const Footer = ({ isOpen, setIsOpen }) => {
           <Logo className={'footer-logo'}/>
           <Text
             size={30}
-            type={"thin"}
             animationType={"fade-in"}
-            textStyles={{lineHeight: '35px'}}
+            type={"kLight"}
+            textStyles={{lineHeight: '35px', fontWeight: 300}}
             className={'footer-join-text'}
           >
             Join our newsletter
           </Text>
           <Text
             size={20}
-            type={"light"}
+            type={"kLight"}
             animationType={"fade-in"}
             textStyles={joinSecondText}
-            containerStyles={{ marginBottom: 20, lineHeight: "35px"}}
+            containerStyles={{ marginBottom: 20, lineHeight: "35px", fontWeight: 300}}
           >
             We will send you updates related to all things Moken.
           </Text>
@@ -103,8 +103,8 @@ const Footer = ({ isOpen, setIsOpen }) => {
       </div>
       <div className={"bottom-footer-bar"}>
         <div className={"left-footer-bar"}>
-          <Text type={"light"}
-                // size={".8vw"}
+          <Text type={"kRegular"}
+              // size={".8vw"}
                 size={12}
                 mobSize={10} color={"white"}>
             Copyright © Moken Startups Inc. 2020
@@ -112,7 +112,8 @@ const Footer = ({ isOpen, setIsOpen }) => {
           <div className={"privacy-container"}>
             <Text
               onClick={() => history.push("/privacy")}
-              type={"semiBold"}
+              type={"kRegular"}
+              // type={"semiBold"}
               // size={'.75vw'}
               size={12}
               color={"white"}
@@ -124,7 +125,8 @@ const Footer = ({ isOpen, setIsOpen }) => {
             </Text>
             <Text
               onClick={() => history.push("/terms")}
-              type={"semiBold"}
+              type={"kRegular"}
+              // type={"semiBold"}
               // size={'.75vw'}
               size={12}
               color={"white"}

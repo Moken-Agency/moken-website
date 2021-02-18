@@ -117,6 +117,9 @@ export default {
         {
           title: "FOR FOUNDERS",
           route: '/for-founders'
+        },  {
+          title: "FOR STARTUP PROGRAM",
+          route: '/start-up-smart'
         },
       ],
     },

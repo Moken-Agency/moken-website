@@ -91,20 +91,23 @@ const ConnectWithUs = () => {
       <Loader isShow={isFetching} />
       <header>
         <div className={"connect-with-us-header-info"}>
-          <Text size={104} mobSize={75} type={"thin"}>
+          <Text size={104} mobSize={75} textStyles={{lineHeight: isMobile ? '75px' : '104px'}} type={"kBold"}>
             Connect with us.
           </Text>
           <Text
             size={20}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-            type={"light"}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+            // type={"light"}
+            type={"kMedium"}
           >
             We are more than just collaborators.
           </Text>
           <Text
             size={20}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-            type={"light"}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+            // type={"light"}
+            type={"kMedium"}
+
           >
             We are partners in your startup’s success.
           </Text>
@@ -115,7 +118,7 @@ const ConnectWithUs = () => {
       <section className={"connect-with-me-about-container"}>
         <Text
           className={"connect-with-me-about-title"}
-          type={"semiBold"}
+          type={"kMedium"}
           size={16}
         >
           I’M INTERESTED IN HEARING MORE ABOUT,

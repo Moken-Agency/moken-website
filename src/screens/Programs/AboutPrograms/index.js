@@ -45,7 +45,7 @@ const AboutPrograms = () => {
           "Enthusiastic individuals working together to create extraordinary startups"
         }
         description={
-            `Dubai Future Accelerators (DFA), an initiative by Dubai Future Foundation, facilitates the collaboration between government entities and private sector organizations with start-ups, scale-ups, and innovative SMEs from around the world to co-create solutions for future challenges. DFA’s fall program is hosted in collaboration with Dubai Roads and Transport Authority, Dubai Electricity and Water Authority, Dubai Health Authority and Etisalat Digital.
+            `Dubai Future Accelerators (DFA), an initiative by Dubai Future Foundation, facilitates the collaboration between government entities and private sector organizations with start-ups, scale-ups, and innovative SMEs from around the world to co-create solutions for future challenges. DFA’s fall program is hosted in collaboration with Dubai Roads and Transport Authority, Dubai Electricity and Water Authority, Dubai Health Authority and Etisalat Digital.
 We are idea generators, goal seekers, challenge-thirsty professionals, creators of unique Internet projects. We deliver unconventional solutions, combining the most advanced web technologies, modern design and bold communication. For us, each project is a meaningful adventure, in which we become partners with our clients, on the road to perfection.
 Our community of practice operates through high-touch programs, robust content, and a global portfolio of redemptive business & nonprofit ventures.`
         }
@@ -85,7 +85,8 @@ Our community of practice operates through high-touch programs, robust content, 
             size={55}
             mobSize={35}
             animationType={"fade-in"}
-            type={"extraLight"}
+            type={"kBold"}
+            // type={"extraLight"}
           >
             Join our trusted community of partners and market what you do to
             founders and startups, globally.
@@ -123,7 +124,7 @@ Our community of practice operates through high-touch programs, robust content, 
           animationType={"fade-in"}
           size={55}
           mobSize={35}
-          type={"extraLight"}
+          type={"kBold"}
         >
           Join our trusted community of partners and market what you do to
           founders and startups, globally.
@@ -163,7 +164,7 @@ Our community of practice operates through high-touch programs, robust content, 
           // }}
         >
           <Text
-            type={"extraLight"}
+            type={"kBold"}
             containerStyles={{
               marginRight: isMobile ? 0 : 130,
               alignItems: "flex-start",

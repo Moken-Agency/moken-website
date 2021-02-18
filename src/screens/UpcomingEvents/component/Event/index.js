@@ -27,7 +27,7 @@ const Event = () => {
             size={55}
             mobSize={35}
             animationType={"fade-in"}
-            type={"extraLight"}
+            type={"kBold"}
             containerStyles={{ marginBottom: isMobile ? 44 : "2vw" }}
           >
             Event title goes here

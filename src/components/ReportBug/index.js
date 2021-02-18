@@ -41,7 +41,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
 
         <div className={"report-bug-left-container"}>
           <Text
-            size={".8vw"}
+            size={12}
             mobSize={16}
             type={"semiBold"}
             textStyles={{ letterSpacing: 4 }}
@@ -49,7 +49,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
             FOUND A TYPO?
           </Text>
           <Text
-            size={".8vw"}
+            size={12}
             mobSize={16}
             type={"semiBold"}
             textStyles={{ letterSpacing: 4 }}
@@ -108,7 +108,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
 
           <div className={"btn-container"}>
             <Button
-              size={".8vw"}
+              size={12}
               mobSize={12}
               borderType={"bordered"}
               color={"white"}

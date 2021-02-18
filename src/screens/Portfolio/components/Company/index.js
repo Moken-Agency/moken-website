@@ -21,7 +21,7 @@ const Company = ({
         <Text
           size={16}
           animationType={"fade-in"}
-          type={"kMiddle"}
+          type={"kRegular"}
           className={"company-name"}
           mobSize={12}
         >
@@ -29,7 +29,7 @@ const Company = ({
         </Text>
         <Text
           animationType={"fade-in"}
-          type={"kBold"}
+          type={"kSemiBold"}
           className={"project-name"}
           size={30}
           mobSize={22}
@@ -43,7 +43,7 @@ const Company = ({
         animationType={"fade-in"}
         className={"company-description"}
         type={"kLight"}
-        textStyles={{lineHeight: isMobile ? "2.2vw" : '29px' }}
+        textStyles={{lineHeight: '29px' }}
       >
         {description}
       </Text>
@@ -54,7 +54,7 @@ const Company = ({
             size={14}
             animationType={"fade-in"}
             className={"company-city"}
-            type={"kMiddle"}
+            type={"kRegular"}
             textStyles={{letterSpacing: 4}}
             mobSize={12}
           >

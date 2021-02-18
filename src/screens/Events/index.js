@@ -91,7 +91,7 @@ const Events = () => {
 
         <div className={'creative-community'}>
             <div className={'creative-community-text-container'}>
-                <Text type={'extraLight'}
+                <Text type={'kBold'}
                       size={55}
                       mobSize={35}
                       className={'creative-community-first-text-container'}

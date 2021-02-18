@@ -74,7 +74,8 @@ const OurPartners = () => {
 
       <div className={"partners-increase-container"}>
         <Text
-          type={"extraLight"}
+          type={"kBold"}
+          // type={"extraLight"}
           animationType={"fade-in"}
           // size={'3.4vw'}
           size={55}
@@ -122,12 +123,13 @@ const OurPartners = () => {
             // size={'3.4vw'}
               size={55}
               mobSize={35}
-              type={'extraLight'}
+              type={'kBold'}
+              // type={'extraLight'}
               containerStyles={{width: isMobile ? 'auto' : '600px'}}
               // containerStyles={{width: isMobile ? 'auto' : 583}}
         >Interested in becoming a partner and leveraging a global community network?</Text>
         <div className={'explore-our-partners-potential-container'}>
-            <Text type={'semiBold'}
+            <Text type={'kSemiBold'}
                   // size={'.9vw'}
                   mobSize={12}
                   size={14}

@@ -57,7 +57,8 @@ const history = useHistory();
                     size={55}
                     animationType={"fade-up"}
                     mobSize={35}
-                    type={"extraLight"}
+                    type={"kBold"}
+                    // type={"extraLight"}
                 >
                     We are driven by the passion for working with determined innovators
                     who live to make a change in the world.
@@ -69,7 +70,7 @@ const history = useHistory();
                     animationType={"fade-up"}
                     textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
                     mobSize={16}
-                    type={"light"}
+                    type={"kLight"}
                 >
                     We understand that together we should see results, not just reports with every bit of work we do. Through developing tailor-made strategies that assist in beating out the competition by tearing up the rule book, our agile approach arms entrepreneurs, founders, and startups with the tools necessary to overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation.
                 </Text>
@@ -79,7 +80,7 @@ const history = useHistory();
                     <div className={"about-moken-second-kendra-info-block"}>
                         <Text
                             className={"about-moken-second-kendra-info-text"}
-                            type={"semiBold"}
+                            type={"kSemiBold"}
                             animationType={"fade-up"}
                             // size={'1.5vw'}
                             size={24}
@@ -93,7 +94,7 @@ const history = useHistory();
                             animationType={"fade-up"}
                             mobSize={12}
                             textStyles={{ letterSpacing: 4 }}
-                            type={"semiBold"}
+                            type={"kSemiBold"}
                         >
                             — Kendra Garagan | Founder & Partner
                         </Text>
@@ -113,14 +114,14 @@ const history = useHistory();
             size={16}
             // size={'1vw'}
             animationType={"fade-up"}
-            type={"semiBold"}
+            type={"kSemiBold"}
           >
             THIS IS WHERE THE VIDEO TITLE GOES
           </Text>
           <Text
             size={20}
             // size={'1.2vw'}
-            type={"light"}
+            type={"kLight"}
             animationType={"fade-up"}
             textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
             mobSize={16}

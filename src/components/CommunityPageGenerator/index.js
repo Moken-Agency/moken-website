@@ -105,7 +105,7 @@ const CommunityPageGenerator = ({
             // size={55}
             mobSize={35}
             animationType={"fade-in"}
-            type={"extraLight"}
+            type={"kBold"}
             containerStyles={{ marginBottom: isMobile ? 40 : '75px' }}
             textStyles={{
               letterSpacing: 0.5,

@@ -16,7 +16,7 @@ const TitleSubtitleVerticalDescriptions = ({
       <Text
         className={"title-sub-description-vertical-subtitle"}
         animationType={"fade-in"}
-        type={"extraLight"}
+        type={"kBold"}
         size={55}
         mobSize={35}
       >

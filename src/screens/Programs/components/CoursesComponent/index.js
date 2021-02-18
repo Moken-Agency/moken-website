@@ -15,7 +15,8 @@ const CoursesComponent = () => {
           animationType={"fade-up"}
           size={55}
           mobSize={35}
-          type={"extraLight"}
+          type={"kBold"}
+          // type={"extraLight"}
           className={"courses-courses-text"}
         >
           Self directed courses….Join our trusted community of partners and

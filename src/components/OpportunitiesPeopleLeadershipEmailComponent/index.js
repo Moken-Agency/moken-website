@@ -13,31 +13,37 @@ const OpportunitiesPeopleLeadershipEmailComponent = ({title = '', subtitle = '',
         <section className={"opportunities-form-container"}>
             <div className={"opportunities-form-left-container"}>
                 <Text
-                    size={"3vw"}
+                    size={55}
                     animationType={"fade-in"}
                     subtitle={"Not exactly what you were looking for?"}
-                    type={"extraLight"}
+                    type={"kBold"}
+                    // type={"extraLight"}
                     className={"subtitle"}
                 >
                     {subtitle}
                 </Text>
                 <Text
-                    type={"light"}
+                    type={"kLight"}
+                    // type={"light"}
                     animationType={"fade-in"}
-                    size={"1.2vw"}
+                    size={20}
                     className={"left-second-title"}
+                    containerStyles={{lineHeight: '30px'}}
                 >
                     {description}
                 </Text>
                 <div className={"input-container"}>
                     <Input placeholder={"Your name"} c
                            containerStyles={{width: '45%'}}
-                           mobSize={15} />
+                           mobSize={15}
+                           value={''}
+                    />
                     <Input
                         containerStyles={{width: '45%'}}
                         placeholder={"Email"}
                         width={"100%"}
                         mobSize={15}
+                        value={''}
                         withGoButton
                     />
                 </div>

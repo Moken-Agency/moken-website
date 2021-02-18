@@ -38,7 +38,7 @@ const TitleShortListWithBtn = ({title = '',listItemBtnTitle = '', subtitle = '',
                         /> :
                     <Text
                         size={22}
-                        type={"semiBold"}
+                        type={"kSemiBold"}
                         animationType={"fade-in"}
                         className={"text-submit"}
                         onClick={btnOnClick}

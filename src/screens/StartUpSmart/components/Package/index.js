@@ -67,7 +67,7 @@ const Package = ({
           >
             {title}
           </Text>
-          <Text type={"extraLight"} size={55} mobSize={33}>
+          <Text type={"kBold"} size={55} mobSize={33}>
             {subtitle}
           </Text>
         </div>
@@ -197,7 +197,7 @@ const Package = ({
                   size={55}
                   animationType={"fade-in"}
                   mobSize={35}
-                  type={"extraLight"}
+                  type={"kBold"}
                 >
                   {title}
                 </Text>

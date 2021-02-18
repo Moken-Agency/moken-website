@@ -16,7 +16,7 @@ const ColorBlock = ({
   // size = '4.06vw',
   size = 55,
   withIcon = false,
-  type = "kLight",
+  type = "kThin",
   mobSize = "9vw",
   blockType = "big",
   containerStyles = {},
@@ -25,7 +25,7 @@ const ColorBlock = ({
   const { isMobile } = useWindowDimensions();
   const mobSizeTemp = blockType === "middle" ? 32 : mobSize;
   const sizeTemp = blockType === "middle" ? 40 : size;
-  const typeTemp = blockType === "middle" ? "kMiddle" : type;
+  const typeTemp = blockType === "middle" ? "kLight" : type;
 
   return (
     <>
@@ -42,6 +42,7 @@ const ColorBlock = ({
             color={textColor}
             animationType={"fade-in"}
             className={"block-container-history"}
+            textStyles={{fontWeight: 100}}
             containerStyles={{ width: isMobile ? "auto" : textWidth }}
           >
             {title}
@@ -49,7 +50,8 @@ const ColorBlock = ({
           <div style={{ display: "flex", alignItems: "center", cursor: 'pointer' }} onClick={onClick}>
             <Text
               size={16}
-              type={"semiBold"}
+              type={"kRegular"}
+              // type={"semiBold"}
               mobSize={"3vw"}
               animationType={"fade-in"}
               textStyles={{ letterSpacing: isMobile ? 3 : 4 }}

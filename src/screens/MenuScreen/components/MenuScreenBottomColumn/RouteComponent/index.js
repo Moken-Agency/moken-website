@@ -10,7 +10,8 @@ const styles = {
   },
   routs: {
     color: "white",
-      cursor: 'pointer'
+    cursor: 'pointer',
+    fontWeight: 300
     // letterSpacing: 4
   },
 };
@@ -28,7 +29,8 @@ const RouteComponent = ({ title = "", pressableComponent, route }) => {
               textStyles={styles.routs}
               className={'black-menu-bottom-column-item'}
               containerStyles={{marginBottom: 15}}
-              type={"light"}
+              type={"kLight"}
+              // type={"light"}
               onClick={() =>  pressableComponent ? setIsOpen(true) : history.push(route)}
           >
             {title}

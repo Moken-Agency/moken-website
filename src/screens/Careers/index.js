@@ -38,6 +38,7 @@ const Careers = () => {
                              subtitle={'We’re hiring. If something piques your interest, let us know.'}
                              list={options.opportunities}
                              btnTitle={'View all opportunities'}
+                             listItemBtnTitle={'VIEW JOB'}
                              btnOnClick={() => history.push("/opportunities")}
       />
 
@@ -66,7 +67,7 @@ const Careers = () => {
           <div className={"careers-black-block-left-container"}>
             <img className={"careers-mob-img"} src={CareersMobImg} />
             <Title
-              size={".8vw"}
+              size={12}
               className={"careers-black-block-title"}
               title={"TAKE A CHANCE"}
               color={"white"}
@@ -74,13 +75,15 @@ const Careers = () => {
             <Subtitle
               mobSize={35}
               size={55}
-              subtitle={"Not exactly what you were looking for?"}
+              type={'kLight'}
+              subtitle={"We would still love to hear from you"}
               color={"white"}
             />
             <Description
               color={"white"}
               mobSize={16}
               size={20}
+              type={'kLight'}
               // size={"1vw"}
               textStyles={{lineHeight: isMobile ? null : '35px'}}
               description={[

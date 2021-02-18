@@ -27,7 +27,7 @@ const HugeInfoAllListColumn = ({
 
       <section className={"labs-startups-container"}>
         <Text
-          type={"extraLight"}
+          type={"kBold"}
           // size={55}
           size={55}
 

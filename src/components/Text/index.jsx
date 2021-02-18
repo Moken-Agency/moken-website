@@ -10,7 +10,7 @@ const Text = ({
   onMouseEnter = () => {},
   onMouseLeave = () => {},
   onClick = () => {},
-  type = "medium",
+  type = "kMedium",
   size = 12,
   mobSize = size,
   className = "",

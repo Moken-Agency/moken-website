@@ -20,7 +20,7 @@ const TitleSubTwoListCenter = ({
           className={"title-sub-two-list-subtitle"}
           animationType={"fade-in"}
           mobSize={35}
-          type={"extraLight"}
+          type={"kBold"}
         >
           {subtitle}
         </Text>

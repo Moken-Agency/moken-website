@@ -9,7 +9,7 @@
   }
   .left-image-title-sub-desc-main-image {
     width: 668px;
-    height: 1000px;
+    max-height: 1000px;
     background-color: grey;
     margin-right: 80px;
     @media only screen and (max-width: 600px) {
@@ -19,7 +19,7 @@
     }
   }
   .left-image-title-sub-desc-right-container {
-    width: 530px;
+    max-width: 530px;
     @media only screen and (max-width: 600px) {
       width: auto;
     }

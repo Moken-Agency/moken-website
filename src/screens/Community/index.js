@@ -114,7 +114,7 @@ const Community = () => {
 
       <Title title={'OUR COMMUNITY'} />
 
-      <Text type={'extraLight'}
+      <Text type={'kBold'}
             size={55}
             mobSize={35}
             containerStyles={{padding: '0 14vw',

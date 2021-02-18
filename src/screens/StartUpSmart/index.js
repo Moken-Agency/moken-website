@@ -18,6 +18,7 @@ const StartUpSmart = () => {
     <div className={"start-up-smart-container"}>
       <HeaderTitle
         title={"STARTUPSMART PACKAGES"}
+        subtitleClassName={'start-up-smart-header-subtitle'}
         subtitle={"Building unforgettable brands for start-ups with ambition."}
       />
 
@@ -79,7 +80,7 @@ const StartUpSmart = () => {
           mobSize={35}
           animationType={"fade-in"}
           className={"start-up-smart-fifth-text-second"}
-          type={"extraLight"}
+          type={"kBold"}
           size={55}
         >
           We make it easy to kickstart your vision.
@@ -118,7 +119,7 @@ const StartUpSmart = () => {
           size={55}
           animationType={"fade-in"}
           className={"start-up-smart-sixth-text-first"}
-          type={"extraLight"}
+          type={"kBold"}
         >
           We push boundaries, question assumptions and get results. Ready?
         </Text>

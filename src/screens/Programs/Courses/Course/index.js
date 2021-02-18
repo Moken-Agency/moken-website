@@ -14,7 +14,8 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
             size={35}
             className={"course-component-first"}
             mobSize={20}
-            type={"thin"}
+            type={"kBold"}
+            // type={"thin"}
           >
             {title}
           </Text>
@@ -23,7 +24,9 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
             size={18}
             mobSize={14}
             className={"course-component-second"}
-            type={"light"}
+            type={"kMedium"}
+            textStyles={{fontWeight: 300}}
+            // type={"light"}
           >
             {description}
           </Text>

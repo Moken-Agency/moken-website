@@ -77,12 +77,12 @@ const PageGenerator = ({
                 containerStyles={{ marginBottom: isMobile ? 50 : "3vw" }}
               />
               <Description
-                type={"light"}
+                type={"kLight"}
                 mobSize={16}
                 description={description}
-                size={'1.25vw'}
+                // size={'1.25vw'}
                 textStyles={{lineHeight: isMobile ? '35px' : '2.2vw'}}
-                // size={20}
+                size={20}
                 {...descriptionOptions}
               />
               <Submit submitForm={submit} />

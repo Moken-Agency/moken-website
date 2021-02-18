@@ -26,14 +26,16 @@ const Expertise = () => {
             size={16}
             // size={'1vw'}
             mobSize={14}
-            type={"semiBold"}
+            type={"kMedium"}
+            // type={"semiBold"}
             // mobColor={"white"}
           >
             EXPERTISE
           </Text>
           <Text
             className={"expertise-subtitle"}
-            type={"thin"}
+            type={"kBold"}
+            // type={"thin"}
             // size={'4.7vw'}
             size={75}
             animationType={"fade-in"}
@@ -54,7 +56,7 @@ const Expertise = () => {
           className={"expertise-started-subtitle"}
           // textStyles={{marginTop: '8vw'}}
           containerStyles={{ marginBottom: isMobile ? 100 : "8vw" }}
-          type={"extraLight"}
+          type={"kBold"}
           animationType={"fade-in"}
           size={55}
           mobSize={35}
@@ -95,7 +97,7 @@ const Expertise = () => {
               />
               <Text
                 color={"white"}
-                type={"extraLight"}
+                type={"kBold"}
                 animationType={"fade-in"}
                 size={55}
                 mobSize={35}
@@ -140,7 +142,6 @@ const Expertise = () => {
                 borderType={"bordered"}
                 containerStyles={{
                   marginRight: 30,
-                  padding: isMobile ? "" : "1.95vw 2.2vw",
                 }}
               />
               <Button
@@ -150,7 +151,6 @@ const Expertise = () => {
                 // size={14}
                 mobSize={10}
                 type={"bordered-white"}
-                containerStyles={{ padding: isMobile ? "" : "1.95vw 2.2vw" }}
               />
             </div>
           </div>

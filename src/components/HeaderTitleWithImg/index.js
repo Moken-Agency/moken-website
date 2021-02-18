@@ -24,7 +24,8 @@ const HeaderTitleWithImg = ({
         >
           <div className={"header-title-with-img-title-container"}>
             <Text
-              type={"semiBold"}
+              // type={"semiBold"}
+              type={"kMedium"}
               mobSize={14}
               color={color}
               size={16}
@@ -38,9 +39,10 @@ const HeaderTitleWithImg = ({
             </Text>
             <Text
               size={75}
-              textStyles={{ lineHeight: "80px" }}
+              textStyles={{ lineHeight: "80px", fontWeight: 300 }}
               color={color}
-              type={"thin"}
+              type={"kMedium"}
+
             >
               {subtitle}
             </Text>

@@ -32,7 +32,8 @@ const ColumnTextComponent = ({ title, index, route }) => {
     <Text
       key={"column menu" + index + title}
       textStyles={{ ...routeStyle, color }}
-      type={"light"}
+      type={"kLight"}
+      // type={"light"}
       size={20}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -48,10 +49,11 @@ const ColumnMenu = ({ routes = [], title }) => {
   return (
     <div className={"column-menu-container"}>
       <Text
-        type={"semiBold"}
+        type={"kRegular"}
+        // type={"semiBold"}
         // size={'.9vw'}
         size={14}
-        textStyles={{ ...titleStyles, letterSpacing: 4, marginBottom: ".85vw" }}
+        textStyles={{ ...titleStyles, letterSpacing: 4, marginBottom: ".85vw", fontWeight: 300 }}
         containerStyles={{ marginBottom: 35, marginRight: "2.3vw" }}
       >
         {title.toUpperCase()}

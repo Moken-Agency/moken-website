@@ -29,7 +29,7 @@ const TitleSubDescription = ({
         <Text
           className={"title-sub-description-description"}
           animationType={"fade-in"}
-          type={"kMiddle"}
+          type={"kLight"}
           // type={"light"}
           size={20}
           mobSize={16}

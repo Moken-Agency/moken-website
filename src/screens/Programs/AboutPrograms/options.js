@@ -49,13 +49,13 @@ export default {
   ],
   programs: [
     {
-      title: "FutureFounders Program",
+      title: "Future Founders Program",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btnTitle: "GET INVOLVED",
     },
     {
-      title: "RaisingRight Program",
+      title: "Raising Right Program",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btnTitle: "GET INVOLVED",
@@ -75,13 +75,13 @@ export default {
   ],
   programsSecond: [
     {
-      title: "FutureFounders Program",
+      title: "Future Founders Program",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btnTitle: "GET INVOLVED",
     },
     {
-      title: "RaisingRight Program",
+      title: "Raising Right Program",
       subtitle:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btnTitle: "GET INVOLVED",

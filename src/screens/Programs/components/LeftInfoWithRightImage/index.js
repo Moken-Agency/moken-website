@@ -48,8 +48,8 @@ const LeftInfoWithRightImage = ({
             // size={'1.25vw'}
             size={20}
             mobSize={16}
-            type={"kMiddle"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            type={"kLight"}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
             containerStyles={{ marginBottom: '55px' }}
           >
             {description}

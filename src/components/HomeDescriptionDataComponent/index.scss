@@ -1,0 +1,16 @@
+.home-description-data-container {
+  max-width: 586px;
+  .home-description-data-title {
+    margin-bottom: 50px;
+    span {
+      line-height: 45px;
+    }
+  }
+  .home-description-data-description {
+    margin-bottom: 50px;
+    max-width: 476px;
+    span {
+      line-height: 30px;
+    }
+  }
+}

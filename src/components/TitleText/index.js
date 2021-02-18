@@ -12,7 +12,7 @@ const TitleText = ({ title = "", subtitle = "", className = "" }) => {
         animationType={"fade-in"}
         className={"title-text-subtitle"}
         mobSize={35}
-        type={"extraLight"}
+        type={"kBold"}
       >
         {subtitle}
       </Text>

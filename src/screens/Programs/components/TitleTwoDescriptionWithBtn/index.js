@@ -23,7 +23,7 @@ const TitleTwoDescriptionWithBtn = ({
           // size={55}
           animationType={"fade-in"}
           mobSize={35}
-          type={"extraLight"}
+          type={"kBold"}
         >
           {title}
         </Text>

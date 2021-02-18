@@ -33,10 +33,10 @@ const UpcomingEvents = () => {
           >
             JOIN US
           </Text>
-          <Text type={"thin"} size={75} mobSize={45}>
+          <Text type={"kBold"} size={75} mobSize={45}>
             Upcoming
           </Text>
-          <Text type={"thin"} size={75} mobSize={45}>
+          <Text type={"kBold"} size={75} mobSize={45}>
             Events
           </Text>
         </div>

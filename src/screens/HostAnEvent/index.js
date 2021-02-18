@@ -48,7 +48,7 @@ Whether B2C, B2B or employee engagement, we strongly believe that exhibitions sh
         size={55}
         mobSize={35}
         animationType={"fade-in"}
-        type={"extraLight"}
+        type={"kBold"}
       >
         An event designed for any budget, goal, and community.
       </Text>

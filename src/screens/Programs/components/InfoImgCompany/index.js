@@ -40,7 +40,7 @@ const InfoImgCompany = ({
             size={55}
             animationType={"fade-up"}
             mobSize={35}
-            type={"extraLight"}
+            type={"kBold"}
             containerStyles={{ marginBottom: 63 }}
           >
             {title}

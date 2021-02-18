@@ -57,7 +57,7 @@ const ProductTestingTeam = () => {
             className={"joins-title"}
             animationType={"fade-in"}
             size={55}
-            type={"extraLight"}
+            type={"kBold"}
           >
             Join Us Today.
           </Text>

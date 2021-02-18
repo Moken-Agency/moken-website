@@ -11,7 +11,7 @@ const FaqComponent = ({ title, faqs = [], isLast = false }) => {
     <div className={`faq-component-container ${isLast ? "faq-last" : ""}`}>
       <div className={"faq-component-title-container"}>
         <Text
-          type={"extraLight"}
+          type={"kBold"}
           size={55}
           animationType={"fade-in"}
           mobSize={35}

@@ -49,7 +49,7 @@ const OurVision = () => {
 
       <LeftImageTitleSubDesList
         imgUrl={""}
-        title={"OUR VALUES<"}
+        title={"OUR VALUES"}
         subtitle={"We make it easy to kickstart your vision."}
         list={options.values}
         description={`With packages at a startup price point, we work with founders and ideators with

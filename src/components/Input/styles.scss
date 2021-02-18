@@ -78,14 +78,14 @@
 
 .float-label input {
   width: 100%;
-  height: 56px;
+  height: 48px;
   padding-top: 14px;
   outline: 0;
   //border-bottom: 1px solid #ddd;
   border: 0;
   background: transparent;
-  border-bottom: 1px solid black;
-
+  border-bottom: 2px solid black;
+  transition: 1s;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
@@ -101,22 +101,23 @@
   color: #999;
   pointer-events: none;
   position: absolute;
-  transform: translate(0, 26px) scale(1);
+  transform: translate(0, 30px) scale(1);
   transform-origin: top left;
   transition: all 0.2s ease-out;
 }
 
 .float-label:focus-within label {
-  transform: translate(0, 14px) scale(0.75);
+  transform: translate(0, 0px) scale(0.75);
 }
 
 .float-label:focus-within input {
-  border-bottom: 1px solid #263da8;
+  border-bottom: 2px solid #263da8;
 
 }
 .float-label .Active {
 
-  transform: translate(0, 14px) scale(0.75);
+  //transform: translate(0, 5px) scale(0.75);
+  transform: translate(0, 1px) scale(0.75);
 }
 
 
@@ -138,11 +139,12 @@
   padding-top: 14px;
   outline: 0;
   border: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 
   background: transparent;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  transition: 1s;
 }
 
 .float-label-textarea label {
@@ -159,6 +161,10 @@
 .float-label-textarea:focus-within label {
   transform: translate(0, -4px) scale(0.75);
 }
+.float-label-textarea:focus-within textarea {
+  border-bottom: 2px solid #263da8;
+}
+
 .float-label-textarea .Active {
   transform: translate(0, -4px) scale(0.75);
 }
@@ -166,8 +172,10 @@
 
 
 .input-error-message {
-  top: 10px;
-  position: relative;
+  //top: 10px;
+  //position: relative;
+  position: absolute;
+  bottom: -20px;
 }
 
 

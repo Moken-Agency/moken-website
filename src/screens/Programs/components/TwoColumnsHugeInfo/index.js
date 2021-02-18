@@ -29,8 +29,8 @@ const FirstItem = ({ title, subtitle, imgURL = '' }) => {
         size={20}
         mobSize={16}
         animationType={"fade-up"}
-        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
-        type={"kMiddle"}
+        textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+        type={"kLight"}
         // type={"light"}
       >
         {subtitle}
@@ -75,10 +75,10 @@ const TwoColumnsHugeInfo = ({
             // size={'1.25vw'}
             size={20}
             mobSize={16}
-            type={"kMiddle"}
+            type={"kLight"}
             // type={"light"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
             className={"labs-benefits-container-info-block-first-title"}
           >
             {rightTitle}
@@ -86,7 +86,7 @@ const TwoColumnsHugeInfo = ({
 
           {rightFirstListTitle ? (
             <Text
-              type={"kMiddle"}
+              type={"kRegular"}
               // type={"semiBold"}
               // size={'.88vw'}
               size={14}
@@ -107,7 +107,7 @@ const TwoColumnsHugeInfo = ({
             </div> : null}
 
             {rightSecondListTitle ? <Text
-                type={"kMiddle"}
+                type={"kRegular"}
                 // type={"semiBold"}
                 size={14}
                 mobSize={10}

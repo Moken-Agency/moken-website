@@ -1,0 +1,15 @@
+.home-header-component {
+  display: flex;
+  margin-bottom: 83px;
+  align-items: flex-start;
+  .home-header-number {
+    align-items: flex-start;
+    width: 41px;
+  }
+  .home-header-title {
+    max-width: 532px;
+    span {
+      line-height: 100px;
+    }
+  }
+}

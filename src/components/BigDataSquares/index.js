@@ -27,7 +27,7 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED", route = '/
         <Text
             size={55}
             // size={'3.4vw'}
-            type={isMobile ? "thin" : "kBold"}
+            type={"kBold"}
             mobSize={25}
             containerStyles={{marginRight: '2vw'}}
             textStyles={{ lineHeight: isMobile ? "24px" : "65px" }}
@@ -36,7 +36,7 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED", route = '/
         </Text>
         <Text
             size={20}
-            type={"kMiddle"}
+            type={"kLight"}
             mobSize={16}
             textStyles={{ lineHeight: isMobile ? "25px" : "35px" }}
             className={'big-data-squares-subtitle'}

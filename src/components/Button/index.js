@@ -20,8 +20,8 @@ const Button = ({
   size = 14,
   mobSize = 12,
   className = "",
-  textType = "kMiddle",
-                  disabled = false
+  textType = "kRegular",
+  disabled = false
 }) => {
   const { isMobile } = useWindowDimensions();
 

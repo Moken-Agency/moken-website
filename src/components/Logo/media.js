@@ -1,4 +1,4 @@
 export default {
-    color: '#ff7d3e',
-    urls: []
+    color: '#ff2a68',
+    urls: ['/access']
 }

@@ -19,7 +19,7 @@ const JobOfferTitle = ({
         <div className={`job-offer-title-container`}>
           <div className={"job-offer-title-title-container"}>
             <Text
-              type={"semiBold"}
+              type={"kRegular"}
               mobSize={14}
               color={color}
               // size={'1vw'}
@@ -31,11 +31,11 @@ const JobOfferTitle = ({
               {title}
             </Text>
             <Text
-              type={"thin"}
-              size={'6.5vw'}
-              // size={104}
+              type={"kBold"}
+              // size={'6.5vw'}
+              size={104}
               color={color}
-              textStyles={{ lineHeight: isMobile ? "105px" : '6.6vw' }}
+              textStyles={{ lineHeight: '105px' }}
               containerStyles={{ padding: 0 }}
             >
               {subtitle}

@@ -33,7 +33,7 @@ const ImageTitleSubDescList = ({
           className={"image-title-sub-desc-list-subtitle"}
           animationType={"fade-in"}
           mobSize={35}
-          type={"extraLight"}
+          type={"kBold"}
         >
           {subtitle}
         </Text>

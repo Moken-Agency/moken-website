@@ -46,7 +46,7 @@ const AboutAgency = () => {
       <Title className={"partners-title"} title={"OUR EXPERTISE"} />
 
       <div className={"about-agency-increase-container"}>
-        <Text size={"3.1vw"} mobSize={35} type={"kBold"}>
+        <Text  size={55} mobSize={35} type={"kBold"}>
           We increase website leads, maximize revenue and produce.
         </Text>
       </div>
@@ -112,11 +112,11 @@ const AboutAgency = () => {
                            <div style={{opacity: index !== 0 ? 0.1 : 1 }}>
                                <Text size={75}
                                      mobSize={55}
-                                     type={'thin'}>Rent Your Ride</Text>
+                                     type={'kThin'}>Rent Your Ride</Text>
                                <Text size={16}
                                      mobSize={14}
                                      textStyles={{letterSpacing: 4}}
-                                     type={'semiBold'}>PRODUCT DESIGN & DEVELOPMENT</Text>
+                                     type={'kSemiBold'}>PRODUCT DESIGN & DEVELOPMENT</Text>
                            </div>
                         </div>
                     )
@@ -139,14 +139,14 @@ const AboutAgency = () => {
         <div className={'client-say-wrapper-container'}>
             <div className={'client-say-container'}>
                 <Text size={30}
-                      type={'thin'}
+                      type={'kThin'}
                       containerStyles={{width: 662}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</Text>
                 <div className={'client-say-text-container'}>
                     <div>
-                        <Text size={14} type={'semiBold'} containerStyles={{marginBottom: 3}}>— CLIENT</Text>
-                        <Text size={12} type={'semiBold'} containerStyles={{marginLeft: 18}}>Company Name</Text>
+                        <Text size={14} type={'kSemiBold'} containerStyles={{marginBottom: 3}}>— CLIENT</Text>
+                        <Text size={12} type={'kSemiBold'} containerStyles={{marginLeft: 18}}>Company Name</Text>
                     </div>
 
                 </div>

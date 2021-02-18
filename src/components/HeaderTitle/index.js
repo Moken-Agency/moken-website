@@ -19,7 +19,7 @@ const HeaderTitle = ({
         size={16}
         mobSize={14}
         animationType={"fade-in"}
-        type={"kMiddle"}
+        type={"kRegular"}
         className={`header-title-main-title ${titleClassName}`}
       >
         {title}
@@ -41,7 +41,8 @@ const HeaderTitle = ({
           mobSize={16}
           animationType={"fade-in"}
           className={`header-title-description ${descriptionClassName}`}
-          type={"kMiddle"}
+          type={"kLight"}
+          textStyles={{fontWeight: 300}}
         >
           {description}
         </Text>

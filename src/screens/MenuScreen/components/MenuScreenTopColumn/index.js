@@ -11,6 +11,7 @@ const styles = {
   description: {
     color: "white",
     lineHeight: "29px",
+    fontWeight: 300
   },
   subTitle: {
     color: "white",
@@ -34,7 +35,7 @@ const MenuScreenTopColumn = ({
       ) : (
         <Text
           size={30}
-          type={"semiBold"}
+          type={"kSemiBold"}
           textStyles={styles.title}
           containerStyles={{ marginBottom: 30 }}
         >
@@ -43,7 +44,9 @@ const MenuScreenTopColumn = ({
       )}
       <Text
         size={18}
-        type={"light"}
+        type={"kLight"}
+
+        // type={"light"}
         textStyles={styles.description}
         containerStyles={{ marginBottom: 30 }}
       >
@@ -53,9 +56,11 @@ const MenuScreenTopColumn = ({
         <Text
           size={14}
           mobSize={10}
-          type={"semiBold"}
+          // type={"semiBold"}
           className={'black-menu-screen-subtitle'}
           textStyles={styles.subTitle}
+          type={"kSemiBold"}
+
         >
           {subTitle}
         </Text>

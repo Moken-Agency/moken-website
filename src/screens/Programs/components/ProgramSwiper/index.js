@@ -19,7 +19,7 @@ const ProgramSwiper = ({
           size={55}
           mobSize={35}
           animationType={"fade-in"}
-          type={"extraLight"}
+          type={"kBold"}
           className={"program-swiper-subtitle"}
         >
           {subtitle}

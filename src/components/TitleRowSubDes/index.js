@@ -9,6 +9,7 @@ const TitleRowSubDes = ({
   subtitle = "",
   description = "",
   onClick,
+                            btnTitle = 'APPLY TO INCUBATOR',
                           descriptions = []
 }) => {
   return (
@@ -17,7 +18,8 @@ const TitleRowSubDes = ({
       <div className={"title-row-sub-desc-row-container"}>
         <Text
           className={"title-row-sub-desc-subtitle"}
-          type={"extraLight"}
+          type={"kBold"}
+          // type={"extraLight"}
           size={55}
           animationType={"fade-in"}
           mobSize={35}
@@ -31,7 +33,9 @@ const TitleRowSubDes = ({
                   <Text
                       className={"title-row-sub-desc-description"}
                       size={20}
-                      type={"light"}
+                      type={"kLight"}
+                      // type={"light"}
+                      textStyles={{fontWeight: 300}}
                       animationType={"fade-in"}
                       mobSize={16}
                       containerStyles={{marginBottom: description.length - 1 === index ? 0 : 20}}
@@ -43,8 +47,10 @@ const TitleRowSubDes = ({
               <Text
                 className={"title-row-sub-desc-description"}
                 size={20}
-                type={"light"}
+                type={"kLight"}
+                // type={"light"}
                 animationType={"fade-in"}
+                textStyles={{fontWeight: 300}}
                 mobSize={16}
             >
               {description}
@@ -54,7 +60,7 @@ const TitleRowSubDes = ({
           {onClick ? (
             <Button
               className={"title-row-sub-desc-btn"}
-              title={"APPLY TO INCUBATOR"}
+              title={btnTitle}
               onClick={onClick}
               size={14}
               borderType={"bordered"}

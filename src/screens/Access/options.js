@@ -3,7 +3,7 @@ export default {
     {
       images: [],
       title: "GROUPS",
-      subtitle: "From a book club where entrepreneurs, innovators, and founders connect, share, and apply learnings to an exclusive group for female founders by female founders to a startup job board we create community within community t"
+      subtitle: "From a book club where entrepreneurs, innovators, and founders connect, share, and apply learnings to an exclusive group for female founders by female founders to a startup job board we create community within community"
     },
     {
       images: [],

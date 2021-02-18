@@ -18,7 +18,7 @@ const Portfolio = (props) => {
     <div className={"portfolio-container"}>
       <section className={"portfolio-section-info"}>
         <Text
-          type={"kMiddle"}
+          type={"kMedium"}
           // type={"semiBold"}
           size={16}
           mobSize={14}

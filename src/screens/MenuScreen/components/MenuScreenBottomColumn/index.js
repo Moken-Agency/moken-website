@@ -29,7 +29,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
       <Text
         size={20}
         mobSize={16}
-        type={"semiBold"}
+        type={"kSemiBold"}
         textStyles={{
           ...styles.mainTitle,
           lineHeight: isMobile ? "26px" : "35px",
@@ -42,20 +42,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
       {/*{a()}*/}
       {routs.map(({ title, route, pressableComponent }, index) => {
         return (
-            <>
               <RouteComponent title={title} route={route} pressableComponent={pressableComponent}/>
-              {/*{PressableComponent ? <PressableComponent /> : <Text*/}
-              {/*    size={18}*/}
-              {/*    textStyles={styles.routs}*/}
-              {/*    className={'black-menu-bottom-column-item'}*/}
-              {/*    containerStyles={{marginBottom: 15}}*/}
-              {/*    type={"light"}*/}
-              {/*    key={"MenuScreenBottomColumnRouts" + index}*/}
-              {/*    // onClick={() => history.push(route)}*/}
-              {/*>*/}
-              {/*  {title}*/}
-              {/*</Text>}*/}
-          </>
         );
       })}
     </div>

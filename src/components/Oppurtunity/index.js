@@ -29,16 +29,17 @@ const Opportunity = ({
         <Text
             size={16}
           animationType={"fade-in"}
-          type={"semiBold"}
+          type={"kRegular"}
             mobSize={14}
           className={"opportunity-title-first"}
         >
           {title}
         </Text>
         <Text
-          size={"1.7vw"}
+          size={30}
+          // size={"1.7vw"}
           animationType={"fade-in"}
-          type={"thin"}
+          type={"kLight"}
           className={"opportunity-title-second"}
         >
           {subtitle}
@@ -46,10 +47,10 @@ const Opportunity = ({
       </div>
       <button className={"view-job"} onClick={() => action ? action() : history.push(route)}>
         <Text
-          size={".8vw"}
+          size={12}
           animationType={"fade-in"}
           textStyles={{ letterSpacing: 4, cursor: "pointer" }}
-          type={"semiBold"}
+          type={"kRegular"}
         >
           {btnTitle}
         </Text>

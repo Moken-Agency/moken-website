@@ -91,7 +91,7 @@ const MokenLabs = () => {
 
       <section className={"labs-global-container"}>
         <Text
-          type={"extraLight"}
+          type={"kBold"}
           size={55}
           mobSize={35}
           animationType={"fade-in"}

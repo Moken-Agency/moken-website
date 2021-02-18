@@ -36,7 +36,7 @@ const MoPlusKen = () => {
             animationType={"fade-in"}
             size={55}
             mobSize={35}
-            type={"extraLight"}
+            type={"kBold"}
           >
             We increase website leads, maximize revenu and produce a positive
             ROI — validated with measurable results.

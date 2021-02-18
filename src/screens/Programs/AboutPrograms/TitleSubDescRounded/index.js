@@ -12,21 +12,21 @@ const TitleSubDescRounded = ({
       <Text
         className={"title-sub-desc-rounded-title"}
         size={14}
-        type={"semiBold"}
+        type={"kSemiBold"}
       >
         {title}
       </Text>
       <Text
         className={"title-sub-desc-rounded-subtitle"}
         size={30}
-        type={"thin"}
+        type={"kThin"}
       >
         {subtitle}
       </Text>
       <Text
         className={"title-sub-desc-rounded-description"}
         size={16}
-        type={"light"}
+        type={"kLight"}
       >
         {description}
       </Text>

@@ -23,7 +23,8 @@ const CommunityPartner = ({
                 <Text
                     // size={'2.45vw'}
                     size={55}
-                    type={"thin"}
+                    type={"kBold"}
+                    // type={"thin"}
                     animationType={"fade-in"}
                     // mobSize={25}
                     containerStyles={{ marginBottom: 31 }}
@@ -42,9 +43,10 @@ const CommunityPartner = ({
                     size={18}
                     animationType={"fade-in"}
                     // mobSize={16}
-                    textStyles={{ lineHeight: isMobile? '28px':  "29px" }}
+                    textStyles={{ lineHeight: isMobile? '28px':  "29px", fontWeight: 300 }}
                     // textStyles={{ lineHeight: "28px" }}
-                    type={"light"}
+                    type={"kLight"}
+                    // type={"light"}
                 >
                     {subtitle}
                 </Text>

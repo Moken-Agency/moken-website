@@ -20,7 +20,7 @@
     .title-row-sub-desc-subtitle {
       margin-right: 85px;
       align-items: flex-start;
-      width: 525px;
+      max-width: 625px;
       span {
         letter-spacing: .25vw;
         @media only screen and (max-width: 600px) {

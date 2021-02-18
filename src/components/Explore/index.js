@@ -15,7 +15,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   size={14}
                   mobSize={10}
                   animationType={"fade-in"}
-                  type={"semiBold"}
+                  type={"kSemiBold"}
                   textStyles={{letterSpacing: 4}}
               >
                   {title}
@@ -24,13 +24,13 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   size={28}
                   mobSize={22}
                   animationType={"fade-in"}
-                  type={"thin"}
+                  type={"kThin"}
                   className={"explore-subtitle"}
               >
                   {subtitle}
               </Text>
               <div className={"explore-divider"} />
-              <Text type={"light"} mobSize={10} animationType={"fade-in"} size={16}>
+              <Text type={"kLight"} mobSize={10} animationType={"fade-in"} size={16}>
                   {description}
               </Text>
               <Button
@@ -38,9 +38,9 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   backgroundColor={"transparent"}
                   onClick={() => history.push(route)}
                   textColor={"black"}
-                  size={9}
+                  size={10}
                   animationType={"fade-in"}
-                  mobSize={7.5}
+                  mobSize={8}
                   className={"explore-btn"}
               />
           </div>

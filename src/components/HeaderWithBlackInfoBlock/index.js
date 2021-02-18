@@ -27,7 +27,7 @@ const HeaderWithBlackInfoBlock = ({
           // size={".9vw"}
           mobSize={14}
           animationType={"fade-in"}
-          type={"kMiddle"}
+          type={"kMedium"}
           // type={"semiBold"}
           className={"header-black-main-title"}
         >
@@ -51,7 +51,7 @@ const HeaderWithBlackInfoBlock = ({
             animationType={"fade-in"}
             className={"header-black-description"}
             // type={"light"}
-            type={"kMiddle"}
+            type={"kMedium"}
           >
             {description}
           </Text>

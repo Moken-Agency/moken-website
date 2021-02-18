@@ -26,12 +26,12 @@ const Input = ({
   withGoButton,
   onSubmit = () => {},
   error = "",
-  typeText = "kMiddle",
+  typeText = "kMedium",
   width = "100%",
   inputType = "input",
   height = "auto",
   className = "",
-  size = ".9vw",
+  size = 18,
   mobSize = 14,
   resize = "both",
   backgroundColor = "white",
@@ -122,17 +122,17 @@ const Input = ({
         )}
         {withGoButton && (
           <button className={"goButton"} onClick={onSubmit}>
-            <Text type={"semiBold"} size={'1.4vw'}>
+            <Text type={"semiBold"} size={18}>
               Go
             </Text>
           </button>
         )}
       </div>
 
-      {errorMessage ? <Text className={'input-error-message'}
+      <Text className={'input-error-message'}
                             size={12}
                             color={'red'}
-                            type={'light'}>{errorMessage}</Text> : null}
+                            type={'light'}>{errorMessage ?errorMessage : ''}</Text>
 
       {/*<div*/}
       {/*  className={"divider"}*/}

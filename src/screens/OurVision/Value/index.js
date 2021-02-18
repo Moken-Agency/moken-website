@@ -9,7 +9,8 @@ const Value = ({ title = "", subtitle = "" }) => {
   return (
     <div className={"value-container"}>
       <Text
-        type={"semiBold"}
+        type={"kSemiBold"}
+        // type={"semiBold"}
         size={14}
         mobSize={10}
         animationType={"fade-in"}
@@ -19,10 +20,11 @@ const Value = ({ title = "", subtitle = "" }) => {
         {title}
       </Text>
       <Text
-        type={"light"}
+        type={"kLight"}
+        // type={"light"}
         size={20}
         animationType={"fade-in"}
-        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+        textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
         mobSize={16}
       >
         {subtitle}

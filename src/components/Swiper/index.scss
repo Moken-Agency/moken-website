@@ -8,9 +8,15 @@
 
 .swiper-component-container {
   margin-bottom: 200px;
+  cursor: grab;
   @media only screen and (max-width: 600px) {
     margin-bottom: 100px;
   }
+}
+
+.grabbing {
+  cursor: grabbing;
+
 }
 
 
@@ -67,4 +73,6 @@
 .swiper-button-disabled {
   display: none;
 }
+
+//.swiper-slide{ width: auto !important; flex-basis: 100%; min-width: 0!important; }
 
