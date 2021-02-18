@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.b93d1b8e.chunk.css",
-    "main.js": "/moken-website/static/js/main.b3c55202.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.b3c55202.chunk.js.map",
+    "main.css": "/moken-website/static/css/main.a7fbdee1.chunk.css",
+    "main.js": "/moken-website/static/js/main.330c6a4e.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.330c6a4e.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
     "static/css/2.5b0cdeff.chunk.css": "/moken-website/static/css/2.5b0cdeff.chunk.css",
-    "static/js/2.f0a2011b.chunk.js": "/moken-website/static/js/2.f0a2011b.chunk.js",
-    "static/js/2.f0a2011b.chunk.js.map": "/moken-website/static/js/2.f0a2011b.chunk.js.map",
+    "static/js/2.45f325fa.chunk.js": "/moken-website/static/js/2.45f325fa.chunk.js",
+    "static/js/2.45f325fa.chunk.js.map": "/moken-website/static/js/2.45f325fa.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.a411b908e9291a94d8eb086ed0e7a7a1.js": "/moken-website/precache-manifest.a411b908e9291a94d8eb086ed0e7a7a1.js",
+    "precache-manifest.8373d768273550dcdbc283ea9671da5e.js": "/moken-website/precache-manifest.8373d768273550dcdbc283ea9671da5e.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.5b0cdeff.chunk.css.map": "/moken-website/static/css/2.5b0cdeff.chunk.css.map",
-    "static/css/main.b93d1b8e.chunk.css.map": "/moken-website/static/css/main.b93d1b8e.chunk.css.map",
-    "static/js/2.f0a2011b.chunk.js.LICENSE.txt": "/moken-website/static/js/2.f0a2011b.chunk.js.LICENSE.txt",
+    "static/css/main.a7fbdee1.chunk.css.map": "/moken-website/static/css/main.a7fbdee1.chunk.css.map",
+    "static/js/2.45f325fa.chunk.js.LICENSE.txt": "/moken-website/static/js/2.45f325fa.chunk.js.LICENSE.txt",
     "static/media/001-instagram-2-black.svg": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg",
     "static/media/002-twitter-black.svg": "/moken-website/static/media/002-twitter-black.d77c0f8d.svg",
     "static/media/002-twitter.svg": "/moken-website/static/media/002-twitter.7f632dc6.svg",
@@ -49,6 +49,7 @@
     "static/media/careersMob.png": "/moken-website/static/media/careersMob.ca95c035.png",
     "static/media/cross-white.png": "/moken-website/static/media/cross-white.369cee7c.png",
     "static/media/designer-header.svg": "/moken-website/static/media/designer-header.d16607fa.svg",
+    "static/media/developing-area.png": "/moken-website/static/media/developing-area.c7ca3710.png",
     "static/media/expertise-first-image.png": "/moken-website/static/media/expertise-first-image.ae9882a5.png",
     "static/media/expertise-second.png": "/moken-website/static/media/expertise-second.5f8b89fa.png",
     "static/media/expertise.png": "/moken-website/static/media/expertise.f521b7e1.png",
@@ -82,8 +83,8 @@
   "entrypoints": [
     "static/js/runtime-main.be4c88a6.js",
     "static/css/2.5b0cdeff.chunk.css",
-    "static/js/2.f0a2011b.chunk.js",
-    "static/css/main.b93d1b8e.chunk.css",
-    "static/js/main.b3c55202.chunk.js"
+    "static/js/2.45f325fa.chunk.js",
+    "static/css/main.a7fbdee1.chunk.css",
+    "static/js/main.330c6a4e.chunk.js"
   ]
 }
