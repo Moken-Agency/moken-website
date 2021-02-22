@@ -38,15 +38,16 @@ export default {
   ],
   programs: [
     {
-      title: "Work with \n" + "Mo + Ken",
+      title: "StartupSmart Packages",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `We have bundled a selection of custom services to help founders & startups tackle their immediate needs, faster & cheaper.`,
+      btnTitle: 'STARTUP SMART'
     },
     {
-      title: "Startup Smart",
+      title: "Estimate Your Project",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      btnTitle: "APPLY NOW",
+      `Get an idea of how much you'll need to fund your project by answering a few questions and our estimating tool will do the rest.`,
+      btnTitle: "ESTIMATE",
     },
   ],
 };

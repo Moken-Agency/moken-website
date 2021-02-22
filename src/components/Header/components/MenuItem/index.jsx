@@ -14,6 +14,7 @@ const MenuItem = ({
   dividerColor = "grey",
   onClick = () => {},
   route = "",
+  hoverColor = dividerColor,
   size = 11,
   className = "",
   isComingSoon,
@@ -56,7 +57,7 @@ const MenuItem = ({
           size={size}
           textStyles={{
             ...textStyles,
-            color: isComingSoon && hover.isHover  ? '#b4b4b4' : !isComingSoon && hover.isHover ? dividerColor : '#000',
+            color: isComingSoon && hover.isHover  ? '#b4b4b4' : !isComingSoon && hover.isHover ? hoverColor : '#000',
           }}
         >
           {isComingSoon && hover.isHover ? `Coming soon`.toUpperCase() : title.toUpperCase() }
@@ -69,7 +70,7 @@ const MenuItem = ({
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-          {subRouts.map(({ title = "", route = "", link = '' }, index) => {
+          {subRouts.map(({ title = "", route = "", link = '', ...rest }, index) => {
             return (
               <SubMenuItem
                 key={"sub routs" + index}
@@ -80,6 +81,7 @@ const MenuItem = ({
                 setHoveredIndex={setHoveredIndex}
                 hoveredIndex={hoveredIndex}
                 index={index}
+                {...rest}
               />
             );
           })}

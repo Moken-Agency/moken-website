@@ -1,8 +1,8 @@
 export default {
   packages: [
     {
-      title: "BRANDING",
-      subtitle: "Startup Micro",
+      title: "GETTING STARTED",
+      subtitle: "Ideation",
       firstColumn: {
         data: [
           {
@@ -74,7 +74,7 @@ export default {
     },
     {
       title: "BRANDING",
-      subtitle: "Startup Micro",
+      subtitle: "Branding Micro",
       firstColumn: {
         data: [
           {
@@ -169,7 +169,7 @@ export default {
     },
     {
       title: "BRANDING",
-      subtitle: "Startup Micro",
+      subtitle: "Branding Basic",
       firstColumn: {
         data: [
           {
@@ -263,8 +263,8 @@ export default {
       },
     },
     {
-      title: "BRANDING, SALES & GROWTH",
-      subtitle: "Startup Scale",
+      title: "BRANDING",
+      subtitle: "Branding Basic",
       firstColumn: {
         data: [
           {
@@ -363,8 +363,8 @@ export default {
       },
     },
     {
-      title: "INVESTMENTS & FUNDRAISING",
-      subtitle: "Raising Right",
+      title: "BUSINESS SETUP & GROWTH",
+      subtitle: "Startup Scale",
       firstColumn: {
         data: [
           {
@@ -452,6 +452,187 @@ export default {
         ],
       },
     },
+    {
+      title: "INVESTMENT & FUNDING",
+      subtitle: "Raising Right",
+      firstColumn: {
+        data: [
+          {
+            title: "PRODUCT MARKET FIT ANALYSIS",
+          },
+          {
+            title: "USER STORY GUIDANCE",
+          },
+          {
+            title: "STARTUP ROADMAP",
+          },
+          {
+            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
+            descriptions: [
+              {
+                title:
+                    "Full financial assessment of MVP, prototypes, added functions and features, version upgrades.",
+              },
+            ],
+          },
+          {
+            title: "PITCH DECK",
+            descriptions: [
+              {
+                title: "— Content & Flow",
+              },
+              {
+                title: "— Pitch Deck Design",
+              },
+            ],
+          },
+          {
+            title: "BUSINESS PLAN",
+          },
+          {
+            title: "INDIVIDUAL INVESTOR PITCH TWEAKS",
+          },
+        ],
+      },
+      secondColumn: {
+        data: [
+          {
+            title: "RAISING STRATEGY",
+            descriptions: [
+              {
+                title:
+                    "Aimed at addressing the crucial “the how we raise, who do we raise with, and when do we raise” questions.",
+              },
+            ],
+          },
+          {
+            title: "INVESTOR LIST",
+            descriptions: [
+              {
+                title:
+                    "A curated list of ideal investors optimally matched with your startup on 12 criteria points to increase investment likelihood.",
+              },
+            ],
+          },
+          {
+            title: "CUT OFF POINT",
+            descriptions: [
+              {
+                title: "— Cut off point determinations",
+              },
+              {
+                title: "— Alternative strategy development",
+              },
+            ],
+          },
+        ],
+      },
+      thirdColumn: {
+        data: [
+          {
+            title: "$XXXX.00",
+            withSubtitle: true,
+            subtitle: "WITHOUT LOGO",
+          },
+          {
+            title: "$XXXX.00",
+            withSubtitle: true,
+            subtitle: "WITH LOGO",
+          },
+        ],
+      },
+    },
+    {
+      title: "TECH PRODUCT",
+      subtitle: "Building Blocks",
+      firstColumn: {
+        data: [
+          {
+            title: "PRODUCT MARKET FIT ANALYSIS",
+          },
+          {
+            title: "USER STORY GUIDANCE",
+          },
+          {
+            title: "STARTUP ROADMAP",
+          },
+          {
+            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
+            descriptions: [
+              {
+                title:
+                    "Full financial assessment of MVP, prototypes, added functions and features, version upgrades.",
+              },
+            ],
+          },
+          {
+            title: "PITCH DECK",
+            descriptions: [
+              {
+                title: "— Content & Flow",
+              },
+              {
+                title: "— Pitch Deck Design",
+              },
+            ],
+          },
+          {
+            title: "BUSINESS PLAN",
+          },
+          {
+            title: "INDIVIDUAL INVESTOR PITCH TWEAKS",
+          },
+        ],
+      },
+      secondColumn: {
+        data: [
+          {
+            title: "RAISING STRATEGY",
+            descriptions: [
+              {
+                title:
+                    "Aimed at addressing the crucial “the how we raise, who do we raise with, and when do we raise” questions.",
+              },
+            ],
+          },
+          {
+            title: "INVESTOR LIST",
+            descriptions: [
+              {
+                title:
+                    "A curated list of ideal investors optimally matched with your startup on 12 criteria points to increase investment likelihood.",
+              },
+            ],
+          },
+          {
+            title: "CUT OFF POINT",
+            descriptions: [
+              {
+                title: "— Cut off point determinations",
+              },
+              {
+                title: "— Alternative strategy development",
+              },
+            ],
+          },
+        ],
+      },
+      thirdColumn: {
+        data: [
+          {
+            title: "$XXXX.00",
+            withSubtitle: true,
+            subtitle: "WITHOUT LOGO",
+          },
+          {
+            title: "$XXXX.00",
+            withSubtitle: true,
+            subtitle: "WITH LOGO",
+          },
+        ],
+      },
+    },
+
   ],
 };
 

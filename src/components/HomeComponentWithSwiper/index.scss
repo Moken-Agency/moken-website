@@ -1,18 +1,55 @@
 .home-with-swiper {
   padding-left: 303px;
   position: relative;
-  .home-with-swiper-container {
-    //display: inline-block;
+  margin-bottom: 302px;
+  @media only screen and (max-width: 1301px) {
+    padding: 0 43px
+  }
+  .home-swiper {
+    display: flex;
     position: relative;
-
+    justify-content: space-between;
+    //flex-wrap: wrap;
     padding-left: 41px;
-    .home-swiper {
+    //overflow: hidden;
+    width: calc(100vw - 303px);
+    @media only screen and (max-width: 1101px) {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      display: initial;
     }
+
+
+        .home-swiper-container {
+          //display: flex;
+          //width: 782px;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          //background-color: red;
+
+          .swiper-container {
+            width: 100%;
+
+            .swiper-wrapper {
+              //width: 50% !important;
+
+            }
+            .swiper-slide {
+              //margin-right: 50px;
+            }
+          }
+        }
+
     .home-with-swiper-description-description {
       width: 514px;
     }
     .home-with-swiper-description-title {
       width: 425px;
+    }
+    .home-swiper-description-data-component {
+      margin-right: 50px;
     }
   }
 }

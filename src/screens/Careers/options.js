@@ -29,31 +29,30 @@ export default {
     {
       img: benefit2,
 
-      title: "IDEAS & INCENTIVES",
-      subtitle: "Performance Bonus & Profit Share",
+      title: "TEAMWORK & COMMUNITY",
+      subtitle: "Tight Knit Team",
       description:
-        "With great work comes great ideas. And at Moken, we believe those ideas should be rewarded. Therefore, we offer exclusive, priority access to our IdeaFactory and MokenLabs programs to any member on our team looking to create something new.",
+      `We're a close group of talented people who enjoy working (and not working) together. We agree every now and then grabbing a drink, maybe a bite to eat, or diving into a good old adventure is great way to connect. Each month we take some time to go do something together as a team - outside of the office.`
     },
     {
       img: benefit3,
 
-      title: "HEADING",
+      title: "FINANCIAL EASE",
       subtitle: "Employee Discounts",
       description:
-        "We agree every now and then grabbing a drink, maybe a bite to eat, or diving into a good old adventure is great way to connect. Each month we take a day to go do something together as a team - outside of the office.",
+      `We know that as innovators our team have passions to pursue their passions and build the future their way. This is why we provide exclusive discounts and at-cost solutions for all of our team members to ensure they have the flexibility and access to the solutions they need to do good in their own lives.`
     },
     {
       img: benefit4,
 
-      title: "GROWTH & DEVELOPMENT",
-      subtitle: "Professional Development",
-      description:
-        "We foster career path growth and support continued education to keep our team on the cutting edge.",
+      title: "GROWTH & INCENTIVES",
+      subtitle: "Bonus Incentives",
+      description: `It’s no secret that success breeds success, and together we know that we can achieve anything. Which is why as a member of Moken, you’ll be privy to a variety of benefits aimed at rewarding performance and hard work. This includes bonus incentives and profit opportunities in the projects you work on.`
     },
     {
       img: benefit5,
 
-      title: "HEADING",
+      title: "WORK LIFE BALANCE",
       subtitle: "Remote Work",
       description:
         "As a diverse multinational group of companies we provide remote work opportunities for a variety of our team globally. We believe that if you're motivated and passionate about what you're doing, any environment can foster productivity.",
@@ -61,26 +60,26 @@ export default {
     {
       img: benefit6,
 
-      title: "HEADING",
-      subtitle: "Tight Knit Team",
+      title: "IDEAS & INCENTIVES",
+      subtitle: "Exclusive Program Access",
       description:
-        "We're a close group of talented people who enjoy working (and not working) together. We agree every now and then grabbing a drink, maybe a bite to eat, or diving into a good old adventure is great way to connect. Each month we take a day to go do something together as a team - outside of the office.",
+      `With great work comes great ideas. And at Moken, we believe those ideas should be rewarded. Therefore, we offer exclusive, priority access to any of our Moken Programs to all members of our team looking to create something new.`
     },
     {
       img: benefit7,
 
-      title: "IDEAS & INCENTIVES",
-      subtitle: "Startup Capital",
+      title: "GROWTH & DEVELOPMENT",
+      subtitle: "Professional Development",
       description:
-        "We believe in our team through and through. That means believing in their ideas too. We support our team through exclusive startup capital investments for their bright ideas and innovative creations, helping make their dreams come true.",
+      `We foster career path growth and support continued education to keep our team on the cutting edge. Whatever your future goals we’re here for you every step of the way, whether its as a team member at Moken or leading the pack with your own future startup. We’re your number one fan, always.`
     },
     {
       img: benefit8,
 
-      title: "HEADING",
+      title: "GROWTH & DEVELOPMENT",
       subtitle: "Partner Network",
       description:
-        "Through our comprehensive network of partners, from working on project teams to connecting with industry partners, our team members are consistently exposed to a variety of new opportunities in diverse industries.",
+      `Through our comprehensive network of partners, from working on project teams to connecting with industry partners, our team members are consistently exposed to a variety of new opportunities in diverse industries.`
     },
     // {
     //   img: benefit1,

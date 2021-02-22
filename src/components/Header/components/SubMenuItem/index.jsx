@@ -3,7 +3,7 @@ import "./index.scss";
 import Text from "../../../Text";
 import { useHistory } from "react-router-dom";
 
-const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex = () => {}, hoveredIndex, index, link ='' }) => {
+const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex = () => {}, hoveredIndex, index, link ='', isComingSoon }) => {
   let history = useHistory();
 
 
@@ -37,7 +37,7 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
           type={"semiBold"}
           color={returnTextColor}
         >
-          {title.toUpperCase()}
+          {hoveredIndex === index && isComingSoon ? 'COMING SOON' : title.toUpperCase()}
         </Text>
       </div>
     </button>

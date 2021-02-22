@@ -71,7 +71,7 @@ const PageGenerator = ({
                 containerStyles={{ marginBottom: isMobile ? 50 : "4vw" }}
               />
               <Subtitle
-                size={"2.9vw"}
+                size={55}
                 mobSize={35}
                 subtitle={subtitle}
                 containerStyles={{ marginBottom: isMobile ? 50 : "3vw" }}
@@ -81,7 +81,7 @@ const PageGenerator = ({
                 mobSize={16}
                 description={description}
                 // size={'1.25vw'}
-                textStyles={{lineHeight: isMobile ? '35px' : '2.2vw'}}
+                textStyles={{lineHeight: '35px'}}
                 size={20}
                 {...descriptionOptions}
               />

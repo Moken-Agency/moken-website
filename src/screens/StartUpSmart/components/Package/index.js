@@ -76,7 +76,7 @@ const Package = ({
             title={"VIEW PACKAGE"}
             backgroundColor={"white"}
             textColor={"black"}
-            size={".9vw"}
+            // size={".9vw"}
             // containerStyles={{paddingLeft: 0}}
             onClick={() => setIsOpen(!isOpen)}
             additionalComponent={returnAdditionalBtnComponent}
@@ -99,7 +99,7 @@ const Package = ({
                 <Text
                   size={14}
                   mobSize={10}
-                  type={"semiBold"}
+                  type={"kRegular"}
                   containerStyles={{
                     marginBottom: isMobile ? "8vw" : "1vw",
                   }}
@@ -120,7 +120,7 @@ const Package = ({
                         containerStyles={{
                           marginBottom: isMobile ? "2vw" : "1vw",
                         }}
-                        type={"light"}
+                        type={"kLight"}
                       >
                         {title}
                       </Text>
@@ -141,7 +141,7 @@ const Package = ({
                 <Text
                   size={14}
                   mobSize={10}
-                  type={"semiBold"}
+                  type={"kRegular"}
                   animationType={"fade-in"}
                   containerStyles={{
                     marginBottom: isMobile ? "8vw" : "1vw",
@@ -157,7 +157,7 @@ const Package = ({
                     return (
                       <Text
                         size={20}
-                        type={"light"}
+                        type={"kLight"}
                         mobSize={16}
                         animationType={"fade-in"}
                         textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
@@ -184,7 +184,7 @@ const Package = ({
               >
                 {withSubtitle ? (
                   <Text
-                    type={"semiBold"}
+                    type={"kRegular"}
                     size={14}
                     mobSize={10}
                     animationType={"fade-in"}

@@ -13,6 +13,9 @@
     .portfolio-title-second {
       width: 42vw;
       margin-bottom: 90px;
+      span {
+        line-height: 75px;
+      }
       @media screen and (max-width: 600px) {
         width: auto;
         margin-bottom: 15vw;

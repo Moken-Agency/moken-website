@@ -68,12 +68,14 @@
     }
   }
   .start-up-smart-fifth {
-    padding: 0 35vw 0 35vw;
+    //padding: 0 35vw 0 35vw;
+    //padding: 0 0 219px 488px;
+    max-width: 500px;
     @media only screen and (max-width: 600px) {
       padding: 10vw;
     }
     .start-up-smart-fifth-text-first {
-      margin-bottom: 4.9vw;
+      margin-bottom: 70px;
       span {
         letter-spacing: .25vw;
         @media only screen and (max-width: 600px) {
@@ -82,7 +84,7 @@
       }
     }
     .start-up-smart-fifth-text-second {
-      margin-bottom: 2.5vw;
+      margin-bottom: 30px;
     }
     .start-up-smart-fifth-text-third {
       span {
@@ -94,17 +96,20 @@
     padding: 10vw;
   }
   .start-up-smart-sixth {
-    padding: 10vw 30vw;
+    //padding: 0 0 219px 488px;
+    margin-bottom: 219px;
+    max-width: 680px;
     @media only screen and (max-width: 600px) {
       padding: 10vw 25vw;
     }
     .start-up-smart-sixth-text-first {
 
-      margin-bottom: 2vw;
+      margin-bottom: 26px;
       @media only screen and (max-width: 600px) {
         margin-bottom: 16vw;
       }
         span {
+          line-height: 53px;
           letter-spacing: .25vw;
           @media only screen and (max-width: 600px) {
             letter-spacing: 4px;
@@ -131,4 +136,9 @@
       //margin: 0 62px 60px 62px;
     }
   }
+}
+
+.startup-packages-description, .startup-packages-subtitle {
+  max-width: 877px !important;
+  width: auto;
 }

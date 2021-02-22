@@ -15,22 +15,22 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   size={14}
                   mobSize={10}
                   animationType={"fade-in"}
-                  type={"kSemiBold"}
+                  type={"kRegular"}
                   textStyles={{letterSpacing: 4}}
               >
                   {title}
               </Text>
               <Text
-                  size={28}
+                  size={30}
                   mobSize={22}
                   animationType={"fade-in"}
-                  type={"kThin"}
+                  type={"kLight"}
                   className={"explore-subtitle"}
               >
                   {subtitle}
               </Text>
               <div className={"explore-divider"} />
-              <Text type={"kLight"} mobSize={10} animationType={"fade-in"} size={16}>
+              <Text type={"kRegular"} mobSize={10} animationType={"fade-in"} size={14}>
                   {description}
               </Text>
               <Button
@@ -41,6 +41,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   size={10}
                   animationType={"fade-in"}
                   mobSize={8}
+                  type={'kSemiBold'}
                   className={"explore-btn"}
               />
           </div>

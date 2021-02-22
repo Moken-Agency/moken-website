@@ -52,6 +52,7 @@
     .home-explore-list-container {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
   }
 
@@ -60,16 +61,26 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 320px;
+    .home-pathway-wrapper {
+      position: relative;
+      width: 100%;
+      img {
+        position: absolute;
+        width: 100%;
+        top: 200px;
+      }
+      .home-pathway-graph {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
     .home-pathway-title {
       max-width: 1066px;
       span {
         text-align: center;
       }
     }
-    .home-pathway-graph {
-      display: flex;
-      align-items: flex-end;
-    }
+
   }
 
   .home-impact-container {
@@ -89,6 +100,9 @@
       flex-wrap: wrap;
       justify-content: center;
       padding: 0 303px;
+      @media only screen and (max-width: 1622px) {
+        padding: 0;
+      }
       .home-impact-item {
         width: 475px;
         height: 231px;
@@ -102,7 +116,8 @@
         cursor: pointer;
         transition: .5s;
         &:hover {
-          opacity: .5;
+          //opacity: .5;
+          transform: translate(0, -15px) scale(1.05);
         }
         .home-impact-title {
           margin-bottom: 16px;

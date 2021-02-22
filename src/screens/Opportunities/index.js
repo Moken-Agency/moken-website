@@ -37,10 +37,9 @@ const Opportunities = () => {
       </section>
       <Subtitle
         className={"opportunities-second-title"}
-        size={"3.1vw"}
+        // size={"3.1vw"}
         subtitle={
-          "We hire people that can hit the ground running," +
-          " but you won’t be alone, we’re here to help you make an impact."
+          "We hire people that can hit the ground running, but you won’t be alone, we’re here to help you every step you take."
         }
       />
       <div className={"opportunities-list-container"}>

@@ -7,10 +7,11 @@ import partner6 from './Bitmap.png';
 
 
 export default {
-    partner1,
-    partner2,
+    partner6,
     partner3,
     partner4,
     partner5,
-    partner6
+    partner2,
+    partner1,
+
 }

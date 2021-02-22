@@ -29,7 +29,7 @@ const Portfolio = (props) => {
           PORTFOLIO
         </Text>
         <Text
-          size={"4.5vw"}
+            size={75}
           type={"kBold"}
           animationType={"fade-in"}
           mobSize={45}
@@ -46,18 +46,18 @@ const Portfolio = (props) => {
 
       <div className={"companies-container"}>
         {companies.map((company, index) => {
-          return <Company {...company} key={"company portfolio" + index} />;
+          return <Company {...company} key={"company portfolio" + index} isLast={companies.length - 1 === index} />;
         })}
       </div>
       <ColorBlock
         title={"Do you want to be the next to make history?"}
         subtitle={"CONNECT WITH US"}
-        textWidth={"45vw"}
         backgroundColor={"#000"}
-        // type={"thin"}
-        mobSize={55}
+        type={"kLight"}
+        size={55}
+        withIcon
+        titleContainerStyles={{lineHeight: '90px'}}
         containerStyles={{marginBottom: 0}}
-        // className={"portfolio-color-block"}
         onClick={() => history.push('connect-with-us')}
       />
       {/*<section className={'block-container'}>*/}

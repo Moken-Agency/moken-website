@@ -22,8 +22,8 @@ const CommunityPartner = ({
             <div className={"community-partner-info-container"}>
                 <Text
                     // size={'2.45vw'}
-                    size={55}
-                    type={"kBold"}
+                    size={30}
+                    type={"kLight"}
                     // type={"thin"}
                     animationType={"fade-in"}
                     // mobSize={25}
@@ -31,8 +31,8 @@ const CommunityPartner = ({
                     textStyles={{
                         whiteSpace: "break-spaces",
                         ...titleStyles,
-                        lineHeight:  "55px",
-                        // lineHeight: "35px",
+                        // lineHeight:  "55px",
+                        lineHeight: "35px",
                     }}
                 >
                     {title}

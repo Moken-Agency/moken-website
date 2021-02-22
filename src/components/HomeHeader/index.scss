@@ -2,6 +2,10 @@
   display: flex;
   margin-bottom: 83px;
   align-items: flex-start;
+  @media only screen and (max-width: 1101px) {
+    //flex-direction: column;
+    justify-content: center;
+  }
   .home-header-number {
     align-items: flex-start;
     width: 41px;

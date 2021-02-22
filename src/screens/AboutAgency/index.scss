@@ -1,3 +1,7 @@
+.agency-header-subtitle {
+  max-width: 816px !important;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -11,8 +15,8 @@
 }
 
 .about-agency-container {
-  .leads-container {
-    padding: 4vw 0 4vw 12vw;
+  //.leads-container {
+  //  padding: 0 0 4vw 12vw;
     .apps-container {
       display: flex;
       justify-content: space-between;
@@ -40,7 +44,6 @@
           }
       }
     }
-  }
   .our-partners-info-container {
 
   }
@@ -87,13 +90,35 @@
   margin-bottom: 203px;
   overflow-x: scroll;
   //padding: 0 14vw;
-  .agency-product-container {
-    margin-right: 82px;
-    img {
-      width: 567px;
-      height: 793px;
-      background-color: #880000;
-      margin-bottom: 20px;
-    }
+
+}
+
+.agency-product-container {
+  //margin-right: 82px;
+  img {
+    width: 100%;
+    height: 793px;
+    background-color: #880000;
+    margin-bottom: 20px;
+  }
+}
+
+.agency-swiper-container {
+  padding-left: 12vw;
+}
+
+.agency-impact-description {
+  max-width: 978px !important;
+
+}
+
+.agency-impact-subtitle {
+  max-width: 887px !important;
+}
+
+.agency-email-form-title {
+  max-width: 478px;
+  span {
+    text-align: center;
   }
 }

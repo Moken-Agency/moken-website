@@ -9,6 +9,9 @@
 .swiper-component-container {
   margin-bottom: 200px;
   cursor: grab;
+  .swiper-component-main-container {
+
+  }
   @media only screen and (max-width: 600px) {
     margin-bottom: 100px;
   }

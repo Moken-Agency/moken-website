@@ -41,6 +41,7 @@ export default {
     {
       title: "About",
       dividerColor: "#000",
+      hoverColor: 'rgba(0,0,0,.30)',
       subRouts: [
         {
           title: "ABOUT MOKEN",
@@ -78,6 +79,7 @@ export default {
         },
         {
           title: "SPRINTS & ROADMAPS",
+          isComingSoon: true
         },
         {
           title: "STARTUPSMART PACKAGES",

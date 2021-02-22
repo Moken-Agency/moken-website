@@ -16,10 +16,10 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
     <div className={"expertise-item-container"}>
       <Text
         // size={'4.7vw'}
-        size={75}
+        size={55}
         animationType={"fade-in"}
         mobSize={35}
-        type={"thin"}
+        type={"kLight"}
         className={"expertise-item-title"}
       >
         {title}
@@ -27,7 +27,7 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
       <div className={"expertise-item-right"} onClick={goToRoute}>
         <Text
             size={16}
-          type={"semiBold"}
+          type={"kSemiBold"}
           mobSize={12}
           className={"expertise-item-learn"}
         >

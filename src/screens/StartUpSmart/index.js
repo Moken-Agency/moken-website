@@ -10,6 +10,9 @@ import Package from "./components/Package";
 import HeaderTitle from "../../components/HeaderTitle";
 import ImageBlock from "../../components/ImageBlock";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
+import startupSmartPackageFirst from '../../images/startupsmartpackages-first@2x.png';
+import startupSmartPackageSecond from '../../images/startupsmartpackages-second@2x.png';
+import productTestingTeam from '../../images/product-testing-team-second.jpg';
 import TitleSubDescription from "../../components/TitleSubDescription";
 const { packages } = options;
 
@@ -25,17 +28,14 @@ const StartUpSmart = () => {
       {/*<div className={'start-up-smart-second'}>*/}
       {/*    <img src={FirstImage} />*/}
       {/*</div>*/}
-      <ImageBlock position={"left"} url={FirstImage} />
+      <ImageBlock position={"left"} url={startupSmartPackageFirst} />
 
       <TitleSubDescription
+        descriptionClassName={'startup-packages-description'}
+        subtitleClassName={'startup-packages-subtitle'}
         title={"STARTING UP SMART"}
-        description={`People do not simply buy products or services, they buy brands with a purpose.
-                    By providing unique brand experiences, a startup is able to effectively convert potential users
-                    into brand ambassadors and differentiate themselves at an early stage from competitors. At Kenergy,
-                    we work directly with founders to create brands that defy the odds, defeat big competition and
-                    disrupt their industries.  `}
-        subtitle={`We increase website leads, maximize revenu and produce a positive ROI — validated
-                    with measurable results.`}
+        description={`People do not simply buy products or services, they buy brands with a purpose. By providing unique brand experiences, a startup is able to effectively convert potential users into brand ambassadors and differentiate themselves at an early stage from competitors. At Moken, we work directly with founders to create brands that defy the odds, defeat big competition and disrupt their industries.  `}
+        subtitle={`A la cartè packages specifically designed for early stage startups executed by experts.`}
         btnTitle={"GET IN TOUCH"}
       />
 
@@ -65,37 +65,40 @@ const StartUpSmart = () => {
       {/*          size={'1vw'}>GET IN TOUCH</Text>*/}
       {/*</div>*/}
 
-      <ImageBlock position={"right"} url={SecondImage} />
+      <ImageBlock position={"right"} url={startupSmartPackageSecond} />
 
-      <div className={"start-up-smart-fifth"}>
-        <Text
-          mobSize={10}
-          animationType={"fade-in"}
-          className={"start-up-smart-fifth-text-first"}
-          size={"1vw"}
-        >
-          STARTUP PACKAGES
-        </Text>
-        <Text
-          mobSize={35}
-          animationType={"fade-in"}
-          className={"start-up-smart-fifth-text-second"}
-          type={"kBold"}
-          size={55}
-        >
-          We make it easy to kickstart your vision.
-        </Text>
-        <Text
-          mobSize={16}
-          className={"start-up-smart-fifth-text-third"}
-          animationType={"fade-in"}
-          type={"light"}
-          size={"1.2vw"}
-        >
-          With packages at a startup price point, we work with founders and
-          ideators with high growth potential. We're passionate about big ideas
-          and working with people who feel the same.
-        </Text>
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+          <div className={"start-up-smart-fifth"}>
+              <Text
+                  mobSize={10}
+                  animationType={"fade-in"}
+                  className={"start-up-smart-fifth-text-first"}
+                  size={16}
+                  type={'kRegular'}
+              >
+                  STARTUP PACKAGES
+              </Text>
+              <Text
+                  mobSize={35}
+                  animationType={"fade-in"}
+                  className={"start-up-smart-fifth-text-second"}
+                  type={"kBold"}
+                  size={50}
+              >
+                  We make it easy to kickstart your vision.
+              </Text>
+              <Text
+                  mobSize={16}
+                  className={"start-up-smart-fifth-text-third"}
+                  animationType={"fade-in"}
+                  type={"kLight"}
+                  size={20}
+              >
+                  With packages at a startup price point, we work with founders and
+                  ideators with high growth potential. We're passionate about big ideas
+                  and working with people who feel the same.
+              </Text>
+          </div>
       </div>
 
       <div className={"packages-container"}>
@@ -104,27 +107,29 @@ const StartUpSmart = () => {
         })}
       </div>
 
-      <div className={"start-up-smart-sixth"}>
-        <Text
-          mobSize={10}
-          size={"1vw"}
-          animationType={"fade-in"}
-          className={"start-up-smart-sixth-text-first"}
-          type={"semiBold"}
-        >
-          TRUSTED BY
-        </Text>
-        <Text
-          mobSize={35}
-          size={55}
-          animationType={"fade-in"}
-          className={"start-up-smart-sixth-text-first"}
-          type={"kBold"}
-        >
-          We push boundaries, question assumptions and get results. Ready?
-        </Text>
-      </div>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
+        <div className={"start-up-smart-sixth"}>
+            <Text
+                mobSize={10}
+                size={16}
+                animationType={"fade-in"}
+                className={"start-up-smart-sixth-text-first"}
+                type={"semiBold"}
+            >
+                TRUSTED BY
+            </Text>
+            <Text
+                mobSize={35}
+                size={50}
+                animationType={"fade-in"}
+                className={"start-up-smart-sixth-text-first"}
+                type={"kBold"}
+            >
+                We push boundaries, question assumptions and get results. Ready?
+            </Text>
+        </div>
 
+    </div>
       <div className={"boundaries-container"}>
         {[1, 1, 1, 1, 1, 11, 1, , 11, 1].map((el) => {
           return (

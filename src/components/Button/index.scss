@@ -17,22 +17,46 @@
   cursor: pointer;
   position: relative;
   //height: 40px;
+  transition: .5s;
   @media screen and (max-width: 600px) {
     font-size: .95vw;
     padding: 4vw 6vw;
     letter-spacing: 3px;
   }
-    &:hover {
-    opacity: .5;
+  &:hover {
+    background-color: white !important;
+    border-color: black !important;
+    .text-container {
+      span {
+        color: black !important;
+      }
+    }
   }
 }
+
+.button-text {
+  &:hover {
+    color: black;
+  }
+}
+
 .black {
   background-color: black;
   color: white;
+  &:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+  }
 }
 .white {
   background-color: white;
   color: black;
+  .text-container {
+    span {
+      color: white;
+    }
+  }
 }
 
 .innovation {

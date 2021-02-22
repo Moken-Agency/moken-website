@@ -11,12 +11,13 @@ const Company = ({
   description = "",
   city = "",
   owner = "",
+                     isLast = false
 }) => {
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
 
   return (
-    <div className={"company-container"}>
+    <div className={`company-container ${isLast ? 'last-item' : '' }`}>
       <div>
         <Text
           size={16}

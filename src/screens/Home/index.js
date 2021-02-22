@@ -7,6 +7,7 @@ import HomeComponentWithVerticalText from "../../components/HomeComponentWithVer
 import HomeComponentWithSwiper from "../../components/HomeComponentWithSwiper";
 import Button from "../../components/Button";
 import {useHistory} from "react-router-dom";
+import path from '../../images/Path 2.svg';
 
 const {explores, startupsData, paths, impacts} = options;
 
@@ -136,7 +137,9 @@ const Home = () => {
 
         <section className={'home-pathway-container'}>
             <Text type={'kBold'} size={100} className={'home-pathway-title'}>Your pathway to success.</Text>
-            <div className={'home-pathway-graph'} style={{width: '100%'}}>
+            <div className={'home-pathway-wrapper'}>
+                <img src={path}/>
+                <div className={'home-pathway-graph'} style={{width: '100%'}}>
                 {
                     paths.map((path, index) => {
                         return (
@@ -146,7 +149,7 @@ const Home = () => {
                                 marginBottom: 70 * index,
                                 borderColor: 'black',
                                 width: '25%',
-                                height: 450,
+                                height: 611,
                                 paddingBottom: 25,
                                 borderRight: `${index === 4 ? 0 : '1px'} solid rgb(221, 221, 221)`}}>
                                 <Text type={'kRegular'} size={16} textStyles={{letterSpacing: 4}}>{path}</Text>
@@ -155,6 +158,8 @@ const Home = () => {
                     })
                 }
             </div>
+            </div>
+
         </section>
 
         <section className={'home-impact-container'}>

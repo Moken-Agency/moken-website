@@ -1,8 +1,9 @@
 .company-container {
   //display: flex;
   justify-content: space-between;
-  border-top: 1px solid #cecece;
-  padding: 5vw 3.5vw 1vw 4.5vw;
+  border-top: 1px solid rgba(0, 0, 0, .18);
+  padding: 50px 70px;
+  //padding: 5vw 3.5vw 1vw 4.5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -74,4 +75,9 @@
       display: none;
     }
   }
+}
+
+.last-item {
+  border-bottom: 1px solid rgba(0, 0, 0, .18);
+
 }

@@ -13,8 +13,8 @@ export default {
       subTitle: "LINES OF CODE DEVELOPED",
     },
     {
-      title: "1.3M",
-      subTitle: "IDEATION STAGE FUNDING ",
+      title: "973",
+      subTitle: "MINUTES SPENT ADVISING",
     },
   ],
   companies: [
@@ -28,8 +28,8 @@ export default {
     },
     {
       companyName: "IDEAFACTORY",
-      projectName: "On Your Way",
-      description: "NEED BASIC BIO HERE….",
+      projectName: "Access",
+      description: "Access is a startup builder and venture support platform. Providing access to the necessary tools founders need to accelerate and grow their idea or business with support of business experts, investors, talent, and industry leading companies all from one place.",
       city: "VANCOUVER, BC",
       owner: "",
     },
@@ -43,19 +43,19 @@ export default {
     },
     {
       companyName: "IDEAFACTORY",
+      projectName: "On Your Way",
+      description: "On Your Way is an peer to peer courier platform that connects commerce brands, senders, couriers, and receivers.  Peer enables users to send a package or deliver a package and makes life’s daily commutes profitable in a way that is economically responsible and CO2 neutral.",
+      city: "BURNABY, BC",
+      owner: "",
+    },
+    {
+      companyName: "IDEAFACTORY",
       projectName: "Pedal",
       description:
         "Pedal is an on-demand bike rental company that lets anyone rent a bike with few taps on a smartphone. Working on the same business model as a car rental company with a simple twist. Pedal lets a user browse bikes, book a ride and unlock a chosen bike from reliable, local bike rental companies giving users the best available price and pickup location.",
       city: "BURNABY, BC",
       owner: "",
     },
-    // {
-    //   companyName: "MOKENLABS",
-    //   projectName: "Postess",
-    //   description: "NEED DESCRIPTION HERE….",
-    //   city: "VANCOUVER, BC",
-    //   owner: "Nazar Ostrozhynsky",
-    // },
     {
       companyName: "ACQUIRED",
       projectName: "Binary Vision Studios",

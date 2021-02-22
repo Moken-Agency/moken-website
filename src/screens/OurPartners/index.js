@@ -57,17 +57,6 @@ const OurPartners = () => {
         }
         options={involved}
         itemContainerStyles={{}}
-        AdditionalComponent={() => {
-          return (
-            <div className={"submit-container"}>
-              <SubmitYourResume
-                size={22}
-                title={"Expert Directory Coming Soon"}
-                color={"black"}
-              />
-            </div>
-          );
-        }}
       />
 
       <Title className={"partners-title"} title={"OUR PARTNERS"} />

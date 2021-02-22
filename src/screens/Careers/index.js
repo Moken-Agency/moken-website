@@ -16,6 +16,7 @@ import CareersCircles from "../../images/careers-circles.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HeaderTitle from "../../components/HeaderTitle";
 import TitleShortListWithBtn from "../../components/TitleShortListWithBtn";
+import Button from "../../components/Button";
 
 const Careers = () => {
   const history = useHistory();
@@ -25,6 +26,8 @@ const Careers = () => {
     <div className={"careers-container"}>
       <HeaderTitle
         title={"CAREERS"}
+        descriptionClassName={'careers-header-description'}
+        subtitleClassName={'careers-header-subtitle'}
         description={`At Moken we’re powered by people and elevated by technology. If you’re looking 
                          for an opportunity to take your career to the next level, join us and help create change with 
                          the global brands of tomorrow.`}
@@ -37,8 +40,9 @@ const Careers = () => {
       <TitleShortListWithBtn title={'NEW OPPORTUNITIES'}
                              subtitle={'We’re hiring. If something piques your interest, let us know.'}
                              list={options.opportunities}
-                             btnTitle={'View all opportunities'}
+                             btnTitle={'SEE ALL OPPORTUNTITIES'}
                              listItemBtnTitle={'VIEW JOB'}
+                             btnType={'default'}
                              btnOnClick={() => history.push("/opportunities")}
       />
 
@@ -75,7 +79,7 @@ const Careers = () => {
             <Subtitle
               mobSize={35}
               size={55}
-              type={'kLight'}
+              type={'kBold'}
               subtitle={"We would still love to hear from you"}
               color={"white"}
             />
@@ -98,7 +102,8 @@ const Careers = () => {
               ]}
             />
             {/*<Text size={22} type={'semiBold'} color={'white'}  className={'text-submit'}>Submit you resume</Text>*/}
-            <SubmitYourResume onClick={() => alert("submot resume")} />
+            <Button title={'SUBMIT YOUR RESUME'} backgroundColor={'black'} borderType={'bordered'}/>
+            {/*<SubmitYourResume onClick={() => alert("submot resume")} />*/}
           </div>
           <div className={"careers-black-block-right-container"}>
             <img src={ImagePeople} />

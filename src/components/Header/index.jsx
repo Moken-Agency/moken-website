@@ -39,7 +39,7 @@ const Header = ({ isOpen, setIsOpen }) => {
           })}
         </div>
         <div className={"menu-container"}>
-          {rightMenu.map(({ title, withDivider, isComingSoon }, index) => {
+          {rightMenu.map(({ title, withDivider, isComingSoon, route }, index) => {
             return (
               <MenuItem
                 key={"right menu" + index}
@@ -48,6 +48,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 textStyles={topMenuTextStyles}
                 size={12}
                 isComingSoon={isComingSoon}
+                route={route}
               />
             );
           })}
@@ -67,18 +68,15 @@ const Header = ({ isOpen, setIsOpen }) => {
           <Logo />
         <div className={'menu-container-wrapper'}>
           <div className={"menu-container"}>
-            {mainMenu.map(({ title, subRouts = [], dividerColor, route }, index) => {
+            {mainMenu.map((data , index) => {
               return (
                 <MenuItem
                   key={"main menu" + index}
-                  title={title}
-                  route={route}
                   textStyles={mainMenuTextStyles}
                   containerStyles={{ marginRight: 45, height: 90 }}
-                  subRouts={subRouts}
-                  dividerColor={dividerColor}
                   className={"bar-with-menu-dropdown"}
                   size={14}
+                  {...data}
                 />
               );
             })}

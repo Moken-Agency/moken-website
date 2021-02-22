@@ -51,7 +51,7 @@ const HeaderWithBlackInfoBlock = ({
             animationType={"fade-in"}
             className={"header-black-description"}
             // type={"light"}
-            type={"kMedium"}
+            type={"kLight"}
           >
             {description}
           </Text>

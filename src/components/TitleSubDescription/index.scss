@@ -1,5 +1,5 @@
 .title-sub-description-container {
-  margin-bottom: 295px;
+  margin-bottom: 181px;
   @media screen and(max-width: 600px) {
     margin-bottom: 110px;
   }
@@ -10,7 +10,7 @@
     }
   }
   .title-sub-description-subtitle {
-    width: 755px;
+    max-width: 755px;
     padding-left: 14vw;
     margin-bottom: 45px;
     @media screen and(max-width: 600px) {
@@ -31,7 +31,7 @@
     }
   }
   .title-sub-description-description {
-    width: 560px;
+    max-width: 560px;
     padding-left: 14vw;
     @media screen and(max-width: 600px) {
       width: auto;

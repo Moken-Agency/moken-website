@@ -10,13 +10,15 @@ const TitleSubDescription = ({
   description = "",
   btnTitle = "",
   AdditionalComponent,
-    containerStyles = {}
+  containerStyles = {},
+  subtitleClassName = '',
+  descriptionClassName = ''
 }) => {
   return (
     <div className={"title-sub-description-container"} style={containerStyles}>
       <Title title={title} className={"title-sub-description-title"} />
       <Text
-        className={"title-sub-description-subtitle"}
+        className={`${subtitleClassName} title-sub-description-subtitle`}
         animationType={"fade-in"}
         type={"kBold"}
         // type={"extraLight"}
@@ -27,7 +29,7 @@ const TitleSubDescription = ({
       </Text>
       {description ? (
         <Text
-          className={"title-sub-description-description"}
+          className={`${descriptionClassName} title-sub-description-description`}
           animationType={"fade-in"}
           type={"kLight"}
           // type={"light"}

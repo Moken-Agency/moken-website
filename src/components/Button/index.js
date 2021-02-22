@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./index.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Text from "../Text";
@@ -24,6 +24,8 @@ const Button = ({
   disabled = false
 }) => {
   const { isMobile } = useWindowDimensions();
+
+  // const [isHovering] = useState(false);
 
   const bordersStyles = {
     bordered: {
@@ -59,7 +61,7 @@ const Button = ({
       }}
     >
       <Text
-        className={``}
+        className={`button-text`}
         color={colors[textColor]}
         size={size}
         mobSize={mobSize}

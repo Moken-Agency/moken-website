@@ -13,6 +13,7 @@ const EmailForm = ({
   value = "",
   className = "",
   withForm,
+                     titleClassName=''
 }) => {
   const { isMobile } = useWindowDimensions();
   const [values, getProps, isFormValid, errors, clearValues] = useValues({
@@ -49,10 +50,11 @@ const EmailForm = ({
           <div data-aos="fade-in" className={"email-form-divider"} />
           <Text
             containerStyles={{ margin: isMobile ? "4vw 0" : "70px 0 78px 0" }}
-            size={isMobile ? "5vw" : '2vw'}
+            size={isMobile ? "5vw" : 30}
             animationType={"fade-in"}
-            type={"kThin"}
+            type={"kLight"}
             // type={"thin"}
+              className={titleClassName}
             textStyles={{ letterSpacing: 0.3 }}
           >
             {title}
@@ -63,7 +65,7 @@ const EmailForm = ({
               placeholder={"Your Email Address"}
               onChange={(value) => handleOnChange('email', value)}
               {...getProps('email')}
-              containerStyles={{width: isMobile ? '100%': '20vw'}}
+              containerStyles={{width: isMobile ? '100%': 300}}
             />
             <Button
               disabled={!isFormValid}

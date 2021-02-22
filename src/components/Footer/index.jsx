@@ -14,15 +14,9 @@ const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
 const { menuColumns } = menuOption;
 const { joinFirstText, joinSecondText } = styles;
 
-const textStyle = {
-  color: "white",
-  cursor: "pointer",
-};
-
 const containerStyles = {
   marginLeft: "2vw",
   marginRight: "2vw",
-
   cursor: "pointer",
 };
 

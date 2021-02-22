@@ -22,7 +22,7 @@ const Description = ({
               alignItems: 'flex-start',
               display: "flex",
               ...containerStyles}}>
-              {withDash? <div data-aos="fade-in" style={{width: '2vw', height: 1, backgroundColor: 'black', marginTop: 16,  marginRight: 16}}/> : null}
+              {withDash? <div data-aos="fade-in" style={{width: '2vw', height: 1, backgroundColor: 'black', marginTop: 17,  marginRight: 16}}/> : null}
               <Text
                 animationType={"fade-in"}
                 size={size}
