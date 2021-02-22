@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.a7fbdee1.chunk.css",
-    "main.js": "/moken-website/static/js/main.330c6a4e.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.330c6a4e.chunk.js.map",
+    "main.css": "/moken-website/static/css/main.f380b237.chunk.css",
+    "main.js": "/moken-website/static/js/main.f92523ec.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.f92523ec.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
     "static/css/2.5b0cdeff.chunk.css": "/moken-website/static/css/2.5b0cdeff.chunk.css",
-    "static/js/2.45f325fa.chunk.js": "/moken-website/static/js/2.45f325fa.chunk.js",
-    "static/js/2.45f325fa.chunk.js.map": "/moken-website/static/js/2.45f325fa.chunk.js.map",
+    "static/js/2.2f670096.chunk.js": "/moken-website/static/js/2.2f670096.chunk.js",
+    "static/js/2.2f670096.chunk.js.map": "/moken-website/static/js/2.2f670096.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.8373d768273550dcdbc283ea9671da5e.js": "/moken-website/precache-manifest.8373d768273550dcdbc283ea9671da5e.js",
+    "precache-manifest.dafaad2c78ce3f548ac233d84198259b.js": "/moken-website/precache-manifest.dafaad2c78ce3f548ac233d84198259b.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.5b0cdeff.chunk.css.map": "/moken-website/static/css/2.5b0cdeff.chunk.css.map",
-    "static/css/main.a7fbdee1.chunk.css.map": "/moken-website/static/css/main.a7fbdee1.chunk.css.map",
-    "static/js/2.45f325fa.chunk.js.LICENSE.txt": "/moken-website/static/js/2.45f325fa.chunk.js.LICENSE.txt",
+    "static/css/main.f380b237.chunk.css.map": "/moken-website/static/css/main.f380b237.chunk.css.map",
+    "static/js/2.2f670096.chunk.js.LICENSE.txt": "/moken-website/static/js/2.2f670096.chunk.js.LICENSE.txt",
     "static/media/001-instagram-2-black.svg": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg",
     "static/media/002-twitter-black.svg": "/moken-website/static/media/002-twitter-black.d77c0f8d.svg",
     "static/media/002-twitter.svg": "/moken-website/static/media/002-twitter.7f632dc6.svg",
@@ -31,8 +31,10 @@
     "static/media/Group 141.svg": "/moken-website/static/media/Group 141.ad5fe204.svg",
     "static/media/Group 211.svg": "/moken-website/static/media/Group 211.7ef9a525.svg",
     "static/media/Mohamed.jpg": "/moken-website/static/media/Mohamed.656b970e.jpg",
+    "static/media/Path 2.svg": "/moken-website/static/media/Path 2.d1ad06e2.svg",
     "static/media/Twilio—Segment—Horizontal—DarkAcai.svg": "/moken-website/static/media/Twilio—Segment—Horizontal—DarkAcai.7f07cdd1.svg",
     "static/media/activate.svg": "/moken-website/static/media/activate.024ea8f5.svg",
+    "static/media/agency-right@2x.png": "/moken-website/static/media/agency-right@2x.5a137b8b.png",
     "static/media/arrow-up-right-black.svg": "/moken-website/static/media/arrow-up-right-black.33084271.svg",
     "static/media/arrow-up-right-white.svg": "/moken-website/static/media/arrow-up-right-white.182afab8.svg",
     "static/media/benefit1.svg": "/moken-website/static/media/benefit1.d8378fb1.svg",
@@ -76,6 +78,8 @@
     "static/media/product-team.svg": "/moken-website/static/media/product-team.0d2a8ce5.svg",
     "static/media/product-testing-team-second.jpg": "/moken-website/static/media/product-testing-team-second.7f1c7828.jpg",
     "static/media/report-bug-circles.png": "/moken-website/static/media/report-bug-circles.2871990a.png",
+    "static/media/startupsmartpackages-first@2x.png": "/moken-website/static/media/startupsmartpackages-first@2x.94fa2921.png",
+    "static/media/startupsmartpackages-second@2x.png": "/moken-website/static/media/startupsmartpackages-second@2x.3c22688d.png",
     "static/media/upevents.svg": "/moken-website/static/media/upevents.415fa24c.svg",
     "static/media/upeventsmob.svg": "/moken-website/static/media/upeventsmob.f6fa9ca9.svg",
     "static/media/web-color-startups-leftaligned.svg": "/moken-website/static/media/web-color-startups-leftaligned.8dfb1a7f.svg"
@@ -83,8 +87,8 @@
   "entrypoints": [
     "static/js/runtime-main.be4c88a6.js",
     "static/css/2.5b0cdeff.chunk.css",
-    "static/js/2.45f325fa.chunk.js",
-    "static/css/main.a7fbdee1.chunk.css",
-    "static/js/main.330c6a4e.chunk.js"
+    "static/js/2.2f670096.chunk.js",
+    "static/css/main.f380b237.chunk.css",
+    "static/js/main.f92523ec.chunk.js"
   ]
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1683px" height="551px" viewBox="0 0 1683 551" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF2A68" offset="0%"></stop>
+            <stop stop-color="#FFC4AF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Page" transform="translate(0.000000, -7335.000000)" stroke="url(#linearGradient-1)" stroke-width="8">
+            <g id="Group-3" transform="translate(-9.000000, 7227.000000)">
+                <path d="M0,532.391518 C19.0584552,526.599066 40.4106683,532.615476 64.0566393,550.440746 C99.5255959,577.178652 151.433909,667.186923 259.260343,653.61524 C398.439978,636.097255 410.577284,488.539661 499.612212,446.678718 C588.647141,404.817776 665.253204,473.594162 736.329745,458.167651 C807.406287,442.741141 861.152711,263.40618 965.315249,263.40618 C1069.47779,263.40618 1069.47779,293.468532 1139.52311,283.332052 C1186.55591,276.525786 1258.59561,216.790422 1331.39041,225.61481 C1404.1852,234.439199 1434.85226,325.751123 1526.42012,312.215461 C1617.98798,298.6798 1585.82986,208.769207 1617.15814,158.987303 C1638.04367,125.799367 1666.32429,110.192336 1702,112.166211" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
