@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f8b5206f71d7c929b4d362cc593f2c1",
+    "revision": "8dfe01f48d96267b5b61c90b7f57a8a1",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "8708241ae8325710db2f",
+    "revision": "109447279d9d2560946c",
     "url": "/moken-website/static/css/2.5b0cdeff.chunk.css"
   },
   {
-    "revision": "e22a07e9c4e9c37cdf0a",
-    "url": "/moken-website/static/css/main.f380b237.chunk.css"
+    "revision": "caa1249d78535962d9d4",
+    "url": "/moken-website/static/css/main.c1527880.chunk.css"
   },
   {
-    "revision": "8708241ae8325710db2f",
-    "url": "/moken-website/static/js/2.2f670096.chunk.js"
+    "revision": "109447279d9d2560946c",
+    "url": "/moken-website/static/js/2.5298a3fb.chunk.js"
   },
   {
     "revision": "98c92e4a71422a59c3daed74f16a0206",
-    "url": "/moken-website/static/js/2.2f670096.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.5298a3fb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e22a07e9c4e9c37cdf0a",
-    "url": "/moken-website/static/js/main.f92523ec.chunk.js"
+    "revision": "caa1249d78535962d9d4",
+    "url": "/moken-website/static/js/main.cb196f32.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -202,6 +202,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "97a7a8b5ab46a4a0e16041a80155c45d",
     "url": "/moken-website/static/media/ZonaPro-LightItalicDemo.97a7a8b5.otf"
+  },
+  {
+    "revision": "3d8a0c287b43a27ef9691603af68112e",
+    "url": "/moken-website/static/media/about-moken-first-right@2x.3d8a0c28.jpg"
+  },
+  {
+    "revision": "6eae13b2831fdcc5a1060556f10a1e7b",
+    "url": "/moken-website/static/media/about-moken-second-right@2x.6eae13b2.jpg"
   },
   {
     "revision": "024ea8f55c2d888b9feb3dc4ca549603",
