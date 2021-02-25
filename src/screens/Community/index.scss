@@ -1,5 +1,25 @@
 .community-container {
   position: relative;
+  .community-header-description {
+    max-width: 613px;
+  }
+  .community-future-description {
+    max-width: 755px;
+
+  }
+  .community-first-image {
+    margin-bottom: 209px;
+  }
+  .community-future-subtitle {
+    max-width: 879px;
+    margin-bottom: 77px;
+  }
+  .community-partners-subtitle {
+    max-width: 1024px;
+  }
+  .community-swiper {
+    padding-left: 6vw;
+  }
   .community-absolute-img {
     position: absolute;
     right: 0;

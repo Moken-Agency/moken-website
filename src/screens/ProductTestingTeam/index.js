@@ -25,6 +25,7 @@ const ProductTestingTeam = () => {
     <div className={"product-testing-team-container"}>
       <HeaderSecondType
         title={"PRODUCT TESTING TEAM"}
+        subtitleClassName={'product-testing-header-subtitle'}
         subtitle={
           "The power to test what is impossible with exclusive user testing."
         }
@@ -38,42 +39,39 @@ const ProductTestingTeam = () => {
             containerStyles={{marginBottom: isMobile ? 170 : 0}}
           title={"TEAM OVERVIEW"}
           leftTitle={
-            "Enthusiastic individuals working together to create extraordinary startups"
+            "Be a part of an exclusive beta family to get early access to apps, websites, and other tech creations."
           }
-          rightTitle={`Our role consists of taking the time to understand your business model, and suggesting
-                            creative and high-performing digital strategies. Our avant-garde tactics are in line with
-                            the current market, blend seamlessly with our clients’ operational realities, and eliminate
-                            risks that aren’t necessary.`}
+          rightTitle={`As a Moken beta family member, you'll join a group of tech-savvy members spread across the globe, to get early access and contribute to new tech products created by our members.`}
           rightFirstListTitle={"THE BENEFITS OF COLLABORATION"}
           firstList={benefits}
         />
 
         <ImageBlock position={"right"} url={SecondImage} />
 
-        <Title title={"HOW IT WORKS"} className={"product-testing-title"} />
+        {/*<Title title={"HOW IT WORKS"} className={"product-testing-title"} />*/}
 
-        <div className={"joins-container"}>
-          <Text
-            className={"joins-title"}
-            animationType={"fade-in"}
-            size={55}
-            type={"kBold"}
-          >
-            Join Us Today.
-          </Text>
-          <div>
-            {joins.map((join, index) => {
-              return (
-                <IterableCircle
-                  {...join}
-                  key={"join" + index}
-                  count={index + 1}
-                  isLast={index === joins.length - 1}
-                />
-              );
-            })}
-          </div>
-        </div>
+        {/*<div className={"joins-container"}>*/}
+        {/*  <Text*/}
+        {/*    className={"joins-title"}*/}
+        {/*    animationType={"fade-in"}*/}
+        {/*    size={50}*/}
+        {/*    type={"kBold"}*/}
+        {/*  >*/}
+        {/*    Join Us Today.*/}
+        {/*  </Text>*/}
+        {/*  <div>*/}
+        {/*    {joins.map((join, index) => {*/}
+        {/*      return (*/}
+        {/*        <IterableCircle*/}
+        {/*          {...join}*/}
+        {/*          key={"join" + index}*/}
+        {/*          count={index + 1}*/}
+        {/*          isLast={index === joins.length - 1}*/}
+        {/*        />*/}
+        {/*      );*/}
+        {/*    })}*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </div>
 
       <div className={"product-testing-team-circle-container"}>
@@ -85,8 +83,8 @@ const ProductTestingTeam = () => {
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
+        subtitleClassName={'product-testing-programs-subtitle'}
         options={options.programs}
-        widthItem={"30vw"}
         type={'big'}
       />
 

@@ -35,12 +35,14 @@ const InfoImgCompany = ({
             marginRight: isMobile ? 0 : 100,
             marginBottom: isMobile || isMiddleResolution ? 40 : 0,
           }}
+          className={'info-img-company-left-container'}
         >
           <Text
-            size={55}
+            size={50}
             animationType={"fade-up"}
             mobSize={35}
             type={"kBold"}
+            textStyles={{lineHeight: isMobile ? '37px' : '53px'}}
             containerStyles={{ marginBottom: 63 }}
           >
             {title}
@@ -48,9 +50,9 @@ const InfoImgCompany = ({
           <Text
             size={20}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
             mobSize={16}
-            type={"light"}
+            type={"kLight"}
             containerStyles={{ marginBottom: 55 }}
           >
             {subtitle}
@@ -75,7 +77,7 @@ const InfoImgCompany = ({
                 }}
               />
               <Text
-                type={"semiBold"}
+                type={"kSemiBold"}
                 animationType={"fade-up"}
                 containerStyles={{ marginBottom: 30 }}
                 size={24}
@@ -83,7 +85,7 @@ const InfoImgCompany = ({
                 {startUpName}
               </Text>
               <Text
-                type={"semiBold"}
+                type={"kSemiBold"}
                 animationType={"fade-up"}
                 containerStyles={{ marginBottom: 15 }}
                 size={16}
@@ -92,7 +94,7 @@ const InfoImgCompany = ({
                 {founderName}
               </Text>
               <Text
-                type={"semiBold"}
+                type={"kSemiBold"}
                 animationType={"fade-up"}
                 size={16}
                 mobSize={10}

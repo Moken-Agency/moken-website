@@ -18,6 +18,7 @@ import useWindowDimensions from "../../../hooks/useWindowDimensions";
 import AboutProgram from "./AboutProgram";
 import BigDataSquares from "../../../components/BigDataSquares";
 import Button from "../../../components/Button";
+import ProgramCommunityListPartner from "../components/ProgramCommunityListPartner";
 
 const AboutPrograms = () => {
   const { isMobile } = useWindowDimensions();
@@ -26,6 +27,7 @@ const AboutPrograms = () => {
     <div className={"about-programs-container"}>
       <HeaderTitle
         title={"MOKEN PROGRAMS"}
+        descriptionClassName={'about-programs-header-description'}
         subtitle={"Where Startups learn & evolve."}
         description={"We create better futures through innovation. Shall we start something extraordinary?"}
         marginBottom={isMobile ? 243 : 179}
@@ -77,32 +79,17 @@ Our community of practice operates through high-touch programs, robust content, 
         }
       />
 
-      <section className={"about-programs"}>
-        <Title title={"THE PROGRAMS"} className={"about-programs-title"} />
-        <div className={"about-programs-block"}>
-          <Text
-            className={"about-program-text"}
-            size={55}
-            mobSize={35}
-            animationType={"fade-in"}
-            type={"kBold"}
-            // type={"extraLight"}
-          >
-            Join our trusted community of partners and market what you do to
-            founders and startups, globally.
-          </Text>
-          <div className={"about-programs-list"}>
-            {options.programs.map((data, index) => (
-              <BigDataSquares
-                key={"BigDataSquares programmes" + index}
-                {...data}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
 
-      <CoursesComponent />
+        <ProgramCommunityListPartner
+            title={"THE PROGRAMS"}
+            subtitle={
+                "Join our trusted community of partners and market what you do to founders and startups, globally."
+            }
+            subtitleClassName={'about-programs-subtitle'}
+            options={options.programs}
+            type={'big'}
+        />
+        <CoursesComponent />
 
       <InfoImgCompany
         mainTitle={"CREATING THE FUTURE"}
@@ -117,31 +104,15 @@ Our community of practice operates through high-touch programs, robust content, 
         founderTitle={"FOUNDER TITLE"}
       />
 
-      <section className={"about-programs"}>
-        <Title title={"THE PROGRAMS"} className={"about-programs-title"} />
-        <Text
-          className={"about-program-text"}
-          animationType={"fade-in"}
-          size={55}
-          mobSize={35}
-          type={"kBold"}
-        >
-          Join our trusted community of partners and market what you do to
-          founders and startups, globally.
-        </Text>
-        <div className={"about-programs-list three-fr"}>
-          {options.programsSecond.map((program, index) => {
-            return (
-              <CommunityPartner
-                {...program}
-                containerStyles={{
-                  // width: 90 / options.programs.length + "vw",
-                }}
-              />
-            );
-          })}
-        </div>
-      </section>
+        <ProgramCommunityListPartner
+            title={"GET INVOLVED"}
+            subtitle={
+                "Join our trusted community of partners and market what you do to founders and startups, globally."
+            }
+            subtitleClassName={'about-programs-subtitle'}
+            options={options.programsSecond}
+            // type={'big'}
+        />
 
       <OurPartnersComponent
         title={"PROGRAM ALUMNI"}
@@ -170,7 +141,7 @@ Our community of practice operates through high-touch programs, robust content, 
               alignItems: "flex-start",
               marginBottom: isMobile ? 88 : 0,
             }}
-            size={55}
+            size={50}
             animationType={"fade-in"}
             mobSize={35}
           >

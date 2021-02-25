@@ -48,7 +48,7 @@ const VideoPlayer = ({url = ''}) => {
                 className={'video-btn-container'}
                 onClick={() => setPlaying(!playing)}
             >
-                <Text type={'semiBold'} size={16} textStyles={{ letterSpacing: 4}}>
+                <Text type={'kSemiBold'} size={16} textStyles={{ letterSpacing: 4}}>
                     COMING
                     SOON
                 </Text>

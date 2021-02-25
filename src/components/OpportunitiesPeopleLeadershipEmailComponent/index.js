@@ -13,10 +13,11 @@ const OpportunitiesPeopleLeadershipEmailComponent = ({title = '', subtitle = '',
         <section className={"opportunities-form-container"}>
             <div className={"opportunities-form-left-container"}>
                 <Text
-                    size={55}
+                    size={50}
                     animationType={"fade-in"}
                     subtitle={"Not exactly what you were looking for?"}
                     type={"kBold"}
+                    mobSize={35}
                     // type={"extraLight"}
                     className={"subtitle"}
                 >

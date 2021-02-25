@@ -7,6 +7,8 @@ import colors from "../../constans/colors";
 import textTypes from "../../constans/text-types";
 
 //color = orange-bordered | coral | blue | black | white
+
+//animationType = defaultAnimation | lowerMenu
 const Button = ({
   type = "default",
   backgroundColor = "black",
@@ -16,17 +18,13 @@ const Button = ({
   additionalComponent,
   onClick = () => {},
   borderType = "default",
-  // size = '.9vw',
   size = 14,
   mobSize = 12,
   className = "",
   textType = "kRegular",
-  disabled = false
+  disabled = false,
+    animationHoverType = 'defaultAnimation'
 }) => {
-  const { isMobile } = useWindowDimensions();
-
-  // const [isHovering] = useState(false);
-
   const bordersStyles = {
     bordered: {
       border: `1px solid ${colors[textColor]}`,
@@ -50,29 +48,34 @@ const Button = ({
   }
 
   return (
-    <button
-      className={`button-container ${type} ${className} ${disabled ? 'disabled' : ' '}`}
-      onClick={onClick}
-      disabled={disabled}
-      style={{
-        ...bordersStyles[borderType],
-        ...containerStyles,
-        backgroundColor: colors[backgroundColor],
-      }}
-    >
-      <Text
-        className={`button-text`}
-        color={colors[textColor]}
-        size={size}
-        mobSize={mobSize}
-        containerStyles={{ justifyContent: "center",  }}
-        textStyles={{ whiteSpace: "nowrap", ...textStyles[type] }}
-        type={textType}
-      >
-        {title}
-      </Text>
-      {additionalComponent ? additionalComponent() : null}
-    </button>
+      <button
+          onClick={onClick}
+          disabled={disabled}
+          style={{
+            ...bordersStyles[borderType],
+            ...containerStyles,
+            backgroundColor: colors[backgroundColor],
+          }}
+            className={`button-main-container ${type} ${className} ${disabled ? 'disabled' : ' '}
+             ${animationHoverType + 'Container'}`}>
+        <div
+            className={`button-container`}
+        >
+          <Text
+              className={`button-text ${animationHoverType + 'Text'}`}
+              color={colors[textColor]}
+              size={size}
+              mobSize={mobSize}
+              containerStyles={{ justifyContent: "center",  }}
+              textStyles={{ whiteSpace: "nowrap", ...textStyles[type] }}
+              type={textType}
+          >
+            {title}
+          </Text>
+          {additionalComponent ? additionalComponent() : null}
+        </div>
+        {animationHoverType === 'lowerMenu' ? <div className={animationHoverType + 'Border'}/> : null}
+      </button>
   );
 };
 

@@ -32,7 +32,7 @@ const CommunityPartner = ({
                         whiteSpace: "break-spaces",
                         ...titleStyles,
                         // lineHeight:  "55px",
-                        lineHeight: "35px",
+                        lineHeight: "30px",
                     }}
                 >
                     {title}

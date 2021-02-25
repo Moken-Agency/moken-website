@@ -59,7 +59,15 @@
   .about-agency-increase-container {
     padding-left: 14vw;
     margin-bottom: 5vw;
-    width: 50vw;
+    .text-container {
+      max-width: 863px;
+      span {
+        line-height: 53px;
+        @media only screen and (max-width: 600px) {
+          line-height: 37px;
+        }
+      }
+    }
     @media only screen and (max-width: 600px) {
       width: auto;
       padding: 0 43px;
@@ -107,13 +115,20 @@
   padding-left: 12vw;
 }
 
-.agency-impact-description {
-  max-width: 978px !important;
+.about-agency-swiper-container {
+  padding-left: 5vw;
+}
 
+.agency-impact-description {
+  max-width: 887px !important;
+}
+
+.about-agency-programs-subtitle {
+  max-width: 929px;
 }
 
 .agency-impact-subtitle {
-  max-width: 887px !important;
+  max-width: 978px !important;
 }
 
 .agency-email-form-title {

@@ -8,7 +8,7 @@ const TitleText = ({ title = "", subtitle = "", className = "" }) => {
     <div className={`title-text-container ${className}`}>
       <Title title={title} animationType={"fade-in"} className={"title-text"} />
       <Text
-        size={55}
+        size={50}
         animationType={"fade-in"}
         className={"title-text-subtitle"}
         mobSize={35}

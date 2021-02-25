@@ -28,9 +28,7 @@ const HugeInfoAllListColumn = ({
       <section className={"labs-startups-container"}>
         <Text
           type={"kBold"}
-          // size={55}
-          size={55}
-
+          size={50}
           animationType={"fade-in"}
           mobSize={35}
           className={"labs-startups-first-text"}
@@ -43,7 +41,7 @@ const HugeInfoAllListColumn = ({
             size={'1.25vw'}
             mobSize={16}
             animationType={"fade-in"}
-            type={"light"}
+            type={"kLight"}
             textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
             className={"labs-startups-info-right-title"}
           >
@@ -51,7 +49,7 @@ const HugeInfoAllListColumn = ({
           </Text>
 
           <Text
-            type={"semiBold"}
+            type={"kSemiBold"}
             // size={14}
             size={'.88vw'}
             mobSize={10}
@@ -75,7 +73,7 @@ const HugeInfoAllListColumn = ({
 
                     mobSize={16}
                     animationType={"fade-up"}
-                    type={"semiBold"}
+                    type={"kSemiBold"}
                     className={"labs-startups-info-block-work-first"}
                   >
                     {title}
@@ -85,7 +83,7 @@ const HugeInfoAllListColumn = ({
                     animationType={"fade-up"}
                     textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
                     mobSize={16}
-                    type={"light"}
+                    type={"kLight"}
                   >
                     {subtitle}
                   </Text>
@@ -96,7 +94,7 @@ const HugeInfoAllListColumn = ({
 
           {rightSecondListTitle ? (
             <Text
-              type={"semiBold"}
+              type={"kSemiBold"}
               size={'.88vw'}
               animationType={"fade-up"}
               mobSize={10}
@@ -114,6 +112,8 @@ const HugeInfoAllListColumn = ({
                   className={"huge-info-right-second-list-title"}
                   color={"black"}
                   title={title}
+                  size={34}
+                  mobSize={18}
                 />
               ))
             : null}

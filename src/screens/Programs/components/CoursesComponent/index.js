@@ -13,7 +13,7 @@ const CoursesComponent = () => {
       <section className={"courses-courses-container"}>
         <Text
           animationType={"fade-up"}
-          size={55}
+          size={50}
           mobSize={35}
           type={"kBold"}
           // type={"extraLight"}

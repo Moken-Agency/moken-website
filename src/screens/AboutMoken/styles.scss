@@ -3,6 +3,17 @@
 }
 
 .about-moken-container {
+  position: relative;
+  .about-moken-colour-block-title {
+    max-width: 787px;
+    width: auto !important;
+  }
+  .about-moken-video-poster {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
   .about-moken-header {
     padding: 0 560px 0 440px;
     margin-bottom: 142px;
@@ -38,7 +49,7 @@
     }
     .about-moken-second-info-img-container {
       display: flex;
-      justify-content: space-between;
+      //justify-content: space-between;
       padding: 0 14vw;
       @media only screen and (min-width: 601px) and (max-width: 1100px) {
         flex-direction: column;
@@ -53,9 +64,10 @@
       }
 
       .about-moken-second-info-section-secondary-container {
-        margin-right: 7px;
-        width: 34.5vw;
-        //width: 555px;
+        //max-width: 555px;
+        width: 555px;
+        padding-top: 70px;
+        margin-right: 91px;
         @media only screen and (min-width: 601px) and (max-width: 1100px) {
          width: auto;
         }
@@ -65,25 +77,27 @@
         }
       }
       .about-moken-second-info-section-subtitle {
-        margin-bottom: 5.6vw;
-        //margin-bottom: 90px;
+        //margin-bottom: 5.6vw;
+        margin-bottom: 90px;
         @media only screen and (max-width: 600px) {
           margin-bottom: 64px;
         }
       }
       .about-moken-second-info-section-text {
-        margin-bottom: 5.5vw;
-        //margin-bottom: 80px;
+        //margin-bottom: 5.5vw;
+        margin-bottom: 80px;
         @media only screen and (max-width: 600px) {
           margin-bottom: 100px;
         }
     }
       img {
         background-color: grey;
-        width: 32vw;
+        max-height: 100%;
+        max-width: 100%;
+        //height: 1000px;
+        object-fit: cover;
         @media only screen and (max-width: 1100px) {
-          width: 100%;
-          min-height: 200px;
+          //width: 100%;
           margin-top: 50px;
         }
         //@media only screen and (max-width: 600px) {
@@ -98,10 +112,12 @@
       align-items: center;
       margin: 5px 0;
       .about-moken-second-divider {
-        height: 10.7vw;
-        width: 1px;
+        height: 171px;
+        //height: 10.7vw;
+        width: 10px;
         background-color: black;
-        margin-right: 2.8vw;
+        margin-right: 44px;
+        //margin-right: 2.8vw;
         @media only screen and (max-width: 600px) {
           height: 170px;
           margin-right: 27px;
@@ -110,10 +126,10 @@
       .about-moken-second-kendra-info-block {
         //width: 555px;
         .about-moken-second-kendra-info-text {
-          margin-bottom: 2.9vw;
-          //margin-bottom: 45px;
+          //margin-bottom: 2.9vw;
+          margin-bottom: 15px;
           @media only screen and (max-width: 600px) {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
           }
         }
       }
@@ -140,7 +156,7 @@
     }
       .about-moken-video-info-block {
         //padding: 66px 80px 66px 117px;
-        padding: 4.1vw 5vw 4.1vw 7.3vw;;
+        padding: 67px 224px 52px 112px;
         background-color: white;
         position: absolute;
         z-index: 3;
@@ -151,7 +167,7 @@
           display: none;
         }
       .about-moken-video-info-block-first-title {
-        margin-bottom: 10px;
+        margin-bottom: 28px;
         span {
           letter-spacing: .25vw;
           @media only screen and (max-width: 600px) {

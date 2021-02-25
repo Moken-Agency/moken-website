@@ -21,12 +21,20 @@
   }
 }
 .labs-benefits-container-title {
-  width: 35vw;
+  max-width: 505px;
   margin-right: 3.3vw;
   //margin-right: 55px;
   align-items: flex-start;
+  span {
+    line-height: 53px;
+    @media screen and (max-width: 600px) {
+      line-height: 37px;
+
+    }
+  }
   @media only screen and (min-width: 601px) and (max-width: 1100px) {
     width: auto;
+    margin-bottom: 50px;
 
   }
     @media screen and (max-width: 600px) {
@@ -36,9 +44,7 @@
   }
 }
 .labs-benefits-container-info-block {
-  padding-top: 3.4vw;
-  //padding-top: 55px;
-  width: 49.1vw;
+  max-width: 682px;
   @media only screen and (min-width: 601px) and (max-width: 1100px) {
     width: auto;
 
@@ -48,8 +54,8 @@
     padding-top: 0;
   }
   .labs-benefits-container-info-block-first-title {
-    margin-bottom: 12.45vw;
-    //margin-bottom: 200px;
+    //margin-bottom: 12.45vw;
+    margin-bottom: 115px;
       @media screen and (max-width: 600px) {
         margin-bottom: 150px;
         line-height: 26px;
@@ -64,29 +70,30 @@
     }
   .labs-benefits-container-info-block-second-title {
     //margin-bottom: 93px;
-    margin-bottom: 5.95vw;
+    //margin-bottom: 5.95vw;
+    margin-bottom: 91px;
     @media screen and (max-width: 600px) {
       margin-bottom: 40px;
     }
   }
   .labs-benefits-container-info-block-works-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 69px;
+    grid-column-gap: 33px;
+    margin-bottom: 149px;
     @media screen and (min-width: 601px) and (max-width: 1100px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-row-gap: 60px;
-      grid-column-gap: 60px;
+      //display: grid;
+      //grid-template-columns: 1fr 1fr;
+      //grid-row-gap: 60px;
+      //grid-column-gap: 60px;
     }
     @media screen and (max-width: 600px) {
       flex-direction: column;
     }
     .labs-benefits-container-info-block-work {
-      margin-bottom: 7.3vw;
-      //margin-bottom: 118px;
-      width: 18vw;
+      max-width: 326px;
       @media screen and (min-width: 601px) and (max-width: 1100px) {
         width: auto;
       }
@@ -95,13 +102,13 @@
         width: auto;
       }
       .first-item-img {
-        width: 3vw;
-        height: 3vw;
-        margin-bottom: 2vw;
+        width: 47px;
+        height: 47px;
+        margin-bottom: 15px;
       }
       .labs-benefits-list-item-first {
-        margin-bottom: .9vw;
-        //margin-bottom: 15px;
+        //margin-bottom: .9vw;
+        margin-bottom: 9px;
         @media screen and (max-width: 600px) {
           margin-bottom: 20px;
         }

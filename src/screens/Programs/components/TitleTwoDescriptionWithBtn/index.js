@@ -19,7 +19,7 @@ const TitleTwoDescriptionWithBtn = ({
 
       <section className={"labs-overview-container"}>
         <Text
-          size={55}
+          size={50}
           // size={55}
           animationType={"fade-in"}
           mobSize={35}
@@ -29,7 +29,7 @@ const TitleTwoDescriptionWithBtn = ({
         </Text>
         <div className={"labs-overview-info-block"}>
           <Text
-            type={"light"}
+            type={"kLight"}
             className={"labs-overview-info-block-first-text"}
             size={'1.25vw'}
             animationType={"fade-in"}
@@ -40,7 +40,7 @@ const TitleTwoDescriptionWithBtn = ({
           </Text>
           <div>
             <Text
-              type={"light"}
+              type={"kLight"}
               className={"labs-overview-info-block-second-text"}
               mobSize={16}
               animationType={"fade-in"}

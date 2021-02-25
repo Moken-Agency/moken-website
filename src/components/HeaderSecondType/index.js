@@ -7,7 +7,9 @@ const HeaderSecondType = ({
   subtitle = "",
   marginBottom,
   className = "",
+  subtitleClassName = ''
 }) => {
+  console.log({subtitleClassName});
   return (
     <div
       className={`header-second-title-container ${className}`}
@@ -20,7 +22,7 @@ const HeaderSecondType = ({
         animationType={"fade-in"}
         type={"kMiddle"}
         // type={"semiBold"}
-        className={"header-second-main-title"}
+        className={`header-second-main-title`}
       >
         {title}
       </Text>
@@ -31,7 +33,7 @@ const HeaderSecondType = ({
         animationType={"fade-in"}
         type={"kBold"}
         // type={"thin"}
-        className={"header-second-subtitle"}
+        className={`header-second-subtitle  ${subtitleClassName}`}
       >
         {subtitle}
       </Text>

@@ -7,13 +7,15 @@ export default {
       route: "/community-partner",
     },
     {
-      title: "Ecosystem Partners",
+      title: `Ecosystem
+Partners`,
       subtitle:
       `Influential, access, and education driven programs powering students, founders, and entrepreneurial endeavours throughout the startup ecosystem.`,
       route: "/eco-partner",
     },
     {
-      title: "Ecosystem Partners",
+      title: `Ecosystem
+Partners`,
       subtitle:
       `Tech companies and solution providers with deep vertical market experience and expertise to help our startups and founder overcome challenges.`,
       route: "/eco-partner",

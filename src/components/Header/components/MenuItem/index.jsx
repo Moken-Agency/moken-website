@@ -53,7 +53,7 @@ const MenuItem = ({
     >
       <div className={"menu-item-container"} style={containerStyles}>
         <Text
-          type={"kMedium"}
+          type={"kSemiBold"}
           size={size}
           textStyles={{
             ...textStyles,

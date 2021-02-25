@@ -38,7 +38,7 @@ const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen }) => {
                 className={"form-name-title"}
                 color={"white"}
                 animationType={"fade-in"}
-                type={"semiBold"}
+                type={"kSemiBold"}
                 size={16}
               >
                 {formName}
@@ -49,7 +49,7 @@ const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen }) => {
                 <Text
                   size={16}
                   animationType={"fade-in"}
-                  type={"semiBold"}
+                  type={"kSemiBold"}
                   textStyles={{ letterSpacing: 4 }}
                 >
                   google form here

@@ -3,6 +3,7 @@ import Text from "../Text";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
 import ArrowUpRight from "../../images/arrow-up-right-black.svg";
+import Button from "../Button";
 
 const Opportunity = ({
   title = "",
@@ -45,21 +46,31 @@ const Opportunity = ({
           {subtitle}
         </Text>
       </div>
-      <button className={"view-job"} onClick={() => action ? action() : history.push(route)}>
-        <Text
-          size={12}
-          animationType={"fade-in"}
-          textStyles={{ letterSpacing: 4, cursor: "pointer" }}
-          type={"kRegular"}
-        >
-          {btnTitle}
-        </Text>
-        <img
-          className={"opportunity-arrow"}
-          data-aos="fade-in"
-          src={ArrowUpRight}
-        />
-      </button>
+      <div className={'opportunity-view-btn-container'}>
+        <Button
+            backgroundColor={"transparent"}
+            // onClick={() => history.push(route)}
+            textColor={"black"}
+            size={14}
+            title={btnTitle}
+            animationType={"fade-in"}
+            mobSize={10}
+            type={'kSemiBold'}
+            className={"explore-btn"}
+            animationHoverType={'lowerMenu'}
+            // additionalComponent={() => {
+            //   return (
+            //       <img
+            //           className={"opportunity-arrow"}
+            //           data-aos="fade-in"
+            //           src={ArrowUpRight}
+            //       />
+            //   )
+            // }}
+            onClick={() => action ? action() : history.push(route)} />
+
+
+      </div>
     </div>
   );
 };

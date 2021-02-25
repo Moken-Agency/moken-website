@@ -11,13 +11,29 @@
     justify-content: space-between;
     //flex-wrap: wrap;
     padding-left: 41px;
-    //overflow: hidden;
-    width: calc(100vw - 303px);
+    overflow: hidden;
     @media only screen and (max-width: 1101px) {
       flex-direction: column;
       align-items: center;
       padding-left: 0;
       display: initial;
+    }
+    .home-swiper-buttons-container {
+      display: flex;
+      width: 140px;
+      justify-content: space-between;
+      margin-top: 50px;
+      .home-swiper-button-container {
+        width: 60px;
+        height: 60px;
+        border-radius: 60px;
+        background-color: #007aff;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+          transform: translate(0, -5px) scale(1.01);
+        }
+      }
     }
 
 

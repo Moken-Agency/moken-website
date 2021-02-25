@@ -24,7 +24,7 @@ const Value = ({ title = "", subtitle = "" }) => {
         // type={"light"}
         size={20}
         animationType={"fade-in"}
-        textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+        textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
         mobSize={16}
       >
         {subtitle}

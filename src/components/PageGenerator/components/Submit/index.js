@@ -6,7 +6,7 @@ const Submit = ({ submit }) => {
     <>
       {submit ? (
         <Text
-          type={"semiBold"}
+          type={"kSemiBold"}
           size={"1.5vw"}
           containerStyles={{
             marginBottom: 200,

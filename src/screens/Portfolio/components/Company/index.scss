@@ -2,7 +2,7 @@
   //display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(0, 0, 0, .18);
-  padding: 50px 70px;
+  padding: 67px 70px 50px 70px;
   //padding: 5vw 3.5vw 1vw 4.5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -14,9 +14,9 @@
   }
     div {
     .company-name {
-      margin-bottom: 1vw;
+      margin-bottom: 20px;
       span {
-        letter-spacing: .25vw;
+        letter-spacing: 4px;
         @media only screen and (max-width: 600px) {
           letter-spacing: 4px;
         }
@@ -47,7 +47,7 @@
       justify-content: flex-end;
       .company-arrow {
         //height: 2vw;
-        width: 2vw;
+        width: 27px;
         @media screen and (max-width: 600px) {
           height: 6vw;
           position: initial;

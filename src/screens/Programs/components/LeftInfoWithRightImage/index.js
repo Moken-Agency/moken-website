@@ -12,7 +12,10 @@ const LeftInfoWithRightImage = ({
   btnTitle = "",
   imgUrl = "",
   isLeftImage = false,
-  withoutRightPadding = false
+  withoutRightPadding = false,
+  titleClassName = '',
+  descriptionClassName = '',
+                                  btnAdditionalComponent = null
 }) => {
   const { isMobile } = useWindowDimensions();
   console.log({ isMobile });
@@ -26,31 +29,31 @@ const LeftInfoWithRightImage = ({
         />
       )}
       <div
-        className={"left-info-with-right-image-info-container"}
-        style={{ flexDirection: isLeftImage ? "row-reverse" : "row", paddingLeft: withoutRightPadding ? '4vw' : null }}
+        className={`left-info-with-right-image-info-container 
+        ${isLeftImage ? 'left-info-with-right-image-info-container-reverse' : ''}
+        ${withoutRightPadding ? 'without-padding-right' : ''}`}
+        // style={{ flexDirection: isLeftImage ? "row-reverse" : "row", paddingLeft: withoutRightPadding ? '4vw' : null }}
       >
         <div
           className={"left-info-with-right-image-text-container"}
-          style={{ marginRight: !isLeftImage && !isMobile ? '9vw' : 0 }}
+          style={{ marginRight: !isLeftImage && !isMobile ? 140 : 0 }}
         >
           <Text
             animationType={"fade-up"}
-            // size={55}
-            size={55}
+            size={50}
             mobSize={35}
             type={"kBold"}
-            containerStyles={{ marginBottom: '50px' }}
+            className={`${titleClassName} left-info-with-right-image-container-title`}
           >
             {title}
           </Text>
           <Text
             animationType={"fade-up"}
-            // size={'1.25vw'}
+            className={`${descriptionClassName} left-info-with-right-image-container-description`}
             size={20}
             mobSize={16}
             type={"kLight"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
-            containerStyles={{ marginBottom: '55px' }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
           >
             {description}
           </Text>
@@ -61,6 +64,7 @@ const LeftInfoWithRightImage = ({
               title={btnTitle}
               backgroundColor={"black"}
               textColor={"white"}
+              additionalComponent={btnAdditionalComponent}
             />
           )}
         </div>
@@ -68,7 +72,7 @@ const LeftInfoWithRightImage = ({
           src={imgUrl}
           data-aos="fade-in"
           className={"left-info-with-right-image-image"}
-          style={{ marginRight: isLeftImage && !isMobile ? 50 : 0 }}
+          style={{ marginRight: isLeftImage && !isMobile ? 140 : 0 }}
         />
       </div>
     </section>

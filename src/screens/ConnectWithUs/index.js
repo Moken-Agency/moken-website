@@ -12,6 +12,8 @@ import emailjs from 'emailjs-com';
 import Button from "../../components/Button";
 import useValues from "../../hooks/useValues";
 import Loader from "../../components/Loader";
+import ConnectHeaderImage from '../../images/contact-header.jpg';
+import ConnectSecondImage from '../../images/contact-second.jpg';
 
 const ConnectWithUs = () => {
   const { isMobile } = useWindowDimensions();
@@ -96,23 +98,15 @@ const ConnectWithUs = () => {
           </Text>
           <Text
             size={20}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
-            // type={"light"}
-            type={"kMedium"}
+            // textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+            className={'connect-header-subtitle'}
+            type={"kLight"}
           >
-            We are more than just collaborators.
+            Want to get in touch? We’d love to hear from you. Share with us how we can help you best, below.
           </Text>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
-            // type={"light"}
-            type={"kMedium"}
 
-          >
-            We are partners in your startup’s success.
-          </Text>
         </div>
-        <img src={""} />
+        <img src={ConnectHeaderImage} />
       </header>
 
       <section className={"connect-with-me-about-container"}>
@@ -187,7 +181,7 @@ const ConnectWithUs = () => {
         </div>
       </section>
 
-      <ImageBlock type={"full"} />
+      <ImageBlock url={ConnectSecondImage} />
 
       <EmailForm withForm />
     </div>

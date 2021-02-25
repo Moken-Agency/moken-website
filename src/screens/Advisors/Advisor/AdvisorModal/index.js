@@ -21,13 +21,13 @@ const AdvisorModal = ({isOpen = false, close,advisorInfo}) => {
             <div className={'advisor-modal-container'}>
                 <div className={'advisor-close-btn-container'}>
                     <div onClick={close} style={{cursor: 'pointer'}}>
-                        <Text type={'semiBold'} size={16} textStyles={{letterSpacing: 4}}>CLOSE</Text>
+                        <Text type={'kSemiBold'} size={16} textStyles={{letterSpacing: 4}}>CLOSE</Text>
                     </div>
                 </div>
                 <div className={'advisor-modal-info-container'}>
                     <div>
                         <img src={advisorInfo.avatar} />
-                        <Text type={'semiBold'} size={16} textStyles={{letterSpacing: 4}}>SOCIAL LINKS</Text>
+                        <Text type={'kSemiBold'} size={16} textStyles={{letterSpacing: 4}}>SOCIAL LINKS</Text>
                         <div className={'advisor-modal-info-socials-list'}>
                             {
                                 socialLinks.map(({blackIcon, link}) => {
@@ -40,31 +40,33 @@ const AdvisorModal = ({isOpen = false, close,advisorInfo}) => {
                         </div>
                     </div>
                     <div className={'advisor-second-container'}>
-                        <Text type={'semiBold'}
+                        <Text type={'kSemiBold'}
                               size={16}
                               textStyles={{letterSpacing: 4}}
                               containerStyles={{marginBottom: 20}}
                         >// {title}</Text>
                         <Text type={'thin'}
-                              size={55}
+                              size={50}
                               textStyles={{lineHeight: '55px'}}
                               containerStyles={{marginBottom: 37}}
                         >{name}</Text>
                         <div className={'advisor-bio-container'}>
                             <Text size={16}
-                                  type={'semiBold'}
+                                  type={'kSemiBold'}
                                   textStyles={{letterSpacing: 4}}
                                   containerStyles={{marginBottom: 20}}
                             >BIO</Text>
-                            <Text  size={20} type={'light'} textStyles={{lineHeight: '35px'}}>{bio}</Text>
+                            <Text  size={20} type={'kLight'}
+                                   textStyles={{lineHeight: '30px'}}>{bio}</Text>
                         </div>
                         <div>
                             <Text size={16}
-                                  type={'semiBold'}
+                                  type={'kSemiBold'}
                                   textStyles={{letterSpacing: 4}}
                                   containerStyles={{marginBottom: 20}}
                             >EXPERTISE AREAS</Text>
-                            <Text size={20} type={'light'} textStyles={{lineHeight: '35px'}}>{expertiseArea}</Text>
+                            <Text size={20} type={'kLight'}
+                                  textStyles={{lineHeight: '30px'}}>{expertiseArea}</Text>
                         </div>
                     </div>
 
@@ -72,14 +74,15 @@ const AdvisorModal = ({isOpen = false, close,advisorInfo}) => {
                         <div>
                             <Text size={16}
                                   textStyles={{letterSpacing: 4}}
-                                  type={'semiBold'}
+                                  type={'kSemiBold'}
                                   containerStyles={{marginBottom: 20}}
                             >RATES</Text>
                             <div className={'rates-list-container'}>
                                 {
                                     rates.map(({title, value}) => {
                                         return (
-                                            <Text size={20} type={'light'} textStyles={{lineHeight: '35px'}}>{title} - {value}</Text>
+                                            <Text size={20} type={'kLight'}
+                                                  textStyles={{lineHeight: '30px'}}>{title} - {value}</Text>
                                         )
                                     })
                                 }

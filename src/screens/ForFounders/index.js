@@ -17,17 +17,20 @@ const ForFounders = () => {
     <div className={"for-founders-container"}>
       <HeaderTitle
         title={"FOR FOUNDERS"}
-        subtitle={"Empathetic and experience powered support."}
+        subtitle={"Experience powered support."}
         description={
-            'Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed.'
+            `Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed.`
         }
-        marginBottom={isMobile ? 107 : 107}
+        marginBottom={isMobile ? 107 : 52}
         subtitleClassName={'for-founder-header-subtitle'}
       />
 
       <ImageBlock position={"right"} />
 
       <LeftInfoWithRightImage
+        withoutRightPadding
+        titleClassName={'for-founders-access-title'}
+        descriptionClassName={'for-founders-access-description'}
         mainTitle={"ACCESS YOUR FUTURE"}
         title={"Your power lies in your ability to connect."}
         description={`The Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`}
@@ -36,6 +39,8 @@ const ForFounders = () => {
       />
 
       <LeftInfoWithRightImage
+        titleClassName={'for-founders-knowledge-title'}
+        descriptionClassName={'for-founders-knowledge-description'}
         mainTitle={"ELEVATE YOURSELF TO THE NEXT LEVEL"}
         title={
           "Knowledge is what fuels growth and drives innovation forwards."
@@ -58,6 +63,9 @@ const ForFounders = () => {
       />
 
       <LeftInfoWithRightImage
+          withoutRightPadding
+        titleClassName={'for-founders-strategic-title'}
+        descriptionClassName={'for-founders-strategic-description'}
         mainTitle={"STRATEGIC PARTNERSHIPS"}
         title={
           "Backing ideas that create real change."
@@ -70,7 +78,7 @@ const ForFounders = () => {
       <ProgramCommunityListPartner
         title={"LEVERAGE YOUR POTENTIAL"}
         subtitle={
-          "We are driven by the passion for working with determined innovators who live to make a change in the world."
+          "Driven by the passion for working with determined innovators who live to make a change in the world."
         }
         options={options.founders}
         widthItem={"30vw"}
@@ -79,12 +87,13 @@ const ForFounders = () => {
 
       <TwoColumnsHugeInfo
         title={"BUILD YOUR FUTURE"}
-        leftTitle={`Working with visionary founders to build & grow disruptive startups.`}
+        leftTitle={`Working with visionaries to scale disruptive startups.`}
         rightTitle={`From ideation stage to high growth innovation, our role consists of taking the time to understand your business model, suggest creative and high-performing strategies, while implementing crucial aspects to supplement your growing needs. Our avant-garde tactics are in line with the current market, blending seamlessly with each startup’s operational realities, while eliminating risks that aren’t necessary.`}
         rightFirstListTitle={"HOW WE CAN COLLABORATE"}
         firstList={options.collaborates}
         rightSecondListTitle={"CHOOSE YOUR PURPOSE"}
         secondList={options.purposes}
+        secondListWithIcon
       />
 
       <EmailForm withForm />

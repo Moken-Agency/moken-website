@@ -29,6 +29,12 @@
       @media only screen and (max-width: 600px) {
         margin-bottom: 42px;
       }
+      span {
+        line-height: 80px;
+        @media only screen and (max-width: 600px) {
+          line-height: 50px;
+        }
+      }
     }
   }
 }

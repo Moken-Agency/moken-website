@@ -36,19 +36,33 @@ export default {
   purposes: [
     {
       title: "Build & Scale Your Startup",
-      route: '/about-agency'
+      route: '/about-agency',
+      hoverColour: '#FDCDC6',
+      colourClassName: 'light-coral'
     },
     {
       title: "Access Your Full Potential",
-      route: '/access'
+      route: '/access',
+      hoverColour: '#D5D5D5',
+      colourClassName: 'grey'
+
+
     },
     {
       title: "Connect & Extend Your Network",
-      route: '/events'
+      route: '/events',
+      hoverColour: '#FF9D72',
+      colourClassName: 'coral'
+
+
     },
     {
       title: "Learn to Create The Future",
       route: "/about-programs",
+      hoverColour: '#EFB95E',
+      colourClassName: 'orange'
+
+
     },
   ],
 };

@@ -15,6 +15,7 @@ const ImageBlock = ({
   position = "left",
   className = "",
   type = "side",
+    imgClassName=''
 }) => {
   return (
     <div
@@ -22,7 +23,7 @@ const ImageBlock = ({
       className={`image-block-container ${className}`}
       style={{ justifyContent: positions[position] }}
     >
-      <img src={url} className={`${type}`} />
+      <img src={url} className={`${type} ${imgClassName}`} />
     </div>
   );
 };

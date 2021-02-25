@@ -9,7 +9,7 @@ const TitleCenterImagesList = ({ title = "", list = [] }) => {
         <Text
           className={"title-center-images-list-main-title"}
           animationType={"fade-up"}
-          type={"semiBold"}
+          type={"kSemiBold"}
           size={14}
         >
           {title}

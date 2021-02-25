@@ -11,8 +11,8 @@ import "reactjs-popup/dist/index.css";
 import OpportunitiesImage from "../../images/opportunities.jpg";
 import HeaderSecondType from "../../components/HeaderSecondType";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import ImageBlock from "../../components/ImageBlock";
 import OpportunitiesPeopleLeadershipEmailComponent from "../../components/OpportunitiesPeopleLeadershipEmailComponent";
+import opportunitiesFooterImage from '../../images/opportunities-footer.jpg';
 
 const Opportunities = () => {
   const { isMobile } = useWindowDimensions();
@@ -27,9 +27,10 @@ const Opportunities = () => {
       {/* </section>*/}
 
       <HeaderSecondType
+          subtitleClassName={'opportunities-header-subtitle'}
         title={"CAREER OPPORTUNITIES"}
         subtitle={"Together, we’ll do things that make an impact."}
-        marginBottom={isMobile ? 12 : 146}
+        marginBottom={isMobile ? 12 : 226}
       />
 
       <section className={"opportunities-image-block-container"}>
@@ -62,7 +63,7 @@ const Opportunities = () => {
             description={"The Moken team is growing at a rapid pace, to stay in the loop and\n" +
             "            explore ways to work together join our mailing list to never miss a\n" +
             "            beat."}
-            imgURL={' '}
+            imgURL={opportunitiesFooterImage}
         />
     </div>
   );

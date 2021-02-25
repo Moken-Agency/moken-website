@@ -26,7 +26,7 @@ const Title = ({
           <Text
             color={color}
             animationType={"fade-in"}
-            type={"kRegular"}
+            type={"kSemiBold"}
             size={size}
           >
             {title}

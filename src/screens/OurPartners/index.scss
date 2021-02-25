@@ -102,9 +102,13 @@
   //.{width: '6vw', height: '2.5vw', backgroundColor: 'grey', margin: '2vw'} {}
   //align-items: center;
 .partners-increase-title {
-  width: 900px;
+  max-width: 900px;
+  span {
+    line-height: 53px;
+  }
   @media only screen and (max-width: 1350px) {
     width: 100%;
+    max-width: 100%;
   }
 }
   .partners-container {
@@ -157,7 +161,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 245px;
   @media only screen and (min-width: 601px) and (max-width: 1350px) {
    flex-direction: column;
   }
@@ -165,6 +169,15 @@
     flex-direction: column;
     padding: 0 43px;
     margin-bottom: 60px;
+  }
+  .our-partners-involved-title {
+    max-width: 683px;
+    span {
+      line-height: 53px;
+      @media only screen and (max-width: 600px) {
+        line-height: 38px;
+      }
+    }
   }
   .explore-our-partners-potential-container {
     display: flex;
@@ -178,5 +191,8 @@
       margin-top: 40px;
     }
   }
+}
 
+.our-partners-opportunities-subtitle {
+  max-width: 929px;
 }

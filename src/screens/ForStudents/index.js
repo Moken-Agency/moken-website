@@ -21,7 +21,7 @@ const ForStudents = () => {
         description={
           `The future generation is the core of our community. We work together to create a future that is better than the last.`
         }
-        marginBottom={isMobile ? 107 : 107}
+        marginBottom={isMobile ? 107 : 82}
       />
 
       <ImageBlock position={"right"} />
@@ -52,6 +52,7 @@ in pursuit of success.`
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
+        blockType={'middle'}
       />
 
       <LeftInfoWithRightImage

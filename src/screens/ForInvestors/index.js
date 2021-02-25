@@ -27,6 +27,7 @@ const ForInvestors = () => {
       />
 
       <LeftInfoWithRightImage
+        withoutRightPadding
         title={"Join our trusted community of partners and market what you do."}
         mainTitle={"STARTUP MATCH PROGRAM"}
         description={
@@ -39,6 +40,7 @@ const ForInvestors = () => {
       />
 
       <LeftInfoWithRightImage
+        withoutRightPadding
         title={
           "Moken Agency copy goes here about individuals working together to create extraordinary"
         }
@@ -59,6 +61,9 @@ const ForInvestors = () => {
         withIcon
         textColor={"black"}
         backgroundColor={"grey"}
+        blockType={'middle'}
+        size={30}
+        type={'kThin'}
       />
 
       <ProgramCommunityListPartner
@@ -66,11 +71,13 @@ const ForInvestors = () => {
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
+        subtitleClassName={'for-investors-partners-subtitle'}
         options={options.partners}
         type={"big"}
       />
 
       <LeftInfoWithRightImage
+        withoutRightPadding
         title={
           "Let us host a demo day for you Enthusiastic individuals working"
         }
@@ -82,6 +89,7 @@ const ForInvestors = () => {
           " realities, and eliminate risks that aren’t necessary."
         }
         btnTitle={"APPLY TO INCUBATOR"}
+        isLeftImage
       />
 
       <EmailForm withForm />

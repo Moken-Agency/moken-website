@@ -29,7 +29,7 @@ const FirstItem = ({ title, subtitle, imgURL = '' }) => {
         size={20}
         mobSize={16}
         animationType={"fade-up"}
-        textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+        textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
         type={"kLight"}
         // type={"light"}
       >
@@ -63,7 +63,7 @@ const TwoColumnsHugeInfo = ({
           type={"kBold"}
           // type={"extraLight"}
           // size={'3.4vw'}
-          size={55}
+          size={50}
           mobSize={35}
           animationType={"fade-up"}
           className={"labs-benefits-container-title"}
@@ -78,7 +78,7 @@ const TwoColumnsHugeInfo = ({
             type={"kLight"}
             // type={"light"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
             className={"labs-benefits-container-info-block-first-title"}
           >
             {rightTitle}
@@ -107,25 +107,27 @@ const TwoColumnsHugeInfo = ({
             </div> : null}
 
             {rightSecondListTitle ? <Text
-                type={"kRegular"}
-                // type={"semiBold"}
+                // type={"kRegular"}
+                type={"kSemiBold"}
                 size={14}
                 mobSize={10}
                 animationType={"fade-up"}
                 className={"two-column-right-second-list-title"}
                 textStyles={{letterSpacing: 4}}
             >
-                {rightSecondListTitle}
+                {rightSecondListTitle.toUpperCase()}
             </Text> : null}
 
           {!secondListLikeFirst
-            ? secondList.map(({ title = "", subtitle = "", link = "", route = '/' }) => {
+            ? secondList.map(({ title = "", subtitle = "", link = "", route = '/', hoverColour = '#000', colourClassName = '' }) => {
                 return (
                   <UnderlineTextWithIcon
                     withIcon={secondListWithIcon}
                     color={"black"}
                     // size={'2.13vw'}
+                    hoverColour={hoverColour}
                     size={34}
+                    colourClassName={colourClassName}
                     mobSize={18}
                     className={"two-column-submit-your-resume"}
                     title={title}

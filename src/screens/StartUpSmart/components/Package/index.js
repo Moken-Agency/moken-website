@@ -6,11 +6,11 @@ import useWindowDimensions from "../../../../hooks/useWindowDimensions";
 import "./index.scss";
 
 const Package = ({
-  title,
-  subtitle,
-  firstColumn,
-  secondColumn,
-  thirdColumn,
+  title = '',
+  subtitle = '',
+  firstColumn = [],
+  secondColumn = [],
+  thirdColumn = [],
 }) => {
   const { isMobile } = useWindowDimensions();
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ const Package = ({
     transition: ".5s",
     opacity: isOpen ? 1 : 0,
     height: isOpen ? "auto" : 0,
-    padding: isOpen ? "5vw 4vw" : 0,
+    padding: isOpen ? "76px 25px 0 25px" : 0,
   };
   const hiddenDynamicStylesMob = {
     visibility: isOpen ? "visible" : "hidden",
@@ -60,7 +60,7 @@ const Package = ({
       <div className={"package-top-container"}>
         <div>
           <Text
-            type={"semiBold"}
+            type={"kSemiBold"}
             mobSize={12}
             size={16}
             textStyles={{ letterSpacing: isMobile ? 3 : 4 }}
@@ -93,18 +93,20 @@ const Package = ({
 
       <div className={"opened-container"} style={hiddenDynamicStyles}>
         <div className={"w30per mob-width-container"}>
-          {firstColumn.data.map(({ title, descriptions = [] }, index) => {
+          {firstColumn.length !== 0 ? firstColumn.data.map(({ title, descriptions = [] }, index) => {
             return (
               <div className={"description"}>
                 <Text
                   size={14}
                   mobSize={10}
-                  type={"kRegular"}
+                  type={"kMedium"}
                   containerStyles={{
-                    marginBottom: isMobile ? "8vw" : "1vw",
+                    marginBottom: isMobile ? "8vw" : 10,
                   }}
                   textStyles={{
                     letterSpacing: isMobile ? 3 : 4,
+                    lineHeight: '20px',
+                    fontWeight: 500
                   }}
                 >
                   {title}
@@ -116,7 +118,7 @@ const Package = ({
                         key={"packages descriptions" + title + index}
                         size={20}
                         mobSize={16}
-                        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+                        textStyles={{ lineHeight: isMobile ? "26px" : "30px", whiteSpace: 'break-spaces' }}
                         containerStyles={{
                           marginBottom: isMobile ? "2vw" : "1vw",
                         }}
@@ -129,10 +131,10 @@ const Package = ({
                 </div>
               </div>
             );
-          })}
+          }) : <div />}
         </div>
         <div className={"w30per mob-width-container"}>
-          {secondColumn.data.map(({ title, descriptions = [] }, index) => {
+          {secondColumn.length  !== 0 ? secondColumn.data.map(({ title, descriptions = [] }, index) => {
             return (
               <div
                 className={"description"}
@@ -141,10 +143,10 @@ const Package = ({
                 <Text
                   size={14}
                   mobSize={10}
-                  type={"kRegular"}
+                  type={"kMedium"}
                   animationType={"fade-in"}
                   containerStyles={{
-                    marginBottom: isMobile ? "8vw" : "1vw",
+                    marginBottom: isMobile ? "8vw" : 10,
                   }}
                   textStyles={{
                     letterSpacing: isMobile ? 3 : 4,
@@ -160,9 +162,9 @@ const Package = ({
                         type={"kLight"}
                         mobSize={16}
                         animationType={"fade-in"}
-                        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+                        textStyles={{ lineHeight: isMobile ? "26px" : "30px",  whiteSpace: 'break-spaces' }}
                         containerStyles={{
-                          marginBottom: isMobile ? "2vw" : "1vw",
+                          marginBottom: isMobile ? "2vw" : "10px",
                         }}
                         key={"packages descriptions" + title + index}
                       >
@@ -173,10 +175,10 @@ const Package = ({
                 </div>
               </div>
             );
-          })}
+          }) : <div/>}
         </div>
         <div className={"third-column-package"}>
-          {thirdColumn.data.map(({ title, withSubtitle, subtitle }, index) => {
+          {thirdColumn.length !== 0  ? thirdColumn.data.map(({ title, withSubtitle, subtitle }, index) => {
             return (
               <div
                 style={{ marginBottom: "2vw" }}
@@ -194,7 +196,7 @@ const Package = ({
                   </Text>
                 ) : null}
                 <Text
-                  size={55}
+                  size={50}
                   animationType={"fade-in"}
                   mobSize={35}
                   type={"kBold"}
@@ -203,7 +205,7 @@ const Package = ({
                 </Text>
               </div>
             );
-          })}
+          }) : <div/>}
         </div>
       </div>
 

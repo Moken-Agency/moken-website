@@ -14,7 +14,7 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
             size={35}
             className={"course-component-first"}
             mobSize={20}
-            type={"kBold"}
+            type={"kThin"}
             // type={"thin"}
           >
             {title}
@@ -24,7 +24,7 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
             size={18}
             mobSize={14}
             className={"course-component-second"}
-            type={"kMedium"}
+            type={"kLight"}
             textStyles={{fontWeight: 300}}
             // type={"light"}
           >
@@ -33,10 +33,13 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
         </div>
         <Button
           title={btnTitle}
-          backgroundColor={"black"}
-          textColor={"white"}
           mobSize={10}
           size={14}
+          animationHoverType={'lowerMenu'}
+          backgroundColor={"transparent"}
+          textColor={"black"}
+          type={'kSemiBold'}
+          className={"explore-btn"}
         />
       </section>
     </div>

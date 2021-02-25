@@ -14,6 +14,7 @@ import ImageBlock from "../../components/ImageBlock";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import HugeInfoAllListColumn from "../Programs/components/HugeInfoAllListColumn";
 import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList";
+import ourVisionHeader from '../../images/our-vision-header.jpg';
 
 const OurVision = () => {
   const { isMobile } = useWindowDimensions();
@@ -23,26 +24,26 @@ const OurVision = () => {
       <HeaderTitle
         marginBottom={142}
         title={"OUR VISION"}
+        subtitleClassName={'our-vision-header-subtitle'}
+        descriptionClassName={'our-vision-header-description'}
         subtitle={"Building brands & transforming ideas."}
         description={
-          "Built to support founders, Moken is a group of trailblazing companies specialized in all " +
-          "things startup."
+          `Built to support founders, Moken creates diversified opportunities for startups and founders 
+          driving economic and social impact, globally. We strive to create an experience that transforms growth potential.`
         }
       />
 
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={ourVisionHeader}/>
 
       <TwoColumnsHugeInfo
         title={"OUR BELIEFS"}
         leftTitle={
           "Empowering one another in creating change around the world."
         }
-        rightTitle={`We know that dynamic actions define the future and that the ambition to lead requires
-                            the tenacity to adapt. This is why we partner with clients, startups, and founders who
-                            challenge themselves to be exceptional leaders and are unwavering in our commitment to do
-                             right by our clients, team, partners, and communities. We define our ambitions with clients,
-                            then work together as one team to create high levels of value striving to set new standards
-                            of excellence within each industry.`}
+        rightTitle={`We join founders in looking at the world differently. Which is why startups, entrepreneurs, and
+         global industry leaders come to us to solve defining challenges. We integrate and work alongside supporting
+          innovative ideas through paving the way for success. We have a shared ambition to achieve extraordinary
+           results, outperform the competition, and redefine industries through disruption.`}
         rightFirstListTitle={""}
         firstList={options.beliefs}
       />
@@ -52,16 +53,17 @@ const OurVision = () => {
         title={"OUR VALUES"}
         subtitle={"We make it easy to kickstart your vision."}
         list={options.values}
-        description={`With packages at a startup price point, we work with founders and ideators with
-                            high growth potential. We're passionate about big ideas and working with people who
-                            feel the same`}
+        description={`Through developing curated solutions and opportunities within varied industries, our mission is 
+        to build relationships, create change, and empower the future by providing startups and founders access to
+         everything they need to make an impact.`}
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"GET INVOLVED"}
+        title={"See our impact in action?"}
+        subtitle={"CHECK OUT OUR PORTFOLIO"}
         withIcon
         backgroundColor={"black"}
+        blockType={'middle'}
       />
 
       <Title title={"HOW IT WORKS"} className={"vision-works-title"} />

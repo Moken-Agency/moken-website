@@ -64,7 +64,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
             size={30}
             animationType={"fade-in"}
             type={"kLight"}
-            textStyles={{lineHeight: '35px', fontWeight: 300}}
+            textStyles={{lineHeight: '30px', fontWeight: 300}}
             className={'footer-join-text'}
           >
             Join our newsletter
@@ -74,7 +74,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
             type={"kLight"}
             animationType={"fade-in"}
             textStyles={joinSecondText}
-            containerStyles={{ marginBottom: 20, lineHeight: "35px", fontWeight: 300}}
+            containerStyles={{ marginBottom: 20, lineHeight: "30px", fontWeight: 300}}
           >
             We will send you updates related to all things Moken.
           </Text>

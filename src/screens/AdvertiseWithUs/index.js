@@ -17,6 +17,7 @@ const AdvertiseWithUs = () => {
   return (
     <div className={"advertise-with-us-container"}>
       <HeaderSecondType
+        subtitleClassName={'advertise-header-subtitle'}
         title={"ADVERTISE WITH US"}
         subtitle={"Building unforgettable brands for start-ups with ambition."}
         marginBottom={isMobile ? 287 : 184}

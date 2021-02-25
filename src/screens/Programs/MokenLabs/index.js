@@ -92,7 +92,7 @@ const MokenLabs = () => {
       <section className={"labs-global-container"}>
         <Text
           type={"kBold"}
-          size={55}
+          size={50}
           mobSize={35}
           animationType={"fade-in"}
           textStyles={{ letterSpace: 0.5 }}

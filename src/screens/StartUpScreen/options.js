@@ -7,9 +7,9 @@ export default {
       btnTitle: "SHOP PACKAGES",
     },
     {
-      title: "StartupSmart Kits",
+      title: "StartupSmart Events",
       subtitle:
-        "Events are one of the most effective ways to help a startup grow. Our StartupSmart events are here to make it easier for founders to host and attend events that can directly impact their goals hosted by experienced leaders and high-level founders.",
+      `Events are one of the most effective ways to help a startup grow. Our StartupSmart events are here to make it easier for founders to host and attend events that can directly impact their goals hosted by experienced leaders and high-level founders.`,
       btnTitle: "VIEW EVENTS",
     },
   ],

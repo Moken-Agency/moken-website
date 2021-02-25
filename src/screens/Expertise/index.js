@@ -5,9 +5,10 @@ import Title from "../../components/Title";
 import options from "./options";
 import ExpertiseItem from "./components/ExpertiseItem";
 import Button from "../../components/Button";
-import ExpertiseImage from "../../images/expertise.png";
-import HeaderTitle from "../../components/HeaderTitle";
+import ExpertiseHeader from "../../images/expertise-header.jpg";
+import ExpertiseFooter from "../../images/expertise-footer.jpg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+
 const { gettingStarted, marketing, product } = options;
 
 const Expertise = () => {
@@ -46,7 +47,7 @@ const Expertise = () => {
           </Text>
         </div>
 
-        <img src={''} />
+        <img src={ExpertiseHeader} />
       </div>
 
       <Title title={"GETTING STARTED"} />
@@ -58,10 +59,10 @@ const Expertise = () => {
           containerStyles={{ marginBottom: isMobile ? 100 : "8vw" }}
           type={"kBold"}
           animationType={"fade-in"}
-          size={55}
+          size={50}
           mobSize={35}
         >
-            We’re a startup and business scalability agency determined to help founders build, create, and grow.
+            We’re a startup and business scalability agency determined to help founders build, create, and grow successful ventures.
         </Text>
       </div>
       <div className={"expertise-items-container"}>
@@ -78,7 +79,7 @@ const Expertise = () => {
 
       <Title
         className={"expertise-started-title"}
-        title={"MARKETING & GROWTH"}
+        title={"MARKETING & GROWTH EXPERTISE"}
       />
       <div className={"expertise-items-container"}>
         {marketing.map((props, index) => {
@@ -99,20 +100,20 @@ const Expertise = () => {
                 color={"white"}
                 type={"kBold"}
                 animationType={"fade-in"}
-                size={55}
+                size={50}
                 mobSize={35}
                 className={"expertise-bottom-first-info-text-first"}
               >
-                Not exactly what you were looking for?
+                  Whatever your needs, we've got you.
               </Text>
               <Text
                 color={"white"}
-                type={"light"}
-                size={20}
+                type={"kLight"}
+                size={18}
                 // size={"1vw"}
                 animationType={"fade-in"}
                 mobSize={16}
-                textStyles={{lineHeight: isMobile ? null : '35px'}}
+                textStyles={{lineHeight: isMobile ? null : '29px'}}
                 className={"expertise-bottom-first-info-text-second"}
                 containerStyles={{marginBottom: isMobile ? 50 : null}}
               >
@@ -154,7 +155,7 @@ const Expertise = () => {
               />
             </div>
           </div>
-          <img src={ExpertiseImage} />
+          <img src={ExpertiseFooter} />
         </div>
       </div>
     </div>

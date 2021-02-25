@@ -15,18 +15,19 @@ const SubmitYourResume = ({
   const { isMobile } = useWindowDimensions();
 
   return (
-    <Text
-      size={size}
-      mobSize={mobSize}
-      type={"kSemiBold"}
-      // type={"semiBold"}
-      color={color}
-      animationType={"fade-up"}
-      className={`text-submit ${className}`}
-      onClick={onClick}
-    >
-      {title}
-    </Text>
+        <Text
+            size={size}
+            mobSize={mobSize}
+            type={"kSemiBold"}
+            // type={"semiBold"}
+            color={color}
+            animationType={"fade-up"}
+            className={`text-submit ${className}`}
+            onClick={onClick}
+        >
+          {title}
+        </Text>
+
   );
 };
 

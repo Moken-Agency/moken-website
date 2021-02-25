@@ -12,19 +12,16 @@
   }
     .title-center-images-list-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     @media only screen and (max-width: 600px) {
     }
     .title-center-images-list-item {
-      width: 14.7vw;
-      //width: 235px;
-      height: 5vw;
-      //height: 80px;
-      background-color: #a7a7a7;
+      width: 236px;
+      height: 80px;
+      padding: 35px;
       margin-bottom: 3.8vw;
-      //margin-bottom: 60px;
       @media only screen and (max-width: 600px) {
         width: 120px;
         height: 55px;

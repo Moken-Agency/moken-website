@@ -15,7 +15,7 @@ const OurPartnersComponent = ({ title = defaultTitle, text = defaultText }) => {
 
       <section className={"labs-increase-container"}>
         <Text
-          size={55}
+          size={50}
           mobSize={35}
           data-aos="fade-in"
           type={"kBold"}

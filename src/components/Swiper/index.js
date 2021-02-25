@@ -5,10 +5,11 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 import ArrowUpRight from "../../images/arrow-up-right-white.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import "./index.scss";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 SwiperCore.use([Navigation, Virtual]);
 

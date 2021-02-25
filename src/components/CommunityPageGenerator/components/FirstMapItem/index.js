@@ -6,7 +6,7 @@ const FirstMapItem = ({ title = "" }) => {
   return (
     <div className={"first-map-item-container"}>
       <Text
-        type={"semiBold"}
+        type={"kSemiBold"}
         animationType={"fade-in"}
         size={22}
         mobSize={22}

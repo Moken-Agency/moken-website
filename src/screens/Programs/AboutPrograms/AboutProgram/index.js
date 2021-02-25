@@ -12,16 +12,16 @@ const AboutProgram = ({ containerStyles = {}, title = "", text = "" }) => {
         size={75}
         animationType={"fade-in"}
         mobSize={40}
-        type={"semiBold"}
+        type={"kSemiBold"}
       >
         {title}
       </Text>
       <div className={"about-program-divider"} />
       <Text
-        type={"light"}
+        type={"kLight"}
         animationType={"fade-in"}
         size={20}
-        textStyles={{ lineHeight: isMobile ? "auto" : "35px" }}
+        textStyles={{ lineHeight: isMobile ? "auto" : "30px" }}
         className={"about-program-text"}
         mobSize={11}
       >

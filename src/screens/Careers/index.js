@@ -17,6 +17,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HeaderTitle from "../../components/HeaderTitle";
 import TitleShortListWithBtn from "../../components/TitleShortListWithBtn";
 import Button from "../../components/Button";
+import ImageBlock from "../../components/ImageBlock";
 
 const Careers = () => {
   const history = useHistory();
@@ -35,7 +36,7 @@ const Careers = () => {
         marginBottom={isMobile ? 99 : 207}
       />
 
-      <img className={"image-section"} src={ImagePeopleHeader} />
+      <ImageBlock url={ImagePeopleHeader} />
 
       <TitleShortListWithBtn title={'NEW OPPORTUNITIES'}
                              subtitle={'We’re hiring. If something piques your interest, let us know.'}
@@ -55,7 +56,6 @@ const Careers = () => {
               "Discover why our team is the reason our community keeps coming back for more.\n"
             }
             mobSize={35}
-            size={55}
             className={"careers-third-subtitle"}
           />
           <div className={"benefits-container"}>
@@ -78,7 +78,6 @@ const Careers = () => {
             />
             <Subtitle
               mobSize={35}
-              size={55}
               type={'kBold'}
               subtitle={"We would still love to hear from you"}
               color={"white"}
@@ -89,7 +88,7 @@ const Careers = () => {
               size={20}
               type={'kLight'}
               // size={"1vw"}
-              textStyles={{lineHeight: isMobile ? null : '35px'}}
+              textStyles={{lineHeight: isMobile ? null : '30px'}}
               description={[
                 {
                   title:

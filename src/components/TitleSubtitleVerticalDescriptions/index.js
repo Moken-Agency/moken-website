@@ -8,25 +8,28 @@ const TitleSubtitleVerticalDescriptions = ({
   title = "",
   subtitle = "",
   descriptions = [],
-    containerStyles = {}
+   containerStyles = {},
+   subtitleClassName = '',
+   descriptionClassName = ''
+
 }) => {
   return (
     <div className={"title-sub-description-vertical-container"} style={containerStyles}>
       <Title title={title} className={"title-sub-description-vertical-title"} />
       <Text
-        className={"title-sub-description-vertical-subtitle"}
+        className={`${subtitleClassName} title-sub-description-vertical-subtitle`}
         animationType={"fade-in"}
         type={"kBold"}
-        size={55}
+        size={50}
         mobSize={35}
       >
         {subtitle}
       </Text>
         {descriptions.map(description => (
                 <Text
-                    className={"title-sub-description-vertical-description"}
+                    className={`${descriptionClassName} title-sub-description-vertical-description`}
                     animationType={"fade-in"}
-                    type={"light"}
+                    type={"kLight"}
                     size={20}
                     mobSize={16}
                 >

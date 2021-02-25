@@ -15,7 +15,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   size={14}
                   mobSize={10}
                   animationType={"fade-in"}
-                  type={"kRegular"}
+                  type={"kMedium"}
                   textStyles={{letterSpacing: 4}}
               >
                   {title}
@@ -43,6 +43,7 @@ const Explore = ({ title, subtitle, description, route = "", isActive}) => {
                   mobSize={8}
                   type={'kSemiBold'}
                   className={"explore-btn"}
+                  animationHoverType={'lowerMenu'}
               />
           </div>
       </div>

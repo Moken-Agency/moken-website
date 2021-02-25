@@ -51,9 +51,13 @@ export default {
           title: "PEOPLE & LEADERSHIP",
           route: "/people-leadership",
         },
+        // {
+        //   title: "CLIENT RESULTS",
+        //   route: "/",
+        // },
         {
-          title: "CLIENT RESULTS",
-          route: "/",
+          title: 'Our Vision',
+          route: '/our-vision'
         },
         {
           title: "OUR PARTNERS",
@@ -62,32 +66,6 @@ export default {
         {
           title: "PORTFOLIO",
           route: "/portfolio",
-        },
-      ],
-    },
-    {
-      title: "agency",
-      dividerColor: "#ffc4af",
-      subRouts: [
-        {
-          title: "About Agency",
-          route: "/about-agency",
-        },
-        {
-          title: "Expertise",
-          route: "/expertise",
-        },
-        {
-          title: "SPRINTS & ROADMAPS",
-          isComingSoon: true
-        },
-        {
-          title: "STARTUPSMART PACKAGES",
-          route: "/start-up-smart-packages",
-        },
-        {
-          title: "PRODUCT TESTING TEAM",
-          route: "/product-testing-team",
         },
       ],
     },
@@ -122,6 +100,32 @@ export default {
         },  {
           title: "FOR STARTUP PROGRAM",
           route: '/start-up-smart'
+        },
+      ],
+    },
+    {
+      title: "agency",
+      dividerColor: "#ffc4af",
+      subRouts: [
+        {
+          title: "About Agency",
+          route: "/about-agency",
+        },
+        {
+          title: "Expertise",
+          route: "/expertise",
+        },
+        {
+          title: "SPRINTS & ROADMAPS",
+          isComingSoon: true
+        },
+        {
+          title: "STARTUPSMART PACKAGES",
+          route: "/start-up-smart-packages",
+        },
+        {
+          title: "PRODUCT TESTING TEAM",
+          route: "/product-testing-team",
         },
       ],
     },

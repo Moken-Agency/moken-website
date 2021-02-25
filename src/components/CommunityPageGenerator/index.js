@@ -62,7 +62,7 @@ const CommunityPageGenerator = ({
             >
               <Text
                   size={16}
-                  type={"semiBold"}
+                  type={"kSemiBold"}
                   mobSize={14}
                   animationType={"fade-in"}
                   color={"#cdcdcdcd"}
@@ -73,7 +73,7 @@ const CommunityPageGenerator = ({
               </Text>
               <Text
                   size={16}
-                  type={"semiBold"}
+                  type={"kSemiBold"}
                   mobSize={14}
                   animationType={"fade-in"}
                   textStyles={{ letterSpacing, marginBottom: isMobile ? 70 : 0 }}
@@ -101,8 +101,7 @@ const CommunityPageGenerator = ({
         <div className={"first-section-info-container"}>
           {/*<Text size={'3.3vw'}*/}
           <Text
-            size={55}
-            // size={55}
+            size={50}
             mobSize={35}
             animationType={"fade-in"}
             type={"kBold"}
@@ -117,12 +116,12 @@ const CommunityPageGenerator = ({
           <Text
             // size={'1.25vw'}
             size={20}
-            type={"light"}
+            type={"kLight"}
             mobSize={16}
             animationType={"fade-in"}
             // textStyles={{lineHeight: 35}}
             containerStyles={{ paddingRight: !isMobile ? '8vw' : null }}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
 
               // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
           >

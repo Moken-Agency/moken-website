@@ -16,7 +16,7 @@ const ProgramSwiper = ({
       <Title title={title} className={"program-swiper-title"} />
       {subtitle ? (
         <Text
-          size={55}
+          size={50}
           mobSize={35}
           animationType={"fade-in"}
           type={"kBold"}

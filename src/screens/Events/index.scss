@@ -1,5 +1,25 @@
+.events-container {
+  .events-experiences-subtitle {
+    max-width: 780px;
+    width: auto;
+  }
+  .events-experiences-description {
+    max-width: 836px;
+    width: auto;
+  }
+}
+
 .events-header-container {
   width: 700px;
+}
+
+.events-header-subtitle {
+  max-width: 1104px;
+  width: auto;
+}
+
+.events-image-first-block {
+  max-width: 1500px;
 }
 
 .creative-community {
@@ -11,7 +31,7 @@
 }
 
 .creative-community-text-container {
-  width: 725px;
+  //width: 725px;
   margin-bottom: 50px;
   padding-left: 2vw;
   @media only screen and (max-width: 1050px) {
@@ -20,9 +40,22 @@
 }
 
 .creative-community-first-text-container {
-  width: 622px;
+  max-width: 661px;
   margin-bottom: 50px;
   @media only screen and (max-width: 1050px) {
     width: auto;
+  }
+}
+
+
+
+
+.creative-community-first-description {
+  max-width: 729px;
+  span {
+    line-height: 30px;
+    @media only screen and (max-width: 1050px) {
+      line-height: 26px;
+    }
   }
 }

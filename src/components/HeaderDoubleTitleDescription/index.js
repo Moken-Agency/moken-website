@@ -19,7 +19,7 @@ const HeaderDoubleTitleSubtitleDescription = ({titleFirst = '',
                 >
                     <Text
                         size={16}
-                        type={"semiBold"}
+                        type={"kSemiBold"}
                         mobSize={14}
                         animationType={"fade-in"}
                         color={"#cdcdcdcd"}
@@ -30,7 +30,7 @@ const HeaderDoubleTitleSubtitleDescription = ({titleFirst = '',
                     </Text>
                     <Text
                         size={".95vw"}
-                        type={"semiBold"}
+                        type={"kSemiBold"}
                         mobSize={14}
                         animationType={"fade-in"}
                         textStyles={{ letterSpacing: 4, marginBottom: isMobile ? 70 : 0 }}
@@ -50,11 +50,11 @@ const HeaderDoubleTitleSubtitleDescription = ({titleFirst = '',
                 </Text>
                 <Text
                     size={20}
-                    type={"light"}
+                    type={"kLight"}
                     mobSize={16}
                     animationType={"fade-in"}
                     className={'header-double-description'}
-                    textStyles={{  lineHeight: isMobile ? '25px' : '35px'}}
+                    textStyles={{  lineHeight: isMobile ? '25px' : '30px'}}
                 >
                     {description}
                 </Text>

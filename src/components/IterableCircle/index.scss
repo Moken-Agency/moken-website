@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #000;
   border-radius: 100%;
   @media only screen and (max-width: 600px) {
     width: 71px;
@@ -31,7 +31,7 @@
       .join-divider {
       height: 5vw;
       width: 1px;
-      background-color: #cdcdcd;
+      background-color: #000;
       margin: 1vw 0;
       @media screen and (max-width: 600px) {
         height: 182px;

@@ -20,7 +20,7 @@ const TitleRowSubDes = ({
           className={"title-row-sub-desc-subtitle"}
           type={"kBold"}
           // type={"extraLight"}
-          size={55}
+          size={50}
           animationType={"fade-in"}
           mobSize={35}
         >

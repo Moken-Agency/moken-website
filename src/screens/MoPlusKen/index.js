@@ -34,7 +34,7 @@ const MoPlusKen = () => {
           <Text
             className={"mo-ken-overview-subtitle"}
             animationType={"fade-in"}
-            size={55}
+            size={50}
             mobSize={35}
             type={"kBold"}
           >
@@ -43,11 +43,11 @@ const MoPlusKen = () => {
           </Text>
           <Text
             className={"mo-ken-overview-description"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
             size={20}
             animationType={"fade-in"}
             mobSize={16}
-            type={"light"}
+            type={"kLight"}
           >
             People do not simply buy products or services, they buy brands with
             a purpose. By providing unique brand experiences, a startup is able

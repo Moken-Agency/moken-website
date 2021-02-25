@@ -49,7 +49,7 @@ const Access = () => {
         backgroundColor={"black"}
         blockType={'middle'}
         type={"thin"}
-        // size={30}
+        size={45}
       />
 
       <LeftImageTitleSubDesList

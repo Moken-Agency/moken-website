@@ -25,7 +25,7 @@ const TitleContainerWithImg = ({
             />
             <Description
               description={description}
-              size={"1.23vw"}
+              size={20}
               mobSize={16}
               className={"with-title-container-with-img-description"}
             />

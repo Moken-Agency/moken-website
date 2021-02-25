@@ -16,7 +16,7 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
     <div className={"expertise-item-container"}>
       <Text
         // size={'4.7vw'}
-        size={55}
+        size={50}
         animationType={"fade-in"}
         mobSize={35}
         type={"kLight"}

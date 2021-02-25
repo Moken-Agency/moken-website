@@ -9,11 +9,11 @@ const TermsAndConditions = () => {
     <div className={"terms-container"}>
       <div className={"terms-header-container"}>
         <Text
-          size={100}
-          mobSize={65}
-          animationType={"fade-in"}
-          color={"white"}
-          type={"thin"}
+            size={95}
+            animationType={"fade-in"}
+            mobSize={50}
+            color={"white"}
+            type={"kBold"}
         >
           Terms & Conditions
         </Text>

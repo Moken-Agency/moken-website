@@ -34,7 +34,7 @@ const LeftImageTitleSubDesList = ({
             {title}
           </Text>
           <Text
-            size={55}
+            size={50}
             mobSize={35}
             animationType={"fade-in"}
             type={"kBold"}
@@ -47,7 +47,7 @@ const LeftImageTitleSubDesList = ({
             size={20}
             animationType={"fade-in"}
             mobSize={16}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px", fontWeight: 300 }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
             type={"kLight"}
             // type={"light"}
             className={"left-image-title-sub-desc-right-text"}

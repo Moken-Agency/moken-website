@@ -1,7 +1,6 @@
 .left-image-title-sub-desc-container {
   padding: 0 12vw;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 205px;
   @media only screen and (max-width: 600px) {
     flex-direction: column-reverse;
@@ -11,7 +10,7 @@
     width: 668px;
     max-height: 1000px;
     background-color: grey;
-    margin-right: 80px;
+    margin-right: 150px;
     @media only screen and (max-width: 600px) {
       width: auto;
       height: 425px;
@@ -39,10 +38,16 @@
       }
       .left-image-title-sub-desc-right-subtitle {
         margin-bottom: 62px;
+        span {
+          line-height: 53px;
+          @media screen and(max-width: 600px) {
+            line-height: 37px;
+          }
+        }
 
       }
       .left-image-title-sub-desc-right-text {
-        line-height: 35px;
+        line-height: 30px;
         letter-spacing: .18px;
         @media screen and(max-width: 600px) {
           line-height: 26px;

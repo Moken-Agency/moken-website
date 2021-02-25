@@ -48,22 +48,23 @@ const AboutAgency = () => {
       <Title className={"partners-title"} title={"OUR EXPERTISE"} />
 
       <div className={"about-agency-increase-container"}>
-        <Text  size={55} mobSize={35} type={"kBold"}>
-          We increase website leads, maximize revenue and produce.
+        <Text size={50} mobSize={35} type={"kBold"}>
+            Everything you need to successfully build and grow your startup.
         </Text>
       </div>
 
-      <Swiper Component={Explore} swiperData={options.explores} />
+      <Swiper Component={Explore} swiperData={options.explores} containerClassName={'about-agency-swiper-container'} />
 
       <ColorBlock withIcon
                   title={'Work with Us'}
                   subtitle={'START YOUR PROJECT'}
                   backgroundColor={'black'}
                   type={'kThin'}
+                  size={50}
                   blockType={'middle'}/>
 
 
-        <TitleSubDescription
+    <TitleSubDescription
         subtitleClassName={'agency-impact-subtitle'}
         descriptionClassName={'agency-impact-description'}
         title={"OUR IMPACT"}
@@ -90,7 +91,7 @@ const AboutAgency = () => {
                 <div className={'agency-product-container'}>
                     <img src={''}/>
                     <div>
-                        <Text size={55}
+                        <Text size={50}
                               mobSize={45}
                               type={'kBold'}
                               textStyles={{lineHeight: isMobile ? '60px' : '80px'}}
@@ -160,6 +161,7 @@ const AboutAgency = () => {
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
         type={'big'}
+        subtitleClassName={'about-agency-programs-subtitle'}
         options={options.programs}
         widthItem={"30vw"}
       />

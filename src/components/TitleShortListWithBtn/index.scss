@@ -1,6 +1,6 @@
 .title-short-list-with-btn-section {
   padding: 10vw 10vw 4.5vw 10vw;
-
+  cursor: pointer;
   .title-short-list-with-btn-title {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@
     .title-short-list-with-btn-subtitle {
       margin: 0;
       padding: 0;
-      width: 32vw;
+      max-width: 505px;
       @media only screen and (max-width: 1300px) {
         width: 60vw;
         margin-bottom: 50px;

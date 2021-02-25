@@ -1,4 +1,20 @@
 .start-up-screen-container {
+  .startup-screen-header-subtitle {
+    max-width: 858px;
+  }
+  .startup-screen-header-description {
+    max-width: 613px;
+  }
+  .startup-screen-second-block-subtitle {
+    max-width: 1014px;
+  }
+  .startup-screen-second-block-description {
+    max-width: 877px;
+  }
+  .startup-screen-partners-subtitle {
+    max-width: 929px;
+  }
+
   .start-up-screen-color-block {
     padding: 67px 14vw;
     @media only screen and (max-width: 600px) {
@@ -14,5 +30,8 @@
       height: 425px;
       margin-bottom: 117px;
     }
+  }
+  .spotify-icon {
+    margin-left: 10px;
   }
 }

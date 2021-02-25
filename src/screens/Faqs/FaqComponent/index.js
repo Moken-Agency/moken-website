@@ -12,7 +12,7 @@ const FaqComponent = ({ title, faqs = [], isLast = false }) => {
       <div className={"faq-component-title-container"}>
         <Text
           type={"kBold"}
-          size={55}
+          size={50}
           animationType={"fade-in"}
           mobSize={35}
           className={"faq-component-title"}
@@ -35,7 +35,7 @@ const FaqComponent = ({ title, faqs = [], isLast = false }) => {
             <Text
               key={"FaqComponentText" + index}
               className={"faq-component-list-item"}
-              type={"light"}
+              type={"kLight"}
               animationType={"fade-in"}
               size={20}
               mobSize={16}

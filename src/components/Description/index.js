@@ -8,7 +8,7 @@ const Description = ({
   className = "",
   size = 12,
   mobSize = size,
-  type = "light",
+  type = "kLight",
   withoutMargin = false,
                        textStyles = {}
 }) => {
@@ -29,7 +29,7 @@ const Description = ({
                 mobSize={mobSize}
                 key={title + index}
                 type={type}
-                textStyles={{ lineHeight: "35px", ...textStyles }}
+                textStyles={{ lineHeight: "30px", ...textStyles }}
                 containerStyles={{
                   marginBottom: 0,
                   width: "100%"

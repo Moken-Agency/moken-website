@@ -24,10 +24,10 @@
     }
   }
   .expertise-first-wrapper {
-    padding: 0 0 0 140px;
+    padding: 0 0 0 168px;
     //padding: 0 0 0 10.5vw;
 
-    margin-bottom: 160px;
+    margin-bottom: 231px;
     //margin-bottom: 10vw;
     display: flex;
     flex-direction: row;
@@ -64,8 +64,8 @@
           padding-top: 0;
         }
         span {
-        letter-spacing: .2vw;
-        margin-bottom: 1vw;
+        letter-spacing: 4px;
+        margin-bottom: 25px;
         @media only screen and (max-width: 600px) {
           margin-bottom: 5vw;
         }
@@ -73,6 +73,13 @@
     }
     .expertise-subtitle {
       padding-bottom: 2vw;
+      max-width: 699px;
+      span {
+        line-height: 80px;
+        @media only screen and (max-width: 600px) {
+          //margin-bottom: 5vw;
+        }
+      }
     }
   }
   .expertise-started-title {
@@ -82,10 +89,15 @@
   .expertise-second-wrapper {
     padding: 0 14vw;
     .expertise-started-subtitle {
-      width: 52vw;
-
+      max-width: 912px;
+      span {
+        line-height: 53px;
+      }
       @media only screen and (max-width: 600px) {
         width: auto;
+        span {
+          line-height: 37px;
+        }
       }
     }
 
@@ -100,7 +112,7 @@
     .expertise-bottom-block-container {
       width: 80.6vw;
       background-color: black;
-      padding: 8vw 0 8vw 9.4vw;
+      padding: 131px 0 105px 156px;
       display: flex;
       justify-content: space-between;
       @media only screen and (min-width: 601px) and (max-width: 1100px) {
@@ -118,8 +130,7 @@
           flex-direction: column;
           justify-content: space-around;
         .expertise-bottom-first-info-container {
-          //margin-right: 12vw;
-          width: 34vw;
+          max-width: 601px;
           @media only screen and (min-width: 601px) and (max-width: 1100px) {
             width: 80%;
           }
@@ -142,7 +153,9 @@
           .expertise-bottom-first-info-text-second {
             margin-bottom: 35px;
             //margin-bottom: 1.8vw;
-              span {
+            max-width: 507px;
+
+            span {
               }
           }
           .expertise-bottom-first-info-text-third {

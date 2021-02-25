@@ -1,4 +1,10 @@
 .about-programs-container {
+  .about-programs-subtitle {
+    max-width: 929px;
+  }
+  .about-programs-header-description {
+    max-width: 455px;
+  }
   .about-programs-partnerships-container {
     //display: flex;
     justify-content: space-between;
@@ -17,58 +23,6 @@
       padding: 43px;
       overflow-x: scroll;
       display: none;
-    }
-  }
-  .about-programs {
-    .about-programs-title {
-      margin-bottom: 166px;
-      @media screen and (max-width: 600px) {
-        margin-bottom: 50px;
-      }
-    }
-
-    .about-program-text {
-      margin-bottom: 100px;
-      width: 52vw;
-      padding: 0 14vw;
-      @media screen and (max-width: 600px) {
-        width: auto;
-        margin-bottom: 90px;
-      }
-    }
-    .about-programs-list {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 14vw;
-      margin-bottom: 184px;
-      //display: grid;
-      //grid-template-columns: 178px 178px 178px;
-      //grid-template-columns: 1fr 1fr;
-      //grid-row-gap: 60px;
-      //grid-column-gap: 60px;
-      justify-content: space-between;
-      @media screen and (max-width: 600px) {
-        padding: 0 43px;
-        grid-template-columns: 1fr;
-      }
-      .about-programs-item {
-        margin-bottom:10vw;
-      }
-
-    }
-    .three-fr {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      @media only screen and (min-width: 1000px) and (max-width: 1550px) {
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 50px;
-        grid-column-gap: 50px;
-      }
-      @media only screen and (min-width: 601px) and (max-width: 999px) {
-        grid-template-columns: 1fr;
-        grid-row-gap: 50px;
-        grid-column-gap: 50px;
-      }
     }
   }
 

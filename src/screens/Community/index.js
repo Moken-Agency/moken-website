@@ -9,11 +9,8 @@ import options from "./options";
 // import 'swiper/components/navigation/navigation.scss';
 // import 'swiper/components/pagination/pagination.scss';
 // import 'swiper/components/scrollbar/scrollbar.scss';
-import SubmitYourResume from "../../components/SubmitYourResume";
-import ArrowTopRight from "../../images/arrow-up-right-black.svg";
 import Swiper from "../../components/Swiper";
 import Explore from "../../components/Explore";
-import CommunityPartner from "../../components/CommunityPartner";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import HeaderTitle from "../../components/HeaderTitle";
@@ -21,10 +18,11 @@ import TitleSubDescription from "../../components/TitleSubDescription";
 import ImageBlock from "../../components/ImageBlock";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import ColorBlock from "../../components/ColorBlock";
-import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import communitySVG from '../../images/Community.svg';
-import Button from "../../components/Button";
-import Subtitle from "../../components/Subtitle";
+import communityFirst from '../../images/community-first.jpg';
+import communitySecond from '../../images/community-second.jpg'
+import communityThird from '../../images/community-third.jpg'
+import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
 
 const { swiperData } = options;
 
@@ -82,21 +80,25 @@ const Community = () => {
         <img src={communitySVG} className={'community-absolute-img'}/>
       <HeaderTitle
         title={"MOKEN COMMUNITY"}
+        descriptionClassName={'community-header-description'}
         subtitle={"Working on what matters, together."}
         description={`We strive to build a community comprised of passionate entrepreneurs, innovators, investors, and builders who share a goal of making an impact.`}
         marginBottom={isMobile ? 400 : 378}
       />
 
-      <ImageBlock type={"full"} />
+      <ImageBlock url={communityFirst} className={'community-first-image'}/>
 
       <TitleSubDescription
+          containerStyles={{marginBottom: 140}}
+          subtitleClassName={'community-future-subtitle'}
+          descriptionClassName={'community-future-description'}
         title={"ONE FUTURE, ONE COMMUNITY"}
         subtitle={`A powerhouse collection of the brightest minds of the future.`}
         description={`Powered by our community, Moken bridges the gap between investors, builders, and talent to create a driven, supportive community that makes it more enjoyable for founders to build and grow their ventures. Although we set high standards for ourselves and build trust-based relationships, this also means we’re not afraid to be who we are and lead by example every step of the way. At Moken, we truly believe in the power of technology as the biggest communication facilitator and strive to harness it in our pursuit to bring startup accessibility to all founders around the world.`}
         // btnTitle={"GET IN TOUCH"}
       />
 
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={communitySecond}/>
 
       {/*<TitleTwoDescriptions*/}
       {/*  mainTitle={"OUR COMMUNITY"}*/}
@@ -115,10 +117,11 @@ const Community = () => {
       <Title title={'OUR COMMUNITY'} />
 
       <Text type={'kBold'}
-            size={55}
+            size={50}
             mobSize={35}
             containerStyles={{padding: '0 14vw',
                 width: isMobile ? 'auto' : 723,
+                lineHeight: '53px',
                 marginBottom: isMobile ? 50 : 100}}>Explore the opportunites within the Moken community.</Text>
 
         {/*<Swiper spaceBetween={0}*/}
@@ -157,7 +160,7 @@ const Community = () => {
         {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
         {/*</Swiper>*/}
 
-      <Swiper Component={Explore} swiperData={swiperData}/>
+      <Swiper Component={Explore} swiperData={swiperData} containerClassName={'community-swiper'}/>
         {/*{swiperData.map((option, index) => {*/}
         {/*  return <Explore {...option} key={"explore " + index} />;*/}
         {/*})}*/}
@@ -169,31 +172,28 @@ const Community = () => {
         mobSize={32}
         // className={"community-color-block"}
         backgroundColor={"black"}
+        size={45}
+        withIcon
+        blockType={'middle'}
       />
 
-      <TitleSubDescription
-        title={"ACCESS NETWORK"}
-        subtitle={
-          "Driven by the passion for working with determined innovators who live to make a change in the world."
-        }
-        description={`An exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`}
-        AdditionalComponent={() => {
-          return (
-            <div className={"network-container"}>
-                <Button title={'JOIN THE NETWORK'} />
-            </div>
-          );
-        }}
-      />
+        <LeftInfoWithRightImage
+            withoutRightPadding
+            title={`Driven by the passion for working with determined innovators who live to make a change in the world.`}
+            mainTitle={"ACCESS NETWORK"}
+            description={`An array of founder focused courses driven by experience together creating all-in-one formula specifically designed for entrepreneurs, led by experts in topics ranging from business modeling, engineering and communication.`}
+            btnTitle={"JOIN THE NETWORK"}
+            imgUrl={communityThird}
+            containerClassName={''}
+        />
 
       <ProgramCommunityListPartner
         title={"COLLABORATE WITH US"}
+        subtitleClassName={'community-partners-subtitle'}
         subtitle={
           "Our astounding community becomes even more incredible with more bright minds. Collaborate and join our evolving community."
         }
         options={options.founders}
-        // widthItem={"25vw"}
-        // itemContainerStyles={{ width: "25vw", height: "25vw" }}
         type={'big'}
       />
 

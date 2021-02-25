@@ -17,7 +17,7 @@ const SecondMapItem = ({ title = "", btnTitle = "" }) => {
       </Text>
       <div className={"second-map-item-btn-container"}>
         <Text
-          type={"semiBold"}
+          type={"kSemiBold"}
           animationType={"fade-in"}
           size={".85vw"}
           mobSize={12}

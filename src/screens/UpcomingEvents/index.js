@@ -25,7 +25,7 @@ const UpcomingEvents = () => {
       <header>
         <div className={"events-header-block"}>
           <Text
-            type={"semiBold"}
+            type={"kSemiBold"}
             containerStyles={{ marginBottom: 20 }}
             size={16}
             mobSize={14}

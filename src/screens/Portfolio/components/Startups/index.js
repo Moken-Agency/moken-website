@@ -27,7 +27,7 @@ const Startups = ({ title = "", subTitle = "" }) => {
         // size={'.9vw'}
         size={14}
         textStyles={{ letterSpacing: 4 }}
-        type={"kRegular"}
+        type={"kMedium"}
         // type={"semiBold"}
         className={"startups-title-second"}
       >

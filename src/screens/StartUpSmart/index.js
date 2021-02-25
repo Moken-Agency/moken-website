@@ -14,6 +14,9 @@ import startupSmartPackageFirst from '../../images/startupsmartpackages-first@2x
 import startupSmartPackageSecond from '../../images/startupsmartpackages-second@2x.png';
 import productTestingTeam from '../../images/product-testing-team-second.jpg';
 import TitleSubDescription from "../../components/TitleSubDescription";
+import projectImages from "../../images/projects";
+
+
 const { packages } = options;
 
 const StartUpSmart = () => {
@@ -34,9 +37,11 @@ const StartUpSmart = () => {
         descriptionClassName={'startup-packages-description'}
         subtitleClassName={'startup-packages-subtitle'}
         title={"STARTING UP SMART"}
-        description={`People do not simply buy products or services, they buy brands with a purpose. By providing unique brand experiences, a startup is able to effectively convert potential users into brand ambassadors and differentiate themselves at an early stage from competitors. At Moken, we work directly with founders to create brands that defy the odds, defeat big competition and disrupt their industries.  `}
         subtitle={`A la cartè packages specifically designed for early stage startups executed by experts.`}
-        btnTitle={"GET IN TOUCH"}
+        description={`Our startup-smart packages are designed to help entrepreneurs kickstart their vision - up branding 
+        and marketing on digital platforms to a higher standard. With our network connections faster helping foster
+         your projects, giving them wings to commit to your business success.`}
+        // btnTitle={"GET IN TOUCH"}
       />
 
       <Title
@@ -114,7 +119,7 @@ const StartUpSmart = () => {
                 size={16}
                 animationType={"fade-in"}
                 className={"start-up-smart-sixth-text-first"}
-                type={"semiBold"}
+                type={"kSemiBold"}
             >
                 TRUSTED BY
             </Text>
@@ -131,10 +136,10 @@ const StartUpSmart = () => {
 
     </div>
       <div className={"boundaries-container"}>
-        {[1, 1, 1, 1, 1, 11, 1, , 11, 1].map((el) => {
+        {Object.values(projectImages).map((projectImage) => {
           return (
             <div>
-              <img src={""} />
+              <img src={projectImage} />
             </div>
           );
         })}

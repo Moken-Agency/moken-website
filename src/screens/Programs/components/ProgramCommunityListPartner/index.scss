@@ -47,11 +47,16 @@
   .program-community-list-partner-subtitle {
     width: 62vw;
     //width: 929px;
-
+    span {
+      line-height: 53px;
+    }
     padding: 0 14vw;
     @media screen and (max-width: 600px) {
       padding: 0 43px;
       width: auto;
+      span {
+        line-height: 38px;
+      }
     }
   }
   .labs-join-schedule-container {

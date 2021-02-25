@@ -6,57 +6,19 @@ export default {
       firstColumn: {
         data: [
           {
-            title: "BRAND IDENTITY DISCOVERY",
+            title: "BUSINESS IDEA ANALYSIS",
             descriptions: [
               {
                 title:
-                  "In-depth exploration to help us learn more about your business, market, competitors, goals, and design preferences.",
+                  "In-depth analysis and exploration of your business idea, the market, competitors, and opportunities for your idea.",
               },
             ],
           },
           {
-            title: "BRAND NAMES",
+            title: "BUSINESS MODEL CANVAS TEMPLATE",
             descriptions: [
               {
-                title: "— 10 Custom brand name ideas",
-              },
-              {
-                title: "— 5 Revisions based off your feedback",
-              },
-              {
-                title: "— Results in 72 hours",
-              },
-            ],
-          },
-        ],
-      },
-      secondColumn: {
-        data: [
-          {
-            title: "COLOUR PALETTES",
-            descriptions: [
-              {
-                title: "— 6 Custom brand colour palette options",
-              },
-              {
-                title: "— 3 Revisions based off your feedback",
-              },
-              {
-                title: "— Results in 72 hours",
-              },
-            ],
-          },
-          {
-            title: "TYPOGRAPHY",
-            descriptions: [
-              {
-                title: "— 3 Custom typography pairings",
-              },
-              {
-                title: "— 3 Revisions based off your feedback",
-              },
-              {
-                title: "— Delivered in 72 hours",
+                title: "A fully customizable business model canvas and how-to identifying the crucial areas of business to ensure success.",
               },
             ],
           },
@@ -66,11 +28,17 @@ export default {
         data: [
           {
             title: "$XXX.00",
-            withSubtitle: false,
-            subtitle: "",
+            // withSubtitle: true,
+            // subtitle: "WITHOUT LOGO",
           },
+          // {
+          //   title: "$XXXX.00",
+          //   withSubtitle: true,
+          //   subtitle: "WITH LOGO",
+          // },
         ],
-      },
+      }
+
     },
     {
       title: "BRANDING",
@@ -78,67 +46,48 @@ export default {
       firstColumn: {
         data: [
           {
-            title: "ALL OF STARTUP MICRO",
+            title: "ALL OF IDEATION",
           },
           {
             title: "BRAND STRATEGY SESSIONS",
             descriptions: [
               {
                 title:
-                  "Two one-on-one strategy sessions to identify your brand design needs and strategize the best ways to create an identity that will attract your ideal clients.",
+                `Two one-on-one strategy sessions to identify your brand design needs and strategize the best ways to create an identity that will attract your ideal clients.`
               },
             ],
           },
           {
-            title: "BASIC BRAND STYLE GUIDE",
+            title: "BRAND NAMES",
             descriptions: [
               {
                 title:
-                  "A custom brand style guide including brand standards (typography, colors, " +
-                  "usage guidelines, styling notes, and brand application examples) to help keep" +
-                  " your usage consistent and on-brand.",
+                  `Ten custom brand names based on your target market, industry, and startup idea.`,
               },
             ],
           },
           {
-            title: "PERSONALITY",
+            title: "COLOUR PALETTES",
             descriptions: [
               {
-                title: "— 3 Tone of voice options",
-              },
-              {
-                title: "— 3 Personality options",
+                title: `— 3 Colour Palette options
+— 3 Colour Palette revisions`
+
               },
             ],
-          },
-          {
-            title: "BRAND PATTERNS & TEXTURES",
           },
         ],
       },
       secondColumn: {
         data: [
           {
-            title: "SOCIAL NETWORK ASSETS",
+            title: "TYPOGRAPHY",
             descriptions: [
               {
-                title: "— Bio",
+                title: `— 3 Typography options
+— 2 Typography revisions`,
               },
-              {
-                title: "— Profile Picture",
-              },
-              {
-                title: "— Brand Description",
-              },
-            ],
-          },
-          {
-            title: "CUSTOM MOODBOARD",
-            descriptions: [
-              {
-                title:
-                  "3 Moodboard options to define the tone and mood of your brand curated specifically for your business.",
-              },
+
             ],
           },
           {
@@ -146,7 +95,7 @@ export default {
             descriptions: [
               {
                 title:
-                  "Includes logo mark, word mark, combination of logo & word mark, spacing & grid guidelines.",
+                `Includes logo mark, word mark, combination of logo & word mark, spacing & grid guidelines.`
               },
             ],
           },
@@ -173,7 +122,7 @@ export default {
       firstColumn: {
         data: [
           {
-            title: "ALL OF STARTUP MICRO",
+            title: "ALL OF BRANDING MICRO",
           },
           {
             title: "BRAND STRATEGY SESSIONS",
@@ -196,17 +145,6 @@ export default {
             ],
           },
           {
-            title: "PERSONALITY",
-            descriptions: [
-              {
-                title: "— 3 Tone of voice options",
-              },
-              {
-                title: "— 3 Personality options",
-              },
-            ],
-          },
-          {
             title: "BRAND PATTERNS & TEXTURES",
           },
         ],
@@ -214,26 +152,13 @@ export default {
       secondColumn: {
         data: [
           {
-            title: "SOCIAL NETWORK ASSETS",
+            title: "BRAND PERSONALITY",
             descriptions: [
               {
-                title: "— Bio",
+                title: `— 3 Tone of Voice options
+— 3 Personality options`,
               },
-              {
-                title: "— Profile Picture",
-              },
-              {
-                title: "— Brand Description",
-              },
-            ],
-          },
-          {
-            title: "CUSTOM MOODBOARD",
-            descriptions: [
-              {
-                title:
-                  "3 Moodboard options to define the tone and mood of your brand curated specifically for your business.",
-              },
+
             ],
           },
           {
@@ -257,7 +182,7 @@ export default {
           {
             title: "$XXXX.00",
             withSubtitle: true,
-            subtitle: "WITH LOGO",
+            subtitle: "WITH LOGO ADD ON",
           },
         ],
       },
@@ -265,22 +190,76 @@ export default {
     {
       title: "BRANDING",
       subtitle: "Branding Basic",
+      firstColumn: {
+        data: [
+          {
+            title: "ALL OF BRANDING BASIC",
+          },
+          {
+            title: "SOCIAL NETWORK ASSETS",
+            descriptions: [
+              {
+                title: `— Bio
+— Profile Picture
+— Brand Description`
+              }
+            ],
+          },
+          {
+            title: "BASIC BRAND DESIGN SYSTEM",
+            descriptions: [
+              {
+                title: "A basic Sketch compatible design system for UI and product design use.",
+              },
+            ],
+          },
+        ],
+      },
+      secondColumn: {
+        data: [
+          {
+            title: "PRODUCT LOGOS & MOCKUPS",
+            descriptions: [
+              {
+                title: `— App & Play Store Icon
+— App & Play Store Bio
+— 6 App & Play Store Screens`,
+              },
+            ],
+          },
+        ],
+      },
+      thirdColumn: {
+        data: [
+          {
+            title: "$XXXX.00",
+            withSubtitle: true,
+            subtitle: "WITHOUT LOGO",
+          },
+          {
+            title: "$XXXX.00",
+            withSubtitle: true,
+            subtitle: "WITH LOGO ADD ON",
+          },
+        ],
+      },
+    },
+    {
+      title: "BUSINESS SETUP & GROWTH",
+      subtitle: "Startup Scale",
       firstColumn: {
         data: [
           {
             title: "ALL OF STARTUP BASIC",
           },
           {
-            title: "COLLATERAL & STATIONARYS",
+            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
             descriptions: [
               {
-                title: "— Letterhead",
-              },
-              {
-                title: "— Envelope",
-              },
-              {
-                title: "— Business Card Design",
+                title:
+                  `— Letterhead 
+— Envelope
+— Business Card Design`,
               },
             ],
           },
@@ -288,10 +267,8 @@ export default {
             title: "SALES MATERIALS",
             descriptions: [
               {
-                title: "— Sales Email Template (3)",
-              },
-              {
-                title: "— Sales Pitch Deck",
+                title: `— Sales Email Template (3)
+— Sales Pitch Deck`,
               },
             ],
           },
@@ -299,10 +276,8 @@ export default {
             title: "EMAIL MARKETING",
             descriptions: [
               {
-                title: "— Email Campaign Strategy",
-              },
-              {
-                title: "— Email Designs (10 Emails)",
+                title: `— Email Campaign Strategy
+— Email Designs (10 Emails)`,
               },
             ],
           },
@@ -314,26 +289,10 @@ export default {
             title: "BRANDED SWAG",
             descriptions: [
               {
-                title: "— Stickers (50)",
-              },
-              {
-                title: "— T-Shirt & Cap (1 each)",
-              },
-              {
-                title: "— Toddler Bag (2)",
-              },
-              {
-                title:
-                  "*Designs will be provided in print ready format, & physical items shipped to you.",
-              },
-            ],
-          },
-          {
-            title: "CUSTOM MOODBOARD",
-            descriptions: [
-              {
-                title:
-                  "3 Moodboard options to define the tone and mood of your brand curated specifically for your business.",
+                title: `— Stickers (50)
+— T-Shirt & Cap (1 each)
+— Toddler Bag (2)
+*Designs will be provided in print ready format, & physical items shipped to you.`
               },
             ],
           },
@@ -341,86 +300,9 @@ export default {
             title: "SALES MATERIALS",
             descriptions: [
               {
-                title: "— Social Media Post Templates (6)",
-              },
-              {
-                title: "— Instagram Cover Stories (6)",
-              },
-              {
-                title: "— Logo Video Intro",
-              },
-            ],
-          },
-        ],
-      },
-      thirdColumn: {
-        data: [
-          {
-            title: "$XXXX.00",
-            withSubtitle: false,
-          },
-        ],
-      },
-    },
-    {
-      title: "BUSINESS SETUP & GROWTH",
-      subtitle: "Startup Scale",
-      firstColumn: {
-        data: [
-          {
-            title: "PRODUCT MARKET FIT ANALYSIS",
-          },
-          {
-            title: "USER STORY GUIDANCE",
-          },
-          {
-            title: "STARTUP ROADMAP",
-          },
-          {
-            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
-            descriptions: [
-              {
-                title:
-                  "Full financial assessment of MVP, prototypes, added functions and features, version upgrades.",
-              },
-            ],
-          },
-          {
-            title: "PITCH DECK",
-            descriptions: [
-              {
-                title: "— Content & Flow",
-              },
-              {
-                title: "— Pitch Deck Design",
-              },
-            ],
-          },
-          {
-            title: "BUSINESS PLAN",
-          },
-          {
-            title: "INDIVIDUAL INVESTOR PITCH TWEAKS",
-          },
-        ],
-      },
-      secondColumn: {
-        data: [
-          {
-            title: "RAISING STRATEGY",
-            descriptions: [
-              {
-                title:
-                  "Aimed at addressing the crucial “the how we raise, who do we raise with, and when do we raise” questions.",
-              },
-            ],
-          },
-          {
-            title: "INVESTOR LIST",
-            descriptions: [
-              {
-                title:
-                  "A curated list of ideal investors optimally matched with your startup on 12 criteria points to increase investment likelihood.",
+                title: `— Social Media Post Templates (6)
+— Instagram Cover Stories (6)
+— Logo Video Intro`
               },
             ],
           },
@@ -439,15 +321,15 @@ export default {
       },
       thirdColumn: {
         data: [
+          // {
+          //   title: "$XXXX.00",
+          //   withSubtitle: true,
+          //   subtitle: "WITHOUT LOGO",
+          // },
           {
             title: "$XXXX.00",
             withSubtitle: true,
-            subtitle: "WITHOUT LOGO",
-          },
-          {
-            title: "$XXXX.00",
-            withSubtitle: true,
-            subtitle: "WITH LOGO",
+            // subtitle: "WITH LOGO",
           },
         ],
       },
@@ -458,44 +340,15 @@ export default {
       firstColumn: {
         data: [
           {
-            title: "PRODUCT MARKET FIT ANALYSIS",
-          },
-          {
-            title: "USER STORY GUIDANCE",
-          },
-          {
-            title: "STARTUP ROADMAP",
-          },
-          {
-            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
-            descriptions: [
-              {
-                title:
-                    "Full financial assessment of MVP, prototypes, added functions and features, version upgrades.",
-              },
-            ],
-          },
-          {
             title: "PITCH DECK",
             descriptions: [
               {
-                title: "— Content & Flow",
-              },
-              {
-                title: "— Pitch Deck Design",
+                title:
+                    `— Content & Flow
+— Pitch Deck Design`,
               },
             ],
           },
-          {
-            title: "BUSINESS PLAN",
-          },
-          {
-            title: "INDIVIDUAL INVESTOR PITCH TWEAKS",
-          },
-        ],
-      },
-      secondColumn: {
-        data: [
           {
             title: "RAISING STRATEGY",
             descriptions: [
@@ -506,6 +359,19 @@ export default {
             ],
           },
           {
+            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
+            descriptions: [
+              {
+                title:
+                    "Full financial assessment in regards to monetzation of MVP, prototypes, added functions and features, version upgrades.",
+              },
+            ],
+          },
+        ],
+      },
+      secondColumn: {
+        data: [
+          {
             title: "INVESTOR LIST",
             descriptions: [
               {
@@ -515,15 +381,19 @@ export default {
             ],
           },
           {
-            title: "CUT OFF POINT",
+            title: "CUT OFF POINT ANALYSIS",
             descriptions: [
               {
-                title: "— Cut off point determinations",
-              },
-              {
-                title: "— Alternative strategy development",
+                title: `— Cut off point determinations
+— Alternative strategy development`
               },
             ],
+          },
+          {
+            title: "BUSINESS PLAN ANALYSIS",
+          },
+          {
+            title: "PITCH PRACTICE & PERFORMANCE PREP",
           },
         ],
       },
@@ -531,87 +401,59 @@ export default {
         data: [
           {
             title: "$XXXX.00",
-            withSubtitle: true,
-            subtitle: "WITHOUT LOGO",
+            // withSubtitle: true,
+            // subtitle: "WITHOUT LOGO",
           },
-          {
-            title: "$XXXX.00",
-            withSubtitle: true,
-            subtitle: "WITH LOGO",
-          },
+          // {
+          //   title: "$XXXX.00",
+          //   withSubtitle: true,
+          //   subtitle: "WITH LOGO",
+          // },
         ],
       },
     },
     {
-      title: "TECH PRODUCT",
+      title: "TECHNOLOGY PRODUCT",
       subtitle: "Building Blocks",
       firstColumn: {
         data: [
           {
-            title: "PRODUCT MARKET FIT ANALYSIS",
-          },
-          {
-            title: "USER STORY GUIDANCE",
-          },
-          {
-            title: "STARTUP ROADMAP",
-          },
-          {
-            title: "FINANCIAL ASSESSMENT FOR PRODUCT",
+            title: "USER STORIES",
             descriptions: [
               {
                 title:
-                    "Full financial assessment of MVP, prototypes, added functions and features, version upgrades.",
+                    "Basic user story flow for your app and idea. As welll as guidance on how to continue iterating throughout the process of building.",
               },
             ],
           },
           {
-            title: "PITCH DECK",
+            title: "PRIMARY PLATFORM SCREENS",
             descriptions: [
               {
-                title: "— Content & Flow",
-              },
-              {
-                title: "— Pitch Deck Design",
+                title: `Base UX and UI for primary platform screens including; profile, sign in, register, profile, password, settings, onboarding, and messages.`
               },
             ],
           },
-          {
-            title: "BUSINESS PLAN",
-          },
-          {
-            title: "INDIVIDUAL INVESTOR PITCH TWEAKS",
-          },
+
         ],
       },
       secondColumn: {
         data: [
           {
-            title: "RAISING STRATEGY",
+            title: "LANDING PAGE",
             descriptions: [
               {
                 title:
-                    "Aimed at addressing the crucial “the how we raise, who do we raise with, and when do we raise” questions.",
+                    "A custom designed landing page comprised and created with all relevant elements of your brand in mind.",
               },
             ],
           },
           {
-            title: "INVESTOR LIST",
+            title: "CUSTOM SCREENS",
             descriptions: [
               {
                 title:
-                    "A curated list of ideal investors optimally matched with your startup on 12 criteria points to increase investment likelihood.",
-              },
-            ],
-          },
-          {
-            title: "CUT OFF POINT",
-            descriptions: [
-              {
-                title: "— Cut off point determinations",
-              },
-              {
-                title: "— Alternative strategy development",
+                    "Your choice of any two custom platform screens for within your platform.",
               },
             ],
           },

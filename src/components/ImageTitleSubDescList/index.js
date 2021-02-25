@@ -22,14 +22,14 @@ const ImageTitleSubDescList = ({
       <div>
         <Text
           className={"image-title-sub-desc-list-title"}
-          type={"semiBold"}
+          type={"kSemiBold"}
           size={16}
           mobSize={14}
         >
           {title}
         </Text>
         <Text
-          size={55}
+          size={50}
           className={"image-title-sub-desc-list-subtitle"}
           animationType={"fade-in"}
           mobSize={35}
@@ -40,10 +40,10 @@ const ImageTitleSubDescList = ({
         <Text
           size={20}
           mobSize={16}
-          textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+          textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
           animationType={"fade-in"}
           className={"image-title-sub-desc-list-description"}
-          type={"light"}
+          type={"kLight"}
         >
           {description}
         </Text>
@@ -56,7 +56,7 @@ const ImageTitleSubDescList = ({
               <Text
                 size={14}
                 animationType={"fade-in"}
-                type={"semiBold"}
+                type={"kSemiBold"}
                 className={"image-title-sub-desc-list-item-title"}
               >
                 {listData.title}
@@ -64,9 +64,9 @@ const ImageTitleSubDescList = ({
               <Text
                 size={20}
                 animationType={"fade-in"}
-                textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+                textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
                 mobSize={16}
-                type={"light"}
+                type={"kLight"}
               >
                 {listData.subtitle}
               </Text>

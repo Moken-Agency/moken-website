@@ -15,6 +15,9 @@ import ReactPlayer from "react-player";
 import img from "../../images/innovation-mob-header.svg";
 import VideoPlayer from "./VideoPlayer";
 import {useHistory} from "react-router-dom";
+import AboutMokenFirstRight from '../../images/about-moken-first-right@2x.jpg';
+import AboutMokenSecondRight from '../../images/about-moken-second-right.jpg';
+import VideoImage from '../../images/about-moken-video-img.jpg';
 
 const AboutMoken = (props) => {
 console.log({props});
@@ -32,7 +35,7 @@ const history = useHistory();
         marginBottom={isMobile ? 160 : '8.9vw'}
       />
 
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={AboutMokenFirstRight} />
 
       <TitleTwoDescriptions
         mainTitle={"WE ARE MOKEN"}
@@ -54,21 +57,21 @@ const history = useHistory();
                 <Text
                     className={"about-moken-second-info-section-subtitle"}
                     // size={'3.4vw'}
-                    size={55}
+                    size={50}
                     animationType={"fade-up"}
                     mobSize={35}
                     type={"kBold"}
                     // type={"extraLight"}
                 >
-                    We are driven by the passion for working with determined innovators
-                    who live to make a change in the world.
+                    Driven by the passion for working with passionate innovators who live to make a change in the world.
+
                 </Text>
                 <Text
                     className={"about-moken-second-info-section-text"}
                     // size={'1.25vw'}
                     size={20}
                     animationType={"fade-up"}
-                    textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+                    textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
                     mobSize={16}
                     type={"kLight"}
                 >
@@ -102,12 +105,13 @@ const history = useHistory();
                 </div>
             </div>
 
-            <img src={''}/>
+            <img src={AboutMokenSecondRight}/>
 
         </div>
       </section>
 
       <section className={"about-moken-video-section"}>
+        <img className={'about-moken-video-poster'} src={VideoImage}/>
         <div className={"about-moken-video-info-block"}>
           <Text
             className={"about-moken-video-info-block-first-title"}
@@ -116,14 +120,14 @@ const history = useHistory();
             animationType={"fade-up"}
             type={"kSemiBold"}
           >
-            THIS IS WHERE THE VIDEO TITLE GOES
+              WE ARE MOKEN, WE ARE THE FUTURE
           </Text>
           <Text
             size={20}
             // size={'1.2vw'}
             type={"kLight"}
             animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
             mobSize={16}
           >
               Video Coming Soon
@@ -159,6 +163,9 @@ const history = useHistory();
         title={"Let’s create magic together."}
         subtitle={"CONNECT WITH US"}
         withIcon
+        size={75}
+        type={'kThin'}
+        titleClassName={'about-moken-colour-block-title'}
         backgroundColor={"#000"}
         onClick={() => history.push('/connect-with-us')}
         textWidth={isMobile ? 'auto' : 580}

@@ -34,7 +34,7 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
             whiteSpace: "pre",
           }}
           containerStyles={{ alignItems: "flex-start" }}
-          type={"semiBold"}
+          type={"kSemiBold"}
           color={returnTextColor}
         >
           {hoveredIndex === index && isComingSoon ? 'COMING SOON' : title.toUpperCase()}

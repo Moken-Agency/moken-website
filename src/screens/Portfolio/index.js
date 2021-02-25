@@ -53,8 +53,9 @@ const Portfolio = (props) => {
         title={"Do you want to be the next to make history?"}
         subtitle={"CONNECT WITH US"}
         backgroundColor={"#000"}
+        titleClassName={'portfolio-color-block-title'}
         type={"kLight"}
-        size={55}
+        size={50}
         withIcon
         titleContainerStyles={{lineHeight: '90px'}}
         containerStyles={{marginBottom: 0}}

@@ -13,6 +13,7 @@ import Button from "../../components/Button";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {sget} from "../../api/helpers";
 import moment from 'moment'
+import eventsSecond from '../../images/events-second.jpg';
 
 const Events = () => {
     const history = useHistory();
@@ -49,25 +50,28 @@ const Events = () => {
     }, [])
 
 
-    return (
-    <div>
+return (
+    <div className={'events-container'}>
         <HeaderSecondType
-                          title={'MOKEN EVENTS'}
-                          subtitle={'Creating unforgettable experiences to connect humans.'}
+            subtitleClassName={'events-header-subtitle'}
+           title={'MOKEN EVENTS'}
+           subtitle={'Creating unforgettable experiences to connect humans.'}
         />
 
-        <ImageBlock url={EventsHeaderImage} position={'right'}/>
+        <ImageBlock url={EventsHeaderImage} imgClassName={'events-image-first-block'} position={'right'}/>
 
         <TitleSubtitleVerticalDescriptions
+            subtitleClassName={'events-experiences-subtitle'}
+            descriptionClassName={'events-experiences-description'}
             title={'MEANINGFUL EXPERIENCES WITH MEASURABLE IMPACT'}
-            subtitle={'Immersive experiences that create unforgettably compelling stories.'}
+            subtitle={'Immersive experiences that create amazingly compelling stories.'}
             descriptions={[
                 'At Moken Events our purpose is to harness and drive positive change through networking, digital and virtual summits, startup conferences, employee engagements, and social impact events. We humanize brands and connect audiences through creative storytelling and thoughtful, purpose-driven engagements.',
                 'Our team is comprised of experts, educators, and innovators who blend industry experience with an unwavering passion for tackling new challenges. As perpetual problem solvers, we proactively address the needs of the startup community by anticipating challenges and working tirelessly to develop events and interactive programming that drive growth and create impact.'
 
             ]}
         />
-        <ImageBlock position={'right'}/>
+        <ImageBlock position={'right'} url={eventsSecond}/>
 
         <TitleShortListWithBtn title={'UPCOMING EVENTS'}
                                subtitle={'Brand experiences that are extraordinarily marvelous.'}
@@ -92,11 +96,12 @@ const Events = () => {
         <div className={'creative-community'}>
             <div className={'creative-community-text-container'}>
                 <Text type={'kBold'}
-                      size={55}
+                      size={50}
                       mobSize={35}
                       className={'creative-community-first-text-container'}
-                      textStyles={{lineHeight: isMobile ? '43px' : '63px'}}>Passionate people working with passionate brands.</Text>
-                <Text type={'light'} size={20} mobSize={16} textStyles={{lineHeight: isMobile ? '26px' : '35px'}}>
+                      textStyles={{lineHeight: isMobile ? '43px' : '53px'}}>Passionate people working with passionate brands.</Text>
+                <Text className={'creative-community-first-description'}
+                      type={'kLight'} size={20} mobSize={16}>
                     Join us and turn your consumers into brand fans. We partner alongside startups, founders, and organizations to develop and create experiential campaigns and events that expand beyond traditional tactics to focus on audience engagement and strategy.
                 </Text>
             </div>

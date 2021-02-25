@@ -12,7 +12,7 @@ const TitleShortListWithBtn = ({title = '',listItemBtnTitle = '', subtitle = '',
     const { isMobile } = useWindowDimensions();
 
     return (
-        <section className={"title-short-list-with-btn-section"} style={containerStyles}>
+        <section className={"title-short-list-with-btn-section"} style={containerStyles} onClick={btnOnClick}>
             <Title className={"title-short-list-with-btn-title"} title={title} />
             <div className={"title-short-list-with-btn-container"}>
                 <Subtitle
@@ -33,7 +33,6 @@ const TitleShortListWithBtn = ({title = '',listItemBtnTitle = '', subtitle = '',
                     })}
                     {btnType === 'default' ? <
                         Button title={btnTitle}
-                               onClick={btnOnClick}
                                containerStyles={{marginTop: 100}}
                         /> :
                     <Text
@@ -41,7 +40,6 @@ const TitleShortListWithBtn = ({title = '',listItemBtnTitle = '', subtitle = '',
                         type={"kSemiBold"}
                         animationType={"fade-in"}
                         className={"text-submit"}
-                        onClick={btnOnClick}
                     >
                         {btnTitle}
                     </Text>

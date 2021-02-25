@@ -67,7 +67,7 @@
       img {
         position: absolute;
         width: 100%;
-        top: 200px;
+        top: 15%;
       }
       .home-pathway-graph {
         display: flex;
@@ -96,10 +96,14 @@
       }
     }
     .home-impact-list {
-      display: flex;
-      flex-wrap: wrap;
+      //display: flex;
+      //flex-wrap: wrap;
+      display: grid;
       justify-content: center;
       padding: 0 303px;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 40px;
+      grid-column-gap: 68px;
       @media only screen and (max-width: 1622px) {
         padding: 0;
       }
@@ -110,14 +114,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 20px 34px;
+        //margin: 20px 34px;
         border-radius: 40px;
-        box-shadow: 0 20px 100px -30px rgba(0, 0, 0, .35);
+        //box-shadow: 0 20px 100px -30px rgba(0, 0, 0, .35);
         cursor: pointer;
-        transition: .5s;
+        transition: all .3s cubic-bezier(.215,.61,.355,1);
+        box-shadow: 0 50px 60px -30px rgba(0, 0, 0, 0.06);
         &:hover {
-          //opacity: .5;
-          transform: translate(0, -15px) scale(1.05);
+          box-shadow: 0 30px 80px -10px rgba(0, 0, 0, .1);
+          -webkit-transform: translate(0,-7px);
+          -ms-transform: translate(0,-7px);
+          transform: translate(0,-7px);
         }
         .home-impact-title {
           margin-bottom: 16px;
@@ -146,6 +153,9 @@
       span {
         line-height: 30px;
         text-align: center;
+        @media only screen and (max-width: 600px) {
+          line-height: 26px;
+        }
       }
 
     }
@@ -171,6 +181,30 @@
     }
   }
 }
+
+
+.home-ecosystem-container {
+  display: flex;
+  padding: 0 303px;
+  margin-bottom: 321px;
+  //justify-content: space-between;
+  align-items: center;
+  .home-ecosystem-title {
+    max-width: 518px;
+  }
+  .home-ecosystem-description {
+    max-width: 475px;
+  }
+
+  img {
+    margin-left: 65px;
+    width: 465px;
+    height: 465px;
+    background-color: #a7a7a7;
+  }
+}
+
+
 
 
 

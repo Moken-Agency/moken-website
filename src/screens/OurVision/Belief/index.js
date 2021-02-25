@@ -12,14 +12,14 @@ const Belief = ({ title = "", subtitle = "", images = [] }) => {
           <img src={uri} />
         ))}
       </div>
-      <Text className={"belief-title"} size={22} type={"semiBold"}>
+      <Text className={"belief-title"} size={22} type={"kSemiBold"}>
         {title}
       </Text>
       <Text
         size={20}
-        textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+        textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
         mobSize={16}
-        type={"light"}
+        type={"kLight"}
       >
         {subtitle}
       </Text>

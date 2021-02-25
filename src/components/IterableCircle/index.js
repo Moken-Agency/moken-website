@@ -11,7 +11,7 @@ const IterableCircle = ({ title, subtitle, count, isLast }) => {
         <div className={"join-circle"}>
           <Text
             className={"join-text"}
-            type={"light"}
+            type={"kLight"}
             size={25}
             mobSize={38}
             animationType={"fade-in"}
@@ -24,7 +24,7 @@ const IterableCircle = ({ title, subtitle, count, isLast }) => {
       </div>
       <div data-aos="fade-in" className={"join-right-container"}>
         <Text
-          type={"semiBold"}
+          type={"kSemiBold"}
           className={"join-title"}
           size={22}
           animationType={"fade-in"}
@@ -33,10 +33,10 @@ const IterableCircle = ({ title, subtitle, count, isLast }) => {
           {title}
         </Text>
         <Text
-          type={"light"}
+          type={"kLight"}
           size={20}
           animationType={"fade-in"}
-          textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+          textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
           mobSize={16}
         >
           {subtitle}

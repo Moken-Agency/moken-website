@@ -23,11 +23,12 @@ const TitleTwoDescriptions = ({
         <Text
           animationType={"fade-up"}
           // size={'3.4vw'}
-          size={55}
+          size={50}
           mobSize={35}
           // textStyles={{lineHeight: '0px'}}
           type={"kBold"}
           // type={"extraLight"}
+            className={'title-two-descriptions-title'}
         >
           {title}
         </Text>
@@ -37,7 +38,7 @@ const TitleTwoDescriptions = ({
             size={20}
             animationType={"fade-in"}
             // textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-            textStyles={{ lineHeight: "35px", fontWeight: 300 }}
+            textStyles={{ lineHeight: "30px", fontWeight: 300 }}
             mobSize={16}
             type={"kLight"}
             // type={"light"}
@@ -49,7 +50,7 @@ const TitleTwoDescriptions = ({
             // size={'1.25vw'}
             animationType={"fade-in"}
             // textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-              textStyles={{ lineHeight: "35px", fontWeight: 300  }}
+              textStyles={{ lineHeight: "30px", fontWeight: 300  }}
             mobSize={16}
             type={"kLight"}
             // type={"light"}

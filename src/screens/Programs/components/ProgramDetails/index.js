@@ -59,9 +59,9 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
         <div className={`labs-details-list-block ${`list-${type}`}`}>
           {options.map(({ title, subtitle }) => {
             return (
-              <div style={!type && !isMobile ? {marginRight: 30} : null}>
+              <div className={'labs-details-list-item-'+type} style={!type && !isMobile ? {marginRight: 30} : null}>
                 <Text
-                  type={"semiBold"}
+                  type={"kSemiBold"}
                   color={"white"}
                   size={'.9vw'}
                   // size={14}
@@ -71,7 +71,7 @@ const ProgramDetails = ({ options = defaultOptions, type, subtitle }) => {
                   {title.toUpperCase()}
                 </Text>
                 <Text
-                  type={"light"}
+                  type={"kLight"}
                   textStyles={{ whiteSpace: "pre" }}
                   color={"white"}
                   size={'.95vw'}

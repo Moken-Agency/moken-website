@@ -22,7 +22,7 @@ const TitleSubDescription = ({
         animationType={"fade-in"}
         type={"kBold"}
         // type={"extraLight"}
-        size={55}
+        size={50}
         mobSize={35}
       >
         {subtitle}
@@ -47,6 +47,7 @@ const TitleSubDescription = ({
             textColor={"black"}
             backgroundColor={"transparent"}
             containerStyles={{ padding: 0 }}
+            animationHoverType={'lowerMenu'}
           />
         </div>
       ) : null}

@@ -78,6 +78,7 @@ const FutureFounders = () => {
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
+        subtitleClassName={'future-founders-subtitle'}
         type={'big'}
         options={options.future}
         // widthItem={"30vw"}

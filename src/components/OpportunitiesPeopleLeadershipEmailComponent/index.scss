@@ -1,19 +1,24 @@
 .opportunities-form-container {
   display: flex;
   justify-content: space-between;
+  //justify-content: flex-end;
   padding: 0 10vw 10vw 10vw;
   align-items: center;
   @media screen and (max-width: 600px){
     flex-direction: column-reverse;
   }
   .opportunities-form-left-container, {
-    width: 35vw;
+    //width: 35vw;
+    max-width: 600px;
+
+    margin-right: 163px;
     @media screen and (max-width: 600px){
       width: auto;
     }
   }
   .opportunities-form-right-container {
-    width: 30vw;
+    //width: 30vw;
+    max-width: 600px;
     @media screen and (max-width: 600px) {
       width: auto;
     }
@@ -23,11 +28,14 @@
       margin-top: 0;
       padding-left: 0;
       margin-bottom: 2vw;
+      span {
+        line-height: 53px;
+      }
       @media screen and (max-width: 600px) {
         width: 55vw;
         margin-bottom: 8vw;
         span {
-          font-size: 7vw !important;
+          line-height: 40px;
         }
       }
     }
@@ -73,7 +81,7 @@
 }
 
 .opportunities-form-img {
-  width: 30vw;
+  //width: 30vw;
   height: 30vw;
   background: #a7a7a7;
   @media screen and (max-width: 600px) {

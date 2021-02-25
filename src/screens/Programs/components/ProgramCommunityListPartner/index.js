@@ -12,10 +12,12 @@ const ProgramCommunityListPartner = ({
   options = [],
   onClick,
   AdditionalComponent,
+  subtitleClassName = '',
   widthItem = 70 / options.length + "vw",
   itemContainerStyles = {},
   type = "",
 }) => {
+
   return (
     <>
       <Title title={title} />
@@ -24,10 +26,10 @@ const ProgramCommunityListPartner = ({
         <Text
           animationType={"fade-in"}
           type={"kBold"}
-          size={55}
+          size={50}
           // size={55}
           mobSize={35}
-          className={"program-community-list-partner-subtitle"}
+          className={`program-community-list-partner-subtitle ${subtitleClassName}`}
           textStyles={{ letterSpacing: 0.5 }}
         >
           {subtitle}
@@ -35,6 +37,7 @@ const ProgramCommunityListPartner = ({
 
         <div className={`labs-join-partners-list ${type === 'big' ? 'big-styles-container' : 'small-styles-container'}`}>
           {options.map((option) => {
+            console.log({option});
             return (
               <>
                 {type === "big" ? (

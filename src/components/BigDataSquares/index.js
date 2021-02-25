@@ -30,15 +30,18 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED", route = '/
             type={"kLight"}
             mobSize={25}
             containerStyles={{marginRight: '2vw'}}
-            textStyles={{ lineHeight: isMobile ? "24px" : "65px" }}
+            textStyles={{
+              lineHeight: isMobile ? "24px" : "53px",
+              whiteSpace: "break-spaces",
+            }}
         >
           {title}
         </Text>
         <Text
             size={20}
             type={"kLight"}
-            mobSize={16}
-            textStyles={{ lineHeight: isMobile ? "25px" : "35px" }}
+            mobSize={14}
+            textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
             className={'big-data-squares-subtitle'}
             // containerStyles={{
             //   width: isMobile ? "auto" : '18vw',

@@ -25,7 +25,7 @@ const HeaderWithBackground = ({
           <Text
             size={isMobile ? "2vw" : "1vw"}
             className={"header-with-background-join-us"}
-            type={"semiBold"}
+            type={"kSemiBold"}
             animationType={"fade-in"}
             color={"white"}
           >

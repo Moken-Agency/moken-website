@@ -29,6 +29,7 @@
       .careers-third-subtitle {
         margin: 0;
         padding: 0;
+        max-width: 852px;
       }
       .benefits-container {
         margin-top: 7.8vw;
@@ -49,7 +50,7 @@
     .careers-black-block-container {
       width: 81vw;
       background-color: black;
-      padding: 7.6vw 0 4vw 9vw;
+      padding: 131px 0 102px 156px;
       display: flex;
 
       align-items: center;
@@ -62,9 +63,10 @@
         flex-direction: column;
       }
         .careers-black-block-left-container {
+          margin-right: 153px;
         .title-comp-container, .subtitle-comp-container, .description-container  {
           padding-left: 0;
-          width: 32vw;
+          max-width: 570px;
           @media screen and (max-width: 600px) {
             width: auto;
           }

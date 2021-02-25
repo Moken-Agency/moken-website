@@ -8,6 +8,7 @@ import HomeComponentWithSwiper from "../../components/HomeComponentWithSwiper";
 import Button from "../../components/Button";
 import {useHistory} from "react-router-dom";
 import path from '../../images/Path 2.svg';
+import HomeDescriptionDataComponent from "../../components/HomeDescriptionDataComponent";
 
 const {explores, startupsData, paths, impacts} = options;
 
@@ -58,6 +59,23 @@ const Home = () => {
                }
            }}
        />
+
+       <section className={'home-ecosystem-container'}>
+           <HomeDescriptionDataComponent descriptionData={{
+               title: 'Our ecosystem impact is really awesome.',
+               description: "A community comprised of passionate entrepreneurs, innovators, investors, and builders who share a goal of making an impact.",
+               btnOptions: {
+                   title: 'EXPLORE THE ECOSYSTEM',
+                   route: '/'
+
+               }
+           }}
+             titleClass={'home-ecosystem-title'}
+             descriptionClass={'home-ecosystem-description'}
+           />
+
+           <img src={''}/>
+       </section>
 
         <HomeComponentWithVerticalText
             numberTitle={'02.'}
@@ -117,6 +135,7 @@ const Home = () => {
 
         <HomeComponentWithVerticalText
             numberTitle={'04.'}
+            titleContainerStyles={{maxWidth: 707}}
             verticalText={{
                 first: 'moken',
                 // second: 'agenadjfksjdgkjsdngjkdscy'
@@ -149,7 +168,8 @@ const Home = () => {
                                 marginBottom: 70 * index,
                                 borderColor: 'black',
                                 width: '25%',
-                                height: 611,
+                                // height: 611,
+                                height: '38vw',
                                 paddingBottom: 25,
                                 borderRight: `${index === 4 ? 0 : '1px'} solid rgb(221, 221, 221)`}}>
                                 <Text type={'kRegular'} size={16} textStyles={{letterSpacing: 4}}>{path}</Text>

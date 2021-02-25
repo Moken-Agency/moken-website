@@ -9,7 +9,7 @@ const Person = ({ name = "", positions = [] }) => {
       <Text
         animationType={"fade-in"}
         size={22}
-        type={"semiBold"}
+        type={"kSemiBold"}
         containerStyles={{ marginBottom: 25 }}
       >
         {name}
@@ -22,7 +22,7 @@ const Person = ({ name = "", positions = [] }) => {
             animationType={"fade-in"}
             size={14}
             mobSize={10}
-            type={"semiBold"}
+            type={"kSemiBold"}
           >
             {position}
           </Text>

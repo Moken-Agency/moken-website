@@ -1,7 +1,7 @@
 .package-container {
-  padding: 0 .6vw 5vw 3vw;
+  padding: 0 25px 60px 25px;
   //padding-bottom: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 65px;
   border-bottom: 1px solid #cdcdcd;
   @media only screen and (max-width: 600px) {
     padding-bottom: 16vw;
@@ -20,7 +20,7 @@
 }
 
 .description {
-  margin-bottom: 1.5vw;
+  margin-bottom: 17px;
   @media only screen and (max-width: 600px) {
     margin-bottom: 16vw;
     .descriptions {
@@ -43,7 +43,7 @@
 .opened-container {
   display: flex;
   justify-content: space-between;
-  padding: 5vw 4vw;
+  padding: 76px 25px 0 25px;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     padding: 0 4vw;

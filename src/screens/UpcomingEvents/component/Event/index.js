@@ -24,7 +24,7 @@ const Event = () => {
           }}
         >
           <Text
-            size={55}
+            size={50}
             mobSize={35}
             animationType={"fade-in"}
             type={"kBold"}
@@ -35,9 +35,9 @@ const Event = () => {
           <Text
             size={20}
             animationType={"fade-in"}
-            type={"light"}
+            type={"kLight"}
             mobSize={16}
-            textStyles={{ lineHeight: isMobile ? "24px" : "35px" }}
+            textStyles={{ lineHeight: isMobile ? "24px" : "30px" }}
           >
             Our role consists of taking the time to understand your business
             model, and suggesting creative and high-performing digital

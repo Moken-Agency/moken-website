@@ -18,6 +18,7 @@ import ColorBlock from "../../components/ColorBlock";
 import arrowUpRight from '../../images/arrow-up-right-black.svg';
 import ImageBlock from "../../components/ImageBlock";
 import partnersImage from '../../images/partners';
+import ourPartnersFirst from '../../images/our-partners-first-right@2x.jpg';
 
 const { involved, collaborates, purposes } = options;
 
@@ -38,7 +39,7 @@ const OurPartners = () => {
       {/*  <img data-aos="fade-in" src={ThirdCircle} />*/}
       {/*</div>*/}
 
-      <ImageBlock position={'right'}/>
+      <ImageBlock position={'right'} url={ourPartnersFirst}/>
 
       <TitleTwoDescriptions
         mainTitle={"DRIVING THE FUTURE"}
@@ -51,6 +52,7 @@ const OurPartners = () => {
       />
 
       <ProgramCommunityListPartner
+        subtitleClassName={'our-partners-opportunities-subtitle'}
         title={"PARTNERSHIP OPPORTUNITIES"}
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
@@ -67,7 +69,7 @@ const OurPartners = () => {
           // type={"extraLight"}
           animationType={"fade-in"}
           // size={'3.4vw'}
-          size={55}
+          size={50}
           mobSize={35}
           className={'partners-increase-title'}
           // containerStyles={{width: isMobile ? 'auto' : 900}}
@@ -110,11 +112,11 @@ const OurPartners = () => {
     <div className={'explore-our-partners-container'}>
         <Text
             // size={'3.4vw'}
-              size={55}
+              size={50}
               mobSize={35}
               type={'kBold'}
+              className={'our-partners-involved-title'}
               // type={'extraLight'}
-              containerStyles={{width: isMobile ? 'auto' : '600px'}}
               // containerStyles={{width: isMobile ? 'auto' : 583}}
         >Interested in becoming a partner and leveraging a global community network?</Text>
         <div className={'explore-our-partners-potential-container'}>

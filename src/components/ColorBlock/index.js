@@ -21,6 +21,7 @@ const ColorBlock = ({
   blockType = "big",
   containerStyles = {},
   onClick = () => {},
+                      titleClassName = '',
                       titleContainerStyles = {}
 }) => {
   const { isMobile } = useWindowDimensions();
@@ -42,7 +43,7 @@ const ColorBlock = ({
             mobSize={mobSize}
             color={textColor}
             animationType={"fade-in"}
-            className={"block-container-history"}
+            className={`block-container-history ${titleClassName}`}
             textStyles={{fontWeight: 100, ...titleContainerStyles}}
             containerStyles={{ width: isMobile ? "auto" : textWidth }}
           >
@@ -51,7 +52,7 @@ const ColorBlock = ({
           <div style={{ display: "flex", alignItems: "center", cursor: 'pointer' }} onClick={onClick}>
             <Text
               size={16}
-              type={"kRegular"}
+              type={"kSemiBold"}
               // type={"semiBold"}
               mobSize={"3vw"}
               animationType={"fade-in"}

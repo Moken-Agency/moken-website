@@ -9,11 +9,11 @@ const PrivacyPolicy = () => {
     <div className={"privacy-container"}>
       <div className={"privacy-header-container"}>
         <Text
-          size={100}
+          size={95}
           animationType={"fade-in"}
-          mobSize={55}
+          mobSize={50}
           color={"white"}
-          type={"thin"}
+          type={"kBold"}
         >
           Privacy Policy
         </Text>

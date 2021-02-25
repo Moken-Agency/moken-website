@@ -34,7 +34,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
     >
       <div className={"report-bug-container"}>
         <Text containerStyles={{position: 'absolute', right: 10, top: 10, cursor: 'pointer'}}
-              type={'semiBold'}
+              type={'kSemiBold'}
               size={16}
               textStyles={{letterSpacing: 4}}
               onClick={() => setIsOpen(false)}>CLOSE</Text>
@@ -43,7 +43,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
           <Text
             size={12}
             mobSize={16}
-            type={"semiBold"}
+            type={"kSemiBold"}
             textStyles={{ letterSpacing: 4 }}
           >
             FOUND A TYPO?
@@ -51,7 +51,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
           <Text
             size={12}
             mobSize={16}
-            type={"semiBold"}
+            type={"kSemiBold"}
             textStyles={{ letterSpacing: 4 }}
             containerStyles={{ marginBottom: isMobile ? 20 : 18 }}
           >
@@ -68,21 +68,21 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
           <Input
             size={".9vw"}
             mobSize={14}
-            type={"light"}
+            type={"kLight"}
             className={"first-input"}
             placeholder={"Your Email Address"}
           />
           <Input
             size={".9vw"}
             mobSize={14}
-            type={"light"}
+            type={"kLight"}
             className={"second-input"}
             placeholder={"Which page URL has an error or bug?"}
           />
           <Input
             size={".9vw"}
             mobSize={14}
-            type={"light"}
+            type={"kLight"}
             resize={"none"}
             className={"third-input"}
             placeholder={"What is the issue?"}
@@ -93,14 +93,14 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
             <img src={SaveImage} />
             <div className={"screenshot-text-container"}>
               <Text
-                type={"semiBold"}
+                type={"kSemiBold"}
                 size={".56vw"}
                 mobSize={10}
                 containerStyles={{ marginBottom: 5 }}
               >
                 Attach a screenshot of the issue (*If applicable)
               </Text>
-              <Text type={"light"} size={".45vw"} mobSize={8}>
+              <Text type={"kLight"} size={".45vw"} mobSize={8}>
                 Max file size is 10MB
               </Text>
             </div>

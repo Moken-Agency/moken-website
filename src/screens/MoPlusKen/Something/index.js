@@ -8,7 +8,7 @@ const Something = ({ title, subtitle, description }) => {
   return (
     <div className={"something-container"}>
       <Text
-        type={"semiBold"}
+        type={"kSemiBold"}
         size={14}
         className={"something-title"}
         textStyles={{ letterSpacing: 4 }}
@@ -17,7 +17,7 @@ const Something = ({ title, subtitle, description }) => {
       </Text>
       <div className={"something-block"}>
         <Text
-          type={"semiBold"}
+          type={"kSemiBold"}
           className={"something-block-subtitle"}
           size={22}
           mobSize={19}
@@ -25,9 +25,9 @@ const Something = ({ title, subtitle, description }) => {
           {subtitle}
         </Text>
         <Text
-          type={"light"}
+          type={"kLight"}
           size={20}
-          textStyles={{ lineHeight: isMobile ? "26px" : "35px" }}
+          textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
           mobSize={16}
         >
           {description}

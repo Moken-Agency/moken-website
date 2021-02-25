@@ -3,34 +3,34 @@ export default {
     {
       title: "Exclusive Product Access",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Exclusive access to new cutting edge products and technology.",
     },
 
     {
       title: "First Adopter Perks",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Be the first to get the chance to experience our latest & greatest.",
     },
     {
       title: "Infuence the Future",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Share your opinions and experiences—make things you care about better.",
     },
     {
       title: "Product Freebies & Swag",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Join a close & exclusive community of tech-savvy product-loving team.",
     },
     {
       title: "Product Freebies & Swag",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Get free swag, rewards and discounts for being a part of our beta family!",
     },
-    {
-      title: "TBD",
-      subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
-    },
+    // {
+    //   title: "TBD",
+    //   subtitle:
+    //     "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+    // },
   ],
   joins: [
     {
@@ -63,13 +63,13 @@ export default {
     {
       title: "Apply to Join  \n" + "the Team",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Applications to be a part of our testing club will be accepted for a limited time as we are keeping this small and exlusive.",
     },
     {
       title: "Estimate Your \n" + "Project",
       subtitle:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      btnTitle: "APPLY NOW",
+        "Fine-tune, prototype, and market test your (MVP) to validate and pivot to ensure an effective market launch.",
+      btnTitle: "SUBMIT PRODUCT",
     },
   ],
 };

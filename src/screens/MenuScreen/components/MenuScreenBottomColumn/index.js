@@ -32,7 +32,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
         type={"kSemiBold"}
         textStyles={{
           ...styles.mainTitle,
-          lineHeight: isMobile ? "26px" : "35px",
+          lineHeight: isMobile ? "26px" : "30px",
         }}
         containerStyles={{ marginBottom: 65 }}
       >

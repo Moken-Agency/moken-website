@@ -22,7 +22,7 @@ const Company = ({
         <Text
           size={16}
           animationType={"fade-in"}
-          type={"kRegular"}
+          type={"kMedium"}
           className={"company-name"}
           mobSize={12}
         >
@@ -55,7 +55,7 @@ const Company = ({
             size={14}
             animationType={"fade-in"}
             className={"company-city"}
-            type={"kRegular"}
+            type={"kMedium"}
             textStyles={{letterSpacing: 4}}
             mobSize={12}
           >

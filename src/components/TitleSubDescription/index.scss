@@ -13,17 +13,23 @@
     max-width: 755px;
     padding-left: 14vw;
     margin-bottom: 45px;
+    span {
+      line-height: 53px;
+    }
     @media screen and(max-width: 600px) {
       margin-bottom: 64px;
       width: auto;
       padding: 0 43px;
+      span {
+        line-height: 25px;
+      }
     }
     @media screen and(max-width: 903px) {
       width: auto;
       padding-right: 14vw;
     }
       span {
-      line-height: 63px;
+      line-height: 53px;
       letter-spacing: .5px;
       @media screen and(max-width: 600px) {
         line-height: 43px;
@@ -36,9 +42,10 @@
     @media screen and(max-width: 600px) {
       width: auto;
       padding: 0 43px;
+
     }
     span {
-      line-height: 35px;
+      line-height: 30px;
       letter-spacing: .18px;
       @media screen and(max-width: 600px) {
         line-height: 26px;

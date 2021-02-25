@@ -16,7 +16,7 @@ const TitleSubTwoListCenter = ({
       <Title title={title} className={"title-sub-two-list-title"} />
       <div className={"title-sub-two-list-content"}>
         <Text
-          size={55}
+          size={50}
           className={"title-sub-two-list-subtitle"}
           animationType={"fade-in"}
           mobSize={35}

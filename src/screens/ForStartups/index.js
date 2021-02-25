@@ -9,11 +9,12 @@ import EmailForm from "../../components/EmailForm";
 import "./index.scss";
 import TitleCenterImagesList from "../../components/TitleCenterImagesList";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import partners from '../../images/partners'
 
 const ForStartups = () => {
   const { isMobile } = useWindowDimensions();
-
-  return (
+    console.log('Object.values', Object.values);
+    return (
     <div className={"for-startups-container"}>
       <HeaderTitle
         title={"FOR STARTUPS"}
@@ -25,63 +26,60 @@ const ForStartups = () => {
       <ImageBlock position={"right"} />
 
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
-        mainTitle={"BUILD & GROW"}
+        withoutRightPadding
+        title={"We build disruptive startups for visionary founders & entrepreneurs."}
+        mainTitle={"PASSION FUELS PURPOSE"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’ " +
-          "operational realities, and eliminate risks that aren’t necessary."
+          `We create startups which transform sectors and challenge the established models. We build online businesses that are ready to grow by working with clients who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"WORK WITH US"}
+          isLeftImage
       />
 
       <LeftInfoWithRightImage
+          withoutRightPadding
         title={"Join our trusted community of partners and market what you do."}
-        mainTitle={"ACCESS NETWORK"}
+        mainTitle={"ACCESS CONNECTIONS"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’" +
-          " operational realities, and eliminate risks that aren’t necessary."
+          `Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
-        isLeftImage
+        btnTitle={"JOIN THE NETWORK"}
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"APPLY NOW"}
+        title={"StartupSmart Podcast"}
+        subtitle={"LISTEN ON SPOTIFY"}
         withIcon
-        textColor={"black"}
-        backgroundColor={"grey"}
+        textColor={"white"}
+        backgroundColor={"black"}
+        type={'kThin'}
+        blockType={'middle'}
       />
 
       <LeftInfoWithRightImage
+          withoutRightPadding
         title={
-          "COURSES & PROGRAMS individuals working together to create extraordinary"
+          "We believe constant evolution is our most powerful competitive advantage."
         }
-        mainTitle={"EDUCATION & PROGRAMING TO TAKE YOU TO THE NEXT LEVEL"}
+        mainTitle={"INSIGHT MEETS IMPACT"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’" +
-          " operational realities, and eliminate risks that aren’t necessary."
+          `Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"LEARN MORE"}
         isLeftImage
       />
 
       <TitleCenterImagesList
         title={"A FEW OF THE OTHER STARTUPS WE WORK WITH"}
-        list={new Array(10).fill(0)}
+        list={options.ourProjects}
       />
 
       <ProgramCommunityListPartner
         title={"DRIVE GROWTH & SCALE FAST"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "Further value creation and scale of the current technological business model with expansion into new emerging markets."
         }
+        subtitleClassName={'for-startups-programs-subtitle'}
         options={options.programs}
         type={"big"}
       />

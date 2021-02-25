@@ -122,7 +122,7 @@ const Input = ({
         )}
         {withGoButton && (
           <button className={"goButton"} onClick={onSubmit}>
-            <Text type={"semiBold"} size={18}>
+            <Text type={"kSemiBold"} size={18}>
               Go
             </Text>
           </button>
@@ -132,7 +132,7 @@ const Input = ({
       <Text className={'input-error-message'}
                             size={12}
                             color={'red'}
-                            type={'light'}>{errorMessage ?errorMessage : ''}</Text>
+                            type={'kLight'}>{errorMessage ?errorMessage : ''}</Text>
 
       {/*<div*/}
       {/*  className={"divider"}*/}

@@ -18,7 +18,7 @@ const Advisor = ({name = 'Mentor Name', title = 'MENTOR TITLE', socialLinks = []
       <img src={rest.avatar} />
       <div className={'advisor-info-container'} >
             <Text type={'thin'} size={30} color={'white'} className={'advisor-name'}>{name}</Text>
-            <Text type={'semiBold'} size={14} color={'white'} className={'advisor-title'}>{title}</Text>
+            <Text type={'kSemiBold'} size={14} color={'white'} className={'advisor-title'}>{title}</Text>
           <div className={'advisor-social-links-list'}>
               {
                   socialLinks.map((socialLink, index) => {

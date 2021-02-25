@@ -10,7 +10,7 @@ export default {
     {
       title: "Community Events",
       subtitle:
-        "Events are one of the most effective ways to help a startup grow. Moken Events aims to bridge the gap early on making it easier for founders to host and attend events that directly impact their goals and integrate into the startup ecosystem with flair.",
+      `Events are one of the most effective ways to help a startup grow. We bridge the gap early on making it easier to host and attend events that directly impact founder’s goals.`,
       btnTitle: "GET INVOLVED",
       route: '/upcoming-events'
 
@@ -42,18 +42,28 @@ export default {
     {
       title: "Build & Scale Your Startup",
       link: "",
+      hoverColour: '#FDCDC6',
+      colourClassName: 'light-coral'
+
     },
     {
       title: "Access Your Full Potential",
       link: "",
+      hoverColour: '#D5D5D5',
+      colourClassName: 'grey'
+
     },
     {
       title: "Connect & Extend Your Network",
       link: "",
+      hoverColour: '#FF9D72',
+      colourClassName: 'coral'
     },
     {
       title: "Learn to Create The Future ",
       link: "",
+      hoverColour: '#EFB95E',
+      colourClassName: 'orange'
     },
   ],
 };
