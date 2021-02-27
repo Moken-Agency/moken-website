@@ -79,7 +79,7 @@ const OurPartners = () => {
         <div className={"partners-container"}>
           {Object.values(partnersImage).map((value) => {
               return <div data-aos="fade-in" className={"grey-block"}>
-                  <img src={value} style={{width: '100%', height: '100%'}} />
+                  <img src={value} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
               </div>
           })
           }

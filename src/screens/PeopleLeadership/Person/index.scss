@@ -1,5 +1,5 @@
 .person-container {
-  padding: 0 40px;
+  padding: 0 52px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,8 +8,8 @@
   }
     img {
     height: 320px;
+    width: 265px;
     background-color: #a7a7a7;
-    width: 15vw;
     margin-bottom: 50px;
     @media only screen and (max-width: 600px) {
       width: 70vw;

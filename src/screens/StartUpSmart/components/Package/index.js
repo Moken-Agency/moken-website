@@ -63,6 +63,7 @@ const Package = ({
             type={"kSemiBold"}
             mobSize={12}
             size={16}
+            containerStyles={{marginBottom: 23}}
             textStyles={{ letterSpacing: isMobile ? 3 : 4 }}
           >
             {title}

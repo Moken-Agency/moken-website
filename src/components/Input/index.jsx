@@ -26,7 +26,7 @@ const Input = ({
   withGoButton,
   onSubmit = () => {},
   error = "",
-  typeText = "kMedium",
+  typeText = "kLight",
   width = "100%",
   inputType = "input",
   height = "auto",
@@ -67,7 +67,9 @@ const Input = ({
                          {...rest}
                   />
 
-                  <label htmlFor="email" className={ `${isActive ? 'Active' : ''} ${errorMessage ? 'error' : ''}`}>
+                  <label htmlFor="email"
+                         style={{ fontFamily: textTypes[typeText], fontSize: isMobile ? mobSize : size,}}
+                         className={ `${isActive ? 'Active' : ''} ${errorMessage ? 'error' : ''}`}>
                     {placeholder}
                   </label>
                 </div>
@@ -92,7 +94,7 @@ const Input = ({
                      style={{fontSize: isMobile ? mobSize : size,
                        fontFamily: textTypes[typeText],
                        resize,
-                       minHeight: 350
+                       minHeight: 200
                      }}
                      defaultValue={''}
                      {...rest}
@@ -100,7 +102,7 @@ const Input = ({
 
               <label htmlFor="email"
                      className={ isActive ? "Active" : ""}
-                     style={{fontSize: isMobile ? mobSize : size,fontFamily: textTypes[typeText]}}
+                     style={{fontSize: isMobile ? mobSize : size, fontFamily: textTypes[typeText]}}
               >
                 {placeholder}
               </label>

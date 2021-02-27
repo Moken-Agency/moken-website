@@ -1,4 +1,4 @@
-import JobOffer1 from "../../images/jobOffer1.svg";
+import JobOffer from "../../images/job-post-4.svg";
 import JobOfferTitle1 from "../../images/jobOfferTitle1.svg";
 
 export default [
@@ -6,7 +6,7 @@ export default [
     headerTitleWithImgTitle: "CAREER OPPORTUNITIES",
     headerTitleWithImgSubtitle: "eCommerce Marketing Specialist",
     withHeaderTitleWithImg: true,
-    headerTitleWithImgURL: JobOffer1,
+    headerTitleWithImgURL: JobOffer,
   },
   {
     title: "The Role in a Nutshell",

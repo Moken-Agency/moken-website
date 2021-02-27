@@ -9,6 +9,10 @@ import options from "./options";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import forFoundersFirst from "../../images/for-founders-first.jpg";
+import forFoundersSecond from "../../images/for-founders-second.jpg";
+import forFoundersThird from "../../images/for-founders-third.jpg";
+import forFoundersForth from "../../images/for-founders-forth.jpg";
 
 const ForFounders = () => {
   const { isMobile } = useWindowDimensions();
@@ -25,7 +29,7 @@ const ForFounders = () => {
         subtitleClassName={'for-founder-header-subtitle'}
       />
 
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={forFoundersFirst} className={'for-founders-first-image-block'}/>
 
       <LeftInfoWithRightImage
         withoutRightPadding
@@ -35,7 +39,7 @@ const ForFounders = () => {
         title={"Your power lies in your ability to connect."}
         description={`The Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`}
         btnTitle={"JOIN THE NETWORK"}
-        imgUrl={""}
+        imgUrl={forFoundersSecond}
       />
 
       <LeftInfoWithRightImage
@@ -47,7 +51,7 @@ const ForFounders = () => {
         }
         description={`Accessible learning modules, founder focused resources, and educational opportunities developed to help you level up using our library of courses, webinars, and other materials designed to help you validate, build, and grow successfully.`}
         btnTitle={"LEARN MORE"}
-        imgUrl={""}
+        imgUrl={forFoundersThird}
         isLeftImage
       />
 
@@ -72,7 +76,7 @@ const ForFounders = () => {
         }
         description={`We understand that startups are built stronger and flourish when founders work together. With that in mind, we've developed an exclusive accelerator program that can be custom tailored to suit any founder’s needs. By harnessing the power of potential and tearing up the rule book, Moken helps early stage founders launch faster, stronger, and more efficiently. Through our agile approach, we overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation while building for scale. `}
         btnTitle={"EXPLORE MOKENLABS"}
-        imgUrl={""}
+        imgUrl={forFoundersForth}
       />
 
       <ProgramCommunityListPartner

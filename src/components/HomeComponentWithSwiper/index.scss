@@ -20,18 +20,24 @@
     }
     .home-swiper-buttons-container {
       display: flex;
-      width: 140px;
+      width: 110px;
       justify-content: space-between;
       margin-top: 50px;
       .home-swiper-button-container {
-        width: 60px;
-        height: 60px;
-        border-radius: 60px;
-        background-color: #007aff;
+        width: 46px;
+        height: 46px;
+        //border-radius: 60px;
+        background-color: black;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         transition: .3s;
         &:hover {
           transform: translate(0, -5px) scale(1.01);
+        }
+        img {
+
         }
       }
     }

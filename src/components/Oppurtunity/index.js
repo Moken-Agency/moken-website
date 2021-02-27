@@ -12,8 +12,8 @@ const Opportunity = ({
   width = "34vw",
   stylesContainer = {},
   isFirst = false,
-    btnTitle= ' VIEW JOB',
-    action
+  btnTitle= ' VIEW JOB',
+  action
 }) => {
   const history = useHistory();
 
@@ -25,6 +25,7 @@ const Opportunity = ({
         ...stylesContainer,
         borderTop: isFirst ? "1px solid #efefef" : 0,
       }}
+      onClick={() => action ? action() : history.push(route)}
     >
       <div className={"opportunity-title-container"}>
         <Text
@@ -67,7 +68,7 @@ const Opportunity = ({
             //       />
             //   )
             // }}
-            onClick={() => action ? action() : history.push(route)} />
+             />
 
 
       </div>

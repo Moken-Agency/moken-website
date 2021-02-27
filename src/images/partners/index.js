@@ -1,17 +1,21 @@
-import partner1 from './5e349c95d8d0c2121b0d4ecd_Fast-LogoWhite.svg';
-import partner2 from './activate.svg';
-import partner3 from './logo-default.svg';
-import partner4 from './Twilio—Segment—Horizontal—DarkAcai.svg';
-import partner5 from './web-color-startups-leftaligned.svg';
-import partner6 from './Bitmap.png';
+import fast from './5e349c95d8d0c2121b0d4ecd_Fast-LogoWhite.svg';
+import activate from './activate.svg';
+import owner from './logo-default.svg';
+import segment from './Twilio—Segment—Horizontal—DarkAcai.svg';
+import hubspot from './web-color-startups-leftaligned.svg';
+import ink from './Bitmap.png';
+import noissue from './noissue.jpg';
+import acadium from './acadium.jpg';
 
 
 export default {
-    partner6,
-    partner3,
-    partner4,
-    partner5,
-    partner2,
-    partner1,
+    ink,
+    owner,
+    segment,
+    hubspot,
+    activate,
+    fast,
+    noissue,
+    acadium
 
 }

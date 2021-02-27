@@ -56,8 +56,8 @@ const Button = ({
             ...containerStyles,
             backgroundColor: colors[backgroundColor],
           }}
-            className={`button-main-container ${type} ${className} ${disabled ? 'disabled' : ' '}
-             ${animationHoverType + 'Container'}`}>
+            className={`${type} ${className} ${disabled ? 'disabled' : ' '}
+             ${animationHoverType + 'Container'} button-main-container`}>
         <div
             className={`button-container`}
         >

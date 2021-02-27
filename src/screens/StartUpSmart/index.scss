@@ -1,4 +1,12 @@
 .start-up-smart-container {
+
+  .startup-packages-description, .startup-packages-subtitle {
+    max-width: 877px !important;
+    width: auto;
+  }
+  .startup-packages-subtitle {
+    margin-bottom: 82px !important;
+  }
   .start-up-smart-header-subtitle {
     max-width: 800px;
   }
@@ -150,7 +158,3 @@
   }
 }
 
-.startup-packages-description, .startup-packages-subtitle {
-  max-width: 877px !important;
-  width: auto;
-}

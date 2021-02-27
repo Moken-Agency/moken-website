@@ -4,7 +4,7 @@ import Person from "../Person";
 import Title from "../../../components/Title";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
-const People = ({ people, peopleIndex, title }) => {
+const People = ({ people, photo, peopleIndex, title }) => {
   const { isMobile } = useWindowDimensions();
 
   return (
@@ -17,7 +17,7 @@ const People = ({ people, peopleIndex, title }) => {
               {isMobile ? (
                   <Title title={title} containerStyles={{ marginBottom: "10vw" }} />
               ) : null}
-              <img src={''} className={'people-employees-container'}/>
+              {/*<img src={photo} className={'people-employees-container'}/>*/}
 
               <div
                   className={"people-container"}

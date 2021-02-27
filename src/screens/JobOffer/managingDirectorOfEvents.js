@@ -1,4 +1,4 @@
-import JobOffer1 from "../../images/jobOffer1.svg";
+import JobOffer from "../../images/job-post-1.svg";
 import JobOfferTitle1 from "../../images/jobOfferTitle1.svg";
 
 export default [
@@ -6,7 +6,7 @@ export default [
     headerTitleWithImgTitle: "CAREER OPPORTUNITIES",
     headerTitleWithImgSubtitle: "Managing Director of Events",
     withHeaderTitleWithImg: true,
-    headerTitleWithImgURL: JobOffer1,
+    headerTitleWithImgURL: JobOffer,
   },
   {
     title: "Role Overview",

@@ -11,6 +11,8 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import leftArrow from '../../images/letft-arrow.svg';
+import rightArrow from '../../images/right-arrow.svg';
 
 import HomeDescriptionDataComponent from "../HomeDescriptionDataComponent";
 import ArrowUpRight from "../../images/arrow-up-right-white.svg";
@@ -68,10 +70,14 @@ const HomeComponentWithSwiper = ({
                 <div className={'home-swiper-buttons-container'}>
                     <div className={'home-swiper-button-container'}
                          ref={prevRef}
-                         />
+                         >
+                        <img src={leftArrow} />
+                    </div>
                     <div className={'home-swiper-button-container'}
                          ref={nextRef}
-                         />
+                         >
+                        <img src={rightArrow} />
+                    </div>
                 </div>
 
             </div>

@@ -1,16 +1,19 @@
 .careers-container {
+  .careers-first-image-block {
+    margin-bottom: 180px;
+  }
   .image-section {
     width: 100vw;
     background-color: grey;
   }
   .careers-third-section {
-    padding: 10vw;
+    padding: 0 10vw;
     position: relative;
     .circles {
-      height: 20vw;
       position: absolute;
-      right: 11vw;
-      top: 1vw;
+      right: 169px;
+      height: 331px;
+      top: -165px;
       @media only screen and (max-width: 600px) {
         top: -150px;
         height: 90px;

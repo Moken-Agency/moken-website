@@ -14,11 +14,11 @@ const ColorBlock = ({
   textWidth = "36vw",
   textColor = "white",
   // size = '4.06vw',
-  size = 40,
+  // size = 40,
   withIcon = false,
-  type = "kLight",
-  mobSize = 32,
-  blockType = "big",
+  // type = "kLight",
+  // mobSize = 32,
+  // blockType = "big",
   containerStyles = {},
   onClick = () => {},
                       titleClassName = '',
@@ -28,6 +28,10 @@ const ColorBlock = ({
   // const mobSizeTemp = blockType === "middle" ? 32 : mobSize;
   // const sizeTemp = blockType === "middle" ? 40 : size;
   // const typeTemp = blockType === "middle" ? "kLight" : type;
+  const blockType = 'middle';
+  const size = 40;
+  const type = "kLight";
+  const mobSize = 32;
 
   return (
     <>
@@ -44,8 +48,8 @@ const ColorBlock = ({
             color={textColor}
             animationType={"fade-in"}
             className={`block-container-history ${titleClassName}`}
-            textStyles={{fontWeight: 100, ...titleContainerStyles}}
-            containerStyles={{ width: isMobile ? "auto" : textWidth }}
+            textStyles={{fontWeight: 100, ...titleContainerStyles, lineHeight: isMobile ? "35px" : '50px'}}
+            containerStyles={{ maxWidth: isMobile ? "auto" : textWidth }}
           >
             {title}
           </Text>

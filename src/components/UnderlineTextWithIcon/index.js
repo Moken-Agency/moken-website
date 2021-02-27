@@ -4,6 +4,29 @@ import {ReactComponent as ArrowUpRight} from "../../images/arrow-up-right-black.
 import Text from '../Text';
 import "./index.scss";
 
+const hoverOptions =  [
+  {
+    hoverColour: '#FDCDC6',
+    colourClassName: 'light-coral'
+  },
+  {
+    hoverColour: '#D5D5D5',
+    colourClassName: 'grey'
+
+
+  },
+  {
+    hoverColour: '#FF9D72',
+    colourClassName: 'coral'
+
+
+  },
+  {
+    hoverColour: '#EFB95E',
+    colourClassName: 'orange'
+  },
+];
+
 const UnderlineTextWithIcon = ({
   className = "",
   onClick,
@@ -12,8 +35,7 @@ const UnderlineTextWithIcon = ({
   withIcon = false,
   size,
   mobSize,
-  hoverColour = '',
-  colourClassName = ''
+  hoverIndex = 0
 }) => {
 
   const [borderStatus, setBorderStatus] = useState('default');
@@ -39,7 +61,7 @@ const UnderlineTextWithIcon = ({
     <div className={`underline-text-container ${className}`}>
       <Text  size={size}
              mobSize={mobSize}
-             className={`underline-text ${colourClassName}`}
+             className={`underline-text ${hoverOptions[hoverIndex].colourClassName}`}
              onClick={onClick}
              title={title}
              color={color}>
@@ -47,14 +69,14 @@ const UnderlineTextWithIcon = ({
       </Text>
       <div className={'underline-text-divider-container'}>
         <div className={`underline-text-divider`}/>
-        <div className={`underline-text-divider-active`} style={{backgroundColor: hoverColour}}/>
+        <div className={`underline-text-divider-active`} style={{backgroundColor: hoverOptions[hoverIndex].hoverColour}}/>
         {/*<div className={`underline-text-divider-third ${borderStatus === 'unHovered' ? 'active' : ''}`}/>*/}
       </div>
 
     </div>
 
     {withIcon ? (
-        <ArrowUpRight className={`underline-text-img  arrow-${colourClassName}`} />
+        <ArrowUpRight className={`underline-text-img  arrow-${hoverOptions[hoverIndex].colourClassName}`} />
     ) : null}
   </div>
   );

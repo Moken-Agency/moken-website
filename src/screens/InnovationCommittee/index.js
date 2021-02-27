@@ -47,7 +47,7 @@ const InnovationCommittee = () => {
                     className={"innovation-committee-nav-item"}
                     type={"extraBoldDemo"}
                     color={colors.grey}
-                    onClick={() => alert(link)}
+                    // onClick={() => alert(link)}
                   >
                     {title}
                   </Text>
@@ -94,6 +94,7 @@ const InnovationCommittee = () => {
             mobSize={36}
             className={"innovation-committee-main-last-text"}
             type={"blackLight"}
+            textStyles={{lineHeight: "80px"}}
           >
             meeting point
           </Text>

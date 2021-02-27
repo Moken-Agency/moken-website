@@ -57,6 +57,7 @@ const Portfolio = (props) => {
         type={"kLight"}
         size={50}
         withIcon
+        textWidth={500}
         titleContainerStyles={{lineHeight: '90px'}}
         containerStyles={{marginBottom: 0}}
         onClick={() => history.push('connect-with-us')}

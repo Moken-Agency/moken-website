@@ -1,4 +1,4 @@
-import JobOffer1 from "../../images/jobOffer1.svg";
+import JobOffer from "../../images/job-post-1.svg";
 import JobOfferTitle1 from "../../images/jobOfferTitle1.svg";
 import ColorBlock from "../../components/ColorBlock";
 import React from "react";
@@ -8,7 +8,7 @@ export default [
     headerTitleWithImgTitle: "CAREER OPPORTUNITIES",
     headerTitleWithImgSubtitle: "Corporate Partnership & Sponsorship Manager",
     withHeaderTitleWithImg: true,
-    headerTitleWithImgURL: JobOffer1,
+    headerTitleWithImgURL: JobOffer,
   },
   {
     title: "Role Overview",

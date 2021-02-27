@@ -35,7 +35,7 @@ const history = useHistory();
         marginBottom={isMobile ? 160 : '8.9vw'}
       />
 
-      <ImageBlock position={"right"} url={AboutMokenFirstRight} />
+      <ImageBlock position={"right"} url={AboutMokenFirstRight} className={'about-moken-first-image-block'} />
 
       <TitleTwoDescriptions
         mainTitle={"WE ARE MOKEN"}

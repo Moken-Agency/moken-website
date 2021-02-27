@@ -34,8 +34,7 @@ const Access = () => {
       <LeftInfoWithRightImage
         mainTitle={"ACCESS NETWORK"}
         title={"Join our trusted community of founders and startups and scale what you do."}
-        description={`
-        }The Access Network is a place for founders, entrepreneurs, innovators, and investors to connect and grow, together. You'll learn from others' experience to help scale your ideas, avoid mistakes, and grow your venture. You'll connect with founders, investors, and innovators around the world who understand where you're at and what you're going through. And finally, you'll discover unmatched opportunities designed to promote and support you and your venture every step of the way by industry experts.`}
+        description={`The Access Network is a place for founders, entrepreneurs, innovators, and investors to connect and grow, together. You'll learn from others' experience to help scale your ideas, avoid mistakes, and grow your venture. You'll connect with founders, investors, and innovators around the world who understand where you're at and what you're going through. And finally, you'll discover unmatched opportunities designed to promote and support you and your venture every step of the way by industry experts.`}
         imgUrl={""}
         btnTitle={"JOIN THE NETWORK"}
         withoutRightPadding

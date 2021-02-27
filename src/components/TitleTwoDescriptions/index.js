@@ -9,11 +9,12 @@ const TitleTwoDescriptions = ({
   title = "",
   firstDescription = "",
   secondDescription = "",
+                                marginBottom = null
 }) => {
   const { isMobile } = useWindowDimensions();
 
   return (
-    <div className={"title-two-descriptions-main-container"}>
+    <div className={"title-two-descriptions-main-container"} style={{marginBottom}}>
       <Title
         title={mainTitle}
         className={"title-two-descriptions-main-title"}

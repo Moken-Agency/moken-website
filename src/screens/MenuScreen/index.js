@@ -35,7 +35,7 @@ const MenuScreen = (props) => {
               isOpen
               type={"white"}
               setIsOpen={() => {
-                history.push("/");
+                history.goBack();
               }}
             />
             {/*<Burger setIsOpen={setIsOpen} isOpen={isOpen} type={'white'}/>*/}
@@ -84,7 +84,7 @@ const MenuScreen = (props) => {
             >
               {socialsMedia.map(({ image, link }, index) => {
                 return (
-                  <a key={"socials header" + index} href={link}>
+                  <a key={"socials header" + index} href={link} target={'_blank'}>
                     <img src={image} alt={"social"} />
                   </a>
                 );

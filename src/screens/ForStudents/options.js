@@ -27,15 +27,15 @@ export default {
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Access Your Full Potential",
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Connect & Extend Your Network",
       link: "",
     },
     {
-      title: "Extend Your Network",
+      title: "Learn to Create The Future ",
       link: "",
     },
   ],

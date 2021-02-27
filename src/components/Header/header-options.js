@@ -90,10 +90,10 @@ export default {
           title: "FOR STUDENTS",
           route: "/for-students",
         },
-        {
-          title: "FOR BRANDS",
-          route: "/for-brands",
-        },
+        // {
+        //   title: "FOR BRANDS",
+        //   route: "/for-brands",
+        // },
         {
           title: "FOR FOUNDERS",
           route: '/for-founders'

@@ -36,7 +36,7 @@ const JobOfferTitle = ({
               size={104}
               color={color}
               textStyles={{ lineHeight: '105px' }}
-              containerStyles={{ padding: 0 }}
+              containerStyles={{ padding: 0, maxWidth: 1006 }}
             >
               {subtitle}
             </Text>

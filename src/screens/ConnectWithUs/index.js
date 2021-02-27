@@ -173,6 +173,7 @@ const ConnectWithUs = () => {
             onChange={(value) => handleOnChange('message', value)}
             inputType={"textarea"}
             resize={"vertical"}
+            containerStyles={{marginTop: 30}}
             {...getProps('message')}
 
           />
@@ -181,7 +182,7 @@ const ConnectWithUs = () => {
         </div>
       </section>
 
-      <ImageBlock url={ConnectSecondImage} />
+      {/*<ImageBlock url={ConnectSecondImage} />*/}
 
       <EmailForm withForm />
     </div>

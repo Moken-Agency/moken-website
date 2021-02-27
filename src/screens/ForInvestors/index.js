@@ -8,9 +8,13 @@ import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import "./index.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import {useHistory} from "react-router-dom";
 
 const ForInvestors = () => {
-  const { isMobile } = useWindowDimensions();
+
+    let history = useHistory();
+
+    const { isMobile } = useWindowDimensions();
 
   return (
     <div className={"for-investors-container"}>
@@ -31,12 +35,9 @@ const ForInvestors = () => {
         title={"Join our trusted community of partners and market what you do."}
         mainTitle={"STARTUP MATCH PROGRAM"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’ " +
-          "operational realities, and eliminate risks that aren’t necessary."
+         `Gain access to opportunities within our exclusive network of highly promising startups from around the world.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"Find Startups".toUpperCase()}
       />
 
       <LeftInfoWithRightImage
@@ -44,23 +45,24 @@ const ForInvestors = () => {
         title={
           "Moken Agency copy goes here about individuals working together to create extraordinary"
         }
-        mainTitle={"SUPPORT YOUR VENTURES WITH A VENTURE PARTNER"}
+        mainTitle={"SUPPORT YOUR VENTURES"}
         description={
           "Our role consists of taking the time to understand your business model, " +
           "and suggesting creative and high-performing digital strategies. Our avant-garde " +
           "tactics are in line with the current market, blend seamlessly with our clients’" +
           " operational realities, and eliminate risks that aren’t necessary."
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"PARTNER WITH US"}
         isLeftImage
+        onClick={() => history.push('/eco-partners')}
       />
 
       <ColorBlock
         title={"Looking for the next big thing?"}
         subtitle={"APPLY NOW"}
         withIcon
-        textColor={"black"}
-        backgroundColor={"grey"}
+        textColor={"white"}
+        backgroundColor={"black"}
         blockType={'middle'}
         size={30}
         type={'kThin'}

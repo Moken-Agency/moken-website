@@ -14,6 +14,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {sget} from "../../api/helpers";
 import moment from 'moment'
 import eventsSecond from '../../images/events-second.jpg';
+import {formatEvents} from "../../constans/formatEvents";
 
 const Events = () => {
     const history = useHistory();
@@ -22,23 +23,22 @@ const Events = () => {
     const [events, setEvents] = useState({events: []});
 
 
-    const formatEvents = (responseEvents) => {
-        return {
-            ...responseEvents,
-            events: responseEvents.events.map(event => (
-                {
-                    title: moment(event.start.utc).format('l'),
-                    subtitle: event.name.text,
-                    action: () => window.open(event.url,'_blank')
-                }
-                ))
-        }
-    }
-
-
+    // const formatEvents = (responseEvents) => {
+    //     return {
+    //         ...responseEvents,
+    //         events: responseEvents.events.map(event => (
+    //             {
+    //                 title: moment(event.start.utc).format('l'),
+    //                 subtitle: event.name.text,
+    //                 action: () => window.open(event.url,'_blank')
+    //             }
+    //             ))
+    //     }
+    // }
+    //
+    //
 
     useEffect( () => {
-
        async function f () {
            const response = await sget({url: 'https://www.eventbriteapi.com/v3/organizations/481196850209/events/?status=draft'});
            const events = await response.json();
@@ -46,7 +46,6 @@ const Events = () => {
            setEvents(() => formatEvents(events));
         }
         f()
-
     }, [])
 
 

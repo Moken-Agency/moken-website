@@ -4,6 +4,9 @@
 
 .about-moken-container {
   position: relative;
+  .about-moken-first-image-block {
+    margin-bottom: 190px;
+  }
   .about-moken-colour-block-title {
     max-width: 787px;
     width: auto !important;
@@ -79,6 +82,12 @@
       .about-moken-second-info-section-subtitle {
         //margin-bottom: 5.6vw;
         margin-bottom: 90px;
+        span {
+          line-height: 53px;
+          @media screen and(max-width: 600px) {
+            line-height: 37px;
+          }
+        }
         @media only screen and (max-width: 600px) {
           margin-bottom: 64px;
         }
@@ -128,6 +137,12 @@
         .about-moken-second-kendra-info-text {
           //margin-bottom: 2.9vw;
           margin-bottom: 15px;
+          span {
+            line-height: 30px;
+            @media screen and(max-width: 600px) {
+              line-height: 26px;
+            }
+          }
           @media only screen and (max-width: 600px) {
             margin-bottom: 15px;
           }

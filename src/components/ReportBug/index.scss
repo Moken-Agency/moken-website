@@ -1,5 +1,5 @@
 .report-bug-container {
-  padding: 21px 62px 62px 62px;
+  padding: 65px 62px 62px 62px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,4 +72,8 @@
       width: 50vw
     }
   }
+}
+.ReactModal__Content, .ReactModal__Content--after-open {
+  background-color: transparent !important;
+  border: 0 !important;
 }

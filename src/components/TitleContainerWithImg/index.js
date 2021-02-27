@@ -6,6 +6,7 @@ import Title from "../Title";
 import Description from "../Description";
 import SubmitYourResume from "../SubmitYourResume";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import Button from "../Button";
 
 const TitleContainerWithImg = ({
   title = "",
@@ -29,8 +30,8 @@ const TitleContainerWithImg = ({
               mobSize={16}
               className={"with-title-container-with-img-description"}
             />
-            <SubmitYourResume
-              color={"black"}
+            <Button
+                title={'SUBMIT YOUR RESUME'}
               className={"with-title-container-with-img-submit"}
             />
           </div>

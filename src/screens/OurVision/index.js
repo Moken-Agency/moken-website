@@ -36,6 +36,7 @@ const OurVision = () => {
       <ImageBlock position={"right"} url={ourVisionHeader}/>
 
       <TwoColumnsHugeInfo
+          containerStyles={{marginBottom: 100}}
         title={"OUR BELIEFS"}
         leftTitle={
           "Empowering one another in creating change around the world."
@@ -66,23 +67,23 @@ const OurVision = () => {
         blockType={'middle'}
       />
 
-      <Title title={"HOW IT WORKS"} className={"vision-works-title"} />
+      {/*<Title title={"HOW IT WORKS"} className={"vision-works-title"} />*/}
 
-      <section className={"vision-works-container"}>
-        <div className={"vision-circles-list-container"}>
-          {options.works.map((join, index) => {
-            return (
-              <IterableCircle
-                {...join}
-                key={"join" + index}
-                count={index + 1}
-                isLast={index === options.works.length - 1}
-              />
-            );
-          })}
-        </div>
-        <img src={""} className={"vision-works-image"} />
-      </section>
+      {/*<section className={"vision-works-container"}>*/}
+      {/*  <div className={"vision-circles-list-container"}>*/}
+      {/*    {options.works.map((join, index) => {*/}
+      {/*      return (*/}
+      {/*        <IterableCircle*/}
+      {/*          {...join}*/}
+      {/*          key={"join" + index}*/}
+      {/*          count={index + 1}*/}
+      {/*          isLast={index === options.works.length - 1}*/}
+      {/*        />*/}
+      {/*      );*/}
+      {/*    })}*/}
+      {/*  </div>*/}
+      {/*  <img src={""} className={"vision-works-image"} />*/}
+      {/*</section>*/}
 
       <EmailForm withForm />
     </div>

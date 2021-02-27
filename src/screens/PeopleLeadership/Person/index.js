@@ -2,14 +2,14 @@ import React from "react";
 import "./index.scss";
 import Text from "../../../components/Text";
 
-const Person = ({ name = "", positions = [] }) => {
+const Person = ({ name = "", positions = [], photo = '' }) => {
   return (
     <div className={"person-container"} style={{}}>
-      {/*<img src={photo} data-aos="fade-in" />*/}
+      <img src={photo} data-aos="fade-in" />
       <Text
         animationType={"fade-in"}
         size={22}
-        type={"kSemiBold"}
+        type={"kBold"}
         containerStyles={{ marginBottom: 25 }}
       >
         {name}
@@ -22,7 +22,7 @@ const Person = ({ name = "", positions = [] }) => {
             animationType={"fade-in"}
             size={14}
             mobSize={10}
-            type={"kSemiBold"}
+            type={"kMedium"}
           >
             {position}
           </Text>

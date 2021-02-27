@@ -92,6 +92,9 @@
       max-width: 912px;
       span {
         line-height: 53px;
+        @media screen and(max-width: 600px) {
+          line-height: 37px;
+        }
       }
       @media only screen and (max-width: 600px) {
         width: auto;

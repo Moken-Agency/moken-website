@@ -17,9 +17,10 @@ const ForStartups = () => {
     return (
     <div className={"for-startups-container"}>
       <HeaderTitle
+          subtitleClassName={'for-startups-header-subtitle'}
         title={"FOR STARTUPS"}
-        subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        subtitle={"Supporting the next generation of innovation."}
+        description={"We are here to support the journey"}
         marginBottom={isMobile ? 95 : 107}
       />
 
@@ -27,10 +28,10 @@ const ForStartups = () => {
 
       <LeftInfoWithRightImage
         withoutRightPadding
-        title={"We build disruptive startups for visionary founders & entrepreneurs."}
+        title={"Building disruptive startups for visionary founders & entrepreneurs."}
         mainTitle={"PASSION FUELS PURPOSE"}
         description={
-          `We create startups which transform sectors and challenge the established models. We build online businesses that are ready to grow by working with clients who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
+          `We create startups that transform sectors and challenge the established norms. We build businesses that are ready to grow by working with founders and startup teams who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
         }
         btnTitle={"WORK WITH US"}
           isLeftImage
@@ -38,10 +39,10 @@ const ForStartups = () => {
 
       <LeftInfoWithRightImage
           withoutRightPadding
-        title={"Join our trusted community of partners and market what you do."}
+        title={"Your power lies in the ability to connect."}
         mainTitle={"ACCESS CONNECTIONS"}
         description={
-          `Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`
+          `Our Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another. Leverage the network to help make better, well-informed decisions about the things that are most important to you & your business. `
         }
         btnTitle={"JOIN THE NETWORK"}
       />
@@ -63,21 +64,21 @@ const ForStartups = () => {
         }
         mainTitle={"INSIGHT MEETS IMPACT"}
         description={
-          `Our role consists of taking the time to understand your business model, and suggesting creative and high-performing digital strategies. Our avant-garde tactics are in line with the current market, blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`
+          `We create startups that transform sectors and challenge the established norms. We build businesses that are ready to grow by working with startup teams who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
         }
-        btnTitle={"LEARN MORE"}
+        btnTitle={"EXPLORE PROGRAMS"}
         isLeftImage
       />
 
       <TitleCenterImagesList
-        title={"A FEW OF THE OTHER STARTUPS WE WORK WITH"}
+        title={"A FEW OF THE STARTUPS WE'VE WORKED WITH"}
         list={options.ourProjects}
       />
 
       <ProgramCommunityListPartner
         title={"DRIVE GROWTH & SCALE FAST"}
         subtitle={
-          "Further value creation and scale of the current technological business model with expansion into new emerging markets."
+          "Leverage experience to further value creation and scale business models with expansion into new emerging markets."
         }
         subtitleClassName={'for-startups-programs-subtitle'}
         options={options.programs}

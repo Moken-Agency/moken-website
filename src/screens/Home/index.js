@@ -46,7 +46,7 @@ const Home = () => {
             // second: 'agenadjfksjdgkjsdngjkdscy'
             second: 'agency'
            }}
-           title={'Build your startup.'}
+           title={'Build your startup, smarter.'}
            imgURL={''}
            descriptionData={{
                title: 'Where startups build, validate & grow.',

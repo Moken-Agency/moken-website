@@ -18,19 +18,27 @@
     }
   }
   .people-images-container {
-    display: flex;
-    justify-content: space-between;
+    //display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0 12vw;
-    margin-bottom: 7vw;
+    margin-bottom: 332px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+    grid-column-gap: 120px;
     @media only screen and (max-width: 600px) {
       margin-bottom: 185px;
     }
+    .people-images-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
-      background-color: #e0e0e0;
-      height: 9vw;
-      width: 21.4vw;
-      margin-bottom: 3.4vw;
+        object-fit: fill;
+        width: 318px;
+      }
     }
+
   }
 }

@@ -16,9 +16,9 @@ const ForBrands = () => {
   return (
     <div className={"for-brands-container"}>
       <HeaderTitle
-        title={"FOR BRANDS"}
-        subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        title={"FOR STARTUP PROGRAMS"}
+        subtitle={"Collaboration over competition."}
+        description={"Driven by diversity, inclusion, and accessibility, together we strive to create an unmatched global ecosytem."}
         marginBottom={isMobile ? 107 : 107}
       />
 
@@ -26,65 +26,65 @@ const ForBrands = () => {
 
       <LeftInfoWithRightImage
         title={
-          "Enthusiastic individuals working together to create extraordinary"
+          "Working together to support the next wave of scalable ventures."
         }
-        mainTitle={"PARTNERSHIPS"}
+        mainTitle={"CROSS SECTOR COLLABORATION"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’ " +
-          "operational realities, and eliminate risks that aren’t necessary."
+          `We know startups aren’t the only ones hustling. Our goal is to help you help your startups succeed. We
+           collaborate with a global network of community startup programs, accelerators, incubators, and VC firms
+            to help startups scale effectively and efficiently. Together, we create integrative opportunities in
+             the aim of uniting the ecosystem around the world.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"GET INVOLVED"}
         isLeftImage
       />
       <TitleCenterImagesList
         title={"A FEW OF THE OTHER STARTUPS WE WORK WITH"}
-        list={["", "", "", "", ""]}
+        list={[1,2,3,4,5]}
       />
 
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
-        mainTitle={"ACCESS NETWORK"}
+        title={"Join our trusted community of partners and access support for your startups."}
+        mainTitle={"ACCESS NEW MARKETS"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’ " +
-          "operational realities, and eliminate risks that aren’t necessary."
+            `Leverage the Access Network to help make better, well-informed decisions about the things that are most
+             important to you & your program. The Access Network is an exclusive, invite-only network built for
+              ambitious programs.  It’s a place where entrepreneurs, founders, startups, industry experts,
+               side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"JOIN THE NETWORK"}
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"APPLY NOW"}
+        title={"StartupSmart Podcast"}
+        subtitle={"LISTEN ON SPOTIFY"}
         withIcon
-        textColor={"black"}
-        backgroundColor={"grey"}
+        textColor={"white"}
+        backgroundColor={"black"}
+        blockType={'middle'}
       />
 
       <LeftInfoWithRightImage
         title={
           "Enthusiastic individuals working together to create extraordinary"
         }
-        mainTitle={"ADVERTISEE & SPRONSOR"}
+        mainTitle={"SPONSOR THE FUTURE"}
         description={
           "Our role consists of taking the time to understand your business model, " +
           "and suggesting creative and high-performing digital strategies. Our avant-garde " +
           "tactics are in line with the current market, blend seamlessly with our clients’ " +
           "operational realities, and eliminate risks that aren’t necessary."
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"SPONSOR THE FUTURE"}
         isLeftImage
       />
 
       <ProgramCommunityListPartner
         title={"DRIVE GROWTH & SCALE FAST"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "Extrapolate on how they can use our agency and abilities"
         }
         options={options.programs}
-        widthItem={"30vw"}
         type={"big"}
       />
 

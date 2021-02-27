@@ -105,6 +105,9 @@
   max-width: 900px;
   span {
     line-height: 53px;
+    @media screen and(max-width: 600px) {
+      line-height: 37px;
+    }
   }
   @media only screen and (max-width: 1350px) {
     width: 100%;
@@ -112,10 +115,12 @@
   }
 }
   .partners-container {
-    display: flex;
+    //display: flex;
     flex-wrap: wrap;
     margin: 10vw 0;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     .grey-block {
       //width: 6vw;
       //height: 2.5vw;
@@ -175,7 +180,7 @@
     span {
       line-height: 53px;
       @media only screen and (max-width: 600px) {
-        line-height: 38px;
+        line-height: 37px;
       }
     }
   }

@@ -2,12 +2,15 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #cdcdcd;
-  padding: 116px 43px 86px;
+  padding: 121px 40px 86px 0;
   //padding: 4.1vw 9.5vw 2vw 9.5vw;
   @media screen and (max-width: 600px) {
     flex-direction: column;
     padding: 0 0 25vw;
     margin-bottom: 25vw;
+  }
+  .event-description {
+    max-width: 787px;
   }
   div {
     .events-button-container {

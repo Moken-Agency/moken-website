@@ -23,6 +23,7 @@ const AboutAgency = () => {
     <div className={"about-agency-container"}>
       <HeaderTitle
         title={"MOKEN AGENCY"}
+        marginBottom={323}
         subtitleClassName={'agency-header-subtitle'}
         subtitle={"Where startups build, create & grow."}
         description={`Providing opportunities for startups and founders to build and develop their visions,
@@ -30,6 +31,7 @@ const AboutAgency = () => {
       />
 
       <TitleTwoDescriptions
+        marginBottom={186}
         mainTitle={"AGENCY OVERVIEW"}
         title={`We help clients look at the world differently. Startups,
             founders, and global industry leaders

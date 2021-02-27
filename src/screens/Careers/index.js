@@ -36,7 +36,7 @@ const Careers = () => {
         marginBottom={isMobile ? 99 : 207}
       />
 
-      <ImageBlock url={ImagePeopleHeader} />
+      <ImageBlock url={ImagePeopleHeader} className={'careers-first-image-block'}/>
 
       <TitleShortListWithBtn title={'NEW OPPORTUNITIES'}
                              subtitle={'We’re hiring. If something piques your interest, let us know.'}
@@ -44,6 +44,7 @@ const Careers = () => {
                              btnTitle={'SEE ALL OPPORTUNTITIES'}
                              listItemBtnTitle={'VIEW JOB'}
                              btnType={'default'}
+                             // containerStyles={{marginBottom: 205}}
                              btnOnClick={() => history.push("/opportunities")}
       />
 

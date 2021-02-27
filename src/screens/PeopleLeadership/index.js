@@ -57,8 +57,10 @@ const PeopleLeadership = () => {
       />
 
       <div className={"people-images-container"}>
-        {Object.values(partners).map((partner, index) => (
-          <img src={partner} key={"corporation" + index} />
+        {options.partners.map(({image, width, height}, index) => (
+            <div className={'people-images-item'}>
+                <img src={image}  key={"corporation" + index} />
+            </div>
         ))}
       </div>
 

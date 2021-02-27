@@ -15,7 +15,9 @@ const LeftInfoWithRightImage = ({
   withoutRightPadding = false,
   titleClassName = '',
   descriptionClassName = '',
-                                  btnAdditionalComponent = null
+  btnAdditionalComponent = null,
+    onClick = () => {},
+                                  imageClassName = ''
 }) => {
   const { isMobile } = useWindowDimensions();
   console.log({ isMobile });
@@ -65,13 +67,14 @@ const LeftInfoWithRightImage = ({
               backgroundColor={"black"}
               textColor={"white"}
               additionalComponent={btnAdditionalComponent}
+              onClick={onClick}
             />
           )}
         </div>
         <img
           src={imgUrl}
           data-aos="fade-in"
-          className={"left-info-with-right-image-image"}
+          className={`left-info-with-right-image-image ${imageClassName}`}
           style={{ marginRight: isLeftImage && !isMobile ? 140 : 0 }}
         />
       </div>
