@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2774c7aebf2bab0362c8c8179f4b2eaa",
+    "revision": "dac5ce90e4a4420054687d9b9e85e4b1",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "92bed56f22b8126d750c",
+    "revision": "a024354f61cb8e7ae752",
     "url": "/moken-website/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "ace768adaea1ad49cc9a",
-    "url": "/moken-website/static/css/main.75c5b7e6.chunk.css"
+    "revision": "2f559748e4146e905c47",
+    "url": "/moken-website/static/css/main.3e18c71c.chunk.css"
   },
   {
-    "revision": "92bed56f22b8126d750c",
-    "url": "/moken-website/static/js/2.abfb518c.chunk.js"
+    "revision": "a024354f61cb8e7ae752",
+    "url": "/moken-website/static/js/2.74c1d60e.chunk.js"
   },
   {
     "revision": "05f004cf1ac1b697d59f67cd14a990d6",
-    "url": "/moken-website/static/js/2.abfb518c.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.74c1d60e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ace768adaea1ad49cc9a",
-    "url": "/moken-website/static/js/main.42186fc1.chunk.js"
+    "revision": "2f559748e4146e905c47",
+    "url": "/moken-website/static/js/main.b25d9a3a.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -454,6 +454,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d605475d740d2f0a9d8999c9f095c3a1",
     "url": "/moken-website/static/media/for-founders-third.d605475d.jpg"
+  },
+  {
+    "revision": "121ae766a268f9fcdc3faf7cd0c9ed96",
+    "url": "/moken-website/static/media/for-investors-first.121ae766.jpg"
+  },
+  {
+    "revision": "1edb46855eb3752915fb3e0f11b0c1a0",
+    "url": "/moken-website/static/media/for-investors-forth.1edb4685.jpg"
+  },
+  {
+    "revision": "5f3cca362015ea16724c757561f01bd8",
+    "url": "/moken-website/static/media/for-investors-second.5f3cca36.jpg"
+  },
+  {
+    "revision": "5ad0828b6858d3c24eb4e9cbd13ac646",
+    "url": "/moken-website/static/media/for-investors-third.5ad0828b.jpg"
   },
   {
     "revision": "7baaabdba9a7507494f5578e1eaa71c3",
