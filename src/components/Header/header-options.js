@@ -98,8 +98,8 @@ export default {
           title: "FOR FOUNDERS",
           route: '/for-founders'
         },  {
-          title: "FOR STARTUP PROGRAM",
-          route: '/start-up-smart'
+          title: "FOR STARTUP PROGRAMS",
+          route: '/for-startup-programs'
         },
       ],
     },

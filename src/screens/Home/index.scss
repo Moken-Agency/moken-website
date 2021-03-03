@@ -1,3 +1,4 @@
+
 .home-container {
   padding-bottom: 165px;
   .home-header {
@@ -202,7 +203,15 @@
     height: 465px;
     background-color: #a7a7a7;
   }
+  .CircularProgressbar-path {
+    stroke: #dee2f2 !important;
+  }
+  .CircularProgressbar-trail {
+    stroke: white !important;
+  }
+
 }
+
 
 
 

@@ -105,7 +105,7 @@ const history = useHistory();
                 </div>
             </div>
 
-            <img src={AboutMokenSecondRight}/>
+                <img src={AboutMokenSecondRight}/>
 
         </div>
       </section>

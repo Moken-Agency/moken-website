@@ -13,6 +13,14 @@
     padding: 0 43px;
     margin-bottom: 135px;
   }
+  .labs-overview-info-block-text {
+    span {
+      line-height: 53px;
+      @media only screen and (max-width: 600px) {
+        line-height: 37px;
+      }
+    }
+  }
   .labs-overview-info-block {
     display: flex;
     justify-content: space-between;
@@ -20,6 +28,7 @@
     @media screen and (max-width: 600px) {
       flex-direction: column;
     }
+
     .labs-overview-info-block-first-text {
       width:32.5vw;
       align-items: flex-start;

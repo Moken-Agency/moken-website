@@ -9,11 +9,21 @@ import Button from "../../components/Button";
 import {useHistory} from "react-router-dom";
 import path from '../../images/Path 2.svg';
 import HomeDescriptionDataComponent from "../../components/HomeDescriptionDataComponent";
+import { CircularProgressbar, buildStyles, CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import AnimatedProgressProvider from "../../components/AnimatedProgressProvider/AnimatedProgressProvider";
+import {easeQuadInOut} from "d3-ease";
+import TrackVisibility from "react-on-screen";
+import homeGenerate from "../../images/home-generate.jpg";
+import homeNetworking from "../../images/home-networking.jpg";
+import homeRyr from "../../images/home-ryr.jpg";
+import homeScale from "../../images/home-scale.jpg"
 
 const {explores, startupsData, paths, impacts} = options;
 
 const Home = () => {
     let history = useHistory();
+
 
   return (
     <div className={'home-container'}>
@@ -47,7 +57,8 @@ const Home = () => {
             second: 'agency'
            }}
            title={'Build your startup, smarter.'}
-           imgURL={''}
+           imgURL={homeRyr}
+           titleContainerStyles={{maxWidth: 849}}
            descriptionData={{
                title: 'Where startups build, validate & grow.',
                description: 'Providing services and solutions to startups and founders to build and develop their ' +
@@ -60,7 +71,7 @@ const Home = () => {
            }}
        />
 
-       <section className={'home-ecosystem-container'}>
+       <section className={'home-ecosystem-container'} data-aos="fade-in">
            <HomeDescriptionDataComponent descriptionData={{
                title: 'Our ecosystem impact is really awesome.',
                description: "A community comprised of passionate entrepreneurs, innovators, investors, and builders who share a goal of making an impact.",
@@ -73,8 +84,45 @@ const Home = () => {
              titleClass={'home-ecosystem-title'}
              descriptionClass={'home-ecosystem-description'}
            />
+           <TrackVisibility once>
+               {({ isVisible }) => isVisible && (
+                   <div style={{width: 400, height: 400, marginLeft: 85}} >
+                       <AnimatedProgressProvider
+                           valueStart={0}
+                           valueEnd={75}
+                           duration={1.4}
+                           easingFunction={easeQuadInOut}
+                       >
+                           {value => {
+                               return (
+                                   <CircularProgressbarWithChildren
+                                       value={value}
+                                       // text={`${roundedValue}%`}
+                                       /* This is important to include, because if you're fully managing the
+                                 animation yourself, you'll want to disable the CSS animation. */
+                                       styles={buildStyles({ pathTransition: "none" })}
+                                   >
+                                       <div data-aos="fade-in" style={{display: 'flex',
+                                           flexDirection: 'column',
+                                           alignItems: 'center',
+                                           justifyContent: 'center'}}>
+                                           <Text type={'kMedium'} size={24}>a community of</Text>
+                                           <Text type={'kBold'} size={100}>2431</Text>
+                                           <Text type={'kMedium'} size={24}>of passionate</Text>
+                                           <Text type={'kMedium'} size={24}>founders & startups</Text>
+                                       </div>
 
-           <img src={''}/>
+                                   </CircularProgressbarWithChildren>
+                               );
+                           }}
+                       </AnimatedProgressProvider>
+                   </div>
+
+               )}
+           </TrackVisibility>
+
+
+
        </section>
 
         <HomeComponentWithVerticalText
@@ -88,13 +136,12 @@ const Home = () => {
                 maxWidth: 713
             }}
             title={'Scale your startup faster.'}
-            imgURL={''}
+            imgURL={homeScale}
             descriptionData={{
                 title: 'Where startups & founders learn & evolve.',
-                description: "Leverage our community to build, validate, and grow your venture through support" +
-                    " from fellow founders who have been where.",
+                description: `Unparalleled personalized access to hands-on incubation & acceleration programs dedicated to helping entrepreneurs scale their ventures.`,
                 btnOptions: {
-                    title: 'JOIN THE PROGRAM',
+                    title: 'DISCOVER OUR PROGRAMS',
                     route: '/'
 
                 }
@@ -121,15 +168,16 @@ const Home = () => {
             numberTitle={'03.'}
             title={'Create unmatched connections.'}
             descriptionData={{
-                title: 'Where startups build, validate & grow.',
-                description: 'Providing services and solutions to startups and founders to build and develop their ' +
-                    'visions, ideas, and products that scale.',
+                title: 'Where founders network, scale & succeed.',
+                description: `An exclusive, invite-only network built for ambitious humans where we ask questions, 
+                exchange ideas, share resources, and connect with one another.`,
                 btnOptions: {
-                    title: 'LET’S GET STARTED',
+                    title: 'ACCESS YOUR FUTURE',
                     route: '/'
 
                 }
             }}
+            swiperData={options.swiperData}
         />
 
 
@@ -139,10 +187,10 @@ const Home = () => {
             verticalText={{
                 first: 'moken',
                 // second: 'agenadjfksjdgkjsdngjkdscy'
-                second: 'agency'
+                second: 'events'
             }}
             title={'Generate new opportunities.'}
-            imgURL={''}
+            imgURL={homeGenerate}
             descriptionData={{
                 title: 'Where startups & founders experience & connect.',
                 description: "Developing meaningful brand experiences and unforgettable events that expand beyond traditional tactics and focus on audience engagement and strategy.",
@@ -159,27 +207,26 @@ const Home = () => {
             <div className={'home-pathway-wrapper'}>
                 <img src={path}/>
                 <div className={'home-pathway-graph'} style={{width: '100%'}}>
-                {
-                    paths.map((path, index) => {
-                        return (
-                            <div style={{display: 'flex',
-                                alignItems: 'flex-end',
-                                justifyContent: 'center',
-                                marginBottom: 70 * index,
-                                borderColor: 'black',
-                                width: '25%',
-                                // height: 611,
-                                height: '38vw',
-                                paddingBottom: 25,
-                                borderRight: `${index === 4 ? 0 : '1px'} solid rgb(221, 221, 221)`}}>
-                                <Text type={'kRegular'} size={16} textStyles={{letterSpacing: 4}}>{path}</Text>
-                            </div>
-                        )
-                    })
-                }
+                    {
+                        paths.map((path, index) => {
+                            return (
+                                <div style={{display: 'flex',
+                                    alignItems: 'flex-end',
+                                    justifyContent: 'center',
+                                    marginBottom: 70 * index,
+                                    borderColor: 'black',
+                                    width: '25%',
+                                    // height: 611,
+                                    height: '38vw',
+                                    paddingBottom: 25,
+                                    borderRight: `${index === 4 ? 0 : '1px'} solid rgb(221, 221, 221)`}}>
+                                    <Text type={'kRegular'} size={16} textStyles={{letterSpacing: 4}}>{path}</Text>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </div>
-            </div>
-
         </section>
 
         <section className={'home-impact-container'}>

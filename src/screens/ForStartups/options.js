@@ -1,4 +1,5 @@
 import projects from '../../images/projects';
+import prommotoLong from "../../images/projects/prommoto-long.svg";
 
 export default {
   programs: [
@@ -21,5 +22,24 @@ Agency`,
     },
   ],
 
-  ourProjects: [projects.ryr, projects.prommoto, projects.knowbie, projects.blu, projects.color]
+  ourProjects: [
+      {
+        imgURL: projects.prommotoLong,
+      },
+    {
+      imgURL: projects.iraqi,
+    },
+    {
+      imgURL: projects.knowbie,
+    },
+    {
+      imgURL: projects.blu,
+      width: 148,
+      height: 124
+    },
+    {
+      imgURL: projects.ryr,
+    },
+  ]
+  // ourProjects: [projects.prommotoLong, projects.iraqi,  projects.knowbie,  projects.blu, projects.ryr]
 };

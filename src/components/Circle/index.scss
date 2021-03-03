@@ -1,0 +1,50 @@
+.chart {
+  //position: relative;
+  //display: inline-block;
+  //color: #999;
+  //font-size: 20px;
+  //text-align: center;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 40;
+  stroke-dasharray: 1080;
+  transition: stroke-dashoffset 2s;
+  -webkit-animation-play-state: running;
+
+  /* firefox bug fix - won't rotate at 90deg angles */
+  -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+//.chart:hover .outer {
+//  stroke-dashoffset: 534 !important;
+//  -webkit-animation-play-state: paused;
+//}
+
+.chart[data-percent='75'] .outer {
+  stroke-dashoffset: 133;
+  -webkit-animation: show75 2s;
+  animation: show75 2s;
+}
+
+@-webkit-keyframes show75 {
+  from {
+    stroke-dashoffset: 1080;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+
+  to {
+    stroke-dashoffset: 124;
+  }
+}

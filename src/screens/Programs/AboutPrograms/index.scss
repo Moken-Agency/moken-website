@@ -49,6 +49,12 @@
   padding-left: 50px;
   display: flex;
   flex-direction: row;
+  .about-programs-hiring-text {
+    line-height: 53px;
+    @media only screen and (max-width: 600px) {
+      line-height: 37px;
+    }
+  }
   @media only screen and (max-width: 600px) {
     padding-left: 0;
     flex-direction: column;

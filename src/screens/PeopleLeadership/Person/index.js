@@ -5,12 +5,12 @@ import Text from "../../../components/Text";
 const Person = ({ name = "", positions = [], photo = '' }) => {
   return (
     <div className={"person-container"} style={{}}>
-      <img src={photo} data-aos="fade-in" />
+        {photo ? <img src={photo} data-aos="fade-in"/> : null}
       <Text
         animationType={"fade-in"}
         size={22}
         type={"kBold"}
-        containerStyles={{ marginBottom: 25 }}
+        containerStyles={{ marginBottom: 19 }}
       >
         {name}
       </Text>

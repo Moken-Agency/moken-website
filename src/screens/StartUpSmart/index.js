@@ -112,38 +112,43 @@ const StartUpSmart = () => {
         })}
       </div>
 
-    <div style={{display: 'flex', justifyContent: 'center'}}>
-        <div className={"start-up-smart-sixth"}>
-            <Text
-                mobSize={10}
-                size={16}
-                animationType={"fade-in"}
-                className={"start-up-smart-sixth-text-first"}
-                type={"kSemiBold"}
-            >
-                TRUSTED BY
-            </Text>
-            <Text
-                mobSize={35}
-                size={50}
-                animationType={"fade-in"}
-                className={"start-up-smart-sixth-text-first"}
-                type={"kBold"}
-            >
-                We push boundaries, question assumptions and get results. Ready?
-            </Text>
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div>
+            <div className={"start-up-smart-sixth"}>
+                <Text
+                    mobSize={10}
+                    size={16}
+                    animationType={"fade-in"}
+                    className={"start-up-smart-sixth-text-first"}
+                    type={"kSemiBold"}
+                >
+                    TRUSTED BY
+                </Text>
+                <Text
+                    mobSize={35}
+                    size={50}
+                    animationType={"fade-in"}
+                    className={"start-up-smart-sixth-text-first"}
+                    type={"kBold"}
+                >
+                    We push boundaries, question assumptions and get results. Ready?
+                </Text>
+
+            </div>
+            <div className={"boundaries-container"}>
+                {options.projectImages.map((projectImage) => {
+                    return (
+                        <div>
+                            <img src={projectImage} />
+                        </div>
+                    );
+                })}
+            </div>
         </div>
 
     </div>
-      <div className={"boundaries-container"}>
-        {Object.values(projectImages).map((projectImage) => {
-          return (
-            <div>
-              <img src={projectImage} />
-            </div>
-          );
-        })}
-      </div>
+
+
 
       <EmailForm withForm />
     </div>

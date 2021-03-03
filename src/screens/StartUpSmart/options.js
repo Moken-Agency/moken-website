@@ -1,3 +1,6 @@
+import projectImages from "../../images/projects";
+
+
 export default {
   packages: [
     {
@@ -476,6 +479,18 @@ export default {
     },
 
   ],
+
+  projectImages: [
+    projectImages.prommoto,
+    projectImages.ryr,
+    projectImages.blu,
+    projectImages.mo,
+    projectImages.binary,
+    projectImages.knowbie,
+    projectImages.iraqi,
+    projectImages.color,
+    projectImages.kenergy
+  ]
 };
 
 // {

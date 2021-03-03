@@ -84,6 +84,7 @@ const ForFounders = () => {
         subtitle={
           "Driven by the passion for working with determined innovators who live to make a change in the world."
         }
+        subtitleClassName={'for-founders-potential-subtitle'}
         options={options.founders}
         widthItem={"30vw"}
         type={"big"}

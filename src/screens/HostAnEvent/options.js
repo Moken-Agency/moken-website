@@ -2,31 +2,36 @@ export default {
   swiperData: [
     {
       title: "DIGITAL",
-      subtitle: "For Startups",
+      subtitle: `Webinars &
+Digital Series`,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       title: "INTERACTIVE",
-      subtitle: "For Investors",
+      subtitle: `Workshops &
+Bootcamps`,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       title: "CONNECTION MAKING",
-      subtitle: "For Students",
+      subtitle: `Networking
+Events`,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       title: "EXPLORATION",
-      subtitle: "For Agencies",
+      subtitle: `Design &
+Ideation Sprints`,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       title: "TBD",
-      subtitle: "For Corporations",
+      subtitle: `Pitch
+Events`,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },

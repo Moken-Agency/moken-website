@@ -24,7 +24,7 @@ const People = ({ people, photo, peopleIndex, title }) => {
                   data-aos="fade-in"
 
               >
-                  <div className={"people-second-container"}>
+                  <div className={"people-second-container"} style={{ justifyContent: peopleIndex % 2 !== 0 ? "flex-start" : "flex-end"}}>
                       {people.map((person, index) => (
                           <Person {...person} key={"person" + index} />
                       ))}

@@ -26,6 +26,14 @@ Students`,
     {
       title: "EXPLORATION",
       subtitle: `For
+Agencies`,
+      description:
+          `Our goal is to help you help your startups succeed. We collaborate with startup programs to help startups scale effectively and efficiently.`,
+      route: "/about-agency",
+    },
+    {
+      title: "EXPLORATION",
+      subtitle: `For
 Startup Programs`,
       description:
       `Our goal is to help you help your startups succeed. We collaborate with startup programs to help startups scale effectively and efficiently.`,

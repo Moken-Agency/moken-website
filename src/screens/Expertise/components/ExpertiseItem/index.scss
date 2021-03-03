@@ -1,10 +1,19 @@
 .expertise-item-container {
   display: flex;
   align-items: center;
-  padding: 40px 0 40px 65px;
+  padding: 40px 15px 40px 65px;
   //padding: 2.5vw 0 .9vw 4.3vw;
   border-bottom: 1px solid #cdcdcd;
   justify-content: space-between;
+  cursor: pointer;
+  &:hover {
+    .expertise-item-title {
+      transform: translate(0, -15px) !important;
+    }
+    .expertise-item-img {
+      transform: translate(15px, -15px) !important;
+    }
+  }
   @media only screen and (max-width: 600px) {
     //display: none;
     padding: 50px 5px;
@@ -12,14 +21,13 @@
   &:first-child {
     border-top: 1px solid #cdcdcd;
   }
+  .expertise-item-title {
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+  }
   .expertise-item-right {
     display: flex;
     align-items: center;
-    transition: .5s;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.05);
-    }
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
     .expertise-item-learn {
       letter-spacing: 4px;
       @media only screen and (max-width: 600px) {
@@ -30,6 +38,7 @@
       height: 1.7vw;
       //height: 27px;
       margin-left: 2vw;
+      transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
       @media only screen and (max-width: 600px) {
         height: 30px;
       }

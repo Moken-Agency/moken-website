@@ -4,6 +4,18 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 230px;
+  cursor: pointer;
+  &:hover {
+    .block-container-history, .block-container-connect {
+      transform: translate(0, -10px)!important;
+    }
+    div {
+      .color-block-image {
+        transform: translate(0, -10px)!important;
+        //transform: translate(20px, -5px)!important;
+      }
+    }
+  }
   @media screen and (max-width: 600px) {
     margin-bottom: 100px;
   }
@@ -11,6 +23,7 @@
     .color-block-image {
       height: 28px;
       margin-left: 38px;
+      transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
       @media screen and (max-width: 600px) {
         height: 20px;
       }
@@ -23,11 +36,14 @@
     margin-bottom: 40vw;
   }
   .block-container-history {
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+
     @media screen and (max-width: 600px) {
       margin-bottom: 20vw;
     }
   }
   .block-container-connect {
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
 
   }
 }

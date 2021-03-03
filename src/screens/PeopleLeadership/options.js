@@ -1,7 +1,7 @@
-import {ourPeopleFirst, ourPeopleFive, ourPeopleFour, ourPeopleSecond, ourPeopleSix, ourPeopleThird} from "../../images/people";
 import partners from "../../images/partners";
+import {Kendra, Grace, Jessica, Yevgen, RomanLitvin, Adam, RomanBE, Hussain, Stas, Kostya, Oleksander, Nika, Vlad, Vitaly, Oleg, dogTwo , dogOne, Mohamed, Anastasia, Alex1, Erika, Pavel} from "../../images/people";
 
-const {acadium, activate, ink, fast, hubspot, noissue, owner, segment} = partners;
+const {acadium, activate, ink, fast, hubspot, noissue, owner, segment, informa} = partners;
 
 export default {
   peopleGroups: [
@@ -11,174 +11,169 @@ export default {
         {
           name: "Kendra Garagan",
           positions: ["MANAGING PARTNER", "MOKEN STARTUPS"],
-          photo: ''
+          photo: Kendra
         },
         {
           name: "Mohamed Ibshara",
           positions: ["MANAGING PARTNER", "MOKEN AGENCY"],
-          photo: ''
+          photo: Mohamed
 
 
         },
         {
           name: "Now Hiring!",
           positions: ["MANAGING DIRECTOR", "MOKEN EVENTS"],
-          photo: ''
+          photo: dogOne
 
         },
         {
           name: "Now Hiring!",
           positions: ["MANAGING DIRECTOR","MOKEN PROGRAMS"],
-          photo: ''
+          photo: dogTwo
 
         },
       ],
     },
     {
       title: "PRODUCT TEAM",
-      photo: ourPeopleSecond,
       people: [
         {
           name: "Grace",
           positions: ["MARKETING", "MANAGER"],
-          photo: ''
+          photo: Grace
 
         },
         {
           name: "Jessica",
           positions: ["CORPORATE PARTNERSHIP", "MANAGER"],
-          photo: ''
+          photo: Jessica
 
         },
         {
           name: "Erika",
           positions: ["ACCESS USER", "EXPERIENCE DESIGNER"],
-          photo: ''
+          photo: Erika
 
         },
         {
           name: "Hussain",
           positions: ["GRAPHIC", "DESIGNER"],
-          photo: ''
+          photo: Hussain
 
         },
       ],
     },
     {
       title: "PRODUCT TEAM",
-      photo: ourPeopleThird,
       people: [
         {
           name: "Pavel",
           positions: ["LEAD FRONT END", "DEVELOPER"],
-          photo: ''
+          photo: Pavel
 
         },
         {
           name: "Kostya",
           positions: ["SENIOR SYSTEMS", "ARCHITECT"],
-          photo: ''
+          photo: Kostya
 
         },
         {
           name: "Stanislav",
           positions: ["LEAD FRONT END", "DEVELOPER"],
-          photo: ''
+          photo: Stas
 
         },
         {
           name: "Vitaly",
           positions: ["LEAD USER EXPERIENCE", "DESIGNER"],
-          photo: ''
+          photo: Vitaly
 
         },
       ],
     },
     {
       title: "PRODUCT TEAM",
-      photo: ourPeopleFour,
       people: [
         {
           name: "Adam",
           positions: ["LEAD USER EXPERIENCE", "DESIGNER"],
-          photo: ''
+          photo: Adam
 
         },
         {
           name: "Nika",
           positions: ["USER INTERFACE", "DESIGNER"],
-          photo: ''
+          photo: Nika
 
         },
         {
           name: "Oleg",
           positions: ["LEAD FRONT END", "DEVELOPER"],
-          photo: ''
+          photo: Oleg
 
         },
         {
           name: "Vlad",
           positions: ["LEAD BACK END", "DEVELOPER"],
-          photo: ''
+          photo: Vlad
 
         },
       ],
     },
     {
       title: "PRODUCT TEAM",
-      photo: ourPeopleFive,
       people: [
         {
           name: "Alexander",
           positions: ["FRONT END", "DEVELOPER"],
-          photo: ''
+          photo: Alex1
 
         },
         {
           name: "Yevgen",
           positions: ["SENIOR BACKEND", "DEVELOPER"],
-          photo: ''
+          photo: Yevgen
 
         },
         {
           name: "Roman",
           positions: ["SENIOR FRONT END", "DEVELOPER"],
-          photo: ''
+          photo: RomanLitvin
 
         },
         {
           name: "Oleksander",
           positions: ["FRONT END", "DEVELOPER"],
-          photo: ''
+          photo: Oleksander
 
         },
       ],
     },
     {
       title: "PRODUCT TEAM",
-      photo: ourPeopleSix,
       people: [
         {
           name: "Anastasia",
           positions: ["PHOTOGRAPHER"],
-          photo: ''
+          photo: Anastasia
 
         },
         {
           name: "Roman",
           positions: ["BACK END", "DEVELOPER"],
+          photo: RomanBE
+
+        },
+        {
+          name: "",
+          positions: [""],
           photo: ''
 
         },
         {
-          name: "TBA",
-          positions: ["PHOTOGRAPHER"],
-          photo: ''
-
-        },
-        {
-          name: "TBA",
-          positions: ["VIDEOGRAPHER"],
+          name: "",
+          positions: [""],
           photo: ''
 
         },
@@ -188,49 +183,49 @@ export default {
   corporations: ["", "", "", "", "", "", "", "", ""],
   partners: [
     {
-      width: 300,
-      height: 96,
+      width: 150,
+      height: 47,
       image: ink
     },
     {
-      width: 387,
-      height: 143,
+        width: 195,
+      height: 71,
       image: owner
     },
     {
-      width: 203,
-      height: 81,
+      width: 100,
+      height: 40,
       image: fast
     },
     {
-      width: 365,
-      height: 79,
+      width: 182,
+      height: 40,
       image: segment
     },
     {
-      width: 318,
-      height: 152,
+      width: 160,
+      height: 76,
       image: hubspot
     },
     {
-      width: 375,
-      height: 79,
+      width: 187,
+      height: 40,
       image: acadium
     },
     {
-      width: 345,
-      height: 87,
+      width: 172,
+      height: 40,
       image: noissue
     },
     {
-      width: 332,
-      height: 55,
+      width: 166,
+      height: 28,
       image: activate
     },
     {
-      width: 385,
-      height: 119,
-      image: noissue
+      width: 182,
+      height: 60,
+      image: informa
     },
 
   ]

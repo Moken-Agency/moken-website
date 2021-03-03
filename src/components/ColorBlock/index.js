@@ -40,6 +40,7 @@ const ColorBlock = ({
           data-aos="fade-up"
           className={`block-container ${className} ${blockType}`}
           style={{ ...containerStyles, backgroundColor }}
+          onClick={onClick}
         >
           <Text
             size={size}
@@ -53,7 +54,7 @@ const ColorBlock = ({
           >
             {title}
           </Text>
-          <div style={{ display: "flex", alignItems: "center", cursor: 'pointer' }} onClick={onClick}>
+          <div style={{ display: "flex", alignItems: "center", cursor: 'pointer' }}>
             <Text
               size={16}
               type={"kSemiBold"}

@@ -65,7 +65,7 @@ import InnovatorFeature from "./screens/InnovatorFeature";
 import ForInvestors from "./screens/ForInvestors";
 import ForStudents from "./screens/ForStudents";
 import ForStartups from "./screens/ForStartups";
-import ForBrands from "./screens/ForBrands";
+import ForBrands from "./screens/ForStartupPrograms";
 import AdvertiseWithUs from "./screens/AdvertiseWithUs";
 import ForFounders from "./screens/ForFounders";
 import CommunityPartnerScreen from "./screens/CommunityPartnerScreen";
@@ -84,6 +84,7 @@ import ProductMarketing from "./screens/ProductMarketing";
 import CommunityDrivenGrowth from "./screens/CommunityDrivenGrowth";
 import PartnershipsGrowth from "./screens/PartnershipsGrowth";
 import Home from "./screens/Home";
+import ForStartupPrograms from "./screens/ForStartupPrograms";
 
 const routsWithHeaderFooter = [
   {
@@ -107,7 +108,7 @@ const routsWithHeaderFooter = [
     component: StartUpScreen,
   },
   {
-    path: "/eco-partner",
+    path: "/eco-partners",
     component: EcoPartners,
   },
   {
@@ -127,8 +128,8 @@ const routsWithHeaderFooter = [
     component: AdvertiseWithUs,
   },
   {
-    path: "/for-brands",
-    component: ForBrands,
+    path: "/for-startup-programs",
+    component: ForStartupPrograms,
   },
   {
     path: "/for-startups",

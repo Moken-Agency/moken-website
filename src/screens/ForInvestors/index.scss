@@ -1,4 +1,23 @@
 .for-investors-container {
+  .for-investors-agency-title {
+    margin-bottom: 87px;
+  }
+  .for-investors-agency-description{
+    margin-bottom: 120px;
+  }
+  .for-investors-program-image {
+    max-width: 751px;
+    max-height: 635px;
+    width: auto;
+  }
+  .for-investors-startup-description {
+    max-width: 635px;
+    margin-bottom: 52px;
+  }
+  .for-investors-startup-title {
+    max-width: 622px;
+    margin-bottom: 92px;
+  }
   .for-investors-partners-subtitle {
     max-width: 929px;
   }
@@ -7,5 +26,11 @@
     @media only screen and (max-width: 600px) {
       padding: 43px;
     }
+  }
+  .for-investors-startups-title {
+      margin-bottom: 109px;
+  }
+  .for-investors-startups-description {
+    margin-bottom: 109px;
   }
 }

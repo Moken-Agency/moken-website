@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import SubmitYourResume from "../SubmitYourResume";
-import {ReactComponent as ArrowUpRight} from "../../images/arrow-up-right-black.svg";
+import {ReactComponent as ArrowUpRight} from "../../images/arrow-up-right.svg";
 import Text from '../Text';
 import "./index.scss";
 
@@ -61,7 +61,7 @@ const UnderlineTextWithIcon = ({
     <div className={`underline-text-container ${className}`}>
       <Text  size={size}
              mobSize={mobSize}
-             className={`underline-text ${hoverOptions[hoverIndex].colourClassName}`}
+             className={`underline-text`}
              onClick={onClick}
              title={title}
              color={color}>
@@ -76,7 +76,9 @@ const UnderlineTextWithIcon = ({
     </div>
 
     {withIcon ? (
-        <ArrowUpRight className={`underline-text-img  arrow-${hoverOptions[hoverIndex].colourClassName}`} />
+        <ArrowUpRight
+                      // style={{fill: hoverOptions[hoverIndex].hoverColour, stroke: hoverOptions[hoverIndex].hoverColour}}
+                      className={`underline-text-img  arrow-${hoverOptions[hoverIndex].colourClassName}`} />
     ) : null}
   </div>
   );

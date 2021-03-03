@@ -5,8 +5,8 @@
   padding: 67px 70px 50px 70px;
   //padding: 5vw 3.5vw 1vw 4.5vw;
   display: grid;
+  cursor: pointer;
   grid-template-columns: 1fr 1fr 1fr;
-
   @media screen and (max-width: 600px) {
     flex-direction: column;
     grid-template-columns: 1fr;
@@ -33,7 +33,7 @@
     .company-city {
       margin-bottom: .5vw;
       span {
-        letter-spacing: .25vw;
+        letter-spacing: 4px;
       }
       @media screen and (max-width: 600px) {
         margin-bottom: 3vw;

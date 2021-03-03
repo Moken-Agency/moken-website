@@ -13,7 +13,7 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
   };
 
   return (
-    <div className={"expertise-item-container"}>
+    <div className={"expertise-item-container"}  onClick={goToRoute}>
       <Text
         // size={'4.7vw'}
         size={50}
@@ -24,7 +24,7 @@ const ExpertiseItem = ({ title = "", route = "/" }) => {
       >
         {title}
       </Text>
-      <div className={"expertise-item-right"} onClick={goToRoute}>
+      <div className={"expertise-item-right"}>
         <Text
             size={16}
           type={"kSemiBold"}

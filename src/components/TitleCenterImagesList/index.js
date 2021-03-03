@@ -9,17 +9,18 @@ const TitleCenterImagesList = ({ title = "", list = [] }) => {
         <Text
           className={"title-center-images-list-main-title"}
           animationType={"fade-up"}
-          type={"kSemiBold"}
+          type={"kMedium"}
           size={14}
         >
           {title}
         </Text>
       ) : null}
       <div className={"title-center-images-list-wrapper"} data-aos="fade-up">
-        {list.map((url, index) => (
+        {list.map(({imgURL, ...rest}, index) => (
           <img
             className={"title-center-images-list-item"}
-            src={url}
+            src={imgURL}
+            style={{...rest}}
             key={"TitleCenterImagesList" + index}
           />
         ))}

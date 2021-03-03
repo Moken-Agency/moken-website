@@ -6,6 +6,8 @@ import hubspot from './web-color-startups-leftaligned.svg';
 import ink from './Bitmap.png';
 import noissue from './noissue.jpg';
 import acadium from './acadium.jpg';
+import informa from './informa.jpg';
+
 
 
 export default {
@@ -16,6 +18,7 @@ export default {
     activate,
     fast,
     noissue,
-    acadium
+    acadium,
+    informa,
 
 }

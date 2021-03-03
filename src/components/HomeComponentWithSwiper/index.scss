@@ -1,7 +1,18 @@
 .home-with-swiper {
   padding-left: 303px;
-  position: relative;
+  //position: relative;
   margin-bottom: 302px;
+  .carousel-item {
+    width: 335px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8px 19px;
+    outline: none;
+    //background-repeat: no-repeat;
+    background-size: cover;
+  }
   @media only screen and (max-width: 1301px) {
     padding: 0 43px
   }
@@ -17,6 +28,9 @@
       align-items: center;
       padding-left: 0;
       display: initial;
+    }
+    .home-swiper-left-container {
+      margin-right: 131px;
     }
     .home-swiper-buttons-container {
       display: flex;
@@ -74,4 +88,8 @@
       margin-right: 50px;
     }
   }
+}
+
+.hover {
+  cursor: grab;
 }

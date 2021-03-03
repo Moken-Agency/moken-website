@@ -11,7 +11,7 @@ const defaultText =
 const OurPartnersComponent = ({ title = defaultTitle, text = defaultText }) => {
   return (
     <>
-      <Title title={defaultTitle} className={"labs-increase-title"} />
+      <Title title={title} className={"labs-increase-title"} />
 
       <section className={"labs-increase-container"}>
         <Text
@@ -22,7 +22,7 @@ const OurPartnersComponent = ({ title = defaultTitle, text = defaultText }) => {
           lassName={"our-partners-text-title"}
           containerStyles={{ marginBottom: 155 }}
         >
-          {defaultText}
+          {text}
         </Text>
 
         <div className={"labs-increase-list-container"}>

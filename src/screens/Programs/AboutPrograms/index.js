@@ -141,6 +141,7 @@ Our community of practice operates through high-touch programs, robust content, 
               alignItems: "flex-start",
               marginBottom: isMobile ? 88 : 0,
             }}
+            className={'about-programs-hiring-text'}
             size={50}
             animationType={"fade-in"}
             mobSize={35}

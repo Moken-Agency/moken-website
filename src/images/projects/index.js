@@ -7,7 +7,7 @@ import knowbie from './knowbie.svg';
 import ryr from './ryr.svg';
 import mo from './mo.svg';
 import prommoto from './prommoto.svg';
-
+import prommotoLong from './prommoto-long.svg';
 
 export default {
     prommoto,
@@ -18,5 +18,6 @@ export default {
     knowbie,
     iraqi,
     color,
-    kenergy
+    kenergy,
+    prommotoLong
 }

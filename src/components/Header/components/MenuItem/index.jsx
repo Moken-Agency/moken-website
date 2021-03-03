@@ -29,7 +29,6 @@ const MenuItem = ({
       setHover({ isHover: true, color: dividerColor });
     }
   };
-  console.log(hover, title);
   const onMouseLeave = () => {
     if (!isMobile) {
       setHover({ isHover: false, color: "#000" });
@@ -37,12 +36,14 @@ const MenuItem = ({
   };
 
   const handleOnClick = () => {
-    console.log("handleOnClick");
-    if (!subRouts.length) {
-     link ? window.open(link, '_blank') : history.push(route);
-    } else {
-      onClick();
+    if(!isComingSoon) {
+      if (!subRouts.length) {
+        link ? window.open(link, '_blank') : history.push(route);
+      } else {
+        onClick();
+      }
     }
+
   };
   return (
     <div

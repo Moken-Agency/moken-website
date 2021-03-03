@@ -24,6 +24,7 @@ const TitleTwoDescriptionWithBtn = ({
           animationType={"fade-in"}
           mobSize={35}
           type={"kBold"}
+          className={"labs-overview-info-block-text"}
         >
           {title}
         </Text>
@@ -31,10 +32,10 @@ const TitleTwoDescriptionWithBtn = ({
           <Text
             type={"kLight"}
             className={"labs-overview-info-block-first-text"}
-            size={'1.25vw'}
+            size={20}
             animationType={"fade-in"}
             mobSize={16}
-            textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px"}}
           >
             {firstText}
           </Text>
@@ -44,8 +45,8 @@ const TitleTwoDescriptionWithBtn = ({
               className={"labs-overview-info-block-second-text"}
               mobSize={16}
               animationType={"fade-in"}
-              textStyles={{ lineHeight: isMobile ? "26px" : "2.2vw" }}
-              size={'1.25vw'}
+              textStyles={{ lineHeight: isMobile ? "26px" : "30px"}}
+              size={20}
             >
               {secondText}
             </Text>

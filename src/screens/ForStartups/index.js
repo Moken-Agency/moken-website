@@ -9,7 +9,10 @@ import EmailForm from "../../components/EmailForm";
 import "./index.scss";
 import TitleCenterImagesList from "../../components/TitleCenterImagesList";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import partners from '../../images/partners'
+import forStartupsFirstImage from '../../images/contact-second.jpg';
+import forStartupsSecondImage from '../../images/for-startups-passion.jpg';
+import forStartupsThirdImage from '../../images/for-startups-access.jpg';
+import forStartupsInsightImage from '../../images/for-startups-insight.jpg';
 
 const ForStartups = () => {
   const { isMobile } = useWindowDimensions();
@@ -18,16 +21,18 @@ const ForStartups = () => {
     <div className={"for-startups-container"}>
       <HeaderTitle
           subtitleClassName={'for-startups-header-subtitle'}
+          descriptionClassName={'for-startups-header-description'}
         title={"FOR STARTUPS"}
         subtitle={"Supporting the next generation of innovation."}
-        description={"We are here to support the journey"}
+        description={"Building a great company is never easy. Our community is here to support the journey throughout the development of a scalable startup."}
         marginBottom={isMobile ? 95 : 107}
       />
 
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={forStartupsFirstImage}/>
 
       <LeftInfoWithRightImage
         withoutRightPadding
+        imgUrl={forStartupsSecondImage}
         title={"Building disruptive startups for visionary founders & entrepreneurs."}
         mainTitle={"PASSION FUELS PURPOSE"}
         description={
@@ -38,6 +43,7 @@ const ForStartups = () => {
       />
 
       <LeftInfoWithRightImage
+          imgUrl={forStartupsThirdImage}
           withoutRightPadding
         title={"Your power lies in the ability to connect."}
         mainTitle={"ACCESS CONNECTIONS"}
@@ -58,6 +64,7 @@ const ForStartups = () => {
       />
 
       <LeftInfoWithRightImage
+          imgUrl={forStartupsInsightImage}
           withoutRightPadding
         title={
           "We believe constant evolution is our most powerful competitive advantage."

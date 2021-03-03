@@ -25,9 +25,9 @@ const AboutAgency = () => {
         title={"MOKEN AGENCY"}
         marginBottom={323}
         subtitleClassName={'agency-header-subtitle'}
-        subtitle={"Where startups build, create & grow."}
-        description={`Providing opportunities for startups and founders to build and develop their visions,
-                    ideas, and products.`}
+        subtitle={"Where startups build, validate & grow."}
+        description={`Providing solutions for startups and founders to build and develop their visions & ideas 
+        into scalable businesses.`}
       />
 
       <TitleTwoDescriptions
@@ -36,13 +36,8 @@ const AboutAgency = () => {
         title={`We help clients look at the world differently. Startups,
             founders, and global industry leaders
             come to us to solve defining challenges.`}
-        firstDescription={`Our capabilities span the breadth of operations, project, and product
-                management; business strategy; marketing; design; technology; revenue optimization; talent
-                acquisition; growth; and sales, across all industries through customized products, services,
-                courses, workshops, solutions, and mentorship.`}
-        secondDescription={`We partner with innovators through our tailored and integrative expertise,
-                complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior,
-                and impactfully driven outcomes.`}
+        firstDescription={`We have a shared ambition to achieve extraordinary results and redefine industries through providing custom solutions optimized to assist founders and early-stage startups. We work alongside startups, and founders to support paving the way for success though offering the vital services related to building and growing start-ups.`}
+        secondDescription={`Our capabilities span the breadth of operations, project, and product management; business strategy; marketing; design; technology; talent; and sales, across all industries through customized management, consulting, execution, and mentorship.`}
       />
 
       <ImageBlock url={agencyRight} position={"right"} />

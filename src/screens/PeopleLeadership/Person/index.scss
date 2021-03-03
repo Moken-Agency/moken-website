@@ -7,10 +7,10 @@
     padding: 0 0 0 10vw;
   }
     img {
-    height: 320px;
-    width: 265px;
-    background-color: #a7a7a7;
-    margin-bottom: 50px;
+    height: 318px;
+    width: 267px;
+    margin-bottom: 41px;
+    object-fit: cover;
     @media only screen and (max-width: 600px) {
       width: 70vw;
     }

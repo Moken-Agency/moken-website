@@ -1,6 +1,5 @@
 
 .people-main-container {
-  width: 80vw;
   display: flex;
   flex-direction: column;
   .people-employees-container {
@@ -11,8 +10,10 @@
   }
 
   .people-container {
-    margin-bottom: 150px;
+    margin-bottom: 162px;
     display: flex;
+
+    flex-wrap: wrap;
 
     @media only screen and (max-width: 600px) {
       align-items: flex-start !important;
@@ -20,7 +21,8 @@
     .people-second-container {
       width: 86vw;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      //justify-content: space-between;
       @media only screen and (max-width: 600px) {
         overflow-y: scroll;
         width: auto;

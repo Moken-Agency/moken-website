@@ -13,21 +13,33 @@ import "./index.scss";
 
 SwiperCore.use([Navigation, Virtual]);
 
+
 const defaultBreakpoints ={
     // when window width is >= 320px
     '0': {
+        slidesPerView: 1,
+
+    },
+
+    '601': {
         slidesPerView: 2,
     },
     // when window width is >= 480px
-    '601': {
+    '800': {
+        slidesPerView: 2.5,
+    },
+    '1200': {
         slidesPerView: 3,
     },
     // when window width is >= 640px
-    '850': {
+    '1400': {
+        slidesPerView: 3.5,
+    },
+    '1650': {
         slidesPerView: 4,
     },
-    '1450': {
-        slidesPerView: 5,
+    '1800': {
+        slidesPerView: 4.5,
     }
 };
 
@@ -41,11 +53,21 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                     additionalComponentOptions = {Component: () => null, position: ''}}) => {
     const { isMobile, isMiddleBiggest, isMiddleSmallest } = useWindowDimensions();
 
+    const [isActiveIndex, setIsActiveIndex] = useState(0)
+
     const [isTouching, setIsTouching] = useState(false);
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
+    // const swiper = new Swiper('.swiper-container', {
+    //
+    //     direction: 'vertical',
+    //     mousewheelControl: true,
+    //     slidesPerView: 1,
+    //     // freeMode: true,
+    //     // freeModeSticky: true
+    // });
 
 
 
@@ -92,7 +114,10 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                           <SwiperSlide wrapperTag={'div'} tag={'section'} key={`Slide content ${index + 1}`} virtualIndex={index}>
                               {({ isActive }) => (
                                   <Component
-                                      {...option} isActive={isActive} key={"explore " + index} cursor={'grab'} />
+                                      {...option}
+                                      componentIndex={index}
+                                      setIsActiveIndex={setIsActiveIndex}
+                                      isActiveIndex={index === isActiveIndex} key={"explore " + index} cursor={'grab'} />
                               )}
                           </SwiperSlide>
                       )

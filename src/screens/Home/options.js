@@ -1,3 +1,6 @@
+import onlineCourses from '../../images/home-online-courses.jpg';
+import networking from "../../images/home-networking.jpg";
+
 export default {
     explores: [
         {
@@ -102,6 +105,48 @@ export default {
             title: 'Create community.',
             subtitle: 'For Everyone',
             route: '/events'
+        },
+    ],
+    swiperData: [
+        {
+            backgroundImage: networking,
+            title: 'Networking',
+            subtitle: 'Groups'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
+        },
+        {
+            backgroundImage: onlineCourses,
+            title: 'Online',
+            subtitle: 'Courses'
         },
     ]
 }

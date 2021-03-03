@@ -19,7 +19,8 @@ const HeaderTitle = ({
         size={16}
         mobSize={14}
         animationType={"fade-in"}
-        type={"kRegular"}
+        // type={"kRegular"}
+        type={"kMedium"}
         className={`header-title-main-title ${titleClassName}`}
       >
         {title}

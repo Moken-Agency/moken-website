@@ -53,7 +53,7 @@ const PeopleLeadership = () => {
       <TitleSubDescription
         title={"OUR EXTENDED TEAM"}
         subtitle={"Growing together through collaboration."}
-        containerStyles={{marginBottom: '8vw'}}
+        // containerStyles={{marginBottom: '8vw'}}
       />
 
       <div className={"people-images-container"}>

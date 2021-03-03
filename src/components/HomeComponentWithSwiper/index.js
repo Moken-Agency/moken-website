@@ -13,27 +13,35 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import leftArrow from '../../images/letft-arrow.svg';
 import rightArrow from '../../images/right-arrow.svg';
+import Carousel  from 'react-elastic-carousel'
+
 
 import HomeDescriptionDataComponent from "../HomeDescriptionDataComponent";
 import ArrowUpRight from "../../images/arrow-up-right-white.svg";
 
-const breakPoints ={
-    // '0': {
-        // slidesPerView: 1,
+const breakPoints = [
+    // {
+    //     width: 1000,
+    //     itemsToShow: 1
     // },
-    // '601': {
-        // slidesPerView: 2,
+    // {
+    //     width: 1400,
+    //     itemsToShow: 2
     // },
-    // '850': {
-        // slidesPerView: 3,
-    // },
-    '1450': {
-        slidesPerView: 3,
-    }
-};
+    // {
+    //     width: 1600,
+    //     itemsToShow: 2.5
+    // }
+    { width: 1, itemsToShow: 1 },
+    { width: 650, itemsToShow: 1.5 },
+    { width: 850, itemsToShow: 2 },
+    { width: 1200, itemsToShow: 2.5 },
+    { width: 1400, itemsToShow: 3 },
+    ];
 
 const HomeComponentWithSwiper = ({
       title = '',
+     swiperData = [],
       numberTitle = '',
         descriptionData = {
           title: '',
@@ -47,8 +55,7 @@ const HomeComponentWithSwiper = ({
     }) => {
 
 
-    const prevRef = useRef(null);
-    const nextRef = useRef(null);
+    const carousel = useRef(null);
     const [isTouching, setIsTouching] = useState(false);
 
     return (
@@ -60,7 +67,7 @@ const HomeComponentWithSwiper = ({
         <HomeHeader title={title} titleContainerStyles={{maxWidth: 960}} numberTitle={numberTitle} />
 
         <div className={'home-swiper'}>
-            <div>
+            <div className={'home-swiper-left-container'}>
                 <HomeDescriptionDataComponent
                     descriptionData={descriptionData}
                     titleClass={'home-with-swiper-description-title'}
@@ -69,59 +76,36 @@ const HomeComponentWithSwiper = ({
                 />
                 <div className={'home-swiper-buttons-container'}>
                     <div className={'home-swiper-button-container'}
-                         ref={prevRef}
+                         onClick={() => carousel.current.slidePrev()}
                          >
                         <img src={leftArrow} />
                     </div>
                     <div className={'home-swiper-button-container'}
-                         ref={nextRef}
+                         onClick={() => carousel.current.slideNext()}
                          >
                         <img src={rightArrow} />
                     </div>
                 </div>
 
             </div>
-
-            <div style={{width: '100vw'}} className={`${isTouching ? 'grabbing' : 'hover'}`}>
-                <Swiper
-                    spaceBetween={20}
-                    breakpoints={breakPoints}
-                    wrapperTag={'ul'}
-                    navigation={{
-                        prevEl: prevRef.current ? prevRef.current : undefined,
-                        nextEl: nextRef.current ? nextRef.current : undefined,
-                    }}
-                    onInit={(swiper) => {
-                        swiper.params.navigation.prevEl = prevRef.current;
-                        swiper.params.navigation.nextEl = nextRef.current;
-                        swiper.navigation.update();
-                    }}
-                    // onSlideChange={onDragStart}
-                    // onReachEnd={onDragEnd}
-                    // onBeforeSlideChangeStart={() => console.log('onBeforeSlideChangeStart')}
-                    onTouchStart={() => setIsTouching(true)}
-                    onTouchEnd={() => setIsTouching(false)}
-
-                >
-                    {[1,3,4,5,4].map((option, index) => {
-                        return (
-                            <SwiperSlide wrapperTag={'li'} tag={'section'} key={`Slide content ${index + 1}`} virtualIndex={index}>
-                                {({ isActive }) => (
-                                    <div>
-                                        <img src={tempImage} />
-                                    </div>
-
-                                )}
-                            </SwiperSlide>
-                        )
-                    })}
-
-                </Swiper>
-            </div>
-
+            <Carousel breakPoints={breakPoints}
+                      className={`${isTouching ? 'grabbing' : 'hover'}`}
+                      ref={carousel}
+                      isRTL={false}
+                      itemsToShow={2.5} pagination={false} showArrows={false}>
+                {swiperData.map(({title = '', subtitle = '', backgroundImage = ''}, index) => {
+                    return (
+                        <div className={'carousel-item'}
+                             style={{backgroundImage: `url(${backgroundImage})`}}
+                        >
+                            {/*<img src={backgroundImage} />*/}
+                            <Text size={16} color={'white'} type={'kBold'}>{title}</Text>
+                            <Text size={30} color={'white'} type={'kBold'}>{subtitle}</Text>
+                        </div>
+                    )
+                })}
+            </Carousel>
         </div>
-
-
     </div>
   );
 };

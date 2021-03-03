@@ -178,6 +178,8 @@ const Community = () => {
       />
 
         <LeftInfoWithRightImage
+            titleClassName={'community-access-title'}
+            descriptionClassName={'community-access-description'}
             withoutRightPadding
             title={`Driven by the passion for working with determined innovators who live to make a change in the world.`}
             mainTitle={"ACCESS NETWORK"}

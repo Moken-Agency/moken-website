@@ -1,6 +1,7 @@
 .home-explore-item-container {
   width: 202px;
   padding: 32px 36px 36px 36px;
+  //background-color: yellow;
   background-color: white;
   border-radius: 40px;
   margin: 21px;
@@ -8,7 +9,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 20px 100px -60px rgba(0, 0, 0, .35);
+  box-shadow: 0 20px 100px -40px rgba(0, 0, 0, .35);
+  transform: translate(-50%, -50%) perspective(550px) rotateY(20deg) rotateX(10deg);
+  transform-style: preserve-3d;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    //box-shadow: 0 29px 40px -20px rgba(26, 26, 26,.12);
+  }
   .home-explore-item-title {
       margin-bottom: 39px;
   }

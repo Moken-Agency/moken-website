@@ -17,7 +17,7 @@ const Package = ({
 
   const imgStyles = {
     height: "1.5vw",
-    transform: `rotate(${isOpen ? "-" : ""}90deg)`,
+    transform: `rotate(${isOpen ? "+" : "-"}90deg)`,
     position: "relative",
     transition: ".5s",
     // top: '.3vw',

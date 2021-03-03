@@ -9,6 +9,10 @@ import EmailForm from "../../components/EmailForm";
 import "./index.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {useHistory} from "react-router-dom";
+import forInvestorsFirst from "../../images/for-investors-first.jpg";
+import forInvestorsSecond from "../../images/for-investors-second.jpg";
+import forInvestorsThird from "../../images/for-investors-third.jpg";
+import forInvestorsFourth from "../../images/for-investors-forth.jpg";
 
 const ForInvestors = () => {
 
@@ -27,21 +31,30 @@ const ForInvestors = () => {
 
       <ImageBlock
         position={"right"}
-        // url={''}
+        url={forInvestorsFirst}
       />
 
       <LeftInfoWithRightImage
+          imageClassName={'for-investors-program-image'}
+          imgUrl={forInvestorsSecond}
         withoutRightPadding
+        titleClassName={'for-investors-startup-title'}
+        descriptionClassName={'for-investors-startup-description'}
         title={"Join our trusted community of partners and market what you do."}
         mainTitle={"STARTUP MATCH PROGRAM"}
         description={
-         `Gain access to opportunities within our exclusive network of highly promising startups from around the world.`
+         `Our role consists of taking the time to understand your business model, and suggesting creative and
+          high-performing digital strategies. Our avant-garde tactics are in line with the current market,
+           blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`
         }
-        btnTitle={"Find Startups".toUpperCase()}
+        btnTitle={"APPLY TO INCUBATOR".toUpperCase()}
       />
 
       <LeftInfoWithRightImage
+        imgUrl={forInvestorsThird}
         withoutRightPadding
+        titleClassName={'for-investors-agency-title'}
+        descriptionClassName={'for-investors-agency-description'}
         title={
           "Moken Agency copy goes here about individuals working together to create extraordinary"
         }
@@ -69,7 +82,7 @@ const ForInvestors = () => {
       />
 
       <ProgramCommunityListPartner
-        title={"GET CONNECTD IN THE MOKEN ECOSYSTEM"}
+        title={"LEVERAGE THE ECOSYSTEM"}
         subtitle={
           "Join our trusted community of partners and market what you do to founders and startups, globally."
         }
@@ -79,6 +92,9 @@ const ForInvestors = () => {
       />
 
       <LeftInfoWithRightImage
+          titleClassName={'for-investors-startups-title'}
+          descriptionClassName={'for-investors-startups-description'}
+        imgUrl={forInvestorsFourth}
         withoutRightPadding
         title={
           "Let us host a demo day for you Enthusiastic individuals working"

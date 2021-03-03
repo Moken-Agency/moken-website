@@ -13,7 +13,7 @@
     }
     .underline-text {
       span {
-        transform: translate(15px);
+        transform: translate(0, -15px);
         //color: #000080 !important;
       }
     }
@@ -40,20 +40,34 @@
   }
 
     svg {
-      transform: translate(20px, -5px);
+      transform: translate(20px, -15px);
+      #About {
+        transition: .5s;
+
+      }
     }
-    .arrow-orange {
-      //fill: #EFB95E;
-      filter: invert(96%) sepia(21%) saturate(5558%) hue-rotate(312deg) brightness(98%) contrast(92%);
+    .arrow-orange  {
+      #About {
+        stroke: #EFB95E !important;
+
+      }
     }
     .arrow-coral {
-      filter: invert(89%) sepia(3%) saturate(6852%) hue-rotate(333deg) brightness(100%) contrast(93%);
+      #About {
+        stroke: #FF9D72 !important;
+      }
     }
     .arrow-grey {
-      filter: invert(85%) sepia(0%) saturate(14%) hue-rotate(54deg) brightness(103%) contrast(93%);
+      #About {
+        stroke: #D5D5D5 !important;
+
+      }
     }
     .arrow-light-coral {
-      filter: invert(94%) sepia(73%) saturate(653%) hue-rotate(292deg) brightness(99%) contrast(102%);
+      #About {
+        stroke: #FDCDC6 !important;
+
+      }
     }
 
 
