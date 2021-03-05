@@ -20,7 +20,8 @@ const HomeComponentWithVerticalText = ({
             route: '/',
             click: () => {}
           }
-        }
+        },
+    imageClassName=''
     }) => {
   return (
     <div
@@ -41,7 +42,7 @@ const HomeComponentWithVerticalText = ({
         </div>
 
         <div className={'home-vertical-text-img-description-container'}>
-          <img src={imgURL} />
+          <img src={imgURL} className={imageClassName} />
 
           <div>
             <HomeDescriptionDataComponent descriptionData={descriptionData}/>

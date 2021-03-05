@@ -1,5 +1,5 @@
 .title-sub-two-list-container {
-
+  margin-bottom: 40px;
   .title-sub-two-list-title {
     margin-bottom: 150px;
     @media screen and(max-width: 600px) {
@@ -10,8 +10,13 @@
     .title-sub-two-list-subtitle {
       padding: 0 14vw;
       margin-bottom: 160px;
+      line-height: 53px;
+
       @media screen and(max-width: 600px) {
         margin-bottom: 70px;
+        span {
+          line-height: 37px;
+        }
       }
     }
     .title-sub-two-list-main-container {

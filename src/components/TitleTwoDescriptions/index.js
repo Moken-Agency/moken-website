@@ -9,7 +9,8 @@ const TitleTwoDescriptions = ({
   title = "",
   firstDescription = "",
   secondDescription = "",
-                                marginBottom = null
+  titleClassName = '',
+  marginBottom = null
 }) => {
   const { isMobile } = useWindowDimensions();
 
@@ -29,7 +30,7 @@ const TitleTwoDescriptions = ({
           // textStyles={{lineHeight: '0px'}}
           type={"kBold"}
           // type={"extraLight"}
-            className={'title-two-descriptions-title'}
+            className={`title-two-descriptions-title ${titleClassName}`}
         >
           {title}
         </Text>

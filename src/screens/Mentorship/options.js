@@ -1,54 +1,46 @@
 export default {
   partnerships: [
     {
-      title: "12 WEEK PROGRAM",
-      subtitle: "Ideation to \n" + "Innovation Program",
+      title: "MENTORSHIP",
+      subtitle: `FutureFounders
+Mentorship`,
       description:
-        "We partner with innovators through our tailored and integrative expertise, complemented by a.",
+        "A mentorship program inspiring the next generation to take the future in their hands through guidance from seasoned entreprenuers.",
     },
     {
-      title: "10 WEEK MENTORSHIP",
-      subtitle: "FutureFounders \n" + "Mentorship",
+      title: "INCUBATOR",
+      subtitle: `Ideation to
+Innovation`,
       description:
-        "We partner with innovators through our tailored and integrative expertise, complemented by a",
+        "People with ideas are what change our world. I2I is an intensive early-stage incubator taking founders from ideation to launch in under 12 weeks.",
     },
     {
-      title: "10 WEEK PROGRAM",
-      subtitle: "RaisingRight \n" + "Program",
+      title: "INTENSIVE",
+      subtitle: `RaisingRight 
+Bootcamp`,
       description:
-        "We partner with innovators through our tailored and integrative expertise, complemented by a",
+        "RaisingRight guides founders through navigating investor connections, exploring grants, and accessing loans to get funded.",
     },
     {
-      title: "FOUNDER ONLY PROGRAM",
-      subtitle: "MokenLabs \n" + "Program",
+      title: "ACCELERATOR",
+      subtitle: `MokenLabs 
+Investments`,
       description:
-        "We partner with innovators through our tailored and integrative expertise, complemented by a",
+        "A highly selective global startup accelerator that fosters and invests in bright and passionate early-stage founders with cutting-edge ideas.",
     },
   ],
   benefits: [
     {
       images: [],
-      title: "Passion & Commitment",
+      title: "NETWORK WITH FUTURE LEADERS",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        `Moken is a hub for ambitious founders of all stages to connect, share advice, and build a community that values the progress innovation. Mentors will have the exclusive opportuity to contribute and lead these innovators into the future.`,
     },
     {
       images: [],
-      title: "Practicality",
+      title: "BECOME A BETTER LEADER",
       subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
-    },
-    {
-      images: [],
-      title: "Flexible Finances",
-      subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
-    },
-    {
-      images: [],
-      title: "One Team, One Goal",
-      subtitle:
-        "Type Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut.",
+        "Pitch competitions, in-house leadership opportunities, one-on-one office hours, mentor roundtables, discussion panels, and more. We are building experiences and connections that leverage experiential community innteractions to give our mentors and their passions and ventures a competitive edge. ",
     },
   ],
 };

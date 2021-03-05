@@ -15,15 +15,18 @@ const LeftInfoWithRightImage = ({
   withoutRightPadding = false,
   titleClassName = '',
   descriptionClassName = '',
+  descriptions = [description],
   btnAdditionalComponent = null,
-    onClick = () => {},
-                                  imageClassName = ''
+  onClick = () => {},
+  imageClassName = '',
+  containerStyles = {}
 }) => {
   const { isMobile } = useWindowDimensions();
   console.log({ isMobile });
 
   return (
-    <section className={"left-info-with-right-image-container"} style={{paddingRight: withoutRightPadding ? 0 : null}}>
+    <section className={"left-info-with-right-image-container"}
+             style={{...containerStyles, paddingRight: withoutRightPadding ? 0 : null}}>
       {mainTitle && (
         <Title
           title={mainTitle}
@@ -49,16 +52,24 @@ const LeftInfoWithRightImage = ({
           >
             {title}
           </Text>
-          <Text
-            animationType={"fade-up"}
-            className={`${descriptionClassName} left-info-with-right-image-container-description`}
-            size={20}
-            mobSize={16}
-            type={"kLight"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
-          >
-            {description}
-          </Text>
+          {
+            descriptions.map((descriptionTitle, index) => {
+              return (
+                  <Text
+                      key={index + descriptionTitle}
+                      animationType={"fade-up"}
+                      className={`${descriptionClassName} left-info-with-right-image-container-description`}
+                      size={20}
+                      mobSize={16}
+                      type={"kLight"}
+                      textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
+                  >
+                    {descriptionTitle}
+                  </Text>
+              )
+            })
+          }
+
           {btnTitle && (
             <Button
               // size={'.9vw'}

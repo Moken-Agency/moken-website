@@ -8,67 +8,76 @@ import HeaderSecondType from "../../components/HeaderSecondType";
 import TitleSubTwoListCenter from "../../components/TitleSubTwoListsCenter";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
+import HeaderTitle from "../../components/HeaderTitle";
+import {useHistory} from "react-router-dom";
+import PartnersList from "../../components/PartnersList";
 
 const EcoPartners = () => {
-  return (
+    let history = useHistory();
+
+    return (
     <div className={"eco-partner-screen"}>
       <HeaderSecondType
+        subtitleClassName={'eco-partner-header-title'}
         title={"ECOSYSTEM PARTNERS"}
-        subtitle={"Building unforgettable brands for start-ups with ambition."}
+        subtitle={"Hand-picked partners dedicated to developing  synergy in support of startups."}
       />
       <ImageBlock position={"right"} />
       <TitleTwoDescriptions
+          titleClassName={'eco-partners-overview-title'}
         mainTitle={"OVERVIEW"}
-        title={`A global startup program that fosters and invests in bright and passionate 
-                                  early stage founders with cutting-edge ideas.`}
-        firstDescription={`We provide seed funding, strategic mentorship, a creative workspace,
-                                   a multitude of perks, entrepreneurship-focused business training, and directly support 
-                                   our startups through an expansive network of partner entities, mentors and investors.
-                                    We create an environment where you can advance your company an incredible amount in a
-                                     short period of time.`}
-        secondDescription={`We partner with innovators through our tailored and integrative 
-                                  expertise, complemented by a vibrant ecosystem of game-changing partners to deliver 
-                                  accelerated, superior, and impactfully driven outcomes.`}
+        title={
+            `Accessibility, resource, and education driven programs and organizations powering entrepreneurial endeavours through the startup ecosystem.`
+        }
+        firstDescription={
+            `Through our Ecosystem Partner stream, we collaborate with a global network of community startup programs, accelerators, incubators, and VC firms to help startups scale effectively and efficiently.`
+        }
+        secondDescription={`We partner with innovators through our tailored expertise, complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven outcomes.`}
       />
 
       <LeftInfoWithRightImage
-        mainTitle={"WHO ARE COMMUITY PARTNERS"}
+        mainTitle={"WHO ARE OUR ECOSYSTEM PARTNERS?"}
         title={
-          "Enthusiastic individuals working together to create extraordinary startups"
+            `Providing incubation, access, and benefits to the most promising startups and founders, together.`
         }
-        description={`Our role consists of taking the time to understand your business
-                                     model, and suggesting creative and high-performing digital strategies. 
-                                     Our avant-garde tactics are in line with the current market, blend seamlessly
-                                      with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
+        description={
+            `With a focus on diversity and inclusivity, our Ecosystem Partners are enthusiastic organizations working together to help create extraordinary startups. They’re accessiblity focused resource and education-driven programs powering students, founders, and entrepreneurs throughout the startup ecosystem.`
+        }
         imgUrl={""}
         isLeftImage
+        btnTitle={'BECOME A PARTNER'}
       />
 
-      <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"SPONSOR INNOVATION WEEK"}
-        withIcon
-        textColor={"black"}
-        backgroundColor={"grey"}
-        size={30}
+
+        <PartnersList list={options.partners}/>
+
+        <TitleSubTwoListCenter
+            subtitleClassName={'eco-partners-perks-title'}
+            title={"PERKS & BENEFITS"}
+            subtitle={
+                `Seeking partner relationships with those that share our work philosophy and comprehend the importance of collaboration in venture building.`
+            }
+            lists={options.lists}
       />
 
-      <TitleSubTwoListCenter
-        title={"PERKS & BENEFITS"}
-        subtitle={`A global startup program that fosters and invests in bright and 
-                                   passionate early stage founders with cutting-edge ideas.`}
-        lists={options.lists}
-        imageList={options.images}
-      />
+        <ColorBlock
+            title={"Incubate and accelerate more, together."}
+            subtitle={"BECOME A PARTNER"}
+            withIcon
+            textWidth={834}
+            onClick={() => history.push('/our-partners')}
+        />
 
-      <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
-        description={`Our role consists of taking the time to understand your business
-                                     model, and suggesting creative and high-performing digital strategies. Our
-                                      avant-garde tactics are in line with the current market, blend seamlessly 
-                                      with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
-        imgUrl={""}
+
+        <LeftInfoWithRightImage
+            withoutRightPadding
+            title={"Become a partner and set your startups for success."}
+            description={`We take the time to understand your program model and collaborate through creative,
+             high-performing strategies to ensure the success of all startups within reach. Our avant-garde 
+             tactics are cutting edge, blend seamlessly with our partner’s operational realities, and eliminate unnecessary risks.`}
+            btnTitle={"BECOME A PARTNER"}
+            descriptionClassName={'eco-partners-last-image-block-description'}
+            imgUrl={""}
       />
 
       <EmailForm withForm />

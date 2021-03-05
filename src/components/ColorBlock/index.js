@@ -9,7 +9,7 @@ import ArrowUpRightWhite from "../../images/arrow-up-right-white.svg";
 const ColorBlock = ({
   title = "",
   subtitle = "",
-  backgroundColor = "",
+  backgroundColor = "black",
   className = "",
   textWidth = "36vw",
   textColor = "white",

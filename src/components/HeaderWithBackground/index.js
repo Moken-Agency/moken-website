@@ -9,6 +9,7 @@ const HeaderWithBackground = ({
   title = "",
   subtitle = "",
   containerStyles = {},
+  subtitleClassName = ''
 }) => {
   const { isMobile } = useWindowDimensions();
 
@@ -23,7 +24,7 @@ const HeaderWithBackground = ({
           }}
         >
           <Text
-            size={isMobile ? "2vw" : "1vw"}
+            size={isMobile ? 16 : 16}
             className={"header-with-background-join-us"}
             type={"kSemiBold"}
             animationType={"fade-in"}
@@ -32,9 +33,9 @@ const HeaderWithBackground = ({
             {title}
           </Text>
           <Text
-            size={isMobile ? "10vw" : "4.5vw"}
-            className={"header-with-background-upcoming-events"}
-            type={"thin"}
+            size={isMobile ? 75 : 75}
+            className={`header-with-background-upcoming-events ${subtitleClassName}`}
+            type={"kBold"}
             animationType={"fade-in"}
             color={"white"}
           >

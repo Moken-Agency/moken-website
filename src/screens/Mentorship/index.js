@@ -9,27 +9,33 @@ import "./index.scss";
 import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList";
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
 import EmailForm from "../../components/EmailForm";
+import mentorshipFirst from "../../images/mentorship-first.jpg";
+import mentorshipSecond from "../../images/mentorship-second.jpg";
+import mentorshipThird from "../../images/mentorship-third.jpg";
 
 const Mentorship = () => {
   return (
     <div className={"mentorship-container"}>
       <HeaderTitle
         title={"MENTORSHIP"}
-        subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        subtitle={"Creatives, builders & entreprenuers pursuing action."}
+        marginBottom={94}
+        description={"Together we’re creating, inspiring, and educating through an unmatched global ecosystem."}
       />
 
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={mentorshipFirst}/>
 
       <TitleRowSubDes
         title={"ABOUT MENTORSHIP"}
         subtitle={"Empowering one another in creating change around the world."}
-        description={`We know that dynamic actions define the future and that the ambition to lead 
-                            requires the tenacity to adapt. This is why we partner with clients, startups, and founders
-                             who challenge themselves to be exceptional leaders and are unwavering in our commitment 
-                             to do right by our clients, team, partners, and communities. We define our ambitions with 
-                             clients, then work together as one team to create high levels of value striving to set
-                              new standards of excellence within each industry.`}
+        description={`Mentors provide actionable strategies, business advice, support, and execution assistance when 
+        founders need it most. As a mentor you can make a profound difference in a startups trajectory by simply 
+        sharing your experiences and expertise. Why is having mentor so crucial to a startup? Well, in the case of
+         Moken mentors, we look for "been-there-done-that" type of people where they have gone through business
+          hardships have succeeded in their fields. Thus, providing a deeply empathetic understanding of not only
+           the industry but the journey along the way. As a mentor, you will able to help founders in realising their
+            goals and provide them with the necessary guidelines on how to achieve them.`}
+        btnTitle={'APPLY TO MENTOR'}
       />
 
       <Title
@@ -47,24 +53,25 @@ const Mentorship = () => {
       </section>
 
       <LeftImageTitleSubDesList
-        imgUrl={""}
-        title={"THE BENEFITS"}
-        subtitle={"We make it easy to kickstart your vision."}
-        description={`With packages at a startup price point, we work with founders and 
-                                      ideators with high growth potential. We're passionate about big ideas and working 
-                                      with people who feel the same.`}
+        imgUrl={mentorshipSecond}
+        title={"THE PERKS OF MENTORSHIP"}
+        subtitle={"Experience. Networking. Encouragement."}
+        description={`Our mentor team is comprised of creative minds, savvy business owners, dedicated marketing and
+         advertising professionals, brand leaders, media icons, and revolutioary tech companies. Together we come
+          together to learn, teach, network, and  inspire the next generation.`}
         list={options.benefits}
       />
 
       <LeftInfoWithRightImage
-        imgUrl={""}
+        withoutRightPadding
+        imgUrl={mentorshipThird}
         mainTitle={"NEXT STEPS & APPLYING"}
         title={"Join our trusted community of partners and market what you do."}
         description={`Our role consists of taking the time to understand your business model, 
                                     and suggesting creative and high-performing digital strategies. Our avant-garde 
                                     tactics are in line with the current market, blend seamlessly with our clients’ 
                                     operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"APPLY TO MENTOR"}
       />
 
       <EmailForm withForm />

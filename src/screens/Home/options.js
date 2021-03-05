@@ -1,5 +1,6 @@
 import onlineCourses from '../../images/home-online-courses.jpg';
 import networking from "../../images/home-networking.jpg";
+import resources from "../../images/home-resources.jpg";
 
 export default {
     explores: [
@@ -120,33 +121,14 @@ export default {
         },
         {
             backgroundImage: onlineCourses,
-            title: 'Online',
-            subtitle: 'Courses'
+            title: 'Virtual',
+            subtitle: 'Events'
         },
         {
-            backgroundImage: onlineCourses,
+            backgroundImage: resources,
             title: 'Online',
-            subtitle: 'Courses'
+            subtitle: 'Resources'
         },
-        {
-            backgroundImage: onlineCourses,
-            title: 'Online',
-            subtitle: 'Courses'
-        },
-        {
-            backgroundImage: onlineCourses,
-            title: 'Online',
-            subtitle: 'Courses'
-        },
-        {
-            backgroundImage: onlineCourses,
-            title: 'Online',
-            subtitle: 'Courses'
-        },
-        {
-            backgroundImage: onlineCourses,
-            title: 'Online',
-            subtitle: 'Courses'
-        },
+
     ]
 }

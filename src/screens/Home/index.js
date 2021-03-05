@@ -16,8 +16,11 @@ import {easeQuadInOut} from "d3-ease";
 import TrackVisibility from "react-on-screen";
 import homeGenerate from "../../images/home-generate.jpg";
 import homeNetworking from "../../images/home-networking.jpg";
-import homeRyr from "../../images/home-ryr.jpg";
-import homeScale from "../../images/home-scale.jpg"
+import homeRyr from "../../images/home-ryr@3x.jpg";
+import homeScale from "../../images/home-scale.jpg";
+import Typical from 'react-typical'
+
+
 
 const {explores, startupsData, paths, impacts} = options;
 
@@ -30,8 +33,36 @@ const Home = () => {
        <section className={'home-header'}>
            <div className={'home-header-first-title-container'}>
                <Text type={'kSemiBold'} size={20} className={'home-header-first-title-tm'}>TM</Text>
-               <Text type={'kBold'} size={120} className={'home-header-first-title'}>We are moken.
-                   We build startups.</Text>
+               <Text type={'kBold'} size={120} className={'home-header-first-title'}>We are moken.</Text>
+               {/*<Typical wrapper="span"*/}
+               {/*         className={'typical-test'}   steps={['We are moken.']} />*/}
+               <div className={'animated-text-container'}>
+                   <Typical
+                       steps={[
+                           1000,
+                           'We build startups.',
+                           1500,
+                           'We invest in startups.',
+                           1500,
+                           'We validate startups.',
+                           1500,
+                           'We transform startups.',
+                           1500,
+                           'We educate startups.',
+                           1500,
+                           'We scale startups.',
+                           1500,
+                           'We connect startups.',
+                           1500,
+                           'We grow startups.'
+                       ]}
+                       // loop={Infinity}
+                       wrapper="span"
+                       className={'typical-test'}
+                   />
+                   <span className={'animated-test-after'}/>
+               </div>
+
            </div>
            <Text className={'home-header-second-title'} type={'kLight'} size={20}>
                Moken is a hub for founders and startups guiding them through the journey of building a successful venture from ideation to growth.
@@ -40,7 +71,7 @@ const Home = () => {
 
         <section className={'home-explore-container'}>
             <div className={'home-explore-divider'}/>
-            <Text className={'home-explore-title'} type={'kRegular'} size={16}>EXPLORE</Text>
+            <Text className={'home-explore-title'} type={'kMedium'} size={16}>EXPLORE</Text>
 
             <div className={'home-explore-list-container'}>
                 {
@@ -58,6 +89,7 @@ const Home = () => {
            }}
            title={'Build your startup, smarter.'}
            imgURL={homeRyr}
+           imageClassName={'home-ryr-block-image'}
            titleContainerStyles={{maxWidth: 849}}
            descriptionData={{
                title: 'Where startups build, validate & grow.',

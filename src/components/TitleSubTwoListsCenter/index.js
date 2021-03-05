@@ -10,6 +10,7 @@ const TitleSubTwoListCenter = ({
   subtitle = "",
   lists = [],
   imageList = [],
+  subtitleClassName=''
 }) => {
   return (
     <div className={"title-sub-two-list-container"}>
@@ -17,7 +18,7 @@ const TitleSubTwoListCenter = ({
       <div className={"title-sub-two-list-content"}>
         <Text
           size={50}
-          className={"title-sub-two-list-subtitle"}
+          className={`title-sub-two-list-subtitle ${subtitleClassName}`}
           animationType={"fade-in"}
           mobSize={35}
           type={"kBold"}
@@ -25,10 +26,12 @@ const TitleSubTwoListCenter = ({
           {subtitle}
         </Text>
         <div className={"title-sub-two-list-main-container"}>
-          {lists.map((item) => {
-            console.log({ item });
-            return <TitleSubTwoListCenterItem {...item} />;
-          })}
+          <div>
+            {lists.map((item) => {
+              console.log({ item });
+              return <TitleSubTwoListCenterItem {...item} />;
+            })}
+          </div>
         </div>
       </div>
 

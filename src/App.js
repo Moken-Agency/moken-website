@@ -85,6 +85,8 @@ import CommunityDrivenGrowth from "./screens/CommunityDrivenGrowth";
 import PartnershipsGrowth from "./screens/PartnershipsGrowth";
 import Home from "./screens/Home";
 import ForStartupPrograms from "./screens/ForStartupPrograms";
+import IndustryPartners from "./screens/IndustryPartners";
+import Ambassador from "./screens/Ambassador";
 
 const routsWithHeaderFooter = [
   {
@@ -374,6 +376,14 @@ const routsWithHeaderFooter = [
   {
     path: "/graphic-designer",
     component: GraphicDesigner,
+  },
+  {
+    path: "/industry-partners",
+    component: IndustryPartners,
+  },
+  {
+    path: "/ambassador",
+    component: Ambassador,
   },
   // {
   //     path: "/",

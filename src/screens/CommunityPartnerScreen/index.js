@@ -8,67 +8,57 @@ import HeaderSecondType from "../../components/HeaderSecondType";
 import TitleSubTwoListCenter from "../../components/TitleSubTwoListsCenter";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
+import PartnersList from "../../components/PartnersList";
 
 const CommunityPartnerScreen = () => {
   return (
     <div className={"community-partner-screen"}>
       <HeaderSecondType
         title={"COMMUNITY PARTNERS"}
-        subtitle={"Building unforgettable brands for start-ups with ambition."}
+        subtitleClassName={'community-partner-header-title'}
+        subtitle={"Building trusted partnerships requires building a true community."}
       />
       <ImageBlock position={"right"} />
       <TitleTwoDescriptions
         mainTitle={"OVERVIEW"}
-        title={`A global startup program that fosters and invests in bright and passionate 
-                                  early stage founders with cutting-edge ideas.`}
-        firstDescription={`We provide seed funding, strategic mentorship, a creative workspace,
-                                   a multitude of perks, entrepreneurship-focused business training, and directly support 
-                                   our startups through an expansive network of partner entities, mentors and investors.
-                                    We create an environment where you can advance your company an incredible amount in a
-                                     short period of time.`}
-        secondDescription={`We partner with innovators through our tailored and integrative 
-                                  expertise, complemented by a vibrant ecosystem of game-changing partners to deliver 
-                                  accelerated, superior, and impactfully driven outcomes.`}
+        title={
+            "Innovators, advisors, industry experts, consultants, students, thought leaders, and small businesses whose value goes far beyond their expertise. "}
+        firstDescription={`The Community Partner stream of Moken’s Access Partner Program is a reciprocal incentive initiative aimed at harnessing the power of the community. Through the program, Community Partners gain access to Moken's ecosystem, network, and solutions to scale their business, while creating lead-generation possibilities within their own network for Moken.`}
+        secondDescription={`This partnership stream is for active individuals and businesses that interact with the startup or entrepreneurial community. Partners gain access to resources, tools, and information to help them grow their brand and business through a deeper relationship within the Moken community.`}
       />
 
       <LeftInfoWithRightImage
-        mainTitle={"WHO ARE COMMUITY PARTNERS"}
-        title={
-          "Enthusiastic individuals working together to create extraordinary startups"
-        }
-        description={`Our role consists of taking the time to understand your business
-                                     model, and suggesting creative and high-performing digital strategies. 
-                                     Our avant-garde tactics are in line with the current market, blend seamlessly
-                                      with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
+        mainTitle={"WHO ARE COMMUNITY PARTNERS?"}
+        title={`True leaders aim to grow communities themselves, and Moken is here to help make that a reality.`}
+        description={`Our Community Partners have a wide range of skills, specialties, industries, and forms. They’re individuals, students, entrepreneurs, student groups, freelancers, small to medium-sized businesses, and local influencers who are ready to expand their networks, all while supporting and integrating with startups along the way.`}
         imgUrl={""}
+        btnTitle={'BECOME A PARTNER'}
         isLeftImage
       />
 
-      <ColorBlock
-        title={"Looking for the next big thing?"}
-        subtitle={"SPONSOR INNOVATION WEEK"}
-        withIcon
-        textColor={"black"}
-        backgroundColor={"grey"}
-        size={30}
-      />
+      <PartnersList />
 
       <TitleSubTwoListCenter
         title={"PERKS & BENEFITS"}
-        subtitle={`A global startup program that fosters and invests in bright and 
-                                   passionate early stage founders with cutting-edge ideas.`}
+        subtitle={`Partnerships are a two-way street that help everyone get where they need to be.`}
         lists={options.lists}
-        imageList={options.images}
+        subtitleClassName={'community-partner-benefits-subtitle'}
       />
 
+        <ColorBlock
+            title={"Harness the power of community"}
+            subtitle={"APPLY TO PARTNER"}
+            withIcon
+        />
+
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
-        description={`Our role consists of taking the time to understand your business
-                                     model, and suggesting creative and high-performing digital strategies. Our
-                                      avant-garde tactics are in line with the current market, blend seamlessly 
-                                      with our clients’ operational realities, and eliminate risks that aren’t necessary.`}
-        btnTitle={"APPLY TO INCUBATOR"}
-        imgUrl={""}
+          withoutRightPadding
+        title={"Become a partner and leverage the power of our trusted community."}
+        description={
+            `We take the time to understand you and your business model to develop action driven, high-performing collaborative strategies. Our avant-garde tactics are cutting edge, blend seamlessly with our partner’s operational realities and goals while eliminatinng unnecessary risks.`
+        }
+        btnTitle={"BECOME A PARTNER"}
+        // imgUrl={""}
       />
 
       <EmailForm withForm />

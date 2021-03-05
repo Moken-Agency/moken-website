@@ -132,28 +132,29 @@ export default {
     {
       title: "Programs",
       dividerColor: "#00c39f",
-      subRouts: [
-        {
-          title: "ABOUT PROGRAMS",
-          route: "/about-programs",
-        },
-        {
-          title: "MOKENLABS",
-          route: "/moken-labs",
-        },
-        {
-          title: "FUTURE FOUNDERS PROGRAM",
-          route: "/future-founders",
-        },
-        {
-          title: "RAISING RIGHT PROGRAM",
-          route: "/raising-right",
-        },
-        {
-          title: "ADVISORS OF TOMORROW PROGRAM",
-          route: "/advertise-wth-us",
-        },
-      ],
+      isComingSoon: true,
+      // subRouts: [
+      //   {
+      //     title: "ABOUT PROGRAMS",
+      //     route: "/about-programs",
+      //   },
+      //   {
+      //     title: "MOKENLABS",
+      //     route: "/moken-labs",
+      //   },
+      //   {
+      //     title: "FUTURE FOUNDERS PROGRAM",
+      //     route: "/future-founders",
+      //   },
+      //   {
+      //     title: "RAISING RIGHT PROGRAM",
+      //     route: "/raising-right",
+      //   },
+      //   {
+      //     title: "ADVISORS OF TOMORROW PROGRAM",
+      //     route: "/advertise-wth-us",
+      //   },
+      // ],
     },
     {
       title: "Events",

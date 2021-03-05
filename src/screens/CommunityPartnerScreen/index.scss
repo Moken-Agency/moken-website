@@ -1,4 +1,17 @@
 .community-partner-screen {
+  .community-partner-benefits-subtitle {
+    max-width: 791px;
+    span {
+      line-height: 53px;
+      @media screen and(max-width: 600px) {
+        line-height: 37px;
+      }
+
+    }
+  }
+  .community-partner-header-title {
+    max-width: 1200px;
+  }
   .community-partner-color-block {
     padding: 67px 14vw;
     @media only screen and (max-width: 600px) {

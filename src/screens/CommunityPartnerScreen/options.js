@@ -1,17 +1,21 @@
+import partners from "../../images/partners";
+
 export default {
   lists: [
     {
       title: "PERKS OF BEING A PARTNER",
       list: [
         [
-          "— 10 Custom brand name ideas\n",
-          "— 5 Revisions based off your feedback\n",
-          "— Results in 72 hours\n",
-        ],
-        [
-          "— 10 Custom brand name ideas\n",
-          "— 5 Revisions based off your feedback\n",
-          "— Results in 72 hours\n",
+          "— Preferred Pricing & Exclusive Technology Support\n",
+          "— Editorial Feature\n",
+          "— Listing in Access Expert Directory & IdeaFactory\n",
+          "— Exclusive Partner & Co-Branded Marketing Campaigns\n",
+          "— Promotion on Social Media\n",
+          "— VIP Partner Events\n",
+          "— Exclusive Advisory Support\n",
+          "— Publication Writer Access\n",
+          "— Mentor Opportunities\n",
+          "— $250 Commissions/Referral Bonus per successfu lead"
         ],
       ],
     },
@@ -19,17 +23,14 @@ export default {
       title: "REQUIREMENTS",
       list: [
         [
-          "— 10 Custom brand name ideas\n",
-          "— 5 Revisions based off your feedback\n",
-          "— Results in 72 hours\n",
+         "— Successful Application\n",
+         "— 6 Referrals Annually to Moken Agency\n",
+         "— Incentive or perk for the Moken Community"
         ],
-        [
-          "— 10 Custom brand name ideas\n",
-          "— 5 Revisions based off your feedback\n",
-          "— Results in 72 hours\n",
-        ],
+
       ],
     },
   ],
   images: ["", "", "", "", ""],
+  partners: [partners.noissue, partners.owner, partners.segment, partners.hubspot, partners.acadium]
 };

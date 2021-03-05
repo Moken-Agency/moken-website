@@ -19,13 +19,13 @@
     }
   }
   .title-sub-two-list-center-item-main-list {
-    margin-bottom: 190px;
     @media only screen and (max-width: 600px) {
       margin-bottom: 55px;
     }
     .title-sub-two-list-center-item-sub-list {
-      margin-bottom: 40px;
+      margin-bottom: 77px;
       .title-sub-two-list-center-item-sub-text {
+        max-width: 560px;
         span {
           line-height: 30px;
           letter-spacing: .18px;
