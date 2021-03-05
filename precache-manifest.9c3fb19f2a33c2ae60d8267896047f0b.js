@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7348f29ac68135456f035e6e3d639e2",
+    "revision": "d1f5a54abc6de87d7dee69ea7116bc86",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "a024354f61cb8e7ae752",
+    "revision": "6f77e564c431b040dfea",
     "url": "/moken-website/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "124778717e8346e7fb27",
-    "url": "/moken-website/static/css/main.221a67dc.chunk.css"
+    "revision": "635fbc17c32f5c018587",
+    "url": "/moken-website/static/css/main.8ba325ae.chunk.css"
   },
   {
-    "revision": "a024354f61cb8e7ae752",
-    "url": "/moken-website/static/js/2.74c1d60e.chunk.js"
+    "revision": "6f77e564c431b040dfea",
+    "url": "/moken-website/static/js/2.51b57de0.chunk.js"
   },
   {
     "revision": "05f004cf1ac1b697d59f67cd14a990d6",
-    "url": "/moken-website/static/js/2.74c1d60e.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.51b57de0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "124778717e8346e7fb27",
-    "url": "/moken-website/static/js/main.f42ebef1.chunk.js"
+    "revision": "635fbc17c32f5c018587",
+    "url": "/moken-website/static/js/main.233c6320.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -516,6 +516,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/for-students-third.2a158e5e.jpg"
   },
   {
+    "revision": "41ed367a92fd890ef151112a22383ca0",
+    "url": "/moken-website/static/media/home-agency-cursor.41ed367a.svg"
+  },
+  {
     "revision": "b48d6607c9d9afbecb2fb66527085005",
     "url": "/moken-website/static/media/home-generate.b48d6607.jpg"
   },
@@ -528,8 +532,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/home-online-courses.36741741.jpg"
   },
   {
-    "revision": "0d52c336213a139f423360948abb6a57",
-    "url": "/moken-website/static/media/home-ryr.0d52c336.jpg"
+    "revision": "8619941170879db220e4237463bd81b0",
+    "url": "/moken-website/static/media/home-ryr@3x.86199411.jpg"
   },
   {
     "revision": "5f865aa26ac09b2131c57e5554027b3f",
