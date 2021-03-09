@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="82" viewBox="0 0 136 82">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-336 -499) translate(336 499)">
+                <rect width="107" height="52" y="29.55" fill="#FF9D72" rx="8"/>
+                <text fill="#000" font-family="Konnect-Medium, Konnect" font-size="20" font-weight="400">
+                    <tspan x="21.97" y="60.55">Events</tspan>
+                </text>
+                <path fill="#FF9D72" d="M93.75 13.526L135.526 0 121.278 41.69 114.638 20.845z"/>
+            </g>
+        </g>
+    </g>
+</svg>
