@@ -1,4 +1,5 @@
 import partners from "../../images/partners";
+import harvard from "../../images/partners/harvard.jpg";
 
 export default {
   lists: [
@@ -37,6 +38,28 @@ export default {
     },
   ],
   images: ["", "", "", "", ""],
-  partners: [partners.noissue, partners.owner, partners.segment, partners.hubspot, partners.acadium]
+  partners: [partners.noissue, partners.owner, partners.harvard, partners.hubspot, partners.acadium],
+  asd: [
+    {
+      imgURL: partners.noissue,
+      height: 55
+    },
+    {
+      imgURL: partners.owner,
+      height: 55
+    },
+    {
+      imgURL: partners.harvard,
+      height: 70
+    },
+    {
+      imgURL: partners.hubspot,
+      height: 101
+    },
+    {
+      imgURL: partners.acadium,
+      height: 55
+    },
+  ]
 
 };

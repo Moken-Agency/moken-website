@@ -92,6 +92,7 @@ const OurPartners = () => {
         withIcon
         blockType={"middle"}
         backgroundColor={"black"}
+        onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
       />
 
       {/*<TwoColumnsHugeInfo*/}
@@ -119,7 +120,8 @@ const OurPartners = () => {
               // type={'extraLight'}
               // containerStyles={{width: isMobile ? 'auto' : 583}}
         >Interested in becoming a partner and leveraging a global community network?</Text>
-        <div className={'explore-our-partners-potential-container'}>
+        <div className={'explore-our-partners-potential-container'}
+             onClick={() => window.open('https://forms.gle/VKyuj9Pqe6SFzUdw9', '_blank')}>
             <Text type={'kSemiBold'}
                   // size={'.9vw'}
                   mobSize={12}

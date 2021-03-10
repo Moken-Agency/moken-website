@@ -15,11 +15,15 @@ import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import HugeInfoAllListColumn from "../Programs/components/HugeInfoAllListColumn";
 import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList";
 import ourVisionHeader from '../../images/our-vision-header.jpg';
+import {useHistory} from "react-router-dom";
 
 const OurVision = () => {
   const { isMobile } = useWindowDimensions();
 
-  return (
+    const history = useHistory();
+
+
+    return (
     <div className={"our-vision-container"}>
       <HeaderTitle
         marginBottom={142}
@@ -65,6 +69,7 @@ const OurVision = () => {
         withIcon
         backgroundColor={"black"}
         blockType={'middle'}
+        onClick={() => history.push('/portfolio')}
       />
 
       {/*<Title title={"HOW IT WORKS"} className={"vision-works-title"} />*/}

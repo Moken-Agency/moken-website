@@ -1,4 +1,10 @@
 .events-container {
+  .upcoming-events-title {
+    max-width: 501px;
+    span {
+      line-height: 75px;
+    }
+  }
   header {
     display: flex;
     margin-bottom: 184px;

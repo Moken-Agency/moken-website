@@ -25,6 +25,7 @@ export default {
         "Prommoto creates connections between the physical and digital worlds through innovative OOH advertising and data collection. Aimed at providing users an easy way to make extra money by simply doing what they’re already doing. ",
       city: "VANCOUVER, BC",
       owner: "Shrey Gupta",
+      link: "https://prommoto.com"
     },
     {
       companyName: "IDEAFACTORY",
@@ -32,6 +33,8 @@ export default {
       description: "Access is a startup builder and venture support platform. Providing access to the necessary tools founders need to accelerate and grow their idea or business with support of business experts, investors, talent, and industry leading companies all from one place.",
       city: "VANCOUVER, BC",
       owner: "",
+      link: "https://instagram.com/accessthefuture"
+
     },
     {
       companyName: "MOKENLABS",
@@ -40,6 +43,8 @@ export default {
         "Rent Your Ride is a peer to peer vehicle rental marketplace where vehicle owners can list their vehicle for rent to earn money while providing a traveller with the best solution for a rental vehicle.",
       city: "WINNIPEG, MB",
       owner: "Michael Okoye",
+      link: "https://rentyourride.ca"
+
     },
     {
       companyName: "IDEAFACTORY",
@@ -63,6 +68,7 @@ export default {
         "Binary Vision Studios is a multilingual digital product agency with technology and innovation at the heart of what we do. We bring your product to life, ensuring that it’s not just visually breathtaking, but each user’s experience is intuitive, extraordinarily interactive, and delightfully stunning.",
       city: "WINNIPEG, MB",
       owner: "Mohamed Ibshara",
+      link: "https://binary.vision"
     },
     {
       companyName: "ACQUIRED",
@@ -71,6 +77,7 @@ export default {
         "A marketing, communications, and public relations firm that partners with founders, startups, and global organizations to define, promote, market, and protect their brands, reputations, and market share.",
       city: "WINNIPEG, MB",
       owner: "Kendra Garagan",
+      link: 'https://kenergyventures.com'
     },
   ],
 };

@@ -13,9 +13,13 @@ import forStartupProgramsFirst from "../../images/for-startup-programs-first.jpg
 import forStartupProgramsSecond from "../../images/for-startup-programs-second.jpg";
 import forStartupProgramsThird from "../../images/for-startup-programs-four.jpg";
 import forStartupProgramsFourth from "../../images/for-startup-programs-five.jpg";
+import {useHistory} from "react-router-dom";
 
 const ForStartupPrograms = () => {
+
   const { isMobile } = useWindowDimensions();
+
+  const history = useHistory();
 
   return (
     <div className={"for-brands-container"}>
@@ -42,6 +46,7 @@ const ForStartupPrograms = () => {
              the aim of uniting the ecosystem around the world.`
         }
         btnTitle={"GET INVOLVED"}
+        onClick={() => history.push('/eco-partners')}
         isLeftImage
       />
       <TitleCenterImagesList
@@ -61,6 +66,7 @@ const ForStartupPrograms = () => {
               ambitious programs.  It’s a place where entrepreneurs, founders, startups, industry experts,
                side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`
         }
+          onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
         btnTitle={"JOIN THE NETWORK"}
       />
 
@@ -71,6 +77,7 @@ const ForStartupPrograms = () => {
         textColor={"white"}
         backgroundColor={"black"}
         blockType={'middle'}
+        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
       />
 
       <LeftInfoWithRightImage
@@ -89,6 +96,7 @@ const ForStartupPrograms = () => {
           "operational realities, and eliminate risks that aren’t necessary."
         }
         btnTitle={"SPONSOR THE FUTURE"}
+        onClick={() => history.push('/advertise-with-us')}
         isLeftImage
       />
 

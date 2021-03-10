@@ -22,7 +22,6 @@ const UpcomingEvents = () => {
         async function f () {
             const response = await sget({url: 'https://www.eventbriteapi.com/v3/organizations/481196850209/events/?status=live'});
             const events = await response.json();
-            console.log({events});
             setEvents(() => formatEvents(events));
         }
         f()
@@ -46,11 +45,8 @@ const UpcomingEvents = () => {
           >
             JOIN US
           </Text>
-          <Text type={"kBold"} size={75} mobSize={45}>
-            Upcoming
-          </Text>
-          <Text type={"kBold"} size={75} mobSize={45}>
-            Events
+          <Text type={"kBold"} size={75} mobSize={45} className={'upcoming-events-title'}>
+            Upcoming Events
           </Text>
         </div>
 

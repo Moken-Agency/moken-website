@@ -2,11 +2,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 170px;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
   img {
-    max-width: 258px;
-    max-height: 150px;
     object-fit: fill;
     padding: 0 37px;
   }

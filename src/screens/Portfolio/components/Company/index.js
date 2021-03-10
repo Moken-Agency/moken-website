@@ -11,14 +11,21 @@ const Company = ({
   description = "",
   city = "",
   owner = "",
-    link = '/',
+    link = '',
                      isLast = false
 }) => {
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
+    console.log({link});
 
-  return (
-    <div className={`company-container ${isLast ? 'last-item' : '' }`} onClick={() => window.open(link, '_blank')}>
+    const handleOpenLink = () => {
+        // return  link ? window.open(link) : null
+      window.open(link, '_blank');
+
+    }
+    return (
+    <div className={`company-container ${isLast ? 'last-item' : '' }`}
+         onClick={handleOpenLink}>
       <div>
         <Text
           size={16}

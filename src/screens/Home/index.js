@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import Text from "../../components/Text";
 import './index.scss';
 import options from './options';
@@ -18,7 +18,9 @@ import homeGenerate from "../../images/home-generate.jpg";
 import homeNetworking from "../../images/home-networking.jpg";
 import homeRyr from "../../images/home-ryr@3x.jpg";
 import homeScale from "../../images/home-scale.jpg";
-import Typical from 'react-typical'
+import Typical from 'react-typical';
+import Typed from 'react-typed';
+
 
 
 
@@ -27,40 +29,59 @@ const {explores, startupsData, paths, impacts} = options;
 const Home = () => {
     let history = useHistory();
 
+    const [cursorIndex, setCursorIndex] = useState(0);
 
-  return (
+
+    const ref = useRef(null)
+    // console.log('currentcurrentcurrentcurrent', typed);
+
+    return (
     <div className={'home-container'}>
        <section className={'home-header'}>
            <div className={'home-header-first-title-container'}>
+
+
+               {/*<Typed*/}
+               {/*    strings={[*/}
+               {/*        'Search for products',*/}
+               {/*        'Search for categories',*/}
+               {/*        'Search for brands']}*/}
+               {/*    typeSpeed={40}*/}
+               {/*    backSpeed={50}*/}
+               {/*    attr="placeholder"*/}
+               {/*    loop >*/}
+               {/*    <input type="text"/>*/}
+               {/*</Typed>*/}
                <Text type={'kSemiBold'} size={20} className={'home-header-first-title-tm'}>TM</Text>
                <Text type={'kBold'} size={120} className={'home-header-first-title'}>We are moken.</Text>
                {/*<Typical wrapper="span"*/}
                {/*         className={'typical-test'}   steps={['We are moken.']} />*/}
                <div className={'animated-text-container'}>
-                   <Typical
-                       steps={[
-                           1000,
-                           'We build startups.',
-                           1500,
-                           'We invest in startups.',
-                           1500,
-                           'We validate startups.',
-                           1500,
-                           'We transform startups.',
-                           1500,
-                           'We educate startups.',
-                           1500,
-                           'We scale startups.',
-                           1500,
-                           'We connect startups.',
-                           1500,
-                           'We grow startups.'
-                       ]}
-                       // loop={Infinity}
-                       wrapper="span"
-                       className={'typical-test'}
+                   <div className={'animated-test-after'}>
+                       <Text className={'home-header-first-title'} type={'kBold'} size={120}>We </Text>
+                       {
+                           options.cursors.map((cursor, index) => {
+
+                               return <img src={cursor} style={{opacity: cursorIndex === index ? 1 : 0}}/>
+                           })
+                       }
+                       {/*<img src={options.cursors[cursorIndex]} />*/}
+                   </div>
+
+                   <Typed
+                       typeSpeed={75}
+                       backDelay={2000}
+                       backSpeed={65}
+                       ref={ref}
+                       loop
+                       cursorChar={''}
+                       strings={options.steps}
+                       preStringTyped={setCursorIndex}
+                       className={`typical-test ${options.cursorsColour[cursorIndex]}`}
                    />
-                   <span className={'animated-test-after'}/>
+                   <Text className={'home-header-first-title'} type={'kBold'} size={120} >
+                        startups.
+                   </Text>
                </div>
 
            </div>
@@ -97,7 +118,7 @@ const Home = () => {
                    'visions, ideas, and products that scale.',
                btnOptions: {
                    title: 'LET’S GET STARTED',
-                   route: '/'
+                   route: '/about-agency'
 
                }
            }}
@@ -109,7 +130,7 @@ const Home = () => {
                description: "A community comprised of passionate entrepreneurs, innovators, investors, and builders who share a goal of making an impact.",
                btnOptions: {
                    title: 'EXPLORE THE ECOSYSTEM',
-                   route: '/'
+                   route: '/community'
 
                }
            }}
@@ -174,7 +195,7 @@ const Home = () => {
                 description: `Unparalleled personalized access to hands-on incubation & acceleration programs dedicated to helping entrepreneurs scale their ventures.`,
                 btnOptions: {
                     title: 'DISCOVER OUR PROGRAMS',
-                    route: '/'
+                    route: '/about-programs'
 
                 }
             }}
@@ -205,7 +226,7 @@ const Home = () => {
                 exchange ideas, share resources, and connect with one another.`,
                 btnOptions: {
                     title: 'ACCESS YOUR FUTURE',
-                    route: '/'
+                    route: '/access'
 
                 }
             }}
@@ -228,7 +249,7 @@ const Home = () => {
                 description: "Developing meaningful brand experiences and unforgettable events that expand beyond traditional tactics and focus on audience engagement and strategy.",
                 btnOptions: {
                     title: 'EXPLORE EVENTS',
-                    route: '/'
+                    route: '/events'
 
                 }
             }}

@@ -32,6 +32,7 @@ const Ambassador = () => {
                   marketing, business, and networking experience from the ground up while building their resume,
                    earning money or course credits (pending your school’s approval) and hopefully having some fun!`}
                 btnTitle={"APPLY AS AN AMBASSADOR"}
+                onClick={() => window.open('https://forms.gle/xkzBDySrjpfZWnom9', '_blank')}
                 isLeftImage
             />
 
@@ -42,6 +43,7 @@ const Ambassador = () => {
             />
 
             <LeftInfoWithRightImage
+                onClick={() => window.open('https://forms.gle/xkzBDySrjpfZWnom9', '_blank')}
                 withoutRightPadding
                 imgUrl={ambassadorSecond}
                 mainTitle={"WHAT IT TAKES"}
@@ -58,6 +60,7 @@ const Ambassador = () => {
             />
 
             <LeftInfoWithRightImage
+                onClick={() => window.open('https://forms.gle/xkzBDySrjpfZWnom9', '_blank')}
                 imgUrl={ambassadorThird}
                 mainTitle={"NEXT STEPS & APPLYING"}
                 description={'Educate, inspire and connect future and current founders, entreprenuers, innovators, and investors by becoming a Moken Ambassador. Lead your community and make a long-lasting impact by joining other leaders from countries around the world.'}

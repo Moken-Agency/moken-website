@@ -9,6 +9,7 @@ import TitleSubTwoListCenter from "../../components/TitleSubTwoListsCenter";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import PartnersList from "../../components/PartnersList";
+import communityPartnersFirst from "../../images/community-partners-first.jpg";
 
 const CommunityPartnerScreen = () => {
   return (
@@ -18,7 +19,7 @@ const CommunityPartnerScreen = () => {
         subtitleClassName={'community-partner-header-title'}
         subtitle={"Building trusted partnerships requires building a true community."}
       />
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={communityPartnersFirst} />
       <TitleTwoDescriptions
         mainTitle={"OVERVIEW"}
         title={
@@ -34,6 +35,7 @@ const CommunityPartnerScreen = () => {
         imgUrl={""}
         btnTitle={'BECOME A PARTNER'}
         isLeftImage
+        onClick={() => window.open('https://forms.gle/gD8An6bT7yzFiBnD6', '_blank')}
       />
 
       <PartnersList />
@@ -49,6 +51,7 @@ const CommunityPartnerScreen = () => {
             title={"Harness the power of community"}
             subtitle={"APPLY TO PARTNER"}
             withIcon
+            onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
         />
 
       <LeftInfoWithRightImage
@@ -58,6 +61,7 @@ const CommunityPartnerScreen = () => {
             `We take the time to understand you and your business model to develop action driven, high-performing collaborative strategies. Our avant-garde tactics are cutting edge, blend seamlessly with our partner’s operational realities and goals while eliminatinng unnecessary risks.`
         }
         btnTitle={"BECOME A PARTNER"}
+          onClick={() => window.open('https://forms.gle/gD8An6bT7yzFiBnD6', '_blank')}
         // imgUrl={""}
       />
 

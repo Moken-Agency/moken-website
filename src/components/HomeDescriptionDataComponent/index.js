@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import Text from "../Text";
 import Button from "../Button";
+import {useHistory} from "react-router-dom";
 
 const HomeDescriptionDataComponent = ({
         containerClass = '',
@@ -13,11 +14,17 @@ const HomeDescriptionDataComponent = ({
           btnOptions: {
             title: '',
             route: '/',
-            click: () => {}
+            click: null
           }
         }
     }) => {
-  return (
+    let history = useHistory();
+
+    const handleOnClick = () => {
+        descriptionData.btnOptions.click ? descriptionData.btnOptions.click() : history.push( descriptionData.btnOptions.route)
+    }
+
+    return (
       <div className={`home-description-data-container ${containerClass}`}>
         <Text className={`home-description-data-title ${titleClass}`}
               type={'kBold'}
@@ -25,7 +32,7 @@ const HomeDescriptionDataComponent = ({
         <Text className={`home-description-data-description ${descriptionClass}`}
               type={'kLight'}
               size={20}>{descriptionData.description}</Text>
-        <Button title={descriptionData.btnOptions.title} />
+        <Button title={descriptionData.btnOptions.title} onClick={handleOnClick}/>
       </div>
   );
 };

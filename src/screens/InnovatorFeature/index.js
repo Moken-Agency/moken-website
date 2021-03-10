@@ -18,6 +18,8 @@ const InnovatorFeature = () => {
     <div className={"innovator-container"}>
       <HeaderTitle
         title={"INNOVATOR FEATURE"}
+        subtitleClassName={'innovator-feature-header-subtitle'}
+        descriptionClassName={'innovator-feature-header-description'}
         subtitle={"Show off your hard work, you deserve it."}
         description={"A community driven approach to showcasing & highlighting hardworking founders & innovators in the global startup ecosystem who are creating the future."}
         marginBottom={isMobile ? 152 : 142}
@@ -26,6 +28,8 @@ const InnovatorFeature = () => {
       <ImageBlock type={"full"} />
 
       <TitleSubDescription title={'ABOUT THE INITIATIVE'}
+                           subtitleClassName={'innovator-feature-about-subtitle'}
+                           descriptionClassName={'innovator-feature-about-description'}
                            subtitle={'A community driven initiative designed to promote and highlight hardworking innovators throughout the global startup ecosystem.'}
                            description={'We understand what it means to create community. We also know how difficult it is to' +
                            ' build a startup, especially during a global crisis. This is why we want to further create ' +
@@ -34,7 +38,8 @@ const InnovatorFeature = () => {
                            AdditionalComponent={() => {
                                return (
                                    <div style={{padding: isMobile ? '0 43px' : '0 14vw', marginTop: 50}}>
-                                       <Button title={'SHARE YOUR STORY'} />
+                                       <Button title={'SHARE YOUR STORY'}
+                                               onClick={() => window.open('https://forms.gle/XYDR2H6eFcYq56sQ7', '_blank')} />
                                    </div>
                                )
                            }} />
@@ -61,6 +66,8 @@ const InnovatorFeature = () => {
       <ImageTitleSubDescList
         title={"WHAT YOU’LL GAIN"}
         subtitle={"We make it easy to kickstart your vision."}
+        subtitleClassName={'innovator-feature-gain-subtitle'}
+        listClassName={'innovator-feature-gain-list'}
         // description={
         //   "With packages at a startup price point, we work with founders and " +
         //   "ideators with high growth potential. We're passionate about big ideas and" +
@@ -71,7 +78,10 @@ const InnovatorFeature = () => {
       />
 
       <LeftInfoWithRightImage
+        withoutRightPadding
         mainTitle={"NEXT STEPS & APPLICATION"}
+        titleClassName={"innovator-feature-steps-subtitle"}
+        descriptionClassName={'innovator-feature-steps-description'}
         title={"Showcasing your accomplishments made efficient and easy."}
         description={
          `All we need is a submission form. No application, no fees, no headache. It’s simple. You work hard & we want 
@@ -81,6 +91,7 @@ const InnovatorFeature = () => {
         }
         imgUrl={""}
         btnTitle={"SHARE YOUR STORY"}
+        onClick={() => window.open('https://forms.gle/XYDR2H6eFcYq56sQ7', '_blank')}
       />
 
       <EmailForm withForm />

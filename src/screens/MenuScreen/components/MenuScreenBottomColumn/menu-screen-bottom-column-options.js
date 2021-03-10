@@ -21,7 +21,7 @@ export default {
         { title: "Host an Event", route: "/host-an-event" },
         { title: "Sponsor the Future", route: "" },
         { title: "Become a Partner", route: "/our-partners" },
-        { title: "Become an Ambassador", route: "" },
+        { title: "Become an Ambassador", route: "/ambassador" },
       ],
     },
     {

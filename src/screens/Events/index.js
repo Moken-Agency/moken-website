@@ -104,7 +104,7 @@ return (
                     Join us and turn your consumers into brand fans. We partner alongside startups, founders, and organizations to develop and create experiential campaigns and events that expand beyond traditional tactics to focus on audience engagement and strategy.
                 </Text>
             </div>
-            <Button title={'HOST AN EVENT'}/>
+            <Button title={'HOST AN EVENT WITH US'} onClick={() => history.push('/host-an-event')}/>
         </div>
 
         <EmailForm withForm />

@@ -40,8 +40,8 @@ export default {
   mainMenu: [
     {
       title: "About",
-      dividerColor: "#000",
-      hoverColor: 'rgba(0,0,0,.30)',
+      dividerColor: "#c6cbe1",
+      // hoverColor: '#c6cbe1',
       subRouts: [
         {
           title: "ABOUT MOKEN",
@@ -72,7 +72,7 @@ export default {
     {
       title: "community",
       route: "community",
-      dividerColor: "#ff2a68",
+      dividerColor: "#c6cbe1",
       subRouts: [
         {
           title: "ABOUT THE COMMUNITY",
@@ -105,7 +105,7 @@ export default {
     },
     {
       title: "agency",
-      dividerColor: "#ffc4af",
+      dividerColor: "#fdcdc6",
       subRouts: [
         {
           title: "About Agency",
@@ -131,7 +131,7 @@ export default {
     },
     {
       title: "Programs",
-      dividerColor: "#00c39f",
+      dividerColor: "#efb95e",
       isComingSoon: true,
       // subRouts: [
       //   {
@@ -158,7 +158,7 @@ export default {
     },
     {
       title: "Events",
-      dividerColor: "#263da8",
+      dividerColor: "#ff9d72",
       subRouts: [
         {
           title: 'EVENTS',
@@ -180,7 +180,7 @@ export default {
     {
       title: "Access",
       route: "/access",
-      dividerColor: "#ff7d3e",
+      dividerColor: "#c6cbe1",
       subRouts: [
         {
           title: "ABOUT ACCESS",

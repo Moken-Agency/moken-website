@@ -9,7 +9,6 @@ import EmailForm from "../../components/EmailForm";
 import ProductTestingTeamCircles from "../../images/product-team.svg";
 import ProductTestingTeamCircle from "../../images/product-team-second.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import HeaderTitle from "../../components/HeaderTitle";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import HeaderSecondType from "../../components/HeaderSecondType";
@@ -45,33 +44,7 @@ const ProductTestingTeam = () => {
           rightFirstListTitle={"THE BENEFITS OF COLLABORATION"}
           firstList={benefits}
         />
-
         <ImageBlock position={"right"} url={SecondImage} />
-
-        {/*<Title title={"HOW IT WORKS"} className={"product-testing-title"} />*/}
-
-        {/*<div className={"joins-container"}>*/}
-        {/*  <Text*/}
-        {/*    className={"joins-title"}*/}
-        {/*    animationType={"fade-in"}*/}
-        {/*    size={50}*/}
-        {/*    type={"kBold"}*/}
-        {/*  >*/}
-        {/*    Join Us Today.*/}
-        {/*  </Text>*/}
-        {/*  <div>*/}
-        {/*    {joins.map((join, index) => {*/}
-        {/*      return (*/}
-        {/*        <IterableCircle*/}
-        {/*          {...join}*/}
-        {/*          key={"join" + index}*/}
-        {/*          count={index + 1}*/}
-        {/*          isLast={index === joins.length - 1}*/}
-        {/*        />*/}
-        {/*      );*/}
-        {/*    })}*/}
-        {/*  </div>*/}
-        {/*</div>*/}
       </div>
 
       <div className={"product-testing-team-circle-container"}>

@@ -8,9 +8,12 @@ import "./index.scss";
 import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList";
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
+import {useHistory} from "react-router-dom";
 
 const Access = () => {
-  return (
+    let history = useHistory();
+
+    return (
     <div className={"access-container"}>
       <HeaderTitle
         title={"ACCESS"}
@@ -38,6 +41,7 @@ const Access = () => {
         imgUrl={""}
         btnTitle={"JOIN THE NETWORK"}
         withoutRightPadding
+        onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
       />
 
       <ColorBlock
@@ -46,9 +50,7 @@ const Access = () => {
         withIcon
         textColor={"white"}
         backgroundColor={"black"}
-        blockType={'middle'}
-        type={"thin"}
-        size={45}
+        onClick={() => history.push('/our-partners')}
       />
 
       <LeftImageTitleSubDesList
@@ -65,6 +67,7 @@ const Access = () => {
         title={"Join our trusted community of partners and access new market opportunities."}
         description={`Anchored in simplicity we develop strategic partnerships with gamechanging individuals and companies that want to do better and be better. We know we have the power to shape the world, just as great partnerships have the power to revolutionize industries.`}
         imgUrl={""}
+        onClick={() => history.push('/our-partners')}
         btnTitle={"PARTNER WITH US"}
       />
 
@@ -72,7 +75,7 @@ const Access = () => {
         title={"CREATE THE FUTURE OF ACCESS"}
         description={`We know that dynamic actions define the future and that the ambition to lead requires the tenacity to adapt. The Network is only the tip of the iceberg for all that Access hopes to be. You can help us shape the future, simply tell us what you need to succeed and we’ll make it a reality.`}
         subtitle={"Create the future of access for founders & startups."}
-        onClick={() => {}}
+        onClick={() => window.open('https://forms.gle/eZ2m6fkS7cmPE9jL9', '_blank')}
         btnTitle={'SHARE YOUR INSIGHTS'}
       />
 

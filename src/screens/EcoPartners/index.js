@@ -11,6 +11,7 @@ import EmailForm from "../../components/EmailForm";
 import HeaderTitle from "../../components/HeaderTitle";
 import {useHistory} from "react-router-dom";
 import PartnersList from "../../components/PartnersList";
+import ecosystemFirst from "../../images/ecosystem-first.jpg";
 
 const EcoPartners = () => {
     let history = useHistory();
@@ -22,7 +23,7 @@ const EcoPartners = () => {
         title={"ECOSYSTEM PARTNERS"}
         subtitle={"Hand-picked partners dedicated to developing  synergy in support of startups."}
       />
-      <ImageBlock position={"right"} />
+      <ImageBlock position={"right"} url={ecosystemFirst}/>
       <TitleTwoDescriptions
           titleClassName={'eco-partners-overview-title'}
         mainTitle={"OVERVIEW"}
@@ -45,6 +46,7 @@ const EcoPartners = () => {
         }
         imgUrl={""}
         isLeftImage
+        onClick={() => window.open('https://forms.gle/gD8An6bT7yzFiBnD6', '_blank')}
         btnTitle={'BECOME A PARTNER'}
       />
 

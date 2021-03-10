@@ -7,6 +7,10 @@
   display: grid;
   cursor: pointer;
   grid-template-columns: 1fr 1fr 1fr;
+  transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+  &:hover {
+    transform: translate(15px);
+  }
   @media screen and (max-width: 600px) {
     flex-direction: column;
     grid-template-columns: 1fr;

@@ -7,6 +7,7 @@ import ink from './Bitmap.png';
 import noissue from './noissue.jpg';
 import acadium from './acadium.jpg';
 import informa from './informa.jpg';
+import harvard from './harvard.jpg';
 
 
 
@@ -20,5 +21,5 @@ export default {
     noissue,
     acadium,
     informa,
-
+    harvard
 }

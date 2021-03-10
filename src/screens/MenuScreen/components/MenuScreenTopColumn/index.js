@@ -24,9 +24,15 @@ const MenuScreenTopColumn = ({
   description = "",
   subTitle = "",
   image,
-    route
+  route,
+  link
 }) => {
+
   const history = useHistory();
+
+  const handleOnClick = () => {
+    link ? window.open(link, '_blank') : history.push(route);
+  }
 
   return (
     <div className={"menu-screen-top-column-container"}>
@@ -52,7 +58,7 @@ const MenuScreenTopColumn = ({
       >
         {description}
       </Text>
-      <div className={'subtitle-arrow-container'}   onClick={() => history.push(route)}>
+      <div className={'subtitle-arrow-container'}   onClick={handleOnClick}>
         <Text
           size={14}
           mobSize={10}

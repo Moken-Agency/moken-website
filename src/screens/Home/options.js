@@ -1,6 +1,9 @@
 import onlineCourses from '../../images/home-online-courses.jpg';
 import networking from "../../images/home-networking.jpg";
 import resources from "../../images/home-resources.jpg";
+import cursorAgency from "../../images/home-cursors/home-agency-cursor.svg";
+import cursorEvents from "../../images/home-cursors/home-events-cursor.svg";
+import cursorPrograms from "../../images/home-cursors/home-programs-cursor.svg";
 
 export default {
     explores: [
@@ -130,5 +133,35 @@ export default {
             subtitle: 'Resources'
         },
 
+    ],
+    steps: [
+        'build',
+        'invest in',
+        'validate',
+        'transform',
+        'educate',
+        'scale',
+        'connect',
+        'grow'
+    ],
+    cursors: [
+        cursorAgency,
+        cursorPrograms,
+        cursorAgency,
+        cursorAgency,
+        cursorPrograms,
+        cursorAgency,
+        cursorEvents,
+        cursorAgency,
+    ],
+    cursorsColour: [
+        'typed-cursor-agency',
+        'typed-cursor-programs',
+        'typed-cursor-agency',
+        'typed-cursor-agency',
+        'typed-cursor-programs',
+        'typed-cursor-agency',
+        'typed-cursor-events',
+        'typed-cursor-agency',
     ]
 }

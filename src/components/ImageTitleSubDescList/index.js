@@ -7,9 +7,11 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 const ImageTitleSubDescList = ({
   title = "",
   subtitle = "",
+  subtitleClassName = "",
   description = "",
   list = [],
   imgURL = "",
+  listClassName = ""
 }) => {
   const { isMobile } = useWindowDimensions();
   return (
@@ -30,7 +32,7 @@ const ImageTitleSubDescList = ({
         </Text>
         <Text
           size={50}
-          className={"image-title-sub-desc-list-subtitle"}
+          className={`image-title-sub-desc-list-subtitle ${subtitleClassName}`}
           animationType={"fade-in"}
           mobSize={35}
           type={"kBold"}
@@ -51,7 +53,7 @@ const ImageTitleSubDescList = ({
           return (
             <div
               key={"ImageTitleSubDescList" + index}
-              className={"image-title-sub-desc-list-item"}
+              className={`image-title-sub-desc-list-item ${listClassName}`}
             >
               <Text
                 size={14}
