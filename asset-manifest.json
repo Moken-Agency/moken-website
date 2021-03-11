@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/moken-website/static/css/main.f992653a.chunk.css",
-    "main.js": "/moken-website/static/js/main.e0aa25dc.chunk.js",
-    "main.js.map": "/moken-website/static/js/main.e0aa25dc.chunk.js.map",
+    "main.css": "/moken-website/static/css/main.edf91064.chunk.css",
+    "main.js": "/moken-website/static/js/main.036da62b.chunk.js",
+    "main.js.map": "/moken-website/static/js/main.036da62b.chunk.js.map",
     "runtime-main.js": "/moken-website/static/js/runtime-main.be4c88a6.js",
     "runtime-main.js.map": "/moken-website/static/js/runtime-main.be4c88a6.js.map",
     "static/css/2.7951516b.chunk.css": "/moken-website/static/css/2.7951516b.chunk.css",
-    "static/js/2.c047eaf1.chunk.js": "/moken-website/static/js/2.c047eaf1.chunk.js",
-    "static/js/2.c047eaf1.chunk.js.map": "/moken-website/static/js/2.c047eaf1.chunk.js.map",
+    "static/js/2.bdc3a422.chunk.js": "/moken-website/static/js/2.bdc3a422.chunk.js",
+    "static/js/2.bdc3a422.chunk.js.map": "/moken-website/static/js/2.bdc3a422.chunk.js.map",
     "index.html": "/moken-website/index.html",
-    "precache-manifest.85538b53b9d79ef5527b566b1bfbf60c.js": "/moken-website/precache-manifest.85538b53b9d79ef5527b566b1bfbf60c.js",
+    "precache-manifest.738f9ffd23f5eeaaf9412dd3b7908468.js": "/moken-website/precache-manifest.738f9ffd23f5eeaaf9412dd3b7908468.js",
     "service-worker.js": "/moken-website/service-worker.js",
     "static/css/2.7951516b.chunk.css.map": "/moken-website/static/css/2.7951516b.chunk.css.map",
-    "static/css/main.f992653a.chunk.css.map": "/moken-website/static/css/main.f992653a.chunk.css.map",
-    "static/js/2.c047eaf1.chunk.js.LICENSE.txt": "/moken-website/static/js/2.c047eaf1.chunk.js.LICENSE.txt",
+    "static/css/main.edf91064.chunk.css.map": "/moken-website/static/css/main.edf91064.chunk.css.map",
+    "static/js/2.bdc3a422.chunk.js.LICENSE.txt": "/moken-website/static/js/2.bdc3a422.chunk.js.LICENSE.txt",
     "static/media/001-instagram-2-black.svg": "/moken-website/static/media/001-instagram-2-black.750b8bd3.svg",
     "static/media/002-twitter-black.svg": "/moken-website/static/media/002-twitter-black.d77c0f8d.svg",
     "static/media/002-twitter.svg": "/moken-website/static/media/002-twitter.7f632dc6.svg",
@@ -81,6 +81,8 @@
     "static/media/careersMob.png": "/moken-website/static/media/careersMob.ca95c035.png",
     "static/media/color.svg": "/moken-website/static/media/color.daf94797.svg",
     "static/media/community-first.jpg": "/moken-website/static/media/community-first.8b2b5e11.jpg",
+    "static/media/community-partner-second.jpg": "/moken-website/static/media/community-partner-second.f88ed3e1.jpg",
+    "static/media/community-partner-third.jpg": "/moken-website/static/media/community-partner-third.940d5ee7.jpg",
     "static/media/community-partners-first.jpg": "/moken-website/static/media/community-partners-first.2f98a754.jpg",
     "static/media/community-second.jpg": "/moken-website/static/media/community-second.c800e348.jpg",
     "static/media/community-third.jpg": "/moken-website/static/media/community-third.936c53f6.jpg",
@@ -92,6 +94,8 @@
     "static/media/dog-one.jpg": "/moken-website/static/media/dog-one.209f86de.jpg",
     "static/media/dog-two.jpg": "/moken-website/static/media/dog-two.8e7803ed.jpg",
     "static/media/ecosystem-first.jpg": "/moken-website/static/media/ecosystem-first.feeee3c8.jpg",
+    "static/media/ecosystem-second.jpg": "/moken-website/static/media/ecosystem-second.5962bb78.jpg",
+    "static/media/ecosystem-third.jpg": "/moken-website/static/media/ecosystem-third.968f131b.jpg",
     "static/media/events-second.jpg": "/moken-website/static/media/events-second.388228ba.jpg",
     "static/media/expertise-first-image.png": "/moken-website/static/media/expertise-first-image.ae9882a5.png",
     "static/media/expertise-footer.jpg": "/moken-website/static/media/expertise-footer.f9aed53d.jpg",
@@ -182,13 +186,14 @@
     "static/media/upcoming-events-header.jpg": "/moken-website/static/media/upcoming-events-header.6cb5466d.jpg",
     "static/media/upevents.svg": "/moken-website/static/media/upevents.415fa24c.svg",
     "static/media/upeventsmob.svg": "/moken-website/static/media/upeventsmob.f6fa9ca9.svg",
+    "static/media/virtual-courses.jpg": "/moken-website/static/media/virtual-courses.92d71362.jpg",
     "static/media/web-color-startups-leftaligned.svg": "/moken-website/static/media/web-color-startups-leftaligned.8dfb1a7f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.be4c88a6.js",
     "static/css/2.7951516b.chunk.css",
-    "static/js/2.c047eaf1.chunk.js",
-    "static/css/main.f992653a.chunk.css",
-    "static/js/main.e0aa25dc.chunk.js"
+    "static/js/2.bdc3a422.chunk.js",
+    "static/css/main.edf91064.chunk.css",
+    "static/js/main.036da62b.chunk.js"
   ]
 }

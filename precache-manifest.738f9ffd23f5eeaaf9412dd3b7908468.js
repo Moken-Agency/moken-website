@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "567244095f8d0baa5b497888cf30e094",
+    "revision": "541da9bcbc8ce9945b980491ff8dbcd7",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "b25dd6fffd109b0f38c0",
+    "revision": "aef38ad4660732547842",
     "url": "/moken-website/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "2decec51ea443171b14d",
-    "url": "/moken-website/static/css/main.f992653a.chunk.css"
+    "revision": "cb3b7de439c47154c8fc",
+    "url": "/moken-website/static/css/main.edf91064.chunk.css"
   },
   {
-    "revision": "b25dd6fffd109b0f38c0",
-    "url": "/moken-website/static/js/2.c047eaf1.chunk.js"
+    "revision": "aef38ad4660732547842",
+    "url": "/moken-website/static/js/2.bdc3a422.chunk.js"
   },
   {
     "revision": "37cb981662b495e21676aa119dbbcad0",
-    "url": "/moken-website/static/js/2.c047eaf1.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.bdc3a422.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2decec51ea443171b14d",
-    "url": "/moken-website/static/js/main.e0aa25dc.chunk.js"
+    "revision": "cb3b7de439c47154c8fc",
+    "url": "/moken-website/static/js/main.036da62b.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -400,6 +400,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/community-first.8b2b5e11.jpg"
   },
   {
+    "revision": "f88ed3e15d34186317666e9ee7cf852d",
+    "url": "/moken-website/static/media/community-partner-second.f88ed3e1.jpg"
+  },
+  {
+    "revision": "940d5ee7b5fcf34ac3f21a8e875b204a",
+    "url": "/moken-website/static/media/community-partner-third.940d5ee7.jpg"
+  },
+  {
     "revision": "2f98a754ce3066adefb9fe29184c0779",
     "url": "/moken-website/static/media/community-partners-first.2f98a754.jpg"
   },
@@ -442,6 +450,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "feeee3c835b79042f491d14bbcfde62c",
     "url": "/moken-website/static/media/ecosystem-first.feeee3c8.jpg"
+  },
+  {
+    "revision": "5962bb787d506a1515c6321ab3292b82",
+    "url": "/moken-website/static/media/ecosystem-second.5962bb78.jpg"
+  },
+  {
+    "revision": "968f131b9d0fa4414943504fc467d1ac",
+    "url": "/moken-website/static/media/ecosystem-third.968f131b.jpg"
   },
   {
     "revision": "388228ba1d35cab6c8d84cac2307c657",
@@ -802,6 +818,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f6fa9ca9e2ff08ba1edf725bbb7fe2a9",
     "url": "/moken-website/static/media/upeventsmob.f6fa9ca9.svg"
+  },
+  {
+    "revision": "92d71362355f4b5fa4c723a8ae008a13",
+    "url": "/moken-website/static/media/virtual-courses.92d71362.jpg"
   },
   {
     "revision": "8dfb1a7f31b0f3da920c579499dc24f3",
