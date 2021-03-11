@@ -1,3 +1,6 @@
+import partnersImage from '../../images/partners';
+
+
 export default {
   involved: [
     {
@@ -14,11 +17,11 @@ Partners`,
       route: "/eco-partners",
     },
     {
-      title: `Ecosystem
+      title: `Industry
 Partners`,
       subtitle:
       `Tech companies and solution providers with deep vertical market experience and expertise to help our startups and founder overcome challenges.`,
-      route: "/eco-partners",
+      route: "/industry-partners",
     },
   ],
   collaborates: [
@@ -71,4 +74,38 @@ Partners`,
       link: "",
     },
   ],
+  partners: [
+    {
+      link: 'https://inkllp.com',
+      imgURL: partnersImage.ink
+    },
+    {
+      link: 'https://ownr.grsm.io/moken',
+      imgURL: partnersImage.owner
+    },
+    {
+      link: 'https://segment.com/industry/startups/',
+      imgURL: partnersImage.segment
+    },
+    {
+      link: 'https://www.hubspot.com/startups',
+      imgURL: partnersImage.hubspot
+    },
+    {
+      link: '',
+      imgURL: partnersImage.activate
+    },
+    {
+      link: '',
+      imgURL: partnersImage.fast
+    },
+    {
+      link: 'https://noissue.co',
+      imgURL: partnersImage.noissue
+    },
+    {
+      link: '',
+      imgURL: partnersImage.acadium
+    },
+  ]
 };

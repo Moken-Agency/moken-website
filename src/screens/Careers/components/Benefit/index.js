@@ -7,7 +7,7 @@ const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
     <div className={"benefit-title-first-container"}>
       <img src={img} className={'benefit-shape-image'}/>
       <Text
-        size={12}
+        size={14}
         mobSize={12}
         type={"kRegular"}
         // type={"semiBold"}
@@ -17,7 +17,7 @@ const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
         {title}
       </Text>
       <Text
-        size={"1.85vw"}
+        size={30}
         mobSize={30}
         animationType={"fade-in"}
         type={"kLight"}
@@ -27,7 +27,7 @@ const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
         {subtitle}
       </Text>
       <Text
-        size={"1.2vw"}
+        size={20}
         mobSize={16}
         animationType={"fade-in"}
         type={"kLight"}

@@ -44,8 +44,14 @@
       background-color: transparent;
       position: absolute;
       top: 28px;
+
+
       cursor: pointer;
       right: 0;
+      @media screen and (max-width: 600px) {
+        top: 65px;
+
+      };
       :hover {
         font-weight: 900;
       }

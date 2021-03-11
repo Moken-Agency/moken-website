@@ -20,8 +20,10 @@
       padding: 45px 60px 0 55px;
   }
   @media only screen and (max-width: 600px) {
-    width: auto !important;
     margin-bottom: 15vw;
+    width: auto;
+    min-height: initial;
+    min-width: initial;
     .community-partner-info-container {
       padding: 8vw;
     }

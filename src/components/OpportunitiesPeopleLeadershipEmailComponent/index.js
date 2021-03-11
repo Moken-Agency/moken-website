@@ -3,8 +3,11 @@ import Input from "../Input";
 import React from "react";
 import Title from "../Title";
 import './index.scss';
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const OpportunitiesPeopleLeadershipEmailComponent = ({title = '', subtitle = '', description = '', imgURL =''}) => {
+    const { isMobile } = useWindowDimensions();
+
     return (
         <>
         <Title
@@ -28,6 +31,7 @@ const OpportunitiesPeopleLeadershipEmailComponent = ({title = '', subtitle = '',
                     // type={"light"}
                     animationType={"fade-in"}
                     size={20}
+                    mobSize={16}
                     className={"left-second-title"}
                     containerStyles={{lineHeight: '30px'}}
                 >
@@ -35,12 +39,12 @@ const OpportunitiesPeopleLeadershipEmailComponent = ({title = '', subtitle = '',
                 </Text>
                 <div className={"input-container"}>
                     <Input placeholder={"Your name"} c
-                           containerStyles={{width: '45%'}}
+                           containerStyles={{width: isMobile ? 'auto' : '45%'}}
                            mobSize={15}
                            value={''}
                     />
                     <Input
-                        containerStyles={{width: '45%'}}
+                        containerStyles={{width: isMobile ? 'auto' : '45%'}}
                         placeholder={"Email"}
                         width={"100%"}
                         mobSize={15}

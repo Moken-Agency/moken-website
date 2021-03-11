@@ -4,6 +4,7 @@ import resources from "../../images/home-resources.jpg";
 import cursorAgency from "../../images/home-cursors/home-agency-cursor.svg";
 import cursorEvents from "../../images/home-cursors/home-events-cursor.svg";
 import cursorPrograms from "../../images/home-cursors/home-programs-cursor.svg";
+import virtualCourses from "../../images/virtual-courses.jpg";
 
 export default {
     explores: [
@@ -16,13 +17,15 @@ export default {
             },
             btnOptions: {
                 title: 'EXPLORE AGENCY',
-                click: () => {}
+                click: () => {},
+                route: '/about-agency'
+
             },
-            route: '/about-agency'
         },
         {
             title: 'Learn.',
             description: 'Where startups & founders learn & evolve.',
+            isComingSoon: true,
             mokenTitle: {
                 first: 'moken',
                 second: 'programs'
@@ -68,7 +71,8 @@ export default {
             subtitle: 'Unique program streams'
         },
         {
-            title: '125+ ',
+            title: '125',
+            suffix: '+',
             subtitle: 'Founders per year impacted'
         }
     ],
@@ -86,9 +90,11 @@ export default {
             route: '/about-agency'
         },
         {
-            title: 'Learn together.',
+            title: 'Coming soon.',
+            // title: 'Learn together.',
             subtitle: 'For Students, Founders & Startups',
-            route: '/about-programs'
+            route: '/about-programs',
+            isComingSoon: true
         },
         {
             title: 'Partner with us.',
@@ -123,7 +129,7 @@ export default {
             subtitle: 'Courses'
         },
         {
-            backgroundImage: onlineCourses,
+            backgroundImage: virtualCourses,
             title: 'Virtual',
             subtitle: 'Events'
         },

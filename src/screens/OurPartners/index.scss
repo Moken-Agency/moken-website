@@ -121,6 +121,9 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 600px){
+      grid-template-columns: 1fr 1fr;
+    }
     .grey-block {
       //width: 6vw;
       //height: 2.5vw;
@@ -181,6 +184,7 @@
       line-height: 53px;
       @media only screen and (max-width: 600px) {
         line-height: 37px;
+        margin-bottom: 40px;
       }
     }
   }

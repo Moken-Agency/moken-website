@@ -54,7 +54,7 @@ return (
         <HeaderSecondType
             subtitleClassName={'events-header-subtitle'}
            title={'MOKEN EVENTS'}
-           subtitle={'Creating unforgettable experiences to connect humans.'}
+           subtitle={'Creating meaningful experiences to connect passionate individuals.'}
         />
 
         <ImageBlock url={EventsHeaderImage} imgClassName={'events-image-first-block'} position={'right'}/>
@@ -63,9 +63,9 @@ return (
             subtitleClassName={'events-experiences-subtitle'}
             descriptionClassName={'events-experiences-description'}
             title={'MEANINGFUL EXPERIENCES WITH MEASURABLE IMPACT'}
-            subtitle={'Immersive experiences that create amazingly compelling stories.'}
+            subtitle={'Immersive experiences full of complex and compelling stories and the humans that tell them.'}
             descriptions={[
-                'At Moken Events our purpose is to harness and drive positive change through networking, digital and virtual summits, startup conferences, employee engagements, and social impact events. We humanize brands and connect audiences through creative storytelling and thoughtful, purpose-driven engagements.',
+                'At Moken Events our purpose is to Facilitate positive change through networking, digital and virtual summits, startup conferences, employee engagements, and social impact events. We humanize brands and connect audiences through creative storytelling and thoughtful, purpose-driven engagements.',
                 'Our team is comprised of experts, educators, and innovators who blend industry experience with an unwavering passion for tackling new challenges. As perpetual problem solvers, we proactively address the needs of the startup community by anticipating challenges and working tirelessly to develop events and interactive programming that drive growth and create impact.'
 
             ]}
@@ -73,7 +73,7 @@ return (
         <ImageBlock position={'right'} url={eventsSecond}/>
 
         <TitleShortListWithBtn title={'UPCOMING EVENTS'}
-                               subtitle={'Brand experiences that are extraordinarily marvelous.'}
+                               subtitle={'Engaging and informative experiences.'}
                                list={events.events}
                                btnTitle={'SEE ALL EVENTS'}
                                btnType={'default'}

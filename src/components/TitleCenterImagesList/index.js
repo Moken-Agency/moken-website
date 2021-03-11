@@ -21,6 +21,7 @@ const TitleCenterImagesList = ({ title = "", list = [] }) => {
             className={"title-center-images-list-item"}
             src={imgURL}
             style={{...rest}}
+            onClick={() => window.open(rest.link, '_blank')}
             key={"TitleCenterImagesList" + index}
           />
         ))}

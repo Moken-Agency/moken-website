@@ -29,6 +29,7 @@
     grid-column-gap: 60px;
     @media only screen and (max-width: 600px) {
       margin-bottom: 185px;
+      grid-template-columns: 1fr 1fr;
     }
     .people-images-item {
       display: flex;
@@ -36,7 +37,11 @@
       align-items: center;
       img {
         object-fit: fill;
-        width: 250px;
+        max-width: 250px;
+        @media only screen and (max-width: 600px) {
+          max-width: initial;
+          height: 25px;
+        }
       }
     }
 

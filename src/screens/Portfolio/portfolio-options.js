@@ -5,11 +5,13 @@ export default {
       subTitle: "ACQUIRED COMPANIES",
     },
     {
-      title: "6+",
+      title: "6",
+      suffix: "+",
       subTitle: "INDUSTRIES PENETRATED",
     },
     {
-      title: "5M",
+      title: "5",
+      suffix: "M",
       subTitle: "LINES OF CODE DEVELOPED",
     },
     {

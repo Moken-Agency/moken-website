@@ -22,7 +22,7 @@ const SubMenuItem = ({ title = "", dividerColor = "#000", route, setHoveredIndex
     <button
       className={"sub-menu-item-container"}
       onClick={handleOnClick}
-      style={{cursor: isComingSoon ? 'initial' : 'pointer'}}
+      style={{cursor: isComingSoon ? 'not-allowed' : 'pointer'}}
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >

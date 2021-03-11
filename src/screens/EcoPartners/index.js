@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ImageBlock from "../../components/ImageBlock";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
@@ -12,12 +12,22 @@ import HeaderTitle from "../../components/HeaderTitle";
 import {useHistory} from "react-router-dom";
 import PartnersList from "../../components/PartnersList";
 import ecosystemFirst from "../../images/ecosystem-first.jpg";
+import ecosystemSecond from "../../images/ecosystem-second.jpg";
+import ecosystemThird from "../../images/ecosystem-third.jpg";
+
+import Form from "../../components/Form";
 
 const EcoPartners = () => {
     let history = useHistory();
 
+    const [isPartnershipFormOpened, setIsPartnershipFormOpened] = useState(false);
+
     return (
     <div className={"eco-partner-screen"}>
+        <Form isOpen={isPartnershipFormOpened} setIsOpen={setIsPartnershipFormOpened}>
+           <iframe src={"https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true"} width={'100%'} height={'auto'} />
+        </Form>
+
       <HeaderSecondType
         subtitleClassName={'eco-partner-header-title'}
         title={"ECOSYSTEM PARTNERS"}
@@ -44,9 +54,9 @@ const EcoPartners = () => {
         description={
             `With a focus on diversity and inclusivity, our Ecosystem Partners are enthusiastic organizations working together to help create extraordinary startups. They’re accessiblity focused resource and education-driven programs powering students, founders, and entrepreneurs throughout the startup ecosystem.`
         }
-        imgUrl={""}
+        imgUrl={ecosystemSecond}
         isLeftImage
-        onClick={() => window.open('https://forms.gle/gD8An6bT7yzFiBnD6', '_blank')}
+        onClick={() => setIsPartnershipFormOpened(true)}
         btnTitle={'BECOME A PARTNER'}
       />
 
@@ -79,7 +89,8 @@ const EcoPartners = () => {
              tactics are cutting edge, blend seamlessly with our partner’s operational realities, and eliminate unnecessary risks.`}
             btnTitle={"BECOME A PARTNER"}
             descriptionClassName={'eco-partners-last-image-block-description'}
-            imgUrl={""}
+            imgUrl={ecosystemThird}
+            onClick={() => setIsPartnershipFormOpened(true)}
       />
 
       <EmailForm withForm />

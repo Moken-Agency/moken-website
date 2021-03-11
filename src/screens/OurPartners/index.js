@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Text from "../../components/Text";
 import Title from "../../components/Title";
 import "./index.scss";
@@ -19,14 +19,23 @@ import arrowUpRight from '../../images/arrow-up-right-black.svg';
 import ImageBlock from "../../components/ImageBlock";
 import partnersImage from '../../images/partners';
 import ourPartnersFirst from '../../images/our-partners-first-right@2x.jpg';
+import Form from "../../components/Form";
 
 const { involved, collaborates, purposes } = options;
 
 const OurPartners = () => {
   const { isMobile } = useWindowDimensions();
+    const [isFormOpened, setIsFormOpened] = useState(false);
+
+    const handleOpenPartnerLink = (link) => {
+        return link ? window.open(link, '_blank') : null;
+    }
 
   return (
     <div className={"our-partners-container"}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+        </Form>
       <HeaderTitle
         title={"OUR PARTNERS"}
         subtitle={"Success fuelled by partnership."}
@@ -77,9 +86,12 @@ const OurPartners = () => {
             Meet a few of our collaborative, community-focused partners that pair their passion with purpose.
         </Text>
         <div className={"partners-container"}>
-          {Object.values(partnersImage).map((value) => {
-              return <div data-aos="fade-in" className={"grey-block"}>
-                  <img src={value} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
+          {options.partners.map(({imgURL, link}) => {
+              return <div data-aos="fade-in"
+                          style={{cursor: link ? 'pointer' : 'initial'}}
+                          className={"grey-block"}
+                          onClick={() => handleOpenPartnerLink(link)}>
+                  <img src={imgURL} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
               </div>
           })
           }
@@ -92,7 +104,7 @@ const OurPartners = () => {
         withIcon
         blockType={"middle"}
         backgroundColor={"black"}
-        onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
+        onClick={() => window.open('https://www.dropbox.com/s/y6mbiu12iy4d7ca/Partner%20Program%20Guide.pdf?dl=0', '_blank')}
       />
 
       {/*<TwoColumnsHugeInfo*/}
@@ -121,7 +133,7 @@ const OurPartners = () => {
               // containerStyles={{width: isMobile ? 'auto' : 583}}
         >Interested in becoming a partner and leveraging a global community network?</Text>
         <div className={'explore-our-partners-potential-container'}
-             onClick={() => window.open('https://forms.gle/VKyuj9Pqe6SFzUdw9', '_blank')}>
+             onClick={() => setIsFormOpened(true)}>
             <Text type={'kSemiBold'}
                   // size={'.9vw'}
                   mobSize={12}

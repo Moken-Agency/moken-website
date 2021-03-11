@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import SubmitYourResume from "../SubmitYourResume";
 import {ReactComponent as ArrowUpRight} from "../../images/arrow-up-right.svg";
 import Text from '../Text';
@@ -35,7 +35,8 @@ const UnderlineTextWithIcon = ({
   withIcon = false,
   size,
   mobSize,
-  hoverIndex = 0
+  hoverIndex = 0,
+                                 isComingSoon = false
 }) => {
 
   const [borderStatus, setBorderStatus] = useState('default');
@@ -56,13 +57,19 @@ const UnderlineTextWithIcon = ({
 
   }
 
+  const handleOnClick = () => {
+    return isComingSoon ? null : onClick()
+  }
+
   return (
-  <div className={'underline-text-main-container'} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+  <div className={'underline-text-main-container'}
+       style={{cursor: isComingSoon ? 'not-allowed' : 'pointer'}}
+       onClick={handleOnClick}
+       onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
     <div className={`underline-text-container ${className}`}>
       <Text  size={size}
              mobSize={mobSize}
              className={`underline-text`}
-             onClick={onClick}
              title={title}
              color={color}>
         {title}

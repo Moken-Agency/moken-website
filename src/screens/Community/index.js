@@ -77,7 +77,7 @@ const Community = () => {
 
   return (
     <div className={"community-container"}>
-        <img src={communitySVG} className={'community-absolute-img'}/>
+      <img src={communitySVG} className={'community-absolute-img'}/>
       <HeaderTitle
         title={"MOKEN COMMUNITY"}
         descriptionClassName={'community-header-description'}
@@ -187,6 +187,7 @@ const Community = () => {
             btnTitle={"JOIN THE NETWORK"}
             imgUrl={communityThird}
             containerClassName={''}
+            onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
         />
 
       <ProgramCommunityListPartner

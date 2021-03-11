@@ -32,7 +32,7 @@ const HomeDescriptionDataComponent = ({
         <Text className={`home-description-data-description ${descriptionClass}`}
               type={'kLight'}
               size={20}>{descriptionData.description}</Text>
-        <Button title={descriptionData.btnOptions.title} onClick={handleOnClick}/>
+        <Button {...descriptionData.btnOptions} onClick={handleOnClick}/>
       </div>
   );
 };

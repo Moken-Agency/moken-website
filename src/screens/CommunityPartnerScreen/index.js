@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ImageBlock from "../../components/ImageBlock";
 import TitleTwoDescriptions from "../../components/TitleTwoDescriptions";
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
@@ -10,10 +10,21 @@ import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import PartnersList from "../../components/PartnersList";
 import communityPartnersFirst from "../../images/community-partners-first.jpg";
+import communityPartnersSecond from "../../images/community-partner-second.jpg";
+import communityPartnersThird from "../../images/community-partner-third.jpg";
+import Form from "../../components/Form";
 
 const CommunityPartnerScreen = () => {
+    const [isPartnershipFormOpened, setIsPartnershipFormOpened] = useState(false);
+    const [isBecomePartnerFormOpened, setIsBecomePartnerFormOpened] = useState(false);
   return (
     <div className={"community-partner-screen"}>
+        <Form isOpen={isPartnershipFormOpened} setIsOpen={setIsPartnershipFormOpened} formName={'Partnership Application Form'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width="100%" height="auto" frameborder="0" marginheight="0" marginwidth="0" />
+        </Form>
+        <Form isOpen={isBecomePartnerFormOpened} setIsOpen={setIsBecomePartnerFormOpened} formName={'Partnership Application Form'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width="100%" height="auto" frameborder="0" marginheight="0" marginwidth="0" />
+        </Form>
       <HeaderSecondType
         title={"COMMUNITY PARTNERS"}
         subtitleClassName={'community-partner-header-title'}
@@ -32,10 +43,10 @@ const CommunityPartnerScreen = () => {
         mainTitle={"WHO ARE COMMUNITY PARTNERS?"}
         title={`True leaders aim to grow communities themselves, and Moken is here to help make that a reality.`}
         description={`Our Community Partners have a wide range of skills, specialties, industries, and forms. They’re individuals, students, entrepreneurs, student groups, freelancers, small to medium-sized businesses, and local influencers who are ready to expand their networks, all while supporting and integrating with startups along the way.`}
-        imgUrl={""}
+        imgUrl={communityPartnersSecond}
         btnTitle={'BECOME A PARTNER'}
         isLeftImage
-        onClick={() => window.open('https://forms.gle/gD8An6bT7yzFiBnD6', '_blank')}
+        onClick={() => setIsPartnershipFormOpened(true)}
       />
 
       <PartnersList />
@@ -61,8 +72,8 @@ const CommunityPartnerScreen = () => {
             `We take the time to understand you and your business model to develop action driven, high-performing collaborative strategies. Our avant-garde tactics are cutting edge, blend seamlessly with our partner’s operational realities and goals while eliminatinng unnecessary risks.`
         }
         btnTitle={"BECOME A PARTNER"}
-          onClick={() => window.open('https://forms.gle/gD8An6bT7yzFiBnD6', '_blank')}
-        // imgUrl={""}
+          onClick={() => setIsBecomePartnerFormOpened(true)}
+        imgUrl={communityPartnersThird}
       />
 
       <EmailForm withForm />

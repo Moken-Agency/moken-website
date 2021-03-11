@@ -12,10 +12,7 @@
       }
     }
     .underline-text {
-      span {
-        transform: translate(0, -15px);
-        //color: #000080 !important;
-      }
+      transform: translate(0, -15px);
     }
     .orange {
       span {
@@ -79,6 +76,9 @@
     @media only screen and (max-width: 600px) {
       margin-bottom: 20px;
     }
+  .underline-text {
+    transition: .5s;
+  }
   .underline-text-divider-container {
     position: relative;
     height: 2px;

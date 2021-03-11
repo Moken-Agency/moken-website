@@ -119,7 +119,7 @@ const TwoColumnsHugeInfo = ({
             </Text> : null}
 
           {!secondListLikeFirst
-            ? secondList.map(({ title = "", subtitle = "", link = "", route = '/', hoverColour = '#000', colourClassName = '' }, index) => {
+            ? secondList.map(({ title = "", subtitle = "", link = "", route = '/', hoverColour = '#000', colourClassName = '', isComingSoon }, index) => {
                 return (
                   <UnderlineTextWithIcon
                     withIcon={secondListWithIcon}
@@ -128,11 +128,12 @@ const TwoColumnsHugeInfo = ({
                     hoverColour={hoverColour}
                     size={34}
                     hoverIndex={index}
+                    isComingSoon={isComingSoon}
                     colourClassName={colourClassName}
                     mobSize={18}
                     className={"two-column-submit-your-resume"}
                     title={title}
-                    onClick={() => link? window.open(link, '_blank') : history.push(route) }
+                    onClick={() => link ? window.open(link, '_blank') : route ? history.push(route) : null }
                   />
                 );
               })

@@ -3,19 +3,13 @@ import {useHistory, useLocation} from "react-router-dom";
 import LogoSVG from "../../images/moken.svg";
 import './index.scss';
 import options from "./options";
+import {useDynamicColour} from "../../hooks/useDynamicGrouColour";
+
 
 const Logo = ({className = ''}) => {
     let history = useHistory();
-    let {pathname} = useLocation();
-    const circleColor = useMemo(() => {
-        const urlObject =  options.find(({urls, color}) => {
-            return urls.find((url) => {
-                return url === pathname
-            })
-        })
-        return urlObject && urlObject.color ? urlObject.color : `#ff2a68`
-    }, []);
 
+    const {dynamicColour} = useDynamicColour();
 
     return (
         <div className={`logo-container ${className}`}>
@@ -25,7 +19,7 @@ const Logo = ({className = ''}) => {
                 onClick={() => history.push("/")}
             />
             <div className={'logo-circle'}
-                 style={{backgroundColor: circleColor}}
+                 style={{backgroundColor: dynamicColour}}
             />
         </div>
     )

@@ -29,10 +29,10 @@ const Opportunity = ({
     >
       <div className={"opportunity-title-container"}>
         <Text
-            size={16}
+          size={16}
           animationType={"fade-in"}
-          type={"kRegular"}
-            mobSize={14}
+          type={"kMedium"}
+          mobSize={14}
           className={"opportunity-title-first"}
         >
           {title}
@@ -56,21 +56,10 @@ const Opportunity = ({
             title={btnTitle}
             animationType={"fade-in"}
             mobSize={10}
-            type={'kSemiBold'}
+            textType={'kMedium'}
             className={"explore-btn"}
             animationHoverType={'lowerMenu'}
-            // additionalComponent={() => {
-            //   return (
-            //       <img
-            //           className={"opportunity-arrow"}
-            //           data-aos="fade-in"
-            //           src={ArrowUpRight}
-            //       />
-            //   )
-            // }}
              />
-
-
       </div>
     </div>
   );

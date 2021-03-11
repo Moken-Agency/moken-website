@@ -64,7 +64,6 @@ const history = useHistory();
                     // type={"extraLight"}
                 >
                     Driven by the passion for working with passionate innovators who live to make a change in the world.
-
                 </Text>
                 <Text
                     className={"about-moken-second-info-section-text"}

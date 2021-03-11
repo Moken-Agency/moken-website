@@ -20,7 +20,7 @@ const HeaderSecondType = ({
         size={16}
         mobSize={14}
         animationType={"fade-in"}
-        type={"kMiddle"}
+        type={"kMedium"}
         // type={"semiBold"}
         className={`header-second-main-title`}
       >

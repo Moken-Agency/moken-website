@@ -1,6 +1,39 @@
+.form-modal {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  //overflow-y: hidden;
+
+  .form-modal-content-container {
+    width: 532px;
+    position: relative;
+    @media only screen and (max-width: 600px) {
+      width: 90vw;
+    }
+  }
+}
+.ReactModal__Overlay {
+  z-index: 1 !important;
+}
+.ReactModal__Content, .ReactModal__Content--after-open {
+  background-color: rgba(0, 0, 0, .5) !important;
+}
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.freebirdFormviewerViewEmbedded .freebirdFormviewerViewCenteredContent {
+  width: auto!important;
+  max-width: initial !important;
+}
+
 
 .form-container {
   background-color: transparent;
+
+
   .popup-content {
     background: transparent;
     width: 30% !important;
@@ -14,14 +47,14 @@
   }
 }
 .form-header {
-  border-top-left-radius: 2.5vw;
-  border-top-right-radius: 2.5vw;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
   @media only screen and (max-width: 600px) {
     border-top-left-radius: 5.5vw;
     border-top-right-radius: 5.5vw;
   }
     .form-name-title {
-    padding: 1vw 0 1vw 4vw;
+    padding: 30px 0 20px 36px;
     @media only screen and (max-width: 600px) {
       padding: 3vw 0 3vw 10vw;
     }
@@ -35,12 +68,14 @@
 }
 
 .form-content {
-  height: 20vw;
+  height: 520px;
   background: #fff;
-  padding: 3vw;
-  border-bottom-left-radius: 2.5vw;
-  border-bottom-right-radius: 2.5vw;
+  padding: 10px 0;
+  border-bottom-left-radius:  33px;
+  border-bottom-right-radius:  33px;
   position: relative;
+  overflow-y: hidden;
+
   @media only screen and (max-width: 600px) {
     height: 50vh;
     padding: 10vw;
@@ -48,11 +83,10 @@
     border-bottom-right-radius: 5.5vw;
   }
     .form-content-border {
-    border: 1px solid #a7a7a7;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    //align-items: center;
     justify-content: center;
   }
 }
@@ -61,8 +95,20 @@
   position: absolute;
   right: 0;
   top: -3vw;
-  color: #fff;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border: 0;
+  font-family: Latinka SemiBold, sans-serif;
+  color: white;
+  transition: .5s;
+  &:hover {
+    transform: scale(1.1);
+  }
   @media only screen and (max-width: 600px) {
     top: -12vw;
   }
 }
+

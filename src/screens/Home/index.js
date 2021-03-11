@@ -20,6 +20,8 @@ import homeRyr from "../../images/home-ryr@3x.jpg";
 import homeScale from "../../images/home-scale.jpg";
 import Typical from 'react-typical';
 import Typed from 'react-typed';
+import HomeImpact from "../../components/HomeImpact";
+import Form from "../../components/Form";
 
 
 
@@ -32,11 +34,20 @@ const Home = () => {
     const [cursorIndex, setCursorIndex] = useState(0);
 
 
+
     const ref = useRef(null)
     // console.log('currentcurrentcurrentcurrent', typed);
 
+    const scrollToNextElement = () => {
+        window.scrollTo({
+            top: 1500,
+            behavior: "smooth"
+        });
+    }
+
     return (
     <div className={'home-container'}>
+
        <section className={'home-header'}>
            <div className={'home-header-first-title-container'}>
 
@@ -69,9 +80,9 @@ const Home = () => {
                    </div>
 
                    <Typed
-                       typeSpeed={75}
+                       typeSpeed={85}
                        backDelay={2000}
-                       backSpeed={65}
+                       backSpeed={75}
                        ref={ref}
                        loop
                        cursorChar={''}
@@ -91,8 +102,16 @@ const Home = () => {
        </section>
 
         <section className={'home-explore-container'}>
-            <div className={'home-explore-divider'}/>
-            <Text className={'home-explore-title'} type={'kMedium'} size={16}>EXPLORE</Text>
+            <div className={'home-explore-divider-container'} onClick={scrollToNextElement}>
+                <div className={'home-explore-divider'}/>
+                <div className={'home-explore-divider-circle'}>
+                    <div />
+                </div>
+                <Text className={'home-explore-title'} type={'kMedium'} size={16}>EXPLORE</Text>
+
+            </div>
+
+
 
             <div className={'home-explore-list-container'}>
                 {
@@ -160,7 +179,7 @@ const Home = () => {
                                            alignItems: 'center',
                                            justifyContent: 'center'}}>
                                            <Text type={'kMedium'} size={24}>a community of</Text>
-                                           <Text type={'kBold'} size={100}>2431</Text>
+                                           <Text withCountAnimation countAnimationProps={{duration: 1.4}} type={'kBold'} size={100}>2431</Text>
                                            <Text type={'kMedium'} size={24}>of passionate</Text>
                                            <Text type={'kMedium'} size={24}>founders & startups</Text>
                                        </div>
@@ -192,10 +211,11 @@ const Home = () => {
             imgURL={homeScale}
             descriptionData={{
                 title: 'Where startups & founders learn & evolve.',
-                description: `Unparalleled personalized access to hands-on incubation & acceleration programs dedicated to helping entrepreneurs scale their ventures.`,
+                description: `Unparalleled personalized access to hands-on incubator & accelerator programs dedicated to helping entrepreneurs scale their ventures.`,
                 btnOptions: {
                     title: 'DISCOVER OUR PROGRAMS',
-                    route: '/about-programs'
+                    route: '/about-programs',
+                    isComingSoon: true
 
                 }
             }}
@@ -203,11 +223,17 @@ const Home = () => {
                 return (
                     <div className={'home-startups-list-container'}>
                         {
-                            startupsData.map(({title, subtitle}) => {
+                            startupsData.map(({title, subtitle, suffix = ''}) => {
                                return (
                                    <div className={'startups-item'}>
-                                        <Text type={'kBold'} size={60}>{title}</Text>
-                                        <Text size={16} className={'startups-item-subtitle'} type={'kRegular'}>{subtitle}</Text>
+                                       <TrackVisibility once>
+                                           {({ isVisible }) => isVisible && (
+                                               <>
+                                                   <Text withCountAnimation countAnimationProps={{suffix}} type={'kBold'} size={60}>{title}</Text>
+                                                   <Text size={16} className={'startups-item-subtitle'} type={'kRegular'}>{subtitle}</Text>
+                                               </>
+                                           )}
+                                       </TrackVisibility>
                                    </div>
                                )
                             })
@@ -286,12 +312,17 @@ const Home = () => {
             <Text type={'kBold'} size={100} className={'home-impact-title'}>How can we help you make an impact?</Text>
             <div className={'home-impact-list'}>
                 {
-                    impacts.map(({title, subtitle, route}) => {
+                    impacts.map((impact, index) => {
                         return (
-                            <div className={'home-impact-item'} onClick={() => history.push(route)}>
-                                <Text type={'kBold'} size={35} className={'home-impact-title'} textStyles={{lineHeight: '45px'}}>{title}</Text>
-                                <Text type={'kSemiBold'} size={16} color={'#ff2a68'}>{subtitle}</Text>
-                            </div>
+                            <>
+                            {/*<div className={'home-impact-item'} onClick={() => history.push(route)}>*/}
+                            {/*    <Text type={'kBold'} size={35} className={'home-impact-title'} textStyles={{lineHeight: '45px'}}>{title}</Text>*/}
+                            {/*    <Text type={'kSemiBold'} size={16} color={'#ff2a68'}>{subtitle}</Text>*/}
+                            {/*</div>*/}
+                                <HomeImpact {...impact} key={index + impact.title}/>
+
+                            </>
+
                         )
                     })
                 }
@@ -301,7 +332,8 @@ const Home = () => {
         <section className={'home-book-container'}>
             <Text type={'kBold'} size={45} className={'home-book-title'}>Book a free call with us now and we’ll help you map out your strategy.</Text>
             <Text type={'kLight'} size={20} className={'home-book-description'}>We would love to connect with you, learn more about your startup, identify struggles and opportunities together, and give our perspective on what you should be focusing on in the immediate to drive your business forward.</Text>
-            <Button title={'BOOK YOUR CALL'}/>
+            <Button title={'BOOK YOUR CALL'}
+                    onClick={() => window.open('https://meetings.hubspot.com/mohamed24', '_blank')}/>
         </section>
     </div>
   );

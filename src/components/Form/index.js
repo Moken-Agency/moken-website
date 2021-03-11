@@ -5,35 +5,34 @@ import "reactjs-popup/dist/index.css";
 import Text from "../Text";
 import Button from "../Button";
 import Modal from 'react-modal';
+import {useDynamicColour} from "../../hooks/useDynamicGrouColour";
 
-const customStyles = {
-    content : {
-        top                   : '50%',
-        left                  : '50%',
-        right                 : 'auto',
-        bottom                : 'auto',
-        marginRight           : '-50%',
-        transform             : 'translate(-50%, -50%)'
-    }
-};
+// const customStyles = {
+//     content : {
+//         top                   : '50%',
+//         left                  : '50%',
+//         right                 : 'auto',
+//         bottom                : 'auto',
+//         marginRight           : '-50%',
+//         transform             : 'translate(-50%, -50%)'
+//     }
+// };
 
-const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen }) => {
+const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen, children, setIsOpen }) => {
+
+    const {dynamicColour} = useDynamicColour();
+
     return (
     <div className={"form-container"}>
-      <Modal isOpen={isOpen} className="Modal" customStyles={customStyles}>
+      <Modal isOpen={isOpen} className="form-modal">
       {/*<Popup trigger={<button className={""}>{"Form"}</button>} modal nested>*/}
-        {(close) => (
-          <div>
-            <Button
+          <div className={'form-modal-content-container'}>
+            <button
               type={"transparent"}
-              textColor={"white"}
-              backgroundColor={"black"}
               className={"form-close"}
-              title={"CLOSE"}
-              size={16}
-              onClick={close}
-            />
-            <div className={"form-header"} style={{ backgroundColor }}>
+              onClick={() => setIsOpen(false)}
+            >CLOSE</button>
+            <div className={"form-header"} style={{ backgroundColor: dynamicColour }}>
               <Text
                 className={"form-name-title"}
                 color={"white"}
@@ -41,23 +40,23 @@ const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen }) => {
                 type={"kSemiBold"}
                 size={16}
               >
-                {formName}
+                {formName.toUpperCase()}
               </Text>
             </div>
             <div className={"form-content"}>
               <div className={"form-content-border"}>
-                <Text
-                  size={16}
-                  animationType={"fade-in"}
-                  type={"kSemiBold"}
-                  textStyles={{ letterSpacing: 4 }}
-                >
-                  google form here
-                </Text>
+                {/*<Text*/}
+                {/*  size={16}*/}
+                {/*  animationType={"fade-in"}*/}
+                {/*  type={"kSemiBold"}*/}
+                {/*  textStyles={{ letterSpacing: 4 }}*/}
+                {/*>*/}
+                {/*    */}
+                {/*</Text>*/}
+                  {children}
               </div>
             </div>
           </div>
-        )}
       </Modal>
     </div>
   );

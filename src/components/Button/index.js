@@ -23,8 +23,11 @@ const Button = ({
   className = "",
   textType = "kRegular",
   disabled = false,
+    isComingSoon = false,
     animationHoverType = 'defaultAnimation'
 }) => {
+
+  const [isHover, setIsHover] = useState(false);
   const bordersStyles = {
     bordered: {
       border: `1px solid ${colors[textColor]}`,
@@ -47,14 +50,21 @@ const Button = ({
     }
   }
 
+  const handleOnClick = () => {
+   return  disabled || isComingSoon ? null : onClick()
+  }
+
   return (
       <button
-          onClick={onClick}
+          onClick={handleOnClick}
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
           disabled={disabled}
           style={{
             ...bordersStyles[borderType],
             ...containerStyles,
             backgroundColor: colors[backgroundColor],
+            cursor: isComingSoon ? 'not-allowed' : 'pointer'
           }}
             className={`${type} ${className} ${disabled ? 'disabled' : ' '}
              ${animationHoverType + 'Container'} button-main-container`}>
@@ -70,7 +80,7 @@ const Button = ({
               textStyles={{ whiteSpace: "nowrap", ...textStyles[type] }}
               type={textType}
           >
-            {title}
+              {isHover && isComingSoon ? "COMING SOON" : title}
           </Text>
           {additionalComponent ? additionalComponent() : null}
         </div>

@@ -1,0 +1,30 @@
+.home-impact-item {
+  width: 475px;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //margin: 20px 34px;
+  border-radius: 40px;
+  opacity: 1;
+  //box-shadow: 0 20px 100px -30px rgba(0, 0, 0, .35);
+  cursor: pointer;
+  transition: all .3s cubic-bezier(.215,.61,.355,1);
+  box-shadow: 0 50px 60px -30px rgba(0, 0, 0, 0.06);
+  &:hover {
+    box-shadow: 0 30px 80px -10px rgba(0, 0, 0, .1);
+    -webkit-transform: translate(0,-7px);
+    -ms-transform: translate(0,-7px);
+    transform: translate(0,-7px);
+  }
+  .home-impact-item-title {
+    margin-bottom: 16px;
+  }
+
+}
+
+.home-impact-item-disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}

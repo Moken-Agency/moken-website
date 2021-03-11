@@ -26,7 +26,7 @@ const PeopleLeadership = () => {
         subtitle={"Working on what matters, together."}
         description={
           "Looking for an opportunity to take your career forwards, send your portfolio to" +
-          " careers@mokengroup.com"
+          " careers@mokenstartups.com"
         }
       />
       <ImageBlock url={PeopleLeaderShipImage}/>

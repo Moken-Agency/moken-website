@@ -4,40 +4,44 @@ import prommotoLong from "../../images/projects/prommoto-long.svg";
 export default {
   programs: [
     {
-      title: `Build with
-Agency`,
+      title: `Work with 
+Mo + Ken`,
       subtitle:
-        `Ideate, build, and grow products, businesses, and teams. Integrate fluidly with you existing program acting 
-        as an external innovation lab, from analysis and ideation to development. A full-service formula to introduce
-         change without losing corporate focus.`,
+        `We believe that market leadership requires deep courage — from founder to founder.`,
       btnTitle: 'WORK WITH US',
-      route: '/about-agency'
+      route: '/mo-ken'
     },
     {
-      title: "Collaborate with Events",
+      title: `Get Started
+Smarter`,
       subtitle:
-      `Partner with us and our community to support and help startups do what they do best.`,
-      btnTitle: "GET INVOLVED",
-      route: '/host-an-event'
+      `Does your startup need a specific solution? With packages at a startup price point, we work with founders and ideators with high growth potential. We're passionate about big ideas and working with people who feel the same`,
+      btnTitle: "LEARN MORE",
+      route: '/start-up-smart'
     },
   ],
 
   ourProjects: [
       {
+        link: 'https://prommoto.com',
         imgURL: projects.prommotoLong,
       },
     {
+      link: 'https://iraqisouq.com',
       imgURL: projects.iraqi,
     },
     {
+      link: 'https://getknowbie.com',
       imgURL: projects.knowbie,
     },
     {
       imgURL: projects.blu,
       width: 148,
-      height: 124
+      height: 124,
+      link: 'https://blupharma.ca'
     },
     {
+      link: 'https://rentyourride.ca',
       imgURL: projects.ryr,
     },
   ]

@@ -138,6 +138,8 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
 
           </SwiperComponent>
 
+          {/*<div className={'right-side'}/>*/}
+
       </div>
 
   );

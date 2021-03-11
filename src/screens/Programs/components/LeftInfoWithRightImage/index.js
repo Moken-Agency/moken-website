@@ -19,7 +19,8 @@ const LeftInfoWithRightImage = ({
   btnAdditionalComponent = null,
   onClick = () => {},
   imageClassName = '',
-  containerStyles = {}
+  containerStyles = {},
+  isComingSoon = false
 }) => {
   const { isMobile } = useWindowDimensions();
   console.log({ isMobile });
@@ -79,6 +80,7 @@ const LeftInfoWithRightImage = ({
               textColor={"white"}
               additionalComponent={btnAdditionalComponent}
               onClick={onClick}
+              isComingSoon={isComingSoon}
             />
           )}
         </div>

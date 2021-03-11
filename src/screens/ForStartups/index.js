@@ -13,8 +13,12 @@ import forStartupsFirstImage from '../../images/contact-second.jpg';
 import forStartupsSecondImage from '../../images/for-startups-passion.jpg';
 import forStartupsThirdImage from '../../images/for-startups-access.jpg';
 import forStartupsInsightImage from '../../images/for-startups-insight.jpg';
+import {useHistory} from "react-router-dom";
 
 const ForStartups = () => {
+
+  let history = useHistory();
+
   const { isMobile } = useWindowDimensions();
     console.log('Object.values', Object.values);
     return (
@@ -38,6 +42,7 @@ const ForStartups = () => {
         description={
           `We create startups that transform sectors and challenge the established norms. We build businesses that are ready to grow by working with founders and startup teams who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
         }
+        onClick={() => history.push('/connect-with-us')}
         btnTitle={"WORK WITH US"}
           isLeftImage
       />
@@ -50,6 +55,7 @@ const ForStartups = () => {
         description={
           `Our Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another. Leverage the network to help make better, well-informed decisions about the things that are most important to you & your business. `
         }
+        onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
         btnTitle={"JOIN THE NETWORK"}
       />
 
@@ -61,6 +67,7 @@ const ForStartups = () => {
         backgroundColor={"black"}
         type={'kThin'}
         blockType={'middle'}
+        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
       />
 
       <LeftInfoWithRightImage

@@ -4,8 +4,10 @@
   //justify-content: flex-end;
   padding: 0 10vw 10vw 10vw;
   align-items: center;
+  position: relative;
   @media screen and (max-width: 600px){
     flex-direction: column-reverse;
+    padding: 0 43px;
   }
   .opportunities-form-left-container, {
     //width: 35vw;
@@ -14,6 +16,7 @@
     margin-right: 163px;
     @media screen and (max-width: 600px){
       width: auto;
+      margin: 0;
     }
   }
   .opportunities-form-right-container {
@@ -35,7 +38,7 @@
         }
       }
       @media screen and (max-width: 600px) {
-        width: 55vw;
+        //width: 55vw;
         margin-bottom: 8vw;
         span {
           line-height: 40px;
@@ -45,9 +48,9 @@
     .left-second-title {
       @media screen and (max-width: 600px) {
         margin-bottom: 15vw;
-        span {
-          font-size: 2.6vw !important;
-        }
+        //span {
+        //  font-size: 2.6vw !important;
+        //}
       }
     }
     .input-container {
@@ -88,8 +91,8 @@
   height: 30vw;
   background: #a7a7a7;
   @media screen and (max-width: 600px) {
-    width: auto;
-    height: 100px;
+    height: auto;
+    width: 100%;
     margin-bottom: 50px;
   }
 }

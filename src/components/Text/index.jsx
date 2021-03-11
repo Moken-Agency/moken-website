@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useMemo} from "react";
 import "./styles.scss";
 import textTypes from "../../constans/text-types";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import CountUp, {useCountUp} from "react-countup";
 
 const Text = ({
   children = "",
@@ -17,7 +18,11 @@ const Text = ({
   color = "black",
   mobColor = color,
   animationType = "",
+  withCountAnimation = false,
+    countAnimationProps = {}
 }) => {
+  const { countUp } = useCountUp({ end: children, duration: 1.4, ...countAnimationProps, });
+
   const handleOnMouseEnter = () => {
     onMouseEnter();
   };
@@ -25,6 +30,9 @@ const Text = ({
     onMouseLeave();
   };
   const { isMobile } = useWindowDimensions();
+  // const TextToRender = useMemo(() => (<span></span> ? '' : CountUp), [
+  //   withCountAnimation,
+  // ]);
 
   return (
     <div
@@ -33,19 +41,31 @@ const Text = ({
       onMouseLeave={handleOnMouseLeave}
       onMouseEnter={handleOnMouseEnter}
       onClick={onClick}
+      // data-aos={animationType}
     >
-      <span
-        data-aos={animationType}
-        style={{
-          fontFamily: `${textTypes[type]}, sans-serif`,
-          fontSize: isMobile ? mobSize : size,
-          color: isMobile ? mobColor : color,
-          ...textStyles,
-        }}
-        className={"text"}
-      >
-        {children}
-      </span>
+      {/*{*/}
+      {/*  withCountAnimation ?*/}
+      {/*      <CountUp {...countAnimationProps}*/}
+      {/*             style={{*/}
+      {/*              fontFamily: `${textTypes[type]}, sans-serif`,*/}
+      {/*              fontSize: isMobile ? mobSize : size,*/}
+      {/*              color: isMobile ? mobColor : color,*/}
+      {/*              ...textStyles,*/}
+      {/*            }}*/}
+      {/*            className={"text"}> {children}</CountUp> :*/}
+            <span
+                style={{
+                  fontFamily: `${textTypes[type]}, sans-serif`,
+                  fontSize: isMobile ? mobSize : size,
+                  color: isMobile ? mobColor : color,
+                  ...textStyles,
+                }}
+                className={"text"}
+            >
+            {withCountAnimation ?  countUp : children}
+          </span>
+      {/*}*/}
+
     </div>
   );
 };

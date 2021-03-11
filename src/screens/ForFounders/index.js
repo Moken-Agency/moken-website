@@ -34,6 +34,7 @@ const ForFounders = () => {
       <LeftInfoWithRightImage
         withoutRightPadding
         titleClassName={'for-founders-access-title'}
+        onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
         descriptionClassName={'for-founders-access-description'}
         mainTitle={"ACCESS YOUR FUTURE"}
         title={"Your power lies in your ability to connect."}
@@ -53,6 +54,7 @@ const ForFounders = () => {
         btnTitle={"LEARN MORE"}
         imgUrl={forFoundersThird}
         isLeftImage
+        isComingSoon
       />
 
       <ColorBlock
@@ -62,6 +64,7 @@ const ForFounders = () => {
         textColor={"white"}
         backgroundColor={"black"}
         blockType={'middle'}
+        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
         // className={"for-founders-color-block"}
         // size={30}
       />
@@ -77,6 +80,7 @@ const ForFounders = () => {
         description={`We understand that startups are built stronger and flourish when founders work together. With that in mind, we've developed an exclusive accelerator program that can be custom tailored to suit any founder’s needs. By harnessing the power of potential and tearing up the rule book, Moken helps early stage founders launch faster, stronger, and more efficiently. Through our agile approach, we overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation while building for scale. `}
         btnTitle={"EXPLORE MOKENLABS"}
         imgUrl={forFoundersForth}
+          isComingSoon
       />
 
       <ProgramCommunityListPartner

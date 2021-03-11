@@ -10,6 +10,7 @@ import {debounce} from "../../constans/helpers";
 const HomeExplore = ({
     title = '',
     description = '',
+    isComingSoon = false,
     mokenTitle = {
       first: '',
       second: ''
@@ -85,7 +86,7 @@ const HomeExplore = ({
         <Text  size={16} type={'kLight'} className={'home-explore-item-moken-title-second'}>{mokenTitle.second}</Text>
       </div>
 
-      <Button size={10} className={'home-explore-btn'} title={btnOptions.title} onClick={() => btnOptions.route ? history.push( btnOptions.route) : btnOptions.click}/>
+      <Button size={10} isComingSoon={isComingSoon} className={'home-explore-btn'} title={btnOptions.title} onClick={() => btnOptions.route ? history.push( btnOptions.route) : btnOptions.click}/>
     </div>
   );
 };

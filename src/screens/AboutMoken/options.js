@@ -57,8 +57,11 @@ export default {
 
     },
     {
-      title: "Learn to Create The Future",
-      route: "/about-programs",
+      title: "Coming soon",
+      isComingSoon: true,
+      // title: "Learn to Create The Future",
+      route: "",
+      // route: "/about-programs",
       hoverColour: '#EFB95E',
       colourClassName: 'orange'
 

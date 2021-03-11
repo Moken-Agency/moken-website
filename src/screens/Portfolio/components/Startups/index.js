@@ -4,7 +4,7 @@ import "./index.scss";
 import { useHistory } from "react-router-dom";
 import Text from "../../../../components/Text";
 
-const Startups = ({ title = "", subTitle = "" }) => {
+const Startups = ({ title = "", subTitle = "", suffix = '' }) => {
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
 
@@ -15,6 +15,8 @@ const Startups = ({ title = "", subTitle = "" }) => {
         size={60}
         animationType={"fade-in"}
         mobSize={40}
+        withCountAnimation
+        countAnimationProps={{suffix}}
         type={"kBold"}
         // type={"semiBold"}
         className={"startups-title-first"}

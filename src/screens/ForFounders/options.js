@@ -5,7 +5,7 @@ export default {
       subtitle:
         "A community driven approach to showcasing & highlighting hardworking founders & innovators in the global startup ecosystem who are creating the future.",
       btnTitle: 'SHARE YOUR STORY',
-      route: '/start-up-smart'
+      route: '/innovator-feature'
     },
     {
       title: "Community Events",
@@ -41,27 +41,29 @@ export default {
   purposes: [
     {
       title: "Build & Scale Your Startup",
-      link: "",
+      link: "/about-agency",
       hoverColour: '#FDCDC6',
       colourClassName: 'light-coral'
 
     },
     {
       title: "Access Your Full Potential",
-      link: "",
+      link: "/access",
       hoverColour: '#D5D5D5',
       colourClassName: 'grey'
 
     },
     {
       title: "Connect & Extend Your Network",
-      link: "",
+      link: "/events",
       hoverColour: '#FF9D72',
       colourClassName: 'coral'
     },
     {
-      title: "Learn to Create The Future ",
-      link: "",
+      title: "Coming soon",
+      // title: "Learn to Create The Future ",
+      // link: "",
+      isComingSoon: true,
       hoverColour: '#EFB95E',
       colourClassName: 'orange'
     },
