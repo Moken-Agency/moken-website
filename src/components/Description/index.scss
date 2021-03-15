@@ -1,6 +1,7 @@
 .description-container {
   margin-bottom: 160px;
-  width: 50vw;
+  max-width: 933px;
+  //width: 50vw;
   padding-left: 14vw;
   @media only screen and (max-width: 600px) {
     width: auto;

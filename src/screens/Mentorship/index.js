@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTitle from "../../components/HeaderTitle";
 import ImageBlock from "../../components/ImageBlock";
 import TitleRowSubDes from "../../components/TitleRowSubDes";
@@ -12,10 +12,17 @@ import EmailForm from "../../components/EmailForm";
 import mentorshipFirst from "../../images/mentorship-first.jpg";
 import mentorshipSecond from "../../images/mentorship-second.jpg";
 import mentorshipThird from "../../images/mentorship-third.jpg";
+import Form from "../../components/Form";
 
 const Mentorship = () => {
-  return (
+    const [isFormOpened, setIsFormOpened] = useState(false);
+    const [isFormSecondOpened, setIsFormSecondOpened] = useState(false);
+
+    return (
     <div className={"mentorship-container"}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+        </Form>
       <HeaderTitle
         title={"MENTORSHIP"}
         subtitle={"Creatives, builders & entreprenuers pursuing action."}
@@ -36,6 +43,7 @@ const Mentorship = () => {
            the industry but the journey along the way. As a mentor, you will able to help founders in realising their
             goals and provide them with the necessary guidelines on how to achieve them.`}
         btnTitle={'APPLY TO MENTOR'}
+        onClick={() => setIsFormOpened(true)}
       />
 
       <Title

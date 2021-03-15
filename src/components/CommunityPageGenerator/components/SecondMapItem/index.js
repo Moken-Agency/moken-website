@@ -7,8 +7,8 @@ const SecondMapItem = ({ title = "", btnTitle = "" }) => {
   return (
     <div className={"second-map-item-container"}>
       <Text
-        type={"extraLight"}
-        size={"3.4vw"}
+        type={"kBold"}
+        size={50}
         mobSize={35}
         animationType={"fade-in"}
         className={"second-map-item-title"}
@@ -19,7 +19,7 @@ const SecondMapItem = ({ title = "", btnTitle = "" }) => {
         <Text
           type={"kSemiBold"}
           animationType={"fade-in"}
-          size={".85vw"}
+          size={14}
           mobSize={12}
           className={"second-map-item-btn"}
         >

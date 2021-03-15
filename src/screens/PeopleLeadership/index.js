@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import "./index.scss";
 import HeaderTitle from "../../components/HeaderTitle";
 import HostImage from "../../images/careers-header.jpg";
@@ -14,12 +14,36 @@ import ImageBlock from "../../components/ImageBlock";
 import PeopleLeaderShipImage from '../../images/people-leadershiping.png';
 import PeopleLeaderShipFooterImage from '../../images/people-leadership-footer.png';
 import partners from '../../images/partners'
+import {useHelpers} from "../../hooks/useHelpers";
 
 
 const PeopleLeadership = () => {
   const { isMobile } = useWindowDimensions();
 
-  return (
+  const {peopleItemsInRow} = useHelpers(options.peopleTest);
+
+
+
+  const returnPeopleCountInRow = useMemo(() => {
+      console.log(options.peopleTest);
+      const fourPeople = peopleItemsInRow([...options.peopleTest],4);
+      const threePeople = peopleItemsInRow([...options.peopleTest],3);
+      const twoPeople = peopleItemsInRow([...options.peopleTest],2);
+      const onePerson = peopleItemsInRow([...options.peopleTest],1);
+      if(window.innerWidth >= 1400) {
+          return fourPeople;
+      } else if(window.innerWidth < 1400  && window.innerWidth >= 1050) {
+          return threePeople
+      } else if(window.innerWidth < 1050 && window.innerWidth >= 700) {
+          return twoPeople
+      } else {
+          return onePerson
+
+      }
+  }, [window.innerWidth]);
+    console.log({returnPeopleCountInRow});
+
+    return (
     <div className={"people-leadership-container"}>
       <HeaderTitle
         title={"PEOPLE & LEADERSHIP"}
@@ -44,8 +68,8 @@ const PeopleLeadership = () => {
         containerStyles={{marginBottom: 150}}
       />
       <div style={{marginBottom: 150}}>
-          {options.peopleGroups.map((people, index) => (
-              <People {...people} peopleIndex={index} />
+          {returnPeopleCountInRow.map((people, index) => (
+              <People {...people} peopleIndex={index} keyValue={'fadgs' + index} />
           ))}
       </div>
 
@@ -59,7 +83,7 @@ const PeopleLeadership = () => {
       <div className={"people-images-container"}>
         {options.partners.map(({image, width, height}, index) => (
             <div className={'people-images-item'}>
-                <img src={image}  key={"corporation" + index} />
+                <img src={image}  key={"corporation" + index} style={{width, height}} />
             </div>
         ))}
       </div>

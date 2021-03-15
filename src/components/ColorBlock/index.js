@@ -35,7 +35,7 @@ const ColorBlock = ({
 
   return (
     <>
-      {backgroundColor !== "" ? (
+      {title !== "" ? (
         <section
           data-aos="fade-up"
           className={`block-container ${className} ${blockType}`}

@@ -9,6 +9,8 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import validationRules from "../../constans/validation-rules";
 import { useHistory } from "react-router-dom";
 import Logo from "../Logo";
+import moment from 'moment'
+
 
 const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
 const { menuColumns } = menuOption;
@@ -23,6 +25,8 @@ const containerStyles = {
 const Footer = ({ isOpen, setIsOpen }) => {
   const { width } = useWindowDimensions();
   const { isMobile } = useWindowDimensions();
+
+  const year = new Date().getFullYear();
 
 
   const {
@@ -61,7 +65,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
           {/*</div>*/}
           <Logo className={'footer-logo'}/>
           <Text
-            size={30}
+            size={20}
             animationType={"fade-in"}
             type={"kLight"}
             textStyles={{lineHeight: '30px', fontWeight: 300}}
@@ -101,7 +105,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
               // size={".8vw"}
                 size={12}
                 mobSize={10} color={"white"}>
-            Copyright © Moken Startups Inc. 2020
+            Copyright © Moken Startups Inc. {year}
           </Text>
           <div className={"privacy-container"}>
             <Text

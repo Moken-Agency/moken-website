@@ -1,12 +1,15 @@
-import firstImage from '../../images/expertise-first-image.png'
-import secondImage from '../../images/expertise-second.png'
+import firstImage from '../../images/branding-first.jpg';
+import secondImage from '../../images/branding-second.jpg';
 
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "BRANDING",
+      titleFirst: "EXPERTISE // BRANDING",
+      // titleConjunctions: "//",
+      // titleSecond: "BRANDING",
+    },
+    subtitleContainerStyles: {
+      maxWidth: 750
     },
     subtitle: "Telling emotionally compelling stories that create action.",
     imgURL: firstImage,

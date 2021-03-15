@@ -1,20 +1,22 @@
 export default {
   gettingStarted: [
-    {
-      title: 'Advisors',
-      route: '/advisors'
-    },
+    // {
+    //   title: 'Advisors',
+    //   route: '/advisors'
+    // },
     {
       title: "Branding",
       route: "/branding",
     },
     {
       title: "Strategic Advisory",
+      isComingSoon: true,
       route: "/strategy-advisory",
     },
     {
       title: "Investments & Raising",
       route: "",
+      isComingSoon: true
     },
     {
       title: "Market Research & Validation",
@@ -38,31 +40,31 @@ export default {
       title: "Product Marketing",
       route: "/product-marketing",
     },
-    {
-      title: "Partnerships Growth",
-      route: "/partnerships-growth",
-    },
+    // {
+    //   title: "Partnerships Growth",
+    //   route: "/partnerships-growth",
+    // },
   ],
   marketing: [
-    {
-      title: "Growth Programs",
-      route: "",
-    },
+    // {
+    //   title: "Growth Programs",
+    //   route: "",
+    // },
     {
       title: "Community Driven Growth",
       route: "/community-driven-growth",
     },
     {
-      title: "Partnerships",
-      route: "",
+      title: "Partnerships & Growth",
+      route: "/partnerships-growth",
     },
-    {
-      title: "Community Development",
-      route: "/community-development",
-    },
+    // {
+    //   title: "Community Development",
+    //   route: "/community-development",
+    // },
     {
       title: "Events & Launch Activations",
-      route: "/upcoming-events",
+      route: "/host-an-event",
     },
     {
       title: "Website Design & Development",

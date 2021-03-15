@@ -25,7 +25,7 @@ const ForInvestors = () => {
       <HeaderTitle
         title={"FOR INVESTORS"}
         subtitle={"Success fuelled by partnership."}
-        description={"Together creating an unmatched global ecosystem."}
+        description={"A curated community of hungry startups"}
         marginBottom={isMobile ? 107 : 107}
       />
 

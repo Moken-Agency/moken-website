@@ -11,9 +11,11 @@
 
   .people-container {
     margin-bottom: 112px;
-    display: flex;
 
-    flex-wrap: wrap;
+    display: grid;
+    .person-container {
+
+    }
 
     @media only screen and (max-width: 600px) {
       align-items: flex-start !important;

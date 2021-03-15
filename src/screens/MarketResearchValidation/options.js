@@ -1,12 +1,15 @@
+import firstImage from "../../images/market-research-validation-first.jpg";
+import secondImage from "../../images/market-research-validation-second.jpg";
+
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "MARKET RESEARCH & VALIDATION",
+      titleFirst: "EXPERTISE // MARKET RESEARCH & VALIDATION",
+      // titleConjunctions: "//",
+      // titleSecond: "MARKET RESEARCH & VALIDATION",
     },
     subtitle: "Deliberate outcomes through data driven decisions.",
-    // imgURL: "",
+    imgURL: firstImage,
     infoBlock: {
       infoTitleFirst:
         "85% of product failure can be traced to a lack of market research & product market fit validation issues.",
@@ -37,7 +40,7 @@ export default {
         title: "Focus Groups",
       },
     ],
-    // imgURL: "",
+    imgURL: secondImage,
   },
   thirdSection: {
     title: "WHAT WE DO",

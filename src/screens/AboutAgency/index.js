@@ -71,7 +71,7 @@ const AboutAgency = () => {
 
 
       <div className={"leads-container"}>
-        <Swiper containerClassName={'agency-swiper-container'} spaceBetween={82} breakpoints={{
+        <Swiper containerClassName={'agency-swiper-container'} withoutArrows spaceBetween={82} breakpoints={{
             // when window width is >= 320px
             '0': {
                 slidesPerView: 1,
@@ -83,20 +83,20 @@ const AboutAgency = () => {
             '1650': {
                 slidesPerView: 3,
             }
-        }} swiperData={[1,2,3,4]} Component={(_, index) => {
+        }} swiperData={options.projects} Component={({title, subtitle, imgURL}, index) => {
             return (
                 <div className={'agency-product-container'}>
-                    <img src={''}/>
+                    <img src={imgURL}/>
                     <div>
                         <Text size={50}
                               mobSize={45}
                               type={'kBold'}
                               textStyles={{lineHeight: isMobile ? '60px' : '80px'}}
-                        >Rent Your Ride</Text>
+                        >{title}</Text>
                         <Text size={16}
                               mobSize={14}
                               textStyles={{letterSpacing: 4}}
-                              type={'kRegular'}>PRODUCT DESIGN & DEVELOPMENT</Text>
+                              type={'kRegular'}>{subtitle}</Text>
                     </div>
                 </div>
             )

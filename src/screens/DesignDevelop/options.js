@@ -1,13 +1,19 @@
+import designDevelopFirst from "../../images/design-develop-first.jpg";
+import designDevelopSecond from "../../images/design-develop-second.jpg";
+
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "WEBSITE DESIGN & DEVELOPMENT",
+      titleFirst: "EXPERTISE // WEBSITE DESIGN & DEVELOPMENT",
+      // titleConjunctions: "//",
+      // titleSecond: "WEBSITE DESIGN & DEVELOPMENT",
+    },
+    subtitleContainerStyles: {
+      maxWidth: 900,
     },
     subtitle:
       "Increase leads, maximize revenue & produce ROI positive results.",
-    // imgURL: "",
+    imgURL: designDevelopFirst,
     infoBlock: {
       infoTitleFirst:
         "Slow websites & poor user experience lead to an annual $2.6 billion revenue loss & turn away 89% of consumers",
@@ -39,7 +45,7 @@ export default {
         title: "Front End Development",
       },
     ],
-    // imgURL: "",
+    imgURL: designDevelopSecond,
   },
   thirdSection: {
     title: "WHAT WE DO",

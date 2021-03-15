@@ -1,7 +1,8 @@
 .subtitle-comp-container {
   padding-left: 14vw;
   margin: 4vw 0;
-  width: 50vw;
+  max-width: 977px;
+  //width: 50vw;
   @media only screen and (max-width: 600px) {
     width: auto;
     padding: 0 10vw;

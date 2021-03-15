@@ -47,7 +47,9 @@ const Expertise = () => {
           </Text>
         </div>
 
-        <img src={ExpertiseHeader} />
+          <div className={'expertise-header-img-container'}>
+              <img src={ExpertiseHeader} />
+          </div>
       </div>
 
       <Title title={"GETTING STARTED"} />
@@ -67,13 +69,13 @@ const Expertise = () => {
       </div>
       <div className={"expertise-items-container"}>
         {gettingStarted.map((props, index) => {
-          return <ExpertiseItem {...props} key={"expertise item " + index} />;
+          return <ExpertiseItem {...props} key={"expertise item gettingStarted" + index} />;
         })}
       </div>
-      <Title className={"expertise-started-title"} title={"PRODUCT"} />
+      <Title className={"expertise-started-title"} title={"DIGITAL PRODUCT EXPERTISE"} />
       <div className={"expertise-items-container"}>
         {product.map((props, index) => {
-          return <ExpertiseItem {...props} key={"expertise item " + index} />;
+          return <ExpertiseItem {...props} key={"expertise item product" + index} />;
         })}
       </div>
 
@@ -83,7 +85,7 @@ const Expertise = () => {
       />
       <div className={"expertise-items-container"}>
         {marketing.map((props, index) => {
-          return <ExpertiseItem {...props} key={"expertise item " + index} />;
+          return <ExpertiseItem {...props} key={"expertise item marketing" + index} />;
         })}
       </div>
 
@@ -141,6 +143,7 @@ const Expertise = () => {
                 mobSize={10}
                 textColor={"white"}
                 borderType={"bordered"}
+                isComingSoon
                 containerStyles={{
                   marginRight: 30,
                 }}
@@ -155,7 +158,10 @@ const Expertise = () => {
               />
             </div>
           </div>
-          <img src={ExpertiseFooter} />
+            <div className={'expertise-last-block-image-container'}>
+                <img src={ExpertiseFooter} />
+
+            </div>
         </div>
       </div>
     </div>

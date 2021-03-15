@@ -47,7 +47,7 @@ const CommunityPageGenerator = ({
     infoSubtitleFirst = "",
   } = firstSection.infoBlock;
 
-  const letterSpacing = isMobile ? 4 :'0.2vw';
+  const letterSpacing = isMobile ? 4 : 0;
   return (
     <div className={"community-page-generator-container"}>
       <section className={"first-section"}>
@@ -62,31 +62,31 @@ const CommunityPageGenerator = ({
             >
               <Text
                   size={16}
-                  type={"kSemiBold"}
+                  type={"kMedium"}
                   mobSize={14}
                   animationType={"fade-in"}
-                  color={"#cdcdcdcd"}
-                  textStyles={{ letterSpacing }}
+                  // color={"#cdcdcdcd"}
+                  textStyles={{ letterSpacing: 4 }}
               >
                 {titleFirst}
                 <span>&nbsp;</span>
               </Text>
-              <Text
+              {titleSecond ? <Text
                   size={16}
                   type={"kSemiBold"}
                   mobSize={14}
                   animationType={"fade-in"}
-                  textStyles={{ letterSpacing, marginBottom: isMobile ? 70 : 0 }}
-              >{`${titleConjunctions} ${titleSecond}`}</Text>
+                  textStyles={{letterSpacing, marginBottom: isMobile ? 70 : 0}}
+              >{`${titleConjunctions} ${titleSecond}`}</Text> : null}
             </div>
             {/*<Text size={'4.3vw'}  */}
             <Text
-                size={75}
-                type={"thin"}
+                size={65}
+                type={"kBold"}
                 mobSize={45}
                 animationType={"fade-in"}
                 textStyles={{ letterSpacing, lineHeight: isMobile ? '45px' : '75px'}}
-                containerStyles={{ marginBottom: isMobile ? 150 : "10.5vw" }}
+                containerStyles={{ marginBottom: isMobile ? 150 : 175, maxWidth: 675, ...firstSection.subtitleContainerStyles }}
             >
               {firstSection.subtitle}
             </Text>
@@ -105,10 +105,10 @@ const CommunityPageGenerator = ({
             mobSize={35}
             animationType={"fade-in"}
             type={"kBold"}
-            containerStyles={{ marginBottom: isMobile ? 40 : '75px' }}
+            containerStyles={{ marginBottom: isMobile ? 40 : 55 }}
             textStyles={{
               letterSpacing: 0.5,
-              // lineHeight: 63
+              lineHeight: isMobile ? '37px' : '53px'
             }}
           >
             {infoTitleFirst}

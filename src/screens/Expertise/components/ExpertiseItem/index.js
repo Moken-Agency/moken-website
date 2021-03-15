@@ -5,15 +5,15 @@ import ArrowUpRight from "../../../../images/arrow-up-right-black.svg";
 import { useHistory } from "react-router-dom";
 import Button from "../../../../components/Button";
 
-const ExpertiseItem = ({ title = "", route = "/" }) => {
+const ExpertiseItem = ({ title = "", route = "/", isComingSoon }) => {
   let history = useHistory();
 
   const goToRoute = () => {
-    history.push(route);
+    return isComingSoon ? null : history.push(route);
   };
 
   return (
-    <div className={"expertise-item-container"}  onClick={goToRoute}>
+    <div className={"expertise-item-container"} style={{cursor: isComingSoon ? "not-allowed" : 'pointer'}} onClick={goToRoute}>
       <Text
         // size={'4.7vw'}
         size={50}

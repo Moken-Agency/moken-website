@@ -17,6 +17,18 @@
       padding: 0 10vw;
     }
   }
+  .people-leadership-people-container {
+    display: grid;
+    grid-template-columns: 267px 267px 267px;
+    grid-row-gap: 50px;
+    grid-column-gap: 60px;
+    justify-content: flex-start;
+
+    &:nth-child(2n) {
+      justify-content: flex-end;
+    }
+
+  }
   .people-images-container {
     //display: flex;
     justify-content: center;
@@ -27,9 +39,13 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 50px;
     grid-column-gap: 60px;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1100px) {
       margin-bottom: 185px;
       grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 700px) {
+      margin-bottom: 185px;
+      grid-template-columns: 1fr;
     }
     .people-images-item {
       display: flex;
@@ -37,7 +53,6 @@
       align-items: center;
       img {
         object-fit: fill;
-        max-width: 250px;
         @media only screen and (max-width: 600px) {
           max-width: initial;
           height: 25px;
