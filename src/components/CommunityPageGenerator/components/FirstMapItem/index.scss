@@ -3,6 +3,9 @@
   padding-bottom: 2.2vw;
   margin-bottom: 3.85vw;
   width: 20.4vw;
+  span {
+    white-space: break-spaces;
+  }
   @media screen and (max-width: 600px) {
     width: auto;
     margin-bottom: 30px;

@@ -8,11 +8,14 @@
   cursor: pointer;
   border-bottom: 1px solid #efefef;
   &:hover {
+
     .opportunity-title-container {
       transform: translate(0, -15px) !important;
     }
     .opportunity-view-btn-container {
-      .lowerMenuContainer {
+
+      .lowerMenu {
+        border: 0 !important;
         transform: translate(0, -5px) !important;
         .lowerMenuBorder {
           width: 100% !important;

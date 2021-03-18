@@ -65,10 +65,10 @@ const Footer = ({ isOpen, setIsOpen }) => {
           {/*</div>*/}
           <Logo className={'footer-logo'}/>
           <Text
-            size={20}
+            size={30}
             animationType={"fade-in"}
             type={"kLight"}
-            textStyles={{lineHeight: '30px', fontWeight: 300}}
+            textStyles={{lineHeight: '35px', fontWeight: 300}}
             className={'footer-join-text'}
           >
             Join our newsletter

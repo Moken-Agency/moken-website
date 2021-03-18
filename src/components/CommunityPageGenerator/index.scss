@@ -39,7 +39,7 @@
       width: 83vw;
       min-height: 44.9vw;
       margin-bottom: 10.7vw;
-      background-color: #cdcdcd;
+      //background-color: #cdcdcd;
       @media screen and (max-width: 600px) {
         width: 100vw;
         margin-bottom: 100px;
@@ -71,8 +71,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 9.5vw;
-        margin-bottom: 14.8vw;
+        padding-top: 150px;
+        margin-bottom: 125px;
         margin-left: 31.5vw;
         @media only screen and (max-width: 600px) {
           margin-left: 0;

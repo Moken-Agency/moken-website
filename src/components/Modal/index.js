@@ -18,9 +18,7 @@ const Modal = ({ children, buttonTitle = "", buttonClassName = "" }) => {
               title={"CLOSE"}
               size={"1.1vw"}
               containerStyles={{ padding: "2vw", letterSpacing: 4 }}
-              type={"kSemiBold"}
               onClick={close}
-              color={"white"}
             />
           </div>
           {children}

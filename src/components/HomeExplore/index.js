@@ -50,7 +50,7 @@ const HomeExplore = ({
                 scale: 'scale(1.03)'
             }
         });
-    }, [state.transform])
+    }, [state.transform]);
 
     const transform = `${state.scale} perspective(550px)
                   rotateY(${state.offsetX}deg)

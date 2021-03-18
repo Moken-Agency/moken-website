@@ -16,12 +16,11 @@ import Form from "../../components/Form";
 
 const Mentorship = () => {
     const [isFormOpened, setIsFormOpened] = useState(false);
-    const [isFormSecondOpened, setIsFormSecondOpened] = useState(false);
 
     return (
     <div className={"mentorship-container"}>
         <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchKoeYff36hGE5JIcEWQBvq-F0oiUfBwyO8GGntTvs6zCSnw/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
         </Form>
       <HeaderTitle
         title={"MENTORSHIP"}
@@ -35,14 +34,11 @@ const Mentorship = () => {
       <TitleRowSubDes
         title={"ABOUT MENTORSHIP"}
         subtitle={"Empowering one another in creating change around the world."}
-        description={`Mentors provide actionable strategies, business advice, support, and execution assistance when 
-        founders need it most. As a mentor you can make a profound difference in a startups trajectory by simply 
-        sharing your experiences and expertise. Why is having mentor so crucial to a startup? Well, in the case of
-         Moken mentors, we look for "been-there-done-that" type of people where they have gone through business
-          hardships have succeeded in their fields. Thus, providing a deeply empathetic understanding of not only
-           the industry but the journey along the way. As a mentor, you will able to help founders in realising their
-            goals and provide them with the necessary guidelines on how to achieve them.`}
-        btnTitle={'APPLY TO MENTOR'}
+        description={''}
+        descriptions={[
+            'Mentors provide actionable strategies, business advice, support, and execution assistance when founders need it most. As a mentor you can make a profound difference in a startups trajectory by simply sharing your experiences and expertise.',
+            `Why is having mentor so crucial to a startup? Well, in the case of Moken mentors, we look for "been-there-done-that" type of people where they have gone through business hardships have succeeded in their fields. Thus, providing a deeply empathetic understanding of not only the industry but the journey along the way. As a mentor, you will able to help founders in realising their goals and provide them with the necessary guidelines on how to achieve them.`
+        ]}
         onClick={() => setIsFormOpened(true)}
       />
 
@@ -73,13 +69,13 @@ const Mentorship = () => {
       <LeftInfoWithRightImage
         withoutRightPadding
         imgUrl={mentorshipThird}
-        mainTitle={"NEXT STEPS & APPLYING"}
-        title={"Join our trusted community of partners and market what you do."}
-        description={`Our role consists of taking the time to understand your business model, 
-                                    and suggesting creative and high-performing digital strategies. Our avant-garde 
-                                    tactics are in line with the current market, blend seamlessly with our clients’ 
-                                    operational realities, and eliminate risks that aren’t necessary.`}
+        descriptionClassName={'mentorship-steps-description'}
+        titleClassName={'mentorship-steps-title'}
+        mainTitle={"NEXT STEPS & APPLICATION"}
+        title={"Turning big problems into bigger breakthroughs, together."}
+        description={`As mentors we’re strategists, designers, developers, and business experts who fix things, fast. You’ll work closely with our startups and founders to define and develop impactful technology and powerful experiences. Whatever the challenge, together we’ll hurl ourselves at figuring things out – a healthy obsession for someone driven by innovating the future.`}
         btnTitle={"APPLY TO MENTOR"}
+        onClick={() => setIsFormOpened(true)}
       />
 
       <EmailForm withForm />

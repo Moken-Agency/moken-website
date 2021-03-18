@@ -23,7 +23,7 @@ export default [
       // {
       //   title:
       //   containerStyles: {
-      //     marginBottom: "1.7vw",
+      //     marginBottom: 25,
       //   },
       // },
       {

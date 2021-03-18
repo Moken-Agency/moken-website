@@ -19,7 +19,7 @@ const ImageBlock = ({
 }) => {
   return (
     <div
-      data-aos="fade-up"
+      // data-aos="fade-up"
       className={`image-block-container ${className}`}
       style={{ justifyContent: positions[position] }}
     >

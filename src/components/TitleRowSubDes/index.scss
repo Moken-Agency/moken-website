@@ -22,7 +22,7 @@
       align-items: flex-start;
       max-width: 625px;
       span {
-        letter-spacing: .25vw;
+        //letter-spacing: .25vw;
         line-height: 53px;
         @media only screen and (max-width: 600px) {
           letter-spacing: 4px;
@@ -48,7 +48,6 @@
         align-items: flex-start;
         span {
           line-height: 30px;
-          letter-spacing: .18px;
           @media screen and(max-width: 600px) {
             line-height: 26px;
           }

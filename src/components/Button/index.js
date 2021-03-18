@@ -10,7 +10,7 @@ import textTypes from "../../constans/text-types";
 
 //animationType = defaultAnimation | lowerMenu
 const Button = ({
-  type = "default",
+  type = "black",
   backgroundColor = "black",
   textColor = "white",
   title = "",
@@ -31,6 +31,14 @@ const Button = ({
   const bordersStyles = {
     bordered: {
       border: `1px solid ${colors[textColor]}`,
+    },
+    borderedBlack: {
+        border: `1px solid white`,
+        backgroundColor: 'black'
+    },
+    borderedWhite: {
+      border: `1px solid black`,
+      backgroundColor: 'white'
     },
     borderBottom: {
       border: 0,
@@ -61,13 +69,14 @@ const Button = ({
           onMouseLeave={() => setIsHover(false)}
           disabled={disabled}
           style={{
-            ...bordersStyles[borderType],
+            // ...bordersStyles[borderType],
             ...containerStyles,
-            backgroundColor: colors[backgroundColor],
+            // backgroundColor: colors[backgroundColor],
             cursor: isComingSoon ? 'not-allowed' : 'pointer'
           }}
-            className={`${type} ${className} ${disabled ? 'disabled' : ' '}
-             ${animationHoverType + 'Container'} button-main-container`}>
+            className={`${className} ${disabled ? 'disabled' : ' '}
+             ${animationHoverType + 'Container'} button-main-container ${type}`}
+      >
         <div
             className={`button-container`}
         >
@@ -84,7 +93,7 @@ const Button = ({
           </Text>
           {additionalComponent ? additionalComponent() : null}
         </div>
-        {animationHoverType === 'lowerMenu' ? <div className={animationHoverType + 'Border'}/> : null}
+        {type === 'lowerMenu' ? <div className={'lowerMenuBorder'}/> : null}
       </button>
   );
 };

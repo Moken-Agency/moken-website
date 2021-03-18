@@ -8,8 +8,11 @@
   @media screen and (max-width: 600px) {
     padding: 30px 30px 60px 30px;
   }
+  .report-a-bug-button {
+    padding: 13px 21px;
+  }
     .report-bug-left-container {
-    width: 29vw;
+    max-width: 453px;
     @media screen and (max-width: 600px) {
       width: auto;
     }
@@ -21,19 +24,26 @@
         }
       }
     .first-input {
-      margin-bottom: 2.6vw;
+      margin-bottom: 40px;
       @media screen and (max-width: 600px) {
         margin-bottom: 45px;
       }
     }
     .second-input {
-      margin-bottom: 1vw;
+      margin-bottom: 24px;
       @media screen and (max-width: 600px) {
         margin-bottom: 20px;
       }
     }
     .third-input {
-      margin-bottom: 1.6vw;
+      margin-bottom: 25px;
+      .buttonContainer {
+        .textarea {
+          textarea {
+            min-height: 110px !important;
+          }
+        }
+      }
       @media screen and (max-width: 600px) {
         margin-bottom: 20px;
       }
@@ -65,15 +75,17 @@
     }
   }
   .report-bug-right-container {
+    margin-left: 77px;
     @media screen and (max-width: 600px) {
       display: none;
     }
     img {
-      width: 50vw
+      max-width: 734px;
+      object-fit: fill;
     }
   }
 }
-.ReactModal__Content, .ReactModal__Content--after-open {
-  background-color: transparent !important;
-  border: 0 !important;
-}
+//.ReactModal__Content, .ReactModal__Content--after-open {
+//  background-color: transparent !important;
+//  border: 0 !important;
+//}

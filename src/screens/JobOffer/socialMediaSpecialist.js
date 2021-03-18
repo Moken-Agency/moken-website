@@ -29,7 +29,7 @@ export default [
       //            The ideal candidate is one who enjoys working with entrepreneurs, founders, innovators building businesses,
       //            and thought-leaders bringing knowledge and inspiration to future leaders around the globe.`,
       //   containerStyles: {
-      //     marginBottom: "1.7vw",
+      //     marginBottom: 25,
       //   },
       // },
       {

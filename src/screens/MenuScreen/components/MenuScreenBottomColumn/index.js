@@ -25,7 +25,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
   const { isMobile } = useWindowDimensions();
 
     return (
-    <div style={{ marginRight: 150 }}>
+    <div className={'menu-screen-bottom-column-container'} >
       <Text
         size={20}
         mobSize={16}

@@ -5,9 +5,9 @@ import ExpertiseImageSecond from "../../images/expertise-second.png";
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "PRODUCT DEVELOPMENT",
+      titleFirst: "EXPERTISE // PRODUCT DEVELOPMENT",
+      titleConjunctions: "",
+      titleSecond: "",
     },
     subtitle: "Coding beautifully interactive products & platforms.",
     imgURL: ProductDevWebFirst,

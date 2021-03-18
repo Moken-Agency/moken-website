@@ -24,7 +24,9 @@ const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen, children
 
     return (
     <div className={"form-container"}>
-      <Modal isOpen={isOpen} className="form-modal">
+      <Modal isOpen={isOpen} className="form-modal" style={{container: {
+              backgroundColor: 'rgba(0, 0, 0, .5)'
+          }}}>
       {/*<Popup trigger={<button className={""}>{"Form"}</button>} modal nested>*/}
           <div className={'form-modal-content-container'}>
             <button

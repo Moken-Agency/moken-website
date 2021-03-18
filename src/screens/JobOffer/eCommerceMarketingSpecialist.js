@@ -20,7 +20,7 @@ export default [
         title: `You will deliver the ultimate digital brand experience by guiding our 
                 customers from the critical first touch point to conversion and beyond via our soon to launch digital shop.`,
         containerStyles: {
-          marginBottom: "1.7vw",
+          marginBottom: 25,
         },
       },
       {
@@ -29,7 +29,7 @@ export default [
                  strategies. With the skills you’lll gain in this role, the opportunities are endless – from a rewarding 
                  career in eCommerce Marketing to continued growth and development within Moken.`,
         containerStyles: {
-          marginBottom: "1.7vw",
+          marginBottom: 25,
         },
       },
       {

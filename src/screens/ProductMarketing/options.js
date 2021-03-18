@@ -5,9 +5,9 @@ import ExpertiseImageSecond from "../../images/expertise-second.png";
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "PRODUCT MARKETING",
+      titleFirst: "EXPERTISE // PRODUCT MARKETING",
+      titleConjunctions: "",
+      titleSecond: "",
     },
     subtitle: "Fine-tune, prototype, and market test the minimum valuable product (MVP) to validate and pivot to ensure an effective market launch.",
     imgURL: ProductDevWebFirst,

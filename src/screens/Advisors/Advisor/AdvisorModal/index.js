@@ -91,8 +91,8 @@ const AdvisorModal = ({isOpen = false, close,advisorInfo}) => {
 
 
                         <div>
-                            <Button backgroundColor={'white'} textColor={'black'} borderType={'bordered'} title={'VIEW SCHEDULE'} className={'view-advisor-btn'}/>
-                            <Button backgroundColor={'black'} textColor={'white'} title={'BOOK ADVISOR'}/>
+                            <Button type={'white-bordered'} textColor={'black'} borderType={'bordered'} title={'VIEW SCHEDULE'} className={'view-advisor-btn'}/>
+                            <Button type={'white-bordered'} textColor={'white'} title={'BOOK ADVISOR'}/>
                         </div>
 
 

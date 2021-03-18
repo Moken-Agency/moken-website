@@ -22,7 +22,7 @@ export default [
         title: `As a Creative Growth Specialist, you’ll play a key role in optimizing our client's customer experience 
                   and develop strategic ideas to help them drive consumers deeper into their acquisition funnels.`,
         containerStyles: {
-          marginBottom: "1.7vw",
+          marginBottom: 25,
         },
       },
       {

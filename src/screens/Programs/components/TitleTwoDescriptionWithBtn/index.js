@@ -51,8 +51,6 @@ const TitleTwoDescriptionWithBtn = ({
               {secondText}
             </Text>
             <Button
-              backgroundColor={"black"}
-              textColor={"white"}
               title={"APPLY TO INCUBATOR"}
               onClick={onClick}
             />

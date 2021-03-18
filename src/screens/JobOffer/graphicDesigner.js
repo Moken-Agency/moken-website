@@ -22,7 +22,7 @@ export default [
             '        "of digital design work that includes logos and branding concepts, digital content, print materials," +\n' +
             '        " trade show displays, and any other design collateral as needed.',
         containerStyles: {
-          marginBottom: "1.7vw",
+          marginBottom: 25,
         },
       },
       {

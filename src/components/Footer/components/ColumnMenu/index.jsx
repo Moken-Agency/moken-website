@@ -9,10 +9,7 @@ const titleStyles = {
 };
 
 
-const routeStyle = {
-  marginBottom: "1vw",
-  cursor: "pointer",
-};
+
 
 const containerRouteStyle = {
   // marginBottom: '0.05vw'
@@ -31,7 +28,7 @@ const ColumnTextComponent = ({ title, index, route }) => {
   return (
     <Text
       key={"column menu" + index + title}
-      textStyles={{ ...routeStyle, color }}
+      textStyles={{ cursor: 'pointer', marginBottom: 12, color }}
       type={"kLight"}
       // type={"light"}
       size={20}
@@ -49,12 +46,12 @@ const ColumnMenu = ({ routes = [], title }) => {
   return (
     <div className={"column-menu-container"}>
       <Text
-        type={"kRegular"}
+        type={"kMedium"}
         // type={"semiBold"}
         // size={'.9vw'}
-        size={14}
-        textStyles={{ ...titleStyles, letterSpacing: 4, marginBottom: ".85vw", fontWeight: 300 }}
-        containerStyles={{ marginBottom: 35, marginRight: "2.3vw" }}
+        size={16}
+        textStyles={{ ...titleStyles, letterSpacing: 4, fontWeight: 300 }}
+        containerStyles={{ marginBottom: 37, marginRight: 100 }}
       >
         {title.toUpperCase()}
       </Text>

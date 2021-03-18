@@ -40,15 +40,13 @@ const Explore = ({ title, subtitle, description, componentIndex, route = "", set
            </div>
               <Button
                   title={"EXPLORE"}
-                  backgroundColor={"transparent"}
                   onClick={() => history.push(route)}
-                  textColor={"black"}
                   size={10}
                   animationType={"fade-in"}
                   mobSize={8}
-                  type={'kSemiBold'}
+                  type={'lowerMenu'}
                   className={"explore-btn"}
-                  animationHoverType={'lowerMenu'}
+                  // animationHoverType={'lowerMenu'}
                   containerStyles={{maxWidth: 75}}
               />
           </div>

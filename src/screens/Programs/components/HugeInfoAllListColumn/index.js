@@ -120,8 +120,6 @@ const HugeInfoAllListColumn = ({
 
           {withBtn ? (
             <Button
-              backgroundColor={"black"}
-              textColor={"white"}
               onClick={onClick}
               title={btnTitle}
             />

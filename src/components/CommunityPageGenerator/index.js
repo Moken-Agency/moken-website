@@ -10,6 +10,7 @@ import FirstMapItem from "./components/FirstMapItem";
 import SecondMapItem from "./components/SecondMapItem";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ImageBlock from "../ImageBlock";
+import {Parallax} from "react-parallax";
 
 const dataExample = {
   firstSection: {
@@ -86,7 +87,7 @@ const CommunityPageGenerator = ({
                 mobSize={45}
                 animationType={"fade-in"}
                 textStyles={{ letterSpacing, lineHeight: isMobile ? '45px' : '75px'}}
-                containerStyles={{ marginBottom: isMobile ? 150 : 175, maxWidth: 675, ...firstSection.subtitleContainerStyles }}
+                containerStyles={{ marginBottom: isMobile ? 150 : 175, maxWidth: 750, ...firstSection.subtitleContainerStyles }}
             >
               {firstSection.subtitle}
             </Text>
@@ -94,10 +95,16 @@ const CommunityPageGenerator = ({
 
         </div>
 
-        <img
-          src={isMobile ? firstSection.imgURLMobile : firstSection.imgURL}
-          className={"first-section-img"}
+        <Parallax
+          className={'first-section-img'}
+          bgImage={isMobile ? firstSection.imgURLMobile : firstSection.imgURL}
+          strength={200}
         />
+
+        {/*<img*/}
+        {/*  src={isMobile ? firstSection.imgURLMobile : firstSection.imgURL}*/}
+        {/*  className={"first-section-img"}*/}
+        {/*/>*/}
         <div className={"first-section-info-container"}>
           {/*<Text size={'3.3vw'}*/}
           <Text
@@ -120,7 +127,7 @@ const CommunityPageGenerator = ({
             mobSize={16}
             animationType={"fade-in"}
             // textStyles={{lineHeight: 35}}
-            containerStyles={{ paddingRight: !isMobile ? '8vw' : null }}
+            containerStyles={{ paddingRight: !isMobile ? 120 : null }}
             textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
 
               // containerStyles={{marginBottom: '4.5vw', lineHeight: '35px'}}
@@ -149,7 +156,15 @@ const CommunityPageGenerator = ({
           </div>
         </div>
 
-        <ImageBlock position={"right"} url={secondSection.imgURL}/>
+        <div style={{ display: 'flex',justifyContent: 'flex-end' }}>
+          <Parallax
+              strength={200}
+              style={{height: 544, width: 1393, marginBottom: 240}}
+              bgImage={secondSection.imgURL}
+          />
+        </div>
+
+
 
         {/*<div className={'second-section-image-container'}>*/}
         {/*    <img src={secondSection.imgURL} />*/}

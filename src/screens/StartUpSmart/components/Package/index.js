@@ -75,9 +75,8 @@ const Package = ({
         <div className={"package-button-container"}>
           <Button
             title={"VIEW PACKAGE"}
-            backgroundColor={"white"}
-            textColor={"black"}
             // size={".9vw"}
+              type={'white'}
             // containerStyles={{paddingLeft: 0}}
             onClick={() => setIsOpen(!isOpen)}
             additionalComponent={returnAdditionalBtnComponent}
@@ -85,8 +84,6 @@ const Package = ({
           />
           <Button
             title={"SELECT THIS PACKAGE"}
-            backgroundColor={"black"}
-            textColor={"white"}
             containerStyles={{ padding: isMobile ? "" : "31px 35px" }}
           />
         </div>

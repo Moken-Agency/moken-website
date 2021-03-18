@@ -1,13 +1,13 @@
-import prommoto from "../../images/aboutAgencyProjects/prommoto.jpg";
-import knowbie from "../../images/aboutAgencyProjects/knowbie.jpg";
-import teology from "../../images/aboutAgencyProjects/teologo.jpg";
-import biteMe from "../../images/aboutAgencyProjects/bite-me.jpg";
-import ryr from "../../images/aboutAgencyProjects/ryr.jpg";
-import binary from "../../images/aboutAgencyProjects/binary.jpg";
-import hera from "../../images/aboutAgencyProjects/hera.jpg";
-import kenergy from "../../images/aboutAgencyProjects/kenergy.jpg";
+import prommoto from "../../images/aboutAgencyProjects/prommoto@3x.jpg";
+import knowbie from "../../images/aboutAgencyProjects/knowbie@3x.jpg";
+import teology from "../../images/aboutAgencyProjects/teologo@3x.jpg";
+import biteMe from "../../images/aboutAgencyProjects/bite-me@3x.jpg";
+import ryr from "../../images/aboutAgencyProjects/ryr@3x.jpg";
+import binary from "../../images/aboutAgencyProjects/binary@3x.jpg";
+import hera from "../../images/aboutAgencyProjects/hera@3x.jpg";
+import kenergy from "../../images/aboutAgencyProjects/kenergy@3x.jpg";
 import iraqi from "../../images/aboutAgencyProjects/about-agency-projects-swiper-first.jpg";
-import giggl from "../../images/aboutAgencyProjects/giggl.jpg";
+import giggl from "../../images/aboutAgencyProjects/giggl@3x.jpg";
 
 
 export default {
@@ -55,13 +55,15 @@ export default {
       title: "StartupSmart Packages",
       subtitle:
       `We have bundled a selection of custom services to help founders & startups tackle their immediate needs, faster & cheaper.`,
-      btnTitle: 'STARTUP SMART'
+      btnTitle: 'STARTUP SMART',
+      route: '/start-up-smart'
     },
     {
       title: "Estimate Your Project",
       subtitle:
       `Get an idea of how much you'll need to fund your project by answering a few questions and our estimating tool will do the rest.`,
       btnTitle: "ESTIMATE",
+      route: '/connect-with-us'
     },
   ],
 

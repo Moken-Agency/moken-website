@@ -71,9 +71,7 @@ const EmailForm = ({
               disabled={!isFormValid}
               title={"SUBSCRIBE"}
               onClick={handleSubscribe}
-              textColor={"black"}
-              borderType={"bordered"}
-              backgroundColor={"white"}
+              type={'white-bordered'}
             />
           </div>
         </div>

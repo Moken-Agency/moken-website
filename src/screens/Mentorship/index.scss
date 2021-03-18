@@ -5,10 +5,18 @@
       margin-bottom: 50px;
     }
   }
+  .mentorship-steps-description {
+    max-width: 635px;
+
+  }
+  .mentorship-steps-title {
+    max-width: 619px;
+  }
   .mentorship-partnerships-container {
-    padding: 0 12vw;
+    //padding: 0 12vw;
     margin-bottom: 281px;
     display: flex;
+    justify-content: center;
     //flex-wrap: wrap;
     @media screen and (max-width: 600px) {
       padding: 40px 43px;

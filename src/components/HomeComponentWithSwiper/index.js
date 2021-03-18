@@ -91,8 +91,9 @@ const HomeComponentWithSwiper = ({
             <Carousel breakPoints={breakPoints}
                       className={`${isTouching ? 'grabbing' : 'hover'}`}
                       ref={carousel}
-                      isRTL={false}
-                      itemsToShow={2.5} pagination={false} showArrows={false}>
+                      itemsToShow={2.5}
+                      pagination={false}
+                      showArrows={false}>
                 {swiperData.map(({title = '', subtitle = '', backgroundImage = ''}, index) => {
                     return (
                         <div className={'carousel-item'}

@@ -25,19 +25,23 @@ export default {
     title: "BRANDING CAPABILITIES",
     mapItems: [
       {
-        title: "Brand Strategy & Positioning",
+        title: `Brand Strategy
+& Positioning`,
         // route: ''
       },
       {
-        title: "Brand Implementation Guide",
+        title: `Brand
+Implementation Guide`,
         // route: ''
       },
       {
-        title: "Brand Identity System & Guidelines",
+        title: `Brand Identity
+System & Guidelines`,
         // route: ''
       },
       {
-        title: "Brand Extensions",
+        title: `Brand
+Extensions`,
         // route: ''
       },
     ],

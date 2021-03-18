@@ -103,8 +103,7 @@ const Careers = () => {
             />
             {/*<Text size={22} type={'semiBold'} color={'white'}  className={'text-submit'}>Submit you resume</Text>*/}
             <Button title={'SUBMIT YOUR RESUME'}
-                    backgroundColor={'black'}
-                    borderType={'bordered'}
+                    type={'black-bordered'}
                     onClick={() => window.open('mailto:careers@mokenstartups.com', '_blank')}
             />
             {/*<SubmitYourResume onClick={() => alert("submot resume")} />*/}

@@ -24,8 +24,10 @@ const ForInvestors = () => {
     <div className={"for-investors-container"}>
       <HeaderTitle
         title={"FOR INVESTORS"}
-        subtitle={"Success fuelled by partnership."}
-        description={"A curated community of hungry startups"}
+        subtitleClassName={'for-investors-subtitle'}
+        descriptionClassName={'for-investors-description'}
+        subtitle={"A curated community of scalable opportunities."}
+        description={"Together we create an unmatched global ecosystem of vibrant technology founders, passionate entrepreneurs, and impact driven investors."}
         marginBottom={isMobile ? 107 : 107}
       />
 
@@ -40,14 +42,13 @@ const ForInvestors = () => {
         withoutRightPadding
         titleClassName={'for-investors-startup-title'}
         descriptionClassName={'for-investors-startup-description'}
-        title={"Join our trusted community of partners and market what you do."}
-        mainTitle={"STARTUP MATCH PROGRAM"}
+        title={"Discover unmatched opportunities with scale driven startups."}
+        mainTitle={"ACCESS OPPORTUNITY"}
         description={
-         `Our role consists of taking the time to understand your business model, and suggesting creative and
-          high-performing digital strategies. Our avant-garde tactics are in line with the current market,
-           blend seamlessly with our clients’ operational realities, and eliminate risks that aren’t necessary.`
+         `As an investor, building lasting relationships with the startups identified as potential investments is equally as important as fostering those you’ve already invested in. Through Moken’s Access Network investors gain access to investment opportunities and relationship building within our exclusive network of highly promising startups from around the world.`
         }
-        btnTitle={"APPLY TO INCUBATOR".toUpperCase()}
+          onClick={() => window.open('https://access.mokenstartups.com', '_blank')}
+        btnTitle={"JOIN THE NETWORK".toUpperCase()}
       />
 
       <LeftInfoWithRightImage
@@ -56,14 +57,11 @@ const ForInvestors = () => {
         titleClassName={'for-investors-agency-title'}
         descriptionClassName={'for-investors-agency-description'}
         title={
-          "Moken Agency copy goes here about individuals working together to create extraordinary"
+          "Supporting your startups while safeguarding your investment through trusted build partners."
         }
         mainTitle={"SUPPORT YOUR VENTURES"}
         description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’" +
-          " operational realities, and eliminate risks that aren’t necessary."
+          `Our role consists of ensuring the viabillity of your investment is never in jeopardy and your startups are supported from idea to launch, and beyond. The riskiest part of early stage investing is often through the post investment support period. However, with our efficient and effective build, validate, and grow tactics, Moken works with you to ensure your startups are supported. Our team’s capabilities seamlessly blend in with any startups’ operational realities while eliminating all unnecessary risks.`
         }
         btnTitle={"PARTNER WITH US"}
         isLeftImage
@@ -72,8 +70,9 @@ const ForInvestors = () => {
 
       <ColorBlock
         title={"Looking for the next big thing?"}
-        subtitle={"APPLY NOW"}
+        subtitle={"CONNECT WITH US"}
         withIcon
+        onClick={() => history.push('/connect-with-us')}
         textColor={"white"}
         backgroundColor={"black"}
         blockType={'middle'}
@@ -82,33 +81,33 @@ const ForInvestors = () => {
       />
 
       <ProgramCommunityListPartner
-        title={"LEVERAGE THE ECOSYSTEM"}
+        title={"GET CONNECTED IN THE MOKEN ECOSYSTEM"}
         subtitle={
-          "Join our trusted community of partners and market what you do to founders and startups, globally."
+          "Join our trusted community of investors, startups, and founders to extend your reach to new heights."
         }
         subtitleClassName={'for-investors-partners-subtitle'}
         options={options.partners}
         type={"big"}
       />
 
-      <LeftInfoWithRightImage
-          titleClassName={'for-investors-startups-title'}
-          descriptionClassName={'for-investors-startups-description'}
-        imgUrl={forInvestorsFourth}
-        withoutRightPadding
-        title={
-          "Let us host a demo day for you Enthusiastic individuals working"
-        }
-        mainTitle={"LET US SHOW YOUR STARTUPS OFF"}
-        description={
-          "Our role consists of taking the time to understand your business model, " +
-          "and suggesting creative and high-performing digital strategies. Our avant-garde tactics" +
-          " are in line with the current market, blend seamlessly with our clients’ operational" +
-          " realities, and eliminate risks that aren’t necessary."
-        }
-        btnTitle={"APPLY TO INCUBATOR"}
-        isLeftImage
-      />
+      {/*<LeftInfoWithRightImage*/}
+      {/*    titleClassName={'for-investors-startups-title'}*/}
+      {/*    descriptionClassName={'for-investors-startups-description'}*/}
+      {/*  imgUrl={forInvestorsFourth}*/}
+      {/*  withoutRightPadding*/}
+      {/*  title={*/}
+      {/*    "Let us host a demo day for you Enthusiastic individuals working"*/}
+      {/*  }*/}
+      {/*  mainTitle={"LET US SHOW YOUR STARTUPS OFF"}*/}
+      {/*  description={*/}
+      {/*    "Our role consists of taking the time to understand your business model, " +*/}
+      {/*    "and suggesting creative and high-performing digital strategies. Our avant-garde tactics" +*/}
+      {/*    " are in line with the current market, blend seamlessly with our clients’ operational" +*/}
+      {/*    " realities, and eliminate risks that aren’t necessary."*/}
+      {/*  }*/}
+      {/*  btnTitle={"APPLY TO INCUBATOR"}*/}
+      {/*  isLeftImage*/}
+      {/*/>*/}
 
       <EmailForm withForm />
     </div>

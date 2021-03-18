@@ -44,10 +44,8 @@ const TitleSubDescription = ({
           <Button
             className={"title-sub-description-btn"}
             title={btnTitle}
-            textColor={"black"}
-            backgroundColor={"transparent"}
             containerStyles={{ padding: 0 }}
-            animationHoverType={'lowerMenu'}
+            type={'lowerMenu'}
           />
         </div>
       ) : null}

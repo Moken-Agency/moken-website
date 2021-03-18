@@ -54,8 +54,6 @@ const BigDataSquares = ({ title, subtitle, btnTitle = "GET INVOLVED", route = '/
         <div style={{ display: "flex", justifyContent: "flex-end" }}>
           <Button
               title={btnTitle}
-              backgroundColor={"black"}
-              textColor={"white"}
               mobSize={10}
               onClick={() => history.push(route)}
 

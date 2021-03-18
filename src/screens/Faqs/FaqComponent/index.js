@@ -8,7 +8,7 @@ const FaqComponent = ({ title, faqs = [], isLast = false }) => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={`faq-component-container ${isLast ? "faq-last" : ""}`}>
+    <div className={`faq-component-container ${isLast ? "faq-last" : ""}`} onClick={handleOpenFaq}>
       <div className={"faq-component-title-container"}>
         <Text
           type={"kBold"}
@@ -19,7 +19,7 @@ const FaqComponent = ({ title, faqs = [], isLast = false }) => {
         >
           {title}
         </Text>
-        <button onClick={handleOpenFaq} data-aos="fade-in" style={{cursor: 'pointer'}}>
+        <button data-aos="fade-in" style={{cursor: 'pointer'}}>
           <Text size={100} type={"thin"} mobSize={65}>
             {isOpen ? "-" : "+"}
           </Text>

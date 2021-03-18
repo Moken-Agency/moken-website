@@ -30,18 +30,28 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
         customStyles={customStyles}
         style={{
           overlay: {
-            backgroundColor: 'rgb(253, 253, 253, 50%)',
+            // backgroundColor: 'rgba()',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'rgba(255, 255, 255, 0.5)'
           },
           content: {
             // padding: '115px 153px'
-
+            position: 'initial',
+            inset: 0,
+            backgroundColor: 'transparent',
+            padding: 0,
+            border: 0,
+            // width: 1450,
+            // height: 930
           }
         }}
         // className="Modal"
     >
         <div className={"report-bug-container"}>
           <Text containerStyles={{position: 'absolute', right: 40, top: 40, cursor: 'pointer'}}
-                type={'kSemiBold'}
+                type={'kMedium'}
                 size={16}
                 textStyles={{letterSpacing: 4}}
                 onClick={() => setIsOpen(false)}>CLOSE</Text>
@@ -118,9 +128,10 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
               <Button
                   size={12}
                   mobSize={12}
-                  borderType={"bordered"}
-                  color={"white"}
+                  type={'white-bordered'}
                   title={"REPORT THE BUG"}
+                  className={'report-a-bug-button'}
+                  onClick={() => window.open('mailto:Agency@mokenstartups.com', '_blank')}
               />
             </div>
           </div>

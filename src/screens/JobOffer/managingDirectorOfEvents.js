@@ -24,7 +24,7 @@ export default [
           "support the communications and marketing team’s efforts for Moken Events including research, social" +
           " networking, community building, and data analysis.",
         containerStyles: {
-          marginBottom: "1.7vw",
+          marginBottom: 25,
         },
       },
       {

@@ -15,35 +15,43 @@
 }
 
 .about-agency-container {
-  //.leads-container {
-  //  padding: 0 0 4vw 12vw;
+  .leads-container {
+    margin-bottom: 207px;
+    padding-left: 10.5vw;
+    //  padding: 0 0 4vw 12vw;
     .apps-container {
       display: flex;
       justify-content: space-between;
-        .app-container {
-          background-color: #880000;
-          padding: 2vw;
-          height: 40vw;
-          width: 30vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          &:first-of-type {
-           margin-top: 5vw;
-            .text-container {
-              position: relative;
-              left: -4vw;
-            }
+
+      .app-container {
+        background-color: #880000;
+        padding: 2vw;
+        height: 40vw;
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &:first-of-type {
+          margin-top: 5vw;
+
+          .text-container {
+            position: relative;
+            left: -4vw;
           }
-          &:last-of-type {
-            align-items: flex-end;
-            .text-container {
-              position: relative;
-              left: 4vw;
-            }
+        }
+
+        &:last-of-type {
+          align-items: flex-end;
+
+          .text-container {
+            position: relative;
+            left: 4vw;
           }
+        }
       }
     }
+  }
   .our-partners-info-container {
 
   }
@@ -103,16 +111,20 @@
 
 .agency-product-container {
   //margin-right: 82px;
+  outline: none;
   img {
-    width: 100%;
+    outline: none;
+    width: 567px;
     height: 793px;
-    background-color: #880000;
+    object-fit: fill;
+    //background-color: #880000;
     margin-bottom: 20px;
   }
 }
 
 .agency-swiper-container {
   padding-left: 12vw;
+  margin-bottom: 207px;
 }
 
 .about-agency-swiper-container {

@@ -22,7 +22,7 @@ export default [
                     from social media captions, paid advertising campaigns, ebooks, team guides, event descriptions 
                     and even case studies as well as apply your skills to technology through various in-product applications.`,
         containerStyles: {
-          marginBottom: "1.7vw",
+          marginBottom: 25,
         },
       },
       {

@@ -1,5 +1,5 @@
 import React, {useEffect, useMemo, useRef, useState} from "react";
-import SwiperCore, { Navigation, Virtual } from 'swiper';
+import SwiperCore, { Navigation, Virtual, Autoplay } from 'swiper';
 import { Swiper as SwiperComponent, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
@@ -11,7 +11,7 @@ import ArrowUpRight from "../../images/arrow-up-right-white.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import "./index.scss";
 
-SwiperCore.use([Navigation, Virtual]);
+SwiperCore.use([Navigation, Virtual, Autoplay]);
 
 
 const defaultBreakpoints ={
@@ -40,6 +40,9 @@ const defaultBreakpoints ={
     },
     '1800': {
         slidesPerView: 4.5,
+    },
+    '1900': {
+        slidesPerView: 5.5,
     }
 };
 
@@ -50,7 +53,12 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                     breakpoints =defaultBreakpoints,
                     withoutArrows = false,
                     centeredSlides = false,
-                    additionalComponentOptions = {Component: () => null, position: ''}}) => {
+                    additionalComponentOptions = {Component: () => null, position: ''},
+                    containerProps = {},
+                    isSwiperHover,
+                    ...rest
+                }) => {
+    console.log({rest});
     const { isMobile, isMiddleBiggest, isMiddleSmallest } = useWindowDimensions();
 
     const [isActiveIndex, setIsActiveIndex] = useState(0)
@@ -59,6 +67,8 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+
+    const swiperRef = useRef(null);
 
     // const swiper = new Swiper('.swiper-container', {
     //
@@ -76,14 +86,19 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
 
     }
 
+
+
     const onDragEnd = (e) => {
         console.log('onDragEnd', e);
     }
 
+    console.log({containerProps});
 
     return (
-      <div className={`swiper-component-container ${isTouching ? 'grabbing' : ''} ${containerClassName}`}>
+      <div className={`swiper-component-container ${isTouching ? 'grabbing' : ''} ${containerClassName}`} {...containerProps}>
           <SwiperComponent
+              shouldSwiperUpdate
+              ref={swiperRef}
                   spaceBetween={spaceBetween}
               centeredSlides={centeredSlides}
                   // virtual={virtual}
@@ -98,12 +113,15 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                        swiper.params.navigation.prevEl = prevRef.current;
                        swiper.params.navigation.nextEl = nextRef.current;
                        swiper.navigation.update();
+
                    }}
                   // onSlideChange={onDragStart}
                   // onReachEnd={onDragEnd}
                   // onBeforeSlideChangeStart={() => console.log('onBeforeSlideChangeStart')}
                   onTouchStart={() => setIsTouching(true)}
                   onTouchEnd={() => setIsTouching(false)}
+                  {...rest}
+
 
           >
               {/*{*/}

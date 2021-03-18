@@ -68,7 +68,7 @@ const PageGenerator = ({
               />
               <Title
                 title={title.toUpperCase()}
-                containerStyles={{ marginBottom: isMobile ? 50 : "4vw" }}
+                containerStyles={{ marginBottom: isMobile ? 50 : 60 }}
               />
               <Subtitle
                 size={50}

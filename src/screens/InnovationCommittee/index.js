@@ -56,8 +56,7 @@ const InnovationCommittee = () => {
             </nav>
             <Button
               title={"Coming 2022"}
-              type={"innovation"}
-              backgroundColor={"blue"}
+              type={"innovation-blue"}
               textType={"extraBoldDemo"}
             />
           </div>
@@ -120,19 +119,15 @@ const InnovationCommittee = () => {
           <div className={"innovation-committee-btn-container"}>
             <Button
               title={"Join the Committee"}
-              type={"innovation"}
-              backgroundColor={"coral"}
-              textType={"extraBoldDemo"}
+              type={"innovation-coral"}
               size={16}
               mobSize={12}
+              textType={"extraBoldDemo"}
               className={"innovation-committee-btn-first"}
             />
             <Button
               title={"Request More Info"}
-              type={"innovation"}
-              backgroundColor={"white"}
-              textColor={"coral"}
-              borderType={"bordered"}
+              type={"innovation-bordered-coral"}
               size={16}
               mobSize={12}
               textType={"extraBoldDemo"}
@@ -140,7 +135,9 @@ const InnovationCommittee = () => {
           </div>
         </div>
 
-        <img src={InnovationSquare} className={"innovation-main-image"} />
+        <div className={"innovation-main-image"} >
+          <img src={InnovationSquare} />
+        </div>
       </main>
 
       <ImageBlock

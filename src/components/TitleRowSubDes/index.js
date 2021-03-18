@@ -9,8 +9,8 @@ const TitleRowSubDes = ({
   subtitle = "",
   description = "",
   onClick,
-                            btnTitle = 'APPLY TO INCUBATOR',
-                          descriptions = []
+  btnTitle = 'APPLY TO INCUBATOR',
+  descriptions = []
 }) => {
   return (
     <div className={"title-row-sub-desc-container"}>
@@ -63,7 +63,6 @@ const TitleRowSubDes = ({
               title={btnTitle}
               onClick={onClick}
               size={14}
-              borderType={"bordered"}
             />
           ) : null}
         </div>

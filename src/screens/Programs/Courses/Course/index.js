@@ -35,10 +35,7 @@ const Course = ({ url, title = "", description = "", btnTitle = "" }) => {
           title={btnTitle}
           mobSize={10}
           size={14}
-          animationHoverType={'lowerMenu'}
-          backgroundColor={"transparent"}
-          textColor={"black"}
-          type={'kSemiBold'}
+          type={'lowerMenu'}
           className={"explore-btn"}
         />
       </section>

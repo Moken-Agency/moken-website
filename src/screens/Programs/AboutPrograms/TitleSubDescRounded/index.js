@@ -19,7 +19,7 @@ const TitleSubDescRounded = ({
       <Text
         className={"title-sub-desc-rounded-subtitle"}
         size={30}
-        type={"kThin"}
+        type={"kLight"}
       >
         {subtitle}
       </Text>

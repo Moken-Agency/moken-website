@@ -53,8 +53,6 @@ const Event = ({action = () => {}, subtitle = '', title = '', description = ''})
           <Button
             title={"ATTEND EVENT"}
             containerStyles={{ padding: "31px 35px" }}
-            backgroundColor={"black"}
-            textColor={"white"}
             onClick={action}
           />
         </div>

@@ -26,7 +26,7 @@ export default [
       //     " environment to lead through the role of Corporate Partnership & Sponsorship Manager who will play a " +
       //     "major role in driving partnerships and revenue for our teams at Moken.",
       //   containerStyles: {
-      //     marginBottom: "1.7vw",
+      //     marginBottom: 25,
       //   },
       // },
       {

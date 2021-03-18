@@ -19,13 +19,13 @@ export default [
             {
                 title: 'The focus of this position is to identify, foster, and develop comprehensive programmingused to invest in and support the most innovative founders and startups globally fromideation to exit.',
                 containerStyles: {
-                    marginBottom: "1.7vw",
+                    marginBottom: 25,
                 },
             },
             {
                 title: 'A successful candidate will collaborate in the development of our education and investmentstrategies to actively recruit, select, and mentor early stage founders and startups throughthe challenges of critical decision making, strategic tactics, and processes surroundingsecuring investment.',
                 containerStyles: {
-                    marginBottom: "1.7vw",
+                    marginBottom: 25,
                 },
             },
             {

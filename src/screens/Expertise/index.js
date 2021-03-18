@@ -138,11 +138,9 @@ const Expertise = () => {
             <div className={"expertise-bottom-btn-container"}>
               <Button
                 title={"ROADMAPS & SPRINTS"}
-                backgroundColor={"black"}
                 // size={14}
+                  type={'black-bordered'}
                 mobSize={10}
-                textColor={"white"}
-                borderType={"bordered"}
                 isComingSoon
                 containerStyles={{
                   marginRight: 30,
@@ -150,11 +148,9 @@ const Expertise = () => {
               />
               <Button
                 title={"STARTUPSMART"}
-                backgroundColor={"white"}
-                textColor={"black"}
                 // size={14}
                 mobSize={10}
-                type={"bordered-white"}
+                type={"white"}
               />
             </div>
           </div>

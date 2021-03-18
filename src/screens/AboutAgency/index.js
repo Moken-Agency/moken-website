@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useCallback, useEffect, useRef, useState} from "react";
 import "./index.scss";
 import Text from "../../components/Text";
 import Title from "../../components/Title";
@@ -16,10 +16,48 @@ import ProgramCommunityListPartner from "../Programs/components/ProgramCommunity
 import TitleSubDescription from "../../components/TitleSubDescription";
 import agencyRight from '../../images/agency-right@2x.png';
 import ColorBlock from "../../components/ColorBlock";
+import {debounce} from "../../constans/helpers";
+import Carousel from "react-elastic-carousel";
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {useHistory} from "react-router-dom"; // requires a loader
 const AboutAgency = () => {
   const { isMobile } = useWindowDimensions();
 
-  return (
+  const [isSwiperHover, setIsSwiperHover] = useState(false);
+  const [isReverseMove, setIsReverseMove] = useState(false);
+
+    let history = useHistory();
+
+
+    const onMouseEnter = () => {
+      setIsSwiperHover(true)
+  }
+
+  const onMouseLeave = () => {
+      setIsSwiperHover(false)
+  }
+
+    const ref = useRef(null);
+
+
+    useEffect(() => {
+        ref.current.addEventListener('mousemove', debounce(_mouseMove, 1000 / 60));
+        return  document.removeEventListener('mousemove', _mouseMove);
+    }, []);
+
+
+    const _mouseMove =(e) => {
+        window.innerWidth / 2 >  e.clientX ? setIsReverseMove(true) : setIsReverseMove(false);
+
+    };
+
+
+    console.log({isSwiperHover});
+    return (
     <div className={"about-agency-container"}>
       <HeaderTitle
         title={"MOKEN AGENCY"}
@@ -50,7 +88,10 @@ const AboutAgency = () => {
         </Text>
       </div>
 
-      <Swiper Component={Explore} swiperData={options.explores} containerClassName={'about-agency-swiper-container'} />
+      <Swiper
+              Component={Explore}
+              swiperData={options.explores}
+              containerClassName={'about-agency-swiper-container'} />
 
       <ColorBlock withIcon
                   title={'Work with Us'}
@@ -58,6 +99,7 @@ const AboutAgency = () => {
                   backgroundColor={'black'}
                   type={'kThin'}
                   size={50}
+                  onClick={() => history.push('/connect-with-us')}
                   blockType={'middle'}/>
 
 
@@ -70,37 +112,54 @@ const AboutAgency = () => {
       />
 
 
-      <div className={"leads-container"}>
-        <Swiper containerClassName={'agency-swiper-container'} withoutArrows spaceBetween={82} breakpoints={{
-            // when window width is >= 320px
-            '0': {
-                slidesPerView: 1,
-            },
-            // when window width is >= 480px
-            '1150': {
-                slidesPerView: 2,
-            },
-            '1650': {
-                slidesPerView: 3,
-            }
-        }} swiperData={options.projects} Component={({title, subtitle, imgURL}, index) => {
-            return (
-                <div className={'agency-product-container'}>
-                    <img src={imgURL}/>
-                    <div>
-                        <Text size={50}
-                              mobSize={45}
-                              type={'kBold'}
-                              textStyles={{lineHeight: isMobile ? '60px' : '80px'}}
-                        >{title}</Text>
-                        <Text size={16}
-                              mobSize={14}
-                              textStyles={{letterSpacing: 4}}
-                              type={'kRegular'}>{subtitle}</Text>
+      <div className={"leads-container"} ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+        <Carousel containerClassName={'agency-swiper-container'}
+                loop={true}
+                // containerProps={{onMouseEnter, onMouseLeave}}
+                // autoplay={{
+                //     delay: 500,
+                //     disableOnInteraction: false,
+                //     reverseDirection: isReverseMove
+                // }}
+                  isRTL={isReverseMove}
+                  enableAutoPlay={isSwiperHover}
+                  itemsToShow={2.5}
+                  pagination={false}
+                  showArrows={false}
+                withoutArrows
+                  enableSwipe={false}
+                // spaceBetween={82}
+                  breakPoints={[{ width: 1, itemsToShow: 1 },
+                    { width: 0, itemsToShow: 1 },
+                    { width: 870, itemsToShow: 1.5 },
+                    { width: 1200, itemsToShow: 2 },
+                    { width: 1500, itemsToShow: 2.5 }]}
+                  swiperData={options.projects}
+        //           Component={({title, subtitle, imgURL}, index) => {
+        //     return (
+
+        //     )
+        // }}
+        >
+            {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {
+                return (
+                    <div className={'agency-product-container'}>
+                        <img src={imgURL}/>
+                        <div>
+                            <Text size={50}
+                                  mobSize={45}
+                                  type={'kBold'}
+                                  textStyles={{lineHeight: isMobile ? '60px' : '80px'}}
+                            >{title}</Text>
+                            <Text size={16}
+                                  mobSize={14}
+                                  textStyles={{letterSpacing: 4}}
+                                  type={'kRegular'}>{subtitle}</Text>
+                        </div>
                     </div>
-                </div>
-            )
-        }} />
+                )
+            })}
+        </Carousel>
         {/*<div className={'agency-products-container'}>*/}
         {/*    {*/}
         {/*        [1,2,3,4,5].map((_, index) => {*/}

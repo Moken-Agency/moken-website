@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Text from "../Text";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
@@ -16,6 +16,7 @@ const Opportunity = ({
   action
 }) => {
   const history = useHistory();
+
 
   return (
     <div
@@ -49,13 +50,11 @@ const Opportunity = ({
       </div>
       <div className={'opportunity-view-btn-container'}>
         <Button
-            backgroundColor={"transparent"}
-            // onClick={() => history.push(route)}
-            textColor={"black"}
             size={14}
             title={btnTitle}
             animationType={"fade-in"}
             mobSize={10}
+            type={'lowerMenu'}
             textType={'kMedium'}
             className={"explore-btn"}
             animationHoverType={'lowerMenu'}

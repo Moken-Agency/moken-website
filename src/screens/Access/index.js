@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTitle from "../../components/HeaderTitle";
 import ImageBlock from "../../components/ImageBlock";
 import TitleRowSubDes from "../../components/TitleRowSubDes";
@@ -9,12 +9,23 @@ import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList"
 import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import {useHistory} from "react-router-dom";
+import accessFirst from "../../images/access-first@3x.jpg";
+import accessSecond from "../../images/access-second@3x.jpg";
+import accessThird from "../../images/access-third@3x.jpg";
+import accessFour from "../../images/access-four@3x.jpg";
+import Form from "../../components/Form";
 
 const Access = () => {
     let history = useHistory();
+    const [isFormOpened, setIsFormOpened] = useState(false);
+
 
     return (
     <div className={"access-container"}>
+
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOr4yWT2Fffz8dVK9xF3DUfNeP4_kQ8YSwI59YXY_HRP5z7Q/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+        </Form>
       <HeaderTitle
         title={"ACCESS"}
         subtitleClassName={'access-header-subtitle'}
@@ -23,7 +34,7 @@ const Access = () => {
         description={"A place where founders, entrepreneurs, innovators, and investors to connect and grow, together."}
       />
 
-      <ImageBlock type={"full"} />
+      <ImageBlock position={"right"} url={accessFirst}/>
 
       <TitleRowSubDes
         title={"ABOUT ACCESS"}
@@ -38,9 +49,10 @@ const Access = () => {
         mainTitle={"ACCESS NETWORK"}
         title={"Join our trusted community of founders and startups and scale what you do."}
         description={`The Access Network is a place for founders, entrepreneurs, innovators, and investors to connect and grow, together. You'll learn from others' experience to help scale your ideas, avoid mistakes, and grow your venture. You'll connect with founders, investors, and innovators around the world who understand where you're at and what you're going through. And finally, you'll discover unmatched opportunities designed to promote and support you and your venture every step of the way by industry experts.`}
-        imgUrl={""}
+        imgUrl={accessSecond}
         btnTitle={"JOIN THE NETWORK"}
         withoutRightPadding
+        imageClassName={'access-network-image'}
         onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
       />
 
@@ -54,7 +66,7 @@ const Access = () => {
       />
 
       <LeftImageTitleSubDesList
-        imgUrl={""}
+        imgUrl={accessThird}
         title={"THE BENEFITS"}
         subtitle={"We make it easy to kickstart your vision."}
         description={`Leverage the Access Network to help make better, well-informed decisions about the things that are most important to you & your business`}
@@ -63,10 +75,11 @@ const Access = () => {
 
       <LeftInfoWithRightImage
         withoutRightPadding
+        imageClassName={'access-partner-image'}
         mainTitle={"ACCESS PARTNER PROGRAM"}
         title={"Join our trusted community of partners and access new market opportunities."}
         description={`Anchored in simplicity we develop strategic partnerships with gamechanging individuals and companies that want to do better and be better. We know we have the power to shape the world, just as great partnerships have the power to revolutionize industries.`}
-        imgUrl={""}
+        imgUrl={accessFour}
         onClick={() => history.push('/our-partners')}
         btnTitle={"PARTNER WITH US"}
       />
@@ -75,7 +88,7 @@ const Access = () => {
         title={"CREATE THE FUTURE OF ACCESS"}
         description={`We know that dynamic actions define the future and that the ambition to lead requires the tenacity to adapt. The Network is only the tip of the iceberg for all that Access hopes to be. You can help us shape the future, simply tell us what you need to succeed and we’ll make it a reality.`}
         subtitle={"Create the future of access for founders & startups."}
-        onClick={() => window.open('https://forms.gle/eZ2m6fkS7cmPE9jL9', '_blank')}
+        onClick={() => setIsFormOpened(true)}
         btnTitle={'SHARE YOUR INSIGHTS'}
       />
 

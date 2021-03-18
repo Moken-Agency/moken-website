@@ -65,7 +65,7 @@ const MenuScreenTopColumn = ({
           // type={"semiBold"}
           className={'black-menu-screen-subtitle'}
           textStyles={styles.subTitle}
-          type={"kSemiBold"}
+          type={"kMedium"}
 
         >
           {subTitle}

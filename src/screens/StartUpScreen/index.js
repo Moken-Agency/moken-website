@@ -10,7 +10,7 @@ import EmailForm from "../../components/EmailForm";
 import ImageBlock from "../../components/ImageBlock";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import startupSmartHeader from '../../images/startup-smart-header.jpg';
-import spotify from '../../images/spotify.svg';
+import {ReactComponent as Spotify} from '../../images/spotify.svg';
 import startupSmartSecondImage from '../../images/startup-smart-second.jpg';
 
 const StartUpScreen = () => {
@@ -47,6 +47,7 @@ A validated method to turn your idea into a successful business.`}
         mainTitle={"MOST COMPREHENSIVE STARTUP COURSE AVAILABLE"}
         description={`An array of founder focused courses driven by experience together creating all-in-one formula specifically designed for entrepreneurs, led by experts in topics ranging from business modeling, engineering and communication.`}
         btnTitle={"EXPLORE COURSE"}
+        isComingSoon
         imgUrl={startupSmartSecondImage}
       />
 
@@ -80,9 +81,10 @@ A validated method to turn your idea into a successful business.`}
         mainTitle={"STARTUPSMART PODCAST"}
         description={`Join Moken founders Mo + Ken explore the world of entrepreneurship through wide-ranging experiences, global connections, and a collective drive to help founders build market-leading companies. Dive deep into all things startups with this experiential, founder driven podcast filled with valuable insight and the occasional side of sass.`}
         btnTitle={"LISTEN ON SPOTIFY"}
+        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
         imgUrl={""}
           btnAdditionalComponent={() => {
-                return <img className={'spotify-icon'} src={spotify}/>
+                return <Spotify className={'spotify-icon'}/>
 
           }}
       />

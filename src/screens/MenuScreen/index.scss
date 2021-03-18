@@ -7,7 +7,7 @@
   z-index: 1;
   min-height: 100vh;
   .menu-screen-top-columns-container {
-    padding: 20px 135px 50px 135px;
+    padding: 20px 0 65px 135px;
     display: flex;
   }
   .menu-screen-top-column-divider {
@@ -27,7 +27,7 @@
     }
     .socials-header-menu-container {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: space-between;
       align-items: center;
       padding: 2.8vw 1.6vw;
