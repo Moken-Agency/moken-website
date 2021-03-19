@@ -43,7 +43,6 @@ const ConnectWithUs = () => {
   const handleSendMessage = () => {
     if(isFormValid) {
       setIsFetching(true);
-      console.log({isFormValid});
       emailjs.send(
           'service_g5bkqs3',
           'template_z4t2vgf',
@@ -60,7 +59,6 @@ const ConnectWithUs = () => {
       })
 
     } else {
-      console.log({errors});
       alert('Not valid')
     }
 

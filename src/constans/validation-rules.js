@@ -163,7 +163,6 @@ const checkEqual = (first, second, key, equalLabel, equalToLabel) => {
 };
 
 const sendEmailValidation = (values) => {
-  console.log({ values });
   return {
     ...emailValidation(values.email),
   };

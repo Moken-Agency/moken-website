@@ -9,8 +9,18 @@
     padding: 0 0 25vw;
     margin-bottom: 25vw;
   }
-  .event-description {
+  .event-description, .event-subtitle {
     max-width: 787px;
+  }
+
+  .event-subtitle {
+    margin-bottom: 54px;
+    span {
+      line-height: 53px;
+    }
+    @media screen and (max-width: 600px) {
+      //margin-bottom: 44px;
+    }
   }
   div {
     .events-button-container {

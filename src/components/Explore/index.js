@@ -34,7 +34,7 @@ const Explore = ({ title, subtitle, description, componentIndex, route = "", set
                    {subtitle}
                </Text>
                <div className={"explore-divider"} />
-               <Text type={"kRegular"} mobSize={10} animationType={"fade-in"} size={14}>
+               <Text type={"kRegular"} mobSize={10} animationType={"fade-in"} className={'explore-description'} size={14}>
                    {description}
                </Text>
            </div>

@@ -9,7 +9,7 @@ const Benefit = ({ title = "", subtitle = "", description = "", img = '' }) => {
       <Text
         size={14}
         mobSize={12}
-        type={"kRegular"}
+        type={"kMedium"}
         // type={"semiBold"}
         animationType={"fade-in"}
         className={"benefit-title-first"}

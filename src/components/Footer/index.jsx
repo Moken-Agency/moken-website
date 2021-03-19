@@ -91,7 +91,6 @@ const Footer = ({ isOpen, setIsOpen }) => {
             backgroundColor={"#fbfbfb"}
             // animationType={"fade-in"}
             onChange={(event) => {
-              console.log(event.target.value);
               handleChange({ name: "email", text: event.target.value })
             }
 

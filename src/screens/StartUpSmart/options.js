@@ -193,6 +193,7 @@ export default {
     {
       title: "BRANDING",
       subtitle: "Branding Basic",
+      tip: 'TECH',
       firstColumn: {
         data: [
           {

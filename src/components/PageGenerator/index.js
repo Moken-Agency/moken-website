@@ -17,7 +17,6 @@ const PageGenerator = ({
   containerStyles = {},
   descriptionOptions = {},
 }) => {
-  console.log({ data });
   const { isMobile } = useWindowDimensions();
 
   return (

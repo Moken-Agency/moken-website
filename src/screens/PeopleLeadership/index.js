@@ -25,7 +25,6 @@ const PeopleLeadership = () => {
 
 
   const returnPeopleCountInRow = useMemo(() => {
-      console.log(options.peopleTest);
       const fourPeople = peopleItemsInRow([...options.peopleTest],4);
       const threePeople = peopleItemsInRow([...options.peopleTest],3);
       const twoPeople = peopleItemsInRow([...options.peopleTest],2);
@@ -41,7 +40,6 @@ const PeopleLeadership = () => {
 
       }
   }, [window.innerWidth]);
-    console.log({returnPeopleCountInRow});
 
     return (
     <div className={"people-leadership-container"}>

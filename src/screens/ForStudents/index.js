@@ -13,11 +13,15 @@ import forStudentsFirst from "../../images/for-students-first.jpg";
 import forStudentsSecond from "../../images/for-students-second.jpg";
 import forStudentsThird from "../../images/for-students-third.jpg";
 import forStudentsForth from "../../images/for-students-forth.jpg";
+import {useHistory} from "react-router-dom";
 
 const ForStudents = () => {
   const { isMobile } = useWindowDimensions();
 
-  return (
+    let history = useHistory();
+
+
+    return (
     <div className={"for-students-container"}>
       <HeaderTitle
         title={"FOR STUDENTS"}
@@ -40,6 +44,7 @@ in pursuit of success.`
         description={`The Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where aspiring entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another. Leverage the network to help make better, well-informed decisions about the things that are most important to you & your future. `}
         btnTitle={"JOIN THE NETWORK"}
         imgUrl={forStudentsSecond}
+        onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
       />
 
       <LeftInfoWithRightImage
@@ -50,6 +55,8 @@ in pursuit of success.`
         description={`Get ready to join the next generation of startups, or even unlock the opportunity to create your own. Through our Ambassador Program we hand students the reins to create their own future by bridging the gap between educational environments and the fast paced business world. We help students create connections to fast track careers while becoming a leader on campus by providing opportunities for the entire student body.`}
         btnTitle={"LEARN MORE"}
         isLeftImage
+        onClick={() => history.push('/ambassador')}
+
         imgUrl={forStudentsThird}
       />
 
@@ -60,6 +67,7 @@ in pursuit of success.`
         textColor={"white"}
         backgroundColor={"black"}
         blockType={'middle'}
+        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
       />
 
       <LeftInfoWithRightImage
@@ -68,6 +76,7 @@ in pursuit of success.`
         mainTitle={"ON DEMAND LEARNING"}
         description={`Access learning modules, startup focused resources, and educational opportunities developed to help you level up using our curated library of courses, webinars, and other actionn driven materials designed to help validate, build, and grow in all areas of a startup.`}
         btnTitle={"EXPLORE COURSES"}
+        isComingSoon
         imgUrl={forStudentsForth}
         imageClassName={'for-students-education-image'}
       />

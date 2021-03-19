@@ -3,7 +3,6 @@ import Text from "../../Text";
 import "./index.scss";
 
 const TitleSubTwoListCenterItem = ({ title, list }) => {
-  console.log({ title });
   return (
     <div className={"title-sub-two-list-center-item-container"}>
       <Text

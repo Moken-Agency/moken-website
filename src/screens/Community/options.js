@@ -26,27 +26,21 @@ Students`,
     {
       title: "EXPLORATION",
       subtitle: `For
-Agencies`,
+Founders`,
       description:
-          `Our goal is to help you help your startups succeed. We collaborate with startup programs to help startups scale effectively and efficiently.`,
-      route: "/about-agency",
+          `Leverage our community to build and scale your venture through support from fellow founders who have been where you are and know what need to succeed.`,
+      route: "/for-founders",
     },
-    {
-      title: "EXPLORATION",
-      subtitle: `For
-Startup Programs`,
-      description:
-      `Our goal is to help you help your startups succeed. We collaborate with startup programs to help startups scale effectively and efficiently.`,
-      route: "/for-agencies",
-    },
+
     {
       title: "TBD",
       subtitle: `For
-Founders`,
+Startup Programs`,
       description:
-      `Leverage our community to build and scale your venture through support from fellow founders who have been where you are and know what need to succeed.`,
-      route: "/for-founders",
+      `Helping you help your startups succeed. We collaborate with startup programs to help startups scale effectively and efficiently.`,
+      route: "/for-startup-programs",
     },
+
   ],
   founders: [
     {

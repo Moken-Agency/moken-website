@@ -16,7 +16,6 @@ const Company = ({
 }) => {
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
-    console.log({link});
 
     const handleOpenLink = () => {
         // return  link ? window.open(link) : null

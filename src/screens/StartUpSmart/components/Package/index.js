@@ -8,6 +8,7 @@ import "./index.scss";
 const Package = ({
   title = '',
   subtitle = '',
+    tip = '',
   firstColumn = [],
   secondColumn = [],
   thirdColumn = [],
@@ -58,7 +59,7 @@ const Package = ({
   return (
     <div className={"package-container"}>
       <div className={"package-top-container"}>
-        <div>
+        <div style={{position: 'relative'}}>
           <Text
             type={"kSemiBold"}
             mobSize={12}
@@ -71,6 +72,7 @@ const Package = ({
           <Text type={"kBold"} size={55} mobSize={33}>
             {subtitle}
           </Text>
+          <Text className={'package-tip'} type={'kSemiBold'} size={20}>{tip}</Text>
         </div>
         <div className={"package-button-container"}>
           <Button

@@ -8,6 +8,15 @@
     margin-bottom: 16vw;
   }
 }
+.package-tip {
+  position: absolute;
+  right: -50px;
+  top: 10px;
+  span {
+    line-height: 63px;
+    letter-spacing: 4px;
+  }
+}
 .package-top-container {
   display: flex;
   justify-content: space-between;

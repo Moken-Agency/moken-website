@@ -50,7 +50,7 @@ const ForStartupPrograms = () => {
         isLeftImage
       />
       <TitleCenterImagesList
-        title={"A FEW OF THE OTHER PARTNERS"}
+        title={"A FEW OF OUR INCREDIBLE PARTNERS"}
         list={options.partners}
       />
 
@@ -101,10 +101,10 @@ const ForStartupPrograms = () => {
       />
 
       <ProgramCommunityListPartner
-        title={"DRIVE GROWTH & SCALE FAST"}
+        title={"SUPPORT YOUR STARTUPS"}
         subtitleClassName={'for-startup-programs-drive-subtitle'}
         subtitle={
-          "Extrapolate on how they can use our agency and abilities"
+          "Supporting visionary startups through innovation as service."
         }
         options={options.programs}
         type={"big"}

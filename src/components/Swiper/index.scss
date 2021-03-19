@@ -79,12 +79,11 @@
 .right-side {
   position: absolute;
   width: 400px;
-  height: 350px;
+  height: 550px;
   top: 0;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,0.6979166666666667) 4%, rgba(224, 224, 224, .18) 34%, rgba(218, 218, 218, .15%) 56%);
-  //background: linear-gradient(90deg, rgba(255,255,255,0.30015756302521013) 0%, rgba(245,245,245,0.20211834733893552) 35%, rgba(217,217,217,0.10127801120448177) 100%);
-
+  right: 0;
+  filter: blur(100Px);
+  background-color: GREY;
 }
 
 

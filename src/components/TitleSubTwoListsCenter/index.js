@@ -28,7 +28,6 @@ const TitleSubTwoListCenter = ({
         <div className={"title-sub-two-list-main-container"}>
           <div>
             {lists.map((item) => {
-              console.log({ item });
               return <TitleSubTwoListCenterItem {...item} />;
             })}
           </div>

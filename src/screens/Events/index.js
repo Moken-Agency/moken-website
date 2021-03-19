@@ -42,7 +42,6 @@ const Events = () => {
        async function f () {
            const response = await sget({url: 'https://www.eventbriteapi.com/v3/organizations/481196850209/events/?status=draft'});
            const events = await response.json();
-           console.log({events});
            setEvents(() => formatEvents(events));
         }
         f()

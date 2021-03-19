@@ -58,7 +58,6 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                     isSwiperHover,
                     ...rest
                 }) => {
-    console.log({rest});
     const { isMobile, isMiddleBiggest, isMiddleSmallest } = useWindowDimensions();
 
     const [isActiveIndex, setIsActiveIndex] = useState(0)
@@ -92,7 +91,6 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
         console.log('onDragEnd', e);
     }
 
-    console.log({containerProps});
 
     return (
       <div className={`swiper-component-container ${isTouching ? 'grabbing' : ''} ${containerClassName}`} {...containerProps}>

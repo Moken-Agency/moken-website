@@ -35,15 +35,12 @@ const HostAnEvent = () => {
       <ImageBlock url={hostAnEventHeader} />
 
       <TitleTwoDescriptions
-        mainTitle={"OVERVIEW"}
+        mainTitle={"HOST WITH US"}
         title={
             `Making the power of brand experience accessible to any organization, no matter the budget, while striving to create value for each individual in attendance.`
         }
         firstDescription={
-          `We champion the creation of ‘big idea’ experiential that can lead multi-channel campaigns with exciting and shareable experiences.
-We are passionate about developing more immersive and creative experience-driven solutions for brands and retailers across pop-ups, shop-in-shop, windows, VM and POS.
-Digital engagements are integral to the experiences we create; be it a simple photo experience, interactive shop windows or an immersive VR world, connecting the physical to digital is essential.
-Whether B2C, B2B or employee engagement, we strongly believe that exhibitions should never be boring and are an opportunity to stand out from the crowd.`
+          `Our team organizes events around the world, giving talks, co-hosting panels, conducting interactive workshops, and even working in behind the scenes handling the logistics while leaving you to do what you do best, inspire. Together, we create an unforgettably enagaging experiences through value driven actions.`
         }
         secondDescription={
           `We know that face-to-face experience driven marketing can take many forms, which is why we typically work 
@@ -133,61 +130,61 @@ Whether B2C, B2B or employee engagement, we strongly believe that exhibitions sh
           >
             We will create an Eventbrite page
           </Text>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              — We will handle all verbal & written communications
-          </Text>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              — We organize venue & logistics management
+          {/*<Text*/}
+          {/*  size={20}*/}
+          {/*  textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+          {/*  mobSize={16}*/}
+          {/*  animationType={"fade-in"}*/}
+          {/*  type={"kLight"}*/}
+          {/*>*/}
+          {/*    — We will handle all verbal & written communications*/}
+          {/*</Text>*/}
+          {/*<Text*/}
+          {/*  size={20}*/}
+          {/*  textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+          {/*  mobSize={16}*/}
+          {/*  animationType={"fade-in"}*/}
+          {/*  type={"kLight"}*/}
+          {/*>*/}
+          {/*    — We organize venue & logistics management*/}
 
-          </Text>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              — We take care of negotiation & budget management
-          </Text>
-            <Text
-                size={20}
-                textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-                mobSize={16}
-                animationType={"fade-in"}
-                type={"kLight"}
-          >
-            — Public Relations
-          </Text>
-            <Text
-                size={20}
-                textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-                mobSize={16}
-                animationType={"fade-in"}
-                type={"kLight"}
-          >
-            — Flexible fee structures
-          </Text>
-            <Text
-                size={20}
-                textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-                mobSize={16}
-                animationType={"fade-in"}
-                type={"kLight"}
-          >
-            — We will help promote across our social channelst
-          </Text>
+          {/*</Text>*/}
+          {/*<Text*/}
+          {/*  size={20}*/}
+          {/*  textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+          {/*  mobSize={16}*/}
+          {/*  animationType={"fade-in"}*/}
+          {/*  type={"kLight"}*/}
+          {/*>*/}
+          {/*    — We take care of negotiation & budget management*/}
+          {/*</Text>*/}
+          {/*  <Text*/}
+          {/*      size={20}*/}
+          {/*      textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+          {/*      mobSize={16}*/}
+          {/*      animationType={"fade-in"}*/}
+          {/*      type={"kLight"}*/}
+          {/*>*/}
+          {/*  — Public Relations*/}
+          {/*</Text>*/}
+          {/*  <Text*/}
+          {/*      size={20}*/}
+          {/*      textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+          {/*      mobSize={16}*/}
+          {/*      animationType={"fade-in"}*/}
+          {/*      type={"kLight"}*/}
+          {/*>*/}
+          {/*  — Flexible fee structures*/}
+          {/*</Text>*/}
+          {/*  <Text*/}
+          {/*      size={20}*/}
+          {/*      textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+          {/*      mobSize={16}*/}
+          {/*      animationType={"fade-in"}*/}
+          {/*      type={"kLight"}*/}
+          {/*>*/}
+          {/*  — We will help promote across our social channelst*/}
+          {/*</Text>*/}
         </div>
       </div>
 
@@ -264,6 +261,7 @@ Whether B2C, B2B or employee engagement, we strongly believe that exhibitions sh
         size={75}
         backgroundColor={"#000"}
         withIcon
+        onClick={() => history.push('/connect-with-us')}
       />
 
       <EmailForm withForm />

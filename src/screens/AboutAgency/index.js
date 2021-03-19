@@ -27,21 +27,43 @@ import {useHistory} from "react-router-dom"; // requires a loader
 const AboutAgency = () => {
   const { isMobile } = useWindowDimensions();
 
+
+
   const [isSwiperHover, setIsSwiperHover] = useState(false);
   const [isReverseMove, setIsReverseMove] = useState(false);
 
     let history = useHistory();
 
+    useEffect(() => {
+      // func();
+        const timer = setInterval(func, 1500)
+      if(!isSwiperHover) {
+        clearInterval(timer)
+      }
+        return () => clearInterval(timer)
+    }, [isSwiperHover, isReverseMove]);
 
-    const onMouseEnter = () => {
+    const func = () => {
+      if(isReverseMove) {
+        carouselRef.current.slidePrev()
+      } else {
+        carouselRef.current.slideNext()
+      }
+      debounce(() => func(), 1500);
+    }
+
+
+    const onMouseEnter =() => {
       setIsSwiperHover(true)
-  }
+    };
 
   const onMouseLeave = () => {
-      setIsSwiperHover(false)
+    setIsSwiperHover(false)
   }
 
     const ref = useRef(null);
+
+    const carouselRef = useRef(null);
 
 
     useEffect(() => {
@@ -51,12 +73,11 @@ const AboutAgency = () => {
 
 
     const _mouseMove =(e) => {
-        window.innerWidth / 2 >  e.clientX ? setIsReverseMove(true) : setIsReverseMove(false);
+      // console.log('_mouseMove', window.innerWidth / 2 > e.clientX);
+      window.innerWidth / 2 >  e.clientX ? setIsReverseMove(true) : setIsReverseMove(false);
 
     };
 
-
-    console.log({isSwiperHover});
     return (
     <div className={"about-agency-container"}>
       <HeaderTitle
@@ -114,15 +135,17 @@ const AboutAgency = () => {
 
       <div className={"leads-container"} ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <Carousel containerClassName={'agency-swiper-container'}
-                loop={true}
                 // containerProps={{onMouseEnter, onMouseLeave}}
                 // autoplay={{
                 //     delay: 500,
                 //     disableOnInteraction: false,
                 //     reverseDirection: isReverseMove
                 // }}
-                  isRTL={isReverseMove}
-                  enableAutoPlay={isSwiperHover}
+
+                onNextEnd={(onNextEnd) => console.log({onNextEnd}) }
+                  onPrevEnd={(onPrevEnd) => console.log({onPrevEnd}) }
+                  ref={carouselRef}
+                  // enableAutoPlay={isSwiperHover}
                   itemsToShow={2.5}
                   pagination={false}
                   showArrows={false}

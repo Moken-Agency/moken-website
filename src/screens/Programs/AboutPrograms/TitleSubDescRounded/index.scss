@@ -28,6 +28,9 @@
     margin-bottom: 21px;
     span {
       line-height: 35px;
+      @media screen and(max-width: 600px) {
+        line-height: 26px;
+      }
     }
 
   }

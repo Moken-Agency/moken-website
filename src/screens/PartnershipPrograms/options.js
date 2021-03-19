@@ -1,9 +1,9 @@
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "PARTNERSHIP & GROWTH PROGRAMS",
+      titleFirst: "EXPERTISE // PARTNERSHIP & GROWTH PROGRAMS",
+      titleConjunctions: "",
+      titleSecond: "",
     },
     subtitle: "Solid strategic framework & real, relevant connnections.",
     imgURL: "",

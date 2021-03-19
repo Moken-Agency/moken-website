@@ -37,7 +37,6 @@ const ProgramCommunityListPartner = ({
 
         <div className={`labs-join-partners-list ${type === 'big' ? 'big-styles-container' : 'small-styles-container'}`}>
           {options.map((option) => {
-            console.log({option});
             return (
               <>
                 {type === "big" ? (

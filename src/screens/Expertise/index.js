@@ -8,13 +8,16 @@ import Button from "../../components/Button";
 import ExpertiseHeader from "../../images/expertise-header.jpg";
 import ExpertiseFooter from "../../images/expertise-footer.jpg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import {useHistory} from "react-router-dom";
 
 const { gettingStarted, marketing, product } = options;
 
 const Expertise = () => {
   const { isMobile } = useWindowDimensions();
+    let history = useHistory();
 
-  return (
+
+    return (
     <div className={"expertise-container"}>
       {/*<div className={'expertise-circle-main'}>*/}
       {/*    <div className={'expertise-circle-second'}/>*/}
@@ -151,6 +154,7 @@ const Expertise = () => {
                 // size={14}
                 mobSize={10}
                 type={"white"}
+                onClick={() => history.push('/start-up-smart-packages')}
               />
             </div>
           </div>

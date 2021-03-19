@@ -9,7 +9,6 @@ export const useDynamicColour = () => {
             return url === pathname
         })
     })
-    console.log({urlObject});
     return {dynamicColour: urlObject && urlObject.color ? urlObject.color : `#c6cbe1`}
 }
 

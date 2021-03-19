@@ -38,7 +38,7 @@ const ProductTestingTeam = () => {
             containerStyles={{marginBottom: isMobile ? 170 : 0}}
           title={"TEAM OVERVIEW"}
           leftTitle={
-            "Be a part of an exclusive beta family to get early access to apps, websites, and other tech creations."
+            "Be a part of something bigger, while gaining access to the future."
           }
           rightTitle={`As a Moken beta family member, you'll join a group of tech-savvy members spread across the globe, to get early access and contribute to new tech products created by our members.`}
           rightFirstListTitle={"THE BENEFITS OF COLLABORATION"}

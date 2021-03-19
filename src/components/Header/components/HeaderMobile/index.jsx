@@ -26,7 +26,6 @@ const HeaderMobile = ({ isOpen = false, setIsOpen }) => {
   const [subMenu, setSubMenu] = useState(null);
   const { isMobile } = useWindowDimensions();
 
-  console.log({ subMenu });
 
   const handleGoBack = () => {
     setSubMenu(null);

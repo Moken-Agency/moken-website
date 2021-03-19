@@ -1,9 +1,9 @@
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "STRATEGY & ADVISORY",
+      titleFirst: "EXPERTISE // STRATEGY & ADVISORY",
+      titleConjunctions: "",
+      titleSecond: "",
     },
     subtitle: "Defining direction through expertise & experience.",
     // imgURL: "",

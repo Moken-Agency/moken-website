@@ -7,7 +7,7 @@ export default {
       title: `Work with 
 Mo + Ken`,
       subtitle:
-        `We believe that market leadership requires deep courage — from founder to founder.`,
+        `Ideate, build, and grow products, businesses, and teams. Integrate fluidly with you existing program acting as an external innovation lab, from analysis and ideation to development. A full-service formula to introduce change without losing corporate focus.`,
       btnTitle: 'WORK WITH US',
       route: '/mo-ken'
     },
@@ -15,7 +15,7 @@ Mo + Ken`,
       title: `Get Started
 Smarter`,
       subtitle:
-      `Does your startup need a specific solution? With packages at a startup price point, we work with founders and ideators with high growth potential. We're passionate about big ideas and working with people who feel the same`,
+      `Fundamental solutions designed and priced specifically for startups. Our startup-smart packages are created to give startups an option to access essential components required for the success of their business, smarter, quicker, and more affordable.`,
       btnTitle: "LEARN MORE",
       route: '/start-up-smart'
     },

@@ -16,7 +16,7 @@ Agency`,
       title: `Collaborate with
 Events`,
       subtitle:
-          `Partner with us and help startups do what they do best. Events are one of the most effective ways to help a startup grow. We bridge the gap early on making it easier to leverage networking, together.`,
+      `Partner with us and help startups do what they do best. Events are one of the most effective ways to help a startup grow. We bridge the gap early on making it easier to leverage networking, together.`,
       btnTitle: "GET INVOLVED",
       route: '/host-an-event'
     },

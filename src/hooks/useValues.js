@@ -226,7 +226,6 @@ export default (
     const handleChange = useCallback(
 
         (fieldName) => (e, extracted) => {
-            console.log({fieldName});
             e.persist()
             if (errors[fieldName]) {
                 const error = validate(fieldName, e.target.value, values);
@@ -234,7 +233,6 @@ export default (
                     setValuesError(fieldName, error);
                 }
             }
-            console.log(e.target.value);
             setValues((prevState) => {
                 const copy = { ...prevState };
                 copy[fieldName] =  e.target.value;
@@ -255,8 +253,6 @@ export default (
     );
 
     const clearValues = () => {
-        console.log({initialValues});
-        console.log(getInitialErrors(initialValues));
         setValues(initialValues)
     }
 

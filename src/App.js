@@ -453,7 +453,6 @@ function App() {
                         // children={<route.component />}
                         children={(props) => {
                           // pass the sub-routes down to keep nesting
-                          console.log({props});
                           return (
                             <>
                               <Helmet>

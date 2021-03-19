@@ -9,7 +9,6 @@ const HeaderSecondType = ({
   className = "",
   subtitleClassName = ''
 }) => {
-  console.log({subtitleClassName});
   return (
     <div
       className={`header-second-title-container ${className}`}

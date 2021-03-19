@@ -24,7 +24,6 @@ const useFormValidation = (initialState, validate) => {
   };
 
   const handleSubmit = (callback) => {
-    console.log({ callback });
     const validationErrors = validate ? validate(values) : {};
     setSubmitting(true);
     setErrors(validationErrors);

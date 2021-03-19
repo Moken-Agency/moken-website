@@ -1,9 +1,9 @@
 export default {
   firstSection: {
     title: {
-      titleFirst: "EXPERTISE",
-      titleConjunctions: "//",
-      titleSecond: "COMMUNITY DEVELOPMENT",
+      titleFirst: "EXPERTISE // COMMUNITY DEVELOPMENT",
+      titleConjunctions: "",
+      titleSecond: "",
     },
     subtitle: "Inclusive strategies that speak today’s consumer.",
     imgURL: "",

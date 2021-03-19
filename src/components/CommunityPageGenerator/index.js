@@ -34,7 +34,6 @@ const CommunityPageGenerator = ({
   secondSection,
   thirdSection,
 }) => {
-  console.log({ firstSection });
   const { isMobile } = useWindowDimensions();
 
   const {

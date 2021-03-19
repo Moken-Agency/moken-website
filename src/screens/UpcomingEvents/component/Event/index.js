@@ -28,7 +28,9 @@ const Event = ({action = () => {}, subtitle = '', title = '', description = ''})
             mobSize={35}
             animationType={"fade-in"}
             type={"kBold"}
-            containerStyles={{ marginBottom: isMobile ? 44 : "2vw" }}
+            className={'event-subtitle'}
+
+            // containerStyles={{ marginBottom: isMobile ? 44 : "2vw" }}
           >
             {subtitle}
           </Text>

@@ -11,7 +11,8 @@ const CommunityPartner = ({
   btnTitle = "GET INVOLVED",
   titleStyles = {},
   containerStyles = {},
-  route = '/'
+  route = '/',
+                              isComingSoon
 }) => {
     const { isMobile } = useWindowDimensions();
     let history = useHistory();
@@ -57,6 +58,7 @@ const CommunityPartner = ({
                     title={btnTitle}
                     // size={".8vw"}
                     size={14}
+                    isComingSoon={isComingSoon}
                     mobSize={10}
                     className={"community-partner-btn"}
                     onClick={() => history.push(route)}

@@ -23,7 +23,6 @@ const LeftInfoWithRightImage = ({
   isComingSoon = false
 }) => {
   const { isMobile } = useWindowDimensions();
-  console.log({ isMobile });
 
   return (
     <section className={"left-info-with-right-image-container"}

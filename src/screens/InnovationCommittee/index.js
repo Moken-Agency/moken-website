@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from "../../components/Button";
 import Text from "../../components/Text";
 import "./index.scss";
@@ -12,14 +12,19 @@ import InnovationMobFooterImage from "../../images/innovation-mob-footer.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import ImageBlock from "../../components/ImageBlock";
 import {useHistory} from "react-router-dom";
+import Form from "../../components/Form";
 
 const InnovationCommittee = () => {
   const history = useHistory();
+  const [isFormOpened, setIsFormOpened] = useState(false);
 
   const { isMobile } = useWindowDimensions();
 
   return (
     <div className={"innovation-committee-container"}>
+      <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWL5SgL8QnPUTP0RkAZdH5ZEToPq00AnU5j7aN9z1lt-U2bw/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+      </Form>
       <header>
         <div className={"innovation-committee-go-back-container"}>
           <div className={"innovation-committee-go-back-transition-block"} onClick={() => history.push('/start-up-smart-packages')}>
@@ -124,6 +129,7 @@ const InnovationCommittee = () => {
               mobSize={12}
               textType={"extraBoldDemo"}
               className={"innovation-committee-btn-first"}
+              onClick={() => setIsFormOpened(true)}
             />
             <Button
               title={"Request More Info"}

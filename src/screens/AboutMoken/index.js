@@ -20,7 +20,6 @@ import AboutMokenSecondRight from '../../images/about-moken-second-right.jpg';
 import VideoImage from '../../images/about-moken-video-img.jpg';
 
 const AboutMoken = (props) => {
-console.log({props});
 const { isMobile } = useWindowDimensions();
 const history = useHistory();
   return (

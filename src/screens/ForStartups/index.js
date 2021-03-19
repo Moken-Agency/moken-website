@@ -20,7 +20,6 @@ const ForStartups = () => {
   let history = useHistory();
 
   const { isMobile } = useWindowDimensions();
-    console.log('Object.values', Object.values);
     return (
     <div className={"for-startups-container"}>
       <HeaderTitle
@@ -80,7 +79,8 @@ const ForStartups = () => {
         description={
           `We create startups that transform sectors and challenge the established norms. We build businesses that are ready to grow by working with startup teams who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
         }
-        btnTitle={"EXPLORE PROGRAMS"}
+        btnTitle={"DISCOVER PROGRAMS"}
+          isComingSoon
         isLeftImage
       />
 

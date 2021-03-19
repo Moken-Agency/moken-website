@@ -8,7 +8,6 @@ import Button from "../../../../components/Button";
 const AdvisorModal = ({isOpen = false, close,advisorInfo}) => {
     useEffect(() => {
         Modal.setAppElement('body');
-        console.log({close});
 
     }, [isOpen]);
 
