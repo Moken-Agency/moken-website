@@ -29,9 +29,11 @@ const PartnersList = ({list = partnersList}) => {
     return (
         <div className={'small-partners-list'}>
             {
-                list.map(({height, imgURL}, index) => {
+                list.map(({height, imgURL, link = ''}, index) => {
                     return (
-                        <img src={imgURL} key={'ecopartners partner' + index} style={{height}} />
+                        <img src={imgURL} key={'ecopartners partner' + index}
+                             style={{height}}
+                             onClick={() => window.open(link, '_blank')} />
                     )
                 })
             }

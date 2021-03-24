@@ -31,7 +31,7 @@ const Access = () => {
         subtitleClassName={'access-header-subtitle'}
         descriptionClassName={'access-header-description'}
         subtitle={"Where startups network, scale & succeed."}
-        description={"A place where founders, entrepreneurs, innovators, and investors to connect and grow, together."}
+        description={"A digital hub where founders, entrepreneurs, innovators, and investors to connect and grow, together."}
       />
 
       <ImageBlock position={"right"} url={accessFirst}/>
@@ -42,6 +42,7 @@ const Access = () => {
             'The Access Network is an exclusive, invite-only network built for ambitious humans just like you. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.',
             'As humans we are built for connection. Even though we are more connected in certain ways, as innovators we are often painfully devoid of the true connection of being honest, vulnerable and real with other people. The Access Network is for exactly that. It\'s for those who have the desire to connect with other ambitious founders, creators, freelancers, business owners, and industry experts and are willing to openly share experience and expertise.`'
         ]}
+        subtitleClassName={'access-about-subtitle'}
         subtitle={"Empowering one another in creating change around the world."}
       />
 

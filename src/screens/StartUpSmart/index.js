@@ -127,6 +127,7 @@ const StartUpSmart = () => {
                 <Text
                     mobSize={35}
                     size={50}
+                    textStyles={{letterSpacing: .45}}
                     animationType={"fade-in"}
                     className={"start-up-smart-sixth-text-first"}
                     type={"kBold"}

@@ -40,14 +40,25 @@ const ConnectWithUs = () => {
     onChangeText(value)
   }
 
+  const defaultTemplate =
+    {
+      id: 'agency',
+      templateID: 'template_noiljla'
+    };
+
   const handleSendMessage = () => {
+
     if(isFormValid) {
+      const isAllSelectedInterestsEqual = allEqual(selectedInterests.map((interest) => interest.templateID));
+      console.log({isAllSelectedInterestsEqual});
+
+      const templateId = isAllSelectedInterestsEqual ? selectedInterests[0].templateID : defaultTemplate.templateID;
       setIsFetching(true);
       emailjs.send(
-          'service_g5bkqs3',
-          'template_z4t2vgf',
+          'service_xo07b28',
+          templateId,
           {...values, selectedInterests: selectedInterests.map(interest => interest.title).join(', ')},
-          'user_PVH6rCM6bGLGbGfJolUbL')
+          'user_ILhvoG5ED9QfcW7AV2q89')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
           }, function(error) {
@@ -55,7 +66,6 @@ const ConnectWithUs = () => {
           }).finally(() => {
         clearValues();
         setIsFetching(false);
-
       })
 
     } else {
@@ -64,6 +74,7 @@ const ConnectWithUs = () => {
 
   }
 
+  const allEqual = arr => arr.every( v => v && v === arr[0] )
 
   const checkIsSelected = ({ title }) => {
     return selectedInterests.find(

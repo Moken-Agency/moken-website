@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTitle from "../../components/HeaderTitle";
 import "./index.scss";
 import TitleTwoDescriptionWithBtn from "../Programs/components/TitleTwoDescriptionWithBtn";
@@ -10,12 +10,22 @@ import ImageBlock from "../../components/ImageBlock";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import TitleSubDescription from "../../components/TitleSubDescription";
 import Button from "../../components/Button";
+import innovatorFeatureFirst from "../../images/innovator-feature-first.jpg";
+import innovatorFeatureSecond from "../../images/innovator-feature-second.jpg";
+import innovatorFeatureThird from "../../images/innovator-feature-third.jpg";
+import Form from "../../components/Form";
 
 const InnovatorFeature = () => {
-  const { isMobile } = useWindowDimensions();
+    const { isMobile } = useWindowDimensions();
 
-  return (
+    const [isFormOpened, setIsFormOpened] = useState(false);
+
+
+    return (
     <div className={"innovator-container"}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} backgroundColor={'#fc665c'} formName={'Partnership Application Form'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWL5SgL8QnPUTP0RkAZdH5ZEToPq00AnU5j7aN9z1lt-U2bw/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+        </Form>
       <HeaderTitle
         title={"INNOVATOR FEATURE"}
         subtitleClassName={'innovator-feature-header-subtitle'}
@@ -25,7 +35,7 @@ const InnovatorFeature = () => {
         marginBottom={isMobile ? 152 : 142}
       />
 
-      <ImageBlock type={"full"} />
+      <ImageBlock position={"right"} url={innovatorFeatureFirst} />
 
       <TitleSubDescription title={'ABOUT THE INITIATIVE'}
                            subtitleClassName={'innovator-feature-about-subtitle'}
@@ -39,7 +49,8 @@ const InnovatorFeature = () => {
                                return (
                                    <div style={{padding: isMobile ? '0 43px' : '0 14vw', marginTop: 50}}>
                                        <Button title={'SHARE YOUR STORY'}
-                                               onClick={() => window.open('https://forms.gle/XYDR2H6eFcYq56sQ7', '_blank')} />
+                                               onClick={() => setIsFormOpened(true)}
+                                       />
                                    </div>
                                )
                            }} />
@@ -74,7 +85,7 @@ const InnovatorFeature = () => {
         //   " working with people who feel the same."
         // }
         list={options.list}
-        imgURL={""}
+        imgURL={innovatorFeatureSecond}
       />
 
       <LeftInfoWithRightImage
@@ -83,15 +94,16 @@ const InnovatorFeature = () => {
         titleClassName={"innovator-feature-steps-subtitle"}
         descriptionClassName={'innovator-feature-steps-description'}
         title={"Showcasing your accomplishments made efficient and easy."}
+        imageClassName={'innovator-feature-steps-image'}
         description={
          `All we need is a submission form. No application, no fees, no headache. It’s simple. You work hard & we want 
          to showcase that to others in the community. Once submitted, our team will review your submission & contact 
          you if we need any further info. Your submission will then be processed, scheduled for promotion & you’ll be 
          notified once your feature is scheduled to go live!`
         }
-        imgUrl={""}
+        imgUrl={innovatorFeatureThird}
         btnTitle={"SHARE YOUR STORY"}
-        onClick={() => window.open('https://forms.gle/XYDR2H6eFcYq56sQ7', '_blank')}
+        onClick={() => setIsFormOpened(true)}
       />
 
       <EmailForm withForm />

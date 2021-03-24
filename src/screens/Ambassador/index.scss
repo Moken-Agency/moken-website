@@ -1,7 +1,17 @@
 
 .ambassador-container {
+  .ambassador-opportunities-descriptions {
+    max-width: 635px;
+    width: auto;
+  }
+  .ambassador-opportunities-subtitle {
+    max-width: 484px;
+    width: auto;
+    margin-right: 120px;
+  }
   .ambassador-header-subtitle {
     max-width: 1061px;
+    padding-bottom: calc(168px - 3vw);
   }
   .ambassador-second-image-block-description {
     max-width: 514px;

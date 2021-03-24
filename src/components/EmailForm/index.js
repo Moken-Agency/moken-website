@@ -6,6 +6,7 @@ import Button from "../Button";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import useValues from "../../hooks/useValues";
 import {sget, spost} from "../../api/helpers";
+import emailjs from "emailjs-com";
 
 const EmailForm = ({
   title = "Stay in the loop & never miss a thing.",
@@ -21,18 +22,27 @@ const EmailForm = ({
   });
 
   const handleSubscribe = async () => {
-    // https://api.mailerlite.com/api/v2/subscribers
-    // try {
-    //   const response = await spost({url: 'https://api.mailerlite.com/api/v2/subscribers', body: {
-    //       email: values.email
-    //     }, headersData: {
-    //       'X-MailerLite-ApiKey': 'ad3840165bb63b833ad553646d67bdcb',
-    //       'Content-Type': 'application/json',
-    //     }});
-    //   console.log({response});
-    // } catch (e) {
-    //   alert('Errror')
-    // }
+    console.log({isFormValid});
+    if(isFormValid) {
+
+      emailjs.send(
+          'service_xo07b28',
+          'template_xlljnfu',
+          {...values},
+          'user_ILhvoG5ED9QfcW7AV2q89')
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            localStorage.setItem('subscription', true);
+          }, function(error) {
+            console.log('FAILED...', error);
+          }).finally(() => {
+        clearValues();
+
+      })
+
+    } else {
+      alert('Not valid')
+    }
 
 
   }
@@ -59,21 +69,21 @@ const EmailForm = ({
           >
             {title}
           </Text>
-          <div className={"email-form-form"}>
+          {!JSON.parse(localStorage.getItem('subscription')) ? <div className={"email-form-form"}>
             <Input
-              value={values.email}
-              placeholder={"Your Email Address"}
-              onChange={(value) => handleOnChange('email', value)}
-              {...getProps('email')}
-              containerStyles={{width: isMobile ? '100%': 300}}
+                value={values.email}
+                placeholder={"Your Email Address"}
+                onChange={(value) => handleOnChange('email', value)}
+                {...getProps('email')}
+                containerStyles={{width: isMobile ? '100%' : 300}}
             />
             <Button
-              disabled={!isFormValid}
-              title={"SUBSCRIBE"}
-              onClick={handleSubscribe}
-              type={'white-bordered'}
+                disabled={!isFormValid}
+                title={"SUBSCRIBE"}
+                onClick={handleSubscribe}
+                type={'white-bordered'}
             />
-          </div>
+          </div> : <Text  type={"kLight"} size={20}>Thank you for subscription!</Text>}
         </div>
       ) : null}
     </>

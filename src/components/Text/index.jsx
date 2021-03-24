@@ -18,6 +18,7 @@ const Text = ({
   color = "black",
   mobColor = color,
   animationType = "",
+                  dataHover,
   withCountAnimation = false,
     countAnimationProps = {}
 }) => {
@@ -54,6 +55,7 @@ const Text = ({
       {/*            }}*/}
       {/*            className={"text"}> {children}</CountUp> :*/}
             <span
+                data-hover={dataHover}
                 style={{
                   fontFamily: `${textTypes[type]}, sans-serif`,
                   fontSize: isMobile ? mobSize : size,

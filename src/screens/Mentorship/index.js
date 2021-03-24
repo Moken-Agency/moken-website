@@ -35,6 +35,7 @@ const Mentorship = () => {
         title={"ABOUT MENTORSHIP"}
         subtitle={"Empowering one another in creating change around the world."}
         description={''}
+        isButtonLeft
         descriptions={[
             'Mentors provide actionable strategies, business advice, support, and execution assistance when founders need it most. As a mentor you can make a profound difference in a startups trajectory by simply sharing your experiences and expertise.',
             `Why is having mentor so crucial to a startup? Well, in the case of Moken mentors, we look for "been-there-done-that" type of people where they have gone through business hardships have succeeded in their fields. Thus, providing a deeply empathetic understanding of not only the industry but the journey along the way. As a mentor, you will able to help founders in realising their goals and provide them with the necessary guidelines on how to achieve them.`

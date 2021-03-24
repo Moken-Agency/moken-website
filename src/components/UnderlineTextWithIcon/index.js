@@ -63,12 +63,12 @@ const UnderlineTextWithIcon = ({
 
   return (
   <div className={'underline-text-main-container'}
-       style={{cursor: isComingSoon ? 'not-allowed' : 'pointer'}}
        onClick={handleOnClick}
        onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-    <div className={`underline-text-container ${className}`}>
+    <div className={`underline-text-container ${className} ${isComingSoon ? 'coming-soon-animation' : ''}`}>
       <Text  size={size}
              mobSize={mobSize}
+             dataHover={'Is coming soon'}
              className={`underline-text`}
              title={title}
              color={color}>

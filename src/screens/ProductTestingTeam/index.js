@@ -47,9 +47,9 @@ const ProductTestingTeam = () => {
         <ImageBlock position={"right"} url={SecondImage} />
       </div>
 
-      <div className={"product-testing-team-circle-container"}>
-        <img src={ProductTestingTeamCircle} />
-      </div>
+      {/*<div className={"product-testing-team-circle-container"}>*/}
+      {/*  <img src={ProductTestingTeamCircle} />*/}
+      {/*</div>*/}
 
       <ProgramCommunityListPartner
         title={"LET’S BUILD"}

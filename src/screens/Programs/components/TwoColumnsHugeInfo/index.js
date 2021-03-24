@@ -71,18 +71,19 @@ const TwoColumnsHugeInfo = ({
           {leftTitle}
         </Text>
         <div className={"labs-benefits-container-info-block"}>
-          <Text
-            // size={'1.25vw'}
-            size={20}
-            mobSize={16}
-            type={"kLight"}
-            // type={"light"}
-            animationType={"fade-up"}
-            textStyles={{ lineHeight: isMobile ? "26px" : "30px", fontWeight: 300 }}
-            className={"labs-benefits-container-info-block-first-title"}
+          {rightTitle ?
+              <Text
+              // size={'1.25vw'}
+              size={20}
+              mobSize={16}
+              type={"kLight"}
+              // type={"light"}
+              animationType={"fade-up"}
+              textStyles={{lineHeight: isMobile ? "26px" : "30px", fontWeight: 300}}
+              className={"labs-benefits-container-info-block-first-title"}
           >
             {rightTitle}
-          </Text>
+          </Text> : null}
 
           {rightFirstListTitle ? (
             <Text

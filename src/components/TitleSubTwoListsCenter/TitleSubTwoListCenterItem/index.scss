@@ -25,10 +25,11 @@
     .title-sub-two-list-center-item-sub-list {
       margin-bottom: 77px;
       .title-sub-two-list-center-item-sub-text {
-        max-width: 560px;
+        max-width: 575px;
         span {
           line-height: 30px;
           letter-spacing: .18px;
+          white-space: break-spaces;
           @media screen and(max-width: 600px) {
             line-height: 26px;
           }

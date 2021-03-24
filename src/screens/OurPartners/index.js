@@ -86,9 +86,9 @@ const OurPartners = () => {
             Meet a few of our collaborative, community-focused partners that pair their passion with purpose.
         </Text>
         <div className={"partners-container"}>
-          {options.partners.map(({imgURL, link}) => {
+          {options.partners.map(({imgURL, link, width = null}) => {
               return <div data-aos="fade-in"
-                          style={{cursor: link ? 'pointer' : 'initial'}}
+                          style={{cursor: link ? 'pointer' : 'initial', maxWidth: width}}
                           className={"grey-block"}
                           onClick={() => handleOpenPartnerLink(link)}>
                   <img src={imgURL} style={{width: '100%', height: '100%', objectFit: 'contain'}} />

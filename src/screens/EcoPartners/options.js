@@ -32,13 +32,41 @@ export default {
           "— Successful Application\n",
           "— 4 Referrals Annually to Moken Agency\n",
           "— 1 Integrative Community Event with Moken Events\n",
-          "— Must meet all diversity, inclusion, and accessibility trequirements or have sufficient pathways for inclusion tintegrated into programming for consideration*"
+          `— Must meet all diversity, inclusion, and accessibility
+      trequirements or have sufficient pathways for inclusion
+      tintegrated into programming for consideration*`
         ],
       ],
     },
   ],
   images: ["", "", "", "", ""],
-  partners: [partners.noissue, partners.owner, partners.harvard, partners.hubspot, partners.acadium],
+  partners: [
+      {
+        height: 53,
+        link: 'https://noissue.co',
+        imgURL: partners.noissue
+      },
+    {
+      height: 60,
+      imgURL: partners.owner,
+      link: 'https://ownr.grsm.io/moken'
+    },
+    {
+      height: 70,
+      imgURL: partners.harvard,
+      link: 'https://www.harvardcap.org/'
+    },
+    {
+      height: 101,
+      imgURL: partners.hubspot,
+      link: 'https://www.hubspot.com/startups'
+    },
+    {
+      height: 54,
+      imgURL:  partners.acadium,
+      link: 'https://acadium.com'
+    }
+    ],
   asd: [
     {
       imgURL: partners.noissue,

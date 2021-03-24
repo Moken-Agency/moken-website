@@ -22,20 +22,30 @@ Events`,
     },
   ],
   partners: [
-      {
-        imgURL: partners.ink,
-      },
     {
-      imgURL: partners.segment,
+      imgURL: partners.ink,
+      link: 'https://inkllp.com'
     },
     {
+      imgURL: partners.segment,
+      height: 40,
+      link: 'https://segment.com/industry/startups/'
+    },
+    {
+      height: 96,
       imgURL: partners.hubspot,
+      link: 'https://hubspot.com/startups'
     },
     {
       imgURL: partners.owner,
+      link: 'https://ownr.grsm.io/moken',
+      height: 90,
+
     },
     {
       imgURL: partners.fast,
+      link: 'https://fast.co',
+      height: 52
     },
   ]
   // ourProjects: [projects.prommotoLong, projects.iraqi,  projects.knowbie,  projects.blu, projects.ryr]

@@ -10,19 +10,20 @@ export default {
       route: "/community-partner",
     },
     {
+      title: `Industry
+Partners`,
+      subtitle:
+          `Tech companies and solution providers with deep vertical market experience and expertise to help our startups and founder overcome challenges.`,
+      route: "/industry-partners",
+    },
+    {
       title: `Ecosystem
 Partners`,
       subtitle:
       `Influential, access, and education driven programs powering students, founders, and entrepreneurial endeavours throughout the startup ecosystem.`,
       route: "/eco-partners",
     },
-    {
-      title: `Industry
-Partners`,
-      subtitle:
-      `Tech companies and solution providers with deep vertical market experience and expertise to help our startups and founder overcome challenges.`,
-      route: "/industry-partners",
-    },
+
   ],
   collaborates: [
     {
@@ -77,7 +78,8 @@ Partners`,
   partners: [
     {
       link: 'https://inkllp.com',
-      imgURL: partnersImage.ink
+      imgURL: partnersImage.ink,
+      width: 160
     },
     {
       link: 'https://ownr.grsm.io/moken',
@@ -89,23 +91,28 @@ Partners`,
     },
     {
       link: 'https://www.hubspot.com/startups',
-      imgURL: partnersImage.hubspot
+      imgURL: partnersImage.hubspot,
+      width: 190
     },
     {
       link: '',
-      imgURL: partnersImage.activate
+      imgURL: partnersImage.activate,
+      width: 175
+
     },
     {
       link: '',
-      imgURL: partnersImage.fast
+      imgURL: partnersImage.fast,
+      width: 120
     },
     {
       link: 'https://noissue.co',
-      imgURL: partnersImage.noissue
+      imgURL: partnersImage.noissue,
+      width: 170
     },
     {
       link: '',
-      imgURL: partnersImage.acadium
+      imgURL: partnersImage.acadium,
     },
   ]
 };

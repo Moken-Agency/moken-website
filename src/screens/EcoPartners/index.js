@@ -24,7 +24,7 @@ const EcoPartners = () => {
 
     return (
     <div className={"eco-partner-screen"}>
-        <Form isOpen={isPartnershipFormOpened} setIsOpen={setIsPartnershipFormOpened}>
+        <Form isOpen={isPartnershipFormOpened} formName={'Partnership Application Form'} setIsOpen={setIsPartnershipFormOpened}>
            <iframe src={"https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true"} width={'100%'} height={'auto'} />
         </Form>
 
@@ -73,11 +73,10 @@ const EcoPartners = () => {
       />
 
         <ColorBlock
-            title={"Incubate and accelerate more, together."}
-            subtitle={"BECOME A PARTNER"}
+            title={"Accelerate more, together."}
+            subtitle={"DOWNLOAD THE PARTNER GUIDE"}
             withIcon
-            textWidth={834}
-            onClick={() => history.push('/our-partners')}
+            onClick={() => window.open('https://www.dropbox.com/s/y6mbiu12iy4d7ca/Partner%20Program%20Guide.pdf?dl=0', '_blank')}
         />
 
 

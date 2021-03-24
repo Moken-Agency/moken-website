@@ -10,14 +10,17 @@ const TitleRowSubDes = ({
   description = "",
   onClick,
   btnTitle = 'APPLY TO INCUBATOR',
-  descriptions = []
+  descriptions = [],
+  descriptionsClassName = '',
+  subtitleClassName = '',
+  isButtonLeft = false
 }) => {
   return (
     <div className={"title-row-sub-desc-container"}>
       <Title title={title} className={"title-row-sub-desc-title"} />
       <div className={"title-row-sub-desc-row-container"}>
         <Text
-          className={"title-row-sub-desc-subtitle"}
+          className={`${subtitleClassName} title-row-sub-desc-subtitle`}
           type={"kBold"}
           // type={"extraLight"}
           size={50}
@@ -26,7 +29,7 @@ const TitleRowSubDes = ({
         >
           {subtitle}
         </Text>
-        <div className={"title-row-sub-description-container"}>
+        <div className={`${descriptionsClassName} title-row-sub-description-container `}>
           {
             descriptions.length ? descriptions.map((el, index) => {
               return (
@@ -58,12 +61,14 @@ const TitleRowSubDes = ({
           }
 
           {onClick ? (
-            <Button
-              className={"title-row-sub-desc-btn"}
-              title={btnTitle}
-              onClick={onClick}
-              size={14}
-            />
+              <div style={{display: 'flex', width: isButtonLeft ? '100%' : 'auto'}}>
+                <Button
+                  className={"title-row-sub-desc-btn"}
+                  title={btnTitle}
+                  onClick={onClick}
+                  size={14}
+                />
+              </div>
           ) : null}
         </div>
       </div>

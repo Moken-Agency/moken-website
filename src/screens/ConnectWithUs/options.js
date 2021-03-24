@@ -3,6 +3,7 @@ export default {
     {
       title: "Building a Startup",
       value: "",
+      templateID: 'template_noiljla',
       backgroundColor: '#FDCDC6',
       classNameHoverColor: 'building-startup',
 
@@ -10,6 +11,7 @@ export default {
     {
       title: "Branding",
       value: "",
+      templateID: 'template_noiljla',
       backgroundColor: '#FDCDC6',
       classNameHoverColor: 'branding',
 
@@ -18,6 +20,7 @@ export default {
     {
       title: "MokenLabs",
       value: "",
+      templateID: '',
       backgroundColor: '#EFB95E',
       classNameHoverColor: 'mokenlabs',
 
@@ -26,6 +29,7 @@ export default {
     {
       title: "Access Network",
       value: "",
+      templateID: 'template_noiljla',
       backgroundColor: '#DEE2F2',
       classNameHoverColor: 'access-network',
 
@@ -34,6 +38,7 @@ export default {
     {
       title: "Career Opportunities",
       value: "",
+      // templateID: 'template_noiljla',
       backgroundColor: '#DEE2F2',
       classNameHoverColor: 'careers-opportunities',
 

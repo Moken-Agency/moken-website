@@ -47,7 +47,7 @@ const ForInvestors = () => {
         description={
          `As an investor, building lasting relationships with the startups identified as potential investments is equally as important as fostering those you’ve already invested in. Through Moken’s Access Network investors gain access to investment opportunities and relationship building within our exclusive network of highly promising startups from around the world.`
         }
-          onClick={() => window.open('https://access.mokenstartups.com', '_blank')}
+          onClick={() => window.open('https://network.mokenstartups.com/', '_blank')}
         btnTitle={"JOIN THE NETWORK".toUpperCase()}
       />
 

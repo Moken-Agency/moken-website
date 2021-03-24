@@ -1,5 +1,9 @@
 .industry-partners-screen {
   padding-bottom: 153px;
+  .industry-last-block-image {
+    max-width: 745px;
+    width: auto;
+  }
   .industry-last-image-block-description {
     max-width: 635px;
   }
@@ -10,12 +14,6 @@
     max-width: 1180px;
   }
   .industry-partners-header-title {
-    max-width: 1200px;
+    max-width: 910px;
   }
-  //.eco-partner-color-block {
-  //  padding: 67px 14vw;
-  //  @media only screen and (max-width: 600px) {
-  //    padding: 43px;
-  //  }
-  //}
 }

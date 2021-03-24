@@ -39,16 +39,16 @@ const ImageTitleSubDescList = ({
         >
           {subtitle}
         </Text>
-        <Text
-          size={20}
-          mobSize={16}
-          textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
-          animationType={"fade-in"}
-          className={"image-title-sub-desc-list-description"}
-          type={"kLight"}
+        {description ? <Text
+            size={20}
+            mobSize={16}
+            textStyles={{lineHeight: isMobile ? "26px" : "30px"}}
+            animationType={"fade-in"}
+            className={"image-title-sub-desc-list-description"}
+            type={"kLight"}
         >
           {description}
-        </Text>
+        </Text> : null}
         {list.map((listData, index) => {
           return (
             <div

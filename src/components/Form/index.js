@@ -18,7 +18,7 @@ import {useDynamicColour} from "../../hooks/useDynamicGrouColour";
 //     }
 // };
 
-const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen, children, setIsOpen }) => {
+const Form = ({ backgroundColor = "#ff7d3e", formName = "Form", isOpen, children, setIsOpen }) => {
 
     const {dynamicColour} = useDynamicColour();
 
@@ -34,7 +34,7 @@ const Form = ({ backgroundColor = "#ff7d3e", formName = "Test", isOpen, children
               className={"form-close"}
               onClick={() => setIsOpen(false)}
             >CLOSE</button>
-            <div className={"form-header"} style={{ backgroundColor: dynamicColour }}>
+            <div className={"form-header"} style={{ backgroundColor: backgroundColor ? backgroundColor : dynamicColour }}>
               <Text
                 className={"form-name-title"}
                 color={"white"}

@@ -50,7 +50,7 @@ const Package = ({
 
   const returnAdditionalBtnComponent = () => {
     return isMobile ? (
-      <span style={textStylesMob}>{isOpen ? "-" : "+"}</span>
+      <span style={textStylesMob} className={'package-icon'}>{isOpen ? "-" : "+"}</span>
     ) : (
       <img src={ArrowButton} style={imgStyles} />
     );
@@ -78,7 +78,7 @@ const Package = ({
           <Button
             title={"VIEW PACKAGE"}
             // size={".9vw"}
-              type={'white'}
+              type={'white-second'}
             // containerStyles={{paddingLeft: 0}}
             onClick={() => setIsOpen(!isOpen)}
             additionalComponent={returnAdditionalBtnComponent}

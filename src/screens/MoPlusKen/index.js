@@ -38,9 +38,7 @@ const MoPlusKen = () => {
             mobSize={35}
             type={"kBold"}
           >
-            We increase website leads, maximize revenu and produce a positive
-            ROI — validated with measurable results.
-          </Text>
+              We work with founders around the world, building startups, giving talks, and conducting interactive workshops covering all types of design and business topics. If you can organize it, we will be there.          </Text>
           <Text
             className={"mo-ken-overview-description"}
             textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
@@ -63,7 +61,7 @@ const MoPlusKen = () => {
       <TwoColumnsHugeInfo
         title={"HOW WE CAN COLLABORATE"}
         leftTitle={
-          "Enthusiastic individuals working together to create extraordinary startups"
+          "Get tactical, actionable advice from founders who have been there before"
         }
         rightTitle={
           "Our role consists of taking the time to understand your business model, " +
@@ -79,7 +77,7 @@ const MoPlusKen = () => {
       />
 
       <ColorBlock
-        title={"Looking for the next big thing?"}
+        title={"Get Connected with Mo + Ken"}
         subtitle={"APPLY NOW"}
         withIcon
         backgroundColor={"grey"}
@@ -87,14 +85,11 @@ const MoPlusKen = () => {
       />
 
       <LeftInfoWithRightImage
-        title={"Join our trusted community of partners and market what you do."}
+        title={"Get connected with Mo + Ken in real time."}
         description={
-          "Our role consists of taking the time to understand your business model," +
-          " and suggesting creative and high-performing digital strategies. Our avant-garde " +
-          "tactics are in line with the current market, blend seamlessly with our clients’ " +
-          "operational realities, and eliminate risks that aren’t necessary."
+          `Through Moken's Access Network, you can connect directly with Mo + Ken.`
         }
-        btnTitle={"APPLY TO INCUBATOR"}
+        btnTitle={"JOIN THE NETWORK"}
         imgUrl={""}
       />
 
@@ -102,7 +97,7 @@ const MoPlusKen = () => {
       <TitleTwoDescriptions
         mainTitle={"CONFERENCES & KEYNOTES"}
         title={
-          "A global startup program that fosters and invests in bright and passionate early stage founders with cutting-edge ideas."
+            `Let us bring Moken to you, anywhere in the world. Just bring your great ideas, and we'll be there.`
         }
         firstDescription={
           "We provide seed funding, strategic mentorship, a creative workspace, a multitude of perks, entrepreneurship-focused business training, and directly support our startups through an expansive network of partner entities, mentors and investors. We create an environment where you can advance your company an incredible amount in a short period of time."

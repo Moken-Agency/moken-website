@@ -15,7 +15,7 @@ const containerRouteStyle = {
   // marginBottom: '0.05vw'
 };
 
-const ColumnTextComponent = ({ title, index, route }) => {
+const ColumnTextComponent = ({ title, index, route = '', link }) => {
   let history = useHistory();
 
   const [color, setColor] = useState("black");
@@ -34,7 +34,7 @@ const ColumnTextComponent = ({ title, index, route }) => {
       size={20}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      onClick={() => history.push(route)}
+      onClick={() => route ? history.push(route) : window.open(link, '_blank')}
       containerStyles={containerRouteStyle}
     >
       {title}
@@ -55,12 +55,13 @@ const ColumnMenu = ({ routes = [], title }) => {
       >
         {title.toUpperCase()}
       </Text>
-      {routes.map(({ title, route }, index) => {
+      {routes.map(({ title, route, link }, index) => {
         return (
           <ColumnTextComponent
             key={index + "ColumnTextComponent"}
             title={title}
             route={route}
+            link={link}
           />
         );
       })}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import HeaderTitle from "../../components/HeaderTitle";
 import ImageBlock from "../../components/ImageBlock";
 import TitleRowSubDes from "../../components/TitleRowSubDes";
@@ -10,10 +10,17 @@ import ambassadorHeader from "../../images/ambassador-header.jpg";
 import ambassadorFirst from "../../images/ambassador-first.jpg";
 import ambassadorSecond from "../../images/ambassador-second.jpg";
 import ambassadorThird from "../../images/ambassador-third.jpg";
+import Form from "../../components/Form";
 
 const Ambassador = () => {
+
+    const [isFormOpened, setIsFormOpened] = useState(false);
+
     return (
         <div className={'ambassador-container'}>
+            <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Become an Ambassador'}>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfwt1W3e6pedNiay4CcfVObcPp5rzSJpfSr59KUSNYfq3nvdA/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+            </Form>
           <HeaderWithBackground webBackground={ambassadorHeader}
                                 title={'AMBASSADOR PROGRAM'}
                                 subtitleClassName={'ambassador-header-subtitle'}
@@ -32,18 +39,20 @@ const Ambassador = () => {
                   marketing, business, and networking experience from the ground up while building their resume,
                    earning money or course credits (pending your school’s approval) and hopefully having some fun!`}
                 btnTitle={"APPLY AS AN AMBASSADOR"}
-                onClick={() => window.open('https://forms.gle/xkzBDySrjpfZWnom9', '_blank')}
+                onClick={() => setIsFormOpened(true)}
                 isLeftImage
             />
 
             <TitleRowSubDes
+                descriptionsClassName={'ambassador-opportunities-descriptions'}
+                subtitleClassName={'ambassador-opportunities-subtitle'}
                 title={"AMBASSADOR OPPORTUNITIES"}
                 subtitle={"Empowering one another in creating change around the world."}
                 description={`We know that dynamic actions define the future and that the ambition to lead requires the tenacity to adapt. We empower ambassadors to create community connections through meaningful networking, events, business initiaitives, and inclusive programming. But not to worry we equip you with the tools, resources, knowledge, and support to help you build a successful Moken Satellite Hub locally within your community, no matter where that might be.`}
             />
 
             <LeftInfoWithRightImage
-                onClick={() => window.open('https://forms.gle/xkzBDySrjpfZWnom9', '_blank')}
+                onClick={() => setIsFormOpened(true)}
                 withoutRightPadding
                 imgUrl={ambassadorSecond}
                 mainTitle={"WHAT IT TAKES"}
@@ -60,7 +69,7 @@ const Ambassador = () => {
             />
 
             <LeftInfoWithRightImage
-                onClick={() => window.open('https://forms.gle/xkzBDySrjpfZWnom9', '_blank')}
+                onClick={() => setIsFormOpened(true)}
                 imgUrl={ambassadorThird}
                 mainTitle={"NEXT STEPS & APPLYING"}
                 description={'Educate, inspire and connect future and current founders, entreprenuers, innovators, and investors by becoming a Moken Ambassador. Lead your community and make a long-lasting impact by joining other leaders from countries around the world.'}
