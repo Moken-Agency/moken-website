@@ -39,7 +39,7 @@ export default {
           },
           {
             title: "Insights",
-            route: "",
+            link: 'https://medium.com/insights'
           },
         ],
       },

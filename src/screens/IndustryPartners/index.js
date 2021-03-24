@@ -74,7 +74,7 @@ const IndustryPartners = () => {
 
         <ColorBlock
             title={"Industry leaders creating the future."}
-            subtitle={"APPLY TO PARTNER"}
+            subtitle={"DOWNLOAD THE PARTNER GUIDE"}
             withIcon
             onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
         />

@@ -59,8 +59,8 @@ const CommunityPartnerScreen = () => {
       />
 
         <ColorBlock
-            title={"Harness the power of community"}
-            subtitle={"APPLY TO PARTNER"}
+            title={"Harness the power of community."}
+            subtitle={"DOWNLOAD THE PARTNER GUIDE"}
             withIcon
             onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
         />

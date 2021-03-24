@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Input from "../Input";
 import Text from "../Text";
 import "./index.scss";
@@ -7,6 +7,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import useValues from "../../hooks/useValues";
 import {sget, spost} from "../../api/helpers";
 import emailjs from "emailjs-com";
+import Loader from "../Loader";
 
 const EmailForm = ({
   title = "Stay in the loop & never miss a thing.",
@@ -17,14 +18,16 @@ const EmailForm = ({
                      titleClassName=''
 }) => {
   const { isMobile } = useWindowDimensions();
+
+  const [isFetching, setIsFetching] = useState(false);
+
   const [values, getProps, isFormValid, errors, clearValues] = useValues({
     email: '',
   });
 
   const handleSubscribe = async () => {
-    console.log({isFormValid});
     if(isFormValid) {
-
+      setIsFetching(true);
       emailjs.send(
           'service_xo07b28',
           'template_xlljnfu',
@@ -36,15 +39,9 @@ const EmailForm = ({
           }, function(error) {
             console.log('FAILED...', error);
           }).finally(() => {
-        clearValues();
-
-      })
-
-    } else {
-      alert('Not valid')
+            setIsFetching(false);
+          })
     }
-
-
   }
 
 
@@ -57,6 +54,7 @@ const EmailForm = ({
     <>
       {withForm ? (
         <div className={`email-form-container ${className}`}>
+          <Loader isShow={isFetching} />
           <div data-aos="fade-in" className={"email-form-divider"} />
           <Text
             containerStyles={{ margin: isMobile ? "4vw 0" : "70px 0 78px 0" }}

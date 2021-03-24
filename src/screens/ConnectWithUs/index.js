@@ -66,7 +66,7 @@ const ConnectWithUs = () => {
           }).finally(() => {
         clearValues();
         setIsFetching(false);
-      })
+      });
 
     } else {
       alert('Not valid')
