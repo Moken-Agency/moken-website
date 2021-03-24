@@ -23,6 +23,7 @@ import communityFirst from '../../images/community-first.jpg';
 import communitySecond from '../../images/community-second.jpg'
 import communityThird from '../../images/community-third.jpg'
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
+import {useHistory} from "react-router-dom";
 
 const { swiperData } = options;
 
@@ -75,7 +76,10 @@ const Community = () => {
     },
   };
 
-  return (
+    let history = useHistory();
+
+
+    return (
     <div className={"community-container"}>
       <img src={communitySVG} className={'community-absolute-img'}/>
       <HeaderTitle
@@ -174,6 +178,7 @@ const Community = () => {
         backgroundColor={"black"}
         size={45}
         withIcon
+        onClick={() => history.push('/ambassador')}
         blockType={'middle'}
       />
 

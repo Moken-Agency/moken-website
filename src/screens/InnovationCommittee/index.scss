@@ -68,41 +68,49 @@
     padding: 68px 170px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     @media only screen and (max-width: 600px) {
       padding: 47px 43px;
     }
       .innovation-committee-main-container {
         margin-right: 170px;
-        width: 550px;
         @media only screen and (max-width: 600px) {
           margin-right: 0;
         }
-      .innovation-committee-main-title {
-        margin-bottom: 30px;
-      }
-      .innovation-committee-main-text-container {
-        display: flex;
-      }
-      .innovation-committee-main-last-text {
-        margin-bottom: 50px;
-        //position: relative;
-        //top: -30px;
-      }
-      .innovation-committee-main-text {
-        margin-bottom: 68px;
-        span {
-          line-height: 32px;
-        }
-      }
-      .innovation-committee-main-small-text {
-        margin-bottom: 13px;
-        padding-left: 25px;
-        span {
-          line-height: 16px;
+        .innovation-committee-texts-container {
+          width: 550px;
+          .innovation-committee-main-title {
+            margin-bottom: 30px;
+          }
+          .innovation-committee-main-text-container {
+            display: flex;
+            .text-container {
+              span {
+                line-height: 80px;
+              }
+            }
+          }
+          .innovation-committee-main-last-text {
+            margin-bottom: 50px;
+            //position: relative;
+            //top: -30px;
+          }
+          .innovation-committee-main-text {
+            margin-bottom: 68px;
+            span {
+              line-height: 32px;
+            }
+          }
+          .innovation-committee-main-small-text {
+            margin-bottom: 13px;
+            padding-left: 25px;
+            span {
+              line-height: 16px;
 
+            }
+          }
         }
-      }
+
       .innovation-committee-btn-container {
         display: flex;
         @media screen and (max-width: 600px){

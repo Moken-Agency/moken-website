@@ -39,7 +39,7 @@ const Header = ({ isOpen, setIsOpen }) => {
           })}
         </div>
         <div className={"menu-container"}>
-          {rightMenu.map(({ title, withDivider, isComingSoon, route }, index) => {
+          {rightMenu.map(({ title, withDivider, isComingSoon, route, link }, index) => {
             return (
               <MenuItem
                 key={"right menu" + index}
@@ -47,6 +47,7 @@ const Header = ({ isOpen, setIsOpen }) => {
                 withDivider={withDivider}
                 textStyles={topMenuTextStyles}
                 size={12}
+                link={link}
                 isComingSoon={isComingSoon}
                 route={route}
               />

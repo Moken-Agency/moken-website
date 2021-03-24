@@ -45,6 +45,7 @@ const PageGenerator = ({
             titleContainerWithImgTitle,
             titleContainerWithImgDescription,
             titleContainerWithImgImageURL,
+            onClick
           },
           index
         ) => {
@@ -98,6 +99,7 @@ const PageGenerator = ({
                 description={titleContainerWithImgDescription}
                 imgURL={titleContainerWithImgImageURL}
                 withTitleContainerWithImg
+                onClick={onClick}
               />
             </div>
           );

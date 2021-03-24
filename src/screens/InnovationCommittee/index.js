@@ -22,13 +22,13 @@ const InnovationCommittee = () => {
 
   return (
     <div className={"innovation-committee-container"}>
-      <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} backgroundColor={'#fc665c'} formName={'Partnership Application Form'}>
+      <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} backgroundColor={'#fc665c'} formName={'Innovation Week Committee Interest Application'}>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWL5SgL8QnPUTP0RkAZdH5ZEToPq00AnU5j7aN9z1lt-U2bw/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
       </Form>
       <header>
         <div className={"innovation-committee-go-back-container"}>
           <div className={"innovation-committee-go-back-transition-block"}
-               onClick={() => window.open('https://innovate.mokenstartups.com', '_blank')}>
+               onClick={() => window.open('http://innovate.mokenstartups.com', '_blank')}>
             <Text
               className={"innovation-committee-go-back-text"}
               color={"white"}
@@ -76,43 +76,45 @@ const InnovationCommittee = () => {
 
       <main>
         <div className={"innovation-committee-main-container"}>
-          <Text
-            className={"innovation-committee-main-title"}
-            size={16}
-            mobSize={12}
-            type={"extraBoldDemo"}
-          >
-            6 Days of Unforgettable Innovation
-          </Text>
-
-          <div className={"innovation-committee-main-text-container"}>
-            <Text size={69} mobSize={36} type={"blackLight"}>
-              A
+          <div className={'innovation-committee-texts-container'}>
+            <Text
+                className={"innovation-committee-main-title"}
+                size={16}
+                mobSize={12}
+                type={"extraBoldDemo"}
+            >
+              6 Days of Unforgettable Innovation
             </Text>
-            <Text size={69} mobSize={36} type={"extraBoldDemo"}>
-              Global
+
+            <div className={"innovation-committee-main-text-container"}>
+              <Text size={69} mobSize={36} containerStyles={{marginRight: 15}} type={"blackLight"}>
+                A
+              </Text>
+              <Text size={69} mobSize={36} type={"extraBoldDemo"}>
+                Global
+              </Text>
+            </div>
+
+            <Text
+                size={69}
+                mobSize={36}
+                className={"innovation-committee-main-last-text"}
+                type={"blackLight"}
+                textStyles={{lineHeight: "80px"}}
+            >
+              meeting point
+            </Text>
+
+            <Text
+                type={"blackLight"}
+                size={21}
+                className={"innovation-committee-main-text"}
+            >
+              Connecting innovators, creators, startups, founders, and investors
+              around the world in the spirit of sharing knowledge & experience
+              across the global startup ecosystem.
             </Text>
           </div>
-
-          <Text
-            size={69}
-            mobSize={36}
-            className={"innovation-committee-main-last-text"}
-            type={"blackLight"}
-            textStyles={{lineHeight: "80px"}}
-          >
-            meeting point
-          </Text>
-
-          <Text
-            type={"blackLight"}
-            size={21}
-            className={"innovation-committee-main-text"}
-          >
-            Connecting innovators, creators, startups, founders, and investors
-            around the world in the spirit of sharing knowledge & experience
-            across the global startup ecosystem.
-          </Text>
 
           {/*<Text*/}
           {/*  size={12}*/}

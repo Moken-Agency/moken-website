@@ -23,7 +23,8 @@ export default {
   rightMenu: [
     {
       title: "STARTUPSMART PODCAST",
-      route: "/academy",
+      // route: "/academy",
+      link: 'https://anchor.fm/startupsmart ',
       withDivider: true,
     },
     {

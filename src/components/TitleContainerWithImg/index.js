@@ -12,6 +12,7 @@ const TitleContainerWithImg = ({
   title = "",
   description = "",
   imgURL = "",
+  onClick = () => window.open('http://careers@mokenstartups.com', '_blank')
 }) => {
   const { isMobile } = useWindowDimensions();
 
@@ -32,7 +33,8 @@ const TitleContainerWithImg = ({
             />
             <Button
                 title={'SUBMIT YOUR RESUME'}
-              className={"with-title-container-with-img-submit"}
+                className={"with-title-container-with-img-submit"}
+                onClick={onClick}
             />
           </div>
           <img src={imgURL} />
