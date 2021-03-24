@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e11e0a366f23991b51fd1ab6ecca26f",
+    "revision": "ad77ae1c76fa1ef1d506de6a6322ed6f",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "c93dfae8be37851746e1",
+    "revision": "8dab28523b612d50e4b9",
     "url": "/moken-website/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "6fb1919ce25d5b977c2d",
-    "url": "/moken-website/static/css/main.ad2e6f56.chunk.css"
+    "revision": "bd4bfd46beb77dbf57ed",
+    "url": "/moken-website/static/css/main.aee81a0e.chunk.css"
   },
   {
-    "revision": "c93dfae8be37851746e1",
-    "url": "/moken-website/static/js/2.428b7704.chunk.js"
+    "revision": "8dab28523b612d50e4b9",
+    "url": "/moken-website/static/js/2.b487eb82.chunk.js"
   },
   {
     "revision": "37cb981662b495e21676aa119dbbcad0",
-    "url": "/moken-website/static/js/2.428b7704.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.b487eb82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6fb1919ce25d5b977c2d",
-    "url": "/moken-website/static/js/main.eee1f07a.chunk.js"
+    "revision": "bd4bfd46beb77dbf57ed",
+    "url": "/moken-website/static/js/main.806c3b9c.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -656,6 +656,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/idea-factory-light.d2f4ad5c.svg"
   },
   {
+    "revision": "11428ed8f263577141df3b9a422ab79a",
+    "url": "/moken-website/static/media/industry-partners-first.11428ed8.jpg"
+  },
+  {
+    "revision": "bfe29a002c6acfc4c10054603cd0bdc2",
+    "url": "/moken-website/static/media/industry-partners-second.bfe29a00.jpg"
+  },
+  {
+    "revision": "8331656e0359d18ac3cbb6f724b2b531",
+    "url": "/moken-website/static/media/industry-partners-third.8331656e.jpg"
+  },
+  {
     "revision": "6d1dd78dfc0234145fae1f263f64dfb0",
     "url": "/moken-website/static/media/informa.6d1dd78d.jpg"
   },
@@ -678,6 +690,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3c7dc3c76b88261e8eebe83fb7d871cc",
     "url": "/moken-website/static/media/innovation-week.3c7dc3c7.svg"
+  },
+  {
+    "revision": "53acabf7674edfb718b7c531d21de7c3",
+    "url": "/moken-website/static/media/innovator-feature-first.53acabf7.jpg"
+  },
+  {
+    "revision": "000d7c05a70182023469c02a5a5d7756",
+    "url": "/moken-website/static/media/innovator-feature-second.000d7c05.jpg"
+  },
+  {
+    "revision": "8774a36bce1f251c70ed97cb57da3d40",
+    "url": "/moken-website/static/media/innovator-feature-third.8774a36b.jpg"
   },
   {
     "revision": "95c0110624267ed7e0f56efe9ae7c33d",
