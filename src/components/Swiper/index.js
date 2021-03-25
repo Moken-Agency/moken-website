@@ -31,24 +31,22 @@ const defaultBreakpoints ={
     '800': {
         slidesPerView: 2.5,
     },
-    '900': {
+    '1000': {
         slidesPerView: 3,
     },
     // when window width is >= 640px
-    '1000': {
+    '1200': {
         slidesPerView: 3.5,
     },
-    '1100': {
+    '1450': {
         slidesPerView: 4,
     },
-    '1350': {
+    '1550': {
         slidesPerView: 4.5,
     },
-    '1500': {
-        slidesPerView: 5,
-    },
+
     '1700': {
-        slidesPerView: 5.5,
+        slidesPerView: 5,
 
     }
 };
