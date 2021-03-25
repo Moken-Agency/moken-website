@@ -29,7 +29,7 @@ const EmailForm = ({
       emailjs.send(
           'service_xo07b28',
           'template_xlljnfu',
-          {...values},
+          {...values, name: 'No name'},
           'user_ILhvoG5ED9QfcW7AV2q89')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);

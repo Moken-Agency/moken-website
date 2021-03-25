@@ -81,12 +81,15 @@ const LeftInfoWithRightImage = ({
             />
           )}
         </div>
-        <img
-          src={imgUrl}
-          data-aos="fade-in"
-          className={`left-info-with-right-image-image ${imageClassName}`}
-          style={{ marginRight: isLeftImage && !isMobile ? 140 : 0 }}
-        />
+        <div data-aos="fade-in"
+             className={`left-info-with-right-image-image ${imageClassName}`}
+             style={{ marginRight: isLeftImage && !isMobile ? 140 : 0 }}>
+          <img
+              style={{width: '100%', height: '100%'}}
+              src={imgUrl}
+          />
+        </div>
+
       </div>
     </section>
   );
