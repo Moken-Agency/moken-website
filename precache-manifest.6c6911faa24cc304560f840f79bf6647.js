@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f73984e2b58a877148cc4c6c6e06d613",
+    "revision": "47ea408b273961144e4898f44d5ecf65",
     "url": "/moken-website/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "179a9da1261ad5876f96",
+    "revision": "2c8f3ca5253b640cae9a",
     "url": "/moken-website/static/css/main.1079bd01.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/js/2.b487eb82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "179a9da1261ad5876f96",
-    "url": "/moken-website/static/js/main.34c49539.chunk.js"
+    "revision": "2c8f3ca5253b640cae9a",
+    "url": "/moken-website/static/js/main.0d50ed95.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
