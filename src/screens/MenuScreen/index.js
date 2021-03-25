@@ -21,76 +21,84 @@ const MenuScreen = (props) => {
       {isMobile ? (
         <HeaderMobile {...props} />
       ) : (
-        <div className={"menu-screen-container"}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              paddingRight: "6.3vw",
-              paddingTop: "4vw",
-            }}
-          >
-            {/*<div/>*/}
-            <Burger
-              isOpen
-              type={"white"}
-              setIsOpen={() => {
-                history.goBack();
-              }}
-            />
-            {/*<Burger setIsOpen={setIsOpen} isOpen={isOpen} type={'white'}/>*/}
-          </div>
-          <div
-            data-aos="fade-up"
-            className={"menu-screen-top-columns-container"}
-          >
-            {menuScreenTopOptions.columns.map(
-              (options, index) => {
-                return (
-                  <MenuScreenTopColumn
-                    key={"MenuScreenTopColumn" + index}
-                    {...options}
-                  />
-                );
-              }
-            )}
-          </div>
-          <div
-            data-aos="fade-up"
-            className={"menu-screen-top-column-divider"}
-          />
-
-          <div className={"menu-screen-bottom-columns-container"}>
+        <div className={'menu-screen-top-container'}>
+          <div className={"menu-screen-container"}>
             <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className={"menu-screen-bottom-container"}
+                className={'burger-container'}
+                style={{
+                  display: "flex",
+                  // justifyContent: "flex-end",
+                  // paddingRight: "6.3vw",
+                  // paddingTop: "4vw",
+                }}
             >
-              {menuScreenBottomOptions.columns.map(
-                (props, index) => {
-                  return (
-                    <MenuScreenBottomColumn
-                      key={"MenuScreenTopColumn" + index}
-                      {...props}
-                    />
-                  );
-                }
+              {/*<div/>*/}
+              <Burger
+                  isOpen
+                  type={"white"}
+                  setIsOpen={() => {
+                    history.goBack();
+                  }}
+              />
+              {/*<Burger setIsOpen={setIsOpen} isOpen={isOpen} type={'white'}/>*/}
+            </div>
+            <div
+                data-aos="fade-up"
+                className={"menu-screen-top-columns-container"}
+            >
+              {menuScreenTopOptions.columns.map(
+                  (options, index) => {
+                    return (
+                        <MenuScreenTopColumn
+                            key={"MenuScreenTopColumn" + index}
+                            {...options}
+                            isLast={index === menuScreenTopOptions.columns.length - 1}
+                        />
+                    );
+                  }
               )}
             </div>
             <div
+                data-aos="fade-up"
+                className={"menu-screen-top-column-divider"}
+            />
+
+            <div className={"menu-screen-bottom-columns-container"}>
+              <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className={"menu-screen-bottom-container"}
+              >
+                {menuScreenBottomOptions.columns.map(
+                    (props, index) => {
+                      return (
+                          <MenuScreenBottomColumn
+                              key={"MenuScreenTopColumn" + index}
+                              isLast={index === menuScreenBottomOptions.columns.length - 1}
+                              {...props}
+                          />
+                      );
+                    }
+                )}
+              </div>
+
+            </div>
+          </div>
+            <div className={'social-main-container'}>
+          <div
               data-aos="fade-up"
               data-aos-delay="400"
               className={"socials-header-menu-container"}
-            >
-              {socialsMedia.map(({ image, link }, index) => {
-                return (
+          >
+            {socialsMedia.map(({ image, link }, index) => {
+              return (
                   <a key={"socials header" + index} href={link} target={'_blank'}>
                     <img src={image} alt={"social"} />
                   </a>
-                );
-              })}
-            </div>
+              );
+            })}
           </div>
+        </div>
         </div>
       )}
     </>

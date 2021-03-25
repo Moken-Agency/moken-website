@@ -21,11 +21,11 @@ const a = () => {
   return  <ReportBug isOpen={true}/>
 }
 
-const MenuScreenBottomColumn = ({ title = "", routs = [] }) => {
+const MenuScreenBottomColumn = ({ title = "", routs = [], isLast }) => {
   const { isMobile } = useWindowDimensions();
 
     return (
-    <div className={'menu-screen-bottom-column-container'} >
+    <div className={'menu-screen-bottom-column-container'} style={{marginRight: isLast ? 0 : null}}>
       <Text
         size={20}
         mobSize={16}

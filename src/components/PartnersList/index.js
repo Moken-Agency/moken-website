@@ -13,7 +13,7 @@ const partnersList = [
     },
     {
         imgURL: partners.segment,
-        height: 42
+        height: 55
     },
     {
         imgURL:  partners.hubspot,

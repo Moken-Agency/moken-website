@@ -25,7 +25,8 @@ const MenuScreenTopColumn = ({
   subTitle = "",
   image,
   route,
-  link
+  link,
+    isLast
 }) => {
 
   const history = useHistory();
@@ -35,7 +36,7 @@ const MenuScreenTopColumn = ({
   }
 
   return (
-    <div className={"menu-screen-top-column-container"}>
+    <div className={"menu-screen-top-column-container"} style={{marginRight: isLast ? 0 : null}}>
       {image ? (
         <img src={image} className={"menu-screen-image"} />
       ) : (
