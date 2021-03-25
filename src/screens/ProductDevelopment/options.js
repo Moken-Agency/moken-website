@@ -1,6 +1,6 @@
 import ExpertiseImageFirst from "../../images/expertise-first-image.png";
 import ProductDevWebFirst from "../../images/product-dev-web-first.png";
-import ExpertiseImageSecond from "../../images/expertise-second.png";
+import ExpertiseImageSecond from "../../images/product-developent-second.jpg";
 
 export default {
   firstSection: {
@@ -20,7 +20,7 @@ export default {
     },
   },
   secondSection: {
-    title: "PRODUCT STRATEGY CAPABILITIES",
+    title: "PRODUCT DEVELOPMENT CAPABILITIES",
     mapItems: [
       {
         title: "Mobile App Development",

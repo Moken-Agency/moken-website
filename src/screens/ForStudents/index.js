@@ -52,6 +52,8 @@ in pursuit of success.`
           "Gain leadership skills, hands on experience, and unlock opportunity."
         }
         mainTitle={"AMBASSADOR PROGRAM"}
+        titleClassName={'for-students-ambassador-title'}
+        descriptionClassName={'for-students-ambassador-description'}
         description={`Get ready to join the next generation of startups, or even unlock the opportunity to create your own. Through our Ambassador Program we hand students the reins to create their own future by bridging the gap between educational environments and the fast paced business world. We help students create connections to fast track careers while becoming a leader on campus by providing opportunities for the entire student body.`}
         btnTitle={"LEARN MORE"}
         isLeftImage

@@ -30,16 +30,17 @@
       flex-direction: column-reverse;
       justify-content: space-between;
       align-items: center;
-      padding: 2.8vw 1.6vw;
+      padding: 55px 35px;
       background-color: white;
       position: absolute;
       right: 0;
       bottom: 0;
+      margin-left: 50px;
       a {
         cursor: pointer;
         img {
-          height: 2.1vw;
-          padding: 1vw;
+          height: 37px;
+          padding: 17px;
         }
       }
     }
@@ -91,6 +92,7 @@
         height: 50px;
         padding: 5vw;
         width: 90vw;
+        margin-left: 0;
         a {
           img {
             height: 5vw

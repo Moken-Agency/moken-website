@@ -73,9 +73,11 @@ const ForStartups = () => {
           imgUrl={forStartupsInsightImage}
           withoutRightPadding
         title={
-          "We believe constant evolution is our most powerful competitive advantage."
+          "We believe constant evolution is a powerful competitive advantage."
         }
         mainTitle={"INSIGHT MEETS IMPACT"}
+          descriptionClassName={'for-startups-discover-description'}
+          titleClassName={'for-startups-discover-title'}
         description={
           `We create startups that transform sectors and challenge the established norms. We build businesses that are ready to grow by working with startup teams who are one step ahead. From the beginning, our work responds to a single interest—solving real user needs with a perfect market-fit, balanced with a profitable and scalable company projection.`
         }

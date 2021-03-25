@@ -20,7 +20,7 @@ export default {
     },
   },
   secondSection: {
-    title: "PRODUCT STRATEGY CAPABILITIES",
+    title: "PRODUCT MARKETING CAPABILITIES",
     mapItems: [
       {
         title: "Integrated Email Marketing",

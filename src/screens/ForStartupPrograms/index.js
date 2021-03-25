@@ -39,6 +39,8 @@ const ForStartupPrograms = () => {
           "Working together to support the next wave of scalable ventures."
         }
         mainTitle={"CROSS SECTOR COLLABORATION"}
+          titleClassName={'for-startup-programs-collaboration-title'}
+          descriptionClassName={'for-startup-programs-collaboration-description'}
         description={
           `We know startups aren’t the only ones hustling. Our goal is to help you help your startups succeed. We
            collaborate with a global network of community startup programs, accelerators, incubators, and VC firms
@@ -49,6 +51,7 @@ const ForStartupPrograms = () => {
         onClick={() => history.push('/eco-partners')}
         isLeftImage
       />
+
       <TitleCenterImagesList
         title={"A FEW OF OUR INCREDIBLE PARTNERS"}
         list={options.partners}

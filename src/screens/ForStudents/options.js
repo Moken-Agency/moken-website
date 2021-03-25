@@ -24,21 +24,21 @@ export default {
   purposes: [
     {
       title: "Build & Scale Your Startup",
-      link: "/about-agency",
+      route: "/about-agency",
       hoverColour: '#FDCDC6',
       colourClassName: 'light-coral'
 
     },
     {
       title: "Access Your Full Potential",
-      link: "/access",
+      route: "/access",
       hoverColour: '#D5D5D5',
       colourClassName: 'grey'
 
     },
     {
       title: "Connect & Extend Your Network",
-      link: "/events",
+      route: "/events",
       hoverColour: '#FF9D72',
       colourClassName: 'coral'
     },

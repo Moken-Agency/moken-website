@@ -23,7 +23,7 @@ export default {
     },
   },
   secondSection: {
-    title: "PRODUCT STRATEGY CAPABILITIES",
+    title: "WEBSITE DESIGN & DEVELOPMENT CAPABILITIES",
     mapItems: [
       {
         title: "Web Design",

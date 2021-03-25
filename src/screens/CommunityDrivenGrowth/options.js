@@ -21,7 +21,7 @@ export default {
     },
   },
   secondSection: {
-    title: "PRODUCT STRATEGY CAPABILITIES",
+    title: "COMMUNITY DRIVEN GROWTH CAPABILITIES",
     mapItems: [
       {
         title: "Digital Community Development",

@@ -18,7 +18,7 @@ export default {
     },
   },
   secondSection: {
-    title: "PRODUCT STRATEGY CAPABILITIES",
+    title: "MARKET RESEARCH & VALIDATION CAPABILITIES",
     mapItems: [
       {
         title: "Market Research",

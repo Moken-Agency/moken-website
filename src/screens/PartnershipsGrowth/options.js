@@ -22,7 +22,7 @@ export default {
     },
   },
   secondSection: {
-    title: "PRODUCT STRATEGY CAPABILITIES",
+    title: "PARTNERSHIPS & GROWTH CAPABILITIES",
     mapItems: [
       {
         title: "Partnership Strategy",
