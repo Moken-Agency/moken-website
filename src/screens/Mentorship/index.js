@@ -19,7 +19,7 @@ const Mentorship = () => {
 
     return (
     <div className={"mentorship-container"}>
-        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Become a Mentor'}>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchKoeYff36hGE5JIcEWQBvq-F0oiUfBwyO8GGntTvs6zCSnw/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
         </Form>
       <HeaderTitle
@@ -35,6 +35,7 @@ const Mentorship = () => {
         title={"ABOUT MENTORSHIP"}
         subtitle={"Empowering one another in creating change around the world."}
         description={''}
+        subtitleClassName={'mentorship-about-subtitle'}
         isButtonLeft
         descriptions={[
             'Mentors provide actionable strategies, business advice, support, and execution assistance when founders need it most. As a mentor you can make a profound difference in a startups trajectory by simply sharing your experiences and expertise.',

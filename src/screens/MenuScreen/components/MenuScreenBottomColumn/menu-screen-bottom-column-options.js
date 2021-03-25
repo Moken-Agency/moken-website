@@ -19,7 +19,7 @@ export default {
       routs: [
         { title: "Work with Mo + Ken", route: "/mo-ken" },
         { title: "Host an Event", route: "/host-an-event" },
-        { title: "Sponsor the Future", route: "/sponsorship" },
+        { title: "Sponsor the Future", route: "/advertise-with-us" },
         { title: "Become a Partner", route: "/partnerships-growth" },
         { title: "Become an Ambassador", route: "/ambassador" },
       ],

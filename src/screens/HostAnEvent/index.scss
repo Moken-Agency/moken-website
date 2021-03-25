@@ -58,7 +58,7 @@
     }
 
     .central-sub-container {
-      width: 35vw;
+      max-width: 477px;
       @media screen and (max-width: 600px) {
         width: auto;
       }

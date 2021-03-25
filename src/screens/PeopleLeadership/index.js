@@ -75,6 +75,7 @@ const PeopleLeadership = () => {
       <TitleSubDescription
         title={"OUR EXTENDED TEAM"}
         subtitle={"Growing together through collaboration."}
+        subtitleClassName={'people-leadership-extended-subtitle'}
         // containerStyles={{marginBottom: '8vw'}}
       />
 

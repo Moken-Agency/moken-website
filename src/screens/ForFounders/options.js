@@ -60,8 +60,7 @@ export default {
       colourClassName: 'coral'
     },
     {
-      title: "Coming soon",
-      // title: "Learn to Create The Future ",
+      title: "Learn to Create The Future ",
       // link: "",
       isComingSoon: true,
       hoverColour: '#EFB95E',

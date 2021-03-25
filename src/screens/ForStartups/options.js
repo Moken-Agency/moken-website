@@ -4,12 +4,12 @@ import prommotoLong from "../../images/projects/prommoto-long.svg";
 export default {
   programs: [
     {
-      title: `Work with 
-Mo + Ken`,
+      title: `Build with
+Agency`,
       subtitle:
         `Ideate, build, and grow products, businesses, and teams. Integrate fluidly with you existing program acting as an external innovation lab, from analysis and ideation to development. A full-service formula to introduce change without losing corporate focus.`,
       btnTitle: 'WORK WITH US',
-      route: '/mo-ken'
+      route: '/about-agency'
     },
     {
       title: `Get Started

@@ -18,8 +18,8 @@ import {useDynamicColour} from "../../hooks/useDynamicGrouColour";
 //     }
 // };
 
-const Form = ({ backgroundColor = "#ff7d3e", formName = "Form", isOpen, children, setIsOpen }) => {
-
+const Form = ({ backgroundColor = "", formName = "Form", isOpen, children, setIsOpen }) => {
+    // #ff7d3e
     const {dynamicColour} = useDynamicColour();
 
     return (

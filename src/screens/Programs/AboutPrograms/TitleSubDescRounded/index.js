@@ -76,7 +76,7 @@ const TitleSubDescRounded = ({
       </Text>
       <Text
         className={"title-sub-desc-rounded-description"}
-        size={16}
+        size={13}
         type={"kLight"}
       >
         {description}

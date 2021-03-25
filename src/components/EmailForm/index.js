@@ -11,8 +11,6 @@ import Loader from "../Loader";
 
 const EmailForm = ({
   title = "Stay in the loop & never miss a thing.",
-  width = "20vw",
-  value = "",
   className = "",
   withForm,
                      titleClassName=''
@@ -81,7 +79,7 @@ const EmailForm = ({
                 onClick={handleSubscribe}
                 type={'white-bordered'}
             />
-          </div> : <Text  type={"kLight"} size={20}>Thank you for subscription!</Text>}
+          </div> : <Text  type={"kLight"} size={20}>Subscription</Text>}
         </div>
       ) : null}
     </>

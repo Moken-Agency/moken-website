@@ -13,7 +13,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
   const { isMobile } = useWindowDimensions();
   const customStyles = {
     content : {
-      backgroundColor: 'rgba(0, 0, 0, 0.1)',
+      // backgroundColor: 'rgba(0, 0, 0, 0.1)',
 
     }
   };
@@ -34,7 +34,7 @@ const ReportBug = ({isOpen, setIsOpen, widthVW = 90, heightVH = 90}) => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: 'rgba(255, 255, 255, 0.5)'
+            backgroundColor: 'rgba(0, 0, 0, 0.5)'
           },
           content: {
             // padding: '115px 153px'

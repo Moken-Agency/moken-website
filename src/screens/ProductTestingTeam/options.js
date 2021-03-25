@@ -61,12 +61,14 @@ export default {
   ],
   programs: [
     {
+      btnTitle: 'APPLY NOW',
       title: "Apply to Join  \n" + "the Team",
       subtitle:
         "Applications to be a part of our testing club will be accepted for a limited time as we are keeping this small and exlusive.",
     },
     {
-      title: "Estimate Your \n" + "Project",
+      title: `For Founders 
+& Startups`,
       subtitle:
         "Fine-tune, prototype, and market test your (MVP) to validate and pivot to ensure an effective market launch.",
       btnTitle: "SUBMIT PRODUCT",

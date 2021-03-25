@@ -23,7 +23,7 @@ const Access = () => {
     return (
     <div className={"access-container"}>
 
-        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Startup Insights'}>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOr4yWT2Fffz8dVK9xF3DUfNeP4_kQ8YSwI59YXY_HRP5z7Q/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
         </Form>
       <HeaderTitle

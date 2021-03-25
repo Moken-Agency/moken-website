@@ -213,14 +213,16 @@ const HostAnEvent = () => {
         <div className={"central-sub-container"}>
           <Text
             size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px", marginBottom: 25 }}
+            textStyles={{ lineHeight: isMobile ? "20px" : "30px", marginBottom: 25, whiteSpace: 'break-spaces' }}
             mobSize={16}
             animationType={"fade-in"}
             type={"kLight"}
           >
-              Having a connection with someone is deep rooted. It’s emotional.
-              A feeling. A relationship…
-              To help us connect best we need
+              {
+              `Having a connection with someone is deep rooted. It’s emotional.
+A feeling. A relationship…
+To help us connect best we need`
+              }
 
           </Text>
           <Text
