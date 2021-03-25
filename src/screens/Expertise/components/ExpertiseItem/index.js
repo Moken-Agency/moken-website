@@ -31,7 +31,7 @@ const ExpertiseItem = ({ title = "", route = "/", isComingSoon }) => {
           mobSize={12}
           className={"expertise-item-learn"}
         >
-          LEARN MORE
+            {isComingSoon ? 'COMING SOON' : 'LEARN MORE'}
         </Text>
         <img
           data-aos="fade-in"

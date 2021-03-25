@@ -3,27 +3,32 @@ import './index.scss';
 import partners from "../../images/partners";
 // const partnersList  =  [partners.noissue, partners.owner, partners.segment, partners.hubspot, partners.acadium];
 const partnersList = [
-        {
-        imgURL: partners.noissue,
-        height: 55
+    {
+        height: 53,
+        link: 'https://noissue.co',
+        imgURL: partners.noissue
     },
     {
+        height: 60,
         imgURL: partners.owner,
-        height: 55
+        link: 'https://ownr.grsm.io/moken'
     },
     {
+        height: 55,
         imgURL: partners.segment,
-        height: 55
+        link: 'https://segment.com/industry/startups/'
     },
     {
-        imgURL:  partners.hubspot,
-        height: 101
+        height: 101,
+        imgURL: partners.hubspot,
+        link: 'https://www.hubspot.com/startups'
     },
     {
-        imgURL: partners.acadium,
-        height: 55
-    },
-]
+        height: 54,
+        imgURL:  partners.acadium,
+        link: 'https://acadium.com'
+    }
+];
 
 const PartnersList = ({list = partnersList}) => {
     return (

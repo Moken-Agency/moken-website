@@ -11,7 +11,7 @@ export default {
         { title: "Starting Up Smart", route: "/startup-smart" },
         { title: "Access by Moken", route: "/access" },
         { title: "Private Coaching", route: "/advisors" },
-        { title: "Apply to MokenLabs", route: "/mokenlabs" },
+        { title: "Apply to MokenLabs", route: "/moken-labs" },
       ],
     },
     {

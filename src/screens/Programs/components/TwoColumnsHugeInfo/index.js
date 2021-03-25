@@ -49,7 +49,8 @@ const TwoColumnsHugeInfo = ({
   secondList = [],
   secondListLikeFirst = false,
   secondListWithIcon = false,
-  containerStyles = {}
+  containerStyles = {},
+                              leftTitleClassName = ''
 }) => {
   const { isMobile } = useWindowDimensions();
     const history = useHistory();
@@ -66,7 +67,7 @@ const TwoColumnsHugeInfo = ({
           size={50}
           mobSize={35}
           animationType={"fade-up"}
-          className={"labs-benefits-container-title"}
+          className={` ${leftTitleClassName} labs-benefits-container-title`}
         >
           {leftTitle}
         </Text>

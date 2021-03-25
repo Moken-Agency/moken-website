@@ -37,6 +37,7 @@ const Mentorship = () => {
         description={''}
         subtitleClassName={'mentorship-about-subtitle'}
         isButtonLeft
+        btnTitle={'APPLY TO MENTOR'}
         descriptions={[
             'Mentors provide actionable strategies, business advice, support, and execution assistance when founders need it most. As a mentor you can make a profound difference in a startups trajectory by simply sharing your experiences and expertise.',
             `Why is having mentor so crucial to a startup? Well, in the case of Moken mentors, we look for "been-there-done-that" type of people where they have gone through business hardships have succeeded in their fields. Thus, providing a deeply empathetic understanding of not only the industry but the journey along the way. As a mentor, you will able to help founders in realising their goals and provide them with the necessary guidelines on how to achieve them.`
@@ -73,6 +74,7 @@ const Mentorship = () => {
         imgUrl={mentorshipThird}
         descriptionClassName={'mentorship-steps-description'}
         titleClassName={'mentorship-steps-title'}
+        imageClassName={'mentorship-steps-image'}
         mainTitle={"NEXT STEPS & APPLICATION"}
         title={"Turning big problems into bigger breakthroughs, together."}
         description={`As mentors we’re strategists, designers, developers, and business experts who fix things, fast. You’ll work closely with our startups and founders to define and develop impactful technology and powerful experiences. Whatever the challenge, together we’ll hurl ourselves at figuring things out – a healthy obsession for someone driven by innovating the future.`}

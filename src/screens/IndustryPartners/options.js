@@ -29,7 +29,8 @@ export default {
           "— 6 Referrals Annually to Moken Agency\n",
           "— 1 Co-Hosted Community Event with Moken\n",
           "— Incentive or perk for the Moken Community\n",
-          "— Internal diversity driven intiaitives and inclusive \trepresentation throughout your organization"
+          `— Internal diversity driven intiaitives and inclusive 
+     representation throughout your organization`
         ],
       ],
     },

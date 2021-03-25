@@ -14,7 +14,7 @@ const Value = ({ title = "", subtitle = "" }) => {
         size={14}
         mobSize={10}
         animationType={"fade-in"}
-        containerStyles={{ marginBottom: 16 }}
+        containerStyles={{ marginBottom: 8 }}
         textStyles={{ letterSpacing: 4 }}
       >
         {title}

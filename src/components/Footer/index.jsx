@@ -10,6 +10,9 @@ import validationRules from "../../constans/validation-rules";
 import { useHistory } from "react-router-dom";
 import Logo from "../Logo";
 import moment from 'moment'
+import useValues from "../../hooks/useValues";
+import emailjs from "emailjs-com";
+import Loader from "../Loader";
 
 
 const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
@@ -27,21 +30,48 @@ const Footer = ({ isOpen, setIsOpen }) => {
   const { isMobile } = useWindowDimensions();
 
   const year = new Date().getFullYear();
-
-
-  const {
-    handleSubmit,
-    handleChange,
-    values,
-    errors,
-    isSubmitting,
-  } = useValidation({ email: "" }, validationRules.sendEmailValidation);
   let history = useHistory();
+
+
+  const [isFetching, setIsFetching] = useState(false);
+
+  const [values, getProps, isFormValid, errors, clearValues] = useValues({
+    email: '',
+  });
+
+  const handleSubscribe = async () => {
+    if(isFormValid) {
+      setIsFetching(true);
+      emailjs.send(
+          'service_xo07b28',
+          'template_xlljnfu',
+          {...values, name: 'No name'},
+          'user_ILhvoG5ED9QfcW7AV2q89')
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            localStorage.setItem('subscription', true);
+          }, function(error) {
+            console.log('FAILED...', error);
+          }).finally(() => {
+        setIsFetching(false);
+      })
+    }
+  }
+
+  const handleOnChange = (name, value) => {
+    const {onChangeText}= getProps(name);
+    onChangeText(value)
+  }
+
+
+
 
   const socialsData = !isMobile ? socialsMedia : socialsMediaWhite;
 
   return (
     <div className={"footer-container"}>
+      <Loader isShow={isFetching} />
+
       <div className={"top-footer-bar"}>
         <div className={"menu-columns"}>
           {menuColumns.map(({ routes, title }, index) => {
@@ -82,20 +112,17 @@ const Footer = ({ isOpen, setIsOpen }) => {
           >
             We will send you updates related to all things Moken.
           </Text>
-          <Input
-            withGoButton
-            error={errors.email}
-            value={values.email}
-            placeholder={"Email"}
-            onSubmit={handleSubmit}
-            backgroundColor={"#fbfbfb"}
-            // animationType={"fade-in"}
-            onChange={(event) => {
-              handleChange({ name: "email", text: event.target.value })
-            }
-
-            }
-          />
+          {!JSON.parse(localStorage.getItem('subscription')) ? <Input
+              withGoButton
+              error={errors.email}
+              value={values.email}
+              placeholder={"Email"}
+              onSubmit={handleSubscribe}
+              backgroundColor={"#fbfbfb"}
+              // animationType={"fade-in"}
+              onChange={(value) => handleOnChange('email', value)}
+              {...getProps('email')}
+          /> : null}
         </div>
       </div>
       <div className={"bottom-footer-bar"}>

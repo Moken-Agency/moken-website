@@ -37,6 +37,7 @@ const ProductTestingTeam = () => {
         <TwoColumnsHugeInfo
             containerStyles={{marginBottom: isMobile ? 170 : 0}}
           title={"TEAM OVERVIEW"}
+            leftTitleClassName={'product-testing-team-left-title'}
           leftTitle={
             "Be a part of something bigger, while gaining access to the future."
           }
