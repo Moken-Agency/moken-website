@@ -87,6 +87,7 @@ const Access = () => {
 
       <TitleRowSubDes
         title={"CREATE THE FUTURE OF ACCESS"}
+        subtitleClassName={'access-future-subtitle'}
         description={`We know that dynamic actions define the future and that the ambition to lead requires the tenacity to adapt. The Network is only the tip of the iceberg for all that Access hopes to be. You can help us shape the future, simply tell us what you need to succeed and we’ll make it a reality.`}
         subtitle={"Create the future of access for founders & startups."}
         onClick={() => setIsFormOpened(true)}
