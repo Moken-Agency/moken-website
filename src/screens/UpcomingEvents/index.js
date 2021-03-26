@@ -10,7 +10,7 @@ import ColorBlock from "../../components/ColorBlock";
 import EmailForm from "../../components/EmailForm";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import SubmitYourResume from "../../components/SubmitYourResume";
-import upcomingEventsHeader from '../../images/upcoming-events-header.jpg';
+import upcomingEventsHeader from '../../images/upcoming-events-header@3x.jpg';
 import {sget} from "../../api/helpers";
 import {formatEvents} from "../../constans/formatEvents";
 
@@ -59,7 +59,7 @@ const UpcomingEvents = () => {
           ))}
         </div>
 
-        <SubmitYourResume title={"View all events"} color={"black"} />
+        <SubmitYourResume title={"View all events"} className={'upcoming-events-btn-container'} color={"black"} />
       </section>
 
       <ColorBlock
@@ -68,6 +68,7 @@ const UpcomingEvents = () => {
         backgroundColor={"#000"}
         // blockType={'middle'}
           size={75}
+        titleClassName={'upcoming-events-color-title'}
         textColor={'white'}
         withIcon
         onClick={() => history.push('/host-an-event')}

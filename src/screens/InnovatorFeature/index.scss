@@ -1,4 +1,7 @@
 .innovator-container {
+  .innovator-feature-gain-container {
+    padding-left: 10vw;
+  }
   .innovator-feature-steps-image {
     max-width: 751px;
     width: auto;
@@ -10,7 +13,7 @@
     max-width: 613px;
   }
   .innovator-feature-about-subtitle {
-    max-width: 958px;
+    max-width: 941px;
   }
   .innovator-feature-about-description {
     max-width: 550px;
@@ -22,11 +25,16 @@
     max-width: 529px;
   }
   .innovator-feature-steps-subtitle {
-    max-width: 622px;
+    width: 622px;
+    max-width: initial;
+
+  }
+  .innovator-feature-steps-left-container {
+    margin-right: 80px!important;
   }
   .innovator-feature-steps-description {
-    max-width: 604px;
-    width: auto;
+    width: 604px;
+    max-width: initial;
   }
   .innovator-image-block {
     width: 100vw;

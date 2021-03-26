@@ -1,5 +1,5 @@
 .image-title-sub-desc-list-container {
-  padding: 0 14vw;
+  padding-left: 14vw;
   display: flex;
   margin-bottom: 210px;
   @media only screen and (max-width: 600px) {
@@ -43,13 +43,12 @@
       margin-bottom: 73px;
     }
     .image-title-sub-desc-list-item {
-      margin-bottom: 68px;
+      margin-bottom: 42px;
       .image-title-sub-desc-list-item-title {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
         span {
-          letter-spacing: .25vw;
+          letter-spacing: 4px;
           @media only screen and (max-width: 600px) {
-            letter-spacing: 4px;
           }
         }
       }

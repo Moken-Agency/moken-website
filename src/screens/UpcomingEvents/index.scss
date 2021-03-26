@@ -1,4 +1,11 @@
 .events-container {
+  .upcoming-events-btn-container {
+    margin-top: 0;
+  }
+  .upcoming-events-color-title {
+    width: auto;
+    max-width: initial !important;
+  }
   .upcoming-events-title {
     max-width: 501px;
     span {

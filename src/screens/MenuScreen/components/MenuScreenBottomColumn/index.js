@@ -21,11 +21,11 @@ const a = () => {
   return  <ReportBug isOpen={true}/>
 }
 
-const MenuScreenBottomColumn = ({ title = "", routs = [], isLast }) => {
+const MenuScreenBottomColumn = ({ title = "", routs = [], isLast, containerStyles }) => {
   const { isMobile } = useWindowDimensions();
 
     return (
-    <div className={'menu-screen-bottom-column-container'} style={{marginRight: isLast ? 0 : null}}>
+    <div className={'menu-screen-bottom-column-container'} style={{marginRight: isLast ? 0 : null, ...containerStyles}}>
       <Text
         size={20}
         mobSize={16}
@@ -40,9 +40,9 @@ const MenuScreenBottomColumn = ({ title = "", routs = [], isLast }) => {
       </Text>
 
       {/*{a()}*/}
-      {routs.map(({ title, route, pressableComponent }, index) => {
+      {routs.map(({ title, route, pressableComponent, isComingSoon }, index) => {
         return (
-              <RouteComponent title={title} route={route} pressableComponent={pressableComponent}/>
+              <RouteComponent title={title} route={route} pressableComponent={pressableComponent} isComingSoon={isComingSoon}/>
         );
       })}
     </div>

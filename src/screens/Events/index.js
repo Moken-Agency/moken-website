@@ -40,7 +40,7 @@ const Events = () => {
 
     useEffect( () => {
        async function f () {
-           const response = await sget({url: 'https://www.eventbriteapi.com/v3/organizations/481196850209/events/?status=draft'});
+           const response = await sget({url: 'https://www.eventbriteapi.com/v3/organizations/481196850209/events/?status=live'});
            const events = await response.json();
            setEvents(() => formatEvents(events));
         }
@@ -64,9 +64,8 @@ return (
             title={'MEANINGFUL EXPERIENCES WITH MEASURABLE IMPACT'}
             subtitle={'Immersive experiences full of complex and compelling stories and the humans that tell them.'}
             descriptions={[
-                'At Moken Events our purpose is to Facilitate positive change through networking, digital and virtual summits, startup conferences, employee engagements, and social impact events. We humanize brands and connect audiences through creative storytelling and thoughtful, purpose-driven engagements.',
-                'Our team is comprised of experts, educators, and innovators who blend industry experience with an unwavering passion for tackling new challenges. As perpetual problem solvers, we proactively address the needs of the startup community by anticipating challenges and working tirelessly to develop events and interactive programming that drive growth and create impact.'
-
+                `At Moken Events our purpose is to harness and drive positive change through networking, digital and virtual summits, startup conferences, employee engagements, and social impact events. We humanize brands and connect audiences through creative storytelling and thoughtful, purpose-driven engagements. `,
+                `Our team is comprised of experts, educators, and innovators who blend industry experience with an unwavering passion for tackling new challenges. As perpetual problem solvers, we proactively address the needs of the startup community by anticipating challenges and working tirelessly to develop events and interactive programming that drive growth and create impact.`
             ]}
         />
         <ImageBlock position={'right'} url={eventsSecond}/>
@@ -78,7 +77,7 @@ return (
                                btnType={'default'}
                                listItemBtnTitle={'GET TICKETS'}
                                containerStyles={{marginBottom: 200}}
-                               btnOnClick={() => history.push("/opportunities")}
+                               btnOnClick={() => history.push("/upcoming-events")}
         />
 
         {/*<TwoColumnsHugeInfo*/}

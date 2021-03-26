@@ -21,7 +21,7 @@ const TitleShortListWithBtn = ({title = '',listItemBtnTitle = '', subtitle = '',
                     className={"title-short-list-with-btn-subtitle"}
                 />
                 <div className={"title-short-list-with-btn-opportunities-container"}>
-                    {list.map((listItem, index) => {
+                    {list.slice(0, 3).map((listItem, index) => {
                         return (
                             <Opportunity
                                 btnTitle={listItemBtnTitle}

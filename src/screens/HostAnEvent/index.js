@@ -58,7 +58,7 @@ const HostAnEvent = () => {
           Our goal is to not only show the world your brand, but the passion that drives it.
       </Text>
 
-      <Swiper Component={Explore} swiperData={options.swiperData} containerClassName={'host-an-event-swiper-container'} />
+      <Swiper Component={Explore} swiperData={options.swiperData} />
 
       <ColorBlock
         title={"Grow Your Community"}

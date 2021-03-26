@@ -1,6 +1,6 @@
 export default {
-    '/': 'Moken | Home',
-    '/moken-website': 'Moken | About Moken',
+    '/': 'Moken | Startups Hub',
+    '/moken-website': 'Moken | Startups Hub',
     '/product-marketing': 'Moken | Product Marketing',
     '/advisors': 'Moken | Advisors',
     '/mentorship': 'Moken | Mentorship',
@@ -70,5 +70,5 @@ export default {
     '/backend-developer': 'Moken | Backend developer',
     '/graphic-designer': 'Moken | Graphic designer',
     '/menuscreen': 'Moken | Menu',
-    '/innovation-committee': 'Moken | Innovation committee',
+    '/innovation-week': 'Moken | Innovation committee',
 }

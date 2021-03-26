@@ -405,7 +405,7 @@ const routsWithoutHeaderFooter = [
     component: MenuScreen,
   },
   {
-    path: "/innovation-committee",
+    path: "/innovation-week",
     component: InnovationCommittee,
   },
 ];

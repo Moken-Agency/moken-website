@@ -5,8 +5,8 @@ import Title from "../../components/Title";
 import options from "./options";
 import ExpertiseItem from "./components/ExpertiseItem";
 import Button from "../../components/Button";
-import ExpertiseHeader from "../../images/expertise-header.jpg";
-import ExpertiseFooter from "../../images/expertise-footer.jpg";
+import ExpertiseHeader from "../../images/expertise-header@3x.jpg";
+import ExpertiseFooter from "../../images/expertise-footer@3x.jpg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {useHistory} from "react-router-dom";
 

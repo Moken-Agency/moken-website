@@ -12,6 +12,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import startupSmartHeader from '../../images/startup-smart-header.jpg';
 import {ReactComponent as Spotify} from '../../images/spotify.svg';
 import startupSmartSecondImage from '../../images/startup-smart-second.jpg';
+import startupSmartLast from '../../images/startup-smart-last@3x.jpg';
 
 const StartUpScreen = () => {
     const { isMobile } = useWindowDimensions();
@@ -47,6 +48,7 @@ A validated method to turn your idea into a successful business.`}
         mainTitle={"MOST COMPREHENSIVE STARTUP COURSE AVAILABLE"}
         description={`An array of founder focused courses driven by experience together creating all-in-one formula specifically designed for entrepreneurs, led by experts in topics ranging from business modeling, engineering and communication.`}
         btnTitle={"EXPLORE COURSE"}
+        imageClassName={'start-up-smart-course-image'}
         isComingSoon
         imgUrl={startupSmartSecondImage}
       />
@@ -76,13 +78,13 @@ A validated method to turn your idea into a successful business.`}
         withoutRightPadding
         isLeftImage
         title={
-          "Connecting with people on a human level always results in better conversations."
+          "Connecting on a human level always results in better conversations."
         }
         mainTitle={"STARTUPSMART PODCAST"}
         description={`Join Moken founders Mo + Ken explore the world of entrepreneurship through wide-ranging experiences, global connections, and a collective drive to help founders build market-leading companies. Dive deep into all things startups with this experiential, founder driven podcast filled with valuable insight and the occasional side of sass.`}
         btnTitle={"LISTEN ON SPOTIFY"}
         onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
-        imgUrl={""}
+        imgUrl={startupSmartLast}
           btnAdditionalComponent={() => {
                 return <Spotify className={'spotify-icon'}/>
 

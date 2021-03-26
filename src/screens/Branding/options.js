@@ -51,6 +51,7 @@ Extensions`,
     title: "WHAT WE DO",
     mapItems: [
       {
+        route: '',
         title:
           "Enthusiastic individuals working together to create extraordinary results.",
         btnTitle: "EXPLORE OUR EXPERTISE",

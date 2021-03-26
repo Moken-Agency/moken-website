@@ -28,7 +28,7 @@ const InnovationCommittee = () => {
       <header>
         <div className={"innovation-committee-go-back-container"}>
           <div className={"innovation-committee-go-back-transition-block"}
-               onClick={() => window.open('http://innovate.mokenstartups.com', '_blank')}>
+               onClick={() => history.push('/')}>
             <Text
               className={"innovation-committee-go-back-text"}
               color={"white"}
@@ -140,6 +140,7 @@ const InnovationCommittee = () => {
               size={16}
               mobSize={12}
               textType={"extraBoldDemo"}
+              onClick={() => window.open('mailto:kendra@mokenstartups.com', '_blank')}
             />
           </div>
         </div>

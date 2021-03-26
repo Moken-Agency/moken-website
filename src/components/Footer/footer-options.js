@@ -89,7 +89,7 @@ export default {
           },
           {
             title: "Innovation Week",
-            route: "/innovation-committee",
+            route: "/innovation-week",
           },
         ],
       },

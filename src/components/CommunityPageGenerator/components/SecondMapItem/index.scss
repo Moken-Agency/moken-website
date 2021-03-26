@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 9.5vw 0 15.4vw 0;
+
   //border-bottom: 1px solid #cdcdcd;
   @media screen and (max-width: 600px) {
     flex-direction: column;
@@ -24,6 +25,11 @@
   .second-map-item-btn-container {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    &:hover {
+        transform: translate(0, -10px)!important;
+    }
     @media screen and (max-width: 600px) {
       justify-content: space-between;
       width: 100%;

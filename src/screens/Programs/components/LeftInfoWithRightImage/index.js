@@ -20,7 +20,8 @@ const LeftInfoWithRightImage = ({
   onClick = () => {},
   imageClassName = '',
   containerStyles = {},
-  isComingSoon = false
+  isComingSoon = false,
+                                  leftContainerClassName = ''
 }) => {
   const { isMobile } = useWindowDimensions();
 
@@ -40,7 +41,7 @@ const LeftInfoWithRightImage = ({
         // style={{ flexDirection: isLeftImage ? "row-reverse" : "row", paddingLeft: withoutRightPadding ? '4vw' : null }}
       >
         <div
-          className={"left-info-with-right-image-text-container"}
+          className={`left-info-with-right-image-text-container ${leftContainerClassName}`}
           style={{ marginRight: !isLeftImage && !isMobile ? 140 : 0 }}
         >
           <Text

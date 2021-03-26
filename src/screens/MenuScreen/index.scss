@@ -35,13 +35,14 @@
     padding: 76px 0 0 135px;
     display: flex;
     .menu-screen-bottom-container {
-      //display: flex;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-row-gap: 30px;
-      grid-column-gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      //display: grid;
+      //grid-template-columns: 1fr 1fr 1fr 1fr;
+      //grid-row-gap: 30px;
+      //grid-column-gap: 30px;
       @media only screen and (max-width: 1625px) {
-        grid-template-columns: 1fr 1fr;
+        //grid-template-columns: 1fr 1fr;
       }
     }
   }

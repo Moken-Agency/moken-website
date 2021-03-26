@@ -23,7 +23,7 @@ const InnovatorFeature = () => {
 
     return (
     <div className={"innovator-container"}>
-        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} backgroundColor={'#fc665c'} formName={'Partnership Application Form'}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Innovation Week Committee Interest Application Form'}>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWL5SgL8QnPUTP0RkAZdH5ZEToPq00AnU5j7aN9z1lt-U2bw/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
         </Form>
       <HeaderTitle
@@ -75,6 +75,7 @@ const InnovatorFeature = () => {
       {/*/>*/}
 
       <ImageTitleSubDescList
+          containerClassName={'innovator-feature-gain-container'}
         title={"WHAT YOU’LL GAIN"}
         subtitle={"We make it easy to kickstart your vision."}
         subtitleClassName={'innovator-feature-gain-subtitle'}
@@ -90,6 +91,7 @@ const InnovatorFeature = () => {
 
       <LeftInfoWithRightImage
         withoutRightPadding
+        leftContainerClassName={'innovator-feature-steps-left-container'}
         mainTitle={"NEXT STEPS & APPLICATION"}
         titleClassName={"innovator-feature-steps-subtitle"}
         descriptionClassName={'innovator-feature-steps-description'}

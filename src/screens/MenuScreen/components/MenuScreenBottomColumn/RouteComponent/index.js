@@ -16,10 +16,17 @@ const styles = {
   },
 };
 
-const RouteComponent = ({ title = "", pressableComponent, route }) => {
+const RouteComponent = ({ title = "", pressableComponent, route, isComingSoon }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
+
+  const handleOnClick = () => {
+      if(!isComingSoon) {
+          pressableComponent ? setIsOpen(true) : history.push(route)
+
+      }
+  }
 
     return (
         <>
@@ -27,11 +34,11 @@ const RouteComponent = ({ title = "", pressableComponent, route }) => {
           <Text
               size={18}
               textStyles={styles.routs}
-              className={'black-menu-bottom-column-item'}
+              className={`black-menu-bottom-column-item ${isComingSoon ? 'black-menu-bottom-column-coming-soon' : ''}`}
               containerStyles={{marginBottom: 15}}
               type={"kLight"}
               // type={"light"}
-              onClick={() =>  pressableComponent ? setIsOpen(true) : history.push(route)}
+              onClick={handleOnClick}
           >
             {title}
           </Text>
