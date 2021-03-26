@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1911f78cc41b7cd9b3b1ee88a94603c1",
+    "revision": "b8d7046cf21e5c4310371d7821e55364",
     "url": "/index.html"
   },
   {
-    "revision": "337d2258fe396a5648b8",
+    "revision": "9f8f83482f176fd21b7e",
     "url": "/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "a41eac04ecc7e0b97ff0",
+    "revision": "774442fe64b3b009b745",
     "url": "/static/css/main.f63ff75c.chunk.css"
   },
   {
-    "revision": "337d2258fe396a5648b8",
-    "url": "/static/js/2.40f44a00.chunk.js"
+    "revision": "9f8f83482f176fd21b7e",
+    "url": "/static/js/2.b079af5f.chunk.js"
   },
   {
     "revision": "37cb981662b495e21676aa119dbbcad0",
-    "url": "/static/js/2.40f44a00.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b079af5f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a41eac04ecc7e0b97ff0",
-    "url": "/static/js/main.242924eb.chunk.js"
+    "revision": "774442fe64b3b009b745",
+    "url": "/static/js/main.af62622d.chunk.js"
   },
   {
     "revision": "3a3f30b100f9731312bc",
@@ -428,8 +428,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/color.daf94797.svg"
   },
   {
-    "revision": "8b2b5e114b4e4fc4dd97411903b9bfa0",
-    "url": "/static/media/community-first.8b2b5e11.jpg"
+    "revision": "9e3bbf304d2b4a5978f167b64faf86dc",
+    "url": "/static/media/community-first@3x.9e3bbf30.jpg"
   },
   {
     "revision": "f88ed3e15d34186317666e9ee7cf852d",
@@ -444,12 +444,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/community-partners-first.2f98a754.jpg"
   },
   {
-    "revision": "c800e348e40f82ce968c783de712bd70",
-    "url": "/static/media/community-second.c800e348.jpg"
+    "revision": "ed027de09ef7ee170c720644ac687d98",
+    "url": "/static/media/community-second@3x.ed027de0.jpg"
   },
   {
-    "revision": "936c53f6c18527bed6061b51ba6894ad",
-    "url": "/static/media/community-third.936c53f6.jpg"
+    "revision": "944bd36465c2ac5011fc84bf0e04c995",
+    "url": "/static/media/community-third@3x.944bd364.jpg"
   },
   {
     "revision": "2c552278199b9ab9870cd6c1c772b977",
@@ -572,28 +572,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/for-startups-access.ed85c424.jpg"
   },
   {
-    "revision": "b80fec1ce0ed2a0f93841ce8758b2ca4",
-    "url": "/static/media/for-startups-insight.b80fec1c.jpg"
+    "revision": "da907671999a2d7c02c7811c0add87b8",
+    "url": "/static/media/for-startups-insight@3x.da907671.jpg"
   },
   {
     "revision": "47174faab976b07e17321a10842ef0e7",
     "url": "/static/media/for-startups-passion.47174faa.jpg"
   },
   {
-    "revision": "d33a74a3247d23090a86d52834afdea1",
-    "url": "/static/media/for-students-first.d33a74a3.jpg"
+    "revision": "0668acc6a549aefbc32d07abea806f82",
+    "url": "/static/media/for-students-first@3x.0668acc6.jpg"
   },
   {
-    "revision": "93b0d4f65718e8b411502d15b6b9ff72",
-    "url": "/static/media/for-students-forth.93b0d4f6.jpg"
+    "revision": "e85451a78d5e9171e7719262c9aeb027",
+    "url": "/static/media/for-students-forth@3x.e85451a7.jpg"
   },
   {
-    "revision": "744ea33747b0b7e7fd7878081a2fea6b",
-    "url": "/static/media/for-students-second.744ea337.jpg"
+    "revision": "557cfcd738a13ff6dc36ea88b659ae7f",
+    "url": "/static/media/for-students-second@3x.557cfcd7.jpg"
   },
   {
-    "revision": "2a158e5e38c8b9c5e57ea7765968944c",
-    "url": "/static/media/for-students-third.2a158e5e.jpg"
+    "revision": "1a7c7e1a86889f2e039a161f9170b7a0",
+    "url": "/static/media/for-students-third@3x.1a7c7e1a.jpg"
   },
   {
     "revision": "3a1d17542b3024d2eec5c3a2fe889163",
@@ -820,8 +820,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/our-partners-first-right@2x.56125b00.jpg"
   },
   {
-    "revision": "0b9a2f706fc12f6e61aff019fc704b4a",
-    "url": "/static/media/our-vision-header.0b9a2f70.jpg"
+    "revision": "640d6f91dc2a9477a888bc7f0c70c286",
+    "url": "/static/media/our-vision-first@3x.640d6f91.jpg"
+  },
+  {
+    "revision": "12be309837b7f15ccbbd7daa666af942",
+    "url": "/static/media/our-vision-header@3x.12be3098.jpg"
   },
   {
     "revision": "ae9322f1a0407fd187631a0b6c3d6f33",
