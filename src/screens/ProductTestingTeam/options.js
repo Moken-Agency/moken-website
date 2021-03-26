@@ -62,7 +62,8 @@ export default {
   programs: [
     {
       btnTitle: 'APPLY NOW',
-      title: "Apply to Join  \n" + "the Team",
+      title: `Apply to Join
+the Team`,
       subtitle:
         "Applications to be a part of our testing club will be accepted for a limited time as we are keeping this small and exlusive.",
     },

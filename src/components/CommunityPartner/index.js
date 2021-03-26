@@ -12,6 +12,7 @@ const CommunityPartner = ({
   titleStyles = {},
   containerStyles = {},
   route = '/',
+    onClick = null,
                               isComingSoon
 }) => {
     const { isMobile } = useWindowDimensions();
@@ -61,7 +62,7 @@ const CommunityPartner = ({
                     isComingSoon={isComingSoon}
                     mobSize={10}
                     className={"community-partner-btn"}
-                    onClick={() => history.push(route)}
+                    onClick={() => onClick ? onClick() : history.push(route)}
                 />
             </div>
         </div>

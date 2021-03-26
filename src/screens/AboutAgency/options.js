@@ -17,42 +17,42 @@ export default {
       subtitle: `Branding &
 Visual Identity`,
       description: `Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.`,
-      route: "/",
+      route: "/branding",
     },
     {
       title: "PRODUCT",
       subtitle: `Product
 Strategy`,
       description: `Intentional and strategic user experience has the potential to raise conversion rates by as much as 400%.`,
-      route: "/",
+      route: "/product-strategy",
     },
     {
       title: "FUNDING",
       subtitle: `Investment
 & Raising`,
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-      route: "/",
+      route: "",
     },
     {
       title: "GROWTH",
       subtitle: `Market Research 
 & Validation`,
       description: `85% of product failure can be traced to a lack of market research & product market fit validation issues.`,
-      route: "/",
+      route: "/market-research-validation",
     },
     {
       title: "PRODUCT",
       subtitle: `Product
 Development`,
       description: `Consumer spending is projected to increase by 92 percent to $157 billion worldwide on desktop and mobile apps by 2022.`,
-      route: "/",
+      route: "/product-development",
     },
     {
       title: "PRODUCT",
       subtitle: `Product
 Design`,
       description: `Humans form 75% of their judgments on a website or platform’s credibility purely on its aesthetics.`,
-      route: "/",
+      route: "/product-design",
     },
 
     {
@@ -60,32 +60,39 @@ Design`,
       subtitle: `Website Design 
 & Development`,
       description: `Slow websites & poor user experience lead to an annual $2.6 billion revenue loss & turn away 89% of consumers`,
-      route: "/",
+      route: "/design-develop",
     },
     {
       title: "GROWTH",
       subtitle: `Product
 Marketing`,
-      description: `Notifications and in product marketing can boost app engagement by up to 88% and retention by 65%.`
+      description: `Notifications and in product marketing can boost app engagement by up to 88% and retention by 65%.`,
+      route: "/product-marketing",
+
     },
     {
       title: "GROWTH",
       subtitle: `Partnerships
 & Growth`,
-      description: `Companies with referral programs have a 70% higher conversion rate, and report a 69% faster close time on sales`
+      description: `Companies with referral programs have a 70% higher conversion rate, and report a 69% faster close time on sales`,
+      route: "/partnerships-growth",
+
     },
     {
       title: "PRODUCT",
       subtitle: `Community 
 Driven Growth`,
-      description: `Most consumers are 247% more likely to be influenced by brands with a community driven connection.`
+      description: `Most consumers are 247% more likely to be influenced by brands with a community driven connection.`,
+      route: "/community-driven-growth",
+
     },
     {
       title: "ADVISORY",
       subtitle: `Strategic
 Advisory`,
       description: `Supercharge your business with the expertise and knowlege needed to succeed.`,
-      btnTitle: 'COMING SOON'
+      btnTitle: 'COMING SOON',
+      isComingSoon: true
     },
 
 
