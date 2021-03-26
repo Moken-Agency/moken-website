@@ -12,7 +12,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import forStartupsFirstImage from '../../images/contact-second.jpg';
 import forStartupsSecondImage from '../../images/for-startups-passion.jpg';
 import forStartupsThirdImage from '../../images/for-startups-access.jpg';
-import forStartupsInsightImage from '../../images/for-startups-insight.jpg';
+import forStartupsInsightImage from '../../images/for-startups-insight@3x.jpg';
 import {useHistory} from "react-router-dom";
 
 const ForStartups = () => {

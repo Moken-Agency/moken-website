@@ -19,9 +19,9 @@ import ImageBlock from "../../components/ImageBlock";
 import ProgramCommunityListPartner from "../Programs/components/ProgramCommunityListPartner";
 import ColorBlock from "../../components/ColorBlock";
 import communitySVG from '../../images/Community.svg';
-import communityFirst from '../../images/community-first.jpg';
-import communitySecond from '../../images/community-second.jpg'
-import communityThird from '../../images/community-third.jpg'
+import communityFirst from '../../images/community-first@3x.jpg';
+import communitySecond from '../../images/community-second@3x.jpg';
+import communityThird from '../../images/community-third@3x.jpg';
 import LeftInfoWithRightImage from "../Programs/components/LeftInfoWithRightImage";
 import {useHistory} from "react-router-dom";
 

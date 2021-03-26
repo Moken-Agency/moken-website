@@ -9,10 +9,10 @@ import EmailForm from "../../components/EmailForm";
 import "./index.scss";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import forStudentsFirst from "../../images/for-students-first.jpg";
-import forStudentsSecond from "../../images/for-students-second.jpg";
-import forStudentsThird from "../../images/for-students-third.jpg";
-import forStudentsForth from "../../images/for-students-forth.jpg";
+import forStudentsFirst from "../../images/for-students-first@3x.jpg";
+import forStudentsSecond from "../../images/for-students-second@3x.jpg";
+import forStudentsThird from "../../images/for-students-third@3x.jpg";
+import forStudentsForth from "../../images/for-students-forth@3x.jpg";
 import {useHistory} from "react-router-dom";
 
 const ForStudents = () => {

@@ -11,7 +11,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import {useHistory} from "react-router-dom";
 import forInvestorsFirst from "../../images/for-investors-first.jpg";
 import forInvestorsSecond from "../../images/for-investors-second.jpg";
-import forInvestorsThird from "../../images/for-investors-third.jpg";
+import forInvestorsThird from "../../images/for-investors-third@3x.jpg";
 import forInvestorsFourth from "../../images/for-investors-forth.jpg";
 
 const ForInvestors = () => {

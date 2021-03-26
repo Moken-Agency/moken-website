@@ -14,7 +14,8 @@ import ImageBlock from "../../components/ImageBlock";
 import TwoColumnsHugeInfo from "../Programs/components/TwoColumnsHugeInfo";
 import HugeInfoAllListColumn from "../Programs/components/HugeInfoAllListColumn";
 import LeftImageTitleSubDesList from "../../components/LeftImageTitleSubDesList";
-import ourVisionHeader from '../../images/our-vision-header.jpg';
+import ourVisionHeader from '../../images/our-vision-header@3x.jpg';
+import ourVisionFirst from '../../images/our-vision-first@3x.jpg';
 import {useHistory} from "react-router-dom";
 
 const OurVision = () => {
@@ -54,7 +55,7 @@ const OurVision = () => {
       />
 
       <LeftImageTitleSubDesList
-        imgUrl={""}
+        imgUrl={ourVisionFirst}
         title={"OUR VALUES"}
         subtitle={"We make it easy to kickstart your vision."}
         list={options.values}
