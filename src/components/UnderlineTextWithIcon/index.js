@@ -10,7 +10,7 @@ const hoverOptions =  [
     colourClassName: 'light-coral'
   },
   {
-    hoverColour: '#D5D5D5',
+    hoverColour: 'rgb(198, 203, 225)',
     colourClassName: 'grey'
 
 
@@ -68,7 +68,7 @@ const UnderlineTextWithIcon = ({
     <div className={`underline-text-container ${className} ${isComingSoon ? 'coming-soon-animation' : ''}`}>
       <Text  size={size}
              mobSize={mobSize}
-             dataHover={'Is coming soon'}
+             dataHover={'Coming soon'}
              className={`underline-text`}
              title={title}
              color={color}>

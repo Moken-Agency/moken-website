@@ -1,6 +1,5 @@
-import ExpertiseImageFirst from "../../images/expertise-first-image.png";
-import ProductDevWebFirst from "../../images/product-dev-web-first.png";
-import ExpertiseImageSecond from "../../images/expertise-second.png";
+import firstImage from "../../images/product-marketing-first.jpg";
+import secondImage from "../../images/product-marketing-second.jpg";
 
 export default {
   firstSection: {
@@ -9,10 +8,12 @@ export default {
       titleConjunctions: "",
       titleSecond: "",
     },
-    subtitle: "Fine-tune, prototype, and market test the minimum valuable product (MVP) to validate and pivot to ensure an effective market launch.",
-    imgURL: ProductDevWebFirst,
-    imgURLMobile: ExpertiseImageFirst,
+    subtitle: `Unforgettable experiences to engage & empower consumers.`,
+    imgURL: firstImage,
+    subtitleContainerStyles: {maxWidth: 884, width: 'auto'},
+    imgURLMobile: firstImage,
     infoBlock: {
+      infoBlockContainerStyles: {maxWidth: 577, width: 'auto'},
       infoTitleFirst:
         "Notifications and in product marketing can boost app engagement by up to 88% and retention by 65%.",
       infoDescriptionFirst: "A sticky product can create a significant edge and decrease churn rate exponentially in today’s highly competitive market. Through product driven marketing we create unforgettable experiences for users. With a process that isn’t anywhere near linear, we adjust to align with each client’s product to ensure tactic viability and market fit for every marketing touchpoint."
@@ -39,7 +40,7 @@ export default {
         // route: ''
       }
     ],
-    imgURL: ExpertiseImageSecond,
+    imgURL: secondImage,
   },
   thirdSection: {
     title: "WHAT WE DO",

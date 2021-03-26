@@ -14,24 +14,19 @@ export default [
   {
     subtitle: `We’re looking for an enthusiastic Social Media Specialist that will be responsible for creating 
                 intriguing visual content, capture the community with captivating copy, deliver stunning templates,
-                 presentations, and digital assets while thriving in a fast-paced environment. Specifically, you will 
-                 need to have strong experience in the Adobe Suite and/or Sketch in addition to superb interpersonal skills. 
-                 The ideal candidate is one who enjoys working with entrepreneurs, founders, innovators building businesses, 
-                 and thought-leaders bringing knowledge and inspiration to future leaders around the globe.`,
+                 presentations, and digital assets while thriving in a fast-paced environment.`,
   },
   {
     description: [
-      // {
-      //   title: `We’re looking for an enthusiastic Social Media Specialist that will be responsible for creating
-      //           intriguing visual content, capture the community with captivating copy, deliver stunning templates,
-      //            presentations, and digital assets while thriving in a fast-paced environment. Specifically, you will
-      //            need to have strong experience in the Adobe Suite and/or Sketch in addition to superb interpersonal skills.
-      //            The ideal candidate is one who enjoys working with entrepreneurs, founders, innovators building businesses,
-      //            and thought-leaders bringing knowledge and inspiration to future leaders around the globe.`,
-      //   containerStyles: {
-      //     marginBottom: 25,
-      //   },
-      // },
+      {
+        title: `Specifically, you will 
+                 need to have strong experience in the Adobe Suite and/or Sketch in addition to superb interpersonal skills. 
+                 The ideal candidate is one who enjoys working with entrepreneurs, founders, innovators building businesses, 
+                 and thought-leaders bringing knowledge and inspiration to future leaders around the globe.`,
+        containerStyles: {
+          marginBottom: 25,
+        },
+      },
       {
         title: `Like most professionals in this role, the ideal individual should strive to build and maintain 
                 a positive image for the accounts they represent in the eyes of the media and community. They’ll bring

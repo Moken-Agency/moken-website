@@ -6,49 +6,133 @@ import ryr from "../../images/aboutAgencyProjects/ryr@3x.jpg";
 import binary from "../../images/aboutAgencyProjects/binary@3x.jpg";
 import hera from "../../images/aboutAgencyProjects/hera@3x.jpg";
 import kenergy from "../../images/aboutAgencyProjects/kenergy@3x.jpg";
-import iraqi from "../../images/aboutAgencyProjects/about-agency-projects-swiper-first.jpg";
+import iraqi from "../../images/aboutAgencyProjects/iraqi.jpg";
 import giggl from "../../images/aboutAgencyProjects/giggl@3x.jpg";
 
 
 export default {
   explores: [
     {
-      title: "BUSINESS",
-      subtitle: "Route to Market",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "BRANDING",
+      subtitle: `Branding &
+Visual Identity`,
+      description: `Buyers who emotionally connect with your brand are 60% more likely to consider purchasing from you.`,
       route: "/",
     },
     {
-      title: "TOPIC",
-      subtitle: "Raising & Investmment",
+      title: "PRODUCT",
+      subtitle: `Product
+Strategy`,
+      description: `Intentional and strategic user experience has the potential to raise conversion rates by as much as 400%.`,
+      route: "/",
+    },
+    {
+      title: "FUNDING",
+      subtitle: `Investment
+& Raising`,
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      route: "/",
+    },
+    {
+      title: "GROWTH",
+      subtitle: `Market Research 
+& Validation`,
+      description: `85% of product failure can be traced to a lack of market research & product market fit validation issues.`,
+      route: "/",
+    },
+    {
+      title: "PRODUCT",
+      subtitle: `Product
+Development`,
+      description: `Consumer spending is projected to increase by 92 percent to $157 billion worldwide on desktop and mobile apps by 2022.`,
+      route: "/",
+    },
+    {
+      title: "PRODUCT",
+      subtitle: `Product
+Design`,
+      description: `Humans form 75% of their judgments on a website or platform’s credibility purely on its aesthetics.`,
+      route: "/",
+    },
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    {
+      title: "PRODUCT",
+      subtitle: `Website Design 
+& Development`,
+      description: `Slow websites & poor user experience lead to an annual $2.6 billion revenue loss & turn away 89% of consumers`,
       route: "/",
     },
     {
-      title: "TOPIC",
+      title: "GROWTH",
+      subtitle: `Product
+Marketing`,
+      description: `Notifications and in product marketing can boost app engagement by up to 88% and retention by 65%.`
+    },
+    {
+      title: "GROWTH",
+      subtitle: `Partnerships
+& Growth`,
+      description: `Companies with referral programs have a 70% higher conversion rate, and report a 69% faster close time on sales`
+    },
+    {
+      title: "PRODUCT",
+      subtitle: `Community 
+Driven Growth`,
+      description: `Most consumers are 247% more likely to be influenced by brands with a community driven connection.`
+    },
+    {
+      title: "ADVISORY",
+      subtitle: `Strategic
+Advisory`,
+      description: `Supercharge your business with the expertise and knowlege needed to succeed.`,
+      btnTitle: 'COMING SOON'
+    },
 
-      subtitle: "Branding & Identity",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      route: "/",
-    },
-    {
-      title: "TOPIC",
-      subtitle: "Product Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      route: "/",
-    },
-    {
-      title: "TOPIC",
-      subtitle: "Benefits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      route: "/",
-    },
+
+
+
+
+
+    //
+    //
+    //
+    // {
+    //   title: "BUSINESS",
+    //   subtitle: "Route to Market",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   route: "/",
+    // },
+    // {
+    //   title: "TOPIC",
+    //   subtitle: "Raising & Investmment",
+    //
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   route: "/",
+    // },
+    // {
+    //   title: "TOPIC",
+    //
+    //   subtitle: "Branding & Identity",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   route: "/",
+    // },
+    // {
+    //   title: "TOPIC",
+    //   subtitle: "Product Design",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   route: "/",
+    // },
+    // {
+    //   title: "TOPIC",
+    //   subtitle: "Benefits",
+    //   description:
+    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    //   route: "/",
+    // },
   ],
   programs: [
     {
@@ -110,7 +194,7 @@ export default {
     },
     {
       title: 'Iraqi Souq',
-      subtitle: 'BRANDING, PRODUCT DESIGN & DEVELOPMENT',
+      subtitle: 'BRANDING, PRODUCT DESIGN & DEVELOPMENT, MONETIZATION STRATEGY',
       imgURL: iraqi
     },   {
       title: 'Giggl',

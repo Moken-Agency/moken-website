@@ -76,6 +76,7 @@ const IndustryPartners = () => {
             title={"Industry leaders creating the future."}
             subtitle={"DOWNLOAD THE PARTNER GUIDE"}
             withIcon
+            titleClassName={'industry-partners-download-title'}
             onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
         />
 

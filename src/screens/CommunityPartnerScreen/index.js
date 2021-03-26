@@ -62,7 +62,7 @@ const CommunityPartnerScreen = () => {
             title={"Harness the power of community."}
             subtitle={"DOWNLOAD THE PARTNER GUIDE"}
             withIcon
-            onClick={() => window.open('https://www.dropbox.com/s/h01zxfiov31lwbb/Partner%20Onboarding%20Guide.pdf?dl=0', '_blank')}
+            onClick={() => window.open('https://www.dropbox.com/s/y6mbiu12iy4d7ca/Partner%20Program%20Guide.pdf?dl=0', '_blank')}
         />
 
       <LeftInfoWithRightImage

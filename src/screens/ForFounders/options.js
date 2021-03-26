@@ -1,14 +1,16 @@
 export default {
   founders: [
     {
-      title: "Innovator Feature",
+      title: `Innovator
+Feature`,
       subtitle:
         "A community driven approach to showcasing & highlighting hardworking founders & innovators in the global startup ecosystem who are creating the future.",
       btnTitle: 'SHARE YOUR STORY',
       route: '/innovator-feature'
     },
     {
-      title: "Community Events",
+      title: `Community
+Events`,
       subtitle:
       `Events are one of the most effective ways to help a startup grow. We bridge the gap early on making it easier to host and attend events that directly impact founder’s goals.`,
       btnTitle: "GET INVOLVED",

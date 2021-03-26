@@ -39,11 +39,11 @@
   z-index: 9999999;
   top: calc(50% - 45px);
   cursor: pointer;
-  transition: all 0.2s  ease-out;
+  //transition: all 0.2s  ease-out;
 
   //transition: 1s;
   &:hover {
-    transform: scale(1.1);
+    //transform: scale(1.1);
   }
   @media only screen and (max-width: 600px) {
     display: none;
@@ -59,6 +59,7 @@
 }
 
 .swiper-wrapper {
+  padding-left: 10vw;
   @media only screen and (max-width: 600px) {
     padding: 0;
   }

@@ -1,6 +1,5 @@
-import ExpertiseImageFirst from "../../images/expertise-first-image.png";
-import ProductDevWebFirst from "../../images/product-dev-web-first.png";
-import ExpertiseImageSecond from "../../images/expertise-second.png";
+import firstImage from "../../images/partnerships-growth-first.jpg";
+import secondImage from "../../images/partnerships-growth-second.jpg";
 
 export default {
   firstSection: {
@@ -11,8 +10,8 @@ export default {
     },
     subtitle:
     "Solid strategic framework & real, relevant connnections.",
-    imgURL: ProductDevWebFirst,
-    imgURLMobile: ExpertiseImageFirst,
+    imgURL: firstImage,
+    imgURLMobile: firstImage,
     infoBlock: {
       infoTitleFirst:
         "Companies with referral programs have a 70% higher conversion rate, and report a 69% faster close time on sales",
@@ -45,7 +44,7 @@ export default {
         // route: ''
       }
     ],
-    imgURL: ExpertiseImageSecond,
+    imgURL: secondImage,
   },
   thirdSection: {
     title: "WHAT WE DO",

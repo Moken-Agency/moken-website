@@ -112,7 +112,18 @@ Partners`,
     },
     {
       link: '',
+      width: 169,
       imgURL: partnersImage.acadium,
+    },
+    {
+      link: '',
+      width: 142,
+      imgURL: partnersImage.harvard,
+    },
+    {
+      link: '',
+      width: 133,
+      imgURL: partnersImage.informa,
     },
   ]
 };

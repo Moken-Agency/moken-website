@@ -45,6 +45,8 @@ const CommunityPageGenerator = ({
     infoTitleFirst = "",
     infoDescriptionFirst = "",
     infoSubtitleFirst = "",
+    titleContainerStyles = {},
+    infoBlockContainerStyles = {}
   } = firstSection.infoBlock;
 
   const letterSpacing = isMobile ? 4 : 0;
@@ -104,14 +106,14 @@ const CommunityPageGenerator = ({
         {/*  src={isMobile ? firstSection.imgURLMobile : firstSection.imgURL}*/}
         {/*  className={"first-section-img"}*/}
         {/*/>*/}
-        <div className={"first-section-info-container"}>
+        <div className={"first-section-info-container"} style={infoBlockContainerStyles}>
           {/*<Text size={'3.3vw'}*/}
           <Text
             size={50}
             mobSize={35}
             animationType={"fade-in"}
             type={"kBold"}
-            containerStyles={{ marginBottom: isMobile ? 40 : 55 }}
+            containerStyles={{ marginBottom: isMobile ? 40 : 55, ...titleContainerStyles }}
             textStyles={{
               letterSpacing: 0.5,
               lineHeight: isMobile ? '37px' : '53px'

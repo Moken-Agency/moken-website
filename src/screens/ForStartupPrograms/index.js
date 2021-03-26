@@ -101,6 +101,7 @@ const ForStartupPrograms = () => {
         btnTitle={"SPONSOR THE FUTURE"}
         onClick={() => history.push('/advertise-with-us')}
         isLeftImage
+        isComingSoon
       />
 
       <ProgramCommunityListPartner

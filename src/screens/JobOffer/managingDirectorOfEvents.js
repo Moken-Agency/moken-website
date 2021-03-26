@@ -12,8 +12,7 @@ export default [
     title: "Role Overview",
   },
   {
-    subtitle: 'We’re searching for an innovative, hands on Managing Director of Events to join our growing " +\n' +
-        '          "team at Moken.'
+    subtitle: 'We’re searching for an innovative, hands on Managing Director of Events to join our growing team at Moken.'
   },
   {
     description: [

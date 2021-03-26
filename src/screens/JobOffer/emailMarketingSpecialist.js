@@ -12,24 +12,16 @@ export default [
     title: "Role Overview",
   },
   {
-    subtitle:  "We are seeking a success-driven, email-crazed leader to join our community obsessed marketing" +
-        " team aimed at connecting digital touchpoints. The ideal candidate's goal is to create email campaigns " +
-        "aimed at conversion with a more personal, relevant, and impactfully driven approach for both Moken and " +
-        "our startup clients. A successful candidate will develop and execute email marketing strategies that build" +
-        " brand awareness, increase purchase intent, create community, and drive retention.",
+    subtitle:  `We are seeking a success-driven, email-crazed leader to join our community obsessed marketing team aimed at connecting digital touchpoints. `,
   },
-  // {
-  //   description: [
-  //     {
-  //       title:
-  //         "We are seeking a success-driven, email-crazed leader to join our community obsessed marketing" +
-  //         " team aimed at connecting digital touchpoints. The ideal candidate's goal is to create email campaigns " +
-  //           "aimed at conversion with a more personal, relevant, and impactfully driven approach for both Moken and " +
-  //           "our startup clients. A successful candidate will develop and execute email marketing strategies that build" +
-  //           " brand awareness, increase purchase intent, create community, and drive retention.",
-  //     },
-  //   ],
-  // },
+  {
+    description: [
+      {
+        title:
+          `The ideal candidate's goal is to create email campaigns aimed at conversion with a more personal, relevant, and impactfully driven approach for both Moken and our startup clients. A successful candidate will develop and execute email marketing strategies that build brand awareness, increase purchase intent, create community, and drive retention.`,
+      },
+    ],
+  },
   {
     title: "In this role",
   },

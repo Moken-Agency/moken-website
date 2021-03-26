@@ -1,5 +1,5 @@
-import ExpertiseImageFirst from "../../images/expertise-first-image.png";
-import ExpertiseImageSecond from "../../images/expertise-second.png";
+import firstImage from "../../images/product-design-first.jpg";
+import secondImage from "../../images/product-design-second.jpg";
 
 export default {
   firstSection: {
@@ -9,8 +9,8 @@ export default {
       titleSecond: "",
     },
     subtitle: "Designing strategic\n" + "& engaging user\n" + "experiences.",
-    imgURL: ExpertiseImageFirst,
-    imgURLMobile: ExpertiseImageFirst,
+    imgURL: firstImage,
+    imgURLMobile: firstImage,
     infoBlock: {
       infoTitleFirst:
         "Humans form 75% of their judgments on a website or platform’s credibility purely on its aesthetics.",
@@ -37,7 +37,7 @@ export default {
         // route: ''
       },
     ],
-    imgURL: ExpertiseImageSecond,
+    imgURL: secondImage,
   },
   thirdSection: {
     title: "WHAT WE DO",

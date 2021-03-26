@@ -35,20 +35,23 @@ const defaultBreakpoints ={
         slidesPerView: 3,
     },
     // when window width is >= 640px
-    '1200': {
+    '1380': {
         slidesPerView: 3.5,
     },
-    '1450': {
+    '1600': {
         slidesPerView: 4,
     },
-    '1550': {
+    '1770': {
         slidesPerView: 4.5,
     },
 
-    '1700': {
+    '1970': {
         slidesPerView: 5,
+    },
 
-    }
+
+
+
 };
 
 const Swiper = ({ swiperData = [], Component, containerClassName = '',
@@ -134,15 +137,20 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                       return (
                           <SwiperSlide wrapperTag={'div'} tag={'section'} key={`Slide content ${index + 1}`} virtualIndex={index}>
                               {({ isActive }) => (
-                                  <Component
+                                    <Component
                                       {...option}
                                       componentIndex={index}
                                       setIsActiveIndex={setIsActiveIndex}
                                       isActiveIndex={index === isActiveIndex} key={"explore " + index} cursor={'grab'} />
+
                               )}
                           </SwiperSlide>
                       )
                   })}
+
+              <SwiperSlide wrapperTag={'div'}>
+                  <div style={{width: 100}} />
+              </SwiperSlide>
 
               {!withoutArrows ? <>
                   <div ref={prevRef} className="cursor-pointer button-left">

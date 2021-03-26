@@ -13,19 +13,19 @@ export default [
   },
   {
     subtitle: "As a Startup Advisor, your top priority will be to build strong and trusted relationships with a diverse " +
-        "range of founders and startups within the Moken Ecosystem. As an advisor, you are someone who seeks problems " +
-        "and defines solutions. You will be responsible for proactively supporting founders on an on-demand advisory " +
-        "basis through a wide range of scenarios within your specialized area of expertise.",
+        "range of founders and startups within the Moken Ecosystem.",
 
   },
   {
     description: [
-      // {
-      //   title:
-      //   containerStyles: {
-      //     marginBottom: 25,
-      //   },
-      // },
+      {
+        title: "As an advisor, you are someone who seeks problems " +
+            "and defines solutions. You will be responsible for proactively supporting founders on an on-demand advisory " +
+            "basis through a wide range of scenarios within your specialized area of expertise.",
+        containerStyles: {
+          marginBottom: 25,
+        },
+      },
       {
         title:
           "Our advisors are individuals with deep industry, investment, or entrepreneurial experience. They work with " +

@@ -31,7 +31,7 @@ const history = useHistory();
           `Built to support founders, Moken is a company specialized in all things startup. Together, we have the 
           mission of creating a global community-driven startup ecosystem designed to inspire, educate, and connect.`
         }
-        marginBottom={isMobile ? 160 : '8.9vw'}
+        marginBottom={isMobile ? 160 : 122}
       />
 
       <ImageBlock position={"right"} url={AboutMokenFirstRight} className={'about-moken-first-image-block'} />

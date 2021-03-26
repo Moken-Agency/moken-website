@@ -52,6 +52,25 @@ const AboutAgency = () => {
       debounce(() => func(), 1500);
     }
 
+    const func2 = () => {
+      console.log(ref2.current);
+      if(isReverseMove) {
+        // ref2.current.scrollInto
+      } else {
+      }
+      debounce(() => func2(), 1500);
+    }
+
+
+  useEffect(() => {
+    // func();
+    const timer = setInterval(func2, 1500)
+    if(!isSwiperHover) {
+      clearInterval(timer)
+    }
+    return () => clearInterval(timer)
+  }, [isSwiperHover, isReverseMove]);
+
 
     const onMouseEnter =() => {
       setIsSwiperHover(true)
@@ -62,6 +81,7 @@ const AboutAgency = () => {
   }
 
     const ref = useRef(null);
+    const ref2 = useRef(null);
 
     const carouselRef = useRef(null);
 
@@ -135,34 +155,21 @@ const AboutAgency = () => {
 
       <div className={"leads-container"} ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <Carousel containerClassName={'agency-swiper-container'}
-                // containerProps={{onMouseEnter, onMouseLeave}}
-                // autoplay={{
-                //     delay: 500,
-                //     disableOnInteraction: false,
-                //     reverseDirection: isReverseMove
-                // }}
-
                 onNextEnd={(onNextEnd) => console.log({onNextEnd}) }
                   onPrevEnd={(onPrevEnd) => console.log({onPrevEnd}) }
                   ref={carouselRef}
-                  // enableAutoPlay={isSwiperHover}
                   itemsToShow={2.5}
                   pagination={false}
                   showArrows={false}
                 withoutArrows
                   enableSwipe={false}
-                // spaceBetween={82}
                   breakPoints={[{ width: 1, itemsToShow: 1 },
                     { width: 0, itemsToShow: 1 },
                     { width: 870, itemsToShow: 1.5 },
                     { width: 1200, itemsToShow: 2 },
                     { width: 1500, itemsToShow: 2.5 }]}
                   swiperData={options.projects}
-        //           Component={({title, subtitle, imgURL}, index) => {
-        //     return (
 
-        //     )
-        // }}
         >
             {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {
                 return (
@@ -183,6 +190,27 @@ const AboutAgency = () => {
                 )
             })}
         </Carousel>
+
+        {/*<div style={{overflowX: 'scroll', display: 'flex'}} ref={ref2} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>*/}
+        {/*  {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {*/}
+        {/*    return (*/}
+        {/*        <div className={'agency-product-container'}>*/}
+        {/*          <img src={imgURL}/>*/}
+        {/*          <div>*/}
+        {/*            <Text size={50}*/}
+        {/*                  mobSize={45}*/}
+        {/*                  type={'kBold'}*/}
+        {/*                  textStyles={{lineHeight: isMobile ? '60px' : '80px'}}*/}
+        {/*            >{title}</Text>*/}
+        {/*            <Text size={16}*/}
+        {/*                  mobSize={14}*/}
+        {/*                  textStyles={{letterSpacing: 4}}*/}
+        {/*                  type={'kRegular'}>{subtitle}</Text>*/}
+        {/*          </div>*/}
+        {/*        </div>*/}
+        {/*    )*/}
+        {/*  })}*/}
+        {/*</div>*/}
         {/*<div className={'agency-products-container'}>*/}
         {/*    {*/}
         {/*        [1,2,3,4,5].map((_, index) => {*/}

@@ -3,7 +3,7 @@ import {benefit8, benefit7, benefit6, benefit5, benefit4, benefit3, benefit2, be
 export default {
   opportunities: [
     {
-      title: "MOKEN AGENCY",
+      title: "MOKEN MEDIA",
       subtitle: "Graphic Designer & Illustrator",
       route: "/job-offer/graphic-designer",
     },
