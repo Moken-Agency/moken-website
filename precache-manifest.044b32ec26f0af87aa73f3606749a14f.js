@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1cd639cea26e1770e3cb1cc8e6a53aa4",
+    "revision": "861269aabc667922c0040ded6625df8b",
     "url": "/moken-website/index.html"
   },
   {
-    "revision": "0faae86b6ba65913ff31",
+    "revision": "827dd8efd7ff0b4881ca",
     "url": "/moken-website/static/css/2.7951516b.chunk.css"
   },
   {
-    "revision": "f8f1258cca176960ee01",
-    "url": "/moken-website/static/css/main.ba0a7ffc.chunk.css"
+    "revision": "732b565e69ebfc30761a",
+    "url": "/moken-website/static/css/main.f38d2bb5.chunk.css"
   },
   {
-    "revision": "0faae86b6ba65913ff31",
-    "url": "/moken-website/static/js/2.9c1addcd.chunk.js"
+    "revision": "827dd8efd7ff0b4881ca",
+    "url": "/moken-website/static/js/2.64d544df.chunk.js"
   },
   {
     "revision": "37cb981662b495e21676aa119dbbcad0",
-    "url": "/moken-website/static/js/2.9c1addcd.chunk.js.LICENSE.txt"
+    "url": "/moken-website/static/js/2.64d544df.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f8f1258cca176960ee01",
-    "url": "/moken-website/static/js/main.fe51230b.chunk.js"
+    "revision": "732b565e69ebfc30761a",
+    "url": "/moken-website/static/js/main.a5c24c6f.chunk.js"
   },
   {
     "revision": "0a2ccff5c096adb143b1",
@@ -282,10 +282,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "97a7a8b5ab46a4a0e16041a80155c45d",
     "url": "/moken-website/static/media/ZonaPro-LightItalicDemo.97a7a8b5.otf"
-  },
-  {
-    "revision": "c217b22579ca9bd9ca4c6222464f87f0",
-    "url": "/moken-website/static/media/about-agency-projects-swiper-first.c217b225.jpg"
   },
   {
     "revision": "3d8a0c287b43a27ef9691603af68112e",
@@ -712,6 +708,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/iraqi.0a42589a.svg"
   },
   {
+    "revision": "af18a2ee3c4e1301a76ff99ec1a20f6c",
+    "url": "/moken-website/static/media/iraqi.af18a2ee.jpg"
+  },
+  {
     "revision": "6abb360130ee8be09159bb301a1caad5",
     "url": "/moken-website/static/media/job-post-1.6abb3601.svg"
   },
@@ -748,8 +748,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/kenergy@3x.83d9fe58.jpg"
   },
   {
-    "revision": "1fd78045dcc84ad403b0b153e1bacd76",
-    "url": "/moken-website/static/media/knowbie.1fd78045.svg"
+    "revision": "6d11a62b4880e3a6e5f35b18498218b0",
+    "url": "/moken-website/static/media/knowbie.6d11a62b.svg"
   },
   {
     "revision": "5e5707de0992f17c8e853fe11be8d281",
@@ -832,6 +832,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/package-second.384fd935.svg"
   },
   {
+    "revision": "caae8d0608e9022dfb11161d30cc39b6",
+    "url": "/moken-website/static/media/partnerships-growth-first.caae8d06.jpg"
+  },
+  {
+    "revision": "5c25e2f76bfd70bf2a7fbf93d2b81719",
+    "url": "/moken-website/static/media/partnerships-growth-second.5c25e2f7.jpg"
+  },
+  {
     "revision": "0f9332b1670346050913c39b4eee9efc",
     "url": "/moken-website/static/media/people-leadership-footer.0f9332b1.png"
   },
@@ -840,12 +848,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/moken-website/static/media/people-leadershiping.2c0150d6.png"
   },
   {
+    "revision": "350fdccfc5a3146ba8a195e62f6f2a4b",
+    "url": "/moken-website/static/media/product-design-first.350fdccf.jpg"
+  },
+  {
+    "revision": "12db46250ee1d6d79fd022033129135b",
+    "url": "/moken-website/static/media/product-design-second.12db4625.jpg"
+  },
+  {
     "revision": "ae2d409f35384f745aa0e2f1083ff74c",
     "url": "/moken-website/static/media/product-dev-web-first.ae2d409f.png"
   },
   {
     "revision": "b2c1044f1cfcae3287d07517cc49b303",
     "url": "/moken-website/static/media/product-developent-second.b2c1044f.jpg"
+  },
+  {
+    "revision": "2d047289504598d2b024d8a7b013b2f0",
+    "url": "/moken-website/static/media/product-marketing-first.2d047289.jpg"
+  },
+  {
+    "revision": "a9377220fae3414e8a3ebac3260badf1",
+    "url": "/moken-website/static/media/product-marketing-second.a9377220.jpg"
   },
   {
     "revision": "d4580f74b7b463024c6c3df3e3ecd70c",
