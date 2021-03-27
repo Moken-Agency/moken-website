@@ -12,7 +12,7 @@ const TitleContainerWithImg = ({
   title = "",
   description = "",
   imgURL = "",
-  onClick = () => window.open('http://careers@mokenstartups.com', '_blank')
+  onClick = () => window.open('mailto:careers@mokenstartups.com', '_blank')
 }) => {
   const { isMobile } = useWindowDimensions();
 

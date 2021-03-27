@@ -15,7 +15,7 @@ const containerRouteStyle = {
   // marginBottom: '0.05vw'
 };
 
-const ColumnTextComponent = ({ title, index, route = '', link }) => {
+const ColumnTextComponent = ({ title, index, route = '', link, onClick, isComingSoon }) => {
   let history = useHistory();
 
   const [color, setColor] = useState("black");
@@ -25,6 +25,16 @@ const ColumnTextComponent = ({ title, index, route = '', link }) => {
   const onMouseLeave = () => {
     setColor("black");
   };
+
+  const handleOnClick = () => {
+    if(!isComingSoon) {
+      if(!onClick) {
+        route ? history.push(route) : window.open(link, '_blank')
+      } else {
+        onClick();
+      }
+    }
+  }
   return (
     <Text
       key={"column menu" + index + title}
@@ -32,9 +42,10 @@ const ColumnTextComponent = ({ title, index, route = '', link }) => {
       type={"kLight"}
       // type={"light"}
       size={20}
+      className={`${isComingSoon ? 'is-coming-soon-footer-item' : ''}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      onClick={() => route ? history.push(route) : window.open(link, '_blank')}
+      onClick={handleOnClick}
       containerStyles={containerRouteStyle}
     >
       {title}
@@ -55,13 +66,15 @@ const ColumnMenu = ({ routes = [], title }) => {
       >
         {title.toUpperCase()}
       </Text>
-      {routes.map(({ title, route, link }, index) => {
+      {routes.map(({ title, route, link, onClick, isComingSoon }, index) => {
         return (
           <ColumnTextComponent
             key={index + "ColumnTextComponent"}
             title={title}
             route={route}
             link={link}
+            onClick={onClick}
+            isComingSoon={isComingSoon}
           />
         );
       })}

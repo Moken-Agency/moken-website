@@ -15,12 +15,10 @@ const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
 const MenuScreen = (props) => {
   const { isMobile } = useWindowDimensions();
   let history = useHistory();
-
+  console.log('MenuScreen --->', window.innerWidth);
   return (
-    <>
-      {isMobile ? (
-        <HeaderMobile {...props} />
-      ) : (
+    <div className={'menu-screen-main-container'}>
+        <HeaderMobile {...props} containerClassName={'header-mobile-container'} />
         <div className={'menu-screen-top-container'}>
           <div className={"menu-screen-container"}>
             <div
@@ -100,8 +98,7 @@ const MenuScreen = (props) => {
           </div>
         </div>
         </div>
-      )}
-    </>
+    </div>
   );
 };
 

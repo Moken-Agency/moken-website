@@ -69,7 +69,7 @@ export default {
         routes: [
           {
             title: "Become a Partner",
-            route: "/partnership-programs",
+            route: "/our-partners",
           },
           {
             title: "Sponsor the Future",

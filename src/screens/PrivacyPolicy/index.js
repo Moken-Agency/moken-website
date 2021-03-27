@@ -8,15 +8,18 @@ const PrivacyPolicy = () => {
   return (
     <div className={"privacy-container"}>
       <div className={"privacy-header-container"}>
-        <Text
-          size={95}
-          animationType={"fade-in"}
-          mobSize={50}
-          color={"white"}
-          type={"kBold"}
-        >
-          Privacy Policy
-        </Text>
+          <div className={'title-header-container'}>
+              <Text
+              size={95}
+              animationType={"fade-in"}
+              mobSize={50}
+              color={"white"}
+              type={"kBold"}
+            >
+              Privacy Policy
+            </Text>
+          </div>
+          <div style={{width: '400px', backgroundColor: '#dee2f2', right: 0, top: 0}}/>
       </div>
       <PageGenerator
         data={otherOptions}

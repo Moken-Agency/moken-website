@@ -13,10 +13,11 @@ import moment from 'moment'
 import useValues from "../../hooks/useValues";
 import emailjs from "emailjs-com";
 import Loader from "../Loader";
+import Form from "../Form";
 
 
 const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
-const { menuColumns } = menuOption;
+// const { menuColumns } = menuOption;
 const { joinFirstText, joinSecondText } = styles;
 
 const containerStyles = {
@@ -57,11 +58,97 @@ const Footer = ({ isOpen, setIsOpen }) => {
       })
     }
   }
+  const [isFormOpened, setIsFormOpened] = useState(false);
 
   const handleOnChange = (name, value) => {
     const {onChangeText}= getProps(name);
     onChangeText(value)
   }
+
+  const menuColumns = [
+    {
+      title: "The Company",
+      routes: [
+        {
+          title: "About Moken",
+          route: "/about-moken",
+        },
+        {
+          title: "The Agency",
+          route: "/about-agency",
+        },
+        {
+          title: "Our Partners",
+          route: "/our-partners",
+        },
+        {
+          title: "Access Network",
+          route: "/access",
+        },
+        {
+          title: "Careers",
+          route: "/careers",
+        },
+        {
+          title: "Insights",
+          link: 'https://medium.com/insights'
+        },
+      ],
+    },
+    {
+      title: "Help & Support",
+      routes: [
+        {
+          title: "FAQ",
+          route: "/faqs",
+        },
+        {
+          title: "Connect with Us",
+          route: "/connect-with-us",
+        },
+        {
+          title: "Privacy",
+          route: "/privacy",
+        },
+        {
+          title: "Terms",
+          route: "/terms",
+        },
+      ],
+    },
+    {
+      title: "Collaborate",
+      routes: [
+        {
+          title: "Become a Partner",
+          onClick: () => setIsFormOpened(true)
+        },
+        {
+          title: "Sponsor the Future",
+          route: "/advertise-with-us",
+          isComingSoon: true
+        },
+        {
+          title: "Work with Mo + Ken",
+          route: "/mo-ken",
+          isComingSoon: true
+
+        },
+        {
+          title: "Product Testing Team",
+          route: "/product-testing-team",
+        },
+        {
+          title: "Educate the Next Generation",
+          route: "/mentorship",
+        },
+        {
+          title: "Innovation Week",
+          route: "/innovation-week",
+        },
+      ],
+    },
+  ];
 
 
 
@@ -70,6 +157,9 @@ const Footer = ({ isOpen, setIsOpen }) => {
 
   return (
     <div className={"footer-container"}>
+      <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+      </Form>
       <Loader isShow={isFetching} />
 
       <div className={"top-footer-bar"}>
@@ -122,7 +212,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
               // animationType={"fade-in"}
               onChange={(value) => handleOnChange('email', value)}
               {...getProps('email')}
-          /> : null}
+          /> : <Text  type={"kLight"} size={20}>Thank you for subscribing</Text>}
         </div>
       </div>
       <div className={"bottom-footer-bar"}>

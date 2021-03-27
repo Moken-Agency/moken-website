@@ -79,7 +79,7 @@ const EmailForm = ({
                 onClick={handleSubscribe}
                 type={'white-bordered'}
             />
-          </div> : <Text  type={"kLight"} size={20}>Subscription</Text>}
+          </div> : <Text  type={"kLight"} size={20}>Thank you for subscribing</Text>}
         </div>
       ) : null}
     </>

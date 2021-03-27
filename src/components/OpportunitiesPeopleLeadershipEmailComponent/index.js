@@ -90,7 +90,7 @@ const OpportunitiesPeopleLeadershipEmailComponent = ({title = '', subtitle = '',
                         withGoButton
                         onSubmit={handleSubscribe}
                         />
-                    </> : <Text  type={"kLight"} size={20}>Subscription</Text>
+                    </> : <Text  type={"kLight"} size={20}>Thank you for subscribing</Text>
                     }
                 </div>
             </div>

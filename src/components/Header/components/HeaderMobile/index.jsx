@@ -20,7 +20,7 @@ const {
 
 const { socialsMediaWhite } = footerOptions;
 
-const HeaderMobile = ({ isOpen = false, setIsOpen }) => {
+const HeaderMobile = ({ isOpen = false, setIsOpen, containerClassName = '' }) => {
   let history = useHistory();
 
   const [subMenu, setSubMenu] = useState(null);
@@ -36,7 +36,7 @@ const HeaderMobile = ({ isOpen = false, setIsOpen }) => {
   };
   return (
     <section
-      className={"header-mobile-container"}
+      className={`header-mobile-container ${containerClassName}`}
       style={{
         height: isOpen ? "90vh" : "10vh",
         position: isOpen ? "absolute" : "initial",

@@ -1,9 +1,15 @@
 .privacy-container {
   .privacy-header-container {
-    background-color: #ff2a68;
-    padding: 248px 0 120px 168px;
-    @media only screen and (max-width: 600px) {
-      padding: 172px 134px 80px 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-color: #000;
+    .title-header-container {
+      padding: 248px 0 120px 168px;
+      @media only screen and (max-width: 600px) {
+        padding: 172px 134px 80px 43px;
+      }
     }
   }
 }
