@@ -168,20 +168,20 @@ const AboutAgency = () => {
                   slidesPerView: 1,
                 },
                 // when window width is >= 480px
-                '800': {
+                '950': {
                   slidesPerView: 1,
                 },
                 '1000': {
                   slidesPerView: 1.5,
                 },
                 // when window width is >= 640px
-                '1380': {
+                '1300': {
                   slidesPerView: 2,
                 },
                 '1600': {
                   slidesPerView: 2.5,
                 },
-                '1770': {
+                '1870': {
                   slidesPerView: 3,
                 },
 
