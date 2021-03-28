@@ -1,4 +1,15 @@
+.connect-modal {
+  background-color: white;
+  border-radius: 30px;
+  padding: 80px 50px 35px 50px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .connect-with-us-container {
+
   header {
     display: flex;
     padding: 0 0 0 170px;

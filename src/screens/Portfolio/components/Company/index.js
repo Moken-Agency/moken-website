@@ -12,6 +12,7 @@ const Company = ({
   city = "",
   owner = "",
     link = '',
+                   isComingSoon,
                      isLast = false
 }) => {
   const { isMobile } = useWindowDimensions();
@@ -19,18 +20,22 @@ const Company = ({
 
     const handleOpenLink = () => {
         // return  link ? window.open(link) : null
-      window.open(link, '_blank');
+      if(!isComingSoon) {
+        window.open(link, '_blank');
+
+      }
 
     }
     return (
     <div className={`company-container ${isLast ? 'last-item' : '' }`}
+         style={{cursor: isComingSoon ? 'not-allowed' : 'pointer'}}
          onClick={handleOpenLink}>
       <div>
         <Text
           size={16}
           animationType={"fade-in"}
           type={"kMedium"}
-          className={"company-name"}
+          className={`company-name ${isComingSoon ? 'company-name-coming-soon' : ''}`}
           mobSize={12}
         >
           {companyName}

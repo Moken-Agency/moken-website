@@ -110,27 +110,27 @@ const history = useHistory();
 
       <section className={"about-moken-video-section"}>
         <img className={'about-moken-video-poster'} src={VideoImage}/>
-        {/*<div className={"about-moken-video-info-block"}>*/}
-        {/*  <Text*/}
-        {/*    className={"about-moken-video-info-block-first-title"}*/}
-        {/*    size={16}*/}
-        {/*    // size={'1vw'}*/}
-        {/*    animationType={"fade-up"}*/}
-        {/*    type={"kSemiBold"}*/}
-        {/*  >*/}
-        {/*      WE ARE MOKEN, WE ARE THE FUTURE*/}
-        {/*  </Text>*/}
-        {/*  <Text*/}
-        {/*    size={20}*/}
-        {/*    // size={'1.2vw'}*/}
-        {/*    type={"kLight"}*/}
-        {/*    animationType={"fade-up"}*/}
-        {/*    textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}*/}
-        {/*    mobSize={16}*/}
-        {/*  >*/}
-        {/*      Video Coming Soon*/}
-        {/*  </Text>*/}
-        {/*</div>*/}
+        <div className={"about-moken-video-info-block"}>
+          <Text
+            className={"about-moken-video-info-block-first-title"}
+            size={16}
+            // size={'1vw'}
+            animationType={"fade-up"}
+            type={"kSemiBold"}
+          >
+              WE ARE MOKEN, WE ARE THE FUTURE
+          </Text>
+          <Text
+            size={20}
+            // size={'1.2vw'}
+            type={"kLight"}
+            animationType={"fade-up"}
+            textStyles={{ lineHeight: isMobile ? "26px" : "30px" }}
+            mobSize={16}
+          >
+              Video Coming Soon
+          </Text>
+        </div>
 
           <VideoPlayer />
 

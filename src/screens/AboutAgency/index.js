@@ -152,44 +152,99 @@ const AboutAgency = () => {
         description={`Our goal is to help founders create startups that scale faster, cheaper, and better. We are startup veterans who have built, sold, and invested in many companies. Over the last 10 years we've seen a lot of tricky areas for entrepreneurs to navigate. We now leverage that experience to help you build and grow your startup faster and with less pain and cost.`}
       />
 
+      <Swiper swiperData={options.projects}
+              containerClassName={'about-agency-projects-slider'}
+              breakpoints={{
+                // when window width is >= 320px
+                '0': {
+                  slidesPerView: 1,
 
+                },
+
+                '601': {
+                  // slidesPerView: 1.5,
+                },
+                '650': {
+                  slidesPerView: 1,
+                },
+                // when window width is >= 480px
+                '800': {
+                  slidesPerView: 1,
+                },
+                '1000': {
+                  slidesPerView: 1.5,
+                },
+                // when window width is >= 640px
+                '1380': {
+                  slidesPerView: 2,
+                },
+                '1600': {
+                  slidesPerView: 2.5,
+                },
+                '1770': {
+                  slidesPerView: 3,
+                },
+
+                '1970': {
+                  slidesPerView: 3.5,
+                },
+
+              }}
+              Component={({imgURL, title, subtitle}) => {
+        return (
+            <div className={'agency-product-container'}>
+              <img src={imgURL}/>
+              <div>
+                <Text size={50}
+                      mobSize={45}
+                      type={'kBold'}
+                      textStyles={{lineHeight: isMobile ? '60px' : '80px'}}
+                >{title}</Text>
+                <Text size={16}
+                      mobSize={14}
+                      textStyles={{letterSpacing: 4}}
+                      type={'kRegular'}>{subtitle}</Text>
+              </div>
+            </div>
+        )
+      }}/>
       <div className={"leads-container"} ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-        <Carousel containerClassName={'agency-swiper-container'}
-                onNextEnd={(onNextEnd) => console.log({onNextEnd}) }
-                  onPrevEnd={(onPrevEnd) => console.log({onPrevEnd}) }
-                  ref={carouselRef}
-                  itemsToShow={2.5}
-                  pagination={false}
-                  showArrows={false}
-                withoutArrows
-                  enableSwipe={false}
-                  breakPoints={[{ width: 1, itemsToShow: 1 },
-                    { width: 0, itemsToShow: 1 },
-                    { width: 870, itemsToShow: 1.5 },
-                    { width: 1200, itemsToShow: 2 },
-                    { width: 1500, itemsToShow: 2.5 }]}
-                  swiperData={options.projects}
+        {/*<Carousel containerClassName={'agency-swiper-container'}*/}
+        {/*        onNextEnd={(onNextEnd) => console.log({onNextEnd}) }*/}
+        {/*          onPrevEnd={(onPrevEnd) => console.log({onPrevEnd}) }*/}
+        {/*          ref={carouselRef}*/}
+        {/*          itemsToShow={2.5}*/}
+        {/*          pagination={false}*/}
+        {/*          showArrows={false}*/}
+        {/*        withoutArrows*/}
+        {/*          enableSwipe={false}*/}
+        {/*          breakPoints={[{ width: 1, itemsToShow: 1 },*/}
+        {/*            { width: 0, itemsToShow: 1 },*/}
+        {/*            { width: 870, itemsToShow: 1.5 },*/}
+        {/*            { width: 1200, itemsToShow: 2 },*/}
+        {/*            { width: 1500, itemsToShow: 2.5 }]}*/}
+        {/*          swiperData={options.projects}*/}
 
-        >
-            {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {
-                return (
-                    <div className={'agency-product-container'}>
-                        <img src={imgURL}/>
-                        <div>
-                            <Text size={50}
-                                  mobSize={45}
-                                  type={'kBold'}
-                                  textStyles={{lineHeight: isMobile ? '60px' : '80px'}}
-                            >{title}</Text>
-                            <Text size={16}
-                                  mobSize={14}
-                                  textStyles={{letterSpacing: 4}}
-                                  type={'kRegular'}>{subtitle}</Text>
-                        </div>
-                    </div>
-                )
-            })}
-        </Carousel>
+        {/*>*/}
+        {/*    {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {*/}
+        {/*        return (*/}
+        {/*            <div className={'agency-product-container'}>*/}
+        {/*                <img src={imgURL}/>*/}
+        {/*                <div>*/}
+        {/*                    <Text size={50}*/}
+        {/*                          mobSize={45}*/}
+        {/*                          type={'kBold'}*/}
+        {/*                          textStyles={{lineHeight: isMobile ? '60px' : '80px'}}*/}
+        {/*                    >{title}</Text>*/}
+        {/*                    <Text size={16}*/}
+        {/*                          mobSize={14}*/}
+        {/*                          textStyles={{letterSpacing: 4}}*/}
+        {/*                          type={'kRegular'}>{subtitle}</Text>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*        )*/}
+        {/*    })}*/}
+        {/*</Carousel>*/}
 
         {/*<div style={{overflowX: 'scroll', display: 'flex'}} ref={ref2} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>*/}
         {/*  {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {*/}

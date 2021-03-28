@@ -173,9 +173,9 @@ export default {
           title: "HOST AN EVENT",
           route: "/host-an-event",
         },
-        {
-          title: "GET TICKETS",
-        },
+        // {
+        //   title: "GET TICKETS",
+        // },
       ],
     },
     {

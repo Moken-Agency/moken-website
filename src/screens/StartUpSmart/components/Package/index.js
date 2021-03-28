@@ -27,14 +27,14 @@ const Package = ({
 
   const hiddenDynamicStylesWeb = {
     visibility: isOpen ? "visible" : "hidden",
-    transition: ".5s",
+    transition: ".3s",
     opacity: isOpen ? 1 : 0,
     height: isOpen ? "auto" : 0,
     padding: isOpen ? "76px 25px 0 25px" : 0,
   };
   const hiddenDynamicStylesMob = {
     visibility: isOpen ? "visible" : "hidden",
-    transition: ".5s",
+    transition: ".3s",
     opacity: isOpen ? 1 : 0,
     height: isOpen ? "auto" : 0,
   };

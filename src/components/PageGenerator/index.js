@@ -11,6 +11,7 @@ import HeaderTitleWithImg from "../HeaderTitleWithImg";
 import TitleContainerWithImg from "../TitleContainerWithImg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import JobOfferTitle from "../JobOfferTitle";
+import {useHistory} from "react-router-dom";
 
 const PageGenerator = ({
   data,
@@ -18,6 +19,7 @@ const PageGenerator = ({
   descriptionOptions = {},
 }) => {
   const { isMobile } = useWindowDimensions();
+  let history = useHistory();
 
   return (
     <div className={"page-generator-container"} style={containerStyles}>
@@ -91,6 +93,7 @@ const PageGenerator = ({
                 backgroundColor={colorBlock}
                 subtitle={colorSubtitle}
                 title={colorTitle}
+                onClick={() => history.push('/opportunities')}
               />
               {/*<ColorBlock colorBlock={colorBlock} colorTitle={colorTitle} colorSubtitle={colorSubtitle}/>*/}
               <EmailForm withForm={withForm} />

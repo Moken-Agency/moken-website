@@ -60,76 +60,76 @@ const HostAnEvent = () => {
 
       <Swiper Component={Explore} swiperData={options.swiperData} />
 
-      <ColorBlock
-        title={"Grow Your Community"}
-        subtitle={"UPCOMING EVENTS"}
-        backgroundColor={"black"}
-        textColor={'white'}
-        blockType={'middle'}
-        withIcon
-        onClick={() => history.push('/upcoming-events')}
-      />
+      {/*<ColorBlock*/}
+      {/*  title={"Grow Your Community"}*/}
+      {/*  subtitle={"UPCOMING EVENTS"}*/}
+      {/*  backgroundColor={"black"}*/}
+      {/*  textColor={'white'}*/}
+      {/*  blockType={'middle'}*/}
+      {/*  withIcon*/}
+      {/*  onClick={() => history.push('/upcoming-events')}*/}
+      {/*/>*/}
 
-      <TitleTwoDescriptions
-        mainTitle={"BRING US TO YOU"}
-        title={
-          "We put the audience at the heart of what we do, starting with real people, not demographics."
-        }
-        firstDescription={
-            `Backlash is a full service creative experiential agency with all of the in-house functions you
-             would expect to deliver an end-to-end service. Typically, a project will follow a path of
-              strategic consultation, creative concepting, 2D & 3D design, production development, live
-               event and project evaluation. Each of these stages are managed by our experienced project management team.`
-        }
-        secondDescription={
-            `Backlash creative responses are about taking our clients on an inspirational journey that explores a 
-            breadth of concepts and strategies, to push the potential of the brief. This creative process is developed
-             in a completely collaborative and solution-driven environment, as we do not confess to be experts in your
-              brand.`
-        }
-      />
+      {/*<TitleTwoDescriptions*/}
+      {/*  mainTitle={"BRING US TO YOU"}*/}
+      {/*  title={*/}
+      {/*    "We put the audience at the heart of what we do, starting with real people, not demographics."*/}
+      {/*  }*/}
+      {/*  firstDescription={*/}
+      {/*      `Backlash is a full service creative experiential agency with all of the in-house functions you*/}
+      {/*       would expect to deliver an end-to-end service. Typically, a project will follow a path of*/}
+      {/*        strategic consultation, creative concepting, 2D & 3D design, production development, live*/}
+      {/*         event and project evaluation. Each of these stages are managed by our experienced project management team.`*/}
+      {/*  }*/}
+      {/*  secondDescription={*/}
+      {/*      `Backlash creative responses are about taking our clients on an inspirational journey that explores a */}
+      {/*      breadth of concepts and strategies, to push the potential of the brief. This creative process is developed*/}
+      {/*       in a completely collaborative and solution-driven environment, as we do not confess to be experts in your*/}
+      {/*        brand.`*/}
+      {/*  }*/}
+      {/*/>*/}
 
-      <div className={"central-container-with-info"}>
-       <div className={'host-an-event-central-container'}>
-           <Text
-               type={"kLight"}
-               size={100}
-               mobSize={50}
-               color={'#263da8'}
-               containerStyles={{ marginRight: 21}}
-           >
-              01
-           </Text>
-           <Text
-               className={"central-title"}
-               type={"kSemiBold"}
-               size={14}
-               mobSize={10}
-           >
-               HOW WE HELP
-           </Text>
-       </div>
-        <div className={"central-sub-container"}>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px", marginBottom: 25 }}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              Our passion for this industry has been developed collectively over 40 years’, previously working at
-              leading global advertising, integrated and experiential agencies. This wider marketing experience has
-              allowed us to develop our ‘Big Agency’ approach to any brief of all budget sizes.
-          </Text>
-            <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-            We will create an Eventbrite page
-          </Text>
+      {/*<div className={"central-container-with-info"}>*/}
+      {/* <div className={'host-an-event-central-container'}>*/}
+      {/*     <Text*/}
+      {/*         type={"kLight"}*/}
+      {/*         size={100}*/}
+      {/*         mobSize={50}*/}
+      {/*         color={'#263da8'}*/}
+      {/*         containerStyles={{ marginRight: 21}}*/}
+      {/*     >*/}
+      {/*        01*/}
+      {/*     </Text>*/}
+      {/*     <Text*/}
+      {/*         className={"central-title"}*/}
+      {/*         type={"kSemiBold"}*/}
+      {/*         size={14}*/}
+      {/*         mobSize={10}*/}
+      {/*     >*/}
+      {/*         HOW WE HELP*/}
+      {/*     </Text>*/}
+      {/* </div>*/}
+        {/*<div className={"central-sub-container"}>*/}
+        {/*  <Text*/}
+        {/*    size={20}*/}
+        {/*    textStyles={{ lineHeight: isMobile ? "20px" : "30px", marginBottom: 25 }}*/}
+        {/*    mobSize={16}*/}
+        {/*    animationType={"fade-in"}*/}
+        {/*    type={"kLight"}*/}
+        {/*  >*/}
+        {/*      Our passion for this industry has been developed collectively over 40 years’, previously working at*/}
+        {/*      leading global advertising, integrated and experiential agencies. This wider marketing experience has*/}
+        {/*      allowed us to develop our ‘Big Agency’ approach to any brief of all budget sizes.*/}
+        {/*  </Text>*/}
+        {/*    <Text*/}
+        {/*    size={20}*/}
+        {/*    textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
+        {/*    mobSize={16}*/}
+        {/*    animationType={"fade-in"}*/}
+        {/*    type={"kLight"}*/}
+        {/*  >*/}
+        {/*    We will create an Eventbrite page*/}
+        {/*  </Text>*/}
           {/*<Text*/}
           {/*  size={20}*/}
           {/*  textStyles={{ lineHeight: isMobile ? "20px" : "30px" }}*/}
@@ -185,76 +185,76 @@ const HostAnEvent = () => {
           {/*>*/}
           {/*  — We will help promote across our social channelst*/}
           {/*</Text>*/}
-        </div>
-      </div>
+      {/*  </div>*/}
+      {/*</div>*/}
 
-      <div className={"central-container-with-info"}>
-         <div className={'host-an-event-central-container'}>
-             <Text
-                 type={"kLight"}
-                 size={100}
-                 mobSize={50}
-                 color={'#263da8'}
-                 containerStyles={{
-                     marginRight: 21
-                 }}
-             >
-                 02
-             </Text>
-             <Text
-                 className={"central-title"}
-                 type={"kSemiBold"}
-                 size={14}
-                 mobSize={10}
-             >
-                 REQUIREMENTS
-             </Text>
-         </div>
-        <div className={"central-sub-container"}>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px", marginBottom: 25, whiteSpace: 'break-spaces' }}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              {
-              `Having a connection with someone is deep rooted. It’s emotional.
-A feeling. A relationship…
-To help us connect best we need`
-              }
+{/*      <div className={"central-container-with-info"}>*/}
+{/*         <div className={'host-an-event-central-container'}>*/}
+{/*             <Text*/}
+{/*                 type={"kLight"}*/}
+{/*                 size={100}*/}
+{/*                 mobSize={50}*/}
+{/*                 color={'#263da8'}*/}
+{/*                 containerStyles={{*/}
+{/*                     marginRight: 21*/}
+{/*                 }}*/}
+{/*             >*/}
+{/*                 02*/}
+{/*             </Text>*/}
+{/*             <Text*/}
+{/*                 className={"central-title"}*/}
+{/*                 type={"kSemiBold"}*/}
+{/*                 size={14}*/}
+{/*                 mobSize={10}*/}
+{/*             >*/}
+{/*                 REQUIREMENTS*/}
+{/*             </Text>*/}
+{/*         </div>*/}
+{/*        <div className={"central-sub-container"}>*/}
+{/*          <Text*/}
+{/*            size={20}*/}
+{/*            textStyles={{ lineHeight: isMobile ? "20px" : "30px", marginBottom: 25, whiteSpace: 'break-spaces' }}*/}
+{/*            mobSize={16}*/}
+{/*            animationType={"fade-in"}*/}
+{/*            type={"kLight"}*/}
+{/*          >*/}
+{/*              {*/}
+{/*              `Having a connection with someone is deep rooted. It’s emotional.*/}
+{/*A feeling. A relationship…*/}
+{/*To help us connect best we need`*/}
+{/*              }*/}
 
-          </Text>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px"}}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              Provide target market
+{/*          </Text>*/}
+{/*          <Text*/}
+{/*            size={20}*/}
+{/*            textStyles={{ lineHeight: isMobile ? "20px" : "30px"}}*/}
+{/*            mobSize={16}*/}
+{/*            animationType={"fade-in"}*/}
+{/*            type={"kLight"}*/}
+{/*          >*/}
+{/*              Provide target market*/}
 
-          </Text>
-          <Text
-            size={20}
-            textStyles={{ lineHeight: isMobile ? "20px" : "30px"}}
-            mobSize={16}
-            animationType={"fade-in"}
-            type={"kLight"}
-          >
-              — Provide access to your desired invite list
-          </Text>
-            <Text
-                size={20}
-                textStyles={{lineHeight: isMobile ? "20px" : "30px"}}
-                mobSize={16}
-                animationType={"fade-in"}
-                type={"kLight"}
-            >
-                — Provide us your desired budget
-            </Text>
-        </div>
-      </div>
+{/*          </Text>*/}
+{/*          <Text*/}
+{/*            size={20}*/}
+{/*            textStyles={{ lineHeight: isMobile ? "20px" : "30px"}}*/}
+{/*            mobSize={16}*/}
+{/*            animationType={"fade-in"}*/}
+{/*            type={"kLight"}*/}
+{/*          >*/}
+{/*              — Provide access to your desired invite list*/}
+{/*          </Text>*/}
+{/*            <Text*/}
+{/*                size={20}*/}
+{/*                textStyles={{lineHeight: isMobile ? "20px" : "30px"}}*/}
+{/*                mobSize={16}*/}
+{/*                animationType={"fade-in"}*/}
+{/*                type={"kLight"}*/}
+{/*            >*/}
+{/*                — Provide us your desired budget*/}
+{/*            </Text>*/}
+{/*        </div>*/}
+{/*      </div>*/}
 
       <ColorBlock
         title={"Ready to collaborate?"}

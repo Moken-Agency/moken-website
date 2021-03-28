@@ -1,5 +1,5 @@
-import firstImage from '../../images/branding-first.jpg';
-import secondImage from '../../images/branding-second.jpg';
+import firstImage from '../../images/branding-first@3x.jpg';
+import secondImage from '../../images/branding-second@3x.jpg';
 
 export default {
   firstSection: {

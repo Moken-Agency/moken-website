@@ -1,5 +1,5 @@
-import firstImage from "../../images/product-design-first.jpg";
-import secondImage from "../../images/product-design-second.jpg";
+import firstImage from "../../images/product-design-first@3x.jpg";
+import secondImage from "../../images/product-design-second@3x.jpg";
 
 export default {
   firstSection: {

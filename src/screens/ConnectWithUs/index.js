@@ -14,6 +14,7 @@ import useValues from "../../hooks/useValues";
 import Loader from "../../components/Loader";
 import ConnectHeaderImage from '../../images/contact-header.jpg';
 import ConnectSecondImage from '../../images/contact-second.jpg';
+import Modal from "react-modal";
 
 const ConnectWithUs = () => {
   const { isMobile } = useWindowDimensions();
@@ -40,6 +41,8 @@ const ConnectWithUs = () => {
     onChangeText(value)
   }
 
+  const [isOpen, setIsOpen] = useState(false);
+
   const defaultTemplate =
     {
       id: 'agency',
@@ -61,10 +64,10 @@ const ConnectWithUs = () => {
           'user_ILhvoG5ED9QfcW7AV2q89')
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
+            setIsOpen(true);
           }, function(error) {
             console.log('FAILED...', error);
           }).finally(() => {
-        clearValues();
         setIsFetching(false);
       });
 
@@ -99,6 +102,19 @@ const ConnectWithUs = () => {
 
   return (
     <div className={"connect-with-us-container"}>
+      <Modal isOpen={isOpen} className="form-modal" style={{container: {
+        }}}>
+        <div className={'connect-modal'}>
+          <Text type={'kLight'} size={14}>Thanks for your message! We look forward to chatting soon.</Text>
+          <Button title={'OKAY'}
+                  containerStyles={{marginTop: 20, width: '100%'}}
+                  onClick={() => {
+                    clearValues();
+                    setIsOpen(false)
+                  }} />
+        </div>
+
+      </Modal>
       <Loader isShow={isFetching} />
       <header>
         <div className={"connect-with-us-header-info"}>

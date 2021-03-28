@@ -1,4 +1,10 @@
+.explore-our-partners-potential-container {
+  transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
 
+  &:hover {
+      transform: translate(0, -10px)!important;
+  }
+}
 .our-partners-circles {
   img {
     height: 31vw;

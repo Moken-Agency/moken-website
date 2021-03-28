@@ -139,7 +139,7 @@ const OurPartners = () => {
                   mobSize={12}
                   size={14}
                   textStyles={{letterSpacing: 4, marginRight: 40}}>EXPLORE THE POTENTIAL</Text>
-            <img src={arrowUpRight} style={{width: '1.7vw', height: '1.7vw'}}/>
+            <img src={arrowUpRight} style={{width: 27, height: 27}}/>
         </div>
     </div>
       <EmailForm withForm />

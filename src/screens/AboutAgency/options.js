@@ -2,7 +2,7 @@ import prommoto from "../../images/aboutAgencyProjects/prommoto@3x.jpg";
 import knowbie from "../../images/aboutAgencyProjects/knowbie@3x.jpg";
 import teology from "../../images/aboutAgencyProjects/teologo@3x.jpg";
 import biteMe from "../../images/aboutAgencyProjects/bite-me@3x.jpg";
-import ryr from "../../images/aboutAgencyProjects/ryr@3x.jpg";
+import ryr from "../../images/aboutAgencyProjects/ryr.jpg";
 import binary from "../../images/aboutAgencyProjects/binary@3x.jpg";
 import hera from "../../images/aboutAgencyProjects/hera@3x.jpg";
 import kenergy from "../../images/aboutAgencyProjects/kenergy@3x.jpg";
@@ -30,8 +30,10 @@ Strategy`,
       title: "FUNDING",
       subtitle: `Investment
 & Raising`,
-      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      description: 'Guiding startups and founders to build a sound strategy to raise capital for their ventures.',
       route: "",
+      btnTitle: 'COMING SOON',
+      isComingSoon: true
     },
     {
       title: "GROWTH",

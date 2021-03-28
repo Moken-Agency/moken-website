@@ -1,6 +1,5 @@
-import ExpertiseImageFirst from "../../images/expertise-first-image.png";
-import ProductDevWebFirst from "../../images/product-dev-web-first.png";
-import ExpertiseImageSecond from "../../images/expertise-second.png";
+import imageFirst from "../../images/community-driven-growth-first@3x.jpg";
+import imageSecond from "../../images/community-driven-growth-second@3x.jpg";
 
 export default {
   firstSection: {
@@ -10,8 +9,8 @@ export default {
       titleSecond: "",
     },
     subtitle: "Passionate members & sticky products driving exponential growth.",
-    imgURL: ProductDevWebFirst,
-    imgURLMobile: ExpertiseImageFirst,
+    imgURL: imageFirst,
+    imgURLMobile: imageFirst,
     infoBlock: {
       infoTitleFirst:
       "Most consumers are 247% more likely to be influenced by brands with a community driven connection.",
@@ -40,7 +39,7 @@ export default {
         // route: ''
       }
     ],
-    imgURL: ExpertiseImageSecond,
+    imgURL: imageSecond,
   },
   thirdSection: {
     title: "WHAT WE DO",

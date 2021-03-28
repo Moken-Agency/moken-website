@@ -54,6 +54,7 @@ export default {
       description: "On Your Way is an peer to peer courier platform that connects commerce brands, senders, couriers, and receivers.  Peer enables users to send a package or deliver a package and makes life’s daily commutes profitable in a way that is economically responsible and CO2 neutral.",
       city: "BURNABY, BC",
       owner: "",
+      isComingSoon: true
     },
     {
       companyName: "IDEAFACTORY",
@@ -62,6 +63,8 @@ export default {
         "Pedal is an on-demand bike rental company that lets anyone rent a bike with few taps on a smartphone. Working on the same business model as a car rental company with a simple twist. Pedal lets a user browse bikes, book a ride and unlock a chosen bike from reliable, local bike rental companies giving users the best available price and pickup location.",
       city: "BURNABY, BC",
       owner: "",
+      isComingSoon: true
+
     },
     {
       companyName: "ACQUIRED",

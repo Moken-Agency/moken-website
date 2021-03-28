@@ -5,55 +5,56 @@ export default {
       subtitle: `Webinars &
 Digital Series`,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Connect with startups and innovators around the globe by hosting insightful conversations covering a diverse range of topics. `
     },
     {
       title: "INTERACTIVE",
       subtitle: `Workshops &
 Bootcamps`,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Intensive programming connecting early stage entrepreneurs to teach foundational aspects of building a scalable business.`
     },
     {
       title: "CONNECTION MAKING",
       subtitle: `Networking
 Events`,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Creating endless possibilities to grow your network and connections focused on the business of building and scaling startups of any stage.`
     },
     {
       title: "EXPLORATION",
       subtitle: `Design &
 Ideation Sprints`,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Interactive workshops and support that will help refine ideas, start, build, and grow businesses and locate the resources needed for success.`
     },
     {
-      title: "TBD",
+      title: "SHOWCASE",
       subtitle: `Pitch
 Events`,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Bring together startups, investors, and founders to present big ideas, share the future, and create crucial connections for growth.`
     },
     {
       title: "SPEAKING",
       subtitle: `Panels & 
 Fireside Chats`,
       description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `An interactive alternative harnessing the power of discussion with multi-way debates and healthy conversations among experts.`
     },
     {
       title: "MARKETING",
       subtitle: `Business 
 Showers`,
       description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      `Ice-breaking celebrations, announcing the launch of a new company and the iduction of an innovator into being an entrepreneur.`
     },
     {
       title: "GROWTH",
       subtitle: `Conferences
 & Seminars `,
-      description: `Corporate event that’s are designed specifically for your target audience, aiming to impart highly relevant information to them`
+      description:
+      `Experiential events designed  for target audiences, aimed to impart highly relevant information through interactive experiences.`
     },
   ],
 };

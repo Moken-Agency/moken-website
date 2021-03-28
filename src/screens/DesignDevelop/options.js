@@ -1,5 +1,5 @@
-import designDevelopFirst from "../../images/design-develop-first.jpg";
-import designDevelopSecond from "../../images/design-develop-second.jpg";
+import designDevelopFirst from "../../images/design-develop-first@3x.jpg";
+import designDevelopSecond from "../../images/design-develop-second@3x.jpg";
 
 export default {
   firstSection: {
