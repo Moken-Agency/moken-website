@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="530fc459-065b-4cf6-bced-a99743213424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/moken-website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home/index.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="530fc459-065b-4cf6-bced-a99743213424" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +41,8 @@
       <workItem from="1617165287921" duration="789000" />
       <workItem from="1617166163247" duration="29000" />
       <workItem from="1617166263803" duration="63000" />
-      <workItem from="1617202057443" duration="2114000" />
+      <workItem from="1617202057443" duration="2854000" />
+      <workItem from="1617205112310" duration="788000" />
     </task>
     <servers />
   </component>
