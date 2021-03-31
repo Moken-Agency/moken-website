@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="126" viewBox="0 0 151 126">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-1088 -5301) translate(1088 5303)">
+                <text fill="#000" fill-rule="nonzero" font-family="Run-Medium, Run" font-size="20.486" font-weight="400" transform="translate(0 103.89)">
+                    <tspan x="0" y="15">pharmaceuticals</tspan>
+                </text>
+                <text fill="#000" fill-rule="nonzero" font-family="Run-Medium, Run" font-size="81.675" font-weight="400" transform="translate(20.255 37.244)">
+                    <tspan x="0" y="61">blu</tspan>
+                </text>
+                <circle cx="118.429" cy="12.578" r="12.382" stroke="#073435" stroke-width="3.659"/>
+                <circle cx="118.265" cy="37.571" r="3.867" stroke="#2922A4" stroke-width="5.335"/>
+                <circle cx="139.174" cy="32.997" r="8.135" stroke="#E52714" stroke-width="5.946"/>
+            </g>
+        </g>
+    </g>
+</svg>

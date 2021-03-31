@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="305" height="77" viewBox="0 0 305 77">
+    <defs>
+        <path id="ctie7bh56a" d="M0 0H76.243V76.243H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g fill-rule="nonzero">
+                    <path fill="#A5DDDA" d="M0 0H76.243V76.243H0z" transform="translate(0 -156) translate(0 156) matrix(0 1 1 0 228 0)"/>
+                    <path fill="#FC665C" d="M76.243 0v36.243c0 22.091-17.909 40-40 40H0C0 34.135 34.135 0 76.243 0z" transform="translate(0 -156) translate(0 156) matrix(0 1 1 0 228 0) matrix(1 0 0 -1 0 76.243)"/>
+                </g>
+                <g fill-rule="nonzero">
+                    <path fill="#FC665C" d="M0 0H76.243V76.243H0z" transform="translate(0 -156) translate(0 156) rotate(-90 38.5 38.5)"/>
+                    <path fill="#1A01BA" d="M6.48 0h63.396v38.016c0 17.506-14.192 31.698-31.698 31.698S6.481 55.522 6.481 38.016V0z" transform="translate(0 -156) translate(0 156) rotate(-90 38.5 38.5)"/>
+                </g>
+                <g fill="#F5E304" fill-rule="nonzero">
+                    <path d="M0 0H76.243V76.243H0z" transform="translate(0 -156) translate(0 156) rotate(-90 77 0)"/>
+                </g>
+                <g transform="translate(0 -156) translate(0 156) rotate(-90 115 -38)">
+                    <mask id="cf3l1bfpfb" fill="#fff">
+                        <use xlink:href="#ctie7bh56a"/>
+                    </mask>
+                    <use fill="#FC665C" fill-rule="nonzero" xlink:href="#ctie7bh56a"/>
+                    <circle cx="76.137" cy="76.348" r="19.482" fill="#1A01BA" fill-rule="nonzero" mask="url(#cf3l1bfpfb)"/>
+                    <circle cx="-.105" cy="-.105" r="19.482" fill="#1A01BA" fill-rule="nonzero" mask="url(#cf3l1bfpfb)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

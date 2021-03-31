@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1683" height="855" viewBox="0 0 1683 855">
+    <defs>
+        <circle id="pwbiz4pagc" cx="597.824" cy="597.281" r="597"/>
+        <path id="pg7zwga28a" d="M0.824 0.281H1194.824V1684.281H0.824z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="matrix(0 1 1 0 0 -340)">
+                <mask id="xkceagx2pb" fill="#fff">
+                    <use xlink:href="#pg7zwga28a"/>
+                </mask>
+                <use fill="#FFCB00" xlink:href="#pg7zwga28a"/>
+                <circle cx="599.324" cy="1260.781" r="429.5" fill="#FF2A5B" fill-rule="nonzero" mask="url(#xkceagx2pb)"/>
+                <mask id="i6amrqq1yd" fill="#fff">
+                    <use xlink:href="#pwbiz4pagc"/>
+                </mask>
+                <use fill="#00C39F" fill-rule="nonzero" xlink:href="#pwbiz4pagc"/>
+                <circle cx="599.324" cy="1260.781" r="429.5" fill="#FF7D3E" fill-rule="nonzero" mask="url(#i6amrqq1yd)"/>
+            </g>
+        </g>
+    </g>
+</svg>
