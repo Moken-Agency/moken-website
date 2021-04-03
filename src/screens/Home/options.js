@@ -45,7 +45,7 @@ export default {
                 second: 'events'
             },
             btnOptions: {
-                title: 'ENGAGE EVENTS',
+                title: 'FIND EVENTS',
                 click: () => {},
                 route: '/events'
 
