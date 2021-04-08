@@ -13,7 +13,7 @@ export default [
         title: "Role Overview",
     },
     {
-        subtitle: "Our team at Moken Agency is in search of a ProductManager with a strong product and program management background to support our creative,product, engineering, and startup specialist teams"
+        subtitle: `Our team at Moken Agency is in search of a Product Manager with a strong product management background to support our, product, creative, sales and engineering teams.`
     },
     {
         description: [
