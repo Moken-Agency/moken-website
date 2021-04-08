@@ -11,6 +11,7 @@ import corporatePartnershipAndSponsorshipManager from "./corporatePartnershipAnd
 import startupAdvisor from "./startupAdvisor";
 import managingDirectorOfEvents from "./managingDirectorOfEvents";
 import managingDirectorOfPrograms from "./managingDirectorOfPrograms";
+import productManager from "./productManager";
 
 export default {
   colorBlockOptions: {
@@ -30,6 +31,7 @@ export default {
   "graphic-designer": graphicDesigner,
   "startup-advisor": startupAdvisor,
   "creative-copywriter": creativeCopywriter,
+  "product-manager": productManager,
   "creative-growth-specialist": creativeGrowthSpecialist,
   "managing-director-of-events": managingDirectorOfEvents,
   "managing-director-of-programs": managingDirectorOfPrograms,

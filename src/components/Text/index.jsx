@@ -20,7 +20,8 @@ const Text = ({
   animationType = "",
                   dataHover,
   withCountAnimation = false,
-    countAnimationProps = {}
+    countAnimationProps = {},
+    ...rest
 }) => {
   const { countUp } = useCountUp({ end: children, duration: 1.4, ...countAnimationProps, });
 

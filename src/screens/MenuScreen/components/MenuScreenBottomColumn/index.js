@@ -25,7 +25,8 @@ const MenuScreenBottomColumn = ({ title = "", routs = [], isLast, containerStyle
   const { isMobile } = useWindowDimensions();
 
     return (
-    <div className={'menu-screen-bottom-column-container'} style={{marginRight: isLast ? 0 : null, ...containerStyles}}>
+    <div className={'menu-screen-bottom-column-container'}
+         style={{marginRight: isLast ? 0 : null, ...containerStyles}}>
       <Text
         size={20}
         mobSize={16}
@@ -42,7 +43,7 @@ const MenuScreenBottomColumn = ({ title = "", routs = [], isLast, containerStyle
       {/*{a()}*/}
       {routs.map(({ title, route, pressableComponent, isComingSoon }, index) => {
         return (
-              <RouteComponent title={title} route={route} pressableComponent={pressableComponent} isComingSoon={isComingSoon}/>
+              <RouteComponent key={'RouteComponent' + title + index} title={title} route={route} pressableComponent={pressableComponent} isComingSoon={isComingSoon}/>
         );
       })}
     </div>

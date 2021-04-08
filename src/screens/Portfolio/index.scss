@@ -22,8 +22,10 @@
       }
       @media screen and (max-width: 600px) {
         width: auto;
-        margin-bottom: 15vw;
-        line-height: 50px;
+        margin-bottom: 90px;
+        span {
+          line-height: 50px;
+        }
       }
     }
     .portfolio-startups-container {

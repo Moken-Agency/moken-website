@@ -426,7 +426,7 @@ function App() {
         <HashRouter>
         {/*<Router>*/}
           <ScrollToTop />
-          <div style={{ minHeight: "100vh" }}>
+          <div style={{ minHeight: "100vh"}}>
             <Switch>
               {routsWithoutHeaderFooter.map((route, index) => {
                 return (
@@ -460,7 +460,9 @@ function App() {
                                 <title>{routsTitles[props.location.pathname]}</title>
                               </Helmet>
                               <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-                              <route.component {...props} />
+                              {/*<div style={{maxWidth: 1685, margin: '0 auto'}}>*/}
+                                <route.component {...props} />
+                              {/*</div>*/}
                               <Footer isOpen={isOpen} setIsOpen={setIsOpen} />
                             </>
                           );

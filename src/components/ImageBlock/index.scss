@@ -10,6 +10,7 @@
     img {
     //background-color: #a7a7a7;
     width: 86vw;
+      object-fit: contain;
       @media screen and (max-width: 600px) {
         width: calc(100vw - 43px);
       }

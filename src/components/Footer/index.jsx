@@ -219,7 +219,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
         <div className={"left-footer-bar"}>
           <Text type={"kRegular"}
               // size={".8vw"}
-                size={12}
+                size={10}
                 mobSize={10} color={"white"}>
             Copyright © Moken Startups Inc. {year}
           </Text>
@@ -229,11 +229,11 @@ const Footer = ({ isOpen, setIsOpen }) => {
               type={"kRegular"}
               // type={"semiBold"}
               // size={'.75vw'}
-              size={12}
+              size={10}
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: 4 }}
-              containerStyles={containerStyles}
+              containerStyles={{margin: '0 65px'}}
             >
               PRIVACY POLICY
             </Text>
@@ -242,11 +242,10 @@ const Footer = ({ isOpen, setIsOpen }) => {
               type={"kRegular"}
               // type={"semiBold"}
               // size={'.75vw'}
-              size={12}
+              size={10}
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: isMobile ? 3 : 4 }}
-              containerStyles={containerStyles}
             >
               TERMS & CONDITIONS
             </Text>

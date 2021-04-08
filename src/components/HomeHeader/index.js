@@ -10,8 +10,8 @@ const HomeHeader = ({
     }) => {
   return (
       <section className={'home-header-component'}>
-          <Text type={'kBold'} size={20}  className={'home-header-number'}>{numberTitle}</Text>
-          <Text type={'kBold'} size={100} className={'home-header-title'} containerStyles={titleContainerStyles}>{title}</Text>
+          <Text type={'kBold'} size={20} mobSize={16} className={'home-header-number'}>{numberTitle}</Text>
+          <Text type={'kBold'} size={100} mobSize={52} className={'home-header-title'} containerStyles={titleContainerStyles}>{title}</Text>
       </section>
 
   );

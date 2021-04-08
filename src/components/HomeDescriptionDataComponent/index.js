@@ -28,6 +28,7 @@ const HomeDescriptionDataComponent = ({
       <div className={`home-description-data-container ${containerClass}`}>
         <Text className={`home-description-data-title ${titleClass}`}
               type={'kBold'}
+              mobSize={30}
               size={45}>{descriptionData.title}</Text>
         <Text className={`home-description-data-description ${descriptionClass}`}
               type={'kLight'}

@@ -18,6 +18,9 @@
   flex-direction: column;
   border: 0;
   background-color: transparent;
+  @media screen and(max-width: 600px) {
+    padding: 23px;
+  }
 
   .disabled {
     opacity: 0.5 !important;
@@ -33,9 +36,9 @@
 
     //height: 40px;
     @media screen and (max-width: 600px) {
-      font-size: .95vw;
-      padding: 4vw 6vw;
-      letter-spacing: 3px;
+      //font-size: .95vw;
+      //padding: 4vw 6vw;
+      //letter-spacing: 3px;
     }
   }
 

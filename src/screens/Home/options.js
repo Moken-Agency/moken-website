@@ -45,10 +45,9 @@ export default {
                 second: 'events'
             },
             btnOptions: {
-                title: 'ENGAGE EVENTS',
+                title: 'FIND EVENTS',
                 click: () => {},
                 route: '/events'
-
             }
         },
         {
@@ -67,7 +66,7 @@ export default {
     ],
     startupsData: [
         {
-            title: '4',
+            title: '5',
             subtitle: 'Unique program streams'
         },
         {
@@ -90,8 +89,8 @@ export default {
             route: '/about-agency'
         },
         {
-            title: 'Coming soon.',
-            // title: 'Learn together.',
+            // title: 'Coming soon.',
+            title: 'Learn together.',
             subtitle: 'For Students, Founders & Startups',
             route: '/about-programs',
             isComingSoon: true

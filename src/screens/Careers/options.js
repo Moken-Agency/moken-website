@@ -4,6 +4,11 @@ export default {
   opportunities: [
     {
       title: "MOKEN MEDIA",
+      subtitle: "Product Manager",
+      route: "/job-offer/product-manager",
+    },
+    {
+      title: "MOKEN MEDIA",
       subtitle: "Graphic Designer & Illustrator",
       route: "/job-offer/graphic-designer",
     },

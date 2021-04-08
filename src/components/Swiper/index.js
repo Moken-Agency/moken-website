@@ -148,9 +148,9 @@ const Swiper = ({ swiperData = [], Component, containerClassName = '',
                       )
                   })}
 
-              <SwiperSlide wrapperTag={'div'}>
-                  <div style={{width: 100}} />
-              </SwiperSlide>
+              {!isMobile ? <SwiperSlide wrapperTag={'div'}>
+                  <div style={{width: 100}}/>
+              </SwiperSlide> : null}
 
               {!withoutArrows ? <>
                   <div ref={prevRef} className="cursor-pointer button-left">

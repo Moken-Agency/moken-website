@@ -12,7 +12,10 @@
   cursor: pointer;
   transition: all .3s cubic-bezier(.215,.61,.355,1);
   box-shadow: 0 50px 60px -30px rgba(0, 0, 0, 0.06);
-  &:hover {
+  @media only screen and (max-width: 600px) {
+    width: auto;
+  }
+    &:hover {
     box-shadow: 0 30px 80px -10px rgba(0, 0, 0, .1);
     -webkit-transform: translate(0,-7px);
     -ms-transform: translate(0,-7px);
@@ -20,6 +23,18 @@
   }
   .home-impact-item-title {
     margin-bottom: 16px;
+    span {
+      @media only screen and (max-width: 600px) {
+        text-align: center;
+      }
+    }
+  }
+  .home-impact-item-subtitle {
+    span {
+      @media only screen and (max-width: 600px) {
+        text-align: center;
+      }
+    }
   }
 
 }

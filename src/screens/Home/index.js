@@ -22,6 +22,9 @@ import Typical from 'react-typical';
 import Typed from 'react-typed';
 import HomeImpact from "../../components/HomeImpact";
 import Form from "../../components/Form";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+import Swiper from "../../components/Swiper";
+import Explore from "../../components/Explore";
 
 
 
@@ -30,6 +33,8 @@ const {explores, startupsData, paths, impacts} = options;
 
 const Home = () => {
     let history = useHistory();
+
+    const { isMobile } = useWindowDimensions();
 
     const [cursorIndex, setCursorIndex] = useState(0);
 
@@ -63,17 +68,19 @@ const Home = () => {
                {/*    loop >*/}
                {/*    <input type="text"/>*/}
                {/*</Typed>*/}
-               <Text type={'kSemiBold'} size={20} className={'home-header-first-title-tm'}>TM</Text>
-               <Text type={'kBold'} size={120} className={'home-header-first-title'}>We are moken.</Text>
+               <Text type={'kSemiBold'} size={20} mobSize={12} className={'home-header-first-title-tm'}>TM</Text>
+               <Text type={'kBold'} size={120} mobSize={30} className={'home-header-first-title'}>We are moken.</Text>
                {/*<Typical wrapper="span"*/}
                {/*         className={'typical-test'}   steps={['We are moken.']} />*/}
                <div className={'animated-text-container'}>
                    <div className={'animated-test-after'}>
-                       <Text className={'home-header-first-title'} type={'kBold'} size={120}>We </Text>
+                       <Text className={'home-header-first-title'} type={'kBold'} mobSize={30} size={120}>We </Text>
                        {
                            options.cursors.map((cursor, index) => {
 
-                               return <img src={cursor} style={{opacity: cursorIndex === index ? 1 : 0}}/>
+                               return <img key={'cursor' + cursor + index}
+                                           src={cursor}
+                                           style={{opacity: cursorIndex === index ? 1 : 0}}/>
                            })
                        }
                        {/*<img src={options.cursors[cursorIndex]} />*/}
@@ -90,7 +97,7 @@ const Home = () => {
                        preStringTyped={setCursorIndex}
                        className={`typical-test ${options.cursorsColour[cursorIndex]}`}
                    />
-                   <Text className={'home-header-first-title'} type={'kBold'} size={120} >
+                   <Text className={'home-header-first-title'} type={'kBold'} mobSize={30} size={120} >
                         startups.
                    </Text>
                </div>
@@ -118,9 +125,16 @@ const Home = () => {
                     explores.map((explore, index) => (<HomeExplore {...explore} key={index + 'home-explores'}/>))
                 }
             </div>
+
+
         </section>
 
-       <HomeComponentWithVerticalText
+        <Swiper swiperData={explores}  breakpoints={{'0': {slidesPerView: 1.25}}}
+            containerClassName={'home-explore-list-container-mob'} Component={HomeExplore}/>
+
+
+
+        <HomeComponentWithVerticalText
            numberTitle={'01.'}
            verticalText={{
             first: 'moken',
@@ -133,8 +147,7 @@ const Home = () => {
            titleContainerStyles={{maxWidth: 849}}
            descriptionData={{
                title: 'Where startups build, validate & grow.',
-               description: 'Providing services and solutions to startups and founders to build and develop their ' +
-                   'visions, ideas, and products that scale.',
+               description: 'Providing the vital solutions startups and founders need to build and develop visions, ideas, and products that scale. We aim to bridge the skill, resource, and funding gaps throughout the life cycle of emerging ventures through tailored and integrative expertise complemented by a vibrant ecosystem of game-changing partners.',
                btnOptions: {
                    title: 'LET’S GET STARTED',
                    route: '/about-agency'
@@ -156,9 +169,10 @@ const Home = () => {
              titleClass={'home-ecosystem-title'}
              descriptionClass={'home-ecosystem-description'}
            />
-           <TrackVisibility once>
+
+               <TrackVisibility once>
                {({ isVisible }) => isVisible && (
-                   <div style={{width: 400, height: 400, marginLeft: 85}} >
+                   <div className={'home-circle-container'}>
                        <AnimatedProgressProvider
                            valueStart={0}
                            valueEnd={75}
@@ -178,10 +192,13 @@ const Home = () => {
                                            flexDirection: 'column',
                                            alignItems: 'center',
                                            justifyContent: 'center'}}>
-                                           <Text type={'kMedium'} size={24}>a community of</Text>
-                                           <Text withCountAnimation countAnimationProps={{duration: 1.4}} type={'kBold'} size={100}>2431</Text>
-                                           <Text type={'kMedium'} size={24}>of passionate</Text>
-                                           <Text type={'kMedium'} size={24}>founders & startups</Text>
+                                           <Text type={'kMedium'} size={24} mobSize={16}>a community of</Text>
+                                           <Text withCountAnimation countAnimationProps={{duration: 1.4}}
+                                                 type={'kBold'}
+                                                 mobSize={75}
+                                                 size={100}>2431</Text>
+                                           <Text type={'kMedium'} size={24} mobSize={16}>of passionate</Text>
+                                           <Text type={'kMedium'} size={24} mobSize={16}>founders & startups</Text>
                                        </div>
 
                                    </CircularProgressbarWithChildren>
@@ -192,6 +209,7 @@ const Home = () => {
 
                )}
            </TrackVisibility>
+
 
 
 
@@ -207,10 +225,10 @@ const Home = () => {
             titleContainerStyles={{
                 maxWidth: 713
             }}
-            title={'Scale your startup faster.'}
+            title={'Accelerate your startup'}
             imgURL={homeScale}
             descriptionData={{
-                title: 'Where startups & founders learn & evolve.',
+                title: 'Providing This needs to be 3 lines, the grid of the box need to be this size always.',
                 description: `Unparalleled personalized access to hands-on incubator & accelerator programs dedicated to helping entrepreneurs scale their ventures.`,
                 btnOptions: {
                     title: 'DISCOVER OUR PROGRAMS',
@@ -223,9 +241,9 @@ const Home = () => {
                 return (
                     <div className={'home-startups-list-container'}>
                         {
-                            startupsData.map(({title, subtitle, suffix = ''}) => {
+                            startupsData.map(({title, subtitle, suffix = ''}, index) => {
                                return (
-                                   <div className={'startups-item'}>
+                                   <div className={'startups-item'} key={'startupsData' + title + index}>
                                        <TrackVisibility once>
                                            {({ isVisible }) => isVisible && (
                                                <>
@@ -245,11 +263,10 @@ const Home = () => {
 
         <HomeComponentWithSwiper
             numberTitle={'03.'}
-            title={'Create unmatched connections.'}
+            title={'Create an unmatched network.'}
             descriptionData={{
                 title: 'Where founders network, scale & succeed.',
-                description: `An exclusive, invite-only network built for ambitious humans where we ask questions, 
-                exchange ideas, share resources, and connect with one another.`,
+                description: `An exclusive, invite-only network built for ambitious innovators where together, we ask questions, exchange ideas, share resources, and network with one another.`,
                 btnOptions: {
                     title: 'ACCESS YOUR FUTURE',
                     route: '/access'
@@ -268,11 +285,11 @@ const Home = () => {
                 // second: 'agenadjfksjdgkjsdngjkdscy'
                 second: 'events'
             }}
-            title={'Generate new opportunities.'}
+            title={'Generate new connections.'}
             imgURL={homeGenerate}
             descriptionData={{
-                title: 'Where startups & founders experience & connect.',
-                description: "Developing meaningful brand experiences and unforgettable events that expand beyond traditional tactics and focus on audience engagement and strategy.",
+                title: 'The grid system need to be always like the design with padding always the same and the lines always 3 lines.',
+                description: "Developing immersive experiences driving founders & startups to generate connections, develop opportunities and create meaningful relationships.",
                 btnOptions: {
                     title: 'EXPLORE EVENTS',
                     route: '/events'
@@ -282,24 +299,25 @@ const Home = () => {
         />
 
         <section className={'home-pathway-container'}>
-            <Text type={'kBold'} size={100} className={'home-pathway-title'}>Your pathway to success.</Text>
+            <Text type={'kBold'} size={100} mobSize={30} className={'home-pathway-title'}>Your pathway to success.</Text>
             <div className={'home-pathway-wrapper'}>
                 <img src={path}/>
                 <div className={'home-pathway-graph'} style={{width: '100%'}}>
                     {
                         paths.map((path, index) => {
+                            const marginBottom = isMobile ? 15 : 70;
                             return (
-                                <div style={{display: 'flex',
+                                <div key={path + index} style={{display: 'flex',
                                     alignItems: 'flex-end',
                                     justifyContent: 'center',
-                                    marginBottom: 70 * index,
+                                    marginBottom: marginBottom * index,
                                     borderColor: 'black',
                                     width: '25%',
                                     // height: 611,
                                     height: '38vw',
                                     paddingBottom: 25,
                                     borderRight: `${index === 4 ? 0 : '1px'} solid rgb(221, 221, 221)`}}>
-                                    <Text type={'kRegular'} size={16} textStyles={{letterSpacing: 4}}>{path}</Text>
+                                    <Text type={'kRegular'} size={16} mobSize={8} textStyles={{letterSpacing: 4}}>{path}</Text>
                                 </div>
                             )
                         })
@@ -309,20 +327,13 @@ const Home = () => {
         </section>
 
         <section className={'home-impact-container'}>
-            <Text type={'kBold'} size={100} className={'home-impact-title'}>How can we help you make an impact?</Text>
+            <Text type={'kBold'} size={100} mobSize={52} className={'home-impact-title'}>How can we help you make an impact?</Text>
+
             <div className={'home-impact-list'}>
                 {
                     impacts.map((impact, index) => {
                         return (
-                            <>
-                            {/*<div className={'home-impact-item'} onClick={() => history.push(route)}>*/}
-                            {/*    <Text type={'kBold'} size={35} className={'home-impact-title'} textStyles={{lineHeight: '45px'}}>{title}</Text>*/}
-                            {/*    <Text type={'kSemiBold'} size={16} color={'#ff2a68'}>{subtitle}</Text>*/}
-                            {/*</div>*/}
-                                <HomeImpact {...impact} key={index + impact.title}/>
-
-                            </>
-
+                            <HomeImpact {...impact} key={index + impact.title}/>
                         )
                     })
                 }
@@ -330,8 +341,8 @@ const Home = () => {
         </section>
 
         <section className={'home-book-container'}>
-            <Text type={'kBold'} size={45} className={'home-book-title'}>Book a free call with us now and we’ll help you map out your strategy.</Text>
-            <Text type={'kLight'} size={20} className={'home-book-description'}>We would love to connect with you, learn more about your startup, identify struggles and opportunities together, and give our perspective on what you should be focusing on in the immediate to drive your business forward.</Text>
+            <Text type={'kBold'} size={45} mobSize={30} className={'home-book-title'}>Book a free call with us now and we’ll help you map out your strategy.</Text>
+            <Text type={'kLight'} size={20} mobSize={16} className={'home-book-description'}>We would love to connect with you, learn more about your startup, identify struggles and opportunities together, and give our perspective on what you should be focusing on in the immediate to drive your business forward.</Text>
             <Button title={'BOOK YOUR CALL'}
                     onClick={() => window.open('https://meetings.hubspot.com/mohamed24', '_blank')}/>
         </section>

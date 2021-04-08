@@ -29,7 +29,7 @@ const RouteComponent = ({ title = "", pressableComponent, route, isComingSoon })
   }
 
     return (
-        <>
+        <div>
             {pressableComponent ? pressableComponent(isOpen, setIsOpen) : null}
           <Text
               size={18}
@@ -42,7 +42,7 @@ const RouteComponent = ({ title = "", pressableComponent, route, isComingSoon })
           >
             {title}
           </Text>
-        </>
+        </div>
   );
 };
 

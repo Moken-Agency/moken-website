@@ -91,6 +91,8 @@
     }
     @media screen and (max-width: 600px) {
       flex-direction: column;
+      grid-template-columns: 1fr;
+      margin-bottom: 105px;
     }
     .labs-benefits-container-info-block-work {
       max-width: 326px;
@@ -98,8 +100,9 @@
         width: auto;
       }
       @media screen and (max-width: 600px) {
-        margin-bottom: 60px;
+        //margin-bottom: 60px;
         width: auto;
+        max-width: initial;
       }
       .first-item-img {
         width: 47px;
