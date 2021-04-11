@@ -12,15 +12,18 @@ const Logo = ({className = ''}) => {
     const {dynamicColour} = useDynamicColour();
 
     return (
-        <div className={`logo-container ${className}`}>
-            <img
-                src={LogoSVG}
-                className={"logo"}
-                onClick={() => history.push("/")}
-            />
-            <div className={'logo-circle'}
-                 style={{backgroundColor: dynamicColour}}
-            />
+        <div className={`${className}`}>
+            <div className={'logo-container'}>
+                <img
+                    src={LogoSVG}
+                    className={"logo"}
+                    onClick={() => history.push("/")}
+                />
+                <div className={'logo-circle'}
+                     style={{backgroundColor: dynamicColour}}
+                />
+            </div>
+
         </div>
     )
 }

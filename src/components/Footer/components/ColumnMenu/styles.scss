@@ -1,5 +1,9 @@
 .column-menu-container {
-  padding-right: 3.25vw;
+  //padding-right: 3.25vw;
+  .column-menu-title {
+    margin-bottom: 37px;
+    margin-right: 100px;
+  }
 }
 .is-coming-soon-footer-item {
   &:hover {
@@ -29,18 +33,21 @@
     &:last-child {
       border-bottom: 0;
     }
-    div {
-      &:nth-child(1) {
-        margin-bottom: 15px !important;
-        span {
-          font-size: 20px !important;
-
-        }
-      }
-      margin-bottom: 10px!important;
-      span {
-        font-size: 15px !important;
-      }
+    .column-menu-title {
+      margin-bottom: 25px;
     }
+    //div {
+    //  &:nth-child(1) {
+    //    margin-bottom: 30px !important;
+    //    span {
+    //      font-size: 20px !important;
+    //
+    //    }
+    //  }
+    //  //margin-bottom: 10px;
+    //  span {
+    //    font-size: 15px !important;
+    //  }
+    //}
   }
 }

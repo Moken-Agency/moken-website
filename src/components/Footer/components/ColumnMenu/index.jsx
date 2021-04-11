@@ -41,7 +41,8 @@ const ColumnTextComponent = ({ title, index, route = '', link, onClick, isComing
       textStyles={{ cursor: 'pointer', marginBottom: 12, color }}
       type={"kLight"}
       // type={"light"}
-      size={20}
+      size={18}
+      mobSize={16}
       className={`${isComingSoon ? 'is-coming-soon-footer-item' : ''}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -60,9 +61,10 @@ const ColumnMenu = ({ routes = [], title }) => {
         type={"kMedium"}
         // type={"semiBold"}
         // size={'.9vw'}
-        size={16}
+          className={'column-menu-title'}
+        size={14}
+        mobSize={12}
         textStyles={{ ...titleStyles, letterSpacing: 4, fontWeight: 300 }}
-        containerStyles={{ marginBottom: 37, marginRight: 100 }}
       >
         {title.toUpperCase()}
       </Text>

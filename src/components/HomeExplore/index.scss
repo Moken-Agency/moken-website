@@ -13,11 +13,18 @@
   transform: translate(-50%, -50%) perspective(550px) rotateY(20deg) rotateX(10deg);
   transform-style: preserve-3d;
   transition: all 0.3s ease 0s;
+  @media only screen and (max-width: 600px) {
+    box-shadow: 0px 0px 70px -40px rgba(0, 0, 0, .35%);;
+  }
   &:hover {
     //box-shadow: 0 29px 40px -20px rgba(26, 26, 26,.12);
   }
   .home-explore-item-title {
       margin-bottom: 39px;
+      width: 100%;
+      span {
+        text-align: left;
+      }
   }
   .home-explore-item-description {
     margin-bottom: 25px;

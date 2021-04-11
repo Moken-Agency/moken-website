@@ -8,4 +8,9 @@
   height: 10px;
   border-radius: 10px;
   margin-left: 4px;
+  @media only screen and (max-width: 600px) {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+  }
 }

@@ -24,7 +24,7 @@ const HomeImpact = ({title = '', subtitle = '', route = '/', isComingSoon = fals
            style={{cursor: isComingSoon ? 'not-allowed' : 'pointer'}}
            onClick={handleOnClick}>
           <Text type={'kBold'} size={35} className={'home-impact-item-title'} textStyles={{lineHeight: '45px'}}>{renderTitle}</Text>
-          <Text type={'kSemiBold'} size={16} color={'#ff2a68'}>{subtitle}</Text>
+          <Text type={'kSemiBold'} className={'home-impact-item-subtitle'} size={16} color={'#ff2a68'}>{subtitle}</Text>
       </div>
 
   );

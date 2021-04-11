@@ -8,7 +8,7 @@ import {debounce} from "../../constans/helpers";
 
 
 const HomeExplore = ({
-    title = '',
+     title = '',
     description = '',
     isComingSoon = false,
     mokenTitle = {
@@ -19,7 +19,7 @@ const HomeExplore = ({
       title: '',
       click: () => {},
         route: '/'
-    }
+    },
 }) => {
     const history = useHistory();
 

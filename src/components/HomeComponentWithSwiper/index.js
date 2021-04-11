@@ -97,6 +97,7 @@ const HomeComponentWithSwiper = ({
                 {swiperData.map(({title = '', subtitle = '', backgroundImage = ''}, index) => {
                     return (
                         <div className={'carousel-item'}
+                             key={title + numberTitle + index}
                              style={{backgroundImage: `url(${backgroundImage})`}}
                         >
                             {/*<img src={backgroundImage} />*/}

@@ -130,6 +130,7 @@
         @media only screen and (max-width: 600px) {
           height: 170px;
           margin-right: 27px;
+          width: 1px;
         }
       }
       .about-moken-second-kendra-info-block {
@@ -140,7 +141,7 @@
           span {
             line-height: 30px;
             @media screen and(max-width: 600px) {
-              line-height: 26px;
+              line-height: 18px;
             }
           }
           @media only screen and (max-width: 600px) {
@@ -159,16 +160,17 @@
     margin-bottom: 11.1vw;
     display: flex;
     justify-content: center;
-
+    @media only screen and (max-width: 600px) {
+      //display: flex;
+      //flex-direction: column-reverse;
+      margin-bottom: 120px;
+    }
     video {
       //position: absolute;
       //width: 100vw;
       height: 80vh;
     }
-    @media only screen and (max-width: 600px) {
-      //display: flex;
-      //flex-direction: column-reverse;
-    }
+
       .about-moken-video-info-block {
         //padding: 66px 80px 66px 117px;
         padding: 67px 224px 52px 112px;

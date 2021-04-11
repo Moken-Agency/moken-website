@@ -28,8 +28,7 @@ const history = useHistory();
         title={"ABOUT MOKEN"}
         subtitle={"Backing ideas that create change."}
         description={
-          `Built to support founders, Moken is a company specialized in all things startup. Together, we have the 
-          mission of creating a global community-driven startup ecosystem designed to inspire, educate, and connect.`
+          `Built to support founders, Moken is a hub specialized in all things startup. Together, we have the mission of creating a global success-driven ecosystem designed to inspire, educate, and connect startups.`
         }
         marginBottom={isMobile ? 160 : 122}
       />
@@ -39,13 +38,13 @@ const history = useHistory();
       <TitleTwoDescriptions
         mainTitle={"WE ARE MOKEN"}
         title={
-          "Moken creates diversified opportunities for startups & founders driving economic & social impact, globally. "
+          "Moken is a hub for founders and startups guiding them through the journey of building a successful venture from ideation to growth."
         }
         firstDescription={
-          "Together, we have the mission of creating a global startup community designed to inspire, educate, and connect with founders and startups in the pursuit of building impactful new ventures. We work alongside teams, investors, entrepreneurs, founders, and startup program providers to support in paving the way for success while connecting the vital pillars throughout a company’s lifecycle."
+            `We work alongside teams, investors, entrepreneurs, founders, and startup program providers to support paving the way for success while connecting the vital pillars throughout a company’s lifecycle.`
         }
         secondDescription={
-          "We have a shared ambition to achieve extraordinary results, outperform the competition, and redefine industries through disruption. We partner with innovators through our tailored and integrative expertise, complemented by a vibrant ecosystem of game-changing partners to deliver accelerated, superior, and impactfully driven outcomes."
+            `We’ve combined startup expertise, tools, business advisory, executable strategies, and product development solutions ranging from founder-driven programming, community-focused events, talented teams of expert startup builders, and an inclusive digital network filled with opportunities for growth, creating a suite of extraordinary resources for exceptional founders.`
         }
       />
 
@@ -85,7 +84,7 @@ const history = useHistory();
                             animationType={"fade-up"}
                             // size={'1.5vw'}
                             size={24}
-                            mobSize={18}
+                            mobSize={14}
                         >
                             “We access founders potential through collaborating to create opportunties within diversified industries by creating disruptive ideas and technology.”
                         </Text>

@@ -150,12 +150,15 @@
 
   }
 
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 0;
+  }
 
-.underline-text-container {
-  margin: 0;
-    @media only screen and (max-width: 600px) {
-      margin-bottom: 20px;
-    }
+  .underline-text-container {
+    margin: 0;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 20px;
+  }
   .underline-text {
     transition: .5s;
   }

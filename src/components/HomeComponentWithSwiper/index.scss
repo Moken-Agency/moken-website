@@ -2,6 +2,9 @@
   padding-left: 303px;
   //position: relative;
   margin-bottom: 302px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 15vh;
+  }
   .carousel-item {
     width: 335px;
     height: 530px;
@@ -12,6 +15,9 @@
     outline: none;
     //background-repeat: no-repeat;
     background-size: cover;
+    @media only screen and (max-width: 600px) {
+      height: 370px;
+    }
   }
   @media only screen and (max-width: 1301px) {
     padding: 0 43px
@@ -31,6 +37,10 @@
     }
     .home-swiper-left-container {
       margin-right: 131px;
+      @media only screen and (max-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
     }
     .home-swiper-buttons-container {
       display: flex;
@@ -80,12 +90,21 @@
 
     .home-with-swiper-description-description {
       width: 514px;
+      @media screen and(max-width: 600px) {
+        width: auto;
+      }
     }
     .home-with-swiper-description-title {
       width: 425px;
+      @media screen and(max-width: 600px) {
+        width: auto;
+      }
     }
     .home-swiper-description-data-component {
       margin-right: 50px;
+      @media screen and(max-width: 600px) {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -71,7 +71,7 @@ const MenuScreen = (props) => {
                     (props, index) => {
                       return (
                           <MenuScreenBottomColumn
-                              key={"MenuScreenTopColumn" + index}
+                              key={"MenuScreenBottomColumn" + index}
                               isLast={index === menuScreenBottomOptions.columns.length - 1}
                               {...props}
                           />

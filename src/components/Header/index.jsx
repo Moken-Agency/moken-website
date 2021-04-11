@@ -66,7 +66,7 @@ const Header = ({ isOpen, setIsOpen }) => {
           {/*    />*/}
           {/*    <div style={{width: '.6vw', height: '.6vw', borderRadius: '.6vw', marginLeft: '.2vw', backgroundColor: 'red'}}/>*/}
           {/*</div>*/}
-          <Logo />
+          <Logo className={'header-logo-container'} />
         <div className={'menu-container-wrapper'}>
           <div className={"menu-container"}>
             {mainMenu.map((data , index) => {

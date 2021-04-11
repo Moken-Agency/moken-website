@@ -4,7 +4,7 @@ import Button from "../Button";
 import "./index.scss";
 import { useHistory } from "react-router-dom";
 
-const Explore = ({ title, subtitle, description, isComingSoon, componentIndex, btnTitle = 'EXPLORE', route = "", setIsActiveIndex = () => {},isActiveIndex = false}) => {
+const Explore = ({ title, subtitle, description, isComingSoon,isBtnHide, componentIndex, btnTitle = 'EXPLORE', route = "", setIsActiveIndex = () => {},isActiveIndex = false}) => {
   const history = useHistory();
 
   return (
@@ -38,7 +38,7 @@ const Explore = ({ title, subtitle, description, isComingSoon, componentIndex, b
                    {description}
                </Text>
            </div>
-              <Button
+              {!isBtnHide ? <Button
                   title={btnTitle}
                   onClick={() => history.push(route)}
                   size={10}
@@ -50,7 +50,7 @@ const Explore = ({ title, subtitle, description, isComingSoon, componentIndex, b
                   className={"explore-btn"}
                   // animationHoverType={'lowerMenu'}
                   containerStyles={{maxWidth: 75}}
-              />
+              /> : null}
           </div>
       </div>
 

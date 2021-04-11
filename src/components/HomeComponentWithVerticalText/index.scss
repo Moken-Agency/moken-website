@@ -1,11 +1,15 @@
 .home-vertical-text-container {
+
   padding-left: 303px;
   display: flex;
   //align-items: center;
   flex-direction: column;
   margin-bottom: 320px;
   @media only screen and (max-width: 1301px) {
-    padding: 0 43px
+    padding: 0 43px;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 15vh;
   }
   .home-vertical-text-container-wrapper {
 
@@ -38,6 +42,10 @@
         //transform: rotate(90deg);
         //position: absolute;
         //left: -40px;
+        @media only screen and (max-width: 600px) {
+          position: absolute;
+          left: -28px;
+        }
         .text-container {
           width: 41px;
 
@@ -65,13 +73,19 @@
             margin-right: 0;
             margin-bottom: 35px;
           }
+          @media only screen and (max-width: 600px) {
+            max-width: 100%;
+            min-height: initial;
+            min-width: initial;
+          }
+
         }
         .home-vertical-text-description-container {
           max-width: 586px;
           .home-vertical-text-description-title {
             margin-bottom: 50px;
             span {
-              line-height: 45px;
+              line-height: 30px;
             }
           }
           .home-vertical-text-description {

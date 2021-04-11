@@ -12,8 +12,8 @@
       padding: 0 0 20px 4.4vw;
     }
     .send-email-updates-container {
-      padding-top: .5vw;
-      width: 20vw;
+      padding-top: 5px;
+      width: 280px;
       .logo {
         cursor: pointer;
         height: 52px;
@@ -25,16 +25,17 @@
     flex-direction: row;
     position: relative;
     .left-footer-bar {
-      //padding: 60px 160px;
-      padding: 3.8vw 11.4vw;
+      padding: 50px 160px;
+      //padding: 3.8vw 11.4vw;
       width: 100%;
       background-color: black;
       display: flex;
+      justify-content: space-between;
       flex-direction: row;
       .privacy-container {
         display: flex;
         flex-direction: row;
-        margin-left: 10vw;
+        //margin-left: 10vw;
       }
     }
     .socials-container {

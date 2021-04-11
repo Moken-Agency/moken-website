@@ -105,14 +105,16 @@ const HeaderMobile = ({ isOpen = false, setIsOpen, containerClassName = '' }) =>
                 {subMenu.subRouts.map(
                   ({ title, dividerColor, route }, index) => {
                     return (
-                      <Text
-                        size={12}
-                        textStyles={{ letterSpacing: 3.75 }}
-                        containerStyles={{ marginBottom: 20 }}
-                        onClick={() => history.push(route)}
-                      >
-                        {title.toUpperCase()}
-                      </Text>
+                        <div key={title + index}>
+                          <Text
+                            size={12}
+                            textStyles={{ letterSpacing: 3.75 }}
+                            containerStyles={{ marginBottom: 20 }}
+                            onClick={() => history.push(route)}
+                          >
+                            {title.toUpperCase()}
+                          </Text>
+                        </div>
                     );
                   }
                 )}
@@ -126,16 +128,18 @@ const HeaderMobile = ({ isOpen = false, setIsOpen, containerClassName = '' }) =>
           <div>
             {[...leftMenu, ...rightMenu].map(({ title, route }, index) => {
               return (
-                <Text
-                  containerStyles={{ marginBottom: "3vw" }}
-                  size={"4vw"}
-                  onClick={() => {
-                    history.push(route);
-                  }}
-                  textStyles={{ textTransform: "uppercase", letterSpacing: 3 }}
-                >
-                  {title}
-                </Text>
+                  <div key={title + index}>
+                  <Text
+                    containerStyles={{ marginBottom: "3vw" }}
+                    size={"4vw"}
+                    onClick={() => {
+                      history.push(route);
+                    }}
+                    textStyles={{ textTransform: "uppercase", letterSpacing: 3 }}
+                  >
+                    {title}
+                  </Text>
+                  </div>
               );
             })}
           </div>

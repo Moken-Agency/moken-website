@@ -6,6 +6,10 @@
     //flex-direction: column;
     justify-content: center;
   }
+  @media only screen and (max-width: 600px) {
+    //flex-direction: column;
+    flex-direction: column;
+  }
   .home-header-number {
     align-items: flex-start;
     width: 41px;
@@ -14,6 +18,9 @@
     max-width: 532px;
     span {
       line-height: 100px;
+      @media screen and(max-width: 600px) {
+        line-height: 52px;
+      }
     }
   }
 }
