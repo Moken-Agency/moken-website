@@ -30,18 +30,18 @@ export default [
                 },
             },
             {
-                title: 'This role requires building collaborative relation ships across our organization and working closely with engineering and business teams, and an ability to juggle multiple priorities in a fast-paced, dynamic environment. If you’re up to the challenge, we’d love to talk to you.',
+                title: 'This role requires building collaborative relationships across our organization and working closely with engineering and business teams, and an ability to juggle multiple priorities in a fast-paced, dynamic environment. If you’re up to the challenge, we’d love to talk to you.',
                 containerStyles: {
                     marginBottom: 25,
                 },
             },
             {
-                title: 'Our team at Moken is dynamic and rapidly evolving.We work with a variety of entrepreneurs and startups building their visions and digital products from scratch. We love what we do and we are passionate about helping founders and startups build amazing products.'
+                title: 'Our team at Moken is dynamic and rapidly evolving. We work with a variety of entrepreneurs and startups building their visions and digital products from scratch. We love what we do and we are passionate about helping founders and startups build amazing products.'
             }
         ],
     },
     {
-        title: "In this role",
+        title: "IN THIS ROLE YOU WILL",
     },
     {
         description: [
@@ -61,7 +61,7 @@ export default [
 
             },
             {
-                title: `Work closely with business teams, leaders, startup specialists, and dedicated user experience design and engineering teams in an agile development environment to transform visions into products and launch new featur esand experiences;`,
+                title: `Work closely with business teams, leaders, startup specialists, and dedicated user experience design and engineering teams in an agile development environment to transform visions into products and launch new features and experiences;`,
                 withDash: true
 
             },
@@ -253,7 +253,7 @@ criticism, but deal calmly in high-stress situations;`,
         ],
     },
     {
-        title: "As a person you are",
+        title: "As a person",
     },
     {
         description: [
@@ -323,10 +323,16 @@ figuring it out as you go;`,
     {
         description: [
             {
-                title: `In this role, you will gain the opportunity to establish long term relationships with growing companies globally while shaping the future of Moken and startups throughout Canada.`
+                title: `In this role, you will gain the opportunity to establish long term relationships with growing companies globally while shaping the future of Moken and startups throughout Canada.`,
+                withDash: true,
+                containerStyles: {
+                    marginBottom: 25,
+                },
             },
             {
-                title: 'Our team is dedicated to supporting new team members. Our team has a broad mix of experience levels, and we\'re building an environment that celebrates knowledge sharing and mentorship. Our team members truly enjoy mentoring and on-boarding new product managers members through one-on-one mentoring.'
+                title: 'Our team is dedicated to supporting new team members. Our team has a broad mix of experience levels, and we\'re building an environment that celebrates knowledge sharing and mentorship. Our team members truly enjoy mentoring and on-boarding new product managers members through one-on-one mentoring.',
+                withDash: true,
+
             }
         ],
     },
@@ -335,10 +341,11 @@ figuring it out as you go;`,
         titleContainerWithImgTitle: "HOW TO APPLY",
         titleContainerWithImgDescription: [
             {
-                title: `ONLY APPLICATIONS SUBMITTED THROUGH THE FOLLOWING METHOD WILL BE REVIEWED AND CONSIDERED`
+                title: `ONLY APPLICATIONS SUBMITTED THROUGH THE FOLLOWING METHOD WILL BE REVIEWED AND CONSIDERED`,
+
             },
             {
-                title: `To submit an application, please email careers@mokenstartups.com with the subject line “Boo! ” with your resume, an introductory 30-second video, a cover letter, and your portfolio.`
+                title: `To submit an application, please email careers@mokenstartups.com with the subject line “Boo! ” with your resume, an introductory 30-second video, a cover letter, and your portfolio.`,
             }
 
         ],
