@@ -156,7 +156,7 @@ Advisory`,
       subtitle:
       `Get an idea of how much you'll need to fund your project by answering a few questions and our estimating tool will do the rest.`,
       btnTitle: "ESTIMATE",
-      route: '/connect-with-us'
+      route: '/connect-with-us',
     },
   ],
 

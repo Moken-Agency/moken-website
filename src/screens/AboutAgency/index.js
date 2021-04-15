@@ -23,7 +23,8 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {useHistory} from "react-router-dom"; // requires a loader
+import {useHistory} from "react-router-dom";
+import Form from "../../components/Form"; // requires a loader
 const AboutAgency = () => {
   const { isMobile } = useWindowDimensions();
 
@@ -35,7 +36,6 @@ const AboutAgency = () => {
     let history = useHistory();
 
     useEffect(() => {
-      // func();
         const timer = setInterval(func, 1500)
       if(!isSwiperHover) {
         clearInterval(timer)
@@ -95,11 +95,33 @@ const AboutAgency = () => {
     const _mouseMove =(e) => {
       // console.log('_mouseMove', window.innerWidth / 2 > e.clientX);
       window.innerWidth / 2 >  e.clientX ? setIsReverseMove(true) : setIsReverseMove(false);
-
     };
+    const [isFormOpened, setIsFormOpened] = useState(false);
+
+
+    const programs =  [
+        {
+            title: "StartupSmart Packages",
+            subtitle:
+            `We have bundled a selection of custom services to help founders & startups tackle their immediate needs, faster & cheaper.`,
+            btnTitle: 'STARTUP SMART',
+            route: '/start-up-smart'
+        },
+        {
+                title: "Estimate Your Project",
+                subtitle:
+        `Get an idea of how much you'll need to fund your project by answering a few questions and our estimating tool will do the rest.`,
+            btnTitle: "ESTIMATE",
+            route: '/connect-with-us',
+            onClick: () => setIsFormOpened(true)
+        },
+    ];
 
     return (
     <div className={"about-agency-container"}>
+        <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Moken Intake Form\n'}>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdx__r7dU3vAWhl2UMpKvsLQyQWV0LIKV5vxHSvg-rxi3LJuA/viewform?embedded=true" width={'100%'} height="auto"/>
+        </Form>
       <HeaderTitle
         title={"MOKEN AGENCY"}
         marginBottom={323}
@@ -140,7 +162,7 @@ const AboutAgency = () => {
                   backgroundColor={'black'}
                   type={'kThin'}
                   size={50}
-                  onClick={() => history.push('/connect-with-us')}
+                  onClick={() => setIsFormOpened(true)}
                   blockType={'middle'}/>
 
 
@@ -208,113 +230,7 @@ const AboutAgency = () => {
             </div>
         )
       }}/>
-      <div className={"leads-container"} ref={ref} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-        {/*<Carousel containerClassName={'agency-swiper-container'}*/}
-        {/*        onNextEnd={(onNextEnd) => console.log({onNextEnd}) }*/}
-        {/*          onPrevEnd={(onPrevEnd) => console.log({onPrevEnd}) }*/}
-        {/*          ref={carouselRef}*/}
-        {/*          itemsToShow={2.5}*/}
-        {/*          pagination={false}*/}
-        {/*          showArrows={false}*/}
-        {/*        withoutArrows*/}
-        {/*          enableSwipe={false}*/}
-        {/*          breakPoints={[{ width: 1, itemsToShow: 1 },*/}
-        {/*            { width: 0, itemsToShow: 1 },*/}
-        {/*            { width: 870, itemsToShow: 1.5 },*/}
-        {/*            { width: 1200, itemsToShow: 2 },*/}
-        {/*            { width: 1500, itemsToShow: 2.5 }]}*/}
-        {/*          swiperData={options.projects}*/}
 
-        {/*>*/}
-        {/*    {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {*/}
-        {/*        return (*/}
-        {/*            <div className={'agency-product-container'}>*/}
-        {/*                <img src={imgURL}/>*/}
-        {/*                <div>*/}
-        {/*                    <Text size={50}*/}
-        {/*                          mobSize={45}*/}
-        {/*                          type={'kBold'}*/}
-        {/*                          textStyles={{lineHeight: isMobile ? '60px' : '80px'}}*/}
-        {/*                    >{title}</Text>*/}
-        {/*                    <Text size={16}*/}
-        {/*                          mobSize={14}*/}
-        {/*                          textStyles={{letterSpacing: 4}}*/}
-        {/*                          type={'kRegular'}>{subtitle}</Text>*/}
-        {/*                </div>*/}
-        {/*            </div>*/}
-        {/*        )*/}
-        {/*    })}*/}
-        {/*</Carousel>*/}
-
-        {/*<div style={{overflowX: 'scroll', display: 'flex'}} ref={ref2} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>*/}
-        {/*  {options.projects.map(({title = '', subtitle = '', imgURL = ''}, index) => {*/}
-        {/*    return (*/}
-        {/*        <div className={'agency-product-container'}>*/}
-        {/*          <img src={imgURL}/>*/}
-        {/*          <div>*/}
-        {/*            <Text size={50}*/}
-        {/*                  mobSize={45}*/}
-        {/*                  type={'kBold'}*/}
-        {/*                  textStyles={{lineHeight: isMobile ? '60px' : '80px'}}*/}
-        {/*            >{title}</Text>*/}
-        {/*            <Text size={16}*/}
-        {/*                  mobSize={14}*/}
-        {/*                  textStyles={{letterSpacing: 4}}*/}
-        {/*                  type={'kRegular'}>{subtitle}</Text>*/}
-        {/*          </div>*/}
-        {/*        </div>*/}
-        {/*    )*/}
-        {/*  })}*/}
-        {/*</div>*/}
-        {/*<div className={'agency-products-container'}>*/}
-        {/*    {*/}
-        {/*        [1,2,3,4,5].map((_, index) => {*/}
-        {/*            return (*/}
-        {/*                <div className={'agency-product-container'}>*/}
-        {/*                    <img src={''}/>*/}
-        {/*                   <div style={{opacity: index !== 0 ? 0.1 : 1 }}>*/}
-        {/*                       <Text size={75}*/}
-        {/*                             mobSize={55}*/}
-        {/*                             type={'kThin'}>Rent Your Ride</Text>*/}
-        {/*                       <Text size={16}*/}
-        {/*                             mobSize={14}*/}
-        {/*                             textStyles={{letterSpacing: 4}}*/}
-        {/*                             type={'kSemiBold'}>PRODUCT DESIGN & DEVELOPMENT</Text>*/}
-        {/*                   </div>*/}
-        {/*                </div>*/}
-        {/*            )*/}
-        {/*        })*/}
-        {/*    }*/}
-        {/*</div>*/}
-        {/*<div*/}
-        {/*  style={{*/}
-        {/*    display: "flex",*/}
-        {/*    justifyContent: "center",*/}
-        {/*    marginBottom: "13.5vw",*/}
-        {/*  }}*/}
-        {/*>*/}
-        {/*  <SubmitYourResume title={"View all projects"} color={"black"} />*/}
-        {/*</div>*/}
-      </div>
-
-        {/*<Title title={'WHAT OUR CLIENTS SAY'}/>*/}
-
-        {/*<div className={'client-say-wrapper-container'}>*/}
-        {/*    <div className={'client-say-container'}>*/}
-        {/*        <Text size={30}*/}
-        {/*              type={'kThin'}*/}
-        {/*              containerStyles={{width: 662}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore*/}
-        {/*            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut*/}
-        {/*            aliquip ex ea commodo consequat.</Text>*/}
-        {/*        <div className={'client-say-text-container'}>*/}
-        {/*            <div>*/}
-        {/*                <Text size={14} type={'kSemiBold'} containerStyles={{marginBottom: 3}}>— CLIENT</Text>*/}
-        {/*                <Text size={12} type={'kSemiBold'} containerStyles={{marginLeft: 18}}>Company Name</Text>*/}
-        {/*            </div>*/}
-
-        {/*        </div>*/}
-        {/*    </div>*/}
-        {/*</div>*/}
 
 
       <ProgramCommunityListPartner
@@ -324,7 +240,7 @@ const AboutAgency = () => {
         }
         type={'big'}
         subtitleClassName={'about-agency-programs-subtitle'}
-        options={options.programs}
+        options={programs}
         widthItem={"30vw"}
       />
       <EmailForm withForm

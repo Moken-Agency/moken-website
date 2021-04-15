@@ -87,6 +87,7 @@ const Package = ({
           <Button
             title={"SELECT THIS PACKAGE"}
             containerStyles={{ padding: isMobile ? "" : "31px 35px" }}
+            isComingSoon
           />
         </div>
       </div>
