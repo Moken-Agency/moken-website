@@ -4,18 +4,16 @@ export default {
       title: `Innovator
 Feature`,
       subtitle:
-        "Implement idea of a banner on the website during the campaign for nominations etc.",
-      btnTitle: 'SHARE YOUR STORY',
-      route: '/iamafounder'
+        "A community-driven initiative dedicated to sharing authentic founder stories.",
+      btnTitle: "SHARE YOUR STORY",
+      route: "/iamafounder",
     },
     {
       title: `Community
 Events`,
-      subtitle:
-      `Events are one of the most effective ways to help a startup grow. We bridge the gap early on making it easier to host and attend events that directly impact founder’s goals.`,
+      subtitle: `Events are one of the most effective ways to help a startup grow. We bridge the gap early on making it easier to host and attend events that directly impact founder’s goals.`,
       btnTitle: "GET INVOLVED",
-      route: '/upcoming-events'
-
+      route: "/upcoming-events",
     },
   ],
   collaborates: [
@@ -44,30 +42,29 @@ Events`,
     {
       title: "Build & Scale Your Startup",
       link: "",
-      hoverColour: '#FDCDC6',
-      colourClassName: 'light-coral',
-      route: '/about-agency'
+      hoverColour: "#FDCDC6",
+      colourClassName: "light-coral",
+      route: "/about-agency",
     },
     {
       title: "Access Your Full Potential",
       link: "",
-      hoverColour: '#D5D5D5',
-      colourClassName: 'grey',
-      route: '/access'
-
+      hoverColour: "#D5D5D5",
+      colourClassName: "grey",
+      route: "/access",
     },
     {
       title: "Connect & Extend Your Network",
       route: "/events",
-      hoverColour: '#FF9D72',
-      colourClassName: 'coral'
+      hoverColour: "#FF9D72",
+      colourClassName: "coral",
     },
     {
       title: "Learn to Create The Future ",
       // link: "",
       isComingSoon: true,
-      hoverColour: '#EFB95E',
-      colourClassName: 'orange'
+      hoverColour: "#EFB95E",
+      colourClassName: "orange",
     },
   ],
 };
