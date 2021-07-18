@@ -11,7 +11,8 @@ const styles = {
   description: {
     color: "white",
     lineHeight: "29px",
-    fontWeight: 300
+    fontWeight: 300,
+    alignSelf: "baseline"
   },
   subTitle: {
     color: "white",
@@ -55,7 +56,7 @@ const MenuScreenTopColumn = ({
 
         // type={"light"}
         textStyles={styles.description}
-        containerStyles={{ marginBottom: 30 }}
+        containerStyles={{ marginBottom: 30, height: "100%", alignSelf: "baseline" }}
       >
         {description}
       </Text>
