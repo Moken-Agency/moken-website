@@ -87,8 +87,8 @@ const AboutAgency = () => {
 
 
     useEffect(() => {
-        ref.current.addEventListener('mousemove', debounce(_mouseMove, 1000 / 60));
-        return  document.removeEventListener('mousemove', _mouseMove);
+        // ref.current.addEventListener('mousemove', debounce(_mouseMove, 1000 / 60));
+        // return  document.removeEventListener('mousemove', _mouseMove);
     }, []);
 
 
