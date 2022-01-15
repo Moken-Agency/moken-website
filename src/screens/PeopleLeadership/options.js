@@ -1,7 +1,40 @@
 import partners from "../../images/partners";
-import {Kendra, Grace, Jessica, Yevgen, RomanLitvin, Adam, RomanBE, Hussain, Stas, Kostya, Oleksander, Nika, Vlad, Vitaly, Oleg, dogTwo , dogOne, Mohamed, Anastasia, Alex1, Erika, Pavel} from "../../images/people";
+import {
+  Kendra,
+  Grace,
+  Jessica,
+  Yevgen,
+  RomanLitvin,
+  Adam,
+  RomanBE,
+  Hussain,
+  Stas,
+  Kostya,
+  Oleksander,
+  Nika,
+  Vlad,
+  Vitaly,
+  Oleg,
+  dogTwo,
+  dogOne,
+  Mohamed,
+  Anastasia,
+  Alex1,
+  Erika,
+  Pavel,
+} from "../../images/people";
 
-const {acadium, activate, ink, fast, hubspot, noissue, owner, segment, informa} = partners;
+const {
+  acadium,
+  activate,
+  ink,
+  fast,
+  hubspot,
+  noissue,
+  owner,
+  segment,
+  informa,
+} = partners;
 
 export default {
   peopleGroups: [
@@ -11,26 +44,22 @@ export default {
         {
           name: "Kendra Garagan",
           positions: ["MANAGING PARTNER", "MOKEN STARTUPS"],
-          photo: Kendra
+          photo: Kendra,
         },
         {
           name: "Mohamed Ibshara",
-          positions: ["MANAGING PARTNER", "MOKEN AGENCY"],
-          photo: Mohamed
-
-
+          positions: ["PROJECT MANAGER", "MOKEN AGENCY"],
+          photo: Mohamed,
         },
         {
           name: "Now Hiring!",
           positions: ["MANAGING DIRECTOR", "MOKEN EVENTS"],
-          photo: dogOne
-
+          photo: dogOne,
         },
         {
           name: "Now Hiring!",
-          positions: ["MANAGING DIRECTOR","MOKEN PROGRAMS"],
-          photo: dogTwo
-
+          positions: ["MANAGING DIRECTOR", "MOKEN PROGRAMS"],
+          photo: dogTwo,
         },
       ],
     },
@@ -40,26 +69,22 @@ export default {
         {
           name: "Grace",
           positions: ["MARKETING", "MANAGER"],
-          photo: Grace
-
+          photo: Grace,
         },
         {
           name: "Jessica",
           positions: ["CORPORATE PARTNERSHIP", "MANAGER"],
-          photo: Jessica
-
+          photo: Jessica,
         },
         {
           name: "Erika",
           positions: ["ACCESS USER", "EXPERIENCE DESIGNER"],
-          photo: Erika
-
+          photo: Erika,
         },
         {
           name: "Hussain",
           positions: ["GRAPHIC", "DESIGNER"],
-          photo: Hussain
-
+          photo: Hussain,
         },
       ],
     },
@@ -69,26 +94,22 @@ export default {
         {
           name: "Pavel",
           positions: ["LEAD FRONT END", "DEVELOPER"],
-          photo: Pavel
-
+          photo: Pavel,
         },
         {
           name: "Kostya",
           positions: ["SENIOR SYSTEMS", "ARCHITECT"],
-          photo: Kostya
-
+          photo: Kostya,
         },
         {
           name: "Stanislav",
           positions: ["LEAD FRONT END", "DEVELOPER"],
-          photo: Stas
-
+          photo: Stas,
         },
         {
           name: "Vitaly",
           positions: ["LEAD USER EXPERIENCE", "DESIGNER"],
-          photo: Vitaly
-
+          photo: Vitaly,
         },
       ],
     },
@@ -98,26 +119,22 @@ export default {
         {
           name: "Adam",
           positions: ["LEAD USER EXPERIENCE", "DESIGNER"],
-          photo: Adam
-
+          photo: Adam,
         },
         {
           name: "Nika",
           positions: ["USER INTERFACE", "DESIGNER"],
-          photo: Nika
-
+          photo: Nika,
         },
         {
           name: "Oleg",
           positions: ["LEAD FRONT END", "DEVELOPER"],
-          photo: Oleg
-
+          photo: Oleg,
         },
         {
           name: "Vlad",
           positions: ["LEAD BACK END", "DEVELOPER"],
-          photo: Vlad
-
+          photo: Vlad,
         },
       ],
     },
@@ -127,26 +144,22 @@ export default {
         {
           name: "Alexander",
           positions: ["FRONT END", "DEVELOPER"],
-          photo: Alex1
-
+          photo: Alex1,
         },
         {
           name: "Yevgen",
           positions: ["SENIOR BACKEND", "DEVELOPER"],
-          photo: Yevgen
-
+          photo: Yevgen,
         },
         {
           name: "Roman",
           positions: ["SENIOR FRONT END", "DEVELOPER"],
-          photo: RomanLitvin
-
+          photo: RomanLitvin,
         },
         {
           name: "Oleksander",
           positions: ["FRONT END", "DEVELOPER"],
-          photo: Oleksander
-
+          photo: Oleksander,
         },
       ],
     },
@@ -156,26 +169,22 @@ export default {
         {
           name: "Anastasia",
           positions: ["PHOTOGRAPHER"],
-          photo: Anastasia
-
+          photo: Anastasia,
         },
         {
           name: "Roman",
           positions: ["BACK END", "DEVELOPER"],
-          photo: RomanBE
-
+          photo: RomanBE,
         },
         {
           name: "",
           positions: [""],
-          photo: ''
-
+          photo: "",
         },
         {
           name: "",
           positions: [""],
-          photo: ''
-
+          photo: "",
         },
       ],
     },
@@ -185,194 +194,169 @@ export default {
     {
       width: 270,
       height: 86,
-      image: ink
+      image: ink,
     },
     {
-        width: 348,
+      width: 348,
       height: 129,
-      image: owner
+      image: owner,
     },
     {
       width: 183,
       height: 73,
-      image: fast
+      image: fast,
     },
     {
       width: 329,
       height: 71,
-      image: segment
+      image: segment,
     },
     {
       width: 286,
       height: 137,
-      image: hubspot
+      image: hubspot,
     },
     {
       width: 338,
       height: 71,
-      image: acadium
+      image: acadium,
     },
     {
       width: 311,
       height: 72,
-      image: noissue
+      image: noissue,
     },
     {
       width: 299,
       height: 50,
-      image: activate
+      image: activate,
     },
     {
       width: 347,
       height: 107,
-      image: informa
+      image: informa,
     },
-
   ],
   peopleTest: [
     {
       name: "Kendra Garagan",
       positions: ["MANAGING PARTNER", "MOKEN STARTUPS"],
-      photo: Kendra
+      photo: Kendra,
     },
     {
       name: "Mohamed Ibshara",
-      positions: ["MANAGING PARTNER", "MOKEN AGENCY"],
-      photo: Mohamed
-
-
+      positions: ["PROJECT MANAGER", "MOKEN AGENCY"],
+      photo: Mohamed,
     },
     {
       name: "Now Hiring!",
       positions: ["MANAGING DIRECTOR", "MOKEN EVENTS"],
-      photo: dogOne
-
+      photo: dogOne,
     },
     {
       name: "Now Hiring!",
-      positions: ["MANAGING DIRECTOR","MOKEN PROGRAMS"],
-      photo: dogTwo
-
+      positions: ["MANAGING DIRECTOR", "MOKEN PROGRAMS"],
+      photo: dogTwo,
     },
     {
       name: "Grace",
       positions: ["MARKETING", "MANAGER"],
-      photo: Grace
-
+      photo: Grace,
     },
     {
       name: "Jessica",
       positions: ["CORPORATE PARTNERSHIP", "MANAGER"],
-      photo: Jessica
-
+      photo: Jessica,
     },
     {
       name: "Erika",
       positions: ["ACCESS USER", "EXPERIENCE DESIGNER"],
-      photo: Erika
-
+      photo: Erika,
     },
     {
       name: "Hussain",
       positions: ["GRAPHIC", "DESIGNER"],
-      photo: Hussain
-
+      photo: Hussain,
     },
     {
       name: "Pavel",
       positions: ["LEAD FRONT END", "DEVELOPER"],
-      photo: Pavel
-
+      photo: Pavel,
     },
     {
       name: "Kostya",
       positions: ["SENIOR SYSTEMS", "ARCHITECT"],
-      photo: Kostya
-
+      photo: Kostya,
     },
     {
       name: "Stanislav",
       positions: ["LEAD FRONT END", "DEVELOPER"],
-      photo: Stas
-
+      photo: Stas,
     },
     {
       name: "Vitaly",
       positions: ["LEAD USER EXPERIENCE", "DESIGNER"],
-      photo: Vitaly
-
+      photo: Vitaly,
     },
     {
       name: "Adam",
       positions: ["LEAD USER EXPERIENCE", "DESIGNER"],
-      photo: Adam
-
+      photo: Adam,
     },
     {
       name: "Nika",
       positions: ["USER INTERFACE", "DESIGNER"],
-      photo: Nika
-
+      photo: Nika,
     },
     {
       name: "Oleg",
       positions: ["LEAD FRONT END", "DEVELOPER"],
-      photo: Oleg
-
+      photo: Oleg,
     },
     {
       name: "Vlad",
       positions: ["LEAD BACK END", "DEVELOPER"],
-      photo: Vlad
-
+      photo: Vlad,
     },
     {
       name: "Alexander",
       positions: ["FRONT END", "DEVELOPER"],
-      photo: Alex1
-
+      photo: Alex1,
     },
     {
       name: "Yevgen",
       positions: ["SENIOR BACKEND", "DEVELOPER"],
-      photo: Yevgen
-
+      photo: Yevgen,
     },
     {
       name: "Roman",
       positions: ["SENIOR FRONT END", "DEVELOPER"],
-      photo: RomanLitvin
-
+      photo: RomanLitvin,
     },
     {
       name: "Oleksander",
       positions: ["FRONT END", "DEVELOPER"],
-      photo: Oleksander
-
+      photo: Oleksander,
     },
     {
       name: "Anastasia",
       positions: ["PHOTOGRAPHER"],
-      photo: Anastasia
-
+      photo: Anastasia,
     },
     {
       name: "Roman",
       positions: ["BACK END", "DEVELOPER"],
-      photo: RomanBE
-
+      photo: RomanBE,
     },
     {
       name: "",
       positions: [""],
-      photo: ''
-
+      photo: "",
     },
     {
       name: "",
       positions: [""],
-      photo: ''
-
+      photo: "",
     },
-  ]
+  ],
 };
