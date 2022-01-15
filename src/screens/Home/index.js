@@ -211,7 +211,7 @@ const Home = () => {
         descriptionData={{
           title: "Where startups build, validate & grow.",
           description:
-            "Providing the vital solutions startups and founders need to build and develop visions, ideas, and products that scale. We aim to bridge the skill, resource, and funding gaps throughout the life cycle of emerging ventures through tailored and integrative expertise complemented by a vibrant ecosystem of game-changing partners.",
+            "Providing services and solutions to startups and founders to build and develop their visions, ideas, and products that scale.",
           btnOptions: {
             title: "LET’S GET STARTED",
             route: "/about-agency",
