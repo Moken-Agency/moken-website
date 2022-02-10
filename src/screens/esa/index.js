@@ -29,7 +29,7 @@ const ESA = () => {
           to strip the legalese from the Terms, there are places where they may
           still read like a traditional contract. There&rsquo;s a good reason
           for that: these Terms form a legally binding contract between you and
-          Moken Group Inc. (&ldquo;Moken&rdquo; or the &ldquo;Company&rdquo;)
+          Moken Agency Inc. (&ldquo;Moken&rdquo; or the &ldquo;Company&rdquo;)
           (collectively the &ldquo;Parties&rdquo;). So please ensure you read
           them carefully.
         </span>
@@ -343,8 +343,8 @@ const ESA = () => {
           All payment and invoicing related questions can be directed to{" "}
         </span>
         <span class="c9 c12">
-          <a class="c19" href="mailto:payment@accessthefuture.io">
-            payment@mokengroup.com
+          <a class="c19" href="mailto:payment@mokenagency.com">
+            payment@mokenagency.com
           </a>
         </span>
         <span class="c1">.</span>
@@ -400,8 +400,8 @@ const ESA = () => {
           to receive an adjustment or credit. Inquiries should be directed to{" "}
         </span>
         <span class="c12 c9">
-          <a class="c19" href="mailto:payment@mokengroup.com">
-            payment@mokengroup.com
+          <a class="c19" href="mailto:payment@mokenagency.com">
+            payment@mokenagency.com
           </a>
         </span>
         <span class="c1">.</span>
@@ -1171,7 +1171,7 @@ const ESA = () => {
           <span class="c6">&ldquo;</span>
           <span class="c17">Moken</span>
           <span class="c6">&rdquo;</span>
-          <span class="c9">&nbsp;shall mean Moken Group, Inc. (dba</span>
+          <span class="c9">&nbsp;shall mean Moken Agency, Inc. (dba</span>
           <span>Moken</span>
           <span class="c1">
             ) with is principal place of business as laid out in the SOW;
