@@ -85,7 +85,7 @@ const ESA = () => {
           related to starting an additional Account, this ESA shall apply to any
           and all SOW&rsquo;s executed by you and Moken. Moken reserves the
           right to make non-material updates to this Agreement, at any time,
-          which is available at https://mokenstartups.com/ESA where any past
+          which is available at https://mokenstartups.com/#/ESA where any past
           versions of this Agreement will also be available.
         </span>
       </p>

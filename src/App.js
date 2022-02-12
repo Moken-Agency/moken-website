@@ -94,6 +94,7 @@ import ForStartupPrograms from "./screens/ForStartupPrograms";
 import IndustryPartners from "./screens/IndustryPartners";
 import Ambassador from "./screens/Ambassador";
 import ESA from "./screens/esa";
+import SSA from "./screens/ssa";
 
 const routsWithHeaderFooter = [
   {
@@ -395,6 +396,10 @@ const routsWithHeaderFooter = [
   {
     path: "/ESA",
     component: ESA,
+  },
+  {
+    path: "/SSA",
+    component: SSA,
   },
   // {
   //     path: "/",
