@@ -243,11 +243,11 @@ export default {
       positions: ["MANAGING PARTNER", "MOKEN STARTUPS"],
       photo: Kendra,
     },
-    {
-      name: "Mohamed Ibshara",
-      positions: ["PROJECT MANAGER", "MOKEN AGENCY"],
-      photo: Mohamed,
-    },
+    // {
+    //   name: "Mohamed Ibshara",
+    //   positions: ["PROJECT MANAGER", "MOKEN AGENCY"],
+    //   photo: Mohamed,
+    // },
     {
       name: "Now Hiring!",
       positions: ["MANAGING DIRECTOR", "MOKEN EVENTS"],
