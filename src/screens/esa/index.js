@@ -1330,7 +1330,7 @@ const ESA = () => {
         <li className="c2 li-bullet-0">
           <span className="c4">“Moken”</span>
           <span className="c0">
-            &nbsp;shall mean Moken Agency, Inc. (dba Moken or Moken Agency) with
+            &nbsp;shall mean Moken Agency, Inc. (dba AccessTeams, Moken or Moken Agency) with
             its principal place of business as laid out in the SOW;
           </span>
         </li>

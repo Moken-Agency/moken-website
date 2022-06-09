@@ -1351,7 +1351,7 @@ const SSA = () => {
         <li className="custom-c2 li-custom-bullet-0">
           <span className="custom-c0">“Moken”</span>
           <span className="custom-c3">
-            &nbsp;shall mean Moken Agency, Inc. (dba Moken or Moken Agency) with
+            &nbsp;shall mean Moken Agency, Inc. (dba AccessTeams, Moken or Moken Agency) with
             its principal place of business as laid out in the SOW;
           </span>
         </li>
