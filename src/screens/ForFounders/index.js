@@ -22,16 +22,18 @@ const ForFounders = () => {
       <HeaderTitle
         title={"FOR FOUNDERS"}
         subtitle={"Experience powered support."}
-        description={
-            `Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed.`
-        }
+        description={`Leverage our community to build, validate, and grow your venture through support from fellow founders who have been where you are and know what need to succeed.`}
         marginBottom={isMobile ? 107 : 52}
-        subtitleClassName={'for-founder-header-subtitle'}
+        subtitleClassName={"for-founder-header-subtitle"}
       />
 
-      <ImageBlock position={"right"} url={forFoundersFirst} className={'for-founders-first-image-block'}/>
+      <ImageBlock
+        position={"right"}
+        url={forFoundersFirst}
+        className={"for-founders-first-image-block"}
+      />
 
-      <LeftInfoWithRightImage
+      {/* <LeftInfoWithRightImage
         withoutRightPadding
         titleClassName={'for-founders-access-title'}
         onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
@@ -41,15 +43,13 @@ const ForFounders = () => {
         description={`The Access Network is an exclusive, invite-only network built for ambitious humans. It’s a place where entrepreneurs, founders, startups, industry experts, side-hustlers, freelancers, and investors ask questions, exchange ideas, share resources, and connect with one another.`}
         btnTitle={"JOIN THE NETWORK"}
         imgUrl={forFoundersSecond}
-      />
+      /> */}
 
       <LeftInfoWithRightImage
-        titleClassName={'for-founders-knowledge-title'}
-        descriptionClassName={'for-founders-knowledge-description'}
+        titleClassName={"for-founders-knowledge-title"}
+        descriptionClassName={"for-founders-knowledge-description"}
         mainTitle={"ELEVATE YOURSELF TO THE NEXT LEVEL"}
-        title={
-          "Knowledge is what fuels growth and drives innovation forwards."
-        }
+        title={"Knowledge is what fuels growth and drives innovation forwards."}
         description={`Accessible learning modules, founder focused resources, and educational opportunities developed to help you level up using our library of courses, webinars, and other materials designed to help you validate, build, and grow successfully.`}
         btnTitle={"LEARN MORE"}
         imgUrl={forFoundersThird}
@@ -63,24 +63,22 @@ const ForFounders = () => {
         withIcon
         textColor={"white"}
         backgroundColor={"black"}
-        blockType={'middle'}
-        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
+        blockType={"middle"}
+        onClick={() => window.open("https://anchor.fm/startupsmart", "_blank")}
         // className={"for-founders-color-block"}
         // size={30}
       />
 
       <LeftInfoWithRightImage
-          withoutRightPadding
-        titleClassName={'for-founders-strategic-title'}
-        descriptionClassName={'for-founders-strategic-description'}
+        withoutRightPadding
+        titleClassName={"for-founders-strategic-title"}
+        descriptionClassName={"for-founders-strategic-description"}
         mainTitle={"STRATEGIC PARTNERSHIPS"}
-        title={
-          "Backing ideas that create real change."
-        }
+        title={"Backing ideas that create real change."}
         description={`We understand that startups are built stronger and flourish when founders work together. With that in mind, we've developed an exclusive accelerator program that can be custom tailored to suit any founder’s needs. By harnessing the power of potential and tearing up the rule book, Moken helps early stage founders launch faster, stronger, and more efficiently. Through our agile approach, we overcome the odds by predicting, measuring, mitigating, and managing the risk associated with innovation while building for scale. `}
         btnTitle={"EXPLORE MOKENLABS"}
         imgUrl={forFoundersForth}
-          isComingSoon
+        isComingSoon
       />
 
       <ProgramCommunityListPartner
@@ -88,7 +86,7 @@ const ForFounders = () => {
         subtitle={
           "Driven by the passion for working with determined innovators who live to make a change in the world."
         }
-        subtitleClassName={'for-founders-potential-subtitle'}
+        subtitleClassName={"for-founders-potential-subtitle"}
         options={options.founders}
         widthItem={"30vw"}
         type={"big"}

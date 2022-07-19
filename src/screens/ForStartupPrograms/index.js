@@ -13,10 +13,9 @@ import forStartupProgramsFirst from "../../images/for-startup-programs-first.jpg
 import forStartupProgramsSecond from "../../images/for-startup-programs-second.jpg";
 import forStartupProgramsThird from "../../images/for-startup-programs-four.jpg";
 import forStartupProgramsFourth from "../../images/for-startup-programs-five.jpg";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const ForStartupPrograms = () => {
-
   const { isMobile } = useWindowDimensions();
 
   const history = useHistory();
@@ -26,29 +25,29 @@ const ForStartupPrograms = () => {
       <HeaderTitle
         title={"FOR STARTUP PROGRAMS"}
         subtitle={"Collaboration over competition."}
-        description={"Driven by diversity, inclusion, and accessibility, together we strive to create an unmatched global ecosytem."}
+        description={
+          "Driven by diversity, inclusion, and accessibility, together we strive to create an unmatched global ecosytem."
+        }
         marginBottom={isMobile ? 107 : 107}
       />
 
-      <ImageBlock position={"right"} url={forStartupProgramsFirst}/>
+      <ImageBlock position={"right"} url={forStartupProgramsFirst} />
 
       <LeftInfoWithRightImage
-          withoutRightPadding
+        withoutRightPadding
         imgUrl={forStartupProgramsSecond}
         title={
           "Working together to support the next wave of scalable ventures."
         }
         mainTitle={"CROSS SECTOR COLLABORATION"}
-          titleClassName={'for-startup-programs-collaboration-title'}
-          descriptionClassName={'for-startup-programs-collaboration-description'}
-        description={
-          `We know startups aren’t the only ones hustling. Our goal is to help you help your startups succeed. We
+        titleClassName={"for-startup-programs-collaboration-title"}
+        descriptionClassName={"for-startup-programs-collaboration-description"}
+        description={`We know startups aren’t the only ones hustling. Our goal is to help you help your startups succeed. We
            collaborate with a global network of community startup programs, accelerators, incubators, and VC firms
             to help startups scale effectively and efficiently. Together, we create integrative opportunities in
-             the aim of uniting the ecosystem around the world.`
-        }
+             the aim of uniting the ecosystem around the world.`}
         btnTitle={"GET INVOLVED"}
-        onClick={() => history.push('/eco-partners')}
+        onClick={() => history.push("/eco-partners")}
         isLeftImage
       />
 
@@ -57,7 +56,7 @@ const ForStartupPrograms = () => {
         list={options.partners}
       />
 
-      <LeftInfoWithRightImage
+      {/* <LeftInfoWithRightImage
           withoutRightPadding
           imgUrl={forStartupProgramsThird}
           imageClassName={'for-startup-programs-access-image'}
@@ -71,7 +70,7 @@ const ForStartupPrograms = () => {
         }
           onClick={() => window.open('https://network.mokenstartups.com', '_blank')}
         btnTitle={"JOIN THE NETWORK"}
-      />
+      /> */}
 
       <ColorBlock
         title={"StartupSmart Podcast"}
@@ -79,14 +78,14 @@ const ForStartupPrograms = () => {
         withIcon
         textColor={"white"}
         backgroundColor={"black"}
-        blockType={'middle'}
-        onClick={() => window.open('https://anchor.fm/startupsmart', '_blank')}
+        blockType={"middle"}
+        onClick={() => window.open("https://anchor.fm/startupsmart", "_blank")}
       />
 
       <LeftInfoWithRightImage
         withoutRightPadding
-        titleClassName={'for-startup-programs-future-title'}
-        descriptionClassName={'for-startup-programs-future-description'}
+        titleClassName={"for-startup-programs-future-title"}
+        descriptionClassName={"for-startup-programs-future-description"}
         imgUrl={forStartupProgramsFourth}
         title={
           "Enthusiastic individuals working together to create extraordinary"
@@ -99,14 +98,14 @@ const ForStartupPrograms = () => {
           "operational realities, and eliminate risks that aren’t necessary."
         }
         btnTitle={"SPONSOR THE FUTURE"}
-        onClick={() => history.push('/advertise-with-us')}
+        onClick={() => history.push("/advertise-with-us")}
         isLeftImage
         isComingSoon
       />
 
       <ProgramCommunityListPartner
         title={"SUPPORT YOUR STARTUPS"}
-        subtitleClassName={'for-startup-programs-drive-subtitle'}
+        subtitleClassName={"for-startup-programs-drive-subtitle"}
         subtitle={
           "Supporting visionary startups through innovation as service."
         }

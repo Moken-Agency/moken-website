@@ -48,19 +48,19 @@ export default {
         route: "/events",
       },
     },
-    {
-      title: "Access.",
-      description: "Where founders network, scale & succeed.",
-      mokenTitle: {
-        first: "access",
-        second: "bymoken",
-      },
-      btnOptions: {
-        title: "ACCESS POTENTIAL",
-        click: () => {},
-        route: "/access",
-      },
-    },
+    // {
+    //   title: "Access.",
+    //   description: "Where founders network, scale & succeed.",
+    //   mokenTitle: {
+    //     first: "access",
+    //     second: "bymoken",
+    //   },
+    //   btnOptions: {
+    //     title: "ACCESS POTENTIAL",
+    //     click: () => {},
+    //     route: "/access",
+    //   },
+    // },
   ],
   startupsData: [
     {
@@ -97,11 +97,11 @@ export default {
       subtitle: "For Investors & Venture Funds",
       route: "/for-investors",
     },
-    {
-      title: "Access your potential.",
-      subtitle: "For Students, Founders & Startups",
-      route: "/access",
-    },
+    // {
+    //   title: "Access your potential.",
+    //   subtitle: "For Students, Founders & Startups",
+    //   route: "/access",
+    // },
     {
       title: "Create community.",
       subtitle: "For Everyone",

@@ -109,10 +109,7 @@ const routsWithHeaderFooter = [
     path: "/faqs",
     component: Faqs,
   },
-  {
-    path: "/access",
-    component: Access,
-  },
+
   {
     path: "/start-up-smart",
     component: StartUpScreen,

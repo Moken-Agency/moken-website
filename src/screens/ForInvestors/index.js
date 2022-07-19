@@ -8,35 +8,33 @@ import options from "./options";
 import EmailForm from "../../components/EmailForm";
 import "./index.scss";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import forInvestorsFirst from "../../images/for-investors-first.jpg";
 import forInvestorsSecond from "../../images/for-investors-second.jpg";
 import forInvestorsThird from "../../images/for-investors-third@3x.jpg";
 import forInvestorsFourth from "../../images/for-investors-forth.jpg";
 
 const ForInvestors = () => {
+  let history = useHistory();
 
-    let history = useHistory();
-
-    const { isMobile } = useWindowDimensions();
+  const { isMobile } = useWindowDimensions();
 
   return (
     <div className={"for-investors-container"}>
       <HeaderTitle
         title={"FOR INVESTORS"}
-        subtitleClassName={'for-investors-subtitle'}
-        descriptionClassName={'for-investors-description'}
+        subtitleClassName={"for-investors-subtitle"}
+        descriptionClassName={"for-investors-description"}
         subtitle={"A curated community of scalable opportunities."}
-        description={"Together we create an unmatched global ecosystem of vibrant technology founders, passionate entrepreneurs, and impact driven investors."}
+        description={
+          "Together we create an unmatched global ecosystem of vibrant technology founders, passionate entrepreneurs, and impact driven investors."
+        }
         marginBottom={isMobile ? 107 : 107}
       />
 
-      <ImageBlock
-        position={"right"}
-        url={forInvestorsFirst}
-      />
+      <ImageBlock position={"right"} url={forInvestorsFirst} />
 
-      <LeftInfoWithRightImage
+      {/* <LeftInfoWithRightImage
           imageClassName={'for-investors-program-image'}
           imgUrl={forInvestorsSecond}
         withoutRightPadding
@@ -49,35 +47,33 @@ const ForInvestors = () => {
         }
           onClick={() => window.open('https://network.mokenstartups.com/', '_blank')}
         btnTitle={"JOIN THE NETWORK".toUpperCase()}
-      />
+      /> */}
 
       <LeftInfoWithRightImage
         imgUrl={forInvestorsThird}
         withoutRightPadding
-        titleClassName={'for-investors-agency-title'}
-        descriptionClassName={'for-investors-agency-description'}
+        titleClassName={"for-investors-agency-title"}
+        descriptionClassName={"for-investors-agency-description"}
         title={
           "Supporting your startups while safeguarding your investment through trusted build partners."
         }
         mainTitle={"SUPPORT YOUR VENTURES"}
-        description={
-          `Our role consists of ensuring the viabillity of your investment is never in jeopardy and your startups are supported from idea to launch, and beyond. The riskiest part of early stage investing is often through the post investment support period. However, with our efficient and effective build, validate, and grow tactics, Moken works with you to ensure your startups are supported. Our team’s capabilities seamlessly blend in with any startups’ operational realities while eliminating all unnecessary risks.`
-        }
+        description={`Our role consists of ensuring the viabillity of your investment is never in jeopardy and your startups are supported from idea to launch, and beyond. The riskiest part of early stage investing is often through the post investment support period. However, with our efficient and effective build, validate, and grow tactics, Moken works with you to ensure your startups are supported. Our team’s capabilities seamlessly blend in with any startups’ operational realities while eliminating all unnecessary risks.`}
         btnTitle={"PARTNER WITH US"}
         isLeftImage
-        onClick={() => history.push('/eco-partners')}
+        onClick={() => history.push("/eco-partners")}
       />
 
       <ColorBlock
         title={"Looking for the next big thing?"}
         subtitle={"CONNECT WITH US"}
         withIcon
-        onClick={() => history.push('/connect-with-us')}
+        onClick={() => history.push("/connect-with-us")}
         textColor={"white"}
         backgroundColor={"black"}
-        blockType={'middle'}
+        blockType={"middle"}
         size={30}
-        type={'kThin'}
+        type={"kThin"}
       />
 
       <ProgramCommunityListPartner
@@ -85,7 +81,7 @@ const ForInvestors = () => {
         subtitle={
           "Join our trusted community of investors, startups, and founders to extend your reach to new heights."
         }
-        subtitleClassName={'for-investors-partners-subtitle'}
+        subtitleClassName={"for-investors-partners-subtitle"}
         options={options.partners}
         type={"big"}
       />

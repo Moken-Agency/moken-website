@@ -9,12 +9,11 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import validationRules from "../../constans/validation-rules";
 import { useHistory } from "react-router-dom";
 import Logo from "../Logo";
-import moment from 'moment'
+import moment from "moment";
 import useValues from "../../hooks/useValues";
 import emailjs from "emailjs-com";
 import Loader from "../Loader";
 import Form from "../Form";
-
 
 const { menuOption, socialsMedia, socialsMediaWhite, styles } = footerOptions;
 // const { menuColumns } = menuOption;
@@ -33,37 +32,42 @@ const Footer = ({ isOpen, setIsOpen }) => {
   const year = new Date().getFullYear();
   let history = useHistory();
 
-
   const [isFetching, setIsFetching] = useState(false);
 
   const [values, getProps, isFormValid, errors, clearValues] = useValues({
-    email: '',
+    email: "",
   });
 
   const handleSubscribe = async () => {
-    if(isFormValid) {
+    if (isFormValid) {
       setIsFetching(true);
-      emailjs.send(
-          'service_xo07b28',
-          'template_xlljnfu',
-          {...values, name: 'No name'},
-          'user_ILhvoG5ED9QfcW7AV2q89')
-          .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            localStorage.setItem('subscription', true);
-          }, function(error) {
-            console.log('FAILED...', error);
-          }).finally(() => {
-        setIsFetching(false);
-      })
+      emailjs
+        .send(
+          "service_xo07b28",
+          "template_xlljnfu",
+          { ...values, name: "No name" },
+          "user_ILhvoG5ED9QfcW7AV2q89"
+        )
+        .then(
+          function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+            localStorage.setItem("subscription", true);
+          },
+          function (error) {
+            console.log("FAILED...", error);
+          }
+        )
+        .finally(() => {
+          setIsFetching(false);
+        });
     }
-  }
+  };
   const [isFormOpened, setIsFormOpened] = useState(false);
 
   const handleOnChange = (name, value) => {
-    const {onChangeText}= getProps(name);
-    onChangeText(value)
-  }
+    const { onChangeText } = getProps(name);
+    onChangeText(value);
+  };
 
   const menuColumns = [
     {
@@ -81,17 +85,17 @@ const Footer = ({ isOpen, setIsOpen }) => {
           title: "Our Partners",
           route: "/our-partners",
         },
-        {
-          title: "Access Network",
-          route: "/access",
-        },
+        // {
+        //   title: "Access Network",
+        //   route: "/access",
+        // },
         {
           title: "Careers",
           route: "/careers",
         },
         {
           title: "Insights",
-          link: 'https://medium.com/insights'
+          link: "https://medium.com/insights",
         },
       ],
     },
@@ -121,18 +125,17 @@ const Footer = ({ isOpen, setIsOpen }) => {
       routes: [
         {
           title: "Become a Partner",
-          onClick: () => setIsFormOpened(true)
+          onClick: () => setIsFormOpened(true),
         },
         {
           title: "Sponsor the Future",
           route: "/advertise-with-us",
-          isComingSoon: true
+          isComingSoon: true,
         },
         {
           title: "Work with Mo + Ken",
           route: "/mo-ken",
-          isComingSoon: true
-
+          isComingSoon: true,
         },
         {
           title: "Product Testing Team",
@@ -150,15 +153,23 @@ const Footer = ({ isOpen, setIsOpen }) => {
     },
   ];
 
-
-
-
   const socialsData = !isMobile ? socialsMedia : socialsMediaWhite;
 
   return (
     <div className={"footer-container"}>
-      <Form isOpen={isFormOpened} setIsOpen={setIsFormOpened} formName={'Partnership Application Form'}>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true" width={'100%'} height="auto" frameborder="0" marginheight="0" marginwidth="0"/>
+      <Form
+        isOpen={isFormOpened}
+        setIsOpen={setIsFormOpened}
+        formName={"Partnership Application Form"}
+      >
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdNWRpMITHHWPNhulHQArjTfad7cGcWxGRZdr4XYxPI-3rQTA/viewform?embedded=true"
+          width={"100%"}
+          height="auto"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        />
       </Form>
       <Loader isShow={isFetching} />
 
@@ -183,13 +194,13 @@ const Footer = ({ isOpen, setIsOpen }) => {
           {/*  />*/}
           {/*  <div style={{width: '.6vw', height: '.6vw', borderRadius: '.6vw', marginLeft: '.2vw', backgroundColor: 'red'}}/>*/}
           {/*</div>*/}
-          <Logo className={'footer-logo'}/>
+          <Logo className={"footer-logo"} />
           <Text
             size={30}
             animationType={"fade-in"}
             type={"kLight"}
-            textStyles={{lineHeight: '35px', fontWeight: 300}}
-            className={'footer-join-text'}
+            textStyles={{ lineHeight: "35px", fontWeight: 300 }}
+            className={"footer-join-text"}
           >
             Join our newsletter
           </Text>
@@ -198,11 +209,16 @@ const Footer = ({ isOpen, setIsOpen }) => {
             type={"kLight"}
             animationType={"fade-in"}
             textStyles={joinSecondText}
-            containerStyles={{ marginBottom: 20, lineHeight: "30px", fontWeight: 300}}
+            containerStyles={{
+              marginBottom: 20,
+              lineHeight: "30px",
+              fontWeight: 300,
+            }}
           >
             We will send you updates related to all things Moken.
           </Text>
-          {!JSON.parse(localStorage.getItem('subscription')) ? <Input
+          {!JSON.parse(localStorage.getItem("subscription")) ? (
+            <Input
               withGoButton
               error={errors.email}
               value={values.email}
@@ -210,17 +226,25 @@ const Footer = ({ isOpen, setIsOpen }) => {
               onSubmit={handleSubscribe}
               backgroundColor={"#fbfbfb"}
               // animationType={"fade-in"}
-              onChange={(value) => handleOnChange('email', value)}
-              {...getProps('email')}
-          /> : <Text  type={"kLight"} size={20}>Thank you for subscribing</Text>}
+              onChange={(value) => handleOnChange("email", value)}
+              {...getProps("email")}
+            />
+          ) : (
+            <Text type={"kLight"} size={20}>
+              Thank you for subscribing
+            </Text>
+          )}
         </div>
       </div>
       <div className={"bottom-footer-bar"}>
         <div className={"left-footer-bar"}>
-          <Text type={"kRegular"}
-              // size={".8vw"}
-                size={10}
-                mobSize={10} color={"white"}>
+          <Text
+            type={"kRegular"}
+            // size={".8vw"}
+            size={10}
+            mobSize={10}
+            color={"white"}
+          >
             Copyright © Moken Startups Inc. {year}
           </Text>
           <div className={"privacy-container"}>
@@ -233,7 +257,7 @@ const Footer = ({ isOpen, setIsOpen }) => {
               color={"white"}
               mobSize={10}
               textStyles={{ letterSpacing: 4 }}
-              containerStyles={{margin: '0 65px'}}
+              containerStyles={{ margin: "0 65px" }}
             >
               PRIVACY POLICY
             </Text>

@@ -1,10 +1,10 @@
 export default {
   leftMenu: [
-    {
-      title: "Access network",
-      withDivider: true,
-      link: 'https://network.mokenstartups.com'
-    },
+    // {
+    //   title: "Access network",
+    //   withDivider: true,
+    //   link: 'https://network.mokenstartups.com'
+    // },
     {
       title: "Partners",
       route: "/our-partners",
@@ -13,7 +13,7 @@ export default {
     {
       title: "Insights",
       withDivider: true,
-      link: 'https://medium.com/insights'
+      link: "https://medium.com/insights",
     },
     {
       title: "Careers",
@@ -24,14 +24,14 @@ export default {
     {
       title: "STARTUPSMART PODCAST",
       // route: "/academy",
-      link: 'https://anchor.fm/startupsmart ',
+      link: "https://anchor.fm/startupsmart ",
       withDivider: true,
     },
     {
       title: "Shop moken",
       route: "/shop-moken",
       withDivider: true,
-      isComingSoon: true
+      isComingSoon: true,
     },
     {
       title: "Work with us",
@@ -57,8 +57,8 @@ export default {
         //   route: "/",
         // },
         {
-          title: 'Our Vision',
-          route: '/our-vision'
+          title: "Our Vision",
+          route: "/our-vision",
         },
         {
           title: "OUR PARTNERS",
@@ -97,10 +97,11 @@ export default {
         // },
         {
           title: "FOR FOUNDERS",
-          route: '/for-founders'
-        },  {
+          route: "/for-founders",
+        },
+        {
           title: "FOR STARTUP PROGRAMS",
-          route: '/for-startup-programs'
+          route: "/for-startup-programs",
         },
       ],
     },
@@ -118,7 +119,7 @@ export default {
         },
         {
           title: "SPRINTS & ROADMAPS",
-          isComingSoon: true
+          isComingSoon: true,
         },
         {
           title: "STARTUPSMART PACKAGES",
@@ -162,8 +163,8 @@ export default {
       dividerColor: "#ff9d72",
       subRouts: [
         {
-          title: 'EVENTS',
-          route: '/events'
+          title: "EVENTS",
+          route: "/events",
         },
         {
           title: "UPCOMING EVENTS",
@@ -178,32 +179,31 @@ export default {
         // },
       ],
     },
-    {
-      title: "Access",
-      route: "/access",
-      dividerColor: "#c6cbe1",
-      subRouts: [
-        {
-          title: "ABOUT ACCESS",
-          route: '/access'
-        },
-        {
-          title: "ACCESS NETWORK",
-          link: 'https://network.mokenstartups.com'
-        },
-      ],
-    }
+    // {
+    //   title: "Access",
+    //   route: "/access",
+    //   dividerColor: "#c6cbe1",
+    //   subRouts: [
+    //     {
+    //       title: "ABOUT ACCESS",
+    //       route: '/access'
+    //     },
+    //     {
+    //       title: "ACCESS NETWORK",
+    //       link: 'https://network.mokenstartups.com'
+    //     },
+    //   ],
+    // }
     // {
     //   title: "Media",
     //   route: "media",
     //   dividerColor: "#ff7d3e",
-
   ],
   mainMenuTextStyles: {
-    letterSpacing: '.2vw',
+    letterSpacing: ".2vw",
   },
   topMenuTextStyles: {
     // margin: '0 1.5vw',
-    letterSpacing: '.18vw'
+    letterSpacing: ".18vw",
   },
 };

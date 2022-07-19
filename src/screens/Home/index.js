@@ -352,22 +352,22 @@ const Home = () => {
         }}
       />
 
-      <HomeComponentWithSwiper
+      {/* <HomeComponentWithSwiper
         numberTitle={"03."}
         title={"Create unmatched connections."}
         descriptionData={{
           title: "Where founders network, scale & succeed.",
           description: `An exclusive, invite-only network built for ambitious innovators where together, we ask questions, exchange ideas, share resources, and network with one another.`,
-          btnOptions: {
-            title: "ACCESS YOUR FUTURE",
-            route: "/access",
-          },
+          // btnOptions: {
+          //   title: "ACCESS YOUR FUTURE",
+          //   route: "/access",
+          // },
         }}
         swiperData={options.swiperData}
-      />
+      /> */}
 
       <HomeComponentWithVerticalText
-        numberTitle={"04."}
+        numberTitle={"03."}
         titleContainerStyles={{ maxWidth: 707 }}
         verticalText={{
           first: "moken",

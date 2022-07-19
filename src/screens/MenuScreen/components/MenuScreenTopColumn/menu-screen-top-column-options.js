@@ -8,13 +8,13 @@ export default {
       subTitle: "LEARN MORE",
       route: "/start-up-smart",
     },
-    {
-      title: "Access Network",
-      description: `An exclusive, invite-only network built for ambitious humans where we ask questions, exchange ideas, share resources, and connect with one another.`,
-      subTitle: "EXPAND",
-      // route: "/access",
-      link: "https://network.mokenstartups.com",
-    },
+    // {
+    //   title: "Access Network",
+    //   description: `An exclusive, invite-only network built for ambitious humans where we ask questions, exchange ideas, share resources, and connect with one another.`,
+    //   subTitle: "EXPAND",
+    //   // route: "/access",
+    //   link: "https://network.mokenstartups.com",
+    // },
     {
       // image: Idea,
       title: "#IAmAFounder",

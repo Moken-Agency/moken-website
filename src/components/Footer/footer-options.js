@@ -29,17 +29,17 @@ export default {
             title: "Our Partners",
             route: "/our-partners",
           },
-          {
-            title: "Access Network",
-            route: "/access",
-          },
+          // {
+          //   title: "Access Network",
+          //   route: "/access",
+          // },
           {
             title: "Careers",
             route: "/careers",
           },
           {
             title: "Insights",
-            link: 'https://medium.com/insights'
+            link: "https://medium.com/insights",
           },
         ],
       },
